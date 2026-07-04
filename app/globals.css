@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+::selection { background: #dbeafe; color: #1e3a8a; }
+:focus-visible { outline: 3px solid rgba(37, 99, 235, 0.35); outline-offset: 3px; }
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-6xl px-5 lg:px-8; }
+  .section-title { @apply text-2xl font-black tracking-tight text-ink sm:text-3xl; }
+  .prose-buup h2 { @apply mb-4 mt-10 text-xl font-extrabold tracking-tight text-ink sm:text-2xl; }
+  .prose-buup p { @apply my-4 leading-8 text-slate-700; }
+  .prose-buup ul { @apply my-5 space-y-2 rounded-2xl bg-slate-50 p-5 text-slate-700; }
+  .prose-buup li { @apply relative pl-5 leading-7; }
+  .prose-buup li::before { content: ""; @apply absolute left-0 top-[0.7rem] size-1.5 rounded-full bg-primary; }
+}
+
+.glass-chip { border: 1px solid rgba(255,255,255,.85); background: rgba(255,255,255,.68); box-shadow: 0 10px 32px -18px rgba(15,23,42,.35); backdrop-filter: blur(16px); }
+.glass-panel { border: 1px solid rgba(255,255,255,.82); background: rgba(255,255,255,.72); box-shadow: 0 24px 70px -38px rgba(15,23,42,.38); backdrop-filter: blur(20px); }
+.category-tile { @apply flex min-h-24 flex-col items-center justify-center rounded-2xl border bg-white p-3 text-slate-700 shadow-card transition hover:-translate-y-1 hover:shadow-lg; }
+.category-blue { @apply border-blue-100 hover:text-blue-600; } .category-orange { @apply border-orange-100 hover:text-orange-600; }
+.category-pink { @apply border-pink-100 hover:text-pink-600; } .category-purple { @apply border-violet-100 hover:text-violet-600; }
+.category-green { @apply border-emerald-100 hover:text-emerald-600; } .category-teal { @apply border-teal-100 hover:text-teal-600; }
+.category-indigo { @apply border-indigo-100 hover:text-indigo-600; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
