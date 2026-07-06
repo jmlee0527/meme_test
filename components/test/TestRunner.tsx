@@ -7,6 +7,8 @@ import { calculateResults, serializeAnswers } from "@/lib/test-engine";
 import { calculateOfficeAnimalResults } from "@/lib/office-animal-engine";
 import { calculateMarriageResult } from "@/lib/marriage-engine";
 import { calculateKkondaeResult, serializeKkondaeAnswers } from "@/lib/kkondae-engine";
+import { calculateJoseonDestinyResult, serializeJoseonAnswers } from "@/lib/joseon-destiny-engine";
+import { calculatePersonalityCountryResult, serializeCountryAnswers } from "@/lib/personality-country-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -17,12 +19,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
   const progress = ((index + 1) / test.questions.length) * 100;
   const question = test.questions[index];
   const isMultipleChoice = Boolean(question.options?.length);
+  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test"].includes(test.slug);
 
   const select = (answer: boolean | number) => {
     const next = [...answers];
     next[index] = answer;
     setAnswers(next);
-    if (isMultipleChoice && index < test.questions.length - 1) {
+    if (shouldAutoAdvance && index < test.questions.length - 1) {
       window.setTimeout(() => setIndex((current) => current === index ? current + 1 : current), 240);
     }
   };
@@ -38,6 +41,20 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateKkondaeResult(completeAnswers);
       setLoading(true);
       router.push(`/result/${result.profile.slug}?answers=${serializeKkondaeAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "joseon-destiny-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateJoseonDestinyResult(completeAnswers);
+      setLoading(true);
+      router.push(`/joseon-destiny-test/result/${result.profile.slug}?answers=${serializeJoseonAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "personality-country-test") {
+      const completeAnswers = answers as number[];
+      const result = calculatePersonalityCountryResult(completeAnswers);
+      setLoading(true);
+      router.push(`/personality-country-test/result/${result.profile.slug}?answers=${serializeCountryAnswers(completeAnswers)}`);
       return;
     }
     const completeAnswers = answers as boolean[];
@@ -84,7 +101,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
 
       <div className="mt-6 flex items-center justify-between gap-3">
         <button type="button" onClick={() => setIndex((current) => Math.max(0, current - 1))} disabled={index === 0 || loading} className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40">이전</button>
-        {(!isMultipleChoice || index === test.questions.length - 1) ? <button type="button" onClick={moveNext} disabled={selected === null || loading} className="min-w-32 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none">
+        {(!shouldAutoAdvance || index === test.questions.length - 1) ? <button type="button" onClick={moveNext} disabled={selected === null || loading} className="min-w-32 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none">
           {loading ? "분석 중…" : index === test.questions.length - 1 ? "결과 보기" : "다음"}
         </button> : <span className="text-xs font-bold text-slate-400">선택하면 자동으로 이동해요</span>}
       </div>

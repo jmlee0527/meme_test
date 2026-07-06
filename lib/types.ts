@@ -254,6 +254,39 @@ export type AttachmentResultProfile = {
   shareText:string;
 };
 
+export type JoseonTrait = "leadership" | "intelligence" | "creativity" | "adventure" | "empathy" | "practicality";
+export type JoseonScores = Record<JoseonTrait, number>;
+export type JoseonQuestion = { id:number; text:string; options:TestOption[]; weights:[Partial<JoseonScores>, Partial<JoseonScores>] };
+export type JoseonResultProfile = {
+  slug:string;
+  name:string;
+  icon:string;
+  summary:string;
+  personality:string;
+  joseonLife:string;
+  modernJobs:string[];
+  famousComparison:string;
+  shareText:string;
+  targetScores:JoseonScores;
+};
+
+export type CountryTrait = "openness" | "structure" | "socialEnergy" | "independence" | "nature" | "ambition" | "culture" | "safety";
+export type CountryScores = Record<CountryTrait, number>;
+export type CountryQuestion = { id:number; text:string; options:TestOption[]; weights:[Partial<CountryScores>, Partial<CountryScores>] };
+export type CountryResultProfile = {
+  slug:string;
+  country:string;
+  flag:string;
+  summary:string;
+  personality:string;
+  matchReason:string;
+  lifestyle:string;
+  keywords:string[];
+  similarCountries:string[];
+  shareText:string;
+  targetScores:CountryScores;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
