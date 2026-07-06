@@ -9,6 +9,7 @@ import { calculateMarriageResult } from "@/lib/marriage-engine";
 import { calculateKkondaeResult, serializeKkondaeAnswers } from "@/lib/kkondae-engine";
 import { calculateJoseonDestinyResult, serializeJoseonAnswers } from "@/lib/joseon-destiny-engine";
 import { calculatePersonalityCountryResult, serializeCountryAnswers } from "@/lib/personality-country-engine";
+import { calculateLoverResult, serializeLoverAnswers } from "@/lib/lover-score-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -55,6 +56,17 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculatePersonalityCountryResult(completeAnswers);
       setLoading(true);
       router.push(`/personality-country-test/result/${result.profile.slug}?answers=${serializeCountryAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "lover-score-test") {
+      const completeAnswers = answers as number[];
+      const { profile, overallScore } = calculateLoverResult(completeAnswers);
+      setLoading(true);
+      router.push(
+        `/lover-score-test/result/${profile.slug}?answers=${serializeLoverAnswers(
+          completeAnswers,
+        )}&score=${overallScore}`,
+      );
       return;
     }
     const completeAnswers = answers as boolean[];

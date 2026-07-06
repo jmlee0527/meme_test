@@ -44,7 +44,7 @@ export default function HomePage() {
       </section>
 
       <CategoryShowcase id="직장" icon="💼" eyebrow="OFFICE LIFE" title="직장인 테스트" description="회사 속 나의 행동과 성장 가능성을 발견해 보세요." test={bySlug("office-animal-test")} extraTest={bySlug("kkondae-power-test")} upcoming={[["📈","나는 승진형 인간일까?","성과와 영향력"]]} tone="orange" />
-      <CategoryShowcase id="결혼" icon="💕" eyebrow="LOVE & MARRIAGE" title="연애 · 결혼 테스트" description="관계 속 나의 마음과 자연스러운 다음 타이밍을 알아보세요." test={bySlug("love-mbti-test")} extraTest={bySlug("marriage-timing-test")} upcoming={[["🧲","나의 애착 관계 유형","가까움과 거리감"]]} tone="pink" reverse />
+      <CategoryShowcase id="결혼" icon="💕" eyebrow="LOVE & MARRIAGE" title="연애 · 결혼 테스트" description="관계 속 나의 마음과 자연스러운 다음 타이밍을 알아보세요." test={bySlug("lover-score-test")} extraTest={bySlug("love-mbti-test")} upcoming={[["🧲","나의 애착 관계 유형","가까움과 거리감"]]} tone="pink" reverse />
       <CategoryShowcase id="부업" icon="💰" eyebrow="MONEY & SIDE JOB" title="돈 · 부업 테스트" description="나의 강점과 돈을 대하는 습관을 현실적인 가능성으로 연결해 보세요." test={bySlug("side-job-recommendation")} extraTest={bySlug("consumer-style-test")} upcoming={[["📊","나의 투자 성향 테스트","위험과 안정 선호"]]} tone="blue" />
       <CategoryShowcase id="성격" icon="🧠" eyebrow="PERSONALITY & MIND" title="성격 · 심리 테스트" description="마음과 에너지의 신호를 살피고, 아직 이름 붙이지 못한 성향을 발견해 보세요." test={bySlug("burnout-risk-test")} upcoming={[["💎","나의 숨은 재능 찾기","강점과 몰입 영역"],["🌿","나는 내향형일까 외향형일까?","에너지 충전 방식"],["🧩","나의 문제 해결 스타일","사고와 판단 방식"]]} tone="green" reverse />
       <CategoryShowcase id="음식" icon="🍕" eyebrow="FOOD GAME" title="음식 월드컵" description="고민할수록 배고파지는 재미있는 선택 게임으로 오늘의 메뉴를 결정해 보세요." test={bySlug("weekend-food-worldcup")} upcoming={[["🌙","야식 메뉴 월드컵","밤에 더 당기는 메뉴"],["🍜","최애 라면 월드컵","국물과 볶음면 대결"]]} tone="orange" />

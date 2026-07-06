@@ -287,6 +287,48 @@ export type CountryResultProfile = {
   targetScores:CountryScores;
 };
 
+export type LoverTrait =
+  | "care"        // 배려심
+  | "responsibility" // 책임감
+  | "expression"  // 표현력
+  | "stability"   // 안정감
+  | "conflict"    // 갈등해결력
+  | "independence"// 독립성
+  | "humor"       // 유머감각
+  | "trust";      // 신뢰도
+
+export type LoverScores = Record<LoverTrait, number>;
+export type LoverQuestion = { id:number; text:string; options:TestOption[]; weights:[Partial<LoverScores>, Partial<LoverScores>] };
+export type LoverResultSlug =
+  | "lover-perfect-partner"          // 98점 완벽한 애인감
+  | "lover-marriage-material"        // 95점 결혼까지 생각나는 타입
+  | "lover-reliable-partner"         // 92점 믿고 기대고 싶은 타입
+  | "lover-exciting-heartflutter"    // 89점 설렘을 잘 주는 타입
+  | "lover-warm-but-awkward"         // 86점 다정하지만 표현이 서툰 타입
+  | "lover-comfy-friendlike"         // 83점 친구 같은 편안한 타입
+  | "lover-free-relationship"        // 80점 자유로운 연애 타입
+  | "lover-slow-to-open"             // 77점 천천히 가까워지는 타입
+  | "lover-push-pull-charm"          // 74점 매력은 있지만 밀당이 있는 타입
+  | "lover-solo-time-important"      // 71점 혼자만의 시간이 중요한 타입
+  | "lover-needs-expression-practice"// 68점 감정 표현 연습이 필요한 타입
+  | "lover-growing-potential";       // 65점 연애 성장 가능성이 큰 타입
+
+export type LoverResultProfile = {
+  slug:LoverResultSlug;
+  name:string;
+  scoreLabel:string;
+  icon:string;
+  summary:string;
+  description:string;
+  reason:string;
+  strengths:string[];
+  cautions:string[];
+  idealPartner:string;
+  goodMatchTypes:string[];
+  shareTextTemplate:string;
+  typicalScores:LoverScores;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;

@@ -6,6 +6,7 @@ import { weekendFoodWorldcup } from "@/data/food-worldcup";
 import { burnoutRiskTest } from "@/data/burnout-risk";
 import { consumerStyleTest } from "@/data/consumer-style";
 import { loveMbtiTest } from "@/data/love-mbti";
+import { loverScoreTest } from "@/data/lover-score";
 import { dailyFortuneTest } from "@/data/fortune-data";
 import { attachmentStyleTest } from "@/data/attachment-style";
 import { joseonDestinyTest } from "@/data/joseon-destiny";
@@ -87,7 +88,7 @@ export const tests: TestDefinition[] = [{
   accent: "blue",
   questions,
   resultSlugs: resultProfiles.map((item) => item.slug),
-}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, dailyFortuneTest];
+}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);
