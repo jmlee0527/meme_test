@@ -3,7 +3,7 @@ import { createMetadata, siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({ title: "문의하기", description: `${siteConfig.name}에 서비스, 콘텐츠 오류, 광고 및 제휴 관련 의견을 보내주세요.`, path: "/contact", keywords: ["미미테스트 문의"] });
 export default function ContactPage() {
-  const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@buupstory.kr";
+  const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "hello@memetest.co.kr";
   return (
     <div className="container-page py-10 sm:py-14"><Breadcrumbs items={[{ name:"문의하기" }]} />
       <div className="mx-auto max-w-3xl rounded-3xl border border-slate-200 bg-white p-7 shadow-card sm:p-10"><p className="text-sm font-extrabold text-primary">CONTACT</p><h1 className="mt-3 text-3xl font-black tracking-tight text-ink">무엇을 도와드릴까요?</h1><p className="mt-4 leading-7 text-slate-600">콘텐츠 오류, 기능 제안, 개인정보, 광고·제휴 문의를 아래 이메일로 보내주세요. 내용을 확인한 뒤 영업일 기준 3일 이내 답변을 목표로 합니다.</p>

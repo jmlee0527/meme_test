@@ -16,7 +16,7 @@ type Props = { title: string; description: string; path: string };
 
 export function ShareButtons({ title, description, path }: Props) {
   const [copied, setCopied] = useState(false);
-  const url = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://buupstory.kr"}${path}`;
+  const url = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://memetest.co.kr"}${path}`;
 
   const copy = async () => {
     await navigator.clipboard.writeText(url);

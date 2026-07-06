@@ -235,6 +235,25 @@ export type LoveResultProfile = {
   typicalLanguage:LoveLanguage;
 };
 
+export type AttachmentDomain = "anxiety" | "avoidance";
+export type AttachmentQuestion = { id:string; text:string; domain:AttachmentDomain; reverse?:boolean };
+export type AttachmentResultSlug = "attachment-secure" | "attachment-anxious" | "attachment-avoidant" | "attachment-fearful";
+export type AttachmentAxisScores = Record<AttachmentDomain,number>;
+export type AttachmentResultProfile = {
+  slug:AttachmentResultSlug;
+  name:string;
+  icon:string;
+  summary:string;
+  description:string;
+  strengths:string[];
+  cautions:string[];
+  tips:string[];
+  goodFit:string;
+  watchPattern:string;
+  matrixLabel:string;
+  shareText:string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
