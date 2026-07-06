@@ -8,6 +8,7 @@ const choices=[{value:1,label:"전혀 아니다"},{value:2,label:"아니다"},{v
 const tones={
   indigo:{page:"bg-[radial-gradient(circle_at_top,#e0e7ff_0,#f8fafc_45%,#f8fafc_100%)]",text:"text-indigo-700",soft:"bg-indigo-50 text-indigo-700",selected:"border-indigo-500 bg-indigo-50 text-indigo-900",hover:"hover:border-indigo-300 hover:bg-indigo-50/60",bar:"from-indigo-500 to-violet-500",shadow:"shadow-indigo-100/70"},
   emerald:{page:"bg-[radial-gradient(circle_at_top,#d1fae5_0,#f8fafc_45%,#f8fafc_100%)]",text:"text-emerald-700",soft:"bg-emerald-50 text-emerald-700",selected:"border-emerald-500 bg-emerald-50 text-emerald-900",hover:"hover:border-emerald-300 hover:bg-emerald-50/60",bar:"from-emerald-500 to-teal-500",shadow:"shadow-emerald-100/70"},
+  pink:{page:"bg-[radial-gradient(circle_at_top,#ffe4e6_0,#faf5ff_40%,#f8fafc_100%)]",text:"text-rose-600",soft:"bg-rose-50 text-rose-700",selected:"border-rose-500 bg-rose-50 text-rose-900",hover:"hover:border-rose-300 hover:bg-rose-50/60",bar:"from-rose-500 to-violet-500",shadow:"shadow-rose-100/70"},
 };
 
 export function LikertQuestionRunner({title,eyebrow,questions,onComplete,tone="indigo",footer="응답은 서버에 저장되지 않습니다."}:{title:string;eyebrow:string;questions:Question[];onComplete:(answers:number[])=>void;tone?:keyof typeof tones;footer?:string}){

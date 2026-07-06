@@ -14,6 +14,7 @@ import { KkondaeResult } from "@/components/test/KkondaeResult";
 import { WorldcupResult } from "@/components/worldcup/WorldcupResult";
 import { BurnoutResult } from "@/components/test/BurnoutResult";
 import { ConsumerStyleResult } from "@/components/test/ConsumerStyleResult";
+import { LoveMbtiResult } from "@/components/test/LoveMbtiResult";
 import { getResultProfile, resultProfiles } from "@/data/tests";
 import { animalProfiles, getAnimalProfile } from "@/data/office-animals";
 import { getMarriageResultProfile, marriageResultProfiles } from "@/data/marriage-timing";
@@ -21,6 +22,7 @@ import { getKkondaeResultProfile, kkondaeResultProfiles } from "@/data/kkondae-p
 import { foodWorldcupItems, getFoodWorldcupItemByResult } from "@/data/food-worldcup";
 import { burnoutResultProfiles, getBurnoutResultProfile } from "@/data/burnout-risk";
 import { consumerResultProfiles, getConsumerResultProfile } from "@/data/consumer-style";
+import { getLoveResultProfile, loveResultProfiles } from "@/data/love-mbti";
 import { calculateResults, parseAnswers } from "@/lib/test-engine";
 import { calculateOfficeAnimalResults, parseOfficeAnimalAnswers } from "@/lib/office-animal-engine";
 import { calculateMarriageResult, parseCurrentAge, parseMarriageAnswers } from "@/lib/marriage-engine";
@@ -28,10 +30,11 @@ import { calculateKkondaeResult, parseKkondaeAnswers } from "@/lib/kkondae-engin
 import { createMetadata } from "@/lib/site";
 import { calculateBurnoutResult, parseBurnoutAnswers } from "@/lib/burnout-engine";
 import { calculateConsumerResult, parseConsumerAnswers } from "@/lib/consumer-style-engine";
+import { calculateLoveResult, parseLoveAnswers } from "@/lib/love-mbti-engine";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ answers?: string; age?: string }> };
 
-export function generateStaticParams() { return [...resultProfiles, ...animalProfiles, ...marriageResultProfiles, ...kkondaeResultProfiles, ...burnoutResultProfiles, ...consumerResultProfiles, ...foodWorldcupItems.map((item)=>({slug:item.resultSlug}))].map(({ slug }) => ({ slug })); }
+export function generateStaticParams() { return [...resultProfiles, ...animalProfiles, ...marriageResultProfiles, ...kkondaeResultProfiles, ...burnoutResultProfiles, ...consumerResultProfiles, ...loveResultProfiles, ...foodWorldcupItems.map((item)=>({slug:item.resultSlug}))].map(({ slug }) => ({ slug })); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
@@ -41,6 +44,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if(burnout)return createMetadata({title:`${burnout.name} | 번아웃 위험도 테스트 결과`,description:`${burnout.summary} 에너지 고갈과 정서적 소진, 회복 가능성 영역별 결과를 확인해보세요.`,path:`/result/${slug}`,keywords:["번아웃 테스트","번아웃 자가진단",burnout.name]});
   const consumer=getConsumerResultProfile(slug);
   if(consumer)return createMetadata({title:`${consumer.name} | 소비성향 테스트 결과`,description:`${consumer.summary}. 계획성, 충동성, 경험 선호와 미래 지향성 점수를 확인해보세요.`,path:`/result/${slug}`,keywords:["소비성향 테스트","소비 유형 테스트",consumer.name]});
+  const love=getLoveResultProfile(slug);
+  if(love)return createMetadata({title:`${love.name} | 연애 MBTI 테스트 결과`,description:`${love.summary}. 나의 연애 성향, 사랑의 언어와 잘 맞는 궁합 유형을 확인해보세요.`,path:`/result/${slug}`,keywords:["연애 MBTI 테스트","연애 성향 테스트",love.name]});
   const kkondae = getKkondaeResultProfile(slug);
   if (kkondae) return createMetadata({ title:`${kkondae.name} | 꼰대력 테스트 결과`, description:`${kkondae.summary} 나의 직장 꼰대력 점수와 소통 성향을 확인해보세요.`, path:`/result/${slug}`, keywords:["꼰대력 테스트",kkondae.name,"직장인 테스트"] });
   const marriage = getMarriageResultProfile(slug);
@@ -72,6 +77,14 @@ export default async function ResultPage({ params, searchParams }: Props) {
     const calculated=consumerAnswers?calculateConsumerResult(consumerAnswers):null;
     if(calculated&&calculated.profile.slug!==slug)redirect(`/result/${calculated.profile.slug}?answers=${rawAnswers}`);
     return <ConsumerStyleResult profile={calculated?.profile??consumerProfile} fitScore={calculated?.fitScore??86} areaScores={calculated?.areaScores??consumerProfile.typicalScores} secondary={calculated?.secondary} />;
+  }
+  const loveProfile=getLoveResultProfile(slug);
+  if(loveProfile){
+    const loveAnswers=parseLoveAnswers(rawAnswers);
+    const calculated=loveAnswers?calculateLoveResult(loveAnswers):null;
+    if(calculated&&calculated.profile.slug!==slug)redirect(`/result/${calculated.profile.slug}?answers=${rawAnswers}`);
+    const fallbackLanguages={words:45,time:45,gifts:45,acts:45,touch:45,[loveProfile.typicalLanguage]:loveProfile.typicalScores.loveLanguage};
+    return <LoveMbtiResult profile={calculated?.profile??loveProfile} secondary={calculated?.secondary} fitScore={calculated?.fitScore??86} areaScores={calculated?.areaScores??loveProfile.typicalScores} languageScores={calculated?.languageScores??fallbackLanguages} primaryLoveLanguage={calculated?.primaryLoveLanguage??loveProfile.typicalLanguage} />;
   }
   const kkondaeProfile = getKkondaeResultProfile(slug);
   if (kkondaeProfile) {

@@ -1,0 +1,152 @@
+import type { FortuneCard, FortuneGrade, FortuneResult, TestDefinition } from "@/lib/types";
+
+export const fortuneCards: FortuneCard[] = [
+  { id: "start", name: "시작의 카드", description: "작은 출발과 첫 선택에 힘을 주는 카드", icon: "🌅", symbol: "✦" },
+  { id: "chance", name: "기회의 카드", description: "예상 밖의 제안과 열린 문을 비추는 카드", icon: "✨", symbol: "◇" },
+  { id: "rest", name: "휴식의 카드", description: "마음을 고르고 리듬을 되찾게 하는 카드", icon: "🌙", symbol: "☾" },
+  { id: "love", name: "사랑의 카드", description: "다정한 표현과 관계의 온도를 올리는 카드", icon: "💗", symbol: "♡" },
+  { id: "focus", name: "집중의 카드", description: "흩어진 생각을 하나로 모아주는 카드", icon: "🎯", symbol: "✧" },
+  { id: "luck", name: "행운의 카드", description: "가볍게 움직일수록 좋은 흐름을 만나는 카드", icon: "🍀", symbol: "✺" },
+  { id: "change", name: "변화의 카드", description: "익숙한 방식을 조금 바꿔보게 하는 카드", icon: "🦋", symbol: "✹" },
+  { id: "growth", name: "성장의 카드", description: "배움과 꾸준함이 하루를 키워주는 카드", icon: "🌱", symbol: "❋" },
+  { id: "balance", name: "균형의 카드", description: "일과 마음의 속도를 맞춰주는 카드", icon: "⚖️", symbol: "✶" },
+  { id: "courage", name: "용기의 카드", description: "미뤄둔 말과 행동을 부드럽게 꺼내는 카드", icon: "🔥", symbol: "✷" },
+];
+
+const totals = [
+  "오늘은 작은 시도가 좋은 흐름으로 이어질 수 있는 날입니다. 부담을 크게 잡기보다 가볍게 시작하면 예상보다 편안한 결과를 만날 수 있어요.",
+  "평소 지나쳤던 선택지에서 힌트가 보일 수 있습니다. 익숙한 루틴 안에 작은 변화를 섞어보면 하루의 온도가 달라집니다.",
+  "무리해서 속도를 내기보다 리듬을 정돈할수록 좋은 하루입니다. 해야 할 일을 세 가지 정도로 줄이면 집중력이 살아납니다.",
+  "사람들과의 짧은 대화 속에서 기분 좋은 단서가 생길 수 있습니다. 먼저 다정하게 말하면 분위기가 부드러워져요.",
+  "오늘은 정리와 마무리에 강한 날입니다. 미뤄둔 메시지, 작은 할 일, 책상 위 물건 하나를 정리하는 것만으로도 흐름이 좋아집니다.",
+  "새로운 정보가 기분 좋은 방향을 열어줄 수 있습니다. 검색, 메모, 짧은 상담처럼 작은 탐색을 해보기에 좋아요.",
+  "자신을 다그치기보다 충분히 숨을 고르면 운이 따라오는 날입니다. 쉬는 시간 하나를 제대로 챙기는 것이 오늘의 포인트입니다.",
+  "선택을 미루던 일이 있다면 너무 오래 끌지 않아도 괜찮습니다. 완벽한 답보다 지금 가능한 한 걸음이 더 유리합니다.",
+  "오늘의 행운은 반복 속에 숨어 있습니다. 평소 하던 일을 조금 더 정성스럽게 해보면 만족스러운 반응이 돌아올 수 있어요.",
+  "가벼운 호기심이 하루를 밝게 만듭니다. 새로운 메뉴, 새로운 길, 새로운 표현처럼 작은 새로움에 마음을 열어보세요.",
+  "기분이 흔들릴 때는 기준을 단순하게 잡는 것이 좋습니다. 오늘 꼭 필요한 것과 나중에 해도 되는 것을 나눠보세요.",
+  "조용하지만 은근히 운이 쌓이는 날입니다. 크게 드러나는 성과보다 마음이 편해지는 선택을 해보면 좋습니다.",
+];
+
+const moneyFortunes = [
+  "필요한 지출과 갖고 싶은 지출을 나누면 만족도가 높아집니다.",
+  "작은 할인보다 오래 쓸 수 있는 선택이 더 기분 좋게 남을 수 있어요.",
+  "충동 결제 전 장바구니에 10분만 담아두면 후회가 줄어듭니다.",
+  "점심값이나 커피값처럼 작은 금액을 살피면 하루 예산이 안정됩니다.",
+  "선물이나 모임 비용은 미리 한도를 정하면 마음이 편합니다.",
+  "오늘은 새로운 결제보다 기존 구독과 고정비를 확인하기 좋습니다.",
+  "필요한 물건을 미리 메모해두면 예상 밖의 만족을 얻을 수 있어요.",
+  "가격 비교를 한 번만 더 하면 꽤 괜찮은 선택을 할 가능성이 있습니다.",
+  "작은 저축이나 포인트 정리가 의외로 기분 좋은 성취감을 줍니다.",
+  "기분 전환 소비는 작고 확실한 것으로 고르면 만족도가 높습니다.",
+];
+
+const loveFortunes = [
+  "솔직하지만 부드러운 표현이 관계를 더 편안하게 만들어줍니다.",
+  "먼저 안부를 묻는 작은 행동이 좋은 분위기를 열 수 있어요.",
+  "상대의 말을 끝까지 들어주는 태도가 오늘의 매력 포인트입니다.",
+  "가벼운 칭찬 한마디가 생각보다 오래 남을 수 있습니다.",
+  "답을 서두르기보다 마음을 확인하는 대화가 잘 맞는 날입니다.",
+  "혼자만의 시간이 필요하다면 다정하게 설명하는 것이 좋습니다.",
+  "약속을 잡기 좋은 흐름입니다. 부담 없는 제안부터 해보세요.",
+  "감정이 앞설 때는 메시지를 한 번 읽고 보내면 더 부드럽습니다.",
+  "새로운 만남에는 편안한 웃음이 좋은 첫인상을 남깁니다.",
+  "오래된 관계에는 익숙한 고마움을 다시 표현해보세요.",
+];
+
+const workFortunes = [
+  "중요한 일은 하루 초반에 배치하면 집중력이 더 잘 살아납니다.",
+  "짧은 체크리스트가 오늘의 실수를 줄이고 속도를 높여줍니다.",
+  "혼자 끙끙대기보다 한 번 질문하면 생각보다 빨리 풀릴 수 있어요.",
+  "자료 정리, 메모, 회고처럼 구조를 잡는 일이 잘 맞는 날입니다.",
+  "새로운 아이디어는 바로 실행보다 간단한 초안으로 남겨두세요.",
+  "반복 업무도 순서를 바꾸면 덜 지루하게 마무리할 수 있습니다.",
+  "작은 마감 하나를 끝내면 다음 일의 부담이 눈에 띄게 줄어듭니다.",
+  "의견을 낼 때는 결론을 먼저 말하면 전달력이 좋아집니다.",
+  "오늘은 속도보다 정확한 확인이 더 큰 신뢰로 이어질 수 있어요.",
+  "공부나 업무 사이에 짧은 휴식을 넣으면 후반 집중이 안정됩니다.",
+];
+
+const cautions = [
+  "감정적으로 바로 반응하기보다 한 번 더 생각하고 말하기",
+  "한꺼번에 너무 많은 일을 시작하지 않기",
+  "괜찮은 척하기보다 필요한 휴식을 작게라도 챙기기",
+  "상대의 말투보다 의도를 먼저 확인하기",
+  "작은 지연에 하루 전체를 빼앗기지 않기",
+  "완벽하게 하려다 시작을 늦추지 않기",
+  "배고픔이나 피곤함을 중요한 판단과 섞지 않기",
+  "확인하지 않은 추측으로 결론 내리지 않기",
+  "기분 전환을 위해 너무 큰 소비를 하지 않기",
+  "중요한 약속과 시간을 다시 한 번 확인하기",
+];
+
+const colors = ["라벤더 블루", "크림 옐로", "민트 그린", "코랄 핑크", "스카이 블루", "소프트 퍼플", "바닐라 화이트", "피치 오렌지", "세이지 그린", "로즈 베이지", "라일락", "네이비", "샴페인 골드", "애플 그린", "모카 브라운"];
+const items = ["작은 노트", "따뜻한 차", "흰색 이어폰", "향 좋은 핸드크림", "동그란 키링", "편한 운동화", "투명 텀블러", "파란 펜", "부드러운 담요", "민트 캔디", "깔끔한 가방", "짧은 플레이리스트", "작은 꽃", "스티커", "책갈피"];
+const messages = [
+  "작은 선택이 오늘의 분위기를 바꿉니다.",
+  "가볍게 움직이면 운도 따라 움직입니다.",
+  "오늘의 나는 충분히 잘 해내고 있습니다.",
+  "천천히 해도 방향만 맞으면 괜찮습니다.",
+  "다정함은 가장 안전한 행운입니다.",
+  "시작은 작게, 기분은 크게 가져가세요.",
+  "내 리듬을 지키는 것이 오늘의 기술입니다.",
+  "좋은 하루는 종종 작은 정리에서 시작됩니다.",
+  "지금 필요한 건 완벽함보다 부드러운 실행입니다.",
+  "오늘의 여백이 내일의 에너지가 됩니다.",
+];
+
+const gradeOf = (score: number): FortuneGrade => {
+  if (score >= 91) return "매우 좋음";
+  if (score >= 82) return "좋음";
+  if (score >= 74) return "은은한 행운";
+  return "차분한 상승";
+};
+
+export const FORTUNE_RESULT_COUNT = 360;
+
+export const fortuneResults: FortuneResult[] = Array.from({ length: FORTUNE_RESULT_COUNT }, (_, index) => {
+  const card = fortuneCards[index % fortuneCards.length];
+  const variant = Math.floor(index / fortuneCards.length);
+  const score = 68 + ((index * 17 + variant * 5) % 31);
+  return {
+    id: `fortune-${index + 1}`,
+    cardId: card.id,
+    grade: gradeOf(score),
+    score,
+    total: `${card.name}가 전하는 흐름입니다. ${totals[variant % totals.length]}`,
+    money: moneyFortunes[(index + variant) % moneyFortunes.length],
+    love: loveFortunes[(index * 2 + variant) % loveFortunes.length],
+    work: workFortunes[(index * 3 + variant) % workFortunes.length],
+    caution: cautions[(index * 5 + variant) % cautions.length],
+    luckyColor: colors[(index + variant * 2) % colors.length],
+    luckyNumber: ((index * 7 + variant) % 9) + 1,
+    luckyItem: items[(index * 4 + variant) % items.length],
+    message: messages[(index * 6 + variant) % messages.length],
+  };
+});
+
+if (fortuneResults.length < 300) {
+  throw new Error("오늘의 운세 결과 데이터는 최소 300개 이상이어야 합니다.");
+}
+
+export const dailyFortuneTest: TestDefinition = {
+  type: "fortune",
+  slug: "daily-fortune",
+  href: "/fortune/today",
+  title: "오늘의 운세 카드 뽑기",
+  shortTitle: "오늘의 운세",
+  cardTitle: "오늘의 운세 카드 뽑기",
+  description: "카드 한 장을 선택하면 오늘의 운세, 행운 점수, 행운 아이템을 확인할 수 있습니다.",
+  category: "운세",
+  duration: "약 1분",
+  icon: "🌙✨",
+  participants: 2147,
+  accent: "purple",
+  isNew: true,
+  itemCount: 5,
+  questions: [],
+  resultSlugs: [],
+  seoTitle: "오늘의 운세 카드 뽑기 | 무료 오늘 운세 보기",
+  seoDescription: "카드 한 장을 뽑아 오늘의 운세, 행운 점수, 금전운, 연애운, 일/학업운을 확인해보세요.",
+  keywords: ["오늘의 운세", "무료 운세", "운세 카드", "오늘 운세 보기", "카드 뽑기 운세"],
+};

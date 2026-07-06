@@ -16,10 +16,12 @@ const accentClasses = {
 
 export function TestCard({ test, rank }: { test: TestDefinition; rank?: number }) {
   const reduceMotion = useReducedMotion();
+  const href = test.href ?? `/tests/${test.slug}`;
+  const countLabel = test.type === "worldcup" ? `${test.itemCount}강` : test.type === "fortune" ? `${test.itemCount ?? 5}장 카드` : `${test.itemCount ?? test.questions.length}문항`;
   return (
     <motion.article whileHover={reduceMotion ? undefined : { y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 320, damping: 24 }} className="group relative overflow-hidden rounded-[1.75rem] border border-white bg-white shadow-card transition-shadow duration-300 hover:shadow-2xl hover:shadow-slate-300/50">
       {rank && <span className="absolute left-4 top-4 z-10 grid size-10 place-items-center rounded-2xl border border-white/80 bg-white/85 text-lg font-black shadow-md backdrop-blur" aria-label={`인기 ${rank}위`}>{["🥇","🥈","🥉"][rank-1] ?? rank}</span>}
-      <Link href={`/tests/${test.slug}`} className="block">
+      <Link href={href} className="block">
         <div className={`relative grid aspect-[4/3] place-items-center overflow-hidden bg-gradient-to-br ${accentClasses[test.accent]}`}>
           <div className="absolute -right-12 -top-12 size-44 rounded-full bg-white/55 blur-2xl" /><div className="absolute -bottom-16 -left-12 size-48 rounded-full bg-white/45 blur-3xl" />
           <span className="relative text-7xl drop-shadow-lg transition duration-500 group-hover:scale-110 group-hover:-rotate-3 sm:text-8xl" aria-hidden="true">{test.icon}</span>
@@ -32,7 +34,7 @@ export function TestCard({ test, rank }: { test: TestDefinition; rank?: number }
           </div>
           <h3 className="mt-4 text-xl font-black tracking-tight text-ink transition group-hover:text-primary">{test.cardTitle ?? test.title}</h3>
           <p className="mt-2 text-sm leading-6 text-slate-600">{test.description}</p>
-          <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-400"><span>{test.type === "worldcup" ? `${test.itemCount}강` : `${test.itemCount ?? test.questions.length}문항`}</span><span>참여자 {test.participants.toLocaleString("ko-KR")}명</span></div>
+          <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-400"><span>{countLabel}</span><span>참여자 {test.participants.toLocaleString("ko-KR")}명</span></div>
         </div>
       </Link>
     </motion.article>

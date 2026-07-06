@@ -41,8 +41,9 @@ export type ResultProfile = {
 };
 
 export type TestDefinition = {
-  type?: "quiz" | "worldcup" | "adaptive" | "likert";
+  type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune";
   slug: string;
+  href?: string;
   title: string;
   shortTitle: string;
   cardTitle?: string;
@@ -59,6 +60,44 @@ export type TestDefinition = {
   accent: "blue" | "orange" | "pink" | "purple" | "green" | "indigo" | "teal";
   isNew?: boolean;
   itemCount?: number;
+};
+
+export type FortuneCardId =
+  | "start"
+  | "chance"
+  | "rest"
+  | "love"
+  | "focus"
+  | "luck"
+  | "change"
+  | "growth"
+  | "balance"
+  | "courage";
+
+export type FortuneGrade = "매우 좋음" | "좋음" | "은은한 행운" | "차분한 상승";
+
+export type FortuneCard = {
+  id: FortuneCardId;
+  name: string;
+  description: string;
+  icon: string;
+  symbol: string;
+};
+
+export type FortuneResult = {
+  id: string;
+  cardId: FortuneCardId;
+  grade: FortuneGrade;
+  score: number;
+  total: string;
+  money: string;
+  love: string;
+  work: string;
+  caution: string;
+  luckyColor: string;
+  luckyNumber: number;
+  luckyItem: string;
+  message: string;
 };
 
 export type ScoredResult = ResultProfile & { score: number; percentage: number };
@@ -170,6 +209,30 @@ export type ConsumerResultProfile = {
   cautions:string[];
   recommendations:string[];
   typicalScores:ConsumerDomainScores;
+};
+
+export type LoveDomain = "stability" | "expression" | "leadership" | "independence" | "loveLanguage";
+export type LoveLanguage = "words" | "time" | "gifts" | "acts" | "touch";
+export type LoveQuestion = { id:string; text:string; domain:LoveDomain; reverse?:boolean; loveLanguage?:LoveLanguage };
+export type LoveResultSlug = "love-gentle-secure" | "love-passionate-direct" | "love-devoted-carer" | "love-free-independent" | "love-thrill-seeker" | "love-careful-observer" | "love-emotional-immersive" | "love-tsundere-avoidant";
+export type LoveDomainScores = Record<LoveDomain,number>;
+export type LoveLanguageScores = Record<LoveLanguage,number>;
+export type LoveResultProfile = {
+  slug:LoveResultSlug;
+  name:string;
+  icon:string;
+  summary:string;
+  description:string;
+  relationshipStyle:string;
+  traits:string[];
+  strengths:string[];
+  cautions:string[];
+  idealPartner:string;
+  relationshipNeed:string;
+  relationshipGift:string;
+  conflictPattern:string;
+  typicalScores:LoveDomainScores;
+  typicalLanguage:LoveLanguage;
 };
 
 export type BlogPost = {
