@@ -22,7 +22,7 @@ export const loverQuestions: LoverQuestion[] = [
     text: "친구가 갑자기 고민 상담을 한다면?",
     options: options("먼저 끝까지 들어준다", "함께 해결 방법을 정리해 본다"),
     weights: [
-      { care: 8, stability: 4, empathy: 0 as never },
+      { care: 8, stability: 4 },
       { responsibility: 6, conflict: 6, trust: 2 },
     ],
   },
@@ -449,7 +449,7 @@ export const loverResultProfiles: LoverResultProfile[] = [
   ),
 ];
 
-export function getLoverResultProfile(slug: LoverResultProfile["slug"]) {
+export function getLoverResultProfile(slug: string) {
   return loverResultProfiles.find((profile) => profile.slug === slug);
 }
 

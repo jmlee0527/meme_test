@@ -11,7 +11,7 @@ export function LoverScoreTestPage() {
     <LikertQuestionRunner
       title="나는 몇 점짜리 애인일까?"
       eyebrow="LOVER SCORE TEST"
-      questions={loverQuestions}
+      questions={loverQuestions.map(({ id, text }) => ({ id: String(id), text }))}
       tone="pink"
       onComplete={(answers) => {
         const { profile, overallScore } = calculateLoverResult(answers);
