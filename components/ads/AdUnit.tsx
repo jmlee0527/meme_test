@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { adsenseClientId } from "@/lib/adsense";
 
 declare global { interface Window { adsbygoogle?: Record<string, unknown>[] } }
 
@@ -16,7 +17,7 @@ export function AdUnit({ slot, format = "auto", className = "", label = "광고"
   return (
     <aside className={`my-8 overflow-hidden text-center ${className}`} aria-label={label}>
       <span className="mb-2 block text-[10px] tracking-widest text-slate-400">ADVERTISEMENT</span>
-      <ins className="adsbygoogle block" data-ad-client="ca-pub-7299086820204972" data-ad-slot={slot} data-ad-format={format} data-full-width-responsive="true" />
+      <ins className="adsbygoogle block" data-ad-client={adsenseClientId} data-ad-slot={slot} data-ad-format={format} data-full-width-responsive="true" />
     </aside>
   );
 }

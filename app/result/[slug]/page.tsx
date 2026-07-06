@@ -12,25 +12,35 @@ import { AnimalResult } from "@/components/test/AnimalResult";
 import { MarriageResult } from "@/components/test/MarriageResult";
 import { KkondaeResult } from "@/components/test/KkondaeResult";
 import { WorldcupResult } from "@/components/worldcup/WorldcupResult";
+import { BurnoutResult } from "@/components/test/BurnoutResult";
+import { ConsumerStyleResult } from "@/components/test/ConsumerStyleResult";
 import { getResultProfile, resultProfiles } from "@/data/tests";
 import { animalProfiles, getAnimalProfile } from "@/data/office-animals";
 import { getMarriageResultProfile, marriageResultProfiles } from "@/data/marriage-timing";
 import { getKkondaeResultProfile, kkondaeResultProfiles } from "@/data/kkondae-power";
 import { foodWorldcupItems, getFoodWorldcupItemByResult } from "@/data/food-worldcup";
+import { burnoutResultProfiles, getBurnoutResultProfile } from "@/data/burnout-risk";
+import { consumerResultProfiles, getConsumerResultProfile } from "@/data/consumer-style";
 import { calculateResults, parseAnswers } from "@/lib/test-engine";
 import { calculateOfficeAnimalResults, parseOfficeAnimalAnswers } from "@/lib/office-animal-engine";
 import { calculateMarriageResult, parseCurrentAge, parseMarriageAnswers } from "@/lib/marriage-engine";
 import { calculateKkondaeResult, parseKkondaeAnswers } from "@/lib/kkondae-engine";
 import { createMetadata } from "@/lib/site";
+import { calculateBurnoutResult, parseBurnoutAnswers } from "@/lib/burnout-engine";
+import { calculateConsumerResult, parseConsumerAnswers } from "@/lib/consumer-style-engine";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ answers?: string; age?: string }> };
 
-export function generateStaticParams() { return [...resultProfiles, ...animalProfiles, ...marriageResultProfiles, ...kkondaeResultProfiles, ...foodWorldcupItems.map((item)=>({slug:item.resultSlug}))].map(({ slug }) => ({ slug })); }
+export function generateStaticParams() { return [...resultProfiles, ...animalProfiles, ...marriageResultProfiles, ...kkondaeResultProfiles, ...burnoutResultProfiles, ...consumerResultProfiles, ...foodWorldcupItems.map((item)=>({slug:item.resultSlug}))].map(({ slug }) => ({ slug })); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const foodWinner = getFoodWorldcupItemByResult(slug);
   if (foodWinner) return createMetadata({ title:`${foodWinner.name} 우승 | 주말 배달음식 월드컵`, description:`주말 배달음식 월드컵 우승 메뉴는 ${foodWinner.name}! 배달 팁과 함께 먹기 좋은 메뉴를 확인하세요.`, path:`/result/${slug}`, keywords:["배달음식 월드컵",foodWinner.name,"오늘 뭐 먹지"] });
+  const burnout=getBurnoutResultProfile(slug);
+  if(burnout)return createMetadata({title:`${burnout.name} | 번아웃 위험도 테스트 결과`,description:`${burnout.summary} 에너지 고갈과 정서적 소진, 회복 가능성 영역별 결과를 확인해보세요.`,path:`/result/${slug}`,keywords:["번아웃 테스트","번아웃 자가진단",burnout.name]});
+  const consumer=getConsumerResultProfile(slug);
+  if(consumer)return createMetadata({title:`${consumer.name} | 소비성향 테스트 결과`,description:`${consumer.summary}. 계획성, 충동성, 경험 선호와 미래 지향성 점수를 확인해보세요.`,path:`/result/${slug}`,keywords:["소비성향 테스트","소비 유형 테스트",consumer.name]});
   const kkondae = getKkondaeResultProfile(slug);
   if (kkondae) return createMetadata({ title:`${kkondae.name} | 꼰대력 테스트 결과`, description:`${kkondae.summary} 나의 직장 꼰대력 점수와 소통 성향을 확인해보세요.`, path:`/result/${slug}`, keywords:["꼰대력 테스트",kkondae.name,"직장인 테스트"] });
   const marriage = getMarriageResultProfile(slug);
@@ -47,6 +57,22 @@ export default async function ResultPage({ params, searchParams }: Props) {
   const { answers: rawAnswers, age: rawAge } = await searchParams;
   const foodWinner = getFoodWorldcupItemByResult(slug);
   if (foodWinner) return <WorldcupResult item={foodWinner} />;
+  const burnoutProfile=getBurnoutResultProfile(slug);
+  if(burnoutProfile){
+    const burnoutAnswers=parseBurnoutAnswers(rawAnswers);
+    const calculated=burnoutAnswers?calculateBurnoutResult(burnoutAnswers):null;
+    if(calculated&&calculated.profile.slug!==slug)redirect(`/result/${calculated.profile.slug}?answers=${rawAnswers}`);
+    const fallbackScore=Math.round((burnoutProfile.minScore+burnoutProfile.maxScore)/2);
+    const fallbackAreas={energy:fallbackScore,emotional:fallbackScore,disengagement:fallbackScore,interpersonal:fallbackScore,recovery:100-fallbackScore};
+    return <BurnoutResult profile={calculated?.profile??burnoutProfile} riskScore={calculated?.riskScore??fallbackScore} areaScores={calculated?.areaScores??fallbackAreas} />;
+  }
+  const consumerProfile=getConsumerResultProfile(slug);
+  if(consumerProfile){
+    const consumerAnswers=parseConsumerAnswers(rawAnswers);
+    const calculated=consumerAnswers?calculateConsumerResult(consumerAnswers):null;
+    if(calculated&&calculated.profile.slug!==slug)redirect(`/result/${calculated.profile.slug}?answers=${rawAnswers}`);
+    return <ConsumerStyleResult profile={calculated?.profile??consumerProfile} fitScore={calculated?.fitScore??86} areaScores={calculated?.areaScores??consumerProfile.typicalScores} secondary={calculated?.secondary} />;
+  }
   const kkondaeProfile = getKkondaeResultProfile(slug);
   if (kkondaeProfile) {
     const kkondaeAnswers = parseKkondaeAnswers(rawAnswers);

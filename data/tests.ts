@@ -3,6 +3,8 @@ import { officeAnimalTest } from "@/data/office-animals";
 import { marriageTimingTest } from "@/data/marriage-timing";
 import { kkondaePowerTest } from "@/data/kkondae-power";
 import { weekendFoodWorldcup } from "@/data/food-worldcup";
+import { burnoutRiskTest } from "@/data/burnout-risk";
+import { consumerStyleTest } from "@/data/consumer-style";
 
 export const questions = [
   "나는 초기 자본이 거의 없어도 시작할 수 있는 부업을 선호한다.",
@@ -80,7 +82,7 @@ export const tests: TestDefinition[] = [{
   accent: "blue",
   questions,
   resultSlugs: resultProfiles.map((item) => item.slug),
-}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup];
+}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

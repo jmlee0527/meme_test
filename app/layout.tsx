@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { adsenseClientId } from "@/lib/adsense";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -15,7 +16,6 @@ export const metadata: Metadata = {
   authors: [{ name: `${siteConfig.name} 편집팀`, url: siteConfig.url }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website", locale: "ko_KR", url: siteConfig.url, siteName: siteConfig.name,
     title: `${siteConfig.name} | 나를 알아보는 종합 테스트 플랫폼`, description: siteConfig.description,
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Script
           id="adsense-script"
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7299086820204972"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
@@ -43,6 +43,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           "@context": "https://schema.org", "@type": "WebSite", name: siteConfig.name,
           alternateName: siteConfig.englishName, url: siteConfig.url,
           description: siteConfig.description, inLanguage: "ko-KR",
+        }} />
+        <JsonLd data={{
+          "@context":"https://schema.org", "@type":"Organization", "@id":absoluteUrl("/#organization"),
+          name:siteConfig.name, alternateName:siteConfig.englishName, url:siteConfig.url,
+          logo:absoluteUrl("/icon.svg"), description:siteConfig.description,
         }} />
         <Header />
         <main>{children}</main>

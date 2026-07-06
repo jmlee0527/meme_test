@@ -21,7 +21,7 @@ export function Breadcrumbs({ items }: { items: Item[] }) {
         "@type": "BreadcrumbList",
         itemListElement: allItems.map((item, index) => ({
           "@type": "ListItem", position: index + 1, name: item.name,
-          item: absoluteUrl(item.href ?? ""),
+          ...(item.href ? { item: absoluteUrl(item.href) } : {}),
         })),
       }} />
     </>

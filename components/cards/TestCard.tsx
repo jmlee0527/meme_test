@@ -32,7 +32,7 @@ export function TestCard({ test, rank }: { test: TestDefinition; rank?: number }
           </div>
           <h3 className="mt-4 text-xl font-black tracking-tight text-ink transition group-hover:text-primary">{test.cardTitle ?? test.title}</h3>
           <p className="mt-2 text-sm leading-6 text-slate-600">{test.description}</p>
-          <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-400"><span>{test.type === "worldcup" ? `${test.itemCount}강` : `${test.questions.length}문항`}</span><span>참여자 {test.participants.toLocaleString("ko-KR")}명</span></div>
+          <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-400"><span>{test.type === "worldcup" ? `${test.itemCount}강` : `${test.itemCount ?? test.questions.length}문항`}</span><span>참여자 {test.participants.toLocaleString("ko-KR")}명</span></div>
         </div>
       </Link>
     </motion.article>

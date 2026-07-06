@@ -41,7 +41,7 @@ export type ResultProfile = {
 };
 
 export type TestDefinition = {
-  type?: "quiz" | "worldcup";
+  type?: "quiz" | "worldcup" | "adaptive" | "likert";
   slug: string;
   title: string;
   shortTitle: string;
@@ -138,6 +138,38 @@ export type FoodWorldcupItem = {
   deliveryTip: string;
   sides: string[];
   reasons: string[];
+};
+
+export type BurnoutDomain = "energy" | "emotional" | "disengagement" | "interpersonal" | "recovery";
+export type BurnoutBranch = "energy" | "disengagement" | "interpersonal" | "recovery";
+export type BurnoutQuestion = { id:string; text:string; domain:BurnoutDomain; reverse?:boolean };
+export type BurnoutResultSlug = "burnout-stable" | "burnout-fatigue" | "burnout-caution" | "burnout-high-risk" | "burnout-intensive-recovery";
+export type BurnoutResultProfile = {
+  slug:BurnoutResultSlug;
+  name:string;
+  icon:string;
+  minScore:number;
+  maxScore:number;
+  summary:string;
+  description:string;
+  baseGuides:string[];
+};
+export type BurnoutDomainScores = Record<BurnoutDomain, number>;
+
+export type ConsumerDomain = "planning" | "impulsivity" | "experience" | "future" | "quality";
+export type ConsumerQuestion = { id:string; text:string; domain:ConsumerDomain; reverse?:boolean };
+export type ConsumerResultSlug = "consumer-investment-ready" | "consumer-value-explorer" | "consumer-experience-first" | "consumer-premium-seeker" | "consumer-flex" | "consumer-impulsive";
+export type ConsumerDomainScores = Record<ConsumerDomain,number>;
+export type ConsumerResultProfile = {
+  slug:ConsumerResultSlug;
+  name:string;
+  icon:string;
+  summary:string;
+  description:string;
+  strengths:string[];
+  cautions:string[];
+  recommendations:string[];
+  typicalScores:ConsumerDomainScores;
 };
 
 export type BlogPost = {
