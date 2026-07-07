@@ -8,6 +8,7 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 import { adsenseClientId } from "@/lib/adsense";
 
 const googleTagManagerId = "GTM-N355VCGN";
+const googleAnalyticsId = "G-QPDN3ZJ32G";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -64,6 +65,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        <Script
+          id="google-analytics"
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-config" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${googleAnalyticsId}');`}
+        </Script>
         <JsonLd data={{
           "@context": "https://schema.org", "@type": "WebSite", name: siteConfig.name,
           alternateName: siteConfig.englishName, url: siteConfig.url,
