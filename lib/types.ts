@@ -329,6 +329,32 @@ export type LoverResultProfile = {
   typicalScores:LoverScores;
 };
 
+export type ColorPersonalityTrait = "extraversion" | "planning" | "emotion" | "empathy" | "challenge" | "stability" | "creativity" | "independence" | "realism" | "intuition";
+export type ColorPersonalityScores = Record<ColorPersonalityTrait, number>;
+export type ColorPersonalitySlug = "red" | "blue" | "green" | "yellow" | "purple" | "pink" | "orange" | "black" | "white" | "brown" | "turquoise" | "navy" | "gold" | "silver" | "lavender" | "rainbow";
+export type ColorPersonalityQuestion = { id:number; text:string; options:TestOption[]; weights:[Partial<Record<ColorPersonalitySlug, number>>, Partial<Record<ColorPersonalitySlug, number>>] };
+export type ColorPersonalityProfile = {
+  slug:ColorPersonalitySlug;
+  colorName:string;
+  englishName:string;
+  typeName:string;
+  emoji:string;
+  hex:string;
+  gradient:string;
+  summary:string;
+  description:string;
+  strengths:string[];
+  cautions:string[];
+  relationshipStyle:string;
+  loveStyle:string;
+  stressStyle:string;
+  careerStyle:string;
+  goodMatches:ColorPersonalitySlug[];
+  difficultMatches:ColorPersonalitySlug[];
+  shareText:string;
+  traitScores:ColorPersonalityScores;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;

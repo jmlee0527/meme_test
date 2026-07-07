@@ -9,6 +9,7 @@ import { calculateMarriageResult } from "@/lib/marriage-engine";
 import { calculateKkondaeResult, serializeKkondaeAnswers } from "@/lib/kkondae-engine";
 import { calculateJoseonDestinyResult, serializeJoseonAnswers } from "@/lib/joseon-destiny-engine";
 import { calculatePersonalityCountryResult, serializeCountryAnswers } from "@/lib/personality-country-engine";
+import { calculateColorPersonalityResult, serializeColorPersonalityAnswers } from "@/lib/color-personality-engine";
 import { calculateLoverResult, serializeLoverAnswers } from "@/lib/lover-score-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
@@ -20,7 +21,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
   const progress = ((index + 1) / test.questions.length) * 100;
   const question = test.questions[index];
   const isMultipleChoice = Boolean(question.options?.length);
-  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test"].includes(test.slug);
+  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test"].includes(test.slug);
 
   const select = (answer: boolean | number) => {
     const next = [...answers];
@@ -56,6 +57,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculatePersonalityCountryResult(completeAnswers);
       setLoading(true);
       router.push(`/personality-country-test/result/${result.profile.slug}?answers=${serializeCountryAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "color-personality-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateColorPersonalityResult(completeAnswers);
+      setLoading(true);
+      router.push(`/color-personality-test/${result.primary.slug}?answers=${serializeColorPersonalityAnswers(completeAnswers)}`);
       return;
     }
     if (test.slug === "lover-score-test") {
