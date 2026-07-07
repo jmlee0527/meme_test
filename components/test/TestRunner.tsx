@@ -12,6 +12,7 @@ import { calculatePersonalityCountryResult, serializeCountryAnswers } from "@/li
 import { calculateColorPersonalityResult, serializeColorPersonalityAnswers } from "@/lib/color-personality-engine";
 import { calculateEnneagramResult, serializeEnneagramAnswers } from "@/lib/enneagram-engine";
 import { calculateLoverResult, serializeLoverAnswers } from "@/lib/lover-score-engine";
+import { calculateEqScores, serializeEqAnswers } from "@/lib/eq-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -85,6 +86,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       );
       return;
     }
+    if (test.slug === "eq-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateEqScores(completeAnswers);
+      setLoading(true);
+      router.push(`/eq-test/result/${result.profile.slug}?answers=${serializeEqAnswers(completeAnswers)}`);
+      return;
+    }
     const completeAnswers = answers as boolean[];
     const top = test.slug === "marriage-timing-test"
       ? calculateMarriageResult(completeAnswers).profile
@@ -130,7 +138,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       <div className="mt-6 flex items-center justify-between gap-3">
         <button type="button" onClick={() => setIndex((current) => Math.max(0, current - 1))} disabled={index === 0 || loading} className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40">이전</button>
         {(!shouldAutoAdvance || index === test.questions.length - 1) ? <button type="button" onClick={moveNext} disabled={selected === null || loading} className="min-w-32 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none">
-          {loading ? test.slug === "enneagram" ? "내면의 성격 유형을 분석하는 중…" : "분석 중…" : index === test.questions.length - 1 ? "결과 보기" : "다음"}
+          {loading ? test.slug === "enneagram" ? "내면의 성격 유형을 분석하는 중…" : test.slug === "eq-test" ? "감정 패턴을 분석하는 중…" : "분석 중…" : index === test.questions.length - 1 ? "결과 보기" : "다음"}
         </button> : <span className="text-xs font-bold text-slate-400">선택하면 자동으로 이동해요</span>}
       </div>
     </section>

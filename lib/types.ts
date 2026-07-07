@@ -378,6 +378,24 @@ export type EnneagramProfile = {
   shareText:string;
 };
 
+export type EqDomain = "selfAwareness" | "selfRegulation" | "empathy" | "socialSkills" | "resilience";
+export type EqDomainScores = Record<EqDomain, number>;
+export type EqQuestion = { id:number; text:string; domain:EqDomain; options:TestOption[] };
+export type EqResultSlug = "eq-master" | "eq-empathy-leader" | "eq-balanced-realist" | "eq-growth" | "eq-potential";
+export type EqResultProfile = {
+  slug:EqResultSlug;
+  name:string;
+  icon:string;
+  minPercent:number;
+  maxPercent:number;
+  summary:string;
+  description:string;
+  traits:string[];
+  strengths:string[];
+  growthTips:string[];
+  recommendedActions:string[];
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
