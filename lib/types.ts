@@ -355,6 +355,29 @@ export type ColorPersonalityProfile = {
   traitScores:ColorPersonalityScores;
 };
 
+export type EnneagramTypeKey = "type1" | "type2" | "type3" | "type4" | "type5" | "type6" | "type7" | "type8" | "type9";
+export type EnneagramScores = Record<EnneagramTypeKey, number>;
+export type EnneagramResultSlug = "type-1" | "type-2" | "type-3" | "type-4" | "type-5" | "type-6" | "type-7" | "type-8" | "type-9";
+export type EnneagramQuestion = { id:number; text:string; options:TestOption[]; weights:Partial<EnneagramScores>[] };
+export type EnneagramProfile = {
+  slug:EnneagramResultSlug;
+  typeKey:EnneagramTypeKey;
+  number:number;
+  name:string;
+  icon:string;
+  keywords:string[];
+  desire:string;
+  fear:string;
+  summary:string;
+  description:string;
+  strengths:string[];
+  caution:string;
+  relationshipStyle:string;
+  goodMatches:EnneagramResultSlug[];
+  growthTip:string;
+  shareText:string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;

@@ -10,6 +10,7 @@ import { calculateKkondaeResult, serializeKkondaeAnswers } from "@/lib/kkondae-e
 import { calculateJoseonDestinyResult, serializeJoseonAnswers } from "@/lib/joseon-destiny-engine";
 import { calculatePersonalityCountryResult, serializeCountryAnswers } from "@/lib/personality-country-engine";
 import { calculateColorPersonalityResult, serializeColorPersonalityAnswers } from "@/lib/color-personality-engine";
+import { calculateEnneagramResult, serializeEnneagramAnswers } from "@/lib/enneagram-engine";
 import { calculateLoverResult, serializeLoverAnswers } from "@/lib/lover-score-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
@@ -64,6 +65,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateColorPersonalityResult(completeAnswers);
       setLoading(true);
       router.push(`/color-personality-test/${result.primary.slug}?answers=${serializeColorPersonalityAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "enneagram") {
+      const completeAnswers = answers as number[];
+      const result = calculateEnneagramResult(completeAnswers);
+      setLoading(true);
+      router.push(`/enneagram/${result.profile.slug}?answers=${serializeEnneagramAnswers(completeAnswers)}`);
       return;
     }
     if (test.slug === "lover-score-test") {
@@ -122,7 +130,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       <div className="mt-6 flex items-center justify-between gap-3">
         <button type="button" onClick={() => setIndex((current) => Math.max(0, current - 1))} disabled={index === 0 || loading} className="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-600 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40">이전</button>
         {(!shouldAutoAdvance || index === test.questions.length - 1) ? <button type="button" onClick={moveNext} disabled={selected === null || loading} className="min-w-32 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none">
-          {loading ? "분석 중…" : index === test.questions.length - 1 ? "결과 보기" : "다음"}
+          {loading ? test.slug === "enneagram" ? "내면의 성격 유형을 분석하는 중…" : "분석 중…" : index === test.questions.length - 1 ? "결과 보기" : "다음"}
         </button> : <span className="text-xs font-bold text-slate-400">선택하면 자동으로 이동해요</span>}
       </div>
     </section>

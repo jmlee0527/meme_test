@@ -12,6 +12,7 @@ import { attachmentStyleTest } from "@/data/attachment-style";
 import { joseonDestinyTest } from "@/data/joseon-destiny";
 import { personalityCountryTest } from "@/data/personality-country";
 import { colorPersonalityTest } from "@/data/color-personality";
+import { enneagramTest } from "@/data/enneagram";
 
 export const questions = [
   "나는 초기 자본이 거의 없어도 시작할 수 있는 부업을 선호한다.",
@@ -89,7 +90,7 @@ export const tests: TestDefinition[] = [{
   accent: "blue",
   questions,
   resultSlugs: resultProfiles.map((item) => item.slug),
-}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, dailyFortuneTest];
+}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

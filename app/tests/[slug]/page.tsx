@@ -50,6 +50,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isJoseonDestiny = test.slug === "joseon-destiny-test";
   const isPersonalityCountry = test.slug === "personality-country-test";
   const isColorPersonality = test.slug === "color-personality-test";
+  const isEnneagram = test.slug === "enneagram";
   const currentAge = isMarriageTiming ? parseCurrentAge(age) : null;
 
   if (isBurnoutRisk && start === "1") return <BurnoutTestPage />;
@@ -59,7 +60,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (start === "1" && (!isMarriageTiming || currentAge)) return <div className="container-page py-8 sm:py-12"><TestRunner test={test} currentAge={currentAge ?? undefined} /></div>;
 
   const itemCount=test.itemCount??test.questions.length;
-  const answerType=test.type==="likert"||isBurnoutRisk?"5점 척도":isKkondaePower?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality?"2지선다":"O/X";
+  const answerType=test.type==="likert"||isBurnoutRisk?"5점 척도":isKkondaePower||isEnneagram?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality?"2지선다":"O/X";
 
   return (
     <div className="container-page py-10 sm:py-14">
@@ -75,7 +76,8 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
           {!isMarriageTiming && <p className="mt-3 text-center text-xs text-slate-400">응답은 서버에 저장되지 않습니다.</p>}
         </div>
       </section>
-      <section className="mx-auto mt-12 max-w-3xl rounded-3xl bg-white p-6 sm:p-8"><h2 className="text-xl font-extrabold text-ink">이 테스트로 알 수 있어요</h2><p className="mt-3 leading-7 text-slate-600">{isColorPersonality ? "외향성, 계획성, 감정 표현, 공감 능력, 도전 성향, 안정 추구, 창의성, 독립성, 현실성, 직관성 등 10가지 성향을 바탕으로 나의 성격 컬러를 분석합니다. 12개의 일상 상황형 질문에 답하면 대표 컬러와 보조 컬러가 함께 계산되며, 성격 특징뿐 아니라 인간관계, 연애 스타일, 스트레스 반응, 어울리는 직업 성향까지 확인할 수 있습니다." : isPersonalityCountry ? "개방성, 질서·계획성, 사교 에너지, 자율성, 자연 선호, 성장 욕구, 문화 감성, 안정감 8가지 성향을 바탕으로 나와 잘 맞는 해외 국가의 라이프스타일 이미지를 분석합니다. 특정 국가를 단정적으로 설명하기보다, 당신의 생활 방식과 가치관이 어떤 분위기와 잘 맞는지 여행·생활 키워드 중심으로 안내합니다." : isJoseonDestiny ? "리더십, 지략, 창의성, 모험심, 공감력, 실용성 6가지 성향을 바탕으로 조선시대에서 어떤 운명을 살았을지 분석합니다. 역사적 고증보다 재미와 공유성을 우선한 테스트이며, 왕부터 전설의 책사까지 32가지 결과 중 가장 가까운 조선 캐릭터를 확인할 수 있습니다." : isAttachmentStyle ? "가까운 관계에서 반복되는 애착 불안과 애착 회피 경향을 2축으로 살펴봅니다. 상대의 반응 변화에 얼마나 민감한지, 친밀감과 감정 공유를 얼마나 편안하게 느끼는지에 따라 안정형, 불안형, 회피형, 불안회피형 중 현재 가장 가까운 관계 패턴을 안내합니다." : isLoveMbti ? "애착 안정성, 감정 표현력, 관계 주도성, 독립성과 애정 표현 선호를 함께 분석합니다. 8개 유형 가운데 가장 가까운 대표·보조 성향과 유형별 궁합을 확인할 수 있으며, 결과는 관계의 성공을 단정하는 진단이 아닌 소통 패턴을 돌아보기 위한 정보입니다." : isLoverScore ? "배려심, 책임감, 표현력, 안정감, 갈등해결력, 독립성, 유머감각, 신뢰도 8가지 지표를 바탕으로 나의 애인 점수와 연애 유형을 분석합니다. 특정 답이 ‘정답’이 되지 않도록, 일상에서 자연스럽게 선택하는 연애 패턴을 중심으로 결과를 계산합니다." : isConsumerStyle ? "계획성, 충동성, 경험 선호, 미래 지향성과 품질 추구를 함께 분석합니다. 단순히 많이 쓰거나 적게 쓰는지를 판단하지 않고, 무엇을 중요하게 여기며 어떤 상황에서 소비 결정이 달라지는지 살펴봅니다." : isBurnoutRisk ? "에너지 고갈, 정서적 소진, 업무·학업 거리두기, 대인관계 피로와 회복 가능성을 함께 살펴봅니다. 초반 응답에 맞춰 후속 질문이 달라지며, 결과는 의료 진단이 아닌 현재 상태를 돌아보기 위한 자가 점검 정보입니다." : isKkondaePower ? "업무 방식, 회식과 퇴근에 대한 생각, 피드백 방식, 변화 수용성과 세대 감수성을 살펴 현재의 직장 소통 성향을 점검합니다. 가볍게 웃으면서도 좋은 선배와 동료가 되는 방법을 확인할 수 있습니다." : isMarriageTiming ? "결혼 의지, 현재 관계, 경제적 준비, 커리어 우선순위와 독립성을 함께 살펴 지금 성향에서 결혼 가능성이 자연스럽게 높아지는 시기를 안내합니다. 결과는 예언이 아닌 현재 선택 패턴에 대한 참고 정보입니다." : isOfficeAnimal ? "업무 추진 방식, 정보 탐색, 협업과 갈등 대처, 정확성, 성과 욕구 등 실제 직장 행동을 기준으로 12지신 동물 유형과 비교합니다. 대표 유형과 함께 숨은 보조 성향도 확인할 수 있습니다." : "초기 자본, 선호 업무 방식, 콘텐츠 제작, 디지털 도구, 수익화 속도 등 12가지 기준을 바탕으로 20개 부업과의 적합도를 비교합니다. 대표 추천뿐 아니라 함께 고려할 만한 후보 3개도 확인할 수 있습니다."}</p></section>
+      <section className="mx-auto mt-12 max-w-3xl rounded-3xl bg-white p-6 sm:p-8"><h2 className="text-xl font-extrabold text-ink">이 테스트로 알 수 있어요</h2><p className="mt-3 leading-7 text-slate-600">{isEnneagram ? "애니어그램 테스트는 겉으로 보이는 행동보다 내면의 동기, 두려움, 욕구와 관계 방식을 중심으로 9가지 성격유형 중 나와 가장 가까운 유형을 찾아봅니다. 18개 문항을 통해 대표 유형과 상위 3개 유형 점수를 함께 확인할 수 있으며, 결과에서는 강점, 주의점, 잘 맞는 관계와 성장 방향을 안내합니다." : isColorPersonality ? "외향성, 계획성, 감정 표현, 공감 능력, 도전 성향, 안정 추구, 창의성, 독립성, 현실성, 직관성 등 10가지 성향을 바탕으로 나의 성격 컬러를 분석합니다. 12개의 일상 상황형 질문에 답하면 대표 컬러와 보조 컬러가 함께 계산되며, 성격 특징뿐 아니라 인간관계, 연애 스타일, 스트레스 반응, 어울리는 직업 성향까지 확인할 수 있습니다." : isPersonalityCountry ? "개방성, 질서·계획성, 사교 에너지, 자율성, 자연 선호, 성장 욕구, 문화 감성, 안정감 8가지 성향을 바탕으로 나와 잘 맞는 해외 국가의 라이프스타일 이미지를 분석합니다. 특정 국가를 단정적으로 설명하기보다, 당신의 생활 방식과 가치관이 어떤 분위기와 잘 맞는지 여행·생활 키워드 중심으로 안내합니다." : isJoseonDestiny ? "리더십, 지략, 창의성, 모험심, 공감력, 실용성 6가지 성향을 바탕으로 조선시대에서 어떤 운명을 살았을지 분석합니다. 역사적 고증보다 재미와 공유성을 우선한 테스트이며, 왕부터 전설의 책사까지 32가지 결과 중 가장 가까운 조선 캐릭터를 확인할 수 있습니다." : isAttachmentStyle ? "가까운 관계에서 반복되는 애착 불안과 애착 회피 경향을 2축으로 살펴봅니다. 상대의 반응 변화에 얼마나 민감한지, 친밀감과 감정 공유를 얼마나 편안하게 느끼는지에 따라 안정형, 불안형, 회피형, 불안회피형 중 현재 가장 가까운 관계 패턴을 안내합니다." : isLoveMbti ? "애착 안정성, 감정 표현력, 관계 주도성, 독립성과 애정 표현 선호를 함께 분석합니다. 8개 유형 가운데 가장 가까운 대표·보조 성향과 유형별 궁합을 확인할 수 있으며, 결과는 관계의 성공을 단정하는 진단이 아닌 소통 패턴을 돌아보기 위한 정보입니다." : isLoverScore ? "배려심, 책임감, 표현력, 안정감, 갈등해결력, 독립성, 유머감각, 신뢰도 8가지 지표를 바탕으로 나의 애인 점수와 연애 유형을 분석합니다. 특정 답이 ‘정답’이 되지 않도록, 일상에서 자연스럽게 선택하는 연애 패턴을 중심으로 결과를 계산합니다." : isConsumerStyle ? "계획성, 충동성, 경험 선호, 미래 지향성과 품질 추구를 함께 분석합니다. 단순히 많이 쓰거나 적게 쓰는지를 판단하지 않고, 무엇을 중요하게 여기며 어떤 상황에서 소비 결정이 달라지는지 살펴봅니다." : isBurnoutRisk ? "에너지 고갈, 정서적 소진, 업무·학업 거리두기, 대인관계 피로와 회복 가능성을 함께 살펴봅니다. 초반 응답에 맞춰 후속 질문이 달라지며, 결과는 의료 진단이 아닌 현재 상태를 돌아보기 위한 자가 점검 정보입니다." : isKkondaePower ? "업무 방식, 회식과 퇴근에 대한 생각, 피드백 방식, 변화 수용성과 세대 감수성을 살펴 현재의 직장 소통 성향을 점검합니다. 가볍게 웃으면서도 좋은 선배와 동료가 되는 방법을 확인할 수 있습니다." : isMarriageTiming ? "결혼 의지, 현재 관계, 경제적 준비, 커리어 우선순위와 독립성을 함께 살펴 지금 성향에서 결혼 가능성이 자연스럽게 높아지는 시기를 안내합니다. 결과는 예언이 아닌 현재 선택 패턴에 대한 참고 정보입니다." : isOfficeAnimal ? "업무 추진 방식, 정보 탐색, 협업과 갈등 대처, 정확성, 성과 욕구 등 실제 직장 행동을 기준으로 12지신 동물 유형과 비교합니다. 대표 유형과 함께 숨은 보조 성향도 확인할 수 있습니다." : "초기 자본, 선호 업무 방식, 콘텐츠 제작, 디지털 도구, 수익화 속도 등 12가지 기준을 바탕으로 20개 부업과의 적합도를 비교합니다. 대표 추천뿐 아니라 함께 고려할 만한 후보 3개도 확인할 수 있습니다."}</p></section>
+      {isEnneagram&&<EnneagramSeoContent />}
       {isColorPersonality&&<ColorPersonalitySeoContent />}
       {isAttachmentStyle&&<AttachmentSeoContent />}
       {(isLoveMbti||isAttachmentStyle)&&<><JsonLd data={{"@context":"https://schema.org","@type":"WebPage",name:test.title,description:test.description,url:absoluteUrl(`/tests/${test.slug}`),inLanguage:"ko-KR",mainEntity:{"@type":"Quiz","@id":absoluteUrl(`/tests/${test.slug}#quiz`)}}} /><JsonLd data={{"@context":"https://schema.org","@type":"Quiz","@id":absoluteUrl(`/tests/${test.slug}#quiz`),name:test.title,description:test.description,url:absoluteUrl(`/tests/${test.slug}`),inLanguage:"ko-KR",assesses:isAttachmentStyle?"성인 애착 불안과 애착 회피 경향":"연애 행동과 관계 성향",educationalUse:"assessment",interactivityType:"active",isAccessibleForFree:true}} /></>}
@@ -86,6 +88,21 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
         { "@type":"Question", name:"내 답변이 저장되나요?", acceptedAnswer:{ "@type":"Answer", text:"아니요. 답변은 결과 계산에만 사용되며 별도 서버에 저장하지 않습니다." } },
       ] }} />
     </div>
+  );
+}
+
+function EnneagramSeoContent() {
+  return (
+    <section className="mx-auto mt-8 max-w-3xl rounded-3xl border border-violet-100 bg-white p-6 shadow-card sm:p-8">
+      <h2 className="text-2xl font-black text-ink">애니어그램 테스트란?</h2>
+      <div className="mt-4 space-y-5 text-sm leading-8 text-slate-700">
+        <p>애니어그램 테스트는 사람의 성격을 9가지 유형으로 나누어 내면의 동기, 두려움, 욕구, 관계 방식을 이해하는 성격유형 테스트입니다. MBTI가 행동 경향을 중심으로 성격을 이해한다면, 애니어그램은 내가 왜 그런 선택을 하는지에 더 집중합니다.</p>
+        <p>미미테스트의 무료 애니어그램 테스트는 일상적인 상황에서 어떤 기준으로 선택하고, 스트레스와 갈등 상황에서 어떤 반응을 보이는지 살펴봅니다. 이를 통해 1번 개혁가부터 9번 평화주의자까지 애니어그램 9가지 유형 중 현재 나와 가장 가까운 유형을 안내합니다.</p>
+        <p>결과는 정확한 진단이 아니라 자기이해를 돕는 심리테스트 콘텐츠입니다. 대표 유형과 함께 상위 3개 유형 점수를 확인하면 내가 주로 쓰는 성격 패턴과 보조적으로 나타나는 경향을 더 입체적으로 볼 수 있습니다.</p>
+      </div>
+      <JsonLd data={{ "@context":"https://schema.org", "@type":"WebPage", name:"애니어그램 테스트", description:"9가지 애니어그램 유형 중 나와 가장 가까운 성격 유형을 확인하는 심리테스트", url:absoluteUrl("/tests/enneagram"), inLanguage:"ko-KR", mainEntity:{ "@type":"Quiz", "@id":absoluteUrl("/tests/enneagram#quiz") } }} />
+      <JsonLd data={{ "@context":"https://schema.org", "@type":"Quiz", "@id":absoluteUrl("/tests/enneagram#quiz"), name:"애니어그램 테스트", description:"9가지 애니어그램 유형 중 나와 가장 가까운 성격 유형을 확인하는 심리테스트", url:absoluteUrl("/tests/enneagram"), inLanguage:"ko-KR", assesses:"애니어그램 9가지 성격유형", educationalUse:"assessment", interactivityType:"active", isAccessibleForFree:true }} />
+    </section>
   );
 }
 
