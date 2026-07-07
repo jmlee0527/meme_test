@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/icon.svg",
   },
+  verification: {
+    other: {
+      "naver-site-verification": "97146937e1ed5736dc54af00fd6868844bcfe1de",
+    },
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   category: "business",
 };

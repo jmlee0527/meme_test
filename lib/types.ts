@@ -396,6 +396,26 @@ export type EqResultProfile = {
   recommendedActions:string[];
 };
 
+export type BigFiveDomain = "openness" | "conscientiousness" | "extraversion" | "agreeableness" | "neuroticism";
+export type BigFiveScores = Record<BigFiveDomain, number>;
+export type BigFiveQuestion = { id:number; text:string; domain:BigFiveDomain; reverse?:boolean; options:TestOption[] };
+export type BigFiveResultSlug = "big-five-open-explorer" | "big-five-steady-planner" | "big-five-social-spark" | "big-five-warm-harmonizer" | "big-five-sensitive-insight";
+export type BigFiveResultProfile = {
+  slug:BigFiveResultSlug;
+  domain:BigFiveDomain;
+  name:string;
+  icon:string;
+  summary:string;
+  description:string;
+  strengths:string[];
+  cautions:string[];
+  workStyle:string;
+  relationshipStyle:string;
+  loveStyle:string;
+  stressStyle:string;
+  growthPoints:string[];
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
