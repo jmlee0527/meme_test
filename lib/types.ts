@@ -452,6 +452,19 @@ export type FootballGradeProfile = {
   shareTemplate: string;
 };
 
+export type ReactionGradeSlug =
+  | "reaction-lightning" | "reaction-progamer" | "reaction-eagle" | "reaction-athlete"
+  | "reaction-above-average" | "reaction-average" | "reaction-relaxed" | "reaction-sloth";
+export type ReactionGradeProfile = {
+  slug: ReactionGradeSlug;
+  name: string;
+  icon: string;
+  minMs: number;
+  maxMs: number;
+  summary: string;
+  description: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
