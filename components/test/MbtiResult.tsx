@@ -21,12 +21,12 @@ export function MbtiResult({ profile, percents }: Props) {
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#ede9fe_0,#f5f3ff_34%,#f8fafc_100%)] pb-24 pt-8 sm:py-14">
       <div className="container-page">
-        <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: "성격 유형 테스트", href: "/tests/mbti" }, { name: `${profile.code} ${profile.name}` }]} />
+        <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: "MBTI 테스트", href: "/tests/mbti" }, { name: `${profile.code} ${profile.name}` }]} />
         <div className="mx-auto max-w-4xl">
           <SectionReveal>
             <section className="overflow-hidden rounded-3xl border border-violet-100 bg-white text-center shadow-card">
               <div className="bg-gradient-to-b from-violet-50 to-white px-6 pb-6 pt-10 sm:pt-14">
-                <p className="text-sm font-extrabold text-violet-600">나의 성격 유형은</p>
+                <p className="text-sm font-extrabold text-violet-600">나의 MBTI 유형은</p>
                 <div className="mt-5 text-7xl" aria-hidden="true">{profile.icon}</div>
                 <p className="mt-4 text-lg font-black tracking-[.3em] text-violet-500">{profile.code}</p>
                 <h1 className="mt-1 text-4xl font-black tracking-tight text-ink sm:text-5xl">{profile.name}</h1>
@@ -82,7 +82,7 @@ export function MbtiResult({ profile, percents }: Props) {
           </section>
 
           <section id="share-card" className="mt-10 grid scroll-mt-24 gap-6 rounded-3xl bg-ink p-6 text-white sm:p-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-            <ShareImageCard emoji={profile.icon} eyebrow="나의 성격 유형은" title={`${profile.code} · ${profile.name}`} subtitle={profile.tagline} badge={profile.code} accent="purple" />
+            <ShareImageCard emoji={profile.icon} eyebrow="나의 MBTI는" title={`${profile.code} · ${profile.name}`} subtitle={profile.tagline} badge={profile.code} accent="purple" />
             <div>
               <h2 className="text-xl font-extrabold">친구는 어떤 유형일까?</h2>
               <p className="mt-2 text-sm leading-6 text-slate-300">결과를 공유하고 서로의 유형 궁합을 비교해보세요.</p>
@@ -107,7 +107,7 @@ export function MbtiResult({ profile, percents }: Props) {
             <Link href="/tests/mbti?start=1" className="inline-flex rounded-xl bg-primary px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700">테스트 다시 하기</Link>
             <Link href="/tests" className="inline-flex rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-bold text-slate-600 hover:bg-slate-50">다른 테스트 하기</Link>
           </div>
-          <p className="mt-8 text-center text-xs leading-5 text-slate-400">이 테스트는 공식 MBTI® 검사가 아닌 자체 제작 콘텐츠이며, 결과는 자기이해와 재미를 위한 참고 정보입니다.</p>
+          <p className="mt-8 text-center text-xs leading-5 text-slate-400">MBTI 결과는 사람을 규정하는 도구가 아니라 자기이해를 돕는 참고 지표입니다.</p>
         </div>
       </div>
       <MobileShareDock />

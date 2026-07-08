@@ -487,22 +487,32 @@ export type MbtiTypeProfile = {
   shareText: string;
 };
 
-export type SbtiStatKey = "gwichanism" | "nunchi" | "tension" | "jireum" | "plan" | "insider";
-export type SbtiStats = Record<SbtiStatKey, number>;
+// SBTI: 5개 모델 × 15개 차원, 각 차원은 L/M/H 3단계로 평가됩니다.
+export type SbtiDimensionKey =
+  | "sociability" | "nunchi" | "meddling"          // 사회 모델
+  | "tension" | "stamina" | "recovery"             // 에너지 모델
+  | "mental" | "selfEsteem" | "hyunta"             // 멘탈 모델
+  | "desire" | "appetite" | "approval"             // 욕망 모델
+  | "lifeSkill" | "planning" | "endurance";        // 생존 모델
+export type SbtiLevel = "L" | "M" | "H";
+export type SbtiLevels = Record<SbtiDimensionKey, SbtiLevel>;
 export type SbtiQuestion = {
   id: number;
   text: string;
-  options: { text: string; weights: Partial<SbtiStats> }[];
+  options: { text: string; weights: Partial<Record<SbtiDimensionKey, number>>; drunk?: boolean }[];
 };
-export type SbtiLabelProfile = {
+export type SbtiTypeProfile = {
   slug: string;
+  code: string;
   name: string;
   icon: string;
   summary: string;
   description: string;
   traits: string[];
   shareText: string;
-  targetStats: SbtiStats;
+  targets: SbtiLevels;
+  /** hidden: 특정 응답 조합에서만 등장, fallback: 매칭도 60% 미만일 때 배정 */
+  special?: "hidden" | "fallback";
 };
 
 export type BlogPost = {

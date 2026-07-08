@@ -67,8 +67,8 @@ export function MbtiTestPage() {
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
             <div>
-              <p className="text-xs font-black tracking-[.16em] text-violet-600">16 TYPES PERSONALITY TEST</p>
-              <h1 className="mt-2 text-xl font-black text-ink sm:text-2xl">16가지 성격 유형 테스트</h1>
+              <p className="text-xs font-black tracking-[.16em] text-violet-600">MBTI PERSONALITY TEST</p>
+              <h1 className="mt-2 text-xl font-black text-ink sm:text-2xl">MBTI 성격유형 테스트</h1>
             </div>
             <strong className="shrink-0 text-sm text-slate-500">{index + 1} / {MBTI_QUESTION_COUNT}</strong>
           </div>
