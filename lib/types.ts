@@ -465,6 +465,46 @@ export type ReactionGradeProfile = {
   description: string;
 };
 
+export type MbtiAxis = "EI" | "SN" | "TF" | "JP";
+export type MbtiLetter = "E" | "I" | "S" | "N" | "T" | "F" | "J" | "P";
+export type MbtiQuestion = {
+  id: number;
+  axis: MbtiAxis;
+  text: string;
+  options: [{ text: string; letter: MbtiLetter }, { text: string; letter: MbtiLetter }];
+};
+export type MbtiTypeProfile = {
+  code: string;
+  slug: string;
+  name: string;
+  icon: string;
+  tagline: string;
+  description: string[];
+  strengths: string[];
+  cautions: string[];
+  careers: string[];
+  relationshipTip: string;
+  shareText: string;
+};
+
+export type SbtiStatKey = "gwichanism" | "nunchi" | "tension" | "jireum" | "plan" | "insider";
+export type SbtiStats = Record<SbtiStatKey, number>;
+export type SbtiQuestion = {
+  id: number;
+  text: string;
+  options: { text: string; weights: Partial<SbtiStats> }[];
+};
+export type SbtiLabelProfile = {
+  slug: string;
+  name: string;
+  icon: string;
+  summary: string;
+  description: string;
+  traits: string[];
+  shareText: string;
+  targetStats: SbtiStats;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;

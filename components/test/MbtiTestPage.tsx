@@ -1,0 +1,116 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { mbtiQuestions } from "@/data/mbti";
+import {
+  MBTI_QUESTION_COUNT,
+  calculateMbtiResult,
+  clearMbtiProgress,
+  loadMbtiProgress,
+  saveMbtiProgress,
+} from "@/lib/mbti-engine";
+
+export function MbtiTestPage() {
+  const router = useRouter();
+  const reduceMotion = useReducedMotion();
+  const [answers, setAnswers] = useState<number[]>([]);
+  const [index, setIndex] = useState(0);
+  const [resumed, setResumed] = useState(false);
+  const lockRef = useRef(false);
+
+  // 새로고침·이탈 후 복귀 시 진행 상황 복구 (localStorage)
+  useEffect(() => {
+    const saved = loadMbtiProgress();
+    if (saved) {
+      setAnswers(saved);
+      setIndex(saved.length);
+      setResumed(true);
+    }
+  }, []);
+
+  const current = mbtiQuestions[index];
+  const progress = Math.round(((index + 1) / MBTI_QUESTION_COUNT) * 100);
+
+  const select = (choice: number) => {
+    if (lockRef.current || !current) return;
+    lockRef.current = true;
+    const nextAnswers = answers.slice(0, index);
+    nextAnswers[index] = choice;
+    setAnswers(nextAnswers);
+    saveMbtiProgress(nextAnswers);
+    window.setTimeout(() => {
+      lockRef.current = false;
+      if (nextAnswers.length >= MBTI_QUESTION_COUNT) {
+        const result = calculateMbtiResult(nextAnswers);
+        clearMbtiProgress();
+        router.push(`/tests/mbti/result/${result.profile.slug}?p=${result.percents.join("-")}`);
+      } else {
+        setIndex(nextAnswers.length);
+      }
+    }, reduceMotion ? 0 : 240);
+  };
+
+  const restart = () => {
+    clearMbtiProgress();
+    setAnswers([]);
+    setIndex(0);
+    setResumed(false);
+  };
+
+  if (!current) return null;
+
+  return (
+    <main className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#ede9fe_0,#f8fafc_45%,#f8fafc_100%)] py-6 sm:py-12">
+      <div className="container-page mx-auto max-w-2xl">
+        <header className="mb-6">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-black tracking-[.16em] text-violet-600">16 TYPES PERSONALITY TEST</p>
+              <h1 className="mt-2 text-xl font-black text-ink sm:text-2xl">16가지 성격 유형 테스트</h1>
+            </div>
+            <strong className="shrink-0 text-sm text-slate-500">{index + 1} / {MBTI_QUESTION_COUNT}</strong>
+          </div>
+          <div className="mt-4 h-2.5 overflow-hidden rounded-full bg-white shadow-inner" role="progressbar" aria-label="테스트 진행률" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress}>
+            <motion.div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-indigo-500" animate={{ width: `${Math.max(progress, 3)}%` }} transition={{ duration: reduceMotion ? 0 : 0.3 }} />
+          </div>
+          {resumed && (
+            <div className="mt-3 flex items-center justify-between rounded-xl bg-violet-50 px-4 py-2.5 text-xs font-bold text-violet-800">
+              <span>이전 진행 상황({answers.length}번 문항까지)을 불러왔어요.</span>
+              <button type="button" onClick={restart} className="shrink-0 rounded-lg bg-white px-3 py-1.5 font-black text-violet-700 shadow-sm hover:bg-violet-100">처음부터</button>
+            </div>
+          )}
+        </header>
+
+        <AnimatePresence mode="wait">
+          <motion.section key={current.id} initial={reduceMotion ? false : { opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} exit={reduceMotion ? undefined : { opacity: 0, x: -24 }} transition={{ duration: 0.2 }} className="rounded-[2rem] border border-white/90 bg-white/90 p-6 shadow-2xl shadow-violet-100/60 backdrop-blur sm:p-10">
+          <span className="rounded-full bg-violet-50 px-3 py-1.5 text-xs font-black text-violet-700">Q{index + 1}</span>
+          <h2 className="mt-6 min-h-20 text-balance text-xl font-black leading-[1.5] tracking-tight text-ink sm:text-2xl">{current.text}</h2>
+          <div className="mt-8 grid gap-3" role="radiogroup" aria-label="답변 선택">
+            {current.options.map((option, optionIndex) => (
+              <motion.button
+                key={optionIndex}
+                type="button"
+                role="radio"
+                aria-checked={answers[index] === optionIndex}
+                onClick={() => select(optionIndex)}
+                whileTap={reduceMotion ? undefined : { scale: 0.98 }}
+                className={`flex min-h-16 items-center gap-4 rounded-2xl border px-5 text-left text-sm font-bold leading-6 transition sm:text-base ${answers[index] === optionIndex ? "border-violet-500 bg-violet-50 text-violet-900 shadow-md" : "border-slate-200 bg-white text-slate-700 hover:border-violet-300 hover:bg-violet-50/50"}`}
+              >
+                <span className={`grid size-8 shrink-0 place-items-center rounded-full text-xs font-black ${answers[index] === optionIndex ? "bg-violet-600 text-white" : "bg-slate-100 text-slate-500"}`}>{optionIndex === 0 ? "A" : "B"}</span>
+                {option.text}
+              </motion.button>
+            ))}
+          </div>
+          </motion.section>
+        </AnimatePresence>
+
+        <div className="mt-5 flex items-center justify-between">
+          <button type="button" onClick={() => setIndex((currentIndex) => Math.max(currentIndex - 1, 0))} disabled={index === 0} className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 transition hover:bg-white disabled:opacity-30">← 이전 질문</button>
+          <p className="text-right text-[11px] leading-5 text-slate-400">진행 상황은 브라우저에 자동 저장됩니다.<br />응답은 서버로 전송되지 않습니다.</p>
+        </div>
+      </div>
+    </main>
+  );
+}
