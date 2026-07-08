@@ -112,8 +112,8 @@ export const eqResultProfiles: EqResultProfile[] = [
 export const eqTest: TestDefinition = {
   type: "quiz",
   slug: "eq-test",
-  title: "EQ 테스트",
-  shortTitle: "EQ 테스트",
+  title: "EQ 공감능력 테스트",
+  shortTitle: "EQ 공감능력 테스트",
   cardTitle: "나의 EQ와 공감 능력은?",
   description: "EQ 테스트와 공감지수 테스트로 감정지능, 자기인식, 공감능력, 감정조절, 사회성, 회복력을 확인해보세요.",
   category: "심리",

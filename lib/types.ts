@@ -452,6 +452,35 @@ export type FootballGradeProfile = {
   shareTemplate: string;
 };
 
+export type WorldCupWinnerQuestion = {
+  id: string;
+  year: number;
+  host: string;
+  winner: string;
+  semifinalists: [string, string, string, string];
+  answerIndex: number;
+  final: string;
+  note?: string;
+};
+export type WorldCupWinnerAnswer = { questionId: string; choice: number };
+export type WorldCupWinnerGradeSlug =
+  | "worldcup-legend"
+  | "worldcup-historian"
+  | "worldcup-fan"
+  | "worldcup-casual"
+  | "worldcup-rookie";
+export type WorldCupWinnerGradeProfile = {
+  slug: WorldCupWinnerGradeSlug;
+  name: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  comment: string;
+  shareTemplate: string;
+};
+
 export type ReactionGradeSlug =
   | "reaction-lightning" | "reaction-progamer" | "reaction-eagle" | "reaction-athlete"
   | "reaction-above-average" | "reaction-average" | "reaction-relaxed" | "reaction-sloth";
@@ -513,6 +542,55 @@ export type SbtiTypeProfile = {
   targets: SbtiLevels;
   /** hidden: 특정 응답 조합에서만 등장, fallback: 매칭도 60% 미만일 때 배정 */
   special?: "hidden" | "fallback";
+};
+
+export type StressQuestion = {
+  id: number;
+  text: string;
+  /** true면 역채점 문항 (4 - 응답값) */
+  reverse?: boolean;
+};
+export type StressGradeSlug = "stress-low" | "stress-moderate" | "stress-high";
+export type StressGradeProfile = {
+  slug: StressGradeSlug;
+  name: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  signals: string[];
+  tips: string[];
+  shareText: string;
+};
+
+export type JealousyDomain = "relationshipAnxiety" | "comparisonSensitivity" | "reassuranceNeed" | "emotionRegulation" | "trustFlexibility";
+export type JealousyQuestion = {
+  id: number;
+  text: string;
+  domain: JealousyDomain;
+  options: { value: number; label: string }[];
+};
+export type JealousyDomainScores = Record<JealousyDomain, number>;
+export type JealousyGradeSlug =
+  | "jealousy-secure"
+  | "jealousy-light"
+  | "jealousy-alert"
+  | "jealousy-sensitive"
+  | "jealousy-intensive";
+export type JealousyGradeProfile = {
+  slug: JealousyGradeSlug;
+  name: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  strengths: string[];
+  cautions: string[];
+  tips: string[];
+  communicationScripts: string[];
+  shareText: string;
 };
 
 export type BlogPost = {

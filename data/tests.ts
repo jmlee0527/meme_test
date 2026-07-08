@@ -7,6 +7,7 @@ import { burnoutRiskTest } from "@/data/burnout-risk";
 import { consumerStyleTest } from "@/data/consumer-style";
 import { loveMbtiTest } from "@/data/love-mbti";
 import { loverScoreTest } from "@/data/lover-score";
+import { jealousyTest } from "@/data/jealousy-test";
 import { dailyFortuneTest } from "@/data/fortune-data";
 import { attachmentStyleTest } from "@/data/attachment-style";
 import { joseonDestinyTest } from "@/data/joseon-destiny";
@@ -16,6 +17,7 @@ import { enneagramTest } from "@/data/enneagram";
 import { eqTest } from "@/data/eq-test";
 import { bigFiveTest } from "@/data/big-five";
 import { footballQuizTest } from "@/data/football-quiz";
+import { worldCupWinnerQuizTest } from "@/data/worldcup-winners";
 import { reactionTimeTest } from "@/data/reaction-time";
 import { mbtiTest } from "@/data/mbti";
 import { sbtiTest } from "@/data/sbti";
@@ -113,7 +115,7 @@ export const tests: TestDefinition[] = [{
     ],
     assesses: "부업 적합 성향과 업무 선호",
   },
-}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, reactionTimeTest, mbtiTest, sbtiTest, dailyFortuneTest];
+}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

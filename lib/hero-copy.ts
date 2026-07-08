@@ -14,7 +14,7 @@ export type HeroCtaKey = "discover" | "start";
 export const heroSharedCopy = {
   badge: "✨ 수만 명이 참여한 인기 테스트",
   description:
-    "부업, 직장, 연애, 결혼, 성격까지\n다양한 테스트로\n나를 더 깊이 알아보세요",
+    "직장, 연애, 결혼, 취미, 성격, 취향까지\n다양한 테스트로\n나를 더 깊이 알아보세요",
   secondaryCta: "전체 테스트 보기",
   trustSignals: ["✓ 회원가입 없음", "✓ 무료 결과", "✓ 평균 2분"] as const,
 } as const;

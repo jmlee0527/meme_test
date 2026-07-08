@@ -1,0 +1,223 @@
+import type { JealousyDomain, JealousyGradeProfile, JealousyQuestion, TestDefinition } from "@/lib/types";
+
+const options = {
+  low: { value: 0, label: "크게 의미를 두지 않고 상황을 지켜본다" },
+  mild: { value: 1, label: "잠깐 신경 쓰이지만 대체로 넘길 수 있다" },
+  medium: { value: 2, label: "이유가 궁금해지고 확인하고 싶어진다" },
+  high: { value: 3, label: "꽤 불안해져서 감정 표현이나 확인이 필요하다" },
+};
+
+export const jealousyDomainLabels: Record<JealousyDomain, string> = {
+  relationshipAnxiety: "관계 불안",
+  comparisonSensitivity: "비교 민감도",
+  reassuranceNeed: "확인 욕구",
+  emotionRegulation: "감정 조절",
+  trustFlexibility: "신뢰 유연성",
+};
+
+export const jealousyDomainDescriptions: Record<JealousyDomain, string> = {
+  relationshipAnxiety: "상대의 반응 변화나 거리감에 얼마나 민감하게 불안을 느끼는지",
+  comparisonSensitivity: "상대 주변 사람과 나를 비교하거나 경쟁적으로 느끼는 정도",
+  reassuranceNeed: "관계의 안전함을 말·행동으로 확인받고 싶은 정도",
+  emotionRegulation: "질투 감정이 올라올 때 바로 반응하지 않고 정리하는 힘",
+  trustFlexibility: "불확실한 상황에서도 상대와 관계를 신뢰할 수 있는 유연성",
+};
+
+export const jealousyQuestions: JealousyQuestion[] = [
+  { id: 1, domain: "relationshipAnxiety", text: "상대가 평소보다 답장이 늦고 온라인 상태가 보이면 나는 어떻게 느끼는 편인가요?", options: [options.low, options.mild, options.medium, options.high] },
+  { id: 2, domain: "comparisonSensitivity", text: "상대가 다른 사람의 외모나 능력을 칭찬할 때 내 반응은 어떤가요?", options: [
+    { value: 0, label: "칭찬은 칭찬으로 받아들이고 크게 흔들리지 않는다" },
+    { value: 1, label: "살짝 의식되지만 곧 지나간다" },
+    { value: 2, label: "나와 비교하게 되고 기분이 조금 가라앉는다" },
+    { value: 3, label: "상대의 마음이 그쪽으로 향한 건 아닌지 불편해진다" },
+  ] },
+  { id: 3, domain: "reassuranceNeed", text: "관계가 안정적이라는 확신이 필요할 때 나는 주로 어떻게 하나요?", options: [
+    { value: 0, label: "상대의 일관된 행동을 보며 자연스럽게 안심한다" },
+    { value: 1, label: "가끔 애정 표현을 들으면 충분하다" },
+    { value: 2, label: "상대가 나를 어떻게 생각하는지 직접 묻고 싶다" },
+    { value: 3, label: "확신이 없으면 계속 확인하고 싶어진다" },
+  ] },
+  { id: 4, domain: "emotionRegulation", text: "질투심이 올라왔을 때 나는 보통 어떻게 반응하나요?", options: [
+    { value: 0, label: "감정을 먼저 정리한 뒤 필요하면 차분히 이야기한다" },
+    { value: 1, label: "잠깐 티가 나지만 스스로 진정하려고 한다" },
+    { value: 2, label: "표정이나 말투에 감정이 묻어나는 편이다" },
+    { value: 3, label: "생각보다 빠르게 서운함이나 불편함을 표현한다" },
+  ] },
+  { id: 5, domain: "trustFlexibility", text: "상대가 친구들과 늦게까지 시간을 보낸다고 할 때 나는 어떤 편인가요?", options: [
+    { value: 0, label: "상대의 시간을 존중하고 편하게 보내라고 한다" },
+    { value: 1, label: "약간 신경 쓰이지만 믿고 기다린다" },
+    { value: 2, label: "누구와 있는지, 언제 끝나는지 알고 싶다" },
+    { value: 3, label: "불안해서 연락 빈도나 상황 확인이 필요하다" },
+  ] },
+  { id: 6, domain: "relationshipAnxiety", text: "상대의 말투가 갑자기 짧아졌다고 느끼면 나는 어떻게 해석하나요?", options: [
+    { value: 0, label: "피곤하거나 바쁠 수 있다고 생각한다" },
+    { value: 1, label: "조금 걸리지만 상황을 더 지켜본다" },
+    { value: 2, label: "내가 뭔가 잘못했는지 떠올려본다" },
+    { value: 3, label: "마음이 식은 건 아닌지 불안해진다" },
+  ] },
+  { id: 7, domain: "comparisonSensitivity", text: "상대의 SNS에 낯선 이성이 자주 보일 때 나는 어떤 마음이 드나요?", options: [
+    { value: 0, label: "그럴 수 있다고 생각하고 특별히 신경 쓰지 않는다" },
+    { value: 1, label: "누군지 궁금하지만 크게 확대해석하지 않는다" },
+    { value: 2, label: "관계가 어떤 사이인지 알고 싶어진다" },
+    { value: 3, label: "나보다 더 가까운 사람이 있는 것 같아 불안하다" },
+  ] },
+  { id: 8, domain: "reassuranceNeed", text: "상대가 애정 표현을 줄인 것처럼 느껴질 때 나는 어떻게 하나요?", options: [
+    { value: 0, label: "컨디션이나 상황의 변화일 수 있다고 본다" },
+    { value: 1, label: "조금 아쉽지만 기다려본다" },
+    { value: 2, label: "요즘 마음이 어떤지 물어보고 싶어진다" },
+    { value: 3, label: "확실한 표현을 듣기 전까지 계속 마음이 불안하다" },
+  ] },
+  { id: 9, domain: "emotionRegulation", text: "불편한 장면을 봤을 때, 바로 대화하기 전 나는 얼마나 시간을 두는 편인가요?", options: [
+    { value: 0, label: "감정이 가라앉을 시간을 충분히 둔다" },
+    { value: 1, label: "잠시 숨을 고른 뒤 비교적 차분히 말한다" },
+    { value: 2, label: "오래 참기 어려워 당일에는 말해야 한다" },
+    { value: 3, label: "그 순간 바로 반응하지 않으면 더 답답하다" },
+  ] },
+  { id: 10, domain: "trustFlexibility", text: "상대가 개인 시간을 갖고 싶다고 말하면 나는 어떻게 받아들이나요?", options: [
+    { value: 0, label: "관계와 별개로 필요한 시간이라고 이해한다" },
+    { value: 1, label: "조금 서운하지만 존중하려고 한다" },
+    { value: 2, label: "나와 거리 두려는 신호인지 확인하고 싶다" },
+    { value: 3, label: "내가 덜 중요해진 것 같아 불안하다" },
+  ] },
+  { id: 11, domain: "relationshipAnxiety", text: "상대가 바쁜 시기에 연락 빈도가 줄어들면 나는 어떤 편인가요?", options: [
+    { value: 0, label: "바쁜 시기임을 이해하고 내 일상에 집중한다" },
+    { value: 1, label: "조금 아쉽지만 상황이 나아질 때까지 기다린다" },
+    { value: 2, label: "관계 우선순위가 낮아진 것 같아 확인하고 싶다" },
+    { value: 3, label: "나에 대한 마음이 줄어든 것 같아 많이 불안하다" },
+  ] },
+  { id: 12, domain: "comparisonSensitivity", text: "상대의 전 연인 이야기가 우연히 나왔을 때 내 반응은 어떤가요?", options: [
+    { value: 0, label: "과거는 과거라고 생각하고 넘긴다" },
+    { value: 1, label: "살짝 불편하지만 오래 마음에 두지 않는다" },
+    { value: 2, label: "나와 비교되는 느낌이 들어 신경 쓰인다" },
+    { value: 3, label: "상대가 아직 그 사람을 의식하는지 계속 생각난다" },
+  ] },
+  { id: 13, domain: "reassuranceNeed", text: "상대가 나를 좋아한다는 확신을 주는 방식 중 내가 가장 필요로 하는 것은?", options: [
+    { value: 0, label: "평소의 일관된 태도와 신뢰" },
+    { value: 1, label: "가끔의 따뜻한 말과 행동" },
+    { value: 2, label: "분명한 애정 표현과 관계 확인" },
+    { value: 3, label: "자주 반복되는 확실한 표현과 우선순위 확인" },
+  ] },
+  { id: 14, domain: "emotionRegulation", text: "질투심 때문에 서운함을 표현한 뒤 나는 보통 어떤 편인가요?", options: [
+    { value: 0, label: "내 감정과 상대 입장을 함께 돌아본다" },
+    { value: 1, label: "대화 후에는 비교적 잘 풀리는 편이다" },
+    { value: 2, label: "상대 반응이 충분하지 않으면 다시 마음이 걸린다" },
+    { value: 3, label: "대화 후에도 같은 장면이 반복해서 떠오른다" },
+  ] },
+  { id: 15, domain: "trustFlexibility", text: "관계에서 자유와 안정감의 균형에 대해 나는 어떻게 느끼나요?", options: [
+    { value: 0, label: "각자의 자유가 있어도 관계는 안정적일 수 있다고 느낀다" },
+    { value: 1, label: "자유를 존중하지만 기본적인 공유는 필요하다" },
+    { value: 2, label: "자유가 많아질수록 관계가 느슨해질까 걱정된다" },
+    { value: 3, label: "자유보다 분명한 우선순위와 안정감이 훨씬 중요하다" },
+  ] },
+];
+
+export const jealousyGradeProfiles: JealousyGradeProfile[] = [
+  {
+    slug: "jealousy-secure",
+    name: "안정 신뢰형",
+    icon: "🌿",
+    minScore: 0,
+    maxScore: 20,
+    summary: "질투심이 낮고 관계를 비교적 안정적으로 바라보는 타입입니다.",
+    description: "상대의 행동을 바로 위협으로 해석하기보다 상황과 맥락을 함께 보려는 힘이 좋습니다. 관계 안에서 적절한 자유와 신뢰를 허용할 수 있고, 불편함이 생겨도 감정을 정리한 뒤 말하는 편입니다.",
+    strengths: ["상대의 개인 시간을 존중함", "감정이 올라와도 확대해석이 적음", "관계의 기본 신뢰를 유지함"],
+    cautions: ["불편함을 너무 오래 넘기면 뒤늦게 쌓일 수 있음", "상대가 필요한 안심 표현을 놓칠 수 있음"],
+    tips: ["괜찮은 척보다 작은 불편함은 부드럽게 공유하기", "내가 안정감을 느끼는 행동을 상대에게 알려주기", "신뢰와 방치를 구분하며 관계 점검하기"],
+    communicationScripts: ["나는 네 시간을 존중해. 다만 가끔은 우리 관계도 확인되는 말이 있으면 더 좋겠어.", "지금은 크게 문제라고 느끼진 않지만, 내가 조금 신경 쓴 부분은 이야기해두고 싶어."],
+    shareText: "내 질투심 테스트 결과는 안정 신뢰형 🌿 너는 어느 정도일까?",
+  },
+  {
+    slug: "jealousy-light",
+    name: "가벼운 신호형",
+    icon: "🌤️",
+    minScore: 21,
+    maxScore: 40,
+    summary: "질투심이 가끔 올라오지만 대체로 조절 가능한 타입입니다.",
+    description: "관계에서 서운함이나 비교 감정이 전혀 없는 것은 아니지만, 감정이 올라온 뒤 스스로 정리할 수 있는 힘이 있습니다. 상대의 반응이 애매할 때 잠깐 흔들릴 수 있으나 대화와 시간으로 회복되는 편입니다.",
+    strengths: ["감정과 현실을 구분하려고 함", "불편함을 비교적 부드럽게 표현함", "상대에게 과도한 통제를 요구하지 않음"],
+    cautions: ["확인을 미루다 혼자 추측을 키울 수 있음", "비교 감정이 반복되는 상황은 점검이 필요함"],
+    tips: ["추측보다 확인 질문을 짧게 하기", "질투심이 올라온 이유를 상황·감정·욕구로 나눠보기", "상대에게 필요한 표현 방식을 구체적으로 요청하기"],
+    communicationScripts: ["내가 조금 신경 쓰였던 건 사실이야. 비난하려는 건 아니고 상황을 이해하고 싶어.", "이럴 때 네 마음을 한 번 말해주면 내가 더 편안해질 것 같아."],
+    shareText: "내 질투심 테스트 결과는 가벼운 신호형 🌤️ 너도 테스트해봐.",
+  },
+  {
+    slug: "jealousy-alert",
+    name: "주의 관찰형",
+    icon: "🔎",
+    minScore: 41,
+    maxScore: 60,
+    summary: "질투심이 관계 신호를 민감하게 읽는 방식으로 나타나는 타입입니다.",
+    description: "상대의 연락, 말투, 주변 관계 변화에 비교적 민감하게 반응하는 편입니다. 이 민감함은 관계를 소중히 여긴다는 신호이기도 하지만, 확인되지 않은 해석이 많아지면 나와 상대 모두 지칠 수 있습니다.",
+    strengths: ["관계 변화에 대한 감지가 빠름", "상대와의 정서적 연결을 중요하게 여김", "문제를 그냥 방치하지 않으려 함"],
+    cautions: ["상대 행동을 나에 대한 평가로 해석하기 쉬움", "확인 욕구가 반복되면 관계 피로가 생길 수 있음"],
+    tips: ["사실과 해석을 분리해 적어보기", "질문은 한 번에 하나만, 공격 대신 요청으로 말하기", "불안할수록 내 일상 루틴을 유지하기"],
+    communicationScripts: ["내가 방금 떠올린 해석이 사실인지 확인하고 싶어. 너를 몰아붙이려는 건 아니야.", "나는 이런 상황에서 조금 불안해져. 다음엔 어떤 식으로 공유하면 둘 다 편할까?"],
+    shareText: "내 질투심 테스트 결과는 주의 관찰형 🔎 관계 신호에 예민한 편이래.",
+  },
+  {
+    slug: "jealousy-sensitive",
+    name: "민감 반응형",
+    icon: "💗",
+    minScore: 61,
+    maxScore: 80,
+    summary: "질투심이 불안과 확인 욕구로 자주 이어질 수 있는 타입입니다.",
+    description: "상대의 작은 변화도 관계의 거리감으로 느껴질 수 있고, 마음이 불안해지면 확인하고 싶은 욕구가 커지는 편입니다. 감정 자체가 틀린 것은 아니지만, 표현 방식이 급해지면 의도와 다르게 상대에게 압박으로 전달될 수 있습니다.",
+    strengths: ["관계를 진지하게 여기고 정서적 연결을 중시함", "상대의 변화에 둔감하지 않음", "문제를 대화로 풀고 싶어 함"],
+    cautions: ["불안할 때 빠른 결론을 내릴 수 있음", "반복 확인이 오히려 안정감을 줄일 수 있음"],
+    tips: ["감정이 70% 이상 올라왔을 때는 바로 대화하지 않기", "확인 요구보다 안심받고 싶은 욕구를 말하기", "상대의 자유와 나의 안정감을 동시에 만족시키는 규칙 만들기"],
+    communicationScripts: ["내가 지금 질투가 난다기보다 불안한 것 같아. 잠깐 안심할 수 있게 이야기해줄 수 있어?", "너를 통제하고 싶진 않아. 다만 이런 상황에서 내가 안정감을 느끼는 방법을 같이 찾고 싶어."],
+    shareText: "내 질투심 테스트 결과는 민감 반응형 💗 생각보다 관계에 예민한 타입이래.",
+  },
+  {
+    slug: "jealousy-intensive",
+    name: "집중 관리형",
+    icon: "🧭",
+    minScore: 81,
+    maxScore: 100,
+    summary: "질투심이 강한 불안과 반복 확인으로 이어질 가능성이 높은 타입입니다.",
+    description: "관계의 불확실성을 견디는 데 에너지가 많이 쓰일 수 있습니다. 상대의 행동을 계속 확인하고 싶거나, 마음이 가라앉기 전까지 생각이 반복될 수 있어요. 이는 관계를 소중히 여기는 마음과 과거 경험의 영향이 함께 작동하는 신호일 수 있습니다.",
+    strengths: ["관계의 안정감을 매우 중요하게 여김", "정서적 연결에 깊이 몰입함", "문제를 그냥 넘기지 않고 해결하려는 욕구가 강함"],
+    cautions: ["통제와 확인이 반복되면 신뢰가 약해질 수 있음", "상대의 행동보다 내 불안이 판단을 이끌 수 있음"],
+    tips: ["대화 전 20분 감정 진정 시간을 의식적으로 갖기", "확인하고 싶은 행동을 하나 줄이고 내 안정 루틴 하나 늘리기", "반복되는 불안 패턴은 혼자 견디지 말고 상담·코칭 등 도움 고려하기"],
+    communicationScripts: ["내가 지금 많이 불안해서 확인하고 싶어지는 상태야. 비난보다 내 감정을 설명하고 싶어.", "우리 관계를 지키고 싶어서 그래. 내가 반복적으로 확인하려는 부분을 함께 조절해보고 싶어."],
+    shareText: "내 질투심 테스트 결과는 집중 관리형 🧭 관계 안정감이 많이 필요한 타입이래.",
+  },
+];
+
+export const jealousyTest: TestDefinition = {
+  type: "quiz",
+  slug: "jealousy-test",
+  title: "내 질투심은 어느 정도일까?",
+  shortTitle: "질투심 테스트",
+  cardTitle: "나는 질투가 많은 편일까?",
+  description: "15개의 관계 상황 질문으로 나의 질투심 레벨, 확인 욕구, 비교 민감도와 감정 조절 방식을 점검해보세요.",
+  category: "연애",
+  duration: "약 3분",
+  icon: "💚",
+  participants: 1937,
+  accent: "pink",
+  isNew: true,
+  itemCount: jealousyQuestions.length,
+  questions: [],
+  resultSlugs: [],
+  seoTitle: "질투심 테스트 | 내 질투심은 어느 정도일까?",
+  seoDescription: "질투심 테스트로 연애와 가까운 관계에서 나타나는 질투심 레벨, 확인 욕구, 비교 민감도, 관계 불안과 감정 조절 방식을 확인해보세요.",
+  keywords: ["질투심 테스트", "질투 테스트", "연애 질투 테스트", "질투심 많은 사람", "관계 불안 테스트", "연애 심리테스트", "애정 확인 욕구", "심리테스트"],
+  seoContent: {
+    heading: "질투심 테스트란?",
+    paragraphs: [
+      "질투심 테스트는 연애나 가까운 관계에서 상대의 행동을 어떻게 해석하고, 불안과 비교 감정을 어떻게 다루는지 살펴보는 관계 심리 테스트입니다. 질투심은 단순히 성격이 예민해서 생기는 감정이 아니라, 관계를 소중히 여기고 안정감을 확인하고 싶은 마음에서 시작되는 경우가 많습니다.",
+      "이 테스트는 관계 불안, 비교 민감도, 확인 욕구, 감정 조절, 신뢰 유연성의 5가지 영역을 기준으로 구성되어 있습니다. 연락이 늦어질 때, 상대가 다른 사람을 칭찬할 때, 개인 시간을 갖고 싶다고 할 때처럼 실제 관계에서 자주 생기는 장면을 바탕으로 15개의 4지선다 질문에 답합니다.",
+      "결과에서는 0~100점의 질투심 레벨과 함께 어떤 상황에서 질투심이 올라오는지, 관계 안에서 어떤 강점과 주의점이 있는지, 더 건강하게 표현하기 위한 대화 문장까지 안내합니다. 이 테스트는 의학적 진단이나 상담을 대체하지 않으며, 자기이해와 관계 대화를 위한 참고용 콘텐츠입니다.",
+    ],
+    faqs: [
+      ["질투심이 높으면 나쁜 건가요?", "아니요. 질투심은 관계를 소중히 여기는 마음과 안정감을 확인하고 싶은 욕구에서 생길 수 있습니다. 중요한 것은 감정을 어떻게 해석하고 표현하는지입니다."],
+      ["이 테스트는 어떤 기준으로 계산하나요?", "15개 문항의 응답을 0~3점으로 계산해 0~100점으로 환산합니다. 동시에 관계 불안, 비교 민감도, 확인 욕구, 감정 조절, 신뢰 유연성 5개 영역 점수도 함께 계산합니다."],
+      ["연애 중이 아니어도 할 수 있나요?", "가능합니다. 현재 연애 중이 아니라면 과거 연애나 가까운 관계에서 내가 보였던 반응을 떠올리며 답하면 됩니다."],
+      ["결과가 높게 나오면 어떻게 해야 하나요?", "높은 결과는 비난이 아니라 관계에서 안정감이 많이 필요하다는 신호입니다. 결과 페이지의 대화 문장과 조절 팁을 참고하고, 반복적인 불안이 크다면 전문가와 이야기해보는 것도 도움이 됩니다."],
+    ],
+    assesses: "관계 속 질투심, 확인 욕구, 비교 민감도와 감정 조절 방식",
+  },
+};
+
+export const getJealousyGradeProfile = (slug: string) => jealousyGradeProfiles.find((profile) => profile.slug === slug);
