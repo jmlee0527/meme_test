@@ -593,6 +593,31 @@ export type JealousyGradeProfile = {
   shareText: string;
 };
 
+// 편의점 성격 테스트: 12가지 내부 성향
+export type CvsTrait =
+  | "realism" | "emotion" | "planning" | "spontaneity"
+  | "extraversion" | "introversion" | "curiosity" | "adventure"
+  | "stability" | "optimism" | "creativity" | "empathy";
+export type CvsScores = Record<CvsTrait, number>;
+export type CvsQuestion = {
+  id: number;
+  text: string;
+  options: { emoji: string; text: string; weights: Partial<CvsScores> }[];
+};
+export type CvsResultProfile = {
+  slug: string;
+  name: string;
+  icon: string;
+  summary: string;
+  analysis: string;
+  strengths: string[];
+  cautions: string[];
+  goodMatch: string;
+  combo: { emoji: string; name: string }[];
+  shareText: string;
+  targets: CvsScores;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
