@@ -593,6 +593,47 @@ export type JealousyGradeProfile = {
   shareText: string;
 };
 
+export type WizardCharacterTrait =
+  | "courage"
+  | "wisdom"
+  | "leadership"
+  | "friendship"
+  | "loyalty"
+  | "creativity"
+  | "independence"
+  | "ambition"
+  | "responsibility"
+  | "empathy"
+  | "action"
+  | "analysis";
+export type WizardCharacterScores = Record<WizardCharacterTrait, number>;
+export type WizardCharacterQuestion = {
+  id: number;
+  text: string;
+  options: {
+    label: string;
+    text: string;
+    value: number;
+    weights: Partial<WizardCharacterScores>;
+  }[];
+};
+export type WizardCharacterProfile = {
+  slug: string;
+  name: string;
+  koreanName: string;
+  symbol: string;
+  palette: [string, string];
+  summary: string;
+  description: string;
+  strengths: string[];
+  cautions: string[];
+  goodMatches: string[];
+  difficultMatch: string;
+  coreTraits: WizardCharacterTrait[];
+  targetScores: WizardCharacterScores;
+  shareText: string;
+};
+
 // 편의점 성격 테스트: 12가지 내부 성향
 export type CvsTrait =
   | "realism" | "emotion" | "planning" | "spontaneity"
@@ -616,6 +657,34 @@ export type CvsResultProfile = {
   combo: { emoji: string; name: string }[];
   shareText: string;
   targets: CvsScores;
+};
+
+// SNS 유형 테스트: 16가지 내부 성향
+export type SnsTrait =
+  | "expression" | "extraversion" | "introversion" | "empathy"
+  | "archiving" | "trend" | "humor" | "privacy"
+  | "friendliness" | "spontaneity" | "planning" | "leadership"
+  | "research" | "creativity" | "consuming" | "producing";
+export type SnsScores = Record<SnsTrait, number>;
+export type SnsQuestion = {
+  id: number;
+  text: string;
+  options: { emoji: string; text: string; weights: Partial<SnsScores> }[];
+};
+export type SnsResultProfile = {
+  slug: string;
+  name: string;
+  icon: string;
+  summary: string;
+  analysis: string;
+  behaviors: string[];
+  strengths: string[];
+  cautions: string[];
+  goodMatch: string;
+  contentStyles: string[];
+  platforms: string[];
+  shareText: string;
+  targets: SnsScores;
 };
 
 export type BlogPost = {

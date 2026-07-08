@@ -14,6 +14,7 @@ import { calculateEnneagramResult, serializeEnneagramAnswers } from "@/lib/ennea
 import { calculateLoverResult, serializeLoverAnswers } from "@/lib/lover-score-engine";
 import { calculateEqScores, serializeEqAnswers } from "@/lib/eq-engine";
 import { calculateBigFiveScores, serializeBigFiveAnswers } from "@/lib/big-five-engine";
+import { calculateWizardCharacterResult, serializeWizardCharacterAnswers } from "@/lib/wizard-character-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -24,7 +25,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
   const progress = ((index + 1) / test.questions.length) * 100;
   const question = test.questions[index];
   const isMultipleChoice = Boolean(question.options?.length);
-  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test"].includes(test.slug);
+  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test", "harry-potter-character-test"].includes(test.slug);
 
   const select = (answer: boolean | number) => {
     const next = [...answers];
@@ -99,6 +100,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateBigFiveScores(completeAnswers);
       setLoading(true);
       router.push(`/big-five/result/${result.profile.slug}?answers=${serializeBigFiveAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "harry-potter-character-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateWizardCharacterResult(completeAnswers);
+      setLoading(true);
+      router.push(`/harry-potter-character-test/result/${result.profile.slug}?answers=${serializeWizardCharacterAnswers(completeAnswers)}`);
       return;
     }
     const completeAnswers = answers as boolean[];
