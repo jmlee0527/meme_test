@@ -28,6 +28,10 @@ type MetadataInput = {
   path: string;
   keywords?: string[];
   type?: "website" | "article";
+  /** true면 레이아웃 title template(`%s | 사이트명`)을 적용하지 않고 title을 그대로 사용합니다. */
+  absoluteTitle?: boolean;
+  /** false면 og:image를 설정하지 않습니다. 라우트에 opengraph-image.tsx 파일 컨벤션이 있을 때 사용합니다. */
+  ogImage?: boolean;
 };
 
 export function createMetadata({
@@ -36,10 +40,12 @@ export function createMetadata({
   path,
   keywords = [],
   type = "website",
+  absoluteTitle = false,
+  ogImage = true,
 }: MetadataInput): Metadata {
   const canonical = absoluteUrl(path);
   return {
-    title,
+    title: absoluteTitle ? { absolute: title } : title,
     description,
     keywords: [...siteConfig.keywords, ...keywords],
     alternates: { canonical },
@@ -50,13 +56,13 @@ export function createMetadata({
       title,
       description,
       url: canonical,
-      images: [{ url: absoluteUrl("/opengraph-image"), width: 1200, height: 630, alt: title }],
+      ...(ogImage ? { images: [{ url: absoluteUrl("/opengraph-image"), width: 1200, height: 630, alt: title }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [absoluteUrl("/opengraph-image")],
+      ...(ogImage ? { images: [absoluteUrl("/opengraph-image")] } : {}),
     },
     robots: {
       index: true,

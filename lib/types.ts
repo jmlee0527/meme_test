@@ -40,6 +40,14 @@ export type ResultProfile = {
   vector: number[];
 };
 
+export type TestSeoContent = {
+  heading: string;
+  paragraphs: string[];
+  faqs: [question: string, answer: string][];
+  /** Quiz JSON-LD의 assesses 값 (측정 대상 설명) */
+  assesses?: string;
+};
+
 export type TestDefinition = {
   type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune";
   slug: string;
@@ -56,6 +64,7 @@ export type TestDefinition = {
   seoTitle?: string;
   seoDescription?: string;
   keywords?: string[];
+  seoContent?: TestSeoContent;
   participants: number;
   accent: "blue" | "orange" | "pink" | "purple" | "green" | "indigo" | "teal";
   isNew?: boolean;
@@ -414,6 +423,33 @@ export type BigFiveResultProfile = {
   loveStyle:string;
   stressStyle:string;
   growthPoints:string[];
+};
+
+export type FootballQuizDifficulty = "easy" | "medium" | "hard";
+export type FootballQuizCategory =
+  | "player" | "worldcup" | "championsleague" | "premierleague"
+  | "laliga" | "seriea" | "bundesliga" | "history" | "coach" | "transfer" | "record";
+export type FootballQuizQuestion = {
+  id: string;
+  difficulty: FootballQuizDifficulty;
+  category: FootballQuizCategory;
+  question: string;
+  choices: string[];
+  correctAnswer: number;
+  explanation: string;
+};
+export type FootballQuizAnswer = { questionId: string; choice: number };
+export type FootballGradeSlug = "football-beginner" | "football-casual" | "football-sprout" | "football-expert" | "football-god";
+export type FootballGradeProfile = {
+  slug: FootballGradeSlug;
+  name: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  comment: string;
+  shareTemplate: string;
 };
 
 export type BlogPost = {

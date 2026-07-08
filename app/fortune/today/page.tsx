@@ -1,6 +1,7 @@
 import { DailyFortuneClient } from "@/components/fortune/DailyFortuneClient";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { TestSeoContent } from "@/components/seo/TestSeoContent";
 import { dailyFortuneTest } from "@/data/fortune-data";
 import { absoluteUrl, createMetadata, siteConfig } from "@/lib/site";
 
@@ -17,6 +18,7 @@ export default function TodayFortunePage() {
       <div className="container-page py-8 sm:py-10">
         <Breadcrumbs items={[{ name: "운세", href: "/category/%EC%9A%B4%EC%84%B8" }, { name: "오늘의 운세" }]} />
         <DailyFortuneClient />
+        <TestSeoContent test={dailyFortuneTest} path="/fortune/today" includeQuizSchema={false} />
       </div>
       <JsonLd data={{
         "@context": "https://schema.org",

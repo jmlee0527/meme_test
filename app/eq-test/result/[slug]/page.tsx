@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const profile = getEqResultProfile(slug);
   if (!profile) return {};
   return createMetadata({
-    title: `${profile.name} | EQ 테스트 결과 | 미미테스트`,
+    title: `${profile.name} | EQ 테스트 결과`,
     description: `EQ 테스트 결과 ${profile.name}. 감정지능, 공감지수, 자기인식, 감정조절, 사회성 영역별 점수를 확인해보세요.`,
     path: eqResultPath(profile.slug),
     keywords: ["EQ 테스트", "공감지수 테스트", "감정지능 테스트", "EQ 검사", profile.name, "공감 능력 테스트"],

@@ -15,6 +15,7 @@ import { colorPersonalityTest } from "@/data/color-personality";
 import { enneagramTest } from "@/data/enneagram";
 import { eqTest } from "@/data/eq-test";
 import { bigFiveTest } from "@/data/big-five";
+import { footballQuizTest } from "@/data/football-quiz";
 
 export const questions = [
   "나는 초기 자본이 거의 없어도 시작할 수 있는 부업을 선호한다.",
@@ -92,7 +93,24 @@ export const tests: TestDefinition[] = [{
   accent: "blue",
   questions,
   resultSlugs: resultProfiles.map((item) => item.slug),
-}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, dailyFortuneTest];
+  seoTitle: "부업 추천 테스트 | 나에게 맞는 부업 찾기",
+  seoDescription: "부업 추천 테스트로 나에게 맞는 부업을 찾아보세요. 초기 비용, 업무 성향, 콘텐츠 제작 적성까지 12개 질문으로 분석해 20가지 부업 중 가장 잘 맞는 부업을 추천하는 무료 테스트입니다.",
+  keywords: ["부업 추천 테스트", "부업 추천", "부업 테스트", "직장인 부업", "재택 부업", "부업 찾기", "N잡 테스트", "투잡 추천", "무료 테스트"],
+  seoContent: {
+    heading: "부업 추천 테스트란?",
+    paragraphs: [
+      "부업 추천 테스트는 나의 성향과 상황에 맞는 부업을 찾아주는 무료 테스트입니다. 직장인 부업, 재택 부업, N잡에 관심은 있지만 무엇부터 시작할지 막막할 때, 12개의 O/X 질문만으로 나와 잘 맞는 부업 후보를 좁힐 수 있습니다.",
+      "테스트는 초기 자본 여유, 혼자 하는 일과 사람을 상대하는 일 중 선호, 콘텐츠 제작 적성, 디지털 도구 활용 능력, 원하는 수익화 속도 등 12가지 기준으로 응답을 분석합니다. 블로그, 스마트스토어, 유튜브, 전자책, 재능 판매, 배달 라이더까지 실제로 많이 시작하는 20가지 부업과의 적합도를 비교해 가장 잘 맞는 부업을 추천합니다.",
+      "결과에서는 추천 부업의 시작 난이도, 초기 비용, 예상 수익화 속도와 함께 장단점, 오늘 바로 시작하는 방법, 추천 플랫폼까지 안내합니다. 대표 추천 외에 함께 고려할 만한 후보 3개도 보여주므로, 나의 상황에 맞춰 여러 선택지를 비교해볼 수 있습니다.",
+    ],
+    faqs: [
+      ["어떤 부업이 결과에 포함되나요?", "블로그, 스마트스토어, 제휴마케팅, 유튜브, 전자책, 재능 판매, 중고거래, 배달 라이더 등 초기 비용과 성격이 다른 20가지 부업이 포함되어 있습니다."],
+      ["결과대로 하면 수익이 보장되나요?", "아니요. 결과는 성향 적합도를 기준으로 한 참고 정보이며, 실제 수익은 실행과 시장 상황에 따라 달라집니다."],
+      ["부업 경험이 없어도 할 수 있나요?", "네. 오히려 처음 부업을 찾는 분들이 방향을 잡는 용도로 가장 적합하며, 결과 페이지의 첫 시작 방법부터 따라 하면 됩니다."],
+    ],
+    assesses: "부업 적합 성향과 업무 선호",
+  },
+}, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

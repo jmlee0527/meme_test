@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const profile = getColorPersonalityProfile(slug);
   if (!profile) return {};
   return createMetadata({
-    title: `${profile.colorName} 성격 특징 | 컬러 성격 테스트 결과 | 미미테스트`,
+    title: `${profile.colorName} 성격 특징 | 컬러 성격 테스트 결과`,
     description: `컬러 성격 테스트에서 ${profile.colorName}가 나온 사람의 성격, 연애 스타일, 인간관계, 잘 맞는 컬러를 확인해보세요.`,
     path: `/color-personality-test/${profile.slug}`,
     keywords: ["컬러 성격 테스트", `${profile.colorName} 성격`, `${profile.englishName} 성격`, "성격 색깔 테스트", "나의 성격 컬러", "색깔 심리 테스트"],

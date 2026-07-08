@@ -9,7 +9,7 @@ import { tests } from "@/data/tests";
 import { blogPosts } from "@/data/blog";
 import { createMetadata } from "@/lib/site";
 
-export const metadata = createMetadata({ title: "미미테스트", description: "부업, 직장생활, 연애, 결혼, 성향과 재능까지 짧고 재미있는 테스트로 새로운 나를 발견해보세요.", path: "/", keywords: ["무료 테스트", "성향 테스트", "종합 테스트", "심리 테스트", "연애 테스트"] });
+export const metadata = createMetadata({ title: "미미테스트 | 나를 알아보는 종합 테스트 플랫폼", absoluteTitle: true, description: "부업, 직장생활, 연애, 결혼, 성향과 재능까지 짧고 재미있는 테스트로 새로운 나를 발견해보세요.", path: "/", keywords: ["무료 테스트", "성향 테스트", "종합 테스트", "심리 테스트", "연애 테스트"] });
 
 const rankedTests = [...tests].sort((a, b) => b.participants - a.participants);
 const bySlug = (slug: string) => tests.find((test) => test.slug === slug)!;
