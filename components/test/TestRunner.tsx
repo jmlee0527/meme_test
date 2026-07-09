@@ -18,6 +18,7 @@ import { calculateWizardCharacterResult, serializeWizardCharacterAnswers } from 
 import { calculateCoffeeBrandResult, serializeCoffeeBrandAnswers } from "@/lib/coffee-brand-engine";
 import { calculateSelfEsteemResult, serializeSelfEsteemAnswers } from "@/lib/self-esteem-engine";
 import { calculateAdhdResult, serializeAdhdAnswers } from "@/lib/adhd-screening-engine";
+import { calculateDementiaResult, serializeDementiaAnswers } from "@/lib/dementia-risk-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -131,6 +132,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateAdhdResult(completeAnswers);
       setLoading(true);
       router.push(`/adhd-self-check/result/${result.profile.slug}?answers=${serializeAdhdAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "dementia-risk-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateDementiaResult(completeAnswers);
+      setLoading(true);
+      router.push(`/dementia-risk-test/result/${result.profile.slug}?answers=${serializeDementiaAnswers(completeAnswers)}`);
       return;
     }
     const completeAnswers = answers as boolean[];
