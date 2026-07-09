@@ -25,7 +25,7 @@ export default async function CategoryPage({ params }: Props) {
   const matchingPosts = blogPosts.filter((post) => post.category === category);
   return (
     <div className="container-page py-10 sm:py-14">
-      <Breadcrumbs items={[{ name: "카테고리" }, { name: category }]} />
+      <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: category }]} />
       <h1 className="text-3xl font-black tracking-tight text-ink sm:text-4xl">{category}</h1><p className="mt-3 text-slate-600">{category}에 관한 테스트와 실용적인 가이드를 모았습니다.</p>
       {matchingTests.length > 0 && <section className="mt-10"><h2 className="text-xl font-black text-ink">테스트</h2><div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{matchingTests.map((test) => <TestCard key={test.slug} test={test} />)}</div></section>}
       {matchingPosts.length > 0 && <section className="mt-12"><h2 className="text-xl font-black text-ink">가이드</h2><div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{matchingPosts.map((post) => <BlogCard key={post.slug} post={post} />)}</div></section>}
