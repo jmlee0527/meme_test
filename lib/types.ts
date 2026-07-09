@@ -676,6 +676,48 @@ export type CoffeeBrandProfile = {
   shareText: string;
 };
 
+export type SelfEsteemDomain =
+  | "selfAcceptance"
+  | "selfEfficacy"
+  | "socialComparison"
+  | "resilience"
+  | "evaluationSensitivity"
+  | "selfConfidence"
+  | "emotionalStability"
+  | "selfCompassion";
+export type SelfEsteemDomainScores = Record<SelfEsteemDomain, number>;
+export type SelfEsteemQuestion = {
+  id: number;
+  text: string;
+  options: {
+    label: string;
+    text: string;
+    value: number;
+    weights: Partial<SelfEsteemDomainScores>;
+  }[];
+};
+export type SelfEsteemLevelSlug =
+  | "self-esteem-recharge"
+  | "self-esteem-shaky"
+  | "self-esteem-growing"
+  | "self-esteem-healthy"
+  | "self-esteem-very-healthy"
+  | "self-esteem-solid";
+export type SelfEsteemLevelProfile = {
+  slug: SelfEsteemLevelSlug;
+  level: number;
+  name: string;
+  icon: string;
+  palette: [string, string];
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  strengths: string[];
+  cautions: string[];
+  tips: string[];
+};
+
 // 편의점 성격 테스트: 12가지 내부 성향
 export type CvsTrait =
   | "realism" | "emotion" | "planning" | "spontaneity"
@@ -756,6 +798,31 @@ export type BurgerBrandProfile = {
   opposite: string;
   shareText: string;
   targets: BurgerScores;
+};
+
+// 자존감 테스트: 8가지 심리요인 (socialComparison·evaluationSensitivity는 낮을수록 건강)
+export type EsteemFactor =
+  | "selfAcceptance" | "selfEfficacy" | "socialComparison" | "resilience"
+  | "evaluationSensitivity" | "selfConfidence" | "emotionalStability" | "selfCompassion";
+export type EsteemScores = Record<EsteemFactor, number>;
+export type EsteemQuestion = {
+  id: number;
+  text: string;
+  options: { text: string; weights: Partial<EsteemScores> }[];
+};
+export type EsteemLevelProfile = {
+  slug: string;
+  level: number;
+  name: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  gradient: string;
+  summary: string;
+  description: string;
+  strengths: string[];
+  cautions: string[];
+  tips: string[];
 };
 
 export type BlogPost = {

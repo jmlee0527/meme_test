@@ -20,6 +20,7 @@ import { snsResultProfiles } from "@/data/sns-type";
 import { burgerBrandProfiles } from "@/data/burger-brand";
 import { wizardCharacterProfiles } from "@/data/wizard-character";
 import { coffeeBrandProfiles } from "@/data/coffee-brand";
+import { selfEsteemLevelProfiles } from "@/data/self-esteem";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -57,7 +58,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const burgerResultRoutes: MetadataRoute.Sitemap = burgerBrandProfiles.map((profile) => ({ url: absoluteUrl(`/burger-brand-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const wizardCharacterResultRoutes: MetadataRoute.Sitemap = wizardCharacterProfiles.map((profile) => ({ url: absoluteUrl(`/harry-potter-character-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const coffeeBrandResultRoutes: MetadataRoute.Sitemap = coffeeBrandProfiles.map((profile) => ({ url: absoluteUrl(`/coffee-brand-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
+  const selfEsteemResultRoutes: MetadataRoute.Sitemap = selfEsteemLevelProfiles.map((profile) => ({ url: absoluteUrl(`/self-esteem-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const postRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({ url: absoluteUrl(`/blog/${post.slug}`), lastModified: new Date(post.updatedAt), changeFrequency: "monthly", priority: 0.75 }));
   const categoryRoutes: MetadataRoute.Sitemap = [...new Set([...blogCategories, ...tests.map((test) => test.category)])].map((category) => ({ url: absoluteUrl(`/category/${encodeURIComponent(category)}`), changeFrequency: "weekly", priority: 0.6 }));
-  return [...staticRoutes, ...testRoutes, ...resultRoutes, ...joseonResultRoutes, ...countryResultRoutes, ...loverResultRoutes, ...jealousyResultRoutes, ...colorResultRoutes, ...enneagramResultRoutes, ...eqResultRoutes, ...bigFiveResultRoutes, ...footballGradeRoutes, ...worldCupWinnerGradeRoutes, ...reactionGradeRoutes, ...mbtiResultRoutes, ...sbtiResultRoutes, ...stressResultRoutes, ...cvsResultRoutes, ...snsResultRoutes, ...burgerResultRoutes, ...wizardCharacterResultRoutes, ...coffeeBrandResultRoutes, ...postRoutes, ...categoryRoutes];
+  return [...staticRoutes, ...testRoutes, ...resultRoutes, ...joseonResultRoutes, ...countryResultRoutes, ...loverResultRoutes, ...jealousyResultRoutes, ...colorResultRoutes, ...enneagramResultRoutes, ...eqResultRoutes, ...bigFiveResultRoutes, ...footballGradeRoutes, ...worldCupWinnerGradeRoutes, ...reactionGradeRoutes, ...mbtiResultRoutes, ...sbtiResultRoutes, ...stressResultRoutes, ...cvsResultRoutes, ...snsResultRoutes, ...burgerResultRoutes, ...wizardCharacterResultRoutes, ...coffeeBrandResultRoutes, ...selfEsteemResultRoutes, ...postRoutes, ...categoryRoutes];
 }

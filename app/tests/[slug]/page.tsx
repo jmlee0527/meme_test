@@ -26,6 +26,7 @@ import { StressTestPage } from "@/components/test/StressTestPage";
 import { ConvenienceStoreTestPage } from "@/components/test/ConvenienceStoreTestPage";
 import { SnsTypeTestPage } from "@/components/test/SnsTypeTestPage";
 import { BurgerBrandTestPage } from "@/components/test/BurgerBrandTestPage";
+import { StandardTestLanding } from "@/components/test/StandardTestLanding";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ start?: string; age?: string; play?: string; seed?: string }> };
 
@@ -76,8 +77,11 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isBurgerTest = test.slug === "burger-brand-test";
   const isWizardCharacter = test.slug === "harry-potter-character-test";
   const isCoffeeBrand = test.slug === "coffee-brand-test";
+  const isSelfEsteem = test.slug === "self-esteem-test";
   const currentAge = isMarriageTiming ? parseCurrentAge(age) : null;
 
+  if (isSelfEsteem && start !== "1") return <StandardTestLanding test={test} insight="실패, 칭찬, 비교, 피드백, 낯선 관계와 중요한 결정처럼 일상에서 자주 만나는 14가지 상황을 통해 자기수용, 자기효능감, 사회적 비교, 실패 회복력, 타인 평가 민감도, 자기신뢰, 감정 안정성과 자기연민을 함께 살펴봅니다. 각 선택은 2~4개 요인에 복합적으로 반영되며 결과에서는 현재 점수보다 나를 지지하는 영역과 조금 더 돌보면 좋은 영역을 구체적으로 확인할 수 있습니다." />;
+  if (isCoffeeBrand && start !== "1") return <StandardTestLanding test={test} insight="휴일, 여행, 선물, 일과 인간관계처럼 익숙한 10가지 상황에서 고른 답으로 트렌디함, 감성, 현실성, 합리성, 여유, 활동성, 독립성, 친화력, 도전성, 안정성, 창의성과 프리미엄 지향을 함께 분석합니다. 단순히 좋아하는 메뉴를 맞히는 대신 생활 리듬과 소비 기준의 전체 조합을 15개 커피 브랜드 이미지와 비교해 가장 어울리는 결과를 찾아드려요." />;
   if (isBurgerTest && start === "1") return <BurgerBrandTestPage />;
   if (isSnsTest && start === "1") return <SnsTypeTestPage />;
   if (isCvsTest && start === "1") return <ConvenienceStoreTestPage />;
@@ -95,7 +99,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (start === "1" && (!isMarriageTiming || currentAge)) return <div className="container-page py-8 sm:py-12"><TestRunner test={test} currentAge={currentAge ?? undefined} /></div>;
 
   const itemCount=test.itemCount??test.questions.length;
-  const answerType=test.type==="likert"||isBurnoutRisk||isBigFive?"5점 척도":isKkondaePower||isEnneagram||isEqTest||isFootballQuiz||isWorldCupWinnerQuiz||isJealousy||isSbti||isCvsTest||isSnsTest||isWizardCharacter||isCoffeeBrand?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality||isMbti?"2지선다":"O/X";
+  const answerType=test.type==="likert"||isBurnoutRisk||isBigFive?"5점 척도":isKkondaePower||isEnneagram||isEqTest||isFootballQuiz||isWorldCupWinnerQuiz||isJealousy||isSbti||isCvsTest||isSnsTest||isWizardCharacter||isCoffeeBrand||isSelfEsteem?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality||isMbti?"2지선다":"O/X";
 
   return (
     <div className="container-page py-10 sm:py-14">
