@@ -729,6 +729,35 @@ export type SnsResultProfile = {
   targets: SnsScores;
 };
 
+// 햄버거 브랜드 테스트: 12가지 내부 성향
+export type BurgerTrait =
+  | "trendy" | "premium" | "value" | "stability"
+  | "activity" | "emotion" | "friendliness" | "challenge"
+  | "creativity" | "practicality" | "uniqueness" | "leadership";
+export type BurgerScores = Record<BurgerTrait, number>;
+export type BurgerQuestion = {
+  id: number;
+  text: string;
+  options: { emoji: string; text: string; weights: Partial<BurgerScores> }[];
+};
+export type BurgerBrandProfile = {
+  slug: string;
+  name: string;
+  icon: string;
+  tagline: string;
+  summary: string;
+  reason: string;
+  strengths: string[];
+  cautions: string[];
+  menus: string[];
+  /** 결과 그래프에 표시할 6개 핵심 성향 */
+  keyTraits: BurgerTrait[];
+  goodMatches: string[];
+  opposite: string;
+  shareText: string;
+  targets: BurgerScores;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;

@@ -25,6 +25,7 @@ import { SbtiTestPage } from "@/components/test/SbtiTestPage";
 import { StressTestPage } from "@/components/test/StressTestPage";
 import { ConvenienceStoreTestPage } from "@/components/test/ConvenienceStoreTestPage";
 import { SnsTypeTestPage } from "@/components/test/SnsTypeTestPage";
+import { BurgerBrandTestPage } from "@/components/test/BurgerBrandTestPage";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ start?: string; age?: string; play?: string; seed?: string }> };
 
@@ -72,10 +73,12 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isStressTest = test.slug === "stress-test";
   const isCvsTest = test.slug === "convenience-store-test";
   const isSnsTest = test.slug === "sns-type-test";
+  const isBurgerTest = test.slug === "burger-brand-test";
   const isWizardCharacter = test.slug === "harry-potter-character-test";
   const isCoffeeBrand = test.slug === "coffee-brand-test";
   const currentAge = isMarriageTiming ? parseCurrentAge(age) : null;
 
+  if (isBurgerTest && start === "1") return <BurgerBrandTestPage />;
   if (isSnsTest && start === "1") return <SnsTypeTestPage />;
   if (isCvsTest && start === "1") return <ConvenienceStoreTestPage />;
   if (isStressTest && start === "1") return <StressTestPage />;
