@@ -825,6 +825,30 @@ export type EsteemLevelProfile = {
   tips: string[];
 };
 
+// ADHD 자가 체크: 주의력 부족 / 과잉행동·충동성 2개 영역 (ASRS v1.1 구조 참고)
+export type AdhdDomain = "inattention" | "hyperactivity";
+export type AdhdQuestion = {
+  id: number;
+  text: string;
+  domain: AdhdDomain;
+  /** ASRS Part A(스크리너) 개념에 해당하는 핵심 문항 — 가중치 1.5 적용 */
+  screener?: boolean;
+};
+export type AdhdLevelProfile = {
+  slug: string;
+  level: number;
+  name: string;
+  icon: string;
+  color: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  strengths: string[];
+  tips: string[];
+  shareText: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;

@@ -17,6 +17,7 @@ import { calculateBigFiveScores, serializeBigFiveAnswers } from "@/lib/big-five-
 import { calculateWizardCharacterResult, serializeWizardCharacterAnswers } from "@/lib/wizard-character-engine";
 import { calculateCoffeeBrandResult, serializeCoffeeBrandAnswers } from "@/lib/coffee-brand-engine";
 import { calculateSelfEsteemResult, serializeSelfEsteemAnswers } from "@/lib/self-esteem-engine";
+import { calculateAdhdResult, serializeAdhdAnswers } from "@/lib/adhd-screening-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -123,6 +124,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateSelfEsteemResult(completeAnswers);
       setLoading(true);
       router.push(`/self-esteem-test/result/${result.profile.slug}?answers=${serializeSelfEsteemAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "adhd-self-check") {
+      const completeAnswers = answers as number[];
+      const result = calculateAdhdResult(completeAnswers);
+      setLoading(true);
+      router.push(`/adhd-self-check/result/${result.profile.slug}?answers=${serializeAdhdAnswers(completeAnswers)}`);
       return;
     }
     const completeAnswers = answers as boolean[];

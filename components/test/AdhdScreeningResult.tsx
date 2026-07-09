@@ -1,0 +1,28 @@
+import Link from "next/link";
+import { ShareButtons } from "@/components/share/ShareButtons";
+import { MobileShareDock } from "@/components/share/MobileShareDock";
+import type { AdhdLevelProfile } from "@/data/adhd-screening";
+import type { AdhdScreeningScores } from "@/lib/adhd-screening-engine";
+
+export function AdhdScreeningResult({profile,scores}:{profile:AdhdLevelProfile;scores:AdhdScreeningScores}){
+  const dominant=scores.inattention>=scores.hyperactivity?"주의력 부족":"과잉행동·충동성";
+  const analysis=`${profile.description} 현재 두 영역 중에서는 ${dominant} 관련 응답이 상대적으로 더 높게 나타났습니다. 주의력 부족 점수는 ${scores.inattention}점으로, 계획 수립·기억·세부 확인·과제 시작과 마무리 과정에서 보고한 빈도를 반영합니다. 과잉행동·충동성 점수는 ${scores.hyperactivity}점으로, 내부의 안절부절함·기다림·대화 중 반응 속도와 행동 조절 경험을 반영합니다. 핵심 선별 개념 6개 가운데 기준 빈도 이상으로 응답한 항목은 ${scores.screenerSignals}개였습니다. 이 숫자는 진단 기준이 아니라 어떤 경험을 전문 상담에서 구체적으로 이야기하면 좋을지 알려주는 참고 신호입니다.`;
+  const consultItems=["관련 어려움이 6개월 이상 반복되고 있다","학업·업무의 마감, 성과 또는 유지에 실제 손실이 생긴다","관계에서 끼어들기·깜빡함·조급함으로 갈등이 반복된다","어린 시절에도 비슷한 집중·행동 패턴이 있었다","수면·불안·우울을 조절해도 어려움이 계속된다","충동적인 행동이 안전이나 경제적 문제로 이어진다"];
+  return <div className="min-h-screen bg-[radial-gradient(circle_at_top,#ccfbf1_0,#f8fafc_42%,#f8fafc_100%)] pb-24 py-10 sm:py-14"><div className="container-page"><div className="mx-auto max-w-4xl">
+    <section className="overflow-hidden rounded-[2.25rem] bg-slate-950 p-7 text-center text-white shadow-2xl sm:p-12">
+      <p className="text-xs font-black tracking-[.2em] text-teal-300">ADHD 관련 특성 자가 체크 결과</p><div className="mx-auto mt-6 grid size-28 place-items-center rounded-[2rem] bg-white/10 text-6xl">{profile.icon}</div>
+      <p className="mt-6 text-sm font-black text-teal-300">LEVEL {profile.level}</p><h1 className="mt-2 text-3xl font-black sm:text-5xl">{profile.name}</h1><p className="mx-auto mt-4 max-w-xl leading-7 text-slate-200">{profile.summary}</p>
+      <div className="mx-auto mt-7 grid size-36 place-items-center rounded-full p-2" style={{background:`conic-gradient(#2dd4bf ${scores.overall}%,#334155 0)`}}><div className="grid size-full place-items-center rounded-full bg-slate-950"><span><strong className="block text-4xl">{scores.overall}점</strong><small className="text-slate-400">ADHD 특성 점수</small></span></div></div>
+    </section>
+    <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm font-semibold leading-7 text-amber-950"><strong>자가 체크·선별 결과 안내</strong><br/>이 결과는 ADHD를 진단하는 의료검사가 아닙니다. 정확한 진단은 정신건강의학과 전문의의 면담과 종합 평가를 통해 이루어지며, 현재 어려움이 지속되면 전문의 진단이 필요할 수 있습니다.</div>
+    <section className="mt-7 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-card sm:p-9"><h2 className="text-2xl font-black">두 영역 분석</h2><div className="mt-6 space-y-6"><ScoreBar label="주의력 부족" value={scores.inattention} color="from-blue-600 to-cyan-400"/><ScoreBar label="과잉행동·충동성" value={scores.hyperactivity} color="from-orange-500 to-rose-500"/></div></section>
+    <section className="mt-7 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-card sm:p-9"><h2 className="text-2xl font-black">상세 선별 분석</h2><p className="mt-5 leading-8 text-slate-700">{analysis}</p></section>
+    <section className="mt-7 grid gap-5 md:grid-cols-2"><Card title="현재 활용할 수 있는 강점" items={profile.strengths} tone="emerald"/><Card title="생활 속 관리 팁" items={profile.tips} tone="blue"/></section>
+    <section className="mt-7 rounded-[2rem] border border-orange-100 bg-orange-50 p-6 sm:p-9"><h2 className="text-2xl font-black text-orange-950">언제 전문가 상담을 고려할까요?</h2><p className="mt-2 text-sm leading-6 text-orange-800">아래 항목이 여러 개 해당되거나 일상 기능의 어려움이 크다면 점수와 관계없이 상담을 권장합니다.</p><ul className="mt-5 grid gap-3 sm:grid-cols-2">{consultItems.map(item=><li key={item} className="flex gap-3 rounded-2xl bg-white p-4 text-sm font-semibold leading-6"><span aria-hidden="true">□</span>{item}</li>)}</ul></section>
+    <section className="mt-8 rounded-[2rem] bg-slate-950 p-6 text-white sm:p-9"><h2 className="text-xl font-black">결과 공유하기</h2><p className="mt-2 text-sm text-slate-300">나의 ADHD 자가 체크 결과는 ‘{profile.name}’였습니다.</p><div className="mt-5"><ShareButtons title={`나의 ADHD 자가 체크 결과는 '${profile.name}'였습니다. 당신도 한번 확인해보세요.`} description={profile.summary} path={`/adhd-self-check/result/${profile.slug}`}/></div></section>
+    <p className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 text-center text-xs leading-6 text-slate-500">이 콘텐츠는 참고용 자가 체크이자 선별 정보이며 의료적 진단을 제공하지 않습니다. 자신이나 타인을 ADHD라고 단정하는 용도로 사용하지 마세요.</p>
+    <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center"><Link href="/tests/adhd-self-check?start=1" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-slate-300 bg-white px-5 text-sm font-bold">다시 테스트하기</Link><Link href="/tests" className="inline-flex min-h-12 items-center justify-center rounded-xl bg-teal-700 px-5 text-sm font-bold text-white">다른 테스트 보기</Link></div>
+  </div></div><MobileShareDock/></div>;
+}
+function ScoreBar({label,value,color}:{label:string;value:number;color:string}){return <div><div className="flex justify-between text-sm font-black"><span>{label}</span><span>{value}%</span></div><div className="mt-2 h-4 overflow-hidden rounded-full bg-slate-100"><div className={`h-full rounded-full bg-gradient-to-r ${color}`} style={{width:`${value}%`}}/></div></div>;}
+function Card({title,items,tone}:{title:string;items:string[];tone:"emerald"|"blue"}){return <div className={`rounded-[2rem] p-6 sm:p-8 ${tone==="emerald"?"bg-emerald-50":"bg-blue-50"}`}><h2 className="text-xl font-black">{title}</h2><ul className="mt-5 space-y-3">{items.map(item=><li key={item} className="flex gap-2 text-sm font-semibold leading-6"><span>✓</span>{item}</li>)}</ul></div>;}
