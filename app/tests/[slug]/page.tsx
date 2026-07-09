@@ -30,7 +30,7 @@ import { StandardTestLanding } from "@/components/test/StandardTestLanding";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ start?: string; age?: string; play?: string; seed?: string }> };
 
-export function generateStaticParams() { return tests.map(({ slug }) => ({ slug })); }
+export function generateStaticParams() { return tests.filter(({ href }) => !href).map(({ slug }) => ({ slug })); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
@@ -44,6 +44,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const { start, age, play, seed } = await searchParams;
   const test = getTest(slug);
   if (!test) notFound();
+  if (test.href) redirect(test.href);
   if (test.type === "fortune") redirect(test.href ?? "/fortune/today");
   if (test.type === "worldcup") {
     const parsedSeed = Number(seed);

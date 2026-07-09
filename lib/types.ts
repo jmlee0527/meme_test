@@ -49,7 +49,7 @@ export type TestSeoContent = {
 };
 
 export type TestDefinition = {
-  type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune";
+  type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune" | "calculator";
   slug: string;
   href?: string;
   title: string;

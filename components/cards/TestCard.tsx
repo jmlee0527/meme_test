@@ -17,7 +17,7 @@ const accentClasses = {
 export function TestCard({ test, rank }: { test: TestDefinition; rank?: number }) {
   const reduceMotion = useReducedMotion();
   const href = test.href ?? `/tests/${test.slug}`;
-  const countLabel = test.type === "worldcup" ? `${test.itemCount}강` : test.type === "fortune" ? `${test.itemCount ?? 5}장 카드` : `${test.itemCount ?? test.questions.length}문항`;
+  const countLabel = test.type === "worldcup" ? `${test.itemCount}강` : test.type === "fortune" ? `${test.itemCount ?? 5}장 카드` : test.type === "calculator" ? "이름 2개" : `${test.itemCount ?? test.questions.length}문항`;
   return (
     <motion.article whileHover={reduceMotion ? undefined : { y: -8, scale: 1.02 }} transition={{ type: "spring", stiffness: 320, damping: 24 }} className="group relative overflow-hidden rounded-[1.75rem] border border-white bg-white shadow-card transition-shadow duration-300 hover:shadow-2xl hover:shadow-slate-300/50">
       {rank && <span className="absolute left-4 top-4 z-10 grid size-10 place-items-center rounded-2xl border border-white/80 bg-white/85 text-lg font-black shadow-md backdrop-blur" aria-label={`인기 ${rank}위`}>{["🥇","🥈","🥉"][rank-1] ?? rank}</span>}
