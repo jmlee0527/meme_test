@@ -15,6 +15,7 @@ import { calculateLoverResult, serializeLoverAnswers } from "@/lib/lover-score-e
 import { calculateEqScores, serializeEqAnswers } from "@/lib/eq-engine";
 import { calculateBigFiveScores, serializeBigFiveAnswers } from "@/lib/big-five-engine";
 import { calculateWizardCharacterResult, serializeWizardCharacterAnswers } from "@/lib/wizard-character-engine";
+import { calculateCoffeeBrandResult, serializeCoffeeBrandAnswers } from "@/lib/coffee-brand-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -25,7 +26,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
   const progress = ((index + 1) / test.questions.length) * 100;
   const question = test.questions[index];
   const isMultipleChoice = Boolean(question.options?.length);
-  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test", "harry-potter-character-test"].includes(test.slug);
+  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test", "harry-potter-character-test", "coffee-brand-test"].includes(test.slug);
 
   const select = (answer: boolean | number) => {
     const next = [...answers];
@@ -107,6 +108,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateWizardCharacterResult(completeAnswers);
       setLoading(true);
       router.push(`/harry-potter-character-test/result/${result.profile.slug}?answers=${serializeWizardCharacterAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "coffee-brand-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateCoffeeBrandResult(completeAnswers);
+      setLoading(true);
+      router.push(`/coffee-brand-test/result/${result.profile.slug}?answers=${serializeCoffeeBrandAnswers(completeAnswers)}`);
       return;
     }
     const completeAnswers = answers as boolean[];

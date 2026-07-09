@@ -73,6 +73,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isCvsTest = test.slug === "convenience-store-test";
   const isSnsTest = test.slug === "sns-type-test";
   const isWizardCharacter = test.slug === "harry-potter-character-test";
+  const isCoffeeBrand = test.slug === "coffee-brand-test";
   const currentAge = isMarriageTiming ? parseCurrentAge(age) : null;
 
   if (isSnsTest && start === "1") return <SnsTypeTestPage />;
@@ -91,7 +92,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (start === "1" && (!isMarriageTiming || currentAge)) return <div className="container-page py-8 sm:py-12"><TestRunner test={test} currentAge={currentAge ?? undefined} /></div>;
 
   const itemCount=test.itemCount??test.questions.length;
-  const answerType=test.type==="likert"||isBurnoutRisk||isBigFive?"5점 척도":isKkondaePower||isEnneagram||isEqTest||isFootballQuiz||isWorldCupWinnerQuiz||isJealousy||isSbti||isCvsTest||isSnsTest||isWizardCharacter?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality||isMbti?"2지선다":"O/X";
+  const answerType=test.type==="likert"||isBurnoutRisk||isBigFive?"5점 척도":isKkondaePower||isEnneagram||isEqTest||isFootballQuiz||isWorldCupWinnerQuiz||isJealousy||isSbti||isCvsTest||isSnsTest||isWizardCharacter||isCoffeeBrand?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality||isMbti?"2지선다":"O/X";
 
   return (
     <div className="container-page py-10 sm:py-14">

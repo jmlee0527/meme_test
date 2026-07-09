@@ -634,6 +634,48 @@ export type WizardCharacterProfile = {
   shareText: string;
 };
 
+export type CoffeeBrandTrait =
+  | "trendy"
+  | "emotion"
+  | "practicality"
+  | "rationality"
+  | "leisure"
+  | "activity"
+  | "independence"
+  | "sociability"
+  | "challenge"
+  | "stability"
+  | "creativity"
+  | "premium";
+export type CoffeeBrandScores = Record<CoffeeBrandTrait, number>;
+export type CoffeeBrandQuestion = {
+  id: number;
+  text: string;
+  options: {
+    label: string;
+    text: string;
+    value: number;
+    weights: Partial<CoffeeBrandScores>;
+  }[];
+};
+export type CoffeeBrandProfile = {
+  slug: string;
+  name: string;
+  symbol: string;
+  palette: [string, string];
+  summary: string;
+  description: string;
+  matchReason: string;
+  strengths: string[];
+  cautions: string[];
+  menus: string[];
+  goodMatches: string[];
+  oppositeMatch: string;
+  coreTraits: CoffeeBrandTrait[];
+  targetScores: CoffeeBrandScores;
+  shareText: string;
+};
+
 // 편의점 성격 테스트: 12가지 내부 성향
 export type CvsTrait =
   | "realism" | "emotion" | "planning" | "spontaneity"
