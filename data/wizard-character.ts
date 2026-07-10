@@ -210,6 +210,7 @@ export const wizardCharacterTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2분",
   icon: "🪄",
+  thumbnail: "/tests/wizard-character.jpg",
   participants: 1847,
   accent: "purple",
   isNew: true,

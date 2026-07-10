@@ -140,6 +140,7 @@ export const dailyFortuneTest: TestDefinition = {
   category: "건강.운세",
   duration: "약 1분",
   icon: "🌙✨",
+  thumbnail: "/tests/daily-fortune.jpg",
   participants: 8014,
   accent: "purple",
   isNew: true,

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { TestSeoContent } from "@/components/seo/TestSeoContent";
@@ -9,7 +10,13 @@ export function StandardTestLanding({ test, insight, answerType = "4지선다" }
     <div className="container-page py-10 sm:py-14">
       <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: test.shortTitle }]} />
       <section className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
-        <div className="grid min-h-60 place-items-center bg-gradient-to-br from-emerald-50 via-teal-50 to-sky-100"><span className="text-7xl" aria-hidden="true">{test.icon}</span></div>
+        {test.thumbnail ? (
+          <div className="relative aspect-[16/10] min-h-60 w-full bg-slate-100">
+            <Image src={test.thumbnail} alt={test.title} fill sizes="(max-width:768px) 100vw, 768px" className="object-cover object-[center_20%]" priority />
+          </div>
+        ) : (
+          <div className="grid min-h-60 place-items-center bg-gradient-to-br from-emerald-50 via-teal-50 to-sky-100"><span className="text-7xl" aria-hidden="true">{test.icon}</span></div>
+        )}
         <div className="p-6 sm:p-10">
           <div className="flex gap-2 text-xs font-bold"><Link href={`/category/${encodeURIComponent(test.category)}`} className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">{test.category}</Link><span className="rounded-full bg-slate-100 px-3 py-1 text-slate-500">{test.duration}</span></div>
           <h1 className="mt-5 text-3xl font-black tracking-tight text-ink sm:text-4xl">{test.title}</h1>

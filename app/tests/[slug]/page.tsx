@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
@@ -30,6 +31,8 @@ import { StandardTestLanding } from "@/components/test/StandardTestLanding";
 import { ArsenalFanQuizTestPage } from "@/components/test/ArsenalFanQuizTestPage";
 import { YoungtakFanQuizTestPage } from "@/components/test/YoungtakFanQuizTestPage";
 import { LimYoungWoongFanQuizTestPage } from "@/components/test/LimYoungWoongFanQuizTestPage";
+import { TetoEgenTestPage } from "@/components/test/TetoEgenTestPage";
+import { BtsFanQuizTestPage } from "@/components/test/BtsFanQuizTestPage";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ start?: string; age?: string; play?: string; seed?: string }> };
 
@@ -88,8 +91,14 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isArsenalFan = test.slug === "arsenal-fan-test";
   const isYoungtakFan = test.slug === "youngtak-fan-test";
   const isLimYoungWoongFan = test.slug === "limyoungwoong-fan-test";
+  const isTetoEgen = test.slug === "teto-egen-test";
   const currentAge = isMarriageTiming ? parseCurrentAge(age) : null;
 
+  const isBtsFan = test.slug === "bts-fan-test";
+  if (isBtsFan && start === "1") return <BtsFanQuizTestPage />;
+  if (isBtsFan) return <StandardTestLanding test={test} insight="나는 BTS를 얼마나 알고 있을까요? 멤버와 데뷔부터 음반, 콘서트, 달려라 방탄·본 보야지 같은 공식 콘텐츠, 빌보드·기네스·그래미 기록과 솔로 활동, 2026년 최신 완전체 활동까지 60개 문제은행에서 매번 15문제가 랜덤 출제됩니다. 난이도는 하 5문제·중 5문제·상 5문제로 항상 균형이 유지되며, 모든 문제는 공식 발표와 공식 기록으로 사실 검증을 거쳤습니다. 결과에서는 6단계 팬심 등급과 분야별 정답률, 해설이 담긴 오답노트를 확인할 수 있습니다. 본 테스트는 BTS 또는 소속사의 공식 서비스가 아닌 비공식 팬 퀴즈입니다." />;
+  if (isTetoEgen && start === "1") return <TetoEgenTestPage />;
+  if (isTetoEgen) return <StandardTestLanding test={test} answerType="2지선다" insight="나는 테토일까, 에겐일까? 카페에서 메뉴를 고르는 방식, 단체 채팅방에서의 첫 행동, 여행을 준비하는 순서처럼 자연스러운 일상 선택 70개 문제은행에서 매번 14문항(쉬움 4·보통 6·어려움 4)이 랜덤으로 출제됩니다. 각 선택지는 테토 점수와 에겐 점수를 동시에 갖고 있고 문항마다 다른 가중치가 적용되어, 어떤 답이 어느 쪽인지 눈치채기 어렵게 설계했습니다. 결과에서는 테토력·에겐력 비율(%)과 8가지 유형 중 나의 유형, 연애·친구·직장에서의 모습, 잘 맞는 유형과 반대 유형과의 케미까지 상세 분석을 제공합니다." />;
   if (isSelfEsteem && start !== "1") return <StandardTestLanding test={test} insight="실패, 칭찬, 비교, 피드백, 낯선 관계와 중요한 결정처럼 일상에서 자주 만나는 14가지 상황을 통해 자기수용, 자기효능감, 사회적 비교, 실패 회복력, 타인 평가 민감도, 자기신뢰, 감정 안정성과 자기연민을 함께 살펴봅니다. 각 선택은 2~4개 요인에 복합적으로 반영되며 결과에서는 현재 점수보다 나를 지지하는 영역과 조금 더 돌보면 좋은 영역을 구체적으로 확인할 수 있습니다." />;
   if (isAdhdScreening && start !== "1") return <StandardTestLanding test={test} answerType="5점 척도" insight="이 테스트는 ADHD를 진단하는 의료검사가 아닙니다. 세계적으로 널리 사용되는 성인 ADHD 선별검사의 평가 개념을 참고하여 현재 ADHD 관련 특성이 어느 정도 나타나는지 확인하는 참고용 자가 체크입니다. 정확한 진단은 반드시 정신건강의학과 전문의의 평가를 통해 이루어져야 하며, 결과에 따라 전문의 진단이 필요할 수 있습니다. 최근 6개월의 경험을 기준으로 응답해 주세요." />;
   if (isDementiaRisk && start !== "1") return <StandardTestLanding test={test} answerType="5점 척도" insight="이 테스트는 치매를 진단하는 의료검사가 아닙니다. 최근 기억력, 일상생활 변화, 생활습관 위험요인을 확인하는 참고용 자가 체크입니다. 결과가 높거나 일상생활에 불편이 있다면 신경과, 정신건강의학과, 치매안심센터 등 전문기관 상담을 권장합니다. 최근 6개월~1년 사이의 변화를 기준으로 응답해 주세요." />;
@@ -124,7 +133,13 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
     <div className="container-page py-10 sm:py-14">
       <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: test.shortTitle }]} />
       <section className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
-        <div className="grid min-h-60 place-items-center bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-100"><span className="text-7xl" aria-hidden="true">{test.icon}</span></div>
+        {test.thumbnail ? (
+          <div className="relative aspect-[16/10] min-h-60 w-full bg-slate-100">
+            <Image src={test.thumbnail} alt={test.title} fill sizes="(max-width:768px) 100vw, 768px" className="object-cover object-center" priority />
+          </div>
+        ) : (
+          <div className="grid min-h-60 place-items-center bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-100"><span className="text-7xl" aria-hidden="true">{test.icon}</span></div>
+        )}
         <div className="p-6 sm:p-10">
           <div className="flex gap-2 text-xs font-bold"><Link href={`/category/${encodeURIComponent(test.category)}`} className="rounded-full bg-blue-50 px-3 py-1 text-primary">{test.category}</Link><span className="rounded-full bg-slate-100 px-3 py-1 text-slate-500">{test.duration}</span></div>
           <h1 className="mt-5 text-3xl font-black tracking-tight text-ink sm:text-4xl">{test.title}</h1>

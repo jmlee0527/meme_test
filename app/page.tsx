@@ -15,7 +15,7 @@ const rankedTests = [...tests].sort((a, b) => b.participants - a.participants);
 const bySlug = (slug: string) => tests.find((test) => test.slug === slug)!;
 const categories = [
   ["🧠", "성격.심리", "green"], ["💕", "연애.관계", "pink"], ["💼", "직업.일상", "blue"],
-  ["🎯", "퀴즈", "orange"], ["🔮", "건강.운세", "purple"],
+  ["🎯", "팬 퀴즈", "orange"], ["🔮", "건강.운세", "purple"],
 ] as const;
 
 export default function HomePage() {

@@ -119,6 +119,7 @@ export const eqTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2분",
   icon: "💗",
+  thumbnail: "/tests/eq-test.jpg",
   participants:6129,
   accent: "pink",
   isNew: true,

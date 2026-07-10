@@ -193,6 +193,7 @@ export const burgerTest: TestDefinition = {
   category: "직업.일상",
   duration: "약 2분",
   icon: "🍔",
+  thumbnail: "/tests/burger.jpg",
   participants: 2043,
   accent: "orange",
   isNew: true,

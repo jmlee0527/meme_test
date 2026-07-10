@@ -253,6 +253,7 @@ export const mbtiTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 5분",
   icon: "🧩",
+  thumbnail: "/tests/mbti.jpg",
   participants: 3241,
   accent: "purple",
   isNew: true,

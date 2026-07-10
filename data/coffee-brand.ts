@@ -205,6 +205,7 @@ export const coffeeBrandTest: TestDefinition = {
   category: "직업.일상",
   duration: "약 2분",
   icon: "☕",
+  thumbnail: "/tests/coffee-brand.jpg",
   participants: 1326,
   accent: "orange",
   isNew: true,

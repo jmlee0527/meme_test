@@ -331,6 +331,7 @@ export const sbtiTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 4분",
   icon: "🤪",
+  thumbnail: "/tests/sbti.jpg",
   participants: 2687,
   accent: "pink",
   isNew: true,

@@ -241,6 +241,7 @@ export const loverFruitTest: TestDefinition = {
   category: "연애.관계",
   duration: "약 2분",
   icon: "🍓",
+  thumbnail: "/tests/lover-fruit.jpg",
   participants: 1284,
   accent: "pink",
   isNew: true,

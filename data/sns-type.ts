@@ -305,6 +305,7 @@ export const snsTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2분",
   icon: "📱",
+  thumbnail: "/tests/sns.jpg",
   participants: 2384,
   accent: "pink",
   isNew: true,

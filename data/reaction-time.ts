@@ -50,7 +50,7 @@ export const reactionTimeTest: TestDefinition = {
   shortTitle: "반응속도 테스트",
   cardTitle: "나의 반응속도는 몇 ms일까?",
   description: "화면이 초록색으로 바뀌는 순간 터치! 3번의 측정으로 평균 반응속도(ms)와 반사신경 등급을 확인해보세요.",
-  category: "퀴즈",
+  category: "팬 퀴즈",
   duration: "약 30초",
   icon: "⚡",
   participants: 2159,

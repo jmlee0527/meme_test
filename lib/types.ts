@@ -48,7 +48,7 @@ export type TestSeoContent = {
   assesses?: string;
 };
 
-export type TestCategory = "성격.심리" | "연애.관계" | "직업.일상" | "퀴즈" | "건강.운세";
+export type TestCategory = "성격.심리" | "연애.관계" | "직업.일상" | "팬 퀴즈" | "건강.운세";
 
 export type TestDefinition = {
   type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune" | "calculator";
@@ -61,6 +61,8 @@ export type TestDefinition = {
   category: TestCategory;
   duration: string;
   icon: string;
+  /** 카드·랜딩 상단 썸네일 이미지 경로 (없으면 icon 이모지 사용) */
+  thumbnail?: string;
   questions: TestQuestion[];
   resultSlugs: string[];
   seoTitle?: string;
@@ -1016,6 +1018,107 @@ export type LimYoungwoongFanGradeProfile = {
 export type LimYoungwoongFanAnswer = {
   questionId: string;
   choice: number;
+};
+
+export type BtsQuestionDifficulty = "easy" | "medium" | "hard";
+export type BtsQuestionCategory =
+  | "멤버" | "데뷔" | "음반" | "타이틀곡" | "수록곡" | "뮤직비디오"
+  | "콘서트" | "FESTA" | "RUN BTS" | "Bon Voyage" | "팬덤" | "BT21"
+  | "Billboard" | "Guinness" | "Grammy" | "MAMA" | "MMA" | "수상 기록"
+  | "협업" | "솔로 활동" | "SNS" | "공식 콘텐츠" | "활동 연도" | "기록" | "퍼포먼스";
+export type BtsQuizQuestion = {
+  id: string;
+  difficulty: BtsQuestionDifficulty;
+  category: BtsQuestionCategory;
+  question: string;
+  choices: string[];
+  correctAnswer: number;
+  explanation: string;
+  /** 사실 검증에 사용한 공식 출처 (내부 관리용) */
+  source: string;
+};
+export type BtsPresentedQuestion = BtsQuizQuestion & {
+  originalId: string;
+  /** 화면 표시 순서 → 원본 choices 인덱스 */
+  optionOrder: number[];
+};
+export type BtsFanAnswer = {
+  questionId: string;
+  choice: number;
+};
+export type BtsFanGradeProfile = {
+  slug: string;
+  minScore: number;
+  maxScore: number;
+  name: string;
+  icon: string;
+  subtitle: string;
+  description: string;
+  recommendation: string;
+  shareText: string;
+};
+
+export type TetoEgenDifficulty = "easy" | "medium" | "hard";
+export type TetoEgenQuestionCategory =
+  | "decision"
+  | "relationship"
+  | "emotion"
+  | "conflict"
+  | "planning"
+  | "behavior";
+export type TetoEgenAnswerOption = {
+  label: string;
+  tetoScore: number;
+  egenScore: number;
+};
+export type TetoEgenQuestion = {
+  id: string;
+  question: string;
+  difficulty: TetoEgenDifficulty;
+  category: TetoEgenQuestionCategory;
+  /** 난이도별 가중치. 최종 점수 = (tetoScore | egenScore) × weight */
+  weight: number;
+  answers: TetoEgenAnswerOption[];
+};
+export type TetoEgenPresentedQuestion = TetoEgenQuestion & {
+  originalId: string;
+  /** 화면에 표시된 순서 → 원본 answers 인덱스 */
+  optionOrder: number[];
+};
+export type TetoEgenAnswer = {
+  questionId: string;
+  choice: number;
+};
+export type TetoEgenResultSlug =
+  | "pure-teto"
+  | "strong-teto"
+  | "teto-lean"
+  | "balance-teto"
+  | "perfect-balance"
+  | "balance-egen"
+  | "egen-lean"
+  | "pure-egen";
+export type TetoEgenResultProfile = {
+  slug: TetoEgenResultSlug;
+  name: string;
+  icon: string;
+  /** 테토력(%) 기준 구간 */
+  minTeto: number;
+  maxTeto: number;
+  summary: string;
+  oneLiner: string;
+  personality: string;
+  perception: string;
+  love: string;
+  friendship: string;
+  work: string;
+  stress: string;
+  strengths: string[];
+  weaknesses: string[];
+  goodMatch: string;
+  oppositeChemistry: string;
+  growth: string;
+  shareText: string;
 };
 
 export type BlogPost = {
