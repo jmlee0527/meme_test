@@ -33,6 +33,7 @@ import { adhdScreeningTest } from "@/data/adhd-screening";
 import { dementiaRiskTest } from "@/data/dementia-risk";
 import { loverFruitTest } from "@/data/lover-fruit";
 import { arsenalFanTest } from "@/data/arsenal-fan";
+import { youngtakFanTest } from "@/data/youngtak-fan";
 
 export const questions = [
   "나는 초기 자본이 거의 없어도 시작할 수 있는 부업을 선호한다.",
@@ -127,7 +128,7 @@ export const tests: TestDefinition[] = [{
     ],
     assesses: "부업 적합 성향과 업무 선호",
   },
-}, arsenalFanTest, loverFruitTest, dementiaRiskTest, adhdScreeningTest, nameCompatibilityTest, selfEsteemTest, coffeeBrandTest, wizardCharacterTest, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, stressTest, cvsTest, snsTest, burgerTest, dailyFortuneTest];
+}, youngtakFanTest, arsenalFanTest, loverFruitTest, dementiaRiskTest, adhdScreeningTest, nameCompatibilityTest, selfEsteemTest, coffeeBrandTest, wizardCharacterTest, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, stressTest, cvsTest, snsTest, burgerTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

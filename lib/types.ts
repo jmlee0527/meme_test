@@ -773,6 +773,64 @@ export type ArsenalDifficultyStats = {
   hardCorrect: number;
 };
 
+export type YoungtakQuestionCategory =
+  | "profile"
+  | "early-music"
+  | "trot-transition"
+  | "discography"
+  | "songs"
+  | "release-order"
+  | "broadcast"
+  | "competition"
+  | "concert"
+  | "production"
+  | "collaboration"
+  | "official-content"
+  | "acting"
+  | "fandom"
+  | "interview-activity"
+  | "awards"
+  | "song-album-link"
+  | "title-distinction";
+export type YoungtakQuestionDifficulty = "easy" | "medium" | "hard" | "expert";
+export type YoungtakQuizQuestion = {
+  id: string;
+  category: YoungtakQuestionCategory;
+  difficulty: YoungtakQuestionDifficulty;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+  sourceTitle: string;
+  sourceUrl: string;
+  secondarySourceTitle: string;
+  secondarySourceUrl: string;
+  verifiedAt: string;
+  isTimeSensitive: boolean;
+  factCheckNote: string;
+};
+export type YoungtakPresentedQuestion = Omit<YoungtakQuizQuestion, "options" | "correctAnswer"> & {
+  options: string[];
+  correctAnswer: number;
+  originalId: string;
+  optionOrder: number[];
+};
+export type YoungtakFanGradeProfile = {
+  slug: string;
+  minScore: number;
+  maxScore: number;
+  title: string;
+  summary: string;
+  description: string;
+  traits: string[];
+  recommendations: string[];
+  shareTexts: string[];
+};
+export type YoungtakFanAnswer = {
+  questionId: string;
+  choice: number;
+};
+
 export type SelfEsteemDomain =
   | "selfAcceptance"
   | "selfEfficacy"
