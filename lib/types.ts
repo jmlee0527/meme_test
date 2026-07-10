@@ -721,6 +721,58 @@ export type LoverFruitProfile = {
   shareText: string;
 };
 
+export type ArsenalQuestionCategory =
+  | "history"
+  | "stadium"
+  | "manager"
+  | "player"
+  | "honours"
+  | "match"
+  | "rivalry"
+  | "europe"
+  | "culture";
+export type ArsenalQuestionDifficulty = "easy" | "medium" | "hard";
+export type ArsenalQuizQuestion = {
+  id: string;
+  category: ArsenalQuestionCategory;
+  difficulty: ArsenalQuestionDifficulty;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+  sourceName: string;
+  sourceUrl: string;
+  verifiedAt: string;
+  isTimeSensitive: boolean;
+  referenceSeason?: string;
+  kind?: "match-score" | "current-season" | "standard";
+};
+export type ArsenalPresentedQuestion = Omit<ArsenalQuizQuestion, "options" | "correctAnswer"> & {
+  options: string[];
+  correctAnswer: number;
+  originalId: string;
+  optionOrder: number[];
+};
+export type ArsenalFanGradeProfile = {
+  slug: string;
+  minScore: number;
+  maxScore: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  strengths: string[];
+  shareText: string;
+};
+export type ArsenalFanAnswer = {
+  questionId: string;
+  choice: number;
+};
+export type ArsenalDifficultyStats = {
+  easyCorrect: number;
+  mediumCorrect: number;
+  hardCorrect: number;
+};
+
 export type SelfEsteemDomain =
   | "selfAcceptance"
   | "selfEfficacy"
