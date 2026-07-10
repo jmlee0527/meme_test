@@ -29,6 +29,7 @@ import { BurgerBrandTestPage } from "@/components/test/BurgerBrandTestPage";
 import { StandardTestLanding } from "@/components/test/StandardTestLanding";
 import { ArsenalFanQuizTestPage } from "@/components/test/ArsenalFanQuizTestPage";
 import { YoungtakFanQuizTestPage } from "@/components/test/YoungtakFanQuizTestPage";
+import { LimYoungWoongFanQuizTestPage } from "@/components/test/LimYoungWoongFanQuizTestPage";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ start?: string; age?: string; play?: string; seed?: string }> };
 
@@ -86,12 +87,14 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isDementiaRisk = test.slug === "dementia-risk-test";
   const isArsenalFan = test.slug === "arsenal-fan-test";
   const isYoungtakFan = test.slug === "youngtak-fan-test";
+  const isLimYoungWoongFan = test.slug === "limyoungwoong-fan-test";
   const currentAge = isMarriageTiming ? parseCurrentAge(age) : null;
 
   if (isSelfEsteem && start !== "1") return <StandardTestLanding test={test} insight="실패, 칭찬, 비교, 피드백, 낯선 관계와 중요한 결정처럼 일상에서 자주 만나는 14가지 상황을 통해 자기수용, 자기효능감, 사회적 비교, 실패 회복력, 타인 평가 민감도, 자기신뢰, 감정 안정성과 자기연민을 함께 살펴봅니다. 각 선택은 2~4개 요인에 복합적으로 반영되며 결과에서는 현재 점수보다 나를 지지하는 영역과 조금 더 돌보면 좋은 영역을 구체적으로 확인할 수 있습니다." />;
   if (isAdhdScreening && start !== "1") return <StandardTestLanding test={test} answerType="5점 척도" insight="이 테스트는 ADHD를 진단하는 의료검사가 아닙니다. 세계적으로 널리 사용되는 성인 ADHD 선별검사의 평가 개념을 참고하여 현재 ADHD 관련 특성이 어느 정도 나타나는지 확인하는 참고용 자가 체크입니다. 정확한 진단은 반드시 정신건강의학과 전문의의 평가를 통해 이루어져야 하며, 결과에 따라 전문의 진단이 필요할 수 있습니다. 최근 6개월의 경험을 기준으로 응답해 주세요." />;
   if (isDementiaRisk && start !== "1") return <StandardTestLanding test={test} answerType="5점 척도" insight="이 테스트는 치매를 진단하는 의료검사가 아닙니다. 최근 기억력, 일상생활 변화, 생활습관 위험요인을 확인하는 참고용 자가 체크입니다. 결과가 높거나 일상생활에 불편이 있다면 신경과, 정신건강의학과, 치매안심센터 등 전문기관 상담을 권장합니다. 최근 6개월~1년 사이의 변화를 기준으로 응답해 주세요." />;
   if (isYoungtakFan && start !== "1") return <StandardTestLanding test={test} insight="나는 영탁을 얼마나 잘 알고 있을까요? 노래, 앨범, 방송, 무대, 콘서트, 작사·작곡 참여와 활동 기록까지 총 60개의 문제은행에서 난이도별 15문항이 랜덤으로 출제됩니다. 쉬움 4문항·보통 6문항·어려움 4문항·최상 1문항으로 총점은 정확히 100점이며, 결과에서는 카테고리별 정답률과 오답노트를 확인할 수 있습니다. 본 테스트는 영탁 또는 소속사의 공식 서비스가 아닌 비공식 팬 퀴즈입니다." />;
+  if (isLimYoungWoongFan && start !== "1") return <StandardTestLanding test={test} insight="나는 임영웅을 얼마나 잘 알고 있을까요? 데뷔, 노래, 정규앨범, 경연, 방송, OST, 콘서트와 제작 크레딧까지 공식·주요 음원 자료로 검증한 60개 문제은행에서 난이도별 15문항이 랜덤 출제됩니다. 쉬움 4문항·보통 6문항·어려움 4문항·최상 1문항으로 총점은 정확히 100점이며, 결과에서는 분야별 정답률과 오답노트를 확인할 수 있습니다. 본 테스트는 임영웅 또는 소속사의 공식 서비스가 아닌 비공식 팬 퀴즈입니다." />;
   if (isArsenalFan && start !== "1") return <StandardTestLanding test={test} insight="나는 아스날을 얼마나 잘 알고 있을까요? 선수와 감독, 우승 기록, 홈구장, 유럽대항전, 역사적인 경기까지 총 15개의 문제를 풀고 나의 아스날 팬 지수를 확인해 보세요. 문제은행은 50문항 이상으로 구성되어 있으며, 매번 초급 5문항·중급 6문항·고급 4문항이 무작위 출제됩니다. 본 테스트는 아스날 FC 또는 프리미어리그의 공식 서비스가 아닌 비공식 팬 퀴즈입니다." />;
   if (isLoverFruit && start !== "1") return <StandardTestLanding test={test} insight="연인의 행동을 떠올리며 14가지 연애 상황에 답하면 애정 표현, 안정감, 독립성, 배려심, 유머감각, 감성, 리더십, 모험심, 책임감, 로맨틱함, 친화력, 솔직함을 함께 분석합니다. 단순한 과일 취향이 아니라 연인이 갈등을 풀고 마음을 표현하며 관계의 속도를 맞추는 방식을 20개 과일 성격 프로필과 비교해 가장 닮은 과일 유형을 찾아드려요." />;
   if (isCoffeeBrand && start !== "1") return <StandardTestLanding test={test} insight="휴일, 여행, 선물, 일과 인간관계처럼 익숙한 10가지 상황에서 고른 답으로 트렌디함, 감성, 현실성, 합리성, 여유, 활동성, 독립성, 친화력, 도전성, 안정성, 창의성과 프리미엄 지향을 함께 분석합니다. 단순히 좋아하는 메뉴를 맞히는 대신 생활 리듬과 소비 기준의 전체 조합을 15개 커피 브랜드 이미지와 비교해 가장 어울리는 결과를 찾아드려요." />;
@@ -105,6 +108,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (isFootballQuiz && start === "1") return <FootballQuizTestPage />;
   if (isWorldCupWinnerQuiz && start === "1") return <WorldCupWinnerQuizTestPage />;
   if (isYoungtakFan && start === "1") return <YoungtakFanQuizTestPage />;
+  if (isLimYoungWoongFan && start === "1") return <LimYoungWoongFanQuizTestPage />;
   if (isArsenalFan && start === "1") return <ArsenalFanQuizTestPage />;
   if (isBurnoutRisk && start === "1") return <BurnoutTestPage />;
   if (isConsumerStyle && start === "1") return <ConsumerStyleTestPage />;
@@ -114,7 +118,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (start === "1" && (!isMarriageTiming || currentAge)) return <div className="container-page py-8 sm:py-12"><TestRunner test={test} currentAge={currentAge ?? undefined} /></div>;
 
   const itemCount=test.itemCount??test.questions.length;
-  const answerType=test.type==="likert"||isBurnoutRisk||isBigFive?"5점 척도":isKkondaePower||isEnneagram||isEqTest||isFootballQuiz||isWorldCupWinnerQuiz||isYoungtakFan||isJealousy||isSbti||isCvsTest||isSnsTest||isWizardCharacter||isCoffeeBrand||isLoverFruit||isSelfEsteem?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality||isMbti?"2지선다":"O/X";
+  const answerType=test.type==="likert"||isBurnoutRisk||isBigFive?"5점 척도":isKkondaePower||isEnneagram||isEqTest||isFootballQuiz||isWorldCupWinnerQuiz||isYoungtakFan||isLimYoungWoongFan||isJealousy||isSbti||isCvsTest||isSnsTest||isWizardCharacter||isCoffeeBrand||isLoverFruit||isSelfEsteem?"4지선다":isJoseonDestiny||isPersonalityCountry||isLoverScore||isColorPersonality||isMbti?"2지선다":"O/X";
 
   return (
     <div className="container-page py-10 sm:py-14">

@@ -26,6 +26,7 @@ import { dementiaLevelProfiles } from "@/data/dementia-risk";
 import { loverFruitProfiles } from "@/data/lover-fruit";
 import { arsenalFanGradeProfiles } from "@/data/arsenal-fan";
 import { youngtakFanGradeProfiles } from "@/data/youngtak-fan";
+import { limYoungWoongFanGradeProfiles } from "@/data/limyoungwoong-fan";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -70,7 +71,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const loverFruitResultRoutes: MetadataRoute.Sitemap = loverFruitProfiles.map((profile) => ({ url: absoluteUrl(`/lover-fruit-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const arsenalFanResultRoutes: MetadataRoute.Sitemap = arsenalFanGradeProfiles.map((profile) => ({ url: absoluteUrl(`/arsenal-fan-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const youngtakFanResultRoutes: MetadataRoute.Sitemap = youngtakFanGradeProfiles.map((profile) => ({ url: absoluteUrl(`/youngtak-fan-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
+  const limYoungWoongFanResultRoutes: MetadataRoute.Sitemap = limYoungWoongFanGradeProfiles.map((profile) => ({ url: absoluteUrl(`/limyoungwoong-fan-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const postRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({ url: absoluteUrl(`/blog/${post.slug}`), lastModified: new Date(post.updatedAt), changeFrequency: "monthly", priority: 0.75 }));
   const categoryRoutes: MetadataRoute.Sitemap = [...new Set([...blogCategories, ...tests.map((test) => test.category)])].map((category) => ({ url: absoluteUrl(`/category/${encodeURIComponent(category)}`), changeFrequency: "weekly", priority: 0.6 }));
-  return [...staticRoutes, ...testRoutes, ...resultRoutes, ...joseonResultRoutes, ...countryResultRoutes, ...loverResultRoutes, ...jealousyResultRoutes, ...colorResultRoutes, ...enneagramResultRoutes, ...eqResultRoutes, ...bigFiveResultRoutes, ...footballGradeRoutes, ...worldCupWinnerGradeRoutes, ...reactionGradeRoutes, ...mbtiResultRoutes, ...sbtiResultRoutes, ...stressResultRoutes, ...cvsResultRoutes, ...snsResultRoutes, ...burgerResultRoutes, ...wizardCharacterResultRoutes, ...coffeeBrandResultRoutes, ...selfEsteemResultRoutes, ...adhdResultRoutes, ...dementiaResultRoutes, ...loverFruitResultRoutes, ...arsenalFanResultRoutes, ...youngtakFanResultRoutes, ...postRoutes, ...categoryRoutes];
+  return [...staticRoutes, ...testRoutes, ...resultRoutes, ...joseonResultRoutes, ...countryResultRoutes, ...loverResultRoutes, ...jealousyResultRoutes, ...colorResultRoutes, ...enneagramResultRoutes, ...eqResultRoutes, ...bigFiveResultRoutes, ...footballGradeRoutes, ...worldCupWinnerGradeRoutes, ...reactionGradeRoutes, ...mbtiResultRoutes, ...sbtiResultRoutes, ...stressResultRoutes, ...cvsResultRoutes, ...snsResultRoutes, ...burgerResultRoutes, ...wizardCharacterResultRoutes, ...coffeeBrandResultRoutes, ...selfEsteemResultRoutes, ...adhdResultRoutes, ...dementiaResultRoutes, ...loverFruitResultRoutes, ...arsenalFanResultRoutes, ...youngtakFanResultRoutes, ...limYoungWoongFanResultRoutes, ...postRoutes, ...categoryRoutes];
 }

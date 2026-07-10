@@ -831,6 +831,23 @@ export type YoungtakFanAnswer = {
   choice: number;
 };
 
+// 팬 지식 퀴즈는 동일한 검증/출제 구조를 공유하되, 테스트별 데이터와
+// 결과 라우트는 독립적으로 관리합니다.
+export type LimYoungWoongQuestionCategory = YoungtakQuestionCategory;
+export type LimYoungWoongQuestionDifficulty = YoungtakQuestionDifficulty;
+export type LimYoungWoongQuizQuestion = Omit<YoungtakQuizQuestion, "category" | "difficulty"> & {
+  category: LimYoungWoongQuestionCategory;
+  difficulty: LimYoungWoongQuestionDifficulty;
+};
+export type LimYoungWoongPresentedQuestion = Omit<LimYoungWoongQuizQuestion, "options" | "correctAnswer"> & {
+  options: string[];
+  correctAnswer: number;
+  originalId: string;
+  optionOrder: number[];
+};
+export type LimYoungWoongFanGradeProfile = YoungtakFanGradeProfile;
+export type LimYoungWoongFanAnswer = YoungtakFanAnswer;
+
 export type SelfEsteemDomain =
   | "selfAcceptance"
   | "selfEfficacy"
@@ -955,53 +972,48 @@ export type BurgerBrandProfile = {
   targets: BurgerScores;
 };
 
-// 자존감 테스트: 8가지 심리요인 (socialComparison·evaluationSensitivity는 낮을수록 건강)
-export type EsteemFactor =
-  | "selfAcceptance" | "selfEfficacy" | "socialComparison" | "resilience"
-  | "evaluationSensitivity" | "selfConfidence" | "emotionalStability" | "selfCompassion";
-export type EsteemScores = Record<EsteemFactor, number>;
-export type EsteemQuestion = {
-  id: number;
-  text: string;
-  options: { text: string; weights: Partial<EsteemScores> }[];
+// 임영웅 찐팬 테스트 (영탁 팬 퀴즈와 동일한 구조)
+export type LimYoungwoongQuestionCategory =
+  | "profile" | "competition" | "songs" | "discography" | "ost" | "concert"
+  | "fandom" | "broadcast" | "production" | "official-content"
+  | "song-album-link" | "release-order" | "title-distinction";
+export type LimYoungwoongQuestionDifficulty = "easy" | "medium" | "hard" | "expert";
+export type LimYoungwoongQuizQuestion = {
+  id: string;
+  category: LimYoungwoongQuestionCategory;
+  difficulty: LimYoungwoongQuestionDifficulty;
+  question: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+  sourceTitle: string;
+  sourceUrl: string;
+  secondarySourceTitle: string;
+  secondarySourceUrl: string;
+  verifiedAt: string;
+  isTimeSensitive: boolean;
+  factCheckNote: string;
 };
-export type EsteemLevelProfile = {
+export type LimYoungwoongPresentedQuestion = Omit<LimYoungwoongQuizQuestion, "options" | "correctAnswer"> & {
+  originalId: string;
+  options: string[];
+  correctAnswer: number;
+  optionOrder: number[];
+};
+export type LimYoungwoongFanGradeProfile = {
   slug: string;
-  level: number;
-  name: string;
-  icon: string;
   minScore: number;
   maxScore: number;
-  gradient: string;
+  title: string;
   summary: string;
   description: string;
-  strengths: string[];
-  cautions: string[];
-  tips: string[];
+  traits: string[];
+  recommendations: string[];
+  shareTexts: string[];
 };
-
-// ADHD 자가 체크: 주의력 부족 / 과잉행동·충동성 2개 영역 (ASRS v1.1 구조 참고)
-export type AdhdDomain = "inattention" | "hyperactivity";
-export type AdhdQuestion = {
-  id: number;
-  text: string;
-  domain: AdhdDomain;
-  /** ASRS Part A(스크리너) 개념에 해당하는 핵심 문항 — 가중치 1.5 적용 */
-  screener?: boolean;
-};
-export type AdhdLevelProfile = {
-  slug: string;
-  level: number;
-  name: string;
-  icon: string;
-  color: string;
-  minScore: number;
-  maxScore: number;
-  summary: string;
-  description: string;
-  strengths: string[];
-  tips: string[];
-  shareText: string;
+export type LimYoungwoongFanAnswer = {
+  questionId: string;
+  choice: number;
 };
 
 export type BlogPost = {
