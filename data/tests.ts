@@ -105,7 +105,7 @@ export const tests: TestDefinition[] = [{
   title: "나에게 맞는 부업 추천 테스트",
   shortTitle: "부업 추천 테스트",
   description: "12개의 질문으로 나와 잘 맞는 부업을 찾아보세요.",
-  category: "부업",
+  category: "직업.일상",
   duration: "약 2분",
   icon: "✨",
   participants: 4382,

@@ -42,7 +42,7 @@ export const foodWorldcupItems: FoodWorldcupItem[] = [
 
 export const weekendFoodWorldcup: TestDefinition = {
   type:"worldcup", slug:"weekend-food-worldcup", title:"주말 배달음식 월드컵", shortTitle:"배달음식 월드컵", cardTitle:"오늘 뭐 먹지? 배달음식 월드컵",
-  description:"32강 월드컵으로 오늘 가장 먹고 싶은 배달음식을 골라보세요.", category:"음식", duration:"약 3분", icon:"🍕🍗🍔",
+  description:"32강 월드컵으로 오늘 가장 먹고 싶은 배달음식을 골라보세요.", category: "직업.일상", duration:"약 3분", icon:"🍕🍗🍔",
   participants:5248, accent:"orange", isNew:true, itemCount:32, questions:[], resultSlugs:foodWorldcupItems.map((item)=>item.resultSlug),
   seoTitle:"주말 배달음식 월드컵 | 오늘 뭐 먹지?", seoDescription:"32강 월드컵으로 오늘 가장 먹고 싶은 배달음식을 선택해보세요.",
   keywords:["배달음식 월드컵","음식 월드컵","오늘 뭐 먹지","주말 음식 추천","배달 추천","치킨 피자 떡볶이"],

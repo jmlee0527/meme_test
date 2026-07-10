@@ -79,7 +79,7 @@ export const enneagramTest: TestDefinition = {
   shortTitle: "애니어그램 테스트",
   cardTitle: "나는 어떤 9가지 성격 유형일까?",
   description: "애니어그램 테스트로 내면의 동기, 두려움, 관계 방식을 분석해 9가지 유형 중 나와 가장 가까운 성격 유형을 확인해보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "🌀",
   participants: 4861,

@@ -117,7 +117,7 @@ export const footballQuizTest: TestDefinition = {
   shortTitle: "축잘알 테스트",
   cardTitle: "나는 얼마나 축구를 잘 알까?",
   description: "월드컵부터 챔피언스리그, 해외 축구 상식까지! 난이도별 15문제로 나의 축잘알 지수를 측정해보세요.",
-  category: "스포츠",
+  category: "퀴즈",
   duration: "약 3분",
   icon: "⚽",
   participants: 1874,

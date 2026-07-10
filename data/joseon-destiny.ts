@@ -103,7 +103,7 @@ export const joseonDestinyTest: TestDefinition = {
   shortTitle: "조선 운명 테스트",
   cardTitle: "조선시대에 환생했다면?",
   description: "12개의 선택으로 알아보는 나의 조선시대 운명. 왕, 암행어사, 거상, 의적까지 친구와 비교해보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "🏯",
   participants: 2764,

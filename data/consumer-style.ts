@@ -34,7 +34,7 @@ export function getConsumerResultProfile(slug:string){return consumerResultProfi
 
 export const consumerStyleTest:TestDefinition={
   type:"likert",slug:"consumer-style-test",title:"소비성향 테스트",shortTitle:"소비성향 테스트",cardTitle:"당신은 돈을 어떻게 사용하고 있을까요?",
-  description:"평소 소비 습관과 가치관을 바탕으로 당신의 소비 성향을 분석합니다.",category:"돈",duration:"약 2~3분",icon:"💳",participants:3586,accent:"indigo",isNew:true,itemCount:consumerQuestions.length,questions:[],resultSlugs:consumerResultProfiles.map(({slug})=>slug),
+  description:"평소 소비 습관과 가치관을 바탕으로 당신의 소비 성향을 분석합니다.",category: "직업.일상",duration:"약 2~3분",icon:"💳",participants:3586,accent:"indigo",isNew:true,itemCount:consumerQuestions.length,questions:[],resultSlugs:consumerResultProfiles.map(({slug})=>slug),
   seoTitle:"소비성향 테스트 | 나는 어떤 소비 유형일까?",seoDescription:"돈을 쓰는 방식에는 패턴이 있습니다. 소비 습관과 가치관을 바탕으로 당신의 소비 성향을 분석해보세요.",keywords:["소비성향 테스트","소비 습관 테스트","돈 쓰는 성향 테스트","소비 유형 테스트","재테크 성향 테스트"],
   seoContent: {
     heading: "소비성향 테스트란?",

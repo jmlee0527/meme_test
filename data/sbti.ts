@@ -328,7 +328,7 @@ export const sbtiTest: TestDefinition = {
   shortTitle: "SBTI 테스트",
   cardTitle: "나의 SBTI 유형은?",
   description: "MBTI 패러디로 화제가 된 SBTI! 30개 문항으로 15개 차원을 분석해 CTRL부터 히든 유형 DRUNK까지 27가지 유형 중 나를 찾아드립니다.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 4분",
   icon: "🤪",
   participants: 2687,

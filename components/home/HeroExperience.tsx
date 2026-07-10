@@ -23,7 +23,7 @@ export function HeroExperience() {
   return (
     <section className="relative overflow-hidden border-b border-white/70 bg-[radial-gradient(circle_at_15%_20%,#dbeafe_0,transparent_34%),radial-gradient(circle_at_85%_12%,#fce7f3_0,transparent_30%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)]">
       <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-300/20 blur-3xl" />
-      <div className="container-page relative grid min-h-[700px] items-center gap-12 py-16 lg:grid-cols-[1.05fr_.95fr] lg:py-24">
+      <div className="container-page relative grid min-h-[620px] items-center gap-10 py-14 lg:min-h-[640px] lg:grid-cols-[1.05fr_.95fr] lg:py-20">
         <motion.div
           initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export function HeroExperience() {
           </div>
         </motion.div>
 
-        <div className="relative mx-auto h-[460px] w-full max-w-lg" aria-label="테스트 미리보기">
+        <div className="relative mx-auto h-[420px] w-full max-w-lg sm:h-[440px]" aria-label="테스트 미리보기">
           <motion.div
             className="absolute left-1/2 top-1/2 grid size-48 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-[3rem] border border-white/80 bg-white/60 text-center shadow-2xl shadow-blue-200/50 backdrop-blur-xl sm:size-56"
             initial={reduceMotion ? false : { opacity: 0, scale: 0.85 }}

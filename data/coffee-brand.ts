@@ -202,7 +202,7 @@ export const coffeeBrandTest: TestDefinition = {
   shortTitle: "커피 브랜드 테스트",
   cardTitle: "나와 어울리는 커피 브랜드는?",
   description: "성격과 라이프스타일, 소비 기준으로 나와 가장 잘 어울리는 커피 브랜드를 찾아보세요.",
-  category: "라이프스타일",
+  category: "직업.일상",
   duration: "약 2분",
   icon: "☕",
   participants: 1326,

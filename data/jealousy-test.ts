@@ -191,7 +191,7 @@ export const jealousyTest: TestDefinition = {
   shortTitle: "질투심 테스트",
   cardTitle: "나는 질투가 많은 편일까?",
   description: "15개의 관계 상황 질문으로 나의 질투심 레벨, 확인 욕구, 비교 민감도와 감정 조절 방식을 점검해보세요.",
-  category: "연애",
+  category: "연애.관계",
   duration: "약 3분",
   icon: "💚",
   participants: 1937,

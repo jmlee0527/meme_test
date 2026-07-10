@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site";
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl">
-      <div className="mx-auto flex min-h-[4.25rem] max-w-6xl items-center justify-between px-5 py-2 lg:px-8">
+      <div className="container-page flex min-h-[4.25rem] items-center justify-between py-2">
         <Link
           href="/"
           className="rounded-xl transition hover:opacity-90 focus-visible:outline-offset-4"

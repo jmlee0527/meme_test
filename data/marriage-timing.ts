@@ -77,7 +77,7 @@ export const marriageTimingTest: TestDefinition = {
   title: "나는 언제 결혼할까?",
   shortTitle: "결혼 시기 테스트",
   description: "12개의 질문으로 나의 연애 성향과 현실 준비도를 분석해 예상 결혼 시기를 확인해보세요.",
-  category: "결혼",
+  category: "연애.관계",
   duration: "약 3분",
   icon: "💌",
   participants: 2781,

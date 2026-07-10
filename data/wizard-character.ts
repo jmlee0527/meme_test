@@ -207,7 +207,7 @@ export const wizardCharacterTest: TestDefinition = {
   shortTitle: "해리포터 성격 테스트",
   cardTitle: "내가 해리포터 주인공이라면?",
   description: "일상 속 10가지 선택으로 나와 가장 닮은 해리포터 핵심 캐릭터를 찾아보세요.",
-  category: "성격",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "🪄",
   participants: 1847,

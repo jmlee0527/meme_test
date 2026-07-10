@@ -107,7 +107,7 @@ export const personalityCountryTest: TestDefinition = {
   shortTitle: "성격 국가 테스트",
   cardTitle: "나와 잘 맞는 해외 국가는?",
   description: "12개의 질문으로 성격, 생활 방식, 가치관을 분석해 나와 잘 맞는 해외 국가를 추천해드립니다.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "🌍",
   participants: 3187,

@@ -37,7 +37,7 @@ export function getLoveResultProfile(slug:string){return loveResultProfiles.find
 
 export const loveMbtiTest:TestDefinition={
   type:"likert",slug:"love-mbti-test",title:"연애 MBTI 테스트",shortTitle:"연애 MBTI 테스트",cardTitle:"당신은 사랑할 때 어떤 사람인가요?",
-  description:"연애할 때의 행동, 감정 표현 방식과 관계 성향을 분석해 당신만의 연애 유형을 알려드립니다.",category:"연애",duration:"약 3분",icon:"💞",participants:4218,accent:"pink",isNew:true,itemCount:loveQuestions.length,questions:[],resultSlugs:loveResultProfiles.map(({slug})=>slug),
+  description:"연애할 때의 행동, 감정 표현 방식과 관계 성향을 분석해 당신만의 연애 유형을 알려드립니다.",category: "연애.관계",duration:"약 3분",icon:"💞",participants:4218,accent:"pink",isNew:true,itemCount:loveQuestions.length,questions:[],resultSlugs:loveResultProfiles.map(({slug})=>slug),
   seoTitle:"연애 MBTI 테스트 | 나는 어떤 연애 유형일까?",seoDescription:"연애할 때의 행동과 감정 표현 방식을 분석해 나만의 연애 유형을 확인해보세요.",keywords:["연애 MBTI 테스트","연애 성향 테스트","연애 유형 테스트","애착유형 테스트","사랑 심리 테스트"],
   seoContent: {
     heading: "연애 MBTI 테스트란?",

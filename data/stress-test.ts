@@ -58,7 +58,7 @@ export const stressTest: TestDefinition = {
   shortTitle: "스트레스 지수 테스트",
   cardTitle: "지금 나의 스트레스 지수는 몇 점일까?",
   description: "세계적으로 가장 널리 쓰이는 지각된 스트레스 척도(PSS)로 지난 한 달간 나의 스트레스 지수를 측정해보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "🧘",
   participants: 1428,

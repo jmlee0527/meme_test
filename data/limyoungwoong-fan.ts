@@ -171,7 +171,7 @@ export function validateLimYoungWoongQuestionBank() {
 validateLimYoungWoongQuestionBank();
 
 export const limYoungWoongFanTest: TestDefinition = {
-  type: "quiz", slug: "limyoungwoong-fan-test", title: "임영웅 찐팬 테스트", shortTitle: "임영웅 팬 테스트", cardTitle: "나의 임영웅 팬심 지수는?", description: "노래, 앨범, 무대, 방송과 콘서트까지 15문제로 임영웅 팬심 지수를 확인해보세요.", category: "음악", duration: "약 3~5분", icon: "🌟", participants: 2418, accent: "blue", isNew: true, itemCount: LIM_YOUNG_WOONG_FAN_QUIZ_SIZE, questions: [], resultSlugs: [],
+  type: "quiz", slug: "limyoungwoong-fan-test", title: "임영웅 찐팬 테스트", shortTitle: "임영웅 팬 테스트", cardTitle: "나의 임영웅 팬심 지수는?", description: "노래, 앨범, 무대, 방송과 콘서트까지 15문제로 임영웅 팬심 지수를 확인해보세요.", category: "퀴즈", duration: "약 3~5분", icon: "🌟", participants: 8593, accent: "blue", isNew: true, itemCount: LIM_YOUNG_WOONG_FAN_QUIZ_SIZE, questions: [], resultSlugs: [],
   seoTitle: "임영웅 찐팬 테스트｜나는 임영웅을 얼마나 잘 알고 있을까?",
   seoDescription: "임영웅의 노래, 앨범, 무대, 방송과 콘서트 퀴즈를 풀고 팬심 지수를 확인해보세요. 총 60문제 중 난이도별 15문제가 랜덤으로 출제됩니다.",
   keywords: ["임영웅 찐팬 테스트", "임영웅 팬 테스트", "임영웅 퀴즈", "임영웅 팬심 테스트", "임영웅 노래 퀴즈", "임영웅 테스트", "임영웅 팬심 지수", "임영웅 찐팬 퀴즈"],

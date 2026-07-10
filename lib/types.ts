@@ -48,6 +48,8 @@ export type TestSeoContent = {
   assesses?: string;
 };
 
+export type TestCategory = "성격.심리" | "연애.관계" | "직업.일상" | "퀴즈" | "건강.운세";
+
 export type TestDefinition = {
   type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune" | "calculator";
   slug: string;
@@ -56,7 +58,7 @@ export type TestDefinition = {
   shortTitle: string;
   cardTitle?: string;
   description: string;
-  category: string;
+  category: TestCategory;
   duration: string;
   icon: string;
   questions: TestQuestion[];

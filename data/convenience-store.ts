@@ -307,7 +307,7 @@ export const cvsTest: TestDefinition = {
   shortTitle: "편의점 성격 테스트",
   cardTitle: "편의점 장보기로 알아보는 숨겨진 성격",
   description: "삼각김밥, 컵라면, 바나나우유… 편의점에서 장만 봤을 뿐인데 성격이 나온다고? 10번의 선택으로 30가지 성격 중 나를 찾아보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "🏪",
   participants: 1962,

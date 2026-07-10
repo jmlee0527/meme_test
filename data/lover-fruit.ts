@@ -238,7 +238,7 @@ export const loverFruitTest: TestDefinition = {
   shortTitle: "연인 과일 테스트",
   cardTitle: "나의 연인은 어떤 과일일까?",
   description: "연인의 행동과 연애 스타일을 떠올리며 답하면, 가장 닮은 과일 유형을 찾아드립니다.",
-  category: "연애",
+  category: "연애.관계",
   duration: "약 2분",
   icon: "🍓",
   participants: 1284,

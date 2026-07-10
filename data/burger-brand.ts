@@ -190,7 +190,7 @@ export const burgerTest: TestDefinition = {
   shortTitle: "햄버거 브랜드 테스트",
   cardTitle: "성격으로 알아보는 나만의 햄버거 브랜드",
   description: "주말 계획, 쇼핑 기준, 도전을 대하는 자세까지. 10번의 선택으로 맥도날드부터 쉐이크쉑까지 11개 브랜드 중 나와 어울리는 곳을 찾아드려요.",
-  category: "음식",
+  category: "직업.일상",
   duration: "약 2분",
   icon: "🍔",
   participants: 2043,

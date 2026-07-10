@@ -153,7 +153,7 @@ export const officeAnimalTest: TestDefinition = {
   title: "회사에서 나는 어떤 동물일까?",
   shortTitle: "회사 동물 유형 테스트",
   description: "10개의 질문으로 업무 스타일과 협업 성향을 분석해 나와 닮은 12지신 동물을 찾아보세요.",
-  category: "직장",
+  category: "직업.일상",
   duration: "약 2분",
   icon: "🐾",
   participants: 3912,

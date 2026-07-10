@@ -167,7 +167,7 @@ export const bigFiveTest: TestDefinition = {
   shortTitle: "Big Five 테스트",
   cardTitle: "Big Five 성격 테스트",
   description: "Big Five 성격 테스트는 OCEAN 성격 테스트 기반으로 개방성, 성실성, 외향성, 친화성, 정서 민감성을 분석합니다.",
-  category: "성격",
+  category: "성격.심리",
   duration: "약 3분",
   icon: "🌊",
   participants: 2847,

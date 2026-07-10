@@ -15,9 +15,9 @@ export function AdUnit({ slot, format = "auto", className = "", label = "광고"
 
   if (!slot) return null;
   return (
-    <aside className={`my-8 overflow-hidden text-center ${className}`} aria-label={label}>
+    <aside className={`my-8 w-full max-w-full overflow-hidden text-center ${className}`} aria-label={label}>
       <span className="mb-2 block text-[10px] tracking-widest text-slate-400">ADVERTISEMENT</span>
-      <ins className="adsbygoogle block" data-ad-client={adsenseClientId} data-ad-slot={slot} data-ad-format={format} data-full-width-responsive="true" />
+      <ins className="adsbygoogle block max-w-full" data-ad-client={adsenseClientId} data-ad-slot={slot} data-ad-format={format} data-full-width-responsive="true" />
     </aside>
   );
 }

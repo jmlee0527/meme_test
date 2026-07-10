@@ -97,7 +97,7 @@ export const dementiaRiskTest: TestDefinition = {
   shortTitle: "치매 위험 자가 체크",
   cardTitle: "치매 위험 지수 테스트",
   description: "기억력·생활습관·인지 변화로 현재 치매 관련 위험 신호를 확인하는 참고용 자가 체크입니다.",
-  category: "건강",
+  category: "건강.운세",
   duration: "약 3분",
   icon: "🧠",
   participants: 1247,

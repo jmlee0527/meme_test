@@ -460,7 +460,7 @@ export const loverScoreTest: TestDefinition = {
   shortTitle: "애인 점수 테스트",
   cardTitle: "내가 애인이라면 몇 점일까?",
   description: "15개의 질문으로 배려심, 책임감, 표현력, 안정감을 포함한 8가지 성향을 분석해 나의 애인감 점수와 연애 유형을 알려드립니다.",
-  category: "연애",
+  category: "연애.관계",
   duration: "약 3분",
   icon: "❤️",
   participants: 0,

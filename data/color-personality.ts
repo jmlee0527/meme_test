@@ -100,7 +100,7 @@ export const colorPersonalityTest: TestDefinition = {
   shortTitle: "컬러 성격 테스트",
   cardTitle: "나를 닮은 성격 컬러는?",
   description: "12개의 질문으로 행동 패턴과 인간관계 스타일을 분석해 나를 가장 닮은 성격 컬러를 찾아보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 1분",
   icon: "🎨",
   participants: 5214,

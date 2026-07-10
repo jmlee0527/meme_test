@@ -177,7 +177,7 @@ export const arsenalFanTest: TestDefinition = {
   shortTitle: "아스날 팬 테스트",
   cardTitle: "나의 아스날 팬 지수는?",
   description: "15개의 아스날 퀴즈로 역사, 선수, 감독, 우승 기록과 상징적인 경기를 얼마나 알고 있는지 확인해보세요.",
-  category: "스포츠",
+  category: "퀴즈",
   duration: "약 3분",
   icon: "🔴",
   participants: 1537,

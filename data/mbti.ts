@@ -250,7 +250,7 @@ export const mbtiTest: TestDefinition = {
   shortTitle: "MBTI 테스트",
   cardTitle: "나의 MBTI는 무슨 유형일까?",
   description: "40개의 양자택일 질문으로 E/I, S/N, T/F, J/P 4가지 지표를 분석해 16가지 MBTI 유형 중 나의 유형을 알려드립니다.",
-  category: "성격",
+  category: "성격.심리",
   duration: "약 5분",
   icon: "🧩",
   participants: 3241,

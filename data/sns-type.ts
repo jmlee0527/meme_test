@@ -302,7 +302,7 @@ export const snsTest: TestDefinition = {
   shortTitle: "SNS 유형 테스트",
   cardTitle: "SNS 습관으로 알아보는 진짜 온라인 성격",
   description: "스토리 스타일, DM 답장 습관, 저장 버튼의 기준까지. 12번의 선택으로 24가지 SNS 캐릭터 중 진짜 나를 찾아보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 2분",
   icon: "📱",
   participants: 2384,

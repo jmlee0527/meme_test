@@ -203,7 +203,7 @@ export const selfEsteemTest: TestDefinition = {
   shortTitle: "자존감 테스트",
   cardTitle: "내 자존감 레벨은?",
   description: "14개의 일상 상황을 통해 현재의 자기수용, 자기신뢰와 회복 패턴을 살펴보세요.",
-  category: "심리",
+  category: "성격.심리",
   duration: "약 3분",
   icon: "🌱",
   participants: 2184,
