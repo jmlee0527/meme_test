@@ -19,6 +19,7 @@ import { calculateCoffeeBrandResult, serializeCoffeeBrandAnswers } from "@/lib/c
 import { calculateSelfEsteemResult, serializeSelfEsteemAnswers } from "@/lib/self-esteem-engine";
 import { calculateAdhdResult, serializeAdhdAnswers } from "@/lib/adhd-screening-engine";
 import { calculateDementiaResult, serializeDementiaAnswers } from "@/lib/dementia-risk-engine";
+import { calculateLoverFruitResult, serializeLoverFruitAnswers } from "@/lib/lover-fruit-engine";
 
 export function TestRunner({ test, currentAge }: { test: TestDefinition; currentAge?: number }) {
   const router = useRouter();
@@ -29,7 +30,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
   const progress = ((index + 1) / test.questions.length) * 100;
   const question = test.questions[index];
   const isMultipleChoice = Boolean(question.options?.length);
-  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test", "harry-potter-character-test", "coffee-brand-test", "self-esteem-test"].includes(test.slug);
+  const shouldAutoAdvance = isMultipleChoice && !["joseon-destiny-test", "personality-country-test", "color-personality-test", "harry-potter-character-test", "coffee-brand-test", "self-esteem-test", "lover-fruit-test"].includes(test.slug);
 
   const select = (answer: boolean | number) => {
     const next = [...answers];
@@ -139,6 +140,13 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
       const result = calculateDementiaResult(completeAnswers);
       setLoading(true);
       router.push(`/dementia-risk-test/result/${result.profile.slug}?answers=${serializeDementiaAnswers(completeAnswers)}`);
+      return;
+    }
+    if (test.slug === "lover-fruit-test") {
+      const completeAnswers = answers as number[];
+      const result = calculateLoverFruitResult(completeAnswers);
+      setLoading(true);
+      router.push(`/lover-fruit-test/result/${result.profile.slug}?answers=${serializeLoverFruitAnswers(completeAnswers)}`);
       return;
     }
     const completeAnswers = answers as boolean[];

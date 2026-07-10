@@ -676,6 +676,51 @@ export type CoffeeBrandProfile = {
   shareText: string;
 };
 
+export type LoverFruitTrait =
+  | "affection"
+  | "stability"
+  | "independence"
+  | "consideration"
+  | "humor"
+  | "sensitivity"
+  | "leadership"
+  | "adventure"
+  | "responsibility"
+  | "romance"
+  | "sociability"
+  | "honesty";
+export type LoverFruitScores = Record<LoverFruitTrait, number>;
+export type LoverFruitQuestion = {
+  id: number;
+  text: string;
+  options: {
+    label: string;
+    text: string;
+    value: number;
+    weights: Partial<LoverFruitScores>;
+  }[];
+};
+export type LoverFruitProfile = {
+  slug: string;
+  name: string;
+  emoji: string;
+  palette: [string, string];
+  title: string;
+  summary: string;
+  description: string;
+  loveStyle: string[];
+  strengths: string[];
+  conflictStyle: string;
+  tips: string[];
+  goodMatches: string[];
+  difficultMatch: string;
+  difficultLabel: string;
+  coreTraits: LoverFruitTrait[];
+  targetScores: LoverFruitScores;
+  answerPattern: number[];
+  shareText: string;
+};
+
 export type SelfEsteemDomain =
   | "selfAcceptance"
   | "selfEfficacy"
