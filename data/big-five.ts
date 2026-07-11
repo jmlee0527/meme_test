@@ -170,6 +170,7 @@ export const bigFiveTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 3분",
   icon: "🌊",
+  thumbnail: "/tests/big-five.jpg",
   participants: 2847,
   accent: "indigo",
   isNew: true,

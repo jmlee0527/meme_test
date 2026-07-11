@@ -61,6 +61,7 @@ export const stressTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2분",
   icon: "🧘",
+  thumbnail: "/tests/stress.jpg",
   participants: 1428,
   accent: "teal",
   isNew: true,

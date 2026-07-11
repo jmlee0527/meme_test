@@ -106,6 +106,7 @@ export const joseonDestinyTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2분",
   icon: "🏯",
+  thumbnail: "/tests/joseon-destiny.jpg",
   participants: 2764,
   accent: "indigo",
   isNew: true,

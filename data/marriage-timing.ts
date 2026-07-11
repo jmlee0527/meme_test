@@ -80,6 +80,7 @@ export const marriageTimingTest: TestDefinition = {
   category: "연애.관계",
   duration: "약 3분",
   icon: "💌",
+  thumbnail: "/tests/marriage-timing.jpg",
   participants: 2781,
   accent: "purple",
   isNew: true,

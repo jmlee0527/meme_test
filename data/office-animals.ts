@@ -156,6 +156,7 @@ export const officeAnimalTest: TestDefinition = {
   category: "직업.일상",
   duration: "약 2분",
   icon: "🐾",
+  thumbnail: "/tests/office-animal.jpg",
   participants: 3912,
   accent: "orange",
   isNew: true,

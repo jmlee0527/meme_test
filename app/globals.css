@@ -28,6 +28,7 @@ body {
 .glass-chip { border: 1px solid rgba(255,255,255,.85); background: rgba(255,255,255,.68); box-shadow: 0 10px 32px -18px rgba(15,23,42,.35); backdrop-filter: blur(16px); }
 .glass-panel { border: 1px solid rgba(255,255,255,.82); background: rgba(255,255,255,.72); box-shadow: 0 24px 70px -38px rgba(15,23,42,.38); backdrop-filter: blur(20px); }
 .category-tile { @apply flex min-h-24 flex-col items-center justify-center rounded-2xl border bg-white p-3 text-slate-700 shadow-card transition hover:-translate-y-1 hover:shadow-lg; }
+.category-tile-active { @apply -translate-y-1 border-slate-300 shadow-lg ring-2 ring-slate-900/10; }
 .category-blue { @apply border-blue-100 hover:text-blue-600; } .category-orange { @apply border-orange-100 hover:text-orange-600; }
 .category-pink { @apply border-pink-100 hover:text-pink-600; } .category-purple { @apply border-violet-100 hover:text-violet-600; }
 .category-green { @apply border-emerald-100 hover:text-emerald-600; } .category-teal { @apply border-teal-100 hover:text-teal-600; }

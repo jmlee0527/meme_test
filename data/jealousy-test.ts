@@ -194,6 +194,7 @@ export const jealousyTest: TestDefinition = {
   category: "연애.관계",
   duration: "약 3분",
   icon: "💚",
+  thumbnail: "/tests/jealousy.jpg",
   participants: 1937,
   accent: "pink",
   isNew: true,

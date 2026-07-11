@@ -7,6 +7,7 @@ const gradients = {
   orange: "from-orange-500 to-rose-600",
   pink: "from-rose-500 to-violet-600",
   purple: "from-violet-600 to-indigo-700",
+  indigo: "from-indigo-600 to-sky-700",
   green: "from-green-600 to-emerald-700",
 } as const;
 

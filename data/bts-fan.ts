@@ -344,7 +344,7 @@ export const btsFanTest: TestDefinition = {
   slug: "bts-fan-test",
   title: "BTS 찐팬 테스트: 나는 진짜 ARMY일까?",
   shortTitle: "BTS 찐팬 테스트",
-  cardTitle: "나의 BTS 팬심 지수는?",
+  cardTitle: "BTS 찐팬 테스트",
   description: "데뷔부터 최신 활동까지! 멤버, 노래, 앨범, 공연, 기록까지 15문제로 나의 BTS 팬심을 확인해보세요.",
   category: "팬 퀴즈",
   duration: "약 3~5분",

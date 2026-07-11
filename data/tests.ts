@@ -37,6 +37,11 @@ import { youngtakFanTest } from "@/data/youngtak-fan";
 import { limYoungWoongFanTest } from "@/data/limyoungwoong-fan";
 import { tetoEgenTest } from "@/data/teto-egen";
 import { btsFanTest } from "@/data/bts-fan";
+import { fromis9FanTest } from "@/data/fromis9-fan";
+import { mentalAgeTest } from "@/data/mental-age";
+import { youngOldTest } from "@/data/young-old";
+import { idealTypeTest } from "@/data/ideal-type";
+import { seventeenFanTest } from "@/data/seventeen-fan";
 
 export const questions = [
   "나는 초기 자본이 거의 없어도 시작할 수 있는 부업을 선호한다.",
@@ -132,7 +137,7 @@ export const tests: TestDefinition[] = [{
     ],
     assesses: "부업 적합 성향과 업무 선호",
   },
-}, btsFanTest, tetoEgenTest, limYoungWoongFanTest, youngtakFanTest, arsenalFanTest, loverFruitTest, dementiaRiskTest, adhdScreeningTest, nameCompatibilityTest, selfEsteemTest, coffeeBrandTest, wizardCharacterTest, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, stressTest, cvsTest, snsTest, burgerTest, dailyFortuneTest];
+}, seventeenFanTest, idealTypeTest, youngOldTest, mentalAgeTest, fromis9FanTest, btsFanTest, tetoEgenTest, limYoungWoongFanTest, youngtakFanTest, arsenalFanTest, loverFruitTest, dementiaRiskTest, adhdScreeningTest, nameCompatibilityTest, selfEsteemTest, coffeeBrandTest, wizardCharacterTest, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, stressTest, cvsTest, snsTest, burgerTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

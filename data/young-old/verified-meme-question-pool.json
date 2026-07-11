@@ -1,0 +1,2561 @@
+{
+  "metadata": {
+    "title": "영크크·늙크크 테스트 검증형 문제 풀",
+    "version": "2026-07-11",
+    "questionCount": 48,
+    "uniqueMemeCount": 48,
+    "sessionQuestionCount": 12,
+    "notice": "검증 가능한 2026년 자료만 사용한 초기 안전 문제 풀입니다. 원본·공식 출처명과 보조 트렌드 출처를 함께 기록했습니다. 출처가 약한 항목을 임의로 추가하지 마세요.",
+    "difficultyDistribution": {
+      "hard": 12,
+      "medium": 20,
+      "easy": 16
+    }
+  },
+  "questions": [
+    {
+      "id": "meme-001",
+      "memeId": "nuga-doraewat-ge",
+      "type": "originContext",
+      "difficulty": "hard",
+      "freshness": "hot",
+      "question": "‘누가 돌아왔~게’ 밈의 시작으로 소개된 영상은 어떤 상황을 연기한 콘텐츠일까?",
+      "options": [
+        {
+          "id": "meme-001-o1",
+          "text": "택시 기사가 이상한 길로 갈 때 틀어 두는 출소한 남자친구 연기",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-001-o2",
+          "text": "학교 지각을 피하려고 선생님에게 전화하는 학생 연기",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-001-o3",
+          "text": "배달 음식을 잘못 받은 손님이 항의하는 연기",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-001-o4",
+          "text": "친구의 생일을 잊은 사람이 사과하는 연기",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-001-o1",
+      "explanation": "‘누가 돌아왔~게’는 크리에이터 팔리아치의 ‘공주님의 안전귀가를 위해’ 영상에서 확산됐습니다. 영상에서는 택시 기사가 이상한 길로 갈 때 틀라는 설정으로, 막 출소한 남자친구처럼 연기하며 ‘감옥에서 누가 돌아왔~게’라고 말합니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-08-10",
+      "sourceRecords": [
+        {
+          "sourceName": "팔리아치 유튜브",
+          "sourceTitle": "공주님의 안전귀가를 위해",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 7월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3760",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "creator",
+        "phrase",
+        "origin"
+      ]
+    },
+    {
+      "id": "meme-002",
+      "memeId": "jelly-shoes-decoration",
+      "type": "meaning",
+      "difficulty": "medium",
+      "freshness": "hot",
+      "question": "2026년 다시 유행한 ‘젤리슈즈 꾸미기’는 주로 어떤 방식으로 신발을 꾸밀까?",
+      "options": [
+        {
+          "id": "meme-002-o1",
+          "text": "신발의 구멍에 다양한 파츠와 장식을 끼우거나 묶는다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-002-o2",
+          "text": "신발 전체를 아크릴 물감으로 칠한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-002-o3",
+          "text": "밑창에 스티커를 겹겹이 붙인다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-002-o4",
+          "text": "신발끈을 LED 전선으로 교체한다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-002-o1",
+      "explanation": "젤리슈즈 꾸미기는 구멍이 많은 젤리슈즈의 구조를 이용해 다양한 파츠를 끼우거나 묶어 취향대로 장식하는 트렌드입니다. 볼꾸와 비슷하게 파츠를 구하기 위해 동대문을 찾는 모습도 화제가 됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-08-10",
+      "sourceRecords": [
+        {
+          "sourceName": "14F 일사에프 유튜브",
+          "sourceTitle": "‘젤리슈즈’ 꾸미기 트렌드 보도",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 7월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3760",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "fashion",
+        "decoration",
+        "retro"
+      ]
+    },
+    {
+      "id": "meme-003",
+      "memeId": "nose-hit-sorry-challenge",
+      "type": "originContent",
+      "difficulty": "hard",
+      "freshness": "hot",
+      "question": "‘코 때리고 미안해하는 챌린지’에서 이어지는 손동작의 이름은?",
+      "options": [
+        {
+          "id": "meme-003-o1",
+          "text": "스쿠바",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-003-o2",
+          "text": "셔플",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-003-o3",
+          "text": "문워크",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-003-o4",
+          "text": "락킹",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-003-o1",
+      "explanation": "이 챌린지는 옆 사람의 코를 실수로 친 뒤 웃으며 손동작을 이어가는 형식입니다. 해당 손동작은 스쿠버다이빙을 연상시키는 ‘스쿠바’ 안무로 소개됐으며, 크리에이터 h5wk가 자신의 음악에 붙인 안무에서 시작됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-08-10",
+      "sourceRecords": [
+        {
+          "sourceName": "h5wk 및 참여 아이돌 공식 콘텐츠",
+          "sourceTitle": "스쿠바 안무 기반 챌린지",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 7월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3760",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "challenge",
+        "dance",
+        "idol"
+      ]
+    },
+    {
+      "id": "meme-004",
+      "memeId": "yare-song",
+      "type": "relatedPerson",
+      "difficulty": "hard",
+      "freshness": "hot",
+      "question": "‘야르송’을 직접 커버해 화제가 된 DAY6 멤버는 누구일까?",
+      "options": [
+        {
+          "id": "meme-004-o1",
+          "text": "Young K",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-004-o2",
+          "text": "성진",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-004-o3",
+          "text": "원필",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-004-o4",
+          "text": "도운",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-004-o1",
+      "explanation": "중독성 강한 ‘야르송’이 알고리즘에 등장한 뒤 DAY6의 Young K가 이를 커버해 화제가 됐습니다. 야르송은 알람음이나 반려동물 영상 배경음악으로도 활용됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-08-10",
+      "sourceRecords": [
+        {
+          "sourceName": "유괴된돌고래 유튜브",
+          "sourceTitle": "야르송 및 커버 모음",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 7월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3760",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "song",
+        "cover",
+        "day6"
+      ]
+    },
+    {
+      "id": "meme-005",
+      "memeId": "actor-challenge-day-1",
+      "type": "originContext",
+      "difficulty": "medium",
+      "freshness": "hot",
+      "question": "‘배우 도전 1일 차’ 밈의 대표적인 원본 연기 상황은?",
+      "options": [
+        {
+          "id": "meme-005-o1",
+          "text": "집이 불에 타서 없어진 상황",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-005-o2",
+          "text": "로또 1등에 당첨된 상황",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-005-o3",
+          "text": "공항에서 여권을 잃어버린 상황",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-005-o4",
+          "text": "오디션 합격 전화를 받은 상황",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-005-o1",
+      "explanation": "‘배우 도전 1일 차’는 집이 불에 타서 없어진 상황을 어색하고 과장되게 연기하는 영상에서 시작해 확산됐습니다. 이후 소재를 바꾼 다양한 패러디가 만들어졌습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-08-10",
+      "sourceRecords": [
+        {
+          "sourceName": "ILLIT 공식 유튜브",
+          "sourceTitle": "연기 도전 1일차 패러디",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 7월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3760",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "acting",
+        "challenge",
+        "parody"
+      ]
+    },
+    {
+      "id": "meme-006",
+      "memeId": "tiny-hand-taptap",
+      "type": "meaning",
+      "difficulty": "medium",
+      "freshness": "hot",
+      "question": "‘탭탭, 탭탭탭’ 영상에서 화면이나 물건을 두드릴 때 주로 사용하는 소품은?",
+      "options": [
+        {
+          "id": "meme-006-o1",
+          "text": "작은 손가락 모형 막대기",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-006-o2",
+          "text": "미니 장난감 망치",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-006-o3",
+          "text": "젓가락 한 쌍",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-006-o4",
+          "text": "고무 오리 인형",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-006-o1",
+      "explanation": "이 포맷은 작은 손가락 모형 막대기로 달력, 지갑, 음식 등을 탭탭 두드리며 일상 상황을 보여주는 영상입니다. 해외 크리에이터 My Tiny Hand 콘텐츠가 대표 출처로 소개됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-08-10",
+      "sourceRecords": [
+        {
+          "sourceName": "My Tiny Hand 유튜브",
+          "sourceTitle": "tiny hand 일상 콘텐츠",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 7월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3760",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "prop",
+        "shortform",
+        "daily"
+      ]
+    },
+    {
+      "id": "meme-007",
+      "memeId": "backrooms-boom",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "current",
+      "question": "‘백룸’ 괴담을 상징하는 공간의 특징으로 가장 알맞은 것은?",
+      "options": [
+        {
+          "id": "meme-007-o1",
+          "text": "노란색 계열의 벽과 비어 있는 미로 같은 방",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-007-o2",
+          "text": "붉은 조명과 관객이 가득한 지하 공연장",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-007-o3",
+          "text": "물에 잠긴 유리 복도와 수족관",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-007-o4",
+          "text": "눈 덮인 산속에 반복되는 오두막",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-007-o1",
+      "explanation": "백룸은 현실에서 우연히 떨어지게 되는 무작위 공간이라는 인터넷 괴담입니다. 노란 벽, 텅 빈 방, 끝없이 반복되는 미로 같은 구조가 대표 이미지로 알려져 있습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "바이포엠스튜디오 BY4M STUDIO 유튜브",
+          "sourceTitle": "영화 백룸 메인 예고편",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 6월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3751",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "horror",
+        "movie",
+        "liminal"
+      ]
+    },
+    {
+      "id": "meme-008",
+      "memeId": "geoje-yaho",
+      "type": "relatedGroup",
+      "difficulty": "easy",
+      "freshness": "current",
+      "question": "최근 유행한 ‘거제 야호’ 밈과 관련된 걸그룹은?",
+      "options": [
+        {
+          "id": "meme-008-o1",
+          "text": "리센느",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-008-o2",
+          "text": "아일릿",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-008-o3",
+          "text": "키키",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-008-o4",
+          "text": "이즈나",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-008-o1",
+      "explanation": "‘거제 야호’는 리센느 멤버 미나미가 같은 그룹 원이의 개인 유튜브 콘텐츠에서 외친 말이 확산된 밈입니다. 거제 대신 다른 단어를 넣고 ‘야호’를 붙이는 방식으로도 변형됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "안녕하세요원이입니다잘부탁드립니다 유튜브",
+          "sourceTitle": "퀸의 마인드",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 6월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3751",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "idol",
+        "group",
+        "phrase"
+      ]
+    },
+    {
+      "id": "meme-009",
+      "memeId": "youngkk",
+      "type": "songOrMedia",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "‘영크크’라는 표현은 코르티스의 어떤 곡 제목에서 줄여 만든 말일까?",
+      "options": [
+        {
+          "id": "meme-009-o1",
+          "text": "YOUNGCREATORCREW",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-009-o2",
+          "text": "RED RED",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-009-o3",
+          "text": "GO!",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-009-o4",
+          "text": "NOT CUTE ANYMORE",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-009-o1",
+      "explanation": "‘영크크’는 코르티스의 수록곡 ‘YOUNGCREATORCREW’를 줄인 표현입니다. 이후 나이와 무관하게 새롭고 자유로운 감각을 가진 사람이나 콘텐츠를 칭찬하는 말로 확장됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "CORTIS 공식 유튜브",
+          "sourceTitle": "YOUNGCREATORCREW",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 6월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3751",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "cortis",
+        "song",
+        "slang"
+      ]
+    },
+    {
+      "id": "meme-010",
+      "memeId": "spectator-invasion-ai",
+      "type": "relatedPerson",
+      "difficulty": "hard",
+      "freshness": "current",
+      "question": "‘관중 난입 AI’ 영상으로 화제가 된 인물로 소개된 사람은?",
+      "options": [
+        {
+          "id": "meme-010-o1",
+          "text": "김가은 아나운서",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-010-o2",
+          "text": "김민아 아나운서",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-010-o3",
+          "text": "박지영 아나운서",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-010-o4",
+          "text": "배지현 아나운서",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-010-o1",
+      "explanation": "관중석에 있던 사람이 경기장에 들어가 선수와 함께 스포츠를 하는 것처럼 보이는 AI 영상이 유행했습니다. HSAD는 김가은 아나운서가 자신의 인스타그램에 만든 영상을 올리며 화제가 됐다고 소개했습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "김가은 아나운서 인스타그램",
+          "sourceTitle": "관중 난입 AI 영상",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 6월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3751",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "ai",
+        "sports",
+        "broadcast"
+      ]
+    },
+    {
+      "id": "meme-011",
+      "memeId": "suddenly-yang-euiji",
+      "type": "connection",
+      "difficulty": "hard",
+      "freshness": "current",
+      "question": "‘자려고 누웠는데 양의지’ 밈은 아이오아이의 어떤 곡과 야구선수 응원가가 비슷하게 들리며 생겼을까?",
+      "options": [
+        {
+          "id": "meme-011-o1",
+          "text": "갑자기",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-011-o2",
+          "text": "너무너무너무",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-011-o3",
+          "text": "소나기",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-011-o4",
+          "text": "Whatta Man",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-011-o1",
+      "explanation": "아이오아이의 10주년 신곡 ‘갑자기’ 후렴구 ‘자려고 누웠는데 갑자기’가 두산 베어스 양의지 선수 응원가와 겹쳐 들린다는 반응에서 ‘자려고 누웠는데 양의지’ 밈이 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "Stone Music Entertainment·SWING ENTERTAINMENT 공식 유튜브",
+          "sourceTitle": "I.O.I - 갑자기 MV 및 양의지 챌린지",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 6월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3751",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "baseball",
+        "ioi",
+        "song"
+      ]
+    },
+    {
+      "id": "meme-012",
+      "memeId": "birth-year-introduction",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "current",
+      "question": "‘나 ○○년생 ○○○인데~’ 밈의 일반적인 구성은?",
+      "options": [
+        {
+          "id": "meme-012-o1",
+          "text": "출생 연도와 자신의 상황을 소개한 뒤 예상 밖의 말과 춤을 이어간다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-012-o2",
+          "text": "출생 연도만 말한 뒤 어린 시절 사진을 공개한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-012-o3",
+          "text": "나이를 숨긴 채 목소리만으로 세대를 맞히게 한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-012-o4",
+          "text": "직업을 소개한 뒤 하루 수입을 공개한다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-012-o1",
+      "explanation": "이 밈은 ‘나 72년생 앤드류형인데~’처럼 출생 연도와 직업·상황을 소개한 뒤 예상 밖의 문장과 정신없는 춤을 이어가는 형식입니다. 다양한 직업과 브랜드 상황으로 패러디됩니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "인스타그램 원본·확산 계정",
+          "sourceTitle": "나 ○○년생 ○○○인데 포맷",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 6월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EB%82%98-%EA%B3%A0%EA%B5%AC%EB%A7%88%ED%8C%9C%EC%9D%B8%EB%8D%B0-%EC%9A%94%EC%A6%98-%EB%9C%A8%EB%8A%94-%EB%B0%88-%EA%B0%80%EC%A0%B8%EC%99%94%EB%8B%A4-2026%EB%85%84-6%EC%9B%94-%EC%B5%9C%EC%8B%A0/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "introduction",
+        "dance",
+        "template"
+      ]
+    },
+    {
+      "id": "meme-013",
+      "memeId": "millennial-vs-genz-manager",
+      "type": "meaning",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "‘밀레니얼 vs Gen Z 담당자 비교’ 콘텐츠에서 Gen Z 방식의 특징으로 소개된 것은?",
+      "options": [
+        {
+          "id": "meme-013-o1",
+          "text": "짧은 반응과 솔직한 말투, 이모지 중심",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-013-o2",
+          "text": "제품의 기능과 스펙을 긴 문장으로 설명",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-013-o3",
+          "text": "신문 기사 형식으로 객관적 정보를 전달",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-013-o4",
+          "text": "전화 통화 내용을 자막 없이 그대로 공개",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-013-o1",
+      "explanation": "이 포맷은 같은 제품을 밀레니얼 방식과 Gen Z 방식으로 대비합니다. 밀레니얼은 기능과 설명을 길게 전달하고, Gen Z는 짧은 반응·솔직한 말투·이모지 중심으로 표현하는 것이 웃음 포인트입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "Crocs 등 브랜드 공식 인스타그램",
+          "sourceTitle": "Millennial vs Gen Z product content",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 6월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EB%82%98-%EA%B3%A0%EA%B5%AC%EB%A7%88%ED%8C%9C%EC%9D%B8%EB%8D%B0-%EC%9A%94%EC%A6%98-%EB%9C%A8%EB%8A%94-%EB%B0%88-%EA%B0%80%EC%A0%B8%EC%99%94%EB%8B%A4-2026%EB%85%84-6%EC%9B%94-%EC%B5%9C%EC%8B%A0/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "generation",
+        "brand",
+        "format"
+      ]
+    },
+    {
+      "id": "meme-014",
+      "memeId": "describe-job-illegally",
+      "type": "usageContext",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "‘자기 직업 불법적으로 말하기’ 밈의 핵심 방식은?",
+      "options": [
+        {
+          "id": "meme-014-o1",
+          "text": "평범한 직업을 범죄 조직의 일처럼 위험하고 수상하게 과장한다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-014-o2",
+          "text": "불법 직업을 합법적인 전문직처럼 포장한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-014-o3",
+          "text": "직업 이름의 자음만 남겨 맞히게 한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-014-o4",
+          "text": "과거에 존재했던 사라진 직업을 소개한다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-014-o1",
+      "explanation": "승무원을 ‘사람들을 금속관에 가두고 수만 피트 상공에서 감시하는 사람’처럼 묘사하는 식으로, 익숙한 직업을 범죄 영화의 조직처럼 과장해 설명하는 밈입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "인스타그램 확산 계정",
+          "sourceTitle": "자기 직업 불법적으로 말하기 콘텐츠",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 6월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EB%82%98-%EA%B3%A0%EA%B5%AC%EB%A7%88%ED%8C%9C%EC%9D%B8%EB%8D%B0-%EC%9A%94%EC%A6%98-%EB%9C%A8%EB%8A%94-%EB%B0%88-%EA%B0%80%EC%A0%B8%EC%99%94%EB%8B%A4-2026%EB%85%84-6%EC%9B%94-%EC%B5%9C%EC%8B%A0/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "job",
+        "description",
+        "parody"
+      ]
+    },
+    {
+      "id": "meme-015",
+      "memeId": "pyramid-bad-reviews",
+      "type": "meaning",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "‘피라미드에도 악플이 달린다는 사실을 기억하자’ 밈이 주로 전하는 의미는?",
+      "options": [
+        {
+          "id": "meme-015-o1",
+          "text": "완벽해 보이는 대상도 비판을 피할 수 없으니 남의 평가에 지나치게 위축되지 말자는 뜻",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-015-o2",
+          "text": "유명 관광지는 실제로 방문할 가치가 없다는 뜻",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-015-o3",
+          "text": "고대 건축물의 보존 상태를 점검하자는 뜻",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-015-o4",
+          "text": "온라인 리뷰는 모두 광고이므로 믿지 말자는 뜻",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-015-o1",
+      "explanation": "피라미드와 에펠탑 같은 명소에도 황당한 악평이 달린다는 사례를 보여주며, 누구나 비판받을 수 있으니 타인의 시선 때문에 지나치게 위축되지 말자는 위로형 밈으로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "RM 인스타그램 및 해외 명소 리뷰 콘텐츠",
+          "sourceTitle": "유명 건축물 악평 공유",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 6월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EB%82%98-%EA%B3%A0%EA%B5%AC%EB%A7%88%ED%8C%9C%EC%9D%B8%EB%8D%B0-%EC%9A%94%EC%A6%98-%EB%9C%A8%EB%8A%94-%EB%B0%88-%EA%B0%80%EC%A0%B8%EC%99%94%EB%8B%A4-2026%EB%85%84-6%EC%9B%94-%EC%B5%9C%EC%8B%A0/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "review",
+        "comfort",
+        "landmark"
+      ]
+    },
+    {
+      "id": "meme-016",
+      "memeId": "dont-want-to-be-tired",
+      "type": "originContext",
+      "difficulty": "hard",
+      "freshness": "current",
+      "question": "‘아, 이런 걸로 피곤하고 싶지 않다’라는 말이 밈으로 확산된 계기는?",
+      "options": [
+        {
+          "id": "meme-016-o1",
+          "text": "스윙스가 빅나티의 디스와 관련해 진행한 해명 라이브",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-016-o2",
+          "text": "회사원이 퇴사 직전 촬영한 브이로그",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-016-o3",
+          "text": "배우가 시상식 인터뷰에서 한 발언",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-016-o4",
+          "text": "축구선수가 경기 후 기자회견에서 한 말",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-016-o1",
+      "explanation": "래퍼 빅나티의 디스 이후 스윙스가 진행한 해명 라이브에서 지친 표정으로 한 ‘이런 걸로 피곤하고 싶지 않다’라는 말이 일상 스트레스를 표현하는 밈으로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "스윙스 라이브 방송 클립",
+          "sourceTitle": "‘이런 걸로 피곤하고 싶지 않다’ 발언",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 6월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EB%82%98-%EA%B3%A0%EA%B5%AC%EB%A7%88%ED%8C%9C%EC%9D%B8%EB%8D%B0-%EC%9A%94%EC%A6%98-%EB%9C%A8%EB%8A%94-%EB%B0%88-%EA%B0%80%EC%A0%B8%EC%99%94%EB%8B%A4-2026%EB%85%84-6%EC%9B%94-%EC%B5%9C%EC%8B%A0/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "rapper",
+        "quote",
+        "stress"
+      ]
+    },
+    {
+      "id": "meme-017",
+      "memeId": "namja-eopnya",
+      "type": "usageContext",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "‘남쟈 없냐 남쟈, 소개시켜줘야쥬’ 말투는 현재 어떻게 변형해 사용될까?",
+      "options": [
+        {
+          "id": "meme-017-o1",
+          "text": "원하는 대상이나 혜택을 넣어 소개해 달라는 식으로 바꿔 쓴다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-017-o2",
+          "text": "싫어하는 사람을 차단하겠다는 의미로 쓴다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-017-o3",
+          "text": "친구의 맞춤법을 지적할 때만 쓴다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-017-o4",
+          "text": "연애 상대의 나이를 공개할 때 사용한다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-017-o1",
+      "explanation": "커뮤니티에 올라온 대화 속 독특한 말투에서 시작됐으며, ‘연챠 없냐 연챠, 유급연챠 소개시켜줘야쥬’처럼 원하는 대상이나 혜택을 넣어 변형하는 방식으로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "커뮤니티 원문 및 X 확산 게시물",
+          "sourceTitle": "남쟈 없냐 남쟈 대화",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 5월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EC%9A%94%EC%A6%98-%EC%9C%A0%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%88-%EB%AA%A8%EC%9D%8C-green-green-2026%EB%85%84-5%EC%9B%94-%EC%B5%9C%EC%8B%A0-%EB%B0%88-%EB%AA%A8%EC%9D%8C/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "phrase",
+        "community",
+        "template"
+      ]
+    },
+    {
+      "id": "meme-018",
+      "memeId": "red-red-green-green",
+      "type": "relatedGroup",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "좋지 않은 것에는 ‘That’s red red’, 긍정적인 것에는 ‘green green’을 붙이는 밈은 어떤 그룹의 곡에서 시작됐을까?",
+      "options": [
+        {
+          "id": "meme-018-o1",
+          "text": "코르티스",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-018-o2",
+          "text": "라이즈",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-018-o3",
+          "text": "투어스",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-018-o4",
+          "text": "보이넥스트도어",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-018-o1",
+      "explanation": "코르티스의 곡 ‘RED RED’ 가사에서 소극적이거나 좋지 않은 행동에는 ‘That’s red red’, 적극적이고 긍정적인 행동에는 ‘green green’을 붙인 문법이 밈으로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "CORTIS 공식 유튜브",
+          "sourceTitle": "RED RED",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 5월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EC%9A%94%EC%A6%98-%EC%9C%A0%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%88-%EB%AA%A8%EC%9D%8C-green-green-2026%EB%85%84-5%EC%9B%94-%EC%B5%9C%EC%8B%A0-%EB%B0%88-%EB%AA%A8%EC%9D%8C/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "cortis",
+        "song",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "meme-019",
+      "memeId": "gangnam-style-remix-monster",
+      "type": "songOrMedia",
+      "difficulty": "hard",
+      "freshness": "current",
+      "question": "‘작곡 괴물’ 크리에이터가 다양한 노래를 리믹스할 때 반복적으로 활용한 곡은?",
+      "options": [
+        {
+          "id": "meme-019-o1",
+          "text": "싸이의 강남스타일",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-019-o2",
+          "text": "지드래곤의 삐딱하게",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-019-o3",
+          "text": "뉴진스의 Hype Boy",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-019-o4",
+          "text": "아이유의 좋은 날",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-019-o1",
+      "explanation": "예고 입시를 준비 중인 중학생 크리에이터 ‘작곡 괴물’은 발라드와 동요 등 다양한 노래를 싸이의 ‘강남스타일’ 스타일로 리믹스하며 화제가 됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "작곡 괴물 인스타그램",
+          "sourceTitle": "강남스타일 리믹스 콘텐츠",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 5월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EC%9A%94%EC%A6%98-%EC%9C%A0%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%88-%EB%AA%A8%EC%9D%8C-green-green-2026%EB%85%84-5%EC%9B%94-%EC%B5%9C%EC%8B%A0-%EB%B0%88-%EB%AA%A8%EC%9D%8C/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "remix",
+        "creator",
+        "psy"
+      ]
+    },
+    {
+      "id": "meme-020",
+      "memeId": "laeulla",
+      "type": "originContext",
+      "difficulty": "hard",
+      "freshness": "current",
+      "question": "‘라을라~~~~’ 밈의 시작으로 소개된 상황은?",
+      "options": [
+        {
+          "id": "meme-020-o1",
+          "text": "사무실에서 하품하다 성대가 열려 성악 같은 소리가 난 직장인 사연",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-020-o2",
+          "text": "공연장에서 가사를 잊은 가수가 즉흥적으로 낸 소리",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-020-o3",
+          "text": "반려견이 하울링하는 영상을 느리게 재생한 장면",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-020-o4",
+          "text": "게임 캐릭터의 오류 음성이 반복된 장면",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-020-o1",
+      "explanation": "직장인 커뮤니티에 사무실에서 하품하다 ‘라을라~~~’ 같은 성악가 소리가 났다는 사연이 올라오며 퍼졌습니다. 이후 입을 크게 벌린 사진이나 지루한 상황에 붙이는 말로 사용됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "직장인 커뮤니티 원문 및 X 확산 게시물",
+          "sourceTitle": "라을라 하품 사연",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 5월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EC%9A%94%EC%A6%98-%EC%9C%A0%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%88-%EB%AA%A8%EC%9D%8C-green-green-2026%EB%85%84-5%EC%9B%94-%EC%B5%9C%EC%8B%A0-%EB%B0%88-%EB%AA%A8%EC%9D%8C/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "office",
+        "yawn",
+        "sound"
+      ]
+    },
+    {
+      "id": "meme-021",
+      "memeId": "golden-iyeara",
+      "type": "relatedPerson",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "‘골든이여라~’ 밈의 시작과 관련된 가수는?",
+      "options": [
+        {
+          "id": "meme-021-o1",
+          "text": "송가인",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-021-o2",
+          "text": "장윤정",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-021-o3",
+          "text": "홍진영",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-021-o4",
+          "text": "김연자",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-021-o1",
+      "explanation": "송가인이 라디오에서 ‘케이팝 데몬 헌터스’ OST ‘Golden’을 트로트 창법으로 부르며 자신의 시그니처 표현 ‘가인이여라’를 ‘골든이여라’로 바꾼 장면이 밈의 출발점으로 소개됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "송가인 라디오 방송 클립",
+          "sourceTitle": "Golden 트로트 커버",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 5월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EC%9A%94%EC%A6%98-%EC%9C%A0%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%88-%EB%AA%A8%EC%9D%8C-green-green-2026%EB%85%84-5%EC%9B%94-%EC%B5%9C%EC%8B%A0-%EB%B0%88-%EB%AA%A8%EC%9D%8C/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "trot",
+        "song",
+        "quote"
+      ]
+    },
+    {
+      "id": "meme-022",
+      "memeId": "emotionless-psycho",
+      "type": "usageContext",
+      "difficulty": "hard",
+      "freshness": "current",
+      "question": "‘난 감정 없는 싸이코라 그런가…’ 밈은 주로 어떤 방식으로 변형됐을까?",
+      "options": [
+        {
+          "id": "meme-022-o1",
+          "text": "덕질 내공이나 어떤 상황을 의연하게 버틴 것을 과장해 자랑하는 말",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-022-o2",
+          "text": "감정 표현을 전혀 하지 않는 성격 테스트 결과",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-022-o3",
+          "text": "공포 영화의 줄거리를 한 문장으로 요약하는 말",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-022-o4",
+          "text": "악성 댓글을 신고할 때 사용하는 고정 문구",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-022-o1",
+      "explanation": "2023년 커뮤니티의 허세성 댓글이 다시 떠오르며, ‘수백수천 개를 본 사이코패슨데’처럼 덕질 내공이나 어려운 일을 버틴 경험을 과장해 자랑하는 밈으로 변형됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "커뮤니티 원문 및 더빙 확산 영상",
+          "sourceTitle": "감정 없는 싸이코 댓글",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "고구마팜 2026년 5월 최신 밈",
+          "sourceUrl": "https://gogumafarm.kr/%EC%9A%94%EC%A6%98-%EC%9C%A0%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%88-%EB%AA%A8%EC%9D%8C-green-green-2026%EB%85%84-5%EC%9B%94-%EC%B5%9C%EC%8B%A0-%EB%B0%88-%EB%AA%A8%EC%9D%8C/",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "community",
+        "bragging",
+        "revival"
+      ]
+    },
+    {
+      "id": "meme-023",
+      "memeId": "setlog",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "current",
+      "question": "브이로그 앱 ‘셋로그’의 기본 기록 방식은?",
+      "options": [
+        {
+          "id": "meme-023-o1",
+          "text": "한 시간마다 2초 영상을 찍어 하루를 기록한다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-023-o2",
+          "text": "매일 밤 10분짜리 영상을 자동 편집한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-023-o3",
+          "text": "일주일에 사진 7장만 골라 공유한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-023-o4",
+          "text": "친구와 동시에 30초 라이브를 진행한다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-023-o1",
+      "explanation": "셋로그는 매시간 2초씩 영상을 찍어 하루를 기록하는 앱입니다. 최대 12명이 함께 기록할 수 있고, 오전 4시를 기준으로 하루가 리셋되는 기능도 소개됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "셋로그 앱 및 이용 콘텐츠",
+          "sourceTitle": "시간별 2초 브이로그",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 5월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3736",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "app",
+        "vlog",
+        "friends"
+      ]
+    },
+    {
+      "id": "meme-024",
+      "memeId": "ai-broadcast-shot",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "current",
+      "question": "‘AI 중계샷’은 어떤 이미지를 만드는 트렌드일까?",
+      "options": [
+        {
+          "id": "meme-024-o1",
+          "text": "자신이나 캐릭터가 스포츠·방송 중계 화면에 잡힌 것처럼 보이는 이미지",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-024-o2",
+          "text": "뉴스 앵커가 자신의 일기를 읽어 주는 영상",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-024-o3",
+          "text": "경기 결과를 예측해 자동으로 표를 만드는 이미지",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-024-o4",
+          "text": "관중석 좌석을 실시간으로 예약하는 지도",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-024-o1",
+      "explanation": "AI 중계샷은 자신, 반려동물, 캐릭터 등이 야구 중계·레드카펫·F1 같은 화면에 실제로 잡힌 것처럼 보이도록 생성하는 이미지·영상 포맷입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "유튜브 쇼츠·기관 공식 캐릭터 콘텐츠",
+          "sourceTitle": "AI 중계 화면 생성물",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 5월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3736",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "ai",
+        "broadcast",
+        "image"
+      ]
+    },
+    {
+      "id": "meme-025",
+      "memeId": "salmokji",
+      "type": "originContent",
+      "difficulty": "medium",
+      "freshness": "current",
+      "question": "공포 콘텐츠 ‘살목지’의 배경이 된 실제 장소는 어디일까?",
+      "options": [
+        {
+          "id": "meme-025-o1",
+          "text": "충남 예산군의 저수지",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-025-o2",
+          "text": "강원 정선군의 폐광",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-025-o3",
+          "text": "경북 경주시의 폐역",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-025-o4",
+          "text": "전남 여수시의 무인도",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-025-o1",
+      "explanation": "살목지는 충남 예산군에 있는 저수지로, MBC ‘심야괴담회’에서 다뤄진 뒤 영화로도 제작됐습니다. 영화 개봉 후 실제 장소를 찾는 방문객이 늘며 ‘살리단길’이라는 말도 생겼다고 소개됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-09-09",
+      "sourceRecords": [
+        {
+          "sourceName": "MBC 미스터리·SHOWBOX 공식 유튜브",
+          "sourceTitle": "심야괴담회 살목지 및 영화 예고편",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 5월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3736",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "horror",
+        "location",
+        "movie"
+      ]
+    },
+    {
+      "id": "meme-026",
+      "memeId": "tteok-open-run",
+      "type": "trendDetail",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "‘떡픈런’이라는 말과 함께 특히 화제가 된 광주의 떡 브랜드는?",
+      "options": [
+        {
+          "id": "meme-026-o1",
+          "text": "창억떡",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-026-o2",
+          "text": "삼송빵집",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-026-o3",
+          "text": "성심당",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-026-o4",
+          "text": "이성당",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-026-o1",
+      "explanation": "광주에서 판매되는 창억떡이 유튜버 ‘할말넘많’의 구매 콘텐츠 이후 더 큰 관심을 받으며, 떡을 사기 위해 줄을 서는 ‘떡픈런’이라는 표현까지 등장했습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "할말넘많 유튜브 및 창억떡 관련 콘텐츠",
+          "sourceTitle": "광주 창억떡 구매·후기",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 4월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3727",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "openrun",
+        "gwangju"
+      ]
+    },
+    {
+      "id": "meme-027",
+      "memeId": "office-self-defense",
+      "type": "originContent",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "‘직장인 필수 호신술’ 밈을 유행시킨 유튜브 채널은?",
+      "options": [
+        {
+          "id": "meme-027-o1",
+          "text": "코미디자이너",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-027-o2",
+          "text": "피식대학",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-027-o3",
+          "text": "숏박스",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-027-o4",
+          "text": "너덜트",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-027-o1",
+      "explanation": "입 밖으로 내기 어려운 속마음을 체조 같은 동작과 함께 말하는 ‘OOO 필수 호신술’ 밈은 유튜브 채널 코미디자이너의 ‘직장인 필수 호신술 10가지’ 콘텐츠에서 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "코미디자이너 유튜브",
+          "sourceTitle": "직장인 필수 호신술 10가지",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 4월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3727",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "office",
+        "creator",
+        "movement"
+      ]
+    },
+    {
+      "id": "meme-028",
+      "memeId": "yaru",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "최근 다시 유행한 ‘야르’는 보통 어떤 상황에서 쓰는 표현일까?",
+      "options": [
+        {
+          "id": "meme-028-o1",
+          "text": "기분이 좋거나 무언가를 해냈을 때 쓰는 감탄사",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-028-o2",
+          "text": "상대의 말을 전혀 믿지 못할 때 쓰는 반문",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-028-o3",
+          "text": "힘든 일을 포기하겠다는 선언",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-028-o4",
+          "text": "조용히 하라는 뜻의 경고",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-028-o1",
+      "explanation": "‘야르’는 일본어 ‘야루(하다·해내다)’에서 파생된 표현으로 소개됐으며, ‘아싸’, ‘오예’처럼 기분이 좋거나 무언가를 해낸 상황에 쓰는 감탄사로 재유행했습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "MBC 아카이브·온라인 확산 콘텐츠",
+          "sourceTitle": "정형돈 창작동요제 ‘야르’ 장면",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 4월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3727",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "slang",
+        "revival",
+        "exclamation"
+      ]
+    },
+    {
+      "id": "meme-029",
+      "memeId": "geureosiguna",
+      "type": "relatedPerson",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘그러시구나’, ‘봄이구나’처럼 말 끝에 ‘구나’를 붙이는 밈과 관련된 방송인은?",
+      "options": [
+        {
+          "id": "meme-029-o1",
+          "text": "크리스티나",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-029-o2",
+          "text": "사유리",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-029-o3",
+          "text": "에바",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-029-o4",
+          "text": "후지타 사유리",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-029-o1",
+      "explanation": "과거 ‘미녀들의 수다’에 출연한 방송인 크리스티나의 독특한 억양과 ‘~구나’ 말투가 다시 주목받으며 ‘그러시구나’, ‘봄이구나’ 같은 변형 밈으로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "크리스티나·크러쉬 관련 숏폼 콘텐츠",
+          "sourceTitle": "그러시구나·크러쉬구나 영상",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 4월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3727",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "broadcast",
+        "accent",
+        "phrase"
+      ]
+    },
+    {
+      "id": "meme-030",
+      "memeId": "gamjasungi-hipper",
+      "type": "connection",
+      "difficulty": "hard",
+      "freshness": "steady",
+      "question": "‘감자숭이’ 히퍼는 어떤 상품과의 콜라보 구성품으로 화제가 됐을까?",
+      "options": [
+        {
+          "id": "meme-030-o1",
+          "text": "CU에서 판매한 YOZM X 핑루 그릭요거트 블루베리",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-030-o2",
+          "text": "GS25의 짱구 초코우유",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-030-o3",
+          "text": "세븐일레븐의 산리오 젤리",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-030-o4",
+          "text": "이마트24의 포켓몬 샌드위치",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-030-o1",
+      "explanation": "감자숭이 히퍼는 CU에서 판매한 YOZM(요즘) X 핑루 콜라보 그릭요거트 블루베리에 3종 중 하나가 랜덤으로 들어 있는 구성으로 화제가 됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "CU·YOZM X 핑루 상품 콘텐츠",
+          "sourceTitle": "감자숭이 히퍼 콜라보",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 4월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3727",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "goods",
+        "convenience",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "meme-031",
+      "memeId": "tree-challenge",
+      "type": "songOrMedia",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘나무 챌린지’에 사용된 원곡은 누구의 ‘나무’일까?",
+      "options": [
+        {
+          "id": "meme-031-o1",
+          "text": "카더가든",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-031-o2",
+          "text": "잔나비",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-031-o3",
+          "text": "10CM",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-031-o4",
+          "text": "정승환",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-031-o1",
+      "explanation": "2019년에 발매된 카더가든의 발라드 ‘나무’에 무표정으로 팔과 다리를 크게 움직이는 춤을 붙인 숏폼 챌린지가 유행했습니다. 아래에서 위로 찍는 카메라 각도도 특징입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "1theK 공식 유튜브",
+          "sourceTitle": "Car, the garden - 나무 MV",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "challenge",
+        "song",
+        "dance"
+      ]
+    },
+    {
+      "id": "meme-032",
+      "memeId": "spring-cabbage-bibimbap",
+      "type": "originContent",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "2026년 다시 유행한 봄동비빔밥의 과거 원본 먹방은 어느 예능에서 방송됐을까?",
+      "options": [
+        {
+          "id": "meme-032-o1",
+          "text": "1박 2일",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-032-o2",
+          "text": "무한도전",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-032-o3",
+          "text": "패밀리가 떴다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-032-o4",
+          "text": "런닝맨",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-032-o1",
+      "explanation": "강호동이 2008년 KBS ‘1박 2일’에서 먹은 봄동비빔밥 장면이 2026년 다시 주목받으며 유행했습니다. 이후 아이돌과 브랜드도 관련 콘텐츠를 제작했습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "KBS 한국방송 유튜브",
+          "sourceTitle": "1박 2일 강호동 봄동비빔밥 먹방",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "revival",
+        "variety"
+      ]
+    },
+    {
+      "id": "meme-033",
+      "memeId": "frozen-jelly",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘젤리얼먹’은 무엇을 뜻할까?",
+      "options": [
+        {
+          "id": "meme-033-o1",
+          "text": "젤리를 냉동해 바삭하고 아삭한 식감으로 먹는 것",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-033-o2",
+          "text": "젤리를 뜨거운 물에 녹여 차로 마시는 것",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-033-o3",
+          "text": "젤리를 잘게 잘라 아이스크림에 섞는 것",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-033-o4",
+          "text": "젤리를 전자레인지에 데워 먹는 것",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-033-o1",
+      "explanation": "젤리얼먹은 젤리를 충분히 낮은 온도에서 얼려 말랑한 식감 대신 바삭하고 아삭한 식감으로 즐기는 방식입니다. ASMR과 추천 콘텐츠로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "김밍 KIMMING 유튜브",
+          "sourceTitle": "젤리 얼려 먹기 콘텐츠",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "asmr",
+        "recipe"
+      ]
+    },
+    {
+      "id": "meme-034",
+      "memeId": "two-ingredient-chocolate-mousse",
+      "type": "trendDetail",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘초간단 초코무스’ 유행에서 기본 재료 두 가지로 소개된 것은?",
+      "options": [
+        {
+          "id": "meme-034-o1",
+          "text": "우유와 초콜릿",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-034-o2",
+          "text": "생크림과 달걀",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-034-o3",
+          "text": "두부와 코코아가루",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-034-o4",
+          "text": "요거트와 바나나",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-034-o1",
+      "explanation": "따뜻한 우유에 초콜릿을 녹인 뒤 냉장고에서 굳히는 두 재료 초코무스 레시피가 ‘집에서 먹는 호텔 디저트’로 확산됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "지현쿡 유튜브",
+          "sourceTitle": "두 재료 초코무스",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "recipe",
+        "dessert"
+      ]
+    },
+    {
+      "id": "meme-035",
+      "memeId": "greek-yogurt-cheesecake",
+      "type": "trendDetail",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "그릭요거트 치즈케이크 유행에서 그릭요거트에 꽂아 두는 과자로 소개된 것은?",
+      "options": [
+        {
+          "id": "meme-035-o1",
+          "text": "빠다코코넛",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-035-o2",
+          "text": "다이제",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-035-o3",
+          "text": "초코하임",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-035-o4",
+          "text": "버터링",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-035-o1",
+      "explanation": "그릭요거트에 빠다코코넛을 빽빽하게 꽂아 냉장고에 하루 보관하면 꾸덕한 치즈케이크 같은 식감이 난다는 간단 레시피가 유행했습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "밥플레이리스트 유튜브",
+          "sourceTitle": "그릭요거트 치즈케이크 레시피",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "yogurt",
+        "dessert"
+      ]
+    },
+    {
+      "id": "meme-036",
+      "memeId": "baby-monkey-punch",
+      "type": "connection",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "아기 원숭이 ‘펀치’가 자주 손을 잡거나 안고 다녀 화제가 된 것은?",
+      "options": [
+        {
+          "id": "meme-036-o1",
+          "text": "이케아 오랑우탄 인형",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-036-o2",
+          "text": "바나나 모양 쿠션",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-036-o3",
+          "text": "사육사의 장갑",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-036-o4",
+          "text": "원숭이 모양 물병",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-036-o1",
+      "explanation": "어미의 돌봄을 받지 못해 사육사와 지낸 아기 원숭이 펀치가 무리에 적응하는 동안 이케아 오랑우탄 인형을 꼭 잡고 다니는 영상이 전 세계적으로 화제가 됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "연합뉴스 Yonhapnews 공식 유튜브",
+          "sourceTitle": "아기 원숭이 펀치 보도",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "animal",
+        "toy",
+        "viral"
+      ]
+    },
+    {
+      "id": "meme-037",
+      "memeId": "chopstick-walking",
+      "type": "songOrMedia",
+      "difficulty": "hard",
+      "freshness": "steady",
+      "question": "‘젓가락 워킹’ 영상에 사용된 곡으로 소개된 것은?",
+      "options": [
+        {
+          "id": "meme-037-o1",
+          "text": "Zella Day - East of Eden",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-037-o2",
+          "text": "Sia - Unstoppable",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-037-o3",
+          "text": "Lady Gaga - Abracadabra",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-037-o4",
+          "text": "Tate McRae - greedy",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-037-o1",
+      "explanation": "젓가락 한 쌍이 도도하게 걷고 싫어하는 것이 적힌 종이를 발로 차는 ‘젓가락 워킹’에는 Zella Day의 ‘East of Eden’이 사용됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "콩녕 유튜브·틱톡 확산 콘텐츠",
+          "sourceTitle": "젓가락 워킹",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "music",
+        "object",
+        "walking"
+      ]
+    },
+    {
+      "id": "meme-038",
+      "memeId": "big-guy-challenge",
+      "type": "meaning",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "‘BIG GUY 챌린지’에서 두 사람이 함께 만드는 대표적인 착시 효과는?",
+      "options": [
+        {
+          "id": "meme-038-o1",
+          "text": "앞사람에게 거대한 근육 팔이 생긴 것처럼 보이게 한다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-038-o2",
+          "text": "두 사람이 한 명의 키 큰 사람처럼 보이게 한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-038-o3",
+          "text": "앞사람의 얼굴이 뒤사람의 몸에 붙은 것처럼 보이게 한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-038-o4",
+          "text": "두 사람의 다리가 네 개로 늘어난 것처럼 보이게 한다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-038-o1",
+      "explanation": "한 사람이 앞에 서고 근육이 있는 사람이 뒤에 밀착해 팔을 내밀면, 앞사람에게 거대한 팔 근육이 생긴 것처럼 보이는 반전 착시가 BIG GUY 챌린지의 핵심입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "Ice Spice·TWS·Hearts2Hearts 공식 유튜브",
+          "sourceTitle": "BIG GUY 챌린지",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 3월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3716",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "challenge",
+        "illusion",
+        "spongebob"
+      ]
+    },
+    {
+      "id": "meme-039",
+      "memeId": "mom-blackpink-dad-citizen",
+      "type": "originContent",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "‘엄마는 블랙핑크, 아빠는 그냥 시민’ 밈이 시작된 콘텐츠의 제작 채널은?",
+      "options": [
+        {
+          "id": "meme-039-o1",
+          "text": "ODG",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-039-o2",
+          "text": "딩고",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-039-o3",
+          "text": "워크맨",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-039-o4",
+          "text": "문명특급",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-039-o1",
+      "explanation": "아이들이 부모님의 젊은 시절 사진을 보고 엄마는 블랙핑크 같다고 말한 뒤, 아빠에 대해서는 ‘그냥 시민’이라고 답한 ODG 콘텐츠가 다시 확산되며 밈이 됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "ODG 공식 유튜브",
+          "sourceTitle": "블랙핑크와 일반인의 만남(?)",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 2월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3711",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "family",
+        "youtube",
+        "quote"
+      ]
+    },
+    {
+      "id": "meme-040",
+      "memeId": "kim-donghyun-meme",
+      "type": "relatedPerson",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘오늘 운동 많이 된다’, ‘스트레스 많이 받을 거야’ 같은 말로 구성된 밈과 관련된 인물은?",
+      "options": [
+        {
+          "id": "meme-040-o1",
+          "text": "김동현",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-040-o2",
+          "text": "추성훈",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-040-o3",
+          "text": "정찬성",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-040-o4",
+          "text": "김종국",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-040-o1",
+      "explanation": "UFC 선수 출신 김동현이 스파링과 훈련 중 진지하고 담백한 말투로 한 여러 문장이 ‘김동현 밈’으로 묶여 댓글과 동기부여 표현에 사용됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "매미킴 유튜브",
+          "sourceTitle": "김동현 ‘운동 많이 된다’ 모음",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 2월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3711",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "sports",
+        "quote",
+        "motivation"
+      ]
+    },
+    {
+      "id": "meme-041",
+      "memeId": "french-fries-meetup",
+      "type": "originContent",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘감튀 모임’ 참가자를 주로 모집한 플랫폼은?",
+      "options": [
+        {
+          "id": "meme-041-o1",
+          "text": "당근",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-041-o2",
+          "text": "번개장터",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-041-o3",
+          "text": "네이버 카페",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-041-o4",
+          "text": "블라인드",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-041-o1",
+      "explanation": "같은 동네 사람들이 모여 감자튀김을 산처럼 쌓아 먹는 감튀 모임은 주로 지역 기반 플랫폼 당근을 통해 모집됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "당근 모임 게시물·참여 후기",
+          "sourceTitle": "감튀 모임",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 2월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3711",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "meetup",
+        "local"
+      ]
+    },
+    {
+      "id": "meme-042",
+      "memeId": "ballpen-decoration",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘볼꾸’에서 꾸미는 물건은?",
+      "options": [
+        {
+          "id": "meme-042-o1",
+          "text": "볼펜",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-042-o2",
+          "text": "볼캡",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-042-o3",
+          "text": "볼링공",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-042-o4",
+          "text": "농구공",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-042-o1",
+      "explanation": "볼꾸는 ‘볼펜 꾸미기’의 줄임말입니다. 다양한 파츠와 비즈를 활용하기 위해 동대문 문구·자재 매장을 찾는 사람이 늘며 화제가 됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "14F 일사에프 유튜브",
+          "sourceTitle": "동대문 볼꾸 트렌드 보도",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 2월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3711",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "diy",
+        "stationery",
+        "dongdaemun"
+      ]
+    },
+    {
+      "id": "meme-043",
+      "memeId": "kimchi-vest",
+      "type": "relatedPerson",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "‘김장조끼’ 유행을 더 확산시킨 착용 인증 인물로 함께 소개된 조합은?",
+      "options": [
+        {
+          "id": "meme-043-o1",
+          "text": "에스파 카리나와 블랙핑크 제니",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-043-o2",
+          "text": "아이브 장원영과 르세라핌 사쿠라",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-043-o3",
+          "text": "트와이스 나연과 레드벨벳 아이린",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-043-o4",
+          "text": "뉴진스 민지와 에스파 윈터",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-043-o1",
+      "explanation": "꽃무늬 누빔 조끼인 김장조끼는 일상 패션 아이템으로 재해석됐고, 에스파 카리나와 블랙핑크 제니가 착용 인증 사진을 올리며 더 큰 화제가 됐다고 소개됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "에스파·제니 공식 인스타그램",
+          "sourceTitle": "김장조끼 착용 인증",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 2월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3711",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "fashion",
+        "idol",
+        "retro"
+      ]
+    },
+    {
+      "id": "meme-044",
+      "memeId": "safe-parkour",
+      "type": "meaning",
+      "difficulty": "medium",
+      "freshness": "steady",
+      "question": "‘숙련된 조교의 시범입니다. 절대 따라하지 마세요’ 파쿠르 밈의 반전은?",
+      "options": [
+        {
+          "id": "meme-044-o1",
+          "text": "위험한 동작처럼 경고하지만 실제로는 계단 한 칸 점프 같은 안전한 행동을 한다",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-044-o2",
+          "text": "안전한 장소처럼 보이지만 실제로는 고층 건물에서 촬영한다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-044-o3",
+          "text": "전문 선수가 위험한 동작에 실패하는 장면만 모은다",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-044-o4",
+          "text": "파쿠르가 아니라 수영 영상을 잘못 올린다",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-044-o1",
+      "explanation": "진지한 경고 문구로 위험한 파쿠르를 예고하는 듯하지만, 실제로는 빠르게 걷기나 계단 마지막 칸에서 뛰기처럼 매우 안전한 행동을 보여주는 반전이 웃음 포인트입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "fromis_9 공식 유튜브·룰루랄라",
+          "sourceTitle": "안전 파쿠르 패러디",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 2월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3711",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "parkour",
+        "parody",
+        "warning"
+      ]
+    },
+    {
+      "id": "meme-045",
+      "memeId": "dubai-chewy-cookie",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘두쫀쿠’는 무엇을 합친 이름일까?",
+      "options": [
+        {
+          "id": "meme-045-o1",
+          "text": "두바이 초콜릿과 쫀득쿠키",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-045-o2",
+          "text": "두부와 쫀드기 쿠키",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-045-o3",
+          "text": "두유와 쫀득한 크래커",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-045-o4",
+          "text": "두리안과 초코 쿠키",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-045-o1",
+      "explanation": "두쫀쿠는 ‘두바이 쫀득쿠키’의 줄임말로, 두바이 초콜릿의 카다이프·피스타치오 속재료와 쫀득쿠키 스타일을 결합한 디저트입니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "셰프 안성재 공식 유튜브 및 판매 브랜드 콘텐츠",
+          "sourceTitle": "두바이 쫀득쿠키",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 1월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3698",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "dubai",
+        "cookie"
+      ]
+    },
+    {
+      "id": "meme-046",
+      "memeId": "carrot-police-thief",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "당근에서 참가자를 모집해 다시 유행한 추억의 놀이 ‘경도’는 무엇의 줄임말일까?",
+      "options": [
+        {
+          "id": "meme-046-o1",
+          "text": "경찰과 도둑",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-046-o2",
+          "text": "경기와 도전",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-046-o3",
+          "text": "경주와 도약",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-046-o4",
+          "text": "경비와 도망",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-046-o1",
+      "explanation": "경도는 ‘경찰과 도둑’의 줄임말입니다. 같은 동네 사람을 당근에서 모집해 공터 등에서 다 함께 뛰어노는 모임으로 다시 유행했습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "당근 모집 게시물·이영지 인스타그램",
+          "sourceTitle": "경찰과 도둑 모임",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 1월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3698",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "game",
+        "local",
+        "nostalgia"
+      ]
+    },
+    {
+      "id": "meme-047",
+      "memeId": "buldak-seaweed-soup",
+      "type": "meaning",
+      "difficulty": "easy",
+      "freshness": "steady",
+      "question": "‘불닭미역탕면’은 어떤 음식 두 가지를 섞어 먹는 조합일까?",
+      "options": [
+        {
+          "id": "meme-047-o1",
+          "text": "불닭볶음면과 미역국",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-047-o2",
+          "text": "불닭볶음면과 곰탕",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-047-o3",
+          "text": "비빔면과 미역국",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-047-o4",
+          "text": "불닭볶음면과 된장국",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-047-o1",
+      "explanation": "불닭미역탕면은 불닭볶음면에 미역국을 섞어 먹는 조합입니다. 미역국이 매운맛을 중화하고, 마지막에 밥을 말아 먹는 방식도 추천됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "박홍 Bakkong 유튜브",
+          "sourceTitle": "불닭미역탕면 후기",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 1월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3698",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "food",
+        "ramen",
+        "recipe"
+      ]
+    },
+    {
+      "id": "meme-048",
+      "memeId": "hood-grab-shot",
+      "type": "connection",
+      "difficulty": "hard",
+      "freshness": "steady",
+      "question": "‘후드잡샷’ 콘텐츠를 시작한 그룹과 사용 음악의 올바른 조합은?",
+      "options": [
+        {
+          "id": "meme-048-o1",
+          "text": "아일릿 - NOT CUTE ANYMORE (Sped up)",
+          "isCorrect": true
+        },
+        {
+          "id": "meme-048-o2",
+          "text": "르세라핌 - CRAZY",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-048-o3",
+          "text": "에스파 - Whiplash",
+          "isCorrect": false
+        },
+        {
+          "id": "meme-048-o4",
+          "text": "아이브 - ATTITUDE",
+          "isCorrect": false
+        }
+      ],
+      "correctOptionId": "meme-048-o1",
+      "explanation": "후드잡샷은 높은 곳에서 촬영자가 출연자의 모자나 후드를 잡고, 출연자가 제자리에서 팔다리를 움직여 인형처럼 보이게 하는 영상입니다. 아일릿이 시작했고 ‘NOT CUTE ANYMORE (Sped up)’가 사용됐습니다.",
+      "verifiedAt": "2026-07-11",
+      "reviewAt": "2026-11-08",
+      "sourceRecords": [
+        {
+          "sourceName": "ILLIT 공식 유튜브",
+          "sourceTitle": "NOT CUTE ANYMORE 후드잡샷",
+          "sourceType": "primary_or_official",
+          "checkedAt": "2026-07-11"
+        },
+        {
+          "sourceName": "HSAD 2026년 1월 밈집",
+          "sourceUrl": "https://blog.hsad.co.kr/3698",
+          "sourceType": "trend_media",
+          "checkedAt": "2026-07-11"
+        }
+      ],
+      "tags": [
+        "illit",
+        "challenge",
+        "camera"
+      ]
+    }
+  ]
+}

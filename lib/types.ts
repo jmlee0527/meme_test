@@ -1058,6 +1058,43 @@ export type BtsFanGradeProfile = {
   shareText: string;
 };
 
+export type Fromis9QuestionDifficulty = "easy" | "medium" | "hard";
+export type Fromis9QuestionCategory =
+  | "멤버" | "그룹명" | "팬덤" | "데뷔" | "음반" | "타이틀곡" | "수록곡"
+  | "음악방송" | "콘서트" | "공식 콘텐츠" | "예능" | "활동 연도"
+  | "수상" | "기록" | "멤버 활동" | "기타 공식 정보";
+export type Fromis9QuizQuestion = {
+  id: string;
+  difficulty: Fromis9QuestionDifficulty;
+  category: Fromis9QuestionCategory;
+  question: string;
+  choices: string[];
+  correctAnswer: number;
+  explanation: string;
+  /** 사실 검증에 사용한 공식 출처 (내부 관리용) */
+  source: string;
+};
+export type Fromis9PresentedQuestion = Fromis9QuizQuestion & {
+  originalId: string;
+  /** 화면 표시 순서 → 원본 choices 인덱스 */
+  optionOrder: number[];
+};
+export type Fromis9FanAnswer = {
+  questionId: string;
+  choice: number;
+};
+export type Fromis9FanGradeProfile = {
+  slug: string;
+  minScore: number;
+  maxScore: number;
+  name: string;
+  icon: string;
+  subtitle: string;
+  description: string;
+  recommendation: string;
+  shareText: string;
+};
+
 export type TetoEgenDifficulty = "easy" | "medium" | "hard";
 export type TetoEgenQuestionCategory =
   | "decision"

@@ -100,6 +100,7 @@ export const dementiaRiskTest: TestDefinition = {
   category: "건강.운세",
   duration: "약 3분",
   icon: "🧠",
+  thumbnail: "/tests/dementia-risk-test.jpg",
   participants: 1247,
   accent: "green",
   isNew: true,

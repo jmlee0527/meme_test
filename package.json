@@ -11,7 +11,9 @@
     "generate:favicon": "node scripts/generate-favicon.mjs",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "validate:limyoungwoong": "node scripts/validate-limyoungwoong-fan.mjs"
+    "validate:limyoungwoong": "node scripts/validate-limyoungwoong-fan.mjs",
+    "validate:young-old": "node scripts/validate-young-old-memes.mjs",
+    "validate:seventeen": "node scripts/validate-seventeen-fan.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

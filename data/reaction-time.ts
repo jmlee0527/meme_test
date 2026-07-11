@@ -53,6 +53,7 @@ export const reactionTimeTest: TestDefinition = {
   category: "팬 퀴즈",
   duration: "약 30초",
   icon: "⚡",
+  thumbnail: "/tests/reaction-time.jpg",
   participants: 2159,
   accent: "orange",
   isNew: true,

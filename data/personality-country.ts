@@ -110,6 +110,7 @@ export const personalityCountryTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2분",
   icon: "🌍",
+  thumbnail: "/tests/personality-country.jpg",
   participants: 3187,
   accent: "teal",
   isNew: true,

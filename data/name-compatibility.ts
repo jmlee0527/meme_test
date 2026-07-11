@@ -11,6 +11,7 @@ export const nameCompatibilityTest: TestDefinition = {
   category: "연애.관계",
   duration: "약 1분",
   icon: "💞",
+  thumbnail: "/tests/name-compatibility.jpg",
   participants: 4791,
   accent: "pink",
   isNew: true,

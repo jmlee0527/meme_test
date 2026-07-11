@@ -27,7 +27,7 @@ export const kkondaePointLabels = ["업무 방식 통제","회식 참여 압박"
 
 export const kkondaePowerTest: TestDefinition = {
   slug:"kkondae-power-test", title:"꼰대력 테스트", shortTitle:"꼰대력 테스트", cardTitle:"나는 꼰대일까, 선배일까?", description:"10개의 질문으로 직장 속 나의 꼰대력을 확인해보세요.",
-  category: "직업.일상", duration:"약 2분", icon:"☕", participants:3546, accent:"orange", isNew:true, questions:kkondaeQuestions,
+  category: "직업.일상", duration:"약 2분", icon:"☕", thumbnail:"/tests/kkondae.jpg", participants:3546, accent:"orange", isNew:true, questions:kkondaeQuestions,
   resultSlugs:kkondaeResultProfiles.map((profile)=>profile.slug), seoTitle:"꼰대력 테스트 | 나는 얼마나 꼰대일까?",
   seoDescription:"10개의 질문으로 나의 직장 꼰대력을 확인해보세요. 말투, 업무 방식, 후배를 대하는 태도로 알아보는 꼰대력 테스트입니다.",
   keywords:["꼰대력 테스트","꼰대 테스트","직장인 테스트","라떼 테스트","회사 생활 테스트","성격 테스트"],

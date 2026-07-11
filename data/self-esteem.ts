@@ -206,6 +206,7 @@ export const selfEsteemTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 3분",
   icon: "🌱",
+  thumbnail: "/tests/self-esteem.jpg",
   participants: 2184,
   accent: "green",
   isNew: true,

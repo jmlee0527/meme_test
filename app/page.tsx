@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HeroExperience } from "@/components/home/HeroExperience";
 import { TestCard } from "@/components/cards/TestCard";
 import { BlogCard } from "@/components/cards/BlogCard";
+import { CategoryTiles } from "@/components/category/CategoryTiles";
 import { AdBanner } from "@/components/ads/AdBanner";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SectionReveal } from "@/components/motion/SectionReveal";
@@ -13,10 +14,6 @@ export const metadata = createMetadata({ title: "미미테스트 | 나를 알아
 
 const rankedTests = [...tests].sort((a, b) => b.participants - a.participants);
 const bySlug = (slug: string) => tests.find((test) => test.slug === slug)!;
-const categories = [
-  ["🧠", "성격.심리", "green"], ["💕", "연애.관계", "pink"], ["💼", "직업.일상", "blue"],
-  ["🎯", "팬 퀴즈", "orange"], ["🔮", "건강.운세", "purple"],
-] as const;
 
 export default function HomePage() {
   return (
@@ -38,7 +35,7 @@ export default function HomePage() {
       <section className="container-page py-14 sm:py-20">
         <SectionReveal>
           <SectionHeading icon="🎯" eyebrow="DISCOVER YOURSELF" title="나를 알아보는 테스트" description="지금 가장 궁금한 나의 모습을 골라보세요. 카테고리는 계속 확장됩니다." />
-          <div className="mt-7 grid grid-cols-3 gap-3 sm:grid-cols-5">{categories.map(([icon, label, tone]) => <a key={label} href={`/category/${encodeURIComponent(label)}`} className={`category-tile category-${tone}`}><span className="text-3xl" aria-hidden="true">{icon}</span><strong className="mt-2 text-sm">{label}</strong></a>)}</div>
+          <div className="mt-7"><CategoryTiles /></div>
         </SectionReveal>
       </section>
 

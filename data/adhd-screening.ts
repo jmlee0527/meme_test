@@ -72,7 +72,7 @@ export const adhdLevelProfiles:AdhdLevelProfile[] = [
 export const adhdScreeningTest:TestDefinition = {
   type:"quiz", slug:"adhd-self-check", title:"ADHD 자가진단 테스트", shortTitle:"ADHD 자가 체크",
   cardTitle:"성인 ADHD 자가 체크", description:"최근 6개월의 행동을 바탕으로 주의력 부족과 과잉행동·충동성 관련 특성을 확인해보세요.",
-  category: "건강.운세", duration:"약 4분", icon:"🧠", participants:2861, accent:"teal", isNew:true,
+  category: "건강.운세", duration:"약 4분", icon:"🧠", thumbnail:"/tests/adhd-self-check.jpg", participants:2861, accent:"teal", isNew:true,
   itemCount:adhdQuestions.length, questions:adhdQuestions.map(({id,text,options})=>({id,text,options})), resultSlugs:[],
   seoTitle:"ADHD 테스트 | 성인 ADHD 자가진단·자가 체크",
   seoDescription:"최근 6개월의 집중, 계획, 기억, 충동조절 경험을 바탕으로 ADHD 관련 특성을 확인하는 성인 ADHD 자가 체크입니다.",

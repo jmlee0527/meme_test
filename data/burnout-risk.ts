@@ -54,6 +54,7 @@ export function getBurnoutResultProfile(slug:string) {
 export const burnoutRiskTest: TestDefinition = {
   type:"adaptive", slug:"burnout-risk-test", title:"번아웃 위험도 테스트", shortTitle:"번아웃 자가 점검", cardTitle:"지금 나는 얼마나 지쳐 있을까?",
   description:"에너지 고갈과 정서적 소진, 관계 피로를 12개 질문으로 점검해보세요.", category: "성격.심리", duration:"약 3분", icon:"🪫",
+  thumbnail:"/tests/burnout.jpg",
   participants:4674, accent:"green", isNew:true, itemCount:12, questions:[], resultSlugs:burnoutResultProfiles.map((profile)=>profile.slug),
   seoTitle:"번아웃 위험도 테스트 | 나의 번아웃 상태 자가진단", seoDescription:"에너지 고갈, 정서적 소진, 업무 스트레스, 대인관계 피로를 바탕으로 나의 번아웃 위험도를 확인해보세요.",
   keywords:["번아웃 테스트","번아웃 자가진단","직장인 번아웃","번아웃 증상","스트레스 테스트"],

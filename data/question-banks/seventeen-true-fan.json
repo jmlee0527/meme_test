@@ -1,0 +1,2192 @@
+{
+  "schemaVersion": 1,
+  "testId": "seventeen-true-fan",
+  "title": "세븐틴 찐팬 테스트",
+  "subtitle": "멤버·유닛·노래·앨범으로 확인하는 나의 캐럿력",
+  "verifiedAt": "2026-07-11",
+  "sourcePolicy": "공식 프로필·공식 디스코그래피·공식 Weverse 공지를 우선 사용하고, 일부 유닛 자료는 신뢰 가능한 인터뷰 기사로 교차 검증함.",
+  "excludedTopics": [
+    "열애·결혼설",
+    "가족·지인 사생활",
+    "건강 상태",
+    "군 복무 관련 추측",
+    "미확인 별명·밈의 기원",
+    "루머·논란",
+    "키·몸무게·혈액형 등 변동·오류 가능 프로필"
+  ],
+  "sampling": {
+    "questionsPerAttempt": 15,
+    "difficultyMix": {
+      "초급": 5,
+      "중급": 6,
+      "고급": 4
+    },
+    "rules": [
+      "문항 ID 중복 금지",
+      "멤버 생일 문항은 한 회차 최대 2개",
+      "동일 앨범 중심 문항은 한 회차 최대 2개",
+      "보기 순서는 세션마다 셔플하되 정답 인덱스를 재계산",
+      "테스트 제출 전에는 정답을 노출하지 않음"
+    ]
+  },
+  "scoring": {
+    "pointsPerCorrect": 1,
+    "maxScore": 15,
+    "percentageFormula": "Math.round((correctCount / 15) * 100)",
+    "tiers": [
+      {
+        "min": 0,
+        "max": 3,
+        "name": "입덕 준비 중",
+        "description": "기본 정보부터 천천히 알아가는 단계입니다."
+      },
+      {
+        "min": 4,
+        "max": 6,
+        "name": "캐럿 새싹",
+        "description": "대표곡과 멤버 정보를 제법 알고 있습니다."
+      },
+      {
+        "min": 7,
+        "max": 9,
+        "name": "열공 캐럿",
+        "description": "앨범과 유닛 정보를 폭넓게 알고 있습니다."
+      },
+      {
+        "min": 10,
+        "max": 11,
+        "name": "검증된 캐럿",
+        "description": "수록곡과 활동 흐름까지 안정적으로 맞힙니다."
+      },
+      {
+        "min": 12,
+        "max": 13,
+        "name": "찐캐럿",
+        "description": "세부 디스코그래피까지 기억하는 강한 팬심의 소유자입니다."
+      },
+      {
+        "min": 14,
+        "max": 15,
+        "name": "다이아몬드급 찐캐럿",
+        "description": "세븐틴 기록을 정확히 꿰고 있는 최상위 팬입니다."
+      }
+    ]
+  },
+  "seo": {
+    "primaryKeyword": "세븐틴 찐팬 테스트",
+    "secondaryKeywords": [
+      "세븐틴 퀴즈",
+      "세븐틴 팬 테스트",
+      "캐럿 테스트",
+      "세븐틴 멤버 퀴즈",
+      "세븐틴 노래 퀴즈",
+      "SEVENTEEN quiz"
+    ],
+    "recommendedTitle": "세븐틴 찐팬 테스트 | 멤버·노래·앨범 퀴즈",
+    "recommendedDescription": "세븐틴 멤버, 유닛, 대표곡, 앨범과 수록곡 문제 15개로 나의 캐럿력을 확인해 보세요. 난이도별 랜덤 출제되는 세븐틴 찐팬 테스트입니다.",
+    "slug": "seventeen-true-fan"
+  },
+  "questions": [
+    {
+      "id": "E01",
+      "difficulty": "초급",
+      "category": "데뷔",
+      "type": "기본 사실",
+      "prompt": "세븐틴이 한국에서 공식 데뷔한 날짜는 언제일까요?",
+      "choices": [
+        "2015년 5월 26일",
+        "2014년 5월 26일",
+        "2015년 6월 15일",
+        "2016년 5월 26일"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "2015년 5월 26일",
+      "explanation": "세븐틴은 2015년 5월 26일 미니 1집 ‘17 CARAT’으로 공식 데뷔했습니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        },
+        {
+          "name": "PLEDIS 공식 프로필",
+          "url": "https://www.pledis.co.kr/en/artist/detail/seventeen/profile/"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 데뷔일",
+        "세븐틴 2015년",
+        "17 CARAT"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E02",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범 식별",
+      "prompt": "세븐틴의 데뷔 앨범은 무엇일까요?",
+      "choices": [
+        "BOYS BE",
+        "17 CARAT",
+        "LOVE&LETTER",
+        "Al1"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "17 CARAT",
+      "explanation": "세븐틴의 데뷔작은 첫 번째 미니 앨범 ‘17 CARAT’입니다.",
+      "sources": [
+        {
+          "name": "17 CARAT 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/insmxq"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 데뷔앨범",
+        "17 CARAT",
+        "세븐틴 앨범"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E03",
+      "difficulty": "초급",
+      "category": "노래",
+      "type": "대표곡 식별",
+      "prompt": "데뷔 앨범 ‘17 CARAT’의 대표 활동곡은 무엇일까요?",
+      "choices": [
+        "만세 (Mansae)",
+        "예쁘다 (Pretty U)",
+        "아낀다 (Adore U)",
+        "아주 NICE (Very Nice)"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "아낀다 (Adore U)",
+      "explanation": "‘아낀다’는 17 CARAT에 수록된 세븐틴의 데뷔 활동곡입니다.",
+      "sources": [
+        {
+          "name": "17 CARAT 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/insmxq"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 아낀다",
+        "세븐틴 데뷔곡",
+        "Adore U"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E04",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "기본 사실",
+      "prompt": "세븐틴의 멤버 수는 몇 명일까요?",
+      "choices": [
+        "11명",
+        "12명",
+        "17명",
+        "13명"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "13명",
+      "explanation": "세븐틴은 13명의 멤버로 구성된 그룹입니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        },
+        {
+          "name": "PLEDIS 공식 프로필",
+          "url": "https://www.pledis.co.kr/en/artist/detail/seventeen/profile/"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 멤버 수",
+        "세븐틴 13명",
+        "세븐틴 멤버"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E05",
+      "difficulty": "초급",
+      "category": "그룹명",
+      "type": "구성 조합",
+      "prompt": "공식 프로필에 소개된 ‘SEVENTEEN’의 숫자 17 의미로 알맞은 것은?",
+      "choices": [
+        "13명 + 3개 유닛 + 1개 팀",
+        "13명 + 1개 유닛 + 3개 팀",
+        "12명 + 4개 유닛 + 1개 팀",
+        "17명으로 시작한 팀"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "13명 + 3개 유닛 + 1개 팀",
+      "explanation": "13명의 멤버, 3개의 유닛, 하나의 팀을 더해 17이라는 의미를 완성합니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        },
+        {
+          "name": "PLEDIS 공식 프로필",
+          "url": "https://www.pledis.co.kr/en/artist/detail/seventeen/profile/"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 뜻",
+        "세븐틴 13 3 1",
+        "세븐틴 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E06",
+      "difficulty": "초급",
+      "category": "유닛",
+      "type": "구성 판별",
+      "prompt": "세븐틴의 공식 기본 유닛 세 가지 조합은?",
+      "choices": [
+        "보컬팀·밴드팀·댄스팀",
+        "보컬팀·힙합팀·퍼포먼스팀",
+        "힙합팀·프로듀싱팀·연기팀",
+        "보컬팀·랩팀·예능팀"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "보컬팀·힙합팀·퍼포먼스팀",
+      "explanation": "세븐틴은 보컬팀, 힙합팀, 퍼포먼스팀의 세 기본 유닛으로 활동합니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        },
+        {
+          "name": "PLEDIS 공식 프로필",
+          "url": "https://www.pledis.co.kr/en/artist/detail/seventeen/profile/"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 유닛",
+        "세븐틴 보컬팀",
+        "세븐틴 힙합팀",
+        "세븐틴 퍼포먼스팀"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E07",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "리더 식별",
+      "prompt": "세븐틴의 총괄 리더이자 힙합팀 리더는 누구일까요?",
+      "choices": [
+        "정한 (JEONGHAN)",
+        "우지 (WOOZI)",
+        "에스쿱스 (S.COUPS)",
+        "호시 (HOSHI)"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "에스쿱스 (S.COUPS)",
+      "explanation": "에스쿱스는 세븐틴의 총괄 리더이며 힙합팀 리더를 맡고 있습니다.",
+      "sources": [
+        {
+          "name": "S.COUPS 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-scoups"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 리더",
+        "에스쿱스",
+        "세븐틴 힙합팀"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E08",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "리더 식별",
+      "prompt": "세븐틴 퍼포먼스팀의 리더는 누구일까요?",
+      "choices": [
+        "준 (JUN)",
+        "디노 (DINO)",
+        "디에잇 (THE 8)",
+        "호시 (HOSHI)"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "호시 (HOSHI)",
+      "explanation": "호시는 세븐틴 퍼포먼스팀 리더입니다.",
+      "sources": [
+        {
+          "name": "HOSHI 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-hoshi"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 퍼포먼스팀 리더",
+        "호시",
+        "세븐틴 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E09",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "리더 식별",
+      "prompt": "세븐틴 보컬팀의 리더는 누구일까요?",
+      "choices": [
+        "우지 (WOOZI)",
+        "도겸 (DK)",
+        "승관 (SEUNGKWAN)",
+        "조슈아 (JOSHUA)"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "우지 (WOOZI)",
+      "explanation": "우지는 세븐틴 보컬팀 리더입니다.",
+      "sources": [
+        {
+          "name": "WOOZI 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-woozi"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 보컬팀 리더",
+        "우지",
+        "세븐틴 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E10",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "유닛 매칭",
+      "prompt": "다음 중 힙합팀 멤버는 누구일까요?",
+      "choices": [
+        "도겸 (DK)",
+        "민규 (MINGYU)",
+        "준 (JUN)",
+        "승관 (SEUNGKWAN)"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "민규 (MINGYU)",
+      "explanation": "민규는 세븐틴 힙합팀 멤버입니다.",
+      "sources": [
+        {
+          "name": "MINGYU 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-mingyu"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 민규",
+        "세븐틴 힙합팀",
+        "세븐틴 멤버"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E11",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "유닛 매칭",
+      "prompt": "다음 중 보컬팀 멤버는 누구일까요?",
+      "choices": [
+        "원우 (WONWOO)",
+        "디에잇 (THE 8)",
+        "승관 (SEUNGKWAN)",
+        "버논 (VERNON)"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "승관 (SEUNGKWAN)",
+      "explanation": "승관은 세븐틴 보컬팀 멤버입니다.",
+      "sources": [
+        {
+          "name": "SEUNGKWAN 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-seungkwan"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 승관",
+        "세븐틴 보컬팀",
+        "세븐틴 멤버"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E12",
+      "difficulty": "초급",
+      "category": "멤버",
+      "type": "유닛 매칭",
+      "prompt": "다음 중 퍼포먼스팀 멤버는 누구일까요?",
+      "choices": [
+        "정한 (JEONGHAN)",
+        "원우 (WONWOO)",
+        "도겸 (DK)",
+        "디노 (DINO)"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "디노 (DINO)",
+      "explanation": "디노는 세븐틴 퍼포먼스팀 멤버입니다.",
+      "sources": [
+        {
+          "name": "DINO 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-dino"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 디노",
+        "세븐틴 퍼포먼스팀",
+        "세븐틴 멤버"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E13",
+      "difficulty": "초급",
+      "category": "팬덤",
+      "type": "기본 사실",
+      "prompt": "세븐틴의 공식 팬덤명은 무엇일까요?",
+      "choices": [
+        "캐럿 (CARAT)",
+        "다이아 (DIA)",
+        "큐빅 (CUBIC)",
+        "샤이닝 (SHINING)"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "캐럿 (CARAT)",
+      "explanation": "세븐틴의 공식 팬덤명은 ‘캐럿(CARAT)’입니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        },
+        {
+          "name": "PLEDIS 공식 프로필",
+          "url": "https://www.pledis.co.kr/en/artist/detail/seventeen/profile/"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 팬덤명",
+        "캐럿",
+        "SEVENTEEN CARAT"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E14",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "정규 1집 ‘LOVE&LETTER’의 대표 활동곡은 무엇일까요?",
+      "choices": [
+        "만세 (Mansae)",
+        "예쁘다 (Pretty U)",
+        "울고 싶지 않아 (Don't Wanna Cry)",
+        "박수 (CLAP)"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "예쁘다 (Pretty U)",
+      "explanation": "‘예쁘다’는 정규 1집 LOVE&LETTER의 대표 활동곡입니다.",
+      "sources": [
+        {
+          "name": "LOVE&LETTER 공식 디스코그래피",
+          "url": "https://seventeen-17.jp/posts/discography/umvmfo"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 예쁘다",
+        "LOVE&LETTER",
+        "세븐틴 정규 1집"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E15",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "정규 1집 리패키지에 새롭게 수록된 대표곡은 무엇일까요?",
+      "choices": [
+        "붐붐 (BOOMBOOM)",
+        "박수 (CLAP)",
+        "아주 NICE (Very Nice)",
+        "고맙다 (THANKS)"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "아주 NICE (Very Nice)",
+      "explanation": "‘아주 NICE’는 LOVE&LETTER 리패키지에 새롭게 수록된 곡입니다.",
+      "sources": [
+        {
+          "name": "LOVE&LETTER REPACKAGE 공식 디스코그래피",
+          "url": "https://seventeen-17.jp/posts/discography/gvsigi"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 아주 NICE",
+        "Very Nice",
+        "세븐틴 리패키지"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E16",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘울고 싶지 않아 (Don't Wanna Cry)’가 수록된 앨범은?",
+      "choices": [
+        "Going Seventeen",
+        "TEEN, AGE",
+        "DIRECTOR'S CUT",
+        "Al1"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "Al1",
+      "explanation": "‘울고 싶지 않아’는 미니 4집 Al1에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "Al1 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/nybkvw"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 울고 싶지 않아",
+        "Al1",
+        "Don't Wanna Cry"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E17",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘어쩌나 (Oh My!)’가 수록된 앨범은?",
+      "choices": [
+        "YOU MAKE MY DAY",
+        "YOU MADE MY DAWN",
+        "Heng:garae",
+        "Semicolon"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "YOU MAKE MY DAY",
+      "explanation": "‘어쩌나’는 미니 5집 YOU MAKE MY DAY에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "YOU MAKE MY DAY 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/tvgqhs"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 어쩌나",
+        "YOU MAKE MY DAY",
+        "Oh My"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E18",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘Home’이 수록된 앨범은?",
+      "choices": [
+        "YOU MAKE MY DAY",
+        "YOU MADE MY DAWN",
+        "An Ode",
+        "Your Choice"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "YOU MADE MY DAWN",
+      "explanation": "‘Home’은 미니 6집 YOU MADE MY DAWN에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "YOU MADE MY DAWN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xpgmhf"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Home",
+        "YOU MADE MY DAWN",
+        "세븐틴 노래"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E19",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘Left & Right’가 수록된 앨범은?",
+      "choices": [
+        "Semicolon",
+        "Your Choice",
+        "Heng:garae",
+        "Attacca"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "Heng:garae",
+      "explanation": "‘Left & Right’는 미니 7집 Heng:garae에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "Heng:garae 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/pznrxa"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Left and Right",
+        "Heng:garae",
+        "세븐틴 앨범"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "E20",
+      "difficulty": "초급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘손오공 (Super)’이 수록된 앨범은?",
+      "choices": [
+        "Face the Sun",
+        "SECTOR 17",
+        "SEVENTEENTH HEAVEN",
+        "FML"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "FML",
+      "explanation": "‘손오공’은 미니 10집 FML에 수록된 더블 타이틀곡 중 하나입니다.",
+      "sources": [
+        {
+          "name": "FML 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xmsjsm"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 손오공",
+        "세븐틴 FML",
+        "Super"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M01",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘음악의 신 (God of Music)’이 수록된 앨범은?",
+      "choices": [
+        "SEVENTEENTH HEAVEN",
+        "FML",
+        "17 IS RIGHT HERE",
+        "SPILL THE FEELS"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "SEVENTEENTH HEAVEN",
+      "explanation": "‘음악의 신’은 미니 11집 SEVENTEENTH HEAVEN에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "SEVENTEENTH HEAVEN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/smakmm"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 음악의 신",
+        "SEVENTEENTH HEAVEN",
+        "God of Music"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M02",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘Rock with you’가 수록된 앨범은?",
+      "choices": [
+        "Your Choice",
+        "Attacca",
+        "Face the Sun",
+        "An Ode"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "Attacca",
+      "explanation": "‘Rock with you’는 미니 9집 Attacca에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "Attacca 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/oamarv"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Rock with you",
+        "Attacca",
+        "세븐틴 노래"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M03",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘HOT’이 수록된 정규 앨범은?",
+      "choices": [
+        "An Ode",
+        "SECTOR 17",
+        "Face the Sun",
+        "17 IS RIGHT HERE"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "Face the Sun",
+      "explanation": "‘HOT’은 정규 4집 Face the Sun에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "Face the Sun 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/hrhcnu"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 HOT",
+        "Face the Sun",
+        "세븐틴 정규 4집"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M04",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘_WORLD’가 수록된 앨범은?",
+      "choices": [
+        "Face the Sun",
+        "FML",
+        "SPILL THE FEELS",
+        "SECTOR 17"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "SECTOR 17",
+      "explanation": "‘_WORLD’는 정규 4집 리패키지 SECTOR 17에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "SECTOR 17 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/atwpya"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 WORLD",
+        "SECTOR 17",
+        "세븐틴 리패키지"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M05",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘LOVE, MONEY, FAME (feat. DJ Khaled)’이 수록된 앨범은?",
+      "choices": [
+        "SPILL THE FEELS",
+        "17 IS RIGHT HERE",
+        "HAPPY BURSTDAY",
+        "FML"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "SPILL THE FEELS",
+      "explanation": "해당 곡은 미니 12집 SPILL THE FEELS의 수록곡입니다.",
+      "sources": [
+        {
+          "name": "SPILL THE FEELS 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xlrnjm"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 LOVE MONEY FAME",
+        "SPILL THE FEELS",
+        "DJ Khaled"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M06",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "앨범-곡 매칭",
+      "prompt": "‘THUNDER’가 수록된 세븐틴의 2025년 앨범은?",
+      "choices": [
+        "SPILL THE FEELS",
+        "HAPPY BURSTDAY",
+        "17 IS RIGHT HERE",
+        "SEVENTEENTH HEAVEN"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "HAPPY BURSTDAY",
+      "explanation": "‘THUNDER’는 세븐틴 정규 5집 HAPPY BURSTDAY에 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "HAPPY BURSTDAY 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/incaiv"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 THUNDER",
+        "HAPPY BURSTDAY",
+        "세븐틴 정규 5집"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M07",
+      "difficulty": "중급",
+      "category": "멤버",
+      "type": "생일 조합",
+      "prompt": "공식 프로필 기준 생일의 월·일이 같은 두 멤버는?",
+      "choices": [
+        "호시와 우지",
+        "준과 민규",
+        "도겸과 버논",
+        "정한과 조슈아"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "도겸과 버논",
+      "explanation": "도겸과 버논은 출생연도는 다르지만 모두 2월 18일생입니다.",
+      "sources": [
+        {
+          "name": "DK 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-dk"
+        },
+        {
+          "name": "VERNON 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-vernon"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 도겸 생일",
+        "세븐틴 버논 생일",
+        "세븐틴 멤버 생일"
+      ],
+      "memo": "연도보다 월·일 일치 여부만 묻는 문항"
+    },
+    {
+      "id": "M08",
+      "difficulty": "중급",
+      "category": "멤버",
+      "type": "연령 순서",
+      "prompt": "공식 프로필상 생년월일이 가장 늦은, 즉 막내 멤버는?",
+      "choices": [
+        "버논 (VERNON)",
+        "승관 (SEUNGKWAN)",
+        "디에잇 (THE 8)",
+        "디노 (DINO)"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "디노 (DINO)",
+      "explanation": "디노는 1999년 2월 11일생으로 세븐틴의 막내입니다.",
+      "sources": [
+        {
+          "name": "DINO 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-dino"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 막내",
+        "디노 생일",
+        "세븐틴 멤버"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M09",
+      "difficulty": "중급",
+      "category": "멤버",
+      "type": "생일 비교",
+      "prompt": "다음 1996년생 멤버 중 생일이 가장 빠른 사람은?",
+      "choices": [
+        "준 (JUN)",
+        "호시 (HOSHI)",
+        "원우 (WONWOO)",
+        "우지 (WOOZI)"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "준 (JUN)",
+      "explanation": "공식 프로필상 준은 6월 10일, 호시는 6월 15일, 원우는 7월 17일, 우지는 11월 22일생입니다.",
+      "sources": [
+        {
+          "name": "JUN 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-jun"
+        },
+        {
+          "name": "HOSHI·WONWOO·WOOZI 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 1996년생",
+        "준 생일",
+        "세븐틴 멤버 생일"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M10",
+      "difficulty": "중급",
+      "category": "멤버",
+      "type": "순서 배열",
+      "prompt": "1995년생 멤버를 생일이 빠른 순서대로 올바르게 나열한 것은?",
+      "choices": [
+        "정한 → 에스쿱스 → 조슈아",
+        "에스쿱스 → 정한 → 조슈아",
+        "조슈아 → 에스쿱스 → 정한",
+        "에스쿱스 → 조슈아 → 정한"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "에스쿱스 → 정한 → 조슈아",
+      "explanation": "공식 프로필 기준 에스쿱스는 8월 8일, 정한은 10월 4일, 조슈아는 12월 30일생입니다.",
+      "sources": [
+        {
+          "name": "S.COUPS 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-scoups"
+        },
+        {
+          "name": "JEONGHAN·JOSHUA 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 1995년생",
+        "에스쿱스 정한 조슈아",
+        "세븐틴 생일 순서"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M11",
+      "difficulty": "중급",
+      "category": "수록곡",
+      "type": "수록곡 판별",
+      "prompt": "다음 중 데뷔 앨범 ‘17 CARAT’ 수록곡이 아닌 것은?",
+      "choices": [
+        "Shining Diamond",
+        "Ah Yeah",
+        "만세 (Mansae)",
+        "20"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "만세 (Mansae)",
+      "explanation": "‘만세’는 두 번째 미니 앨범 BOYS BE에 수록되었고, 나머지는 17 CARAT 수록곡입니다.",
+      "sources": [
+        {
+          "name": "17 CARAT 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/insmxq"
+        },
+        {
+          "name": "BOYS BE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/svvwbb"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 17 CARAT 수록곡",
+        "세븐틴 만세",
+        "BOYS BE"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M12",
+      "difficulty": "중급",
+      "category": "수록곡",
+      "type": "수록곡 판별",
+      "prompt": "다음 중 ‘BOYS BE’에 실제로 수록된 곡은?",
+      "choices": [
+        "Jam Jam",
+        "NO F.U.N",
+        "Swimming Fool",
+        "ROCK"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "ROCK",
+      "explanation": "‘ROCK’은 BOYS BE 수록곡이며, 다른 보기들은 각각 다른 앨범의 곡입니다.",
+      "sources": [
+        {
+          "name": "BOYS BE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/svvwbb"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 BOYS BE",
+        "세븐틴 ROCK",
+        "세븐틴 수록곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M13",
+      "difficulty": "중급",
+      "category": "유닛",
+      "type": "유닛-곡 매칭",
+      "prompt": "‘LOVE&LETTER’의 팀 버전 수록곡 연결로 옳은 것은?",
+      "choices": [
+        "Shining Diamond — 퍼포먼스팀",
+        "아낀다 — 힙합팀",
+        "Monday To Saturday — 보컬팀",
+        "Love Letter — 퍼포먼스팀"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "Shining Diamond — 퍼포먼스팀",
+      "explanation": "LOVE&LETTER에는 Shining Diamond 퍼포먼스팀 버전이 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "LOVE&LETTER 공식 디스코그래피",
+          "url": "https://seventeen-17.jp/posts/discography/umvmfo"
+        },
+        {
+          "name": "SEVENTEEN 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Shining Diamond",
+        "세븐틴 퍼포먼스팀",
+        "LOVE&LETTER 수록곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M14",
+      "difficulty": "중급",
+      "category": "수록곡",
+      "type": "수록곡 판별",
+      "prompt": "다음 중 미니 4집 ‘Al1’ 수록곡은?",
+      "choices": [
+        "MOONWALKER",
+        "MY I",
+        "Wave",
+        "PANG!"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "MY I",
+      "explanation": "‘MY I’는 Al1에 수록된 곡입니다.",
+      "sources": [
+        {
+          "name": "Al1 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/nybkvw"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 MY I",
+        "Al1 수록곡",
+        "세븐틴 노래"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M15",
+      "difficulty": "중급",
+      "category": "수록곡",
+      "type": "수록곡 판별",
+      "prompt": "다음 중 ‘YOU MAKE MY DAY’ 수록곡이 아닌 것은?",
+      "choices": [
+        "Holiday",
+        "MOONWALKER",
+        "Home",
+        "우리의 새벽은 낮보다 뜨겁다"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "Home",
+      "explanation": "‘Home’은 다음 앨범 YOU MADE MY DAWN에 수록되었고, 나머지는 YOU MAKE MY DAY 수록곡입니다.",
+      "sources": [
+        {
+          "name": "YOU MAKE MY DAY 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/tvgqhs"
+        },
+        {
+          "name": "YOU MADE MY DAWN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xpgmhf"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 YOU MAKE MY DAY",
+        "세븐틴 Home",
+        "세븐틴 수록곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M16",
+      "difficulty": "중급",
+      "category": "유닛",
+      "type": "유닛-곡 매칭",
+      "prompt": "‘포옹 (Hug)’을 부른 기본 유닛은?",
+      "choices": [
+        "힙합팀",
+        "퍼포먼스팀",
+        "부석순",
+        "보컬팀"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "보컬팀",
+      "explanation": "‘포옹’은 YOU MADE MY DAWN에 수록된 보컬팀 곡입니다.",
+      "sources": [
+        {
+          "name": "YOU MADE MY DAWN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xpgmhf"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 포옹",
+        "세븐틴 보컬팀",
+        "Hug"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M17",
+      "difficulty": "중급",
+      "category": "스페셜 유닛",
+      "type": "멤버 조합",
+      "prompt": "‘Network Love’의 참여 멤버 조합으로 맞는 것은?",
+      "choices": [
+        "조슈아·준·디에잇·버논",
+        "에스쿱스·원우·민규·버논",
+        "정한·우지·도겸·승관",
+        "준·호시·디에잇·디노"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "조슈아·준·디에잇·버논",
+      "explanation": "An Ode 수록곡 ‘Network Love’에는 조슈아, 준, 디에잇, 버논이 참여했습니다.",
+      "sources": [
+        {
+          "name": "An Ode 공식 디스코그래피",
+          "url": "https://seventeen-17.jp/posts/discography/mnqvfc"
+        },
+        {
+          "name": "멤버 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Network Love",
+        "조슈아 준 디에잇 버논",
+        "An Ode"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M18",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "대표곡 식별",
+      "prompt": "스페셜 앨범 ‘Semicolon’의 대표 활동곡은?",
+      "choices": [
+        "Left & Right",
+        "HOME;RUN",
+        "Ready to love",
+        "Rock with you"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "HOME;RUN",
+      "explanation": "‘HOME;RUN’은 Semicolon의 대표 활동곡입니다.",
+      "sources": [
+        {
+          "name": "Semicolon 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/uxevdk"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 HOME RUN",
+        "Semicolon",
+        "세븐틴 노래"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M19",
+      "difficulty": "중급",
+      "category": "수록곡",
+      "type": "수록곡 판별",
+      "prompt": "다음 중 미니 8집 ‘Your Choice’ 수록곡이 아닌 것은?",
+      "choices": [
+        "Heaven's Cloud",
+        "GAM3 BO1",
+        "HOME;RUN",
+        "Wave"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "HOME;RUN",
+      "explanation": "‘HOME;RUN’은 Semicolon 수록곡이며, 나머지는 Your Choice 수록곡입니다.",
+      "sources": [
+        {
+          "name": "Your Choice 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/acyyeq"
+        },
+        {
+          "name": "Semicolon 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/uxevdk"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Your Choice",
+        "세븐틴 HOME RUN",
+        "세븐틴 수록곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "M20",
+      "difficulty": "중급",
+      "category": "앨범",
+      "type": "수록 방식",
+      "prompt": "‘Attacca’에서 디지털 음원으로만 수록된 곡은?",
+      "choices": [
+        "Crush",
+        "PANG!",
+        "매일 그대라서 행복하다",
+        "2 MINUS 1"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "2 MINUS 1",
+      "explanation": "Attacca 공식 트랙리스트에는 ‘2 MINUS 1’이 디지털 음원 한정 수록으로 안내되어 있습니다.",
+      "sources": [
+        {
+          "name": "Attacca 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/oamarv"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 2 MINUS 1",
+        "Attacca 수록곡",
+        "세븐틴 디지털 음원"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H01",
+      "difficulty": "고급",
+      "category": "연대기",
+      "type": "발매 순서",
+      "prompt": "다음 대표곡을 한국 발매 순서가 빠른 것부터 바르게 나열한 것은?",
+      "choices": [
+        "아낀다 → 만세 → 예쁘다 → 아주 NICE",
+        "만세 → 아낀다 → 예쁘다 → 아주 NICE",
+        "아낀다 → 예쁘다 → 만세 → 아주 NICE",
+        "아낀다 → 만세 → 아주 NICE → 예쁘다"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "아낀다 → 만세 → 예쁘다 → 아주 NICE",
+      "explanation": "발매 순서는 17 CARAT의 ‘아낀다’, BOYS BE의 ‘만세’, LOVE&LETTER의 ‘예쁘다’, 리패키지의 ‘아주 NICE’ 순입니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        },
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 노래 발매 순서",
+        "아낀다 만세 예쁘다 아주 NICE",
+        "세븐틴 연대기"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H02",
+      "difficulty": "고급",
+      "category": "연대기",
+      "type": "앨범 순서",
+      "prompt": "다음 앨범을 한국 발매 순서가 빠른 것부터 바르게 나열한 것은?",
+      "choices": [
+        "YOU MAKE MY DAY → Al1 → YOU MADE MY DAWN → An Ode",
+        "Al1 → YOU MAKE MY DAY → YOU MADE MY DAWN → An Ode",
+        "Al1 → YOU MADE MY DAWN → YOU MAKE MY DAY → An Ode",
+        "Al1 → YOU MAKE MY DAY → An Ode → YOU MADE MY DAWN"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "Al1 → YOU MAKE MY DAY → YOU MADE MY DAWN → An Ode",
+      "explanation": "공식 디스코그래피 기준 Al1, YOU MAKE MY DAY, YOU MADE MY DAWN, An Ode 순으로 발매되었습니다.",
+      "sources": [
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        },
+        {
+          "name": "각 앨범 공식 디스코그래피",
+          "url": "https://www.pledis.co.kr/en/artist/detail/seventeen/discography/"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 앨범 순서",
+        "Al1 YOU MAKE MY DAY",
+        "세븐틴 디스코그래피"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H03",
+      "difficulty": "고급",
+      "category": "트랙리스트",
+      "type": "트랙 순서",
+      "prompt": "‘Face the Sun’의 1~3번 트랙 순서로 맞는 것은?",
+      "choices": [
+        "HOT → Darl+ing → DON QUIXOTE",
+        "Darl+ing → DON QUIXOTE → HOT",
+        "Darl+ing → HOT → DON QUIXOTE",
+        "HOT → DON QUIXOTE → March"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "Darl+ing → HOT → DON QUIXOTE",
+      "explanation": "Face the Sun의 첫 세 트랙은 Darl+ing, HOT, DON QUIXOTE 순입니다.",
+      "sources": [
+        {
+          "name": "Face the Sun 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/hrhcnu"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 Face the Sun 트랙리스트",
+        "Darl+ing HOT DON QUIXOTE",
+        "세븐틴 수록곡 순서"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H04",
+      "difficulty": "고급",
+      "category": "리패키지",
+      "type": "추가곡 판별",
+      "prompt": "다음 중 ‘Face the Sun’에는 없고 리패키지 ‘SECTOR 17’에 새로 더해진 곡은?",
+      "choices": [
+        "HOT",
+        "Shadow",
+        "Ash",
+        "CHEERS"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "CHEERS",
+      "explanation": "‘CHEERS’는 SECTOR 17에 추가된 곡이며 HOT, Shadow, Ash는 원 앨범 Face the Sun 수록곡입니다.",
+      "sources": [
+        {
+          "name": "SECTOR 17 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/atwpya"
+        },
+        {
+          "name": "Face the Sun 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/hrhcnu"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 CHEERS",
+        "SECTOR 17 추가곡",
+        "Face the Sun"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H05",
+      "difficulty": "고급",
+      "category": "트랙리스트",
+      "type": "트랙 위치",
+      "prompt": "미니 10집 ‘FML’의 마지막 트랙은?",
+      "choices": [
+        "April shower",
+        "먼지 (Dust)",
+        "Fire",
+        "F*ck My Life"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "April shower",
+      "explanation": "FML의 6번이자 마지막 트랙은 ‘April shower’입니다.",
+      "sources": [
+        {
+          "name": "FML 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xmsjsm"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 FML 트랙리스트",
+        "April shower",
+        "세븐틴 수록곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H06",
+      "difficulty": "고급",
+      "category": "트랙리스트",
+      "type": "수록곡 수",
+      "prompt": "공식 트랙리스트 기준 미니 10집 ‘FML’의 수록곡 수는?",
+      "choices": [
+        "5곡",
+        "6곡",
+        "7곡",
+        "8곡"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "6곡",
+      "explanation": "FML에는 F*ck My Life부터 April shower까지 총 6곡이 수록되어 있습니다.",
+      "sources": [
+        {
+          "name": "FML 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xmsjsm"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 FML 수록곡 수",
+        "FML 트랙리스트",
+        "세븐틴 미니 10집"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H07",
+      "difficulty": "고급",
+      "category": "앨범",
+      "type": "버전명 판별",
+      "prompt": "‘SEVENTEENTH HEAVEN’의 공식 일반반 버전명 조합으로 맞는 것은?",
+      "choices": [
+        "AM 7:17 · PM 1:13 · PM 5:26",
+        "DAWN · DAY · NIGHT",
+        "AM 5:26 · PM 2:14 · PM 10:23",
+        "CARAT · DIAMOND · HEAVEN"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "AM 5:26 · PM 2:14 · PM 10:23",
+      "explanation": "SEVENTEENTH HEAVEN 일반반은 AM 5:26, PM 2:14, PM 10:23 버전으로 안내되었습니다.",
+      "sources": [
+        {
+          "name": "SEVENTEENTH HEAVEN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/smakmm"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 SEVENTEENTH HEAVEN 버전",
+        "AM 5:26 PM 2:14 PM 10:23",
+        "세븐틴 앨범 버전"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H08",
+      "difficulty": "고급",
+      "category": "유닛",
+      "type": "유닛-곡 매칭",
+      "prompt": "베스트 앨범 ‘17 IS RIGHT HERE’의 신곡과 유닛 연결로 모두 옳은 것은?",
+      "choices": [
+        "LALALI—보컬팀 · Spell—힙합팀 · 청춘찬가—퍼포먼스팀",
+        "LALALI—퍼포먼스팀 · Spell—보컬팀 · 청춘찬가—힙합팀",
+        "LALALI—힙합팀 · Spell—보컬팀 · 청춘찬가—퍼포먼스팀",
+        "LALALI—힙합팀 · Spell—퍼포먼스팀 · 청춘찬가—보컬팀"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "LALALI—힙합팀 · Spell—퍼포먼스팀 · 청춘찬가—보컬팀",
+      "explanation": "17 IS RIGHT HERE CD1의 신곡은 LALALI(힙합팀), Spell(퍼포먼스팀), 청춘찬가(보컬팀)로 구성됩니다.",
+      "sources": [
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        },
+        {
+          "name": "SEVENTEEN Japan 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 LALALI Spell 청춘찬가",
+        "17 IS RIGHT HERE",
+        "세븐틴 유닛곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H09",
+      "difficulty": "고급",
+      "category": "연대기",
+      "type": "트랙 순서",
+      "prompt": "‘17 IS RIGHT HERE’ CD2의 대표곡 연대기에서 ‘독 : Fear’ 바로 다음 곡은?",
+      "choices": [
+        "Left & Right",
+        "HOME;RUN",
+        "Rock with you",
+        "HOT"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "Left & Right",
+      "explanation": "CD2의 대표곡 배열에서 ‘독 : Fear’ 다음에는 ‘Left & Right’가 배치되어 있습니다.",
+      "sources": [
+        {
+          "name": "17 IS RIGHT HERE 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/dkmcme"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 대표곡 순서",
+        "독 Fear Left and Right",
+        "17 IS RIGHT HERE CD2"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H10",
+      "difficulty": "고급",
+      "category": "트랙리스트",
+      "type": "트랙 순서",
+      "prompt": "‘SPILL THE FEELS’의 1~3번 트랙 순서로 맞는 것은?",
+      "choices": [
+        "LOVE, MONEY, FAME → Eyes on you → 1 TO 13",
+        "Eyes on you → LOVE, MONEY, FAME → 1 TO 13",
+        "Eyes on you → 1 TO 13 → LOVE, MONEY, FAME",
+        "1 TO 13 → Eyes on you → LOVE, MONEY, FAME"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "Eyes on you → LOVE, MONEY, FAME → 1 TO 13",
+      "explanation": "SPILL THE FEELS의 첫 세 트랙은 Eyes on you, LOVE, MONEY, FAME, 1 TO 13 순입니다.",
+      "sources": [
+        {
+          "name": "SPILL THE FEELS 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/xlrnjm"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 SPILL THE FEELS 트랙리스트",
+        "Eyes on you LOVE MONEY FAME",
+        "1 TO 13"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H11",
+      "difficulty": "고급",
+      "category": "스페셜 유닛",
+      "type": "수록곡 판별",
+      "prompt": "다음 중 정한 X 원우 싱글 앨범 ‘THIS MAN’ 수록곡이 아닌 것은?",
+      "choices": [
+        "어젯밤 (Last night)",
+        "Beautiful Monster",
+        "Bittersweet",
+        "휴지통 (Leftover)"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "Bittersweet",
+      "explanation": "THIS MAN에는 ‘어젯밤’, ‘Beautiful Monster’, ‘휴지통’이 수록되며 ‘Bittersweet’은 다른 프로젝트 곡입니다.",
+      "sources": [
+        {
+          "name": "THIS MAN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/okexiv"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 THIS MAN 수록곡",
+        "정한 원우",
+        "Bittersweet"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H12",
+      "difficulty": "고급",
+      "category": "스페셜 유닛",
+      "type": "멤버 조합",
+      "prompt": "싱글 앨범 ‘THIS MAN’을 발표한 멤버 조합은?",
+      "choices": [
+        "호시 X 우지",
+        "에스쿱스 X 민규",
+        "도겸 X 승관",
+        "정한 X 원우"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "정한 X 원우",
+      "explanation": "THIS MAN은 정한과 원우가 함께한 싱글 앨범입니다.",
+      "sources": [
+        {
+          "name": "THIS MAN 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/okexiv"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 정한 원우",
+        "THIS MAN",
+        "세븐틴 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H13",
+      "difficulty": "고급",
+      "category": "스페셜 유닛",
+      "type": "멤버 조합",
+      "prompt": "부석순(BSS)을 구성하는 세 멤버는?",
+      "choices": [
+        "승관·도겸·호시",
+        "승관·도겸·우지",
+        "호시·우지·디노",
+        "정한·도겸·승관"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "승관·도겸·호시",
+      "explanation": "부석순은 승관, 도겸, 호시로 구성된 세븐틴 스페셜 유닛입니다.",
+      "sources": [
+        {
+          "name": "Teen Vogue BSS 인터뷰",
+          "url": "https://www.teenvogue.com/story/seventeen-seungkwan-dk-hoshi-discuss-bss-first-single-album-second-wind-exclusive"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 부석순 멤버",
+        "BSS 승관 도겸 호시",
+        "세븐틴 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H14",
+      "difficulty": "고급",
+      "category": "스페셜 유닛",
+      "type": "트랙 순서",
+      "prompt": "부석순 ‘SECOND WIND’의 트랙 순서로 맞는 것은?",
+      "choices": [
+        "LUNCH → 파이팅 해야지 → 7시에 들어줘",
+        "파이팅 해야지 → LUNCH → 7시에 들어줘",
+        "파이팅 해야지 → 7시에 들어줘 → LUNCH",
+        "7시에 들어줘 → LUNCH → 파이팅 해야지"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "파이팅 해야지 → LUNCH → 7시에 들어줘",
+      "explanation": "SECOND WIND는 ‘파이팅 해야지’, ‘LUNCH’, ‘7시에 들어줘’ 순으로 구성됩니다.",
+      "sources": [
+        {
+          "name": "Teen Vogue BSS 인터뷰",
+          "url": "https://www.teenvogue.com/story/seventeen-seungkwan-dk-hoshi-discuss-bss-first-single-album-second-wind-exclusive"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "부석순 SECOND WIND 트랙리스트",
+        "파이팅 해야지 LUNCH 7시에 들어줘",
+        "BSS"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H15",
+      "difficulty": "고급",
+      "category": "스페셜 유닛",
+      "type": "대표곡 식별",
+      "prompt": "부석순 싱글 2집 ‘TELEPARTY’의 타이틀곡은?",
+      "choices": [
+        "파이팅 해야지",
+        "LUNCH",
+        "청바지 (CBZ, Prime time)",
+        "7시에 들어줘"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "청바지 (CBZ, Prime time)",
+      "explanation": "TELEPARTY의 타이틀곡은 ‘청바지(CBZ, Prime time)’입니다.",
+      "sources": [
+        {
+          "name": "Weverse TELEPARTY 공식 공지",
+          "url": "https://weverse.io/seventeen/notice/24647"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "부석순 청바지",
+        "BSS TELEPARTY",
+        "CBZ Prime time"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H16",
+      "difficulty": "고급",
+      "category": "스페셜 유닛",
+      "type": "대표곡 식별",
+      "prompt": "호시 X 우지 싱글 앨범 ‘BEAM’의 타이틀곡은?",
+      "choices": [
+        "Pinocchio",
+        "Stupid Idiot",
+        "Damage",
+        "96ers"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "96ers",
+      "explanation": "BEAM의 타이틀곡은 동갑내기 두 멤버를 상징하는 ‘96ers’입니다.",
+      "sources": [
+        {
+          "name": "People HOSHI X WOOZI 인터뷰",
+          "url": "https://people.com/hoshi-woozi-seventeen-beam-album-interview-exclusive-11692867"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 호시 우지 BEAM",
+        "96ers",
+        "세븐틴 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H17",
+      "difficulty": "고급",
+      "category": "솔로곡",
+      "type": "멤버-곡 매칭",
+      "prompt": "정규 5집 ‘HAPPY BURSTDAY’의 솔로곡 ‘99.9%’를 부른 멤버는?",
+      "choices": [
+        "원우 (WONWOO)",
+        "조슈아 (JOSHUA)",
+        "버논 (VERNON)",
+        "민규 (MINGYU)"
+      ],
+      "answerKey": "A",
+      "answerIndex": 0,
+      "answerText": "원우 (WONWOO)",
+      "explanation": "HAPPY BURSTDAY의 ‘99.9%’는 원우의 솔로곡입니다.",
+      "sources": [
+        {
+          "name": "HAPPY BURSTDAY 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/incaiv"
+        },
+        {
+          "name": "WONWOO 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-wonwoo"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 원우 99.9%",
+        "HAPPY BURSTDAY 솔로곡",
+        "세븐틴 원우"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H18",
+      "difficulty": "고급",
+      "category": "솔로곡",
+      "type": "멤버-곡 매칭",
+      "prompt": "‘HAPPY BURSTDAY’에서 Timbaland가 피처링한 ‘Damage’의 솔로 멤버는?",
+      "choices": [
+        "디노 (DINO)",
+        "호시 (HOSHI)",
+        "에스쿱스 (S.COUPS)",
+        "디에잇 (THE 8)"
+      ],
+      "answerKey": "B",
+      "answerIndex": 1,
+      "answerText": "호시 (HOSHI)",
+      "explanation": "‘Damage (feat. Timbaland)’는 호시의 솔로곡입니다.",
+      "sources": [
+        {
+          "name": "HAPPY BURSTDAY 공식 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography/incaiv"
+        },
+        {
+          "name": "HOSHI 공식 프로필",
+          "url": "https://www.seventeen-17.jp/pages/profile-hoshi"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 호시 Damage",
+        "HAPPY BURSTDAY Timbaland",
+        "세븐틴 솔로곡"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H19",
+      "difficulty": "고급",
+      "category": "최신 유닛",
+      "type": "멤버 조합",
+      "prompt": "2026년 미니 1집 ‘V8’을 발표한 멤버 조합은?",
+      "choices": [
+        "준 X 디노",
+        "호시 X 우지",
+        "디에잇 X 버논",
+        "에스쿱스 X 민규"
+      ],
+      "answerKey": "C",
+      "answerIndex": 2,
+      "answerText": "디에잇 X 버논",
+      "explanation": "V8은 디에잇과 버논이 결성한 세븐틴 스페셜 유닛입니다.",
+      "sources": [
+        {
+          "name": "Weverse V8 공식 공지",
+          "url": "https://weverse.io/seventeen/notice/36512"
+        },
+        {
+          "name": "SEVENTEEN 공식 한국 디스코그래피",
+          "url": "https://www.seventeen-17.jp/posts/discography?category=CD-KR-"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 V8",
+        "디에잇 버논",
+        "세븐틴 2026 유닛"
+      ],
+      "memo": ""
+    },
+    {
+      "id": "H20",
+      "difficulty": "고급",
+      "category": "최신 유닛",
+      "type": "멤버 조합",
+      "prompt": "2026년 미니 1집 ‘Serenade’를 발표한 DxS의 멤버 조합은?",
+      "choices": [
+        "정한 X 원우",
+        "호시 X 우지",
+        "디에잇 X 버논",
+        "도겸 X 승관"
+      ],
+      "answerKey": "D",
+      "answerIndex": 3,
+      "answerText": "도겸 X 승관",
+      "explanation": "DxS는 도겸과 승관으로 구성되며, 2026년 첫 미니 앨범 Serenade를 발표했습니다.",
+      "sources": [
+        {
+          "name": "Weverse DxS ‘Serenade’ 공식 공지",
+          "url": "https://weverse.io/seventeen/notice/32582"
+        },
+        {
+          "name": "Weverse DxS 공식 팬 파티 공지",
+          "url": "https://weverse.io/seventeen/notice/32584"
+        }
+      ],
+      "verifiedAt": "2026-07-11",
+      "verificationStatus": "검증 완료",
+      "seoKeywords": [
+        "세븐틴 DxS",
+        "도겸 승관 Serenade",
+        "세븐틴 2026 유닛"
+      ],
+      "memo": ""
+    }
+  ]
+}
