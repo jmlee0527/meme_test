@@ -1,0 +1,1828 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-11",
+  "verificationCutoff": "2026-07-11",
+  "test": {
+    "id": "rescene-true-fan-test",
+    "title": "리센트 찐팬 테스트",
+    "koreanTitle": "리센느 찐팬 테스트",
+    "topic": "RESCENE",
+    "language": "ko-KR",
+    "category": "fandom",
+    "questionPoolSize": 60,
+    "questionsPerAttempt": 15,
+    "questionType": "single_choice_4",
+    "scorePerCorrectAnswer": 1,
+    "maxScore": 15,
+    "latestReleaseCovered": {
+      "title": "Pretty Girl",
+      "releaseDate": "2026-07-08",
+      "note": "KARA 원곡 리메이크 스페셜 싱글"
+    }
+  },
+  "seo": {
+    "slug": "rescene-true-fan-test",
+    "canonicalPath": "/tests/rescene-true-fan-test",
+    "metaTitle": "리센트 찐팬 테스트 | 리센느 REMINE 덕력 퀴즈",
+    "metaDescription": "리센느 멤버, 데뷔, LOVE ATTACK, SCENEDROME, Glow Up, lip bomb과 최신곡 Pretty Girl을 맞히는 15문항 팬 테스트입니다.",
+    "primaryKeyword": "리센트 찐팬 테스트",
+    "secondaryKeywords": [
+      "리센느 찐팬 테스트",
+      "RESCENE 퀴즈",
+      "리센느 퀴즈",
+      "REMINE 테스트",
+      "리마인 테스트",
+      "리센느 멤버",
+      "리센느 노래",
+      "LOVE ATTACK",
+      "리센느 Pretty Girl",
+      "리센느 팬 테스트"
+    ],
+    "shareTextTemplate": "나는 리센트 찐팬 테스트에서 {score}/15점, ‘{resultTitle}’이 나왔어요. 당신의 REMINE 덕력도 확인해 보세요!",
+    "keywordPolicy": "제목, H1, 소개문, 메타 설명, 공유 문구에 자연스럽게 사용한다. 키워드 반복·숨김 텍스트·검색엔진용 문장 나열을 금지한다."
+  },
+  "selectionPolicy": {
+    "difficultyQuota": {
+      "easy": 5,
+      "medium": 6,
+      "hard": 4
+    },
+    "maxPerCategory": 4,
+    "maxPerAlbumKey": 3,
+    "maxTimeSensitive": 3,
+    "rules": [
+      "한 시도에서 총 15문항을 중복 없이 추출한다.",
+      "난이도별 easy 5, medium 6, hard 4 비율을 반드시 유지한다.",
+      "같은 category는 한 시도에 최대 4문항까지만 포함한다.",
+      "같은 albumKey의 세부 문항은 한 시도에 최대 3문항까지만 포함한다.",
+      "freshness가 time_sensitive인 문항은 한 시도에 최대 3문항까지만 포함한다.",
+      "문항 순서와 보기 순서를 각각 섞고, 보기 변경 후 answerIndex를 다시 계산한다.",
+      "테스트 진행 중에는 정답·해설·sourceIds를 노출하지 않는다.",
+      "재응시 시 직전 attempt의 questionIds와 겹치는 문항 수를 가능한 한 줄인다.",
+      "제약 충족에 실패하면 최대 100회까지 재추출하고, 이후 category 제한만 1 완화한다. 난이도 쿼터는 완화하지 않는다."
+    ]
+  },
+  "resultBands": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "첫 향기를 맡은 입문 REMINE",
+      "summary": "RESCENE의 대표곡과 멤버를 알아가는 단계예요. 데뷔 앨범부터 천천히 들어보면 다음 단계가 금방 가까워집니다."
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "장면을 모으는 성장형 REMINE",
+      "summary": "대표 타이틀곡과 주요 앨범은 익숙한 편이에요. 수록곡과 앨범별 향기 콘셉트를 더 살펴보세요."
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "씬드롬에 빠진 실력파 REMINE",
+      "summary": "데뷔부터 최신 활동까지 폭넓게 알고 있어요. 어려운 트랙 순서 문제도 충분히 노려볼 수준입니다."
+    },
+    {
+      "minScore": 11,
+      "maxScore": 13,
+      "title": "향기까지 기억하는 하드코어 REMINE",
+      "summary": "수록곡, 발매 순서, 공식 콘셉트까지 깊이 알고 있어요. 웬만한 문제로는 흔들리지 않습니다."
+    },
+    {
+      "minScore": 14,
+      "maxScore": 15,
+      "title": "영원한 장면의 레전드 REMINE",
+      "summary": "RESCENE의 음악과 향기 콘셉트를 거의 완벽하게 기억하고 있어요. 리센느 찐팬 인증 완료입니다."
+    }
+  ],
+  "siteNavigationChangeSpec": {
+    "objective": "현재 우측 상단의 기존 테스트·가이드·소개 중심 메뉴를 홈·카테고리·칼럼·검색의 네 기능으로 교체한다.",
+    "desktopItems": [
+      {
+        "label": "홈",
+        "action": "click",
+        "destination": "메인 홈 화면",
+        "recommendedPath": "/"
+      },
+      {
+        "label": "카테고리",
+        "action": "click",
+        "destination": "카테고리 목록 화면",
+        "recommendedPath": "/categories",
+        "detail": "현재 테스트 카드 클릭 후 이동하는 화면 구조와 디자인을 재사용해 카테고리별 테스트 카드 목록을 보여준다."
+      },
+      {
+        "label": "칼럼",
+        "action": "click",
+        "destination": "기존 가이드 화면",
+        "recommendedPath": "현재 guide 라우트를 유지하거나 /columns로 별칭 처리",
+        "detail": "기존 가이드 콘텐츠와 URL 자산은 삭제하지 않고, 상단 표시명만 칼럼으로 변경한다."
+      },
+      {
+        "label": "검색",
+        "action": "click",
+        "destination": "테스트 키워드 검색 UI",
+        "recommendedPath": "/search",
+        "detail": "제목, 설명, category, SEO keywords를 대상으로 검색하고 URL query인 ?q=를 지원한다."
+      }
+    ],
+    "searchRequirements": [
+      "검색어 입력 전에는 인기 또는 최신 테스트를 선택적으로 표시한다.",
+      "한글·영문 대소문자를 구분하지 않고 검색한다.",
+      "공백을 정규화하고 제목·설명·키워드·카테고리의 부분 일치를 지원한다.",
+      "300ms 내외 debounce를 적용한다.",
+      "검색 결과에 썸네일, 테스트명, 짧은 설명, 카테고리, 문항 수를 표시한다.",
+      "검색 결과가 없을 때 오타 확인과 카테고리 이동 링크를 보여준다.",
+      "Enter 키 검색, Escape 닫기, 포커스 이동 등 키보드 접근성을 지원한다.",
+      "모바일에서는 전체 화면 검색 페이지 또는 하단 시트를 사용한다."
+    ],
+    "responsiveRequirements": [
+      "데스크톱 우측 상단에는 홈·카테고리·칼럼·검색을 한 줄로 표시한다.",
+      "모바일에서는 햄버거 메뉴 또는 기존 모바일 내비게이션 안에 동일한 네 기능을 같은 순서로 제공한다.",
+      "현재 위치에는 aria-current를 적용하고 키보드 focus 상태를 명확히 표시한다."
+    ],
+    "migrationRules": [
+      "기존 소개 페이지 자체는 삭제하지 말고 푸터 또는 사이트 정보 영역에서 계속 접근 가능하게 한다.",
+      "기존 가이드 URL의 검색엔진 자산을 보존하기 위해 삭제·404 처리하지 않는다.",
+      "기존 내부 링크와 sitemap을 점검하고 변경된 메뉴 경로를 반영한다.",
+      "중복 라우트가 생기면 canonical 또는 영구 리다이렉트 정책을 적용한다."
+    ]
+  },
+  "qualityChecklist": [
+    "각 문제는 고유 id, 선택지 4개, 정답 1개를 가진다.",
+    "인물의 연애설, 건강, 가족관계, 확인되지 않은 사생활과 루머는 출제하지 않는다.",
+    "외모 비교, 인기 서열, 팬덤 갈등을 유도하는 문항은 사용하지 않는다.",
+    "2026년 최신곡과 차트 기록은 배포 직전에 공식 공지와 신뢰 가능한 보도를 재확인한다.",
+    "앨범명과 곡명은 공식 표기를 유지한다.",
+    "오답은 같은 범주의 실제 곡·음반명으로 구성하되 해설에서 허위 사실을 만들지 않는다.",
+    "정답 해설은 제출 후에만 노출한다.",
+    "60개 전체 문제와 정답을 페이지 초기 HTML에 출력하지 않는다."
+  ],
+  "sources": [
+    {
+      "id": "SRC_PROFILE_OFFICIAL",
+      "title": "RESCENE Artist Profile",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/rescene",
+      "type": "official",
+      "use": "멤버 구성, 그룹명 의미, 프루스트 효과와 음악 콘셉트 확인"
+    },
+    {
+      "id": "SRC_RESCENE_OFFICIAL",
+      "title": "Re:Scene",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/uhuh",
+      "type": "official",
+      "use": "데뷔 음반, YoYo·UhUh, Floral·Burning Flower 콘셉트 확인"
+    },
+    {
+      "id": "SRC_RESCENE_APPLE",
+      "title": "Re:Scene - Single",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/re-scene-single/1737172693",
+      "type": "catalog",
+      "use": "발매일, 수록곡 수와 음원 카탈로그 확인"
+    },
+    {
+      "id": "SRC_RESCENE_TRACKLIST",
+      "title": "RESCENE [Re:Scene] Track List",
+      "publisher": "RESCENE Official X",
+      "url": "https://x.com/RESCENEofficial/status/1767566221958881401",
+      "type": "official",
+      "use": "YoYo·UhUh 트랙 순서 확인"
+    },
+    {
+      "id": "SRC_DEBUT_SHOWCASE",
+      "title": "RESCENE Debut Showcase Live 안내",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/notice/?bmode=view&idx=18959595",
+      "type": "official",
+      "use": "데뷔 쇼케이스 날짜·시간·중계 플랫폼 확인"
+    },
+    {
+      "id": "SRC_DEBUT_OVERVIEW",
+      "title": "Re:Scene",
+      "publisher": "Reference overview",
+      "url": "https://en.wikipedia.org/wiki/Re%3AScene",
+      "type": "reference",
+      "use": "YoYo 선공개일, 데뷔일, 타이틀곡 교차 확인"
+    },
+    {
+      "id": "SRC_SCENEDROME_OFFICIAL",
+      "title": "SCENEDROME",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/SCENEDROME",
+      "type": "official",
+      "use": "앨범명 의미, Ambergris 콘셉트, 수록곡 수 확인"
+    },
+    {
+      "id": "SRC_SCENEDROME_APPLE",
+      "title": "SCENEDROME - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/scenedrome-ep/1764485168",
+      "type": "catalog",
+      "use": "발매일, 트랙 수와 트랙 순서 확인"
+    },
+    {
+      "id": "SRC_SCENEDROME_PREVIEW",
+      "title": "SCENEDROME Album Preview",
+      "publisher": "RESCENE Official YouTube",
+      "url": "https://www.youtube.com/watch?v=9eevQUsyYSg",
+      "type": "official",
+      "use": "앨범 발매 정보와 트랙 구성 교차 확인"
+    },
+    {
+      "id": "SRC_GLOWUP_OFFICIAL",
+      "title": "Glow Up",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/glowup",
+      "type": "official",
+      "use": "2집 미니앨범, 비누 향, 곡별 장르와 Dirty Loops 참여 확인"
+    },
+    {
+      "id": "SRC_GLOWUP_APPLE",
+      "title": "Glow Up - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/glow-up-ep/1794040636",
+      "type": "catalog",
+      "use": "2025년 2월 5일 발매, 5곡과 트랙 순서 확인"
+    },
+    {
+      "id": "SRC_GLOWUP_KOREATIMES",
+      "title": "K-pop rookie RESCENE returns for another 'Glow Up'",
+      "publisher": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/entertainment/k-pop/20250205/k-pop-rookie-rescene-returns-for-another-glow-up-after-billboard-grammycom-mentions",
+      "type": "press",
+      "use": "멤버, 수록곡, Billboard·GRAMMY.com 언급, Tokyo Tower 기록 교차 확인"
+    },
+    {
+      "id": "SRC_DEAREST_OFFICIAL",
+      "title": "RESCENE 2nd Single Album Dearest Tracklist",
+      "publisher": "RESCENE Official X",
+      "url": "https://x.com/RESCENEofficial/status/1933509661346660425",
+      "type": "official",
+      "use": "Dearest 발매일, Deja Vu·Mood 확인"
+    },
+    {
+      "id": "SRC_DEAREST_APPLE",
+      "title": "Dearest - Single",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/kr/album/dearest-single/1822439985?l=en-GB",
+      "type": "catalog",
+      "use": "발매일, 2곡과 트랙 순서 확인"
+    },
+    {
+      "id": "SRC_DEJAVU_MV",
+      "title": "RESCENE 'Deja Vu' Official MV",
+      "publisher": "RESCENE Official YouTube",
+      "url": "https://www.youtube.com/watch?v=ZbO9PBdFRdc",
+      "type": "official",
+      "use": "Dearest 타이틀곡 확인"
+    },
+    {
+      "id": "SRC_LIPBOMB_OFFICIAL",
+      "title": "lip bomb",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/lipbomb",
+      "type": "official",
+      "use": "3집 미니앨범, 앨범명 유래, Berry 향과 곡별 베리 매핑 확인"
+    },
+    {
+      "id": "SRC_LIPBOMB_APPLE",
+      "title": "lip bomb - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/lip-bomb-ep/1852644693",
+      "type": "catalog",
+      "use": "2025년 11월 25일 발매, 5곡과 트랙 순서 확인"
+    },
+    {
+      "id": "SRC_RUNAWAY_OFFICIAL",
+      "title": "Runaway",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/Runaway_",
+      "type": "official",
+      "use": "Runaway 공식 발매와 곡 콘셉트 확인"
+    },
+    {
+      "id": "SRC_RESCENE_ARTIST_APPLE",
+      "title": "RESCENE Artist Page",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/artist/rescene/1732658659",
+      "type": "catalog",
+      "use": "Runaway·Pretty Girl 등 발매 목록 확인"
+    },
+    {
+      "id": "SRC_PRETTY_OFFICIAL",
+      "title": "RESCENE Pretty Girl Special Single",
+      "publisher": "RESCENE Official X",
+      "url": "https://x.com/RESCENEofficial/status/2067895166103695765",
+      "type": "official",
+      "use": "2026년 7월 8일 발매 정보 확인"
+    },
+    {
+      "id": "SRC_PRETTY_PRESS",
+      "title": "RESCENE revives KARA's Pretty Girl",
+      "publisher": "Chosun Biz",
+      "url": "https://biz.chosun.com/en/en-entertainment/2026/07/09/D44MCSWFFVALRHNMOBN2X56ZGY/",
+      "type": "press",
+      "use": "KARA 원곡 리메이크 사실 확인"
+    },
+    {
+      "id": "SRC_FANDOM_SOOMPI",
+      "title": "RESCENE Announces Official Fandom Name",
+      "publisher": "Soompi",
+      "url": "https://www.soompi.com/article/1674005wpp/rescene-announces-official-fandom-name",
+      "type": "press",
+      "use": "공식 팬덤명 REMINE 확인"
+    },
+    {
+      "id": "SRC_FANDOM_MEANING",
+      "title": "RESCENE 데뷔 100일 팬덤명 공개",
+      "publisher": "Sports Kyunghyang",
+      "url": "https://sports.khan.co.kr/article/202407112030003",
+      "type": "press",
+      "use": "REMINE의 REMIND 변형 및 RESCENE+MINE 의미 확인"
+    },
+    {
+      "id": "SRC_BUBBLE_OFFICIAL",
+      "title": "RESCENE DearU bubble 오픈 안내",
+      "publisher": "THE MUZE Entertainment",
+      "url": "https://themuze.kr/notice/?bmode=view&idx=20503300",
+      "type": "official",
+      "use": "DearU bubble 오픈일 확인"
+    },
+    {
+      "id": "SRC_MEMBER_REVEAL",
+      "title": "Rescene reveals members ahead of debut month",
+      "publisher": "Korea JoongAng Daily",
+      "url": "https://www.koreajoongangdaily.com/entertainment/rescene-reveals-members-ahead-of-debut-month/10362446",
+      "type": "press",
+      "use": "5인 구성, Minami의 일본 출신, 데뷔 전 공개 정보 확인"
+    },
+    {
+      "id": "SRC_MEMBER_ORDER",
+      "title": "RESCENE Introduction Timeline",
+      "publisher": "Reference overview",
+      "url": "https://rescene.fandom.com/wiki/RESCENE",
+      "type": "reference",
+      "use": "멤버 공개 순서 Minami→Woni→Zena→May→Liv 확인"
+    },
+    {
+      "id": "SRC_GRAMMY_LOVEATTACK",
+      "title": "10 K-Pop Songs That Electrified 2024",
+      "publisher": "GRAMMY.com",
+      "url": "https://www.grammy.com/news/k-pop-songs-that-electrified-2024-riize-kiss-of-life-aespa/",
+      "type": "primary_press",
+      "use": "LOVE ATTACK의 2024 선정 사실 확인"
+    },
+    {
+      "id": "SRC_GRAMMY_ROOKIE",
+      "title": "8 Rookie K-Pop Acts To Watch In 2025",
+      "publisher": "GRAMMY.com",
+      "url": "https://www.grammy.com/news/rookie-k-pop-acts-to-know-in-2025/",
+      "type": "primary_press",
+      "use": "RESCENE와 LOVE ATTACK에 대한 공식 매체 평가 확인"
+    },
+    {
+      "id": "SRC_REVERSE_CHART",
+      "title": "리센느 LOVE ATTACK 멜론 톱100 1위 역주행",
+      "publisher": "YTN",
+      "url": "https://www.ytn.co.kr/_ln/0117_202607091015447958",
+      "type": "press",
+      "use": "2026년 7월 8일 LOVE ATTACK 멜론 톱100 1위 기록 확인"
+    },
+    {
+      "id": "SRC_FIRST_FANCON",
+      "title": "2025 RESCENE 1st FAN-CON Project 326",
+      "publisher": "RESCENE Official X",
+      "url": "https://x.com/RESCENEofficial/status/1942463662192747006",
+      "type": "official",
+      "use": "첫 팬콘서트명, 날짜, 장소 확인"
+    },
+    {
+      "id": "SRC_DISCOGRAPHY_OVERVIEW",
+      "title": "RESCENE Discography Overview",
+      "publisher": "Reference overview",
+      "url": "https://en.wikipedia.org/wiki/Rescene",
+      "type": "reference",
+      "use": "발매 연대기, Heart Drop 선공개, Runaway 첫 디지털 싱글 교차 확인"
+    }
+  ],
+  "questions": [
+    {
+      "id": "E01",
+      "difficulty": "easy",
+      "category": "기본 정보",
+      "albumKey": null,
+      "question": "RESCENE(리센느)는 몇 명으로 구성된 그룹일까요?",
+      "options": [
+        "7명",
+        "4명",
+        "6명",
+        "5명"
+      ],
+      "answerIndex": 3,
+      "answerText": "5명",
+      "explanation": "RESCENE는 원이, 리브, 미나미, 메이, 제나로 이루어진 5인조 걸그룹입니다.",
+      "sourceIds": [
+        "SRC_PROFILE_OFFICIAL",
+        "SRC_MEMBER_REVEAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "리센느 멤버",
+        "RESCENE"
+      ]
+    },
+    {
+      "id": "E02",
+      "difficulty": "easy",
+      "category": "기본 정보",
+      "albumKey": null,
+      "question": "RESCENE의 소속사는 어디일까요?",
+      "options": [
+        "S2 Entertainment",
+        "ADOR",
+        "MODHAUS",
+        "THE MUZE Entertainment"
+      ],
+      "answerIndex": 3,
+      "answerText": "THE MUZE Entertainment",
+      "explanation": "RESCENE는 THE MUZE Entertainment 소속입니다.",
+      "sourceIds": [
+        "SRC_PROFILE_OFFICIAL",
+        "SRC_RESCENE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "리센느 소속사"
+      ]
+    },
+    {
+      "id": "E03",
+      "difficulty": "easy",
+      "category": "멤버",
+      "albumKey": null,
+      "question": "다음 중 RESCENE 멤버가 아닌 사람은 누구일까요?",
+      "options": [
+        "원이",
+        "제나",
+        "리브",
+        "유나"
+      ],
+      "answerIndex": 3,
+      "answerText": "유나",
+      "explanation": "원이, 리브, 제나는 RESCENE 멤버이며 유나는 멤버가 아닙니다.",
+      "sourceIds": [
+        "SRC_PROFILE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "RESCENE 멤버"
+      ]
+    },
+    {
+      "id": "E04",
+      "difficulty": "easy",
+      "category": "멤버",
+      "albumKey": null,
+      "question": "다음 중 다섯 명 모두 RESCENE 멤버로 이루어진 조합은 무엇일까요?",
+      "options": [
+        "원이 · 미나미 · 메이 · 지우 · 제나",
+        "원이 · 리브 · 미나미 · 메이 · 제나",
+        "원이 · 리브 · 나나 · 메이 · 제나",
+        "원이 · 리브 · 미나미 · 메이 · 유나"
+      ],
+      "answerIndex": 1,
+      "answerText": "원이 · 리브 · 미나미 · 메이 · 제나",
+      "explanation": "RESCENE의 멤버는 원이, 리브, 미나미, 메이, 제나입니다.",
+      "sourceIds": [
+        "SRC_PROFILE_OFFICIAL",
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "리센느 멤버 이름"
+      ]
+    },
+    {
+      "id": "E05",
+      "difficulty": "easy",
+      "category": "데뷔",
+      "albumKey": null,
+      "question": "RESCENE의 공식 데뷔일은 언제일까요?",
+      "options": [
+        "2024년 3월 26일",
+        "2024년 7월 10일",
+        "2024년 2월 29일",
+        "2024년 8월 27일"
+      ],
+      "answerIndex": 0,
+      "answerText": "2024년 3월 26일",
+      "explanation": "RESCENE는 2024년 3월 26일 첫 싱글 앨범 《Re:Scene》으로 공식 데뷔했습니다.",
+      "sourceIds": [
+        "SRC_RESCENE_APPLE",
+        "SRC_DEBUT_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "리센느 데뷔일"
+      ]
+    },
+    {
+      "id": "E06",
+      "difficulty": "easy",
+      "category": "데뷔",
+      "albumKey": "re-scene",
+      "question": "RESCENE의 데뷔 싱글 앨범은 무엇일까요?",
+      "options": [
+        "Re:Scene",
+        "Glow Up",
+        "SCENEDROME",
+        "Dearest"
+      ],
+      "answerIndex": 0,
+      "answerText": "Re:Scene",
+      "explanation": "RESCENE의 데뷔 싱글 앨범은 《Re:Scene》입니다.",
+      "sourceIds": [
+        "SRC_RESCENE_OFFICIAL",
+        "SRC_RESCENE_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "리센느 데뷔 앨범"
+      ]
+    },
+    {
+      "id": "E07",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": "re-scene",
+      "question": "RESCENE의 데뷔 앨범 타이틀곡은 무엇일까요?",
+      "options": [
+        "Glow Up",
+        "UhUh",
+        "YoYo",
+        "LOVE ATTACK"
+      ],
+      "answerIndex": 1,
+      "answerText": "UhUh",
+      "explanation": "《Re:Scene》의 타이틀곡은 ‘UhUh’입니다.",
+      "sourceIds": [
+        "SRC_RESCENE_OFFICIAL",
+        "SRC_RESCENE_TRACKLIST"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "UhUh",
+        "리센느 노래"
+      ]
+    },
+    {
+      "id": "E08",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": "re-scene",
+      "question": "RESCENE가 공식 데뷔 전에 먼저 공개한 곡은 무엇일까요?",
+      "options": [
+        "Pinball",
+        "Heart Drop",
+        "YoYo",
+        "Deja Vu"
+      ],
+      "answerIndex": 2,
+      "answerText": "YoYo",
+      "explanation": "‘YoYo’는 공식 데뷔 앨범 발매 전에 공개된 선공개곡입니다.",
+      "sourceIds": [
+        "SRC_RESCENE_OFFICIAL",
+        "SRC_DEBUT_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "YoYo"
+      ]
+    },
+    {
+      "id": "E09",
+      "difficulty": "easy",
+      "category": "팬덤",
+      "albumKey": null,
+      "question": "RESCENE의 공식 팬덤명은 무엇일까요?",
+      "options": [
+        "SCENTY",
+        "MUSEE",
+        "RESONE",
+        "REMINE"
+      ],
+      "answerIndex": 3,
+      "answerText": "REMINE",
+      "explanation": "RESCENE의 공식 팬덤명은 REMINE(리마인)입니다.",
+      "sourceIds": [
+        "SRC_FANDOM_SOOMPI",
+        "SRC_FANDOM_MEANING"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "REMINE",
+        "리마인"
+      ]
+    },
+    {
+      "id": "E10",
+      "difficulty": "easy",
+      "category": "그룹 콘셉트",
+      "albumKey": null,
+      "question": "그룹명 RESCENE의 핵심 의미와 가장 가까운 것은 무엇일까요?",
+      "options": [
+        "새로운 계절마다 장르를 바꾼다",
+        "향기를 통해 장면을 다시 떠올린다",
+        "무대 위 장면을 빠르게 전환한다",
+        "팬과 함께 미래의 장면을 예측한다"
+      ],
+      "answerIndex": 1,
+      "answerText": "향기를 통해 장면을 다시 떠올린다",
+      "explanation": "RESCENE는 Scene과 Scent의 의미를 결합해 향기로 장면을 다시 떠올리는 콘셉트를 담았습니다.",
+      "sourceIds": [
+        "SRC_PROFILE_OFFICIAL",
+        "SRC_RESCENE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "RESCENE 뜻",
+        "리센느 뜻"
+      ]
+    },
+    {
+      "id": "E11",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "scenedrome",
+      "question": "RESCENE의 첫 번째 미니앨범은 무엇일까요?",
+      "options": [
+        "Glow Up",
+        "lip bomb",
+        "Re:Scene",
+        "SCENEDROME"
+      ],
+      "answerIndex": 3,
+      "answerText": "SCENEDROME",
+      "explanation": "《SCENEDROME》은 RESCENE의 첫 번째 미니앨범입니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_OFFICIAL",
+        "SRC_SCENEDROME_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "SCENEDROME"
+      ]
+    },
+    {
+      "id": "E12",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": "scenedrome",
+      "question": "《SCENEDROME》의 대표 타이틀곡 조합은 무엇일까요?",
+      "options": [
+        "YoYo · UhUh",
+        "LOVE ATTACK · Pinball",
+        "Deja Vu · Mood",
+        "Glow Up · CRASH"
+      ],
+      "answerIndex": 1,
+      "answerText": "LOVE ATTACK · Pinball",
+      "explanation": "《SCENEDROME》은 ‘LOVE ATTACK’과 ‘Pinball’을 중심으로 활동했습니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_APPLE",
+        "SRC_SCENEDROME_PREVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "LOVE ATTACK",
+        "Pinball"
+      ]
+    },
+    {
+      "id": "E13",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "glow-up",
+      "question": "RESCENE의 두 번째 미니앨범은 무엇일까요?",
+      "options": [
+        "Glow Up",
+        "lip bomb",
+        "Dearest",
+        "SCENEDROME"
+      ],
+      "answerIndex": 0,
+      "answerText": "Glow Up",
+      "explanation": "《Glow Up》은 RESCENE의 두 번째 미니앨범입니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL",
+        "SRC_GLOWUP_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Glow Up"
+      ]
+    },
+    {
+      "id": "E14",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": "glow-up",
+      "question": "두 번째 미니앨범과 이름이 같은 타이틀곡은 무엇일까요?",
+      "options": [
+        "Going on",
+        "Glow Up",
+        "CRASH",
+        "Cotton Candy"
+      ],
+      "answerIndex": 1,
+      "answerText": "Glow Up",
+      "explanation": "두 번째 미니앨범의 동명 타이틀곡은 ‘Glow Up’입니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL",
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Glow Up 노래"
+      ]
+    },
+    {
+      "id": "E15",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "dearest",
+      "question": "RESCENE의 두 번째 싱글 앨범은 무엇일까요?",
+      "options": [
+        "Pretty Girl",
+        "Dearest",
+        "Re:Scene",
+        "SCENEDROME"
+      ],
+      "answerIndex": 1,
+      "answerText": "Dearest",
+      "explanation": "《Dearest》는 RESCENE의 두 번째 싱글 앨범입니다.",
+      "sourceIds": [
+        "SRC_DEAREST_OFFICIAL",
+        "SRC_DEAREST_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Dearest"
+      ]
+    },
+    {
+      "id": "E16",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": "dearest",
+      "question": "《Dearest》의 타이틀곡은 무엇일까요?",
+      "options": [
+        "Mood",
+        "Runaway",
+        "Bloom",
+        "Deja Vu"
+      ],
+      "answerIndex": 3,
+      "answerText": "Deja Vu",
+      "explanation": "《Dearest》의 타이틀곡은 ‘Deja Vu’입니다.",
+      "sourceIds": [
+        "SRC_DEAREST_OFFICIAL",
+        "SRC_DEJAVU_MV"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Deja Vu"
+      ]
+    },
+    {
+      "id": "E17",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "lip-bomb",
+      "question": "RESCENE의 세 번째 미니앨범은 무엇일까요?",
+      "options": [
+        "Glow Up",
+        "Dearest",
+        "Pretty Girl",
+        "lip bomb"
+      ],
+      "answerIndex": 3,
+      "answerText": "lip bomb",
+      "explanation": "《lip bomb》은 RESCENE의 세 번째 미니앨범입니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL",
+        "SRC_LIPBOMB_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "lip bomb"
+      ]
+    },
+    {
+      "id": "E18",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》 발매 전에 먼저 공개된 곡은 무엇일까요?",
+      "options": [
+        "Heart Drop",
+        "Love Echo",
+        "Hello XO",
+        "MVP"
+      ],
+      "answerIndex": 0,
+      "answerText": "Heart Drop",
+      "explanation": "‘Heart Drop’은 《lip bomb》 발매 전인 2025년 11월 6일 먼저 공개됐습니다.",
+      "sourceIds": [
+        "SRC_DISCOGRAPHY_OVERVIEW",
+        "SRC_LIPBOMB_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Heart Drop"
+      ]
+    },
+    {
+      "id": "E19",
+      "difficulty": "easy",
+      "category": "싱글",
+      "albumKey": "runaway",
+      "question": "RESCENE의 첫 디지털 싱글로 소개된 2026년 곡은 무엇일까요?",
+      "options": [
+        "LOVE ATTACK",
+        "Runaway",
+        "Mood",
+        "Pretty Girl"
+      ],
+      "answerIndex": 1,
+      "answerText": "Runaway",
+      "explanation": "‘Runaway’는 2026년 4월 공개된 RESCENE의 첫 디지털 싱글입니다.",
+      "sourceIds": [
+        "SRC_RUNAWAY_OFFICIAL",
+        "SRC_DISCOGRAPHY_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Runaway"
+      ]
+    },
+    {
+      "id": "E20",
+      "difficulty": "easy",
+      "category": "최신 활동",
+      "albumKey": "pretty-girl",
+      "question": "RESCENE가 2026년 7월 발표한 스페셜 싱글은 무엇일까요?",
+      "options": [
+        "Summer Scene",
+        "Pretty Girl",
+        "Beautiful Night",
+        "Secret Girl"
+      ],
+      "answerIndex": 1,
+      "answerText": "Pretty Girl",
+      "explanation": "RESCENE는 2026년 7월 8일 스페셜 싱글 ‘Pretty Girl’을 발표했습니다.",
+      "sourceIds": [
+        "SRC_PRETTY_OFFICIAL",
+        "SRC_PRETTY_PRESS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "Pretty Girl",
+        "리센느 최신곡"
+      ]
+    },
+    {
+      "id": "M01",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "re-scene",
+      "question": "데뷔 싱글 앨범 《Re:Scene》에는 총 몇 곡이 수록됐을까요?",
+      "options": [
+        "4곡",
+        "3곡",
+        "2곡",
+        "5곡"
+      ],
+      "answerIndex": 2,
+      "answerText": "2곡",
+      "explanation": "《Re:Scene》에는 ‘YoYo’와 ‘UhUh’ 두 곡이 수록됐습니다.",
+      "sourceIds": [
+        "SRC_RESCENE_APPLE",
+        "SRC_RESCENE_TRACKLIST"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M02",
+      "difficulty": "medium",
+      "category": "트랙 순서",
+      "albumKey": "re-scene",
+      "question": "《Re:Scene》의 올바른 트랙 순서는 무엇일까요?",
+      "options": [
+        "YoYo → LOVE ATTACK",
+        "YoYo → UhUh",
+        "UhUh → Pinball",
+        "UhUh → YoYo"
+      ],
+      "answerIndex": 1,
+      "answerText": "YoYo → UhUh",
+      "explanation": "공식 트랙리스트는 1번 ‘YoYo’, 2번 ‘UhUh’ 순입니다.",
+      "sourceIds": [
+        "SRC_RESCENE_TRACKLIST",
+        "SRC_RESCENE_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M03",
+      "difficulty": "medium",
+      "category": "데뷔",
+      "albumKey": "re-scene",
+      "question": "선공개곡 ‘YoYo’의 발매일은 언제일까요?",
+      "options": [
+        "2024년 3월 13일",
+        "2024년 3월 26일",
+        "2024년 2월 29일",
+        "2024년 2월 15일"
+      ],
+      "answerIndex": 2,
+      "answerText": "2024년 2월 29일",
+      "explanation": "‘YoYo’는 윤일인 2024년 2월 29일 공개됐습니다.",
+      "sourceIds": [
+        "SRC_DEBUT_OVERVIEW",
+        "SRC_RESCENE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M04",
+      "difficulty": "medium",
+      "category": "그룹 콘셉트",
+      "albumKey": null,
+      "question": "RESCENE가 음악적 영감의 원천으로 소개한 현상은 무엇일까요?",
+      "options": [
+        "나비 효과",
+        "도플러 효과",
+        "프루스트 효과",
+        "플라시보 효과"
+      ],
+      "answerIndex": 2,
+      "answerText": "프루스트 효과",
+      "explanation": "RESCENE는 향기가 과거의 기억을 되살리는 프루스트 효과를 음악 콘셉트의 원천으로 삼습니다.",
+      "sourceIds": [
+        "SRC_PROFILE_OFFICIAL",
+        "SRC_RESCENE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "프루스트 효과"
+      ]
+    },
+    {
+      "id": "M05",
+      "difficulty": "medium",
+      "category": "데뷔 콘셉트",
+      "albumKey": "re-scene",
+      "question": "데뷔 타이틀곡 ‘UhUh’에서 내세운 꽃 콘셉트는 무엇일까요?",
+      "options": [
+        "Crystal Garden",
+        "Frozen Flower",
+        "Midnight Rose",
+        "Burning Flower"
+      ],
+      "answerIndex": 3,
+      "answerText": "Burning Flower",
+      "explanation": "‘UhUh’는 당당하고 매혹적인 ‘Burning Flower’ 콘셉트를 강조했습니다.",
+      "sourceIds": [
+        "SRC_RESCENE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M06",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "scenedrome",
+      "question": "첫 미니앨범 《SCENEDROME》에는 총 몇 곡이 수록됐을까요?",
+      "options": [
+        "6곡",
+        "4곡",
+        "2곡",
+        "5곡"
+      ],
+      "answerIndex": 1,
+      "answerText": "4곡",
+      "explanation": "《SCENEDROME》에는 총 4곡이 수록됐습니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_OFFICIAL",
+        "SRC_SCENEDROME_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M07",
+      "difficulty": "medium",
+      "category": "음반 콘셉트",
+      "albumKey": "scenedrome",
+      "question": "앨범명 SCENEDROME은 어떤 단어들의 결합으로 설명될까요?",
+      "options": [
+        "SCENT · DREAM",
+        "SYNTH · CHROME",
+        "SYNDROME · SCENE",
+        "SCENE · DOME"
+      ],
+      "answerIndex": 2,
+      "answerText": "SYNDROME · SCENE",
+      "explanation": "SCENEDROME은 SYNDROME과 RESCENE의 SCENE을 결합한 이름입니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M08",
+      "difficulty": "medium",
+      "category": "음반 콘셉트",
+      "albumKey": "scenedrome",
+      "question": "《SCENEDROME》의 중심 향료 콘셉트는 무엇일까요?",
+      "options": [
+        "Musk(머스크)",
+        "Ambergris(용연향)",
+        "Vanilla(바닐라)",
+        "Cedarwood(시더우드)"
+      ],
+      "answerIndex": 1,
+      "answerText": "Ambergris(용연향)",
+      "explanation": "《SCENEDROME》은 희귀 향료 Ambergris를 중심 콘셉트로 삼았습니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M09",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "glow-up",
+      "question": "두 번째 미니앨범 《Glow Up》에는 총 몇 곡이 수록됐을까요?",
+      "options": [
+        "6곡",
+        "5곡",
+        "4곡",
+        "3곡"
+      ],
+      "answerIndex": 1,
+      "answerText": "5곡",
+      "explanation": "《Glow Up》에는 ‘CRASH’부터 ‘Cotton Candy’까지 총 5곡이 수록됐습니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_APPLE",
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M10",
+      "difficulty": "medium",
+      "category": "음반 콘셉트",
+      "albumKey": "glow-up",
+      "question": "《Glow Up》의 메인 향기로 소개된 것은 무엇일까요?",
+      "options": [
+        "바다 향",
+        "베리 향",
+        "장미 향",
+        "비누 향"
+      ],
+      "answerIndex": 3,
+      "answerText": "비누 향",
+      "explanation": "《Glow Up》은 새롭게 변화된 나와 우리를 맑고 깨끗한 비누 향으로 표현했습니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M11",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "albumKey": "glow-up",
+      "question": "다음 중 《Glow Up》 수록곡이 아닌 것은 무엇일까요?",
+      "options": [
+        "Going on",
+        "Mood",
+        "In my lotion",
+        "CRASH"
+      ],
+      "answerIndex": 1,
+      "answerText": "Mood",
+      "explanation": "‘Mood’는 《Dearest》 수록곡이며 나머지는 《Glow Up》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_APPLE",
+        "SRC_DEAREST_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M12",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "albumKey": "glow-up",
+      "question": "세계적인 팝 밴드 Dirty Loops가 베이스와 드럼 연주에 참여한 곡은 무엇일까요?",
+      "options": [
+        "Glow Up",
+        "Going on",
+        "Cotton Candy",
+        "CRASH"
+      ],
+      "answerIndex": 2,
+      "answerText": "Cotton Candy",
+      "explanation": "공식 앨범 소개에 따르면 Dirty Loops는 ‘Cotton Candy’의 베이스와 드럼 연주에 참여했습니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M13",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "dearest",
+      "question": "두 번째 싱글 앨범 《Dearest》에는 총 몇 곡이 수록됐을까요?",
+      "options": [
+        "4곡",
+        "3곡",
+        "2곡",
+        "5곡"
+      ],
+      "answerIndex": 2,
+      "answerText": "2곡",
+      "explanation": "《Dearest》는 ‘Deja Vu’와 ‘Mood’ 두 곡으로 구성됐습니다.",
+      "sourceIds": [
+        "SRC_DEAREST_APPLE",
+        "SRC_DEAREST_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M14",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "albumKey": "dearest",
+      "question": "《Dearest》에서 ‘Deja Vu’ 다음에 수록된 곡은 무엇일까요?",
+      "options": [
+        "Going on",
+        "Pinball",
+        "Mood",
+        "Bloom"
+      ],
+      "answerIndex": 2,
+      "answerText": "Mood",
+      "explanation": "《Dearest》의 두 번째 트랙은 ‘Mood’입니다.",
+      "sourceIds": [
+        "SRC_DEAREST_APPLE",
+        "SRC_DEAREST_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M15",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "lip-bomb",
+      "question": "세 번째 미니앨범 《lip bomb》에는 총 몇 곡이 수록됐을까요?",
+      "options": [
+        "3곡",
+        "4곡",
+        "6곡",
+        "5곡"
+      ],
+      "answerIndex": 3,
+      "answerText": "5곡",
+      "explanation": "《lip bomb》에는 총 5곡이 수록됐습니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_APPLE",
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M16",
+      "difficulty": "medium",
+      "category": "앨범명",
+      "albumKey": "lip-bomb",
+      "question": "앨범명 ‘lip bomb’은 어떤 표현에서 착안했을까요?",
+      "options": [
+        "lip balm",
+        "lip gloss",
+        "berry pop",
+        "love bomb"
+      ],
+      "answerIndex": 0,
+      "answerText": "lip balm",
+      "explanation": "‘lip bomb’은 ‘lip balm’의 balm을 bomb으로 바꾼 합성어입니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M17",
+      "difficulty": "medium",
+      "category": "팬덤",
+      "albumKey": null,
+      "question": "팬덤명 REMINE의 설명으로 가장 알맞은 것은 무엇일까요?",
+      "options": [
+        "REMEMBER와 SCENE만 합친 이름이다",
+        "멤버들의 이니셜을 순서대로 조합했다",
+        "앨범 Re:Scene과 Minami의 이름을 합쳤다",
+        "REMIND를 변형하고 RESCENE와 MINE의 의미를 결합했다"
+      ],
+      "answerIndex": 3,
+      "answerText": "REMIND를 변형하고 RESCENE와 MINE의 의미를 결합했다",
+      "explanation": "REMINE은 REMIND를 변형하고 RESCENE와 MINE을 결합한 팬덤명입니다.",
+      "sourceIds": [
+        "SRC_FANDOM_MEANING",
+        "SRC_FANDOM_SOOMPI"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M18",
+      "difficulty": "medium",
+      "category": "팬 소통",
+      "albumKey": null,
+      "question": "RESCENE의 DearU bubble 서비스가 열린 날짜는 언제일까요?",
+      "options": [
+        "2024년 7월 10일",
+        "2024년 4월 25일",
+        "2024년 6월 3일",
+        "2024년 3월 26일"
+      ],
+      "answerIndex": 1,
+      "answerText": "2024년 4월 25일",
+      "explanation": "THE MUZE 공식 공지에 따르면 RESCENE의 DearU bubble은 2024년 4월 25일 열렸습니다.",
+      "sourceIds": [
+        "SRC_BUBBLE_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M19",
+      "difficulty": "medium",
+      "category": "공연",
+      "albumKey": null,
+      "question": "RESCENE의 첫 팬콘서트 이름은 무엇일까요?",
+      "options": [
+        "SCENT OF FIVE",
+        "Project 326",
+        "RE:SCENE DAY",
+        "REMINE WORLD"
+      ],
+      "answerIndex": 1,
+      "answerText": "Project 326",
+      "explanation": "2025년 열린 RESCENE의 첫 팬콘서트명은 《Project 326》입니다.",
+      "sourceIds": [
+        "SRC_FIRST_FANCON"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": []
+    },
+    {
+      "id": "M20",
+      "difficulty": "medium",
+      "category": "기록",
+      "albumKey": null,
+      "question": "2026년 7월 8일 멜론 톱100 1위에 오른 RESCENE의 역주행 곡은 무엇일까요?",
+      "options": [
+        "Runaway",
+        "Pretty Girl",
+        "LOVE ATTACK",
+        "Deja Vu"
+      ],
+      "answerIndex": 2,
+      "answerText": "LOVE ATTACK",
+      "explanation": "2024년 발표된 ‘LOVE ATTACK’은 2026년 7월 8일 멜론 톱100 1위에 올랐습니다.",
+      "sourceIds": [
+        "SRC_REVERSE_CHART"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "LOVE ATTACK 역주행"
+      ]
+    },
+    {
+      "id": "H01",
+      "difficulty": "hard",
+      "category": "연대기",
+      "albumKey": null,
+      "question": "다음 RESCENE 발매작을 오래된 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Re:Scene → SCENEDROME → YoYo → Glow Up",
+        "Re:Scene → YoYo → Glow Up → SCENEDROME",
+        "YoYo → Re:Scene → SCENEDROME → Glow Up",
+        "YoYo → SCENEDROME → Re:Scene → Glow Up"
+      ],
+      "answerIndex": 2,
+      "answerText": "YoYo → Re:Scene → SCENEDROME → Glow Up",
+      "explanation": "‘YoYo’가 2024년 2월 선공개된 뒤 《Re:Scene》, 《SCENEDROME》, 《Glow Up》 순으로 발매됐습니다.",
+      "sourceIds": [
+        "SRC_DEBUT_OVERVIEW",
+        "SRC_SCENEDROME_APPLE",
+        "SRC_GLOWUP_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H02",
+      "difficulty": "hard",
+      "category": "연대기",
+      "albumKey": null,
+      "question": "다음 발매작을 오래된 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Dearest → Glow Up → lip bomb → Pretty Girl → Runaway",
+        "Glow Up → Dearest → lip bomb → Runaway → Pretty Girl",
+        "Glow Up → Dearest → Runaway → lip bomb → Pretty Girl",
+        "Glow Up → lip bomb → Dearest → Runaway → Pretty Girl"
+      ],
+      "answerIndex": 1,
+      "answerText": "Glow Up → Dearest → lip bomb → Runaway → Pretty Girl",
+      "explanation": "2025년 2월 《Glow Up》, 7월 《Dearest》, 11월 《lip bomb》, 2026년 4월 ‘Runaway’, 7월 ‘Pretty Girl’ 순입니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_APPLE",
+        "SRC_DEAREST_APPLE",
+        "SRC_LIPBOMB_APPLE",
+        "SRC_RESCENE_ARTIST_APPLE",
+        "SRC_PRETTY_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": []
+    },
+    {
+      "id": "H03",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "scenedrome",
+      "question": "《SCENEDROME》의 올바른 트랙 순서는 무엇일까요?",
+      "options": [
+        "Pinball → LOVE ATTACK → New World → Lucky you",
+        "Lucky you → LOVE ATTACK → New World → Pinball",
+        "Lucky you → New World → LOVE ATTACK → Pinball",
+        "LOVE ATTACK → Lucky you → Pinball → New World"
+      ],
+      "answerIndex": 1,
+      "answerText": "Lucky you → LOVE ATTACK → New World → Pinball",
+      "explanation": "Apple Music 공식 카탈로그의 트랙 순서는 ‘Lucky you’, ‘LOVE ATTACK’, ‘New World’, ‘Pinball’입니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_APPLE",
+        "SRC_SCENEDROME_PREVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H04",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "glow-up",
+      "question": "《Glow Up》의 올바른 트랙 순서는 무엇일까요?",
+      "options": [
+        "CRASH → Glow Up → Going on → In my lotion → Cotton Candy",
+        "CRASH → Going on → Glow Up → Cotton Candy → In my lotion",
+        "Glow Up → CRASH → In my lotion → Going on → Cotton Candy",
+        "CRASH → Glow Up → Cotton Candy → Going on → In my lotion"
+      ],
+      "answerIndex": 0,
+      "answerText": "CRASH → Glow Up → Going on → In my lotion → Cotton Candy",
+      "explanation": "《Glow Up》은 ‘CRASH’, ‘Glow Up’, ‘Going on’, ‘In my lotion’, ‘Cotton Candy’ 순입니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_APPLE",
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H05",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》의 올바른 트랙 순서는 무엇일까요?",
+      "options": [
+        "Hello XO → Heart Drop → Bloom → Love Echo → MVP",
+        "Bloom → Heart Drop → Hello XO → Love Echo → MVP",
+        "Heart Drop → Bloom → Love Echo → Hello XO → MVP",
+        "Heart Drop → Love Echo → Bloom → MVP → Hello XO"
+      ],
+      "answerIndex": 2,
+      "answerText": "Heart Drop → Bloom → Love Echo → Hello XO → MVP",
+      "explanation": "《lip bomb》의 공식 트랙 순서는 ‘Heart Drop’, ‘Bloom’, ‘Love Echo’, ‘Hello XO’, ‘MVP’입니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_APPLE",
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H06",
+      "difficulty": "hard",
+      "category": "향기 콘셉트",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》에서 스트로베리 향과 연결된 곡은 무엇일까요?",
+      "options": [
+        "Bloom",
+        "MVP",
+        "Hello XO",
+        "Heart Drop"
+      ],
+      "answerIndex": 2,
+      "answerText": "Hello XO",
+      "explanation": "공식 앨범 소개는 ‘Hello XO’를 스트로베리 향과 연결합니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H07",
+      "difficulty": "hard",
+      "category": "향기 콘셉트",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》에서 크랜베리 향과 연결된 곡은 무엇일까요?",
+      "options": [
+        "Heart Drop",
+        "Bloom",
+        "Love Echo",
+        "Hello XO"
+      ],
+      "answerIndex": 0,
+      "answerText": "Heart Drop",
+      "explanation": "공식 앨범 소개는 ‘Heart Drop’을 크랜베리 향과 연결합니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H08",
+      "difficulty": "hard",
+      "category": "향기 콘셉트",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》에서 블랙베리 향과 연결된 곡은 무엇일까요?",
+      "options": [
+        "MVP",
+        "Hello XO",
+        "Bloom",
+        "Love Echo"
+      ],
+      "answerIndex": 2,
+      "answerText": "Bloom",
+      "explanation": "공식 앨범 소개는 ‘Bloom’을 블랙베리 향과 연결합니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H09",
+      "difficulty": "hard",
+      "category": "향기 콘셉트",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》에서 라즈베리 향과 연결된 곡은 무엇일까요?",
+      "options": [
+        "Love Echo",
+        "Bloom",
+        "Heart Drop",
+        "MVP"
+      ],
+      "answerIndex": 0,
+      "answerText": "Love Echo",
+      "explanation": "공식 앨범 소개는 ‘Love Echo’를 라즈베리 향과 연결합니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H10",
+      "difficulty": "hard",
+      "category": "향기 콘셉트",
+      "albumKey": "lip-bomb",
+      "question": "《lip bomb》에서 블루베리 향과 연결된 곡은 무엇일까요?",
+      "options": [
+        "Hello XO",
+        "MVP",
+        "Love Echo",
+        "Heart Drop"
+      ],
+      "answerIndex": 1,
+      "answerText": "MVP",
+      "explanation": "공식 앨범 소개는 ‘MVP’를 블루베리 향과 연결합니다.",
+      "sourceIds": [
+        "SRC_LIPBOMB_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H11",
+      "difficulty": "hard",
+      "category": "음반 콘셉트",
+      "albumKey": "scenedrome",
+      "question": "《SCENEDROME》에서 RESCENE가 맡은 서사적 이미지와 가장 가까운 것은 무엇일까요?",
+      "options": [
+        "잃어버린 용연을 찾아 바다에서 도시로 온 MZ 세대 인어공주",
+        "도시에서 바다로 돌아가는 빈티지 서커스단",
+        "꽃향기를 찾아 우주를 항해하는 탐험대",
+        "기억을 잃고 숲에서 깨어난 다섯 요정"
+      ],
+      "answerIndex": 0,
+      "answerText": "잃어버린 용연을 찾아 바다에서 도시로 온 MZ 세대 인어공주",
+      "explanation": "공식 소개는 RESCENE를 잃어버린 Ambergris를 찾아 바다에서 도시로 온 MZ 세대 인어공주로 표현합니다.",
+      "sourceIds": [
+        "SRC_SCENEDROME_OFFICIAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H12",
+      "difficulty": "hard",
+      "category": "수록곡 설명",
+      "albumKey": "glow-up",
+      "question": "《Glow Up》에서 과거를 스스로 깨고 벗어나 새 세상을 마주하는 내용을 담은 첫 트랙은 무엇일까요?",
+      "options": [
+        "Cotton Candy",
+        "CRASH",
+        "In my lotion",
+        "Going on"
+      ],
+      "answerIndex": 1,
+      "answerText": "CRASH",
+      "explanation": "공식 곡 소개상 이러한 내용은 첫 트랙 ‘CRASH’에 해당합니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL",
+        "SRC_GLOWUP_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H13",
+      "difficulty": "hard",
+      "category": "수록곡 설명",
+      "albumKey": "glow-up",
+      "question": "《Glow Up》에서 일렉트릭 기타, 아날로그 신스, 베이스가 어우러진 디스코 팝 곡은 무엇일까요?",
+      "options": [
+        "Going on",
+        "Cotton Candy",
+        "In my lotion",
+        "CRASH"
+      ],
+      "answerIndex": 0,
+      "answerText": "Going on",
+      "explanation": "공식 앨범 소개는 ‘Going on’을 밝은 에너지를 전하는 디스코 팝 곡으로 설명합니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL",
+        "SRC_GLOWUP_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H14",
+      "difficulty": "hard",
+      "category": "수록곡 설명",
+      "albumKey": "glow-up",
+      "question": "《Glow Up》에서 R&B에 Jersey Club 리듬을 차용하고 프루스트 효과를 가사에 담은 곡은 무엇일까요?",
+      "options": [
+        "In my lotion",
+        "Cotton Candy",
+        "Going on",
+        "Glow Up"
+      ],
+      "answerIndex": 0,
+      "answerText": "In my lotion",
+      "explanation": "공식 소개에 따르면 ‘In my lotion’은 R&B와 Jersey Club 리듬을 결합하고 향기로 추억을 떠올리는 내용을 담았습니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL",
+        "SRC_GLOWUP_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H15",
+      "difficulty": "hard",
+      "category": "수록곡 설명",
+      "albumKey": "glow-up",
+      "question": "《Glow Up》에서 부드러운 R&B 팝과 포근한 가사가 특징인 마지막 트랙은 무엇일까요?",
+      "options": [
+        "Cotton Candy",
+        "Going on",
+        "Glow Up",
+        "CRASH"
+      ],
+      "answerIndex": 0,
+      "answerText": "Cotton Candy",
+      "explanation": "‘Cotton Candy’는 편안한 펑크 베이스 리프와 포근한 가사가 특징인 마지막 트랙입니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_OFFICIAL",
+        "SRC_GLOWUP_APPLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H16",
+      "difficulty": "hard",
+      "category": "해외 평가",
+      "albumKey": "scenedrome",
+      "question": "Billboard가 2024년 최고의 K-pop 앨범 중 하나로 선정한 RESCENE의 음반은 무엇일까요?",
+      "options": [
+        "Dearest",
+        "SCENEDROME",
+        "Glow Up",
+        "Re:Scene"
+      ],
+      "answerIndex": 1,
+      "answerText": "SCENEDROME",
+      "explanation": "The Korea Times는 Billboard가 《SCENEDROME》을 ‘The 25 Best K-Pop Albums of 2024’ 중 하나로 선정했다고 보도했습니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H17",
+      "difficulty": "hard",
+      "category": "해외 평가",
+      "albumKey": "scenedrome",
+      "question": "GRAMMY.com의 ‘10 K-Pop Songs That Electrified 2024’에 포함된 RESCENE 곡은 무엇일까요?",
+      "options": [
+        "Pinball",
+        "UhUh",
+        "LOVE ATTACK",
+        "YoYo"
+      ],
+      "answerIndex": 2,
+      "answerText": "LOVE ATTACK",
+      "explanation": "GRAMMY.com은 ‘LOVE ATTACK’을 2024년을 빛낸 10개의 K-pop 곡 중 하나로 소개했습니다.",
+      "sourceIds": [
+        "SRC_GRAMMY_LOVEATTACK",
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H18",
+      "difficulty": "hard",
+      "category": "공연 기록",
+      "albumKey": null,
+      "question": "RESCENE가 세운 Tokyo Tower Sky Stadium 관련 기록은 무엇일까요?",
+      "options": [
+        "그곳에서 일본 정규 앨범을 발표한 최초의 그룹",
+        "그곳에서 데뷔 쇼케이스를 연 최초의 한국 그룹",
+        "그곳에서 공연한 최초의 K-pop 그룹",
+        "그곳에서 단독 콘서트를 10회 연 최초의 걸그룹"
+      ],
+      "answerIndex": 2,
+      "answerText": "그곳에서 공연한 최초의 K-pop 그룹",
+      "explanation": "RESCENE는 Tokyo Tower Sky Stadium에서 공연한 최초의 K-pop 그룹으로 소개됐습니다.",
+      "sourceIds": [
+        "SRC_GLOWUP_KOREATIMES"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H19",
+      "difficulty": "hard",
+      "category": "멤버",
+      "albumKey": null,
+      "question": "데뷔 전 멤버가 공개된 순서로 알맞은 것은 무엇일까요?",
+      "options": [
+        "원이 → 미나미 → 리브 → 제나 → 메이",
+        "미나미 → 원이 → 제나 → 메이 → 리브",
+        "미나미 → 제나 → 원이 → 리브 → 메이",
+        "제나 → 메이 → 리브 → 미나미 → 원이"
+      ],
+      "answerIndex": 1,
+      "answerText": "미나미 → 원이 → 제나 → 메이 → 리브",
+      "explanation": "공개 기록상 미나미를 시작으로 원이, 제나, 메이, 리브가 차례로 소개됐습니다.",
+      "sourceIds": [
+        "SRC_MEMBER_ORDER",
+        "SRC_MEMBER_REVEAL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H20",
+      "difficulty": "hard",
+      "category": "최신 활동",
+      "albumKey": "pretty-girl",
+      "question": "RESCENE의 ‘Pretty Girl’에 대한 설명으로 맞는 것은 무엇일까요?",
+      "options": [
+        "2024년 데뷔 앨범에 수록된 선공개곡",
+        "2025년 11월 발표한 lip bomb의 수록곡",
+        "2026년 4월 발표한 일본 오리지널 싱글",
+        "2026년 7월 8일 발표한 KARA 원곡의 리메이크 싱글"
+      ],
+      "answerIndex": 3,
+      "answerText": "2026년 7월 8일 발표한 KARA 원곡의 리메이크 싱글",
+      "explanation": "‘Pretty Girl’은 2026년 7월 8일 발표된 스페셜 싱글로, KARA의 동명 곡을 RESCENE의 색으로 재해석했습니다.",
+      "sourceIds": [
+        "SRC_PRETTY_OFFICIAL",
+        "SRC_PRETTY_PRESS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": []
+    }
+  ]
+}

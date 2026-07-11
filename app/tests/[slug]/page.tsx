@@ -35,6 +35,10 @@ import { TetoEgenTestPage } from "@/components/test/TetoEgenTestPage";
 import { BtsFanQuizTestPage } from "@/components/test/BtsFanQuizTestPage";
 import { Fromis9FanQuizTestPage } from "@/components/test/Fromis9FanQuizTestPage";
 import { SeventeenFanQuizTestPage } from "@/components/test/SeventeenFanQuizTestPage";
+import { StrayKidsFanQuizTestPage } from "@/components/test/StrayKidsFanQuizTestPage";
+import { ManchesterUnitedFanQuizTestPage } from "@/components/test/ManchesterUnitedFanQuizTestPage";
+import { AteezFanQuizTestPage } from "@/components/test/AteezFanQuizTestPage";
+import { ResceneFanQuizTestPage } from "@/components/test/ResceneFanQuizTestPage";
 import { MentalAgeTestPage } from "@/components/test/MentalAgeTestPage";
 import { YoungOldTestPage } from "@/components/test/YoungOldTestPage";
 import { IdealTypeTestPage } from "@/components/test/IdealTypeTestPage";
@@ -104,6 +108,18 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
 
   const isFromis9Fan = test.slug === "fromis9-fan-test";
   const isSeventeenFan = test.slug === "seventeen-true-fan";
+  const isStrayKidsFan = test.slug === "stray-kids-true-fan-test";
+  const isManchesterUnitedFan = test.slug === "manchester-united-true-fan-test";
+  const isAteezFan = test.slug === "ateez-true-fan-test";
+  const isResceneFan = test.slug === "rescene-true-fan-test";
+  if (isResceneFan && start === "1") return <ResceneFanQuizTestPage />;
+  if (isResceneFan) return <StandardTestLanding test={test} insight="RESCENE 멤버와 데뷔, LOVE ATTACK, SCENEDROME, Glow Up, lip bomb과 향기 콘셉트를 공식 자료로 검증한 60문항 중 easy 5문항·medium 6문항·hard 4문항으로 출제합니다. 동일 카테고리와 albumKey, 최신성 문항의 편중을 제한하며 결과에서는 점수와 REMINE 등급, 문제별 해설을 확인할 수 있습니다." />;
+  if (isAteezFan && start === "1") return <AteezFanQuizTestPage />;
+  if (isAteezFan) return <StandardTestLanding test={test} insight="ATEEZ 멤버와 데뷔, 앨범, 타이틀곡, 수록곡과 유닛 활동을 공식 자료로 검증한 60문항 중 easy 5문항·medium 6문항·hard 4문항을 출제합니다. 동일 카테고리와 음반·시리즈, 최신성 문항이 한쪽에 몰리지 않도록 제한하며 결과에서는 점수와 정답률, ATINY 등급과 문제별 해설을 확인할 수 있습니다." />;
+  if (isManchesterUnitedFan && start === "1") return <ManchesterUnitedFanQuizTestPage />;
+  if (isManchesterUnitedFan) return <StandardTestLanding test={test} insight="뉴턴 히스 시절부터 올드 트래포드, 버스비 베이브스, 1999년 트레블과 유럽 정상의 순간까지 공식 자료로 검증한 60문항 중 easy 5문항·medium 6문항·hard 4문항을 출제합니다. 최소 6개 카테고리와 5개 시대를 포함하도록 구성하며 결과에서는 정답 수, 29점 만점의 가중 점수와 맨유 팬심 백분율을 확인할 수 있습니다." />;
+  if (isStrayKidsFan && start === "1") return <StrayKidsFanQuizTestPage />;
+  if (isStrayKidsFan) return <StandardTestLanding test={test} insight="스트레이 키즈 멤버와 앨범, 타이틀곡, 수록곡과 유닛 활동을 공식 공개 자료로 검증한 180문항 중 easy 5문항·medium 6문항·hard 4문항이 출제됩니다. 같은 앨범과 카테고리, 최신 연도 문제의 편중을 제한하며 결과에서는 정답 수, 29점 만점의 가중 점수와 STAY 팬심 백분율을 확인할 수 있습니다. 본 테스트는 비공식 팬 퀴즈입니다." />;
   if (isSeventeenFan && start === "1") return <SeventeenFanQuizTestPage />;
   if (isSeventeenFan) return <StandardTestLanding test={test} insight="세븐틴 멤버와 유닛, 대표곡, 앨범과 수록곡까지 공식 공개 자료로 검증한 60문항 중 초급 5문항·중급 6문항·고급 4문항이 출제됩니다. 같은 시도에서는 문제와 보기 순서가 유지되고, 다시 도전하면 새로운 조합으로 나의 캐럿력을 확인할 수 있습니다. 본 테스트는 미미테스트가 자체 제작한 비공식 팬 퀴즈입니다." />;
   if (isFromis9Fan && start === "1") return <Fromis9FanQuizTestPage />;
@@ -115,7 +131,7 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (isTetoEgen) return <StandardTestLanding test={test} answerType="2지선다" insight="나는 테토일까, 에겐일까? 카페에서 메뉴를 고르는 방식, 단체 채팅방에서의 첫 행동, 여행을 준비하는 순서처럼 자연스러운 일상 선택 70개 문제은행에서 매번 14문항(쉬움 4·보통 6·어려움 4)이 랜덤으로 출제됩니다. 각 선택지는 테토 점수와 에겐 점수를 동시에 갖고 있고 문항마다 다른 가중치가 적용되어, 어떤 답이 어느 쪽인지 눈치채기 어렵게 설계했습니다. 결과에서는 테토력·에겐력 비율(%)과 8가지 유형 중 나의 유형, 연애·친구·직장에서의 모습, 잘 맞는 유형과 반대 유형과의 케미까지 상세 분석을 제공합니다." />;
   if (isSelfEsteem && start !== "1") return <StandardTestLanding test={test} insight="실패, 칭찬, 비교, 피드백, 낯선 관계와 중요한 결정처럼 일상에서 자주 만나는 14가지 상황을 통해 자기수용, 자기효능감, 사회적 비교, 실패 회복력, 타인 평가 민감도, 자기신뢰, 감정 안정성과 자기연민을 함께 살펴봅니다. 각 선택은 2~4개 요인에 복합적으로 반영되며 결과에서는 현재 점수보다 나를 지지하는 영역과 조금 더 돌보면 좋은 영역을 구체적으로 확인할 수 있습니다." />;
   if (isMentalAge && start !== "1") return <StandardTestLanding test={test} insight="정신연령 테스트는 실제 나이나 지능을 측정하는 검사가 아닙니다. 친구와의 약속, 낯선 변화, 소비와 시간 관리처럼 한국의 일상에서 자주 마주치는 84개의 상황형 문항 풀에서 매번 15개를 균형 있게 출제합니다. 감정 조절, 책임감, 계획성, 자기통제력, 현실 판단력과 호기심, 즉흥성, 유연성, 사회적 개방성, 놀이성의 조합을 바탕으로 현재의 사고방식을 나이 이미지로 표현합니다. 실제 나이는 선택 입력이며 결과 차이 문구에만 사용하고 저장하지 않습니다." />;
-  if (isYoungOld && start !== "1") return <StandardTestLanding test={test} insight="영크크 늙크크 테스트는 실제 나이나 세대를 판단하는 검사가 아닙니다. 원본·공식 또는 보조 트렌드 출처를 함께 기록한 48개 최신 밈 문제 풀에서 매번 12문제를 출제합니다. 쉬움 4개·보통 5개·어려움 3개가 고정되며, 동일 밈은 한 세션에 한 번만 나옵니다. 밈의 관련 인물·그룹, 원본 콘텐츠, 유래 상황, 사용 맥락과 연결 콘텐츠를 함께 확인해 요즘력 지수와 영크크·늙크크 결과를 안내합니다. 재검토 기한이 지난 문항은 자동으로 출제에서 제외합니다." />;
+  if (isYoungOld && start !== "1") return <StandardTestLanding test={test} insight="영크크 늙크크 테스트는 실제 나이나 세대를 판단하는 검사가 아닙니다. 원본·공식 또는 보조 트렌드 출처를 함께 기록한 48개 최신 밈 문제 풀에서 매번 12문제를 출제합니다. 쉬움 4개·보통 5개·어려움 3개가 고정되며, 동일 밈은 한 세션에 한 번만 나옵니다. 밈의 관련 인물·그룹, 원본 콘텐츠, 유래 상황, 사용 맥락과 연결 콘텐츠를 함께 확인해 트렌디 지수와 영크크·늙크크 결과를 안내합니다. 재검토 기한이 지난 문항은 자동으로 출제에서 제외합니다." />;
   if (isIdealType && start === "1") return <IdealTypeTestPage />;
   if (isAdhdScreening && start !== "1") return <StandardTestLanding test={test} answerType="5점 척도" insight="이 테스트는 ADHD를 진단하는 의료검사가 아닙니다. 세계적으로 널리 사용되는 성인 ADHD 선별검사의 평가 개념을 참고하여 현재 ADHD 관련 특성이 어느 정도 나타나는지 확인하는 참고용 자가 체크입니다. 정확한 진단은 반드시 정신건강의학과 전문의의 평가를 통해 이루어져야 하며, 결과에 따라 전문의 진단이 필요할 수 있습니다. 최근 6개월의 경험을 기준으로 응답해 주세요." />;
   if (isDementiaRisk && start !== "1") return <StandardTestLanding test={test} answerType="5점 척도" insight="이 테스트는 치매를 진단하는 의료검사가 아닙니다. 최근 기억력, 일상생활 변화, 생활습관 위험요인을 확인하는 참고용 자가 체크입니다. 결과가 높거나 일상생활에 불편이 있다면 신경과, 정신건강의학과, 치매안심센터 등 전문기관 상담을 권장합니다. 최근 6개월~1년 사이의 변화를 기준으로 응답해 주세요." />;

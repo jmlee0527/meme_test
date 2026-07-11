@@ -1,0 +1,1897 @@
+{
+  "schemaVersion": "1.0.0",
+  "test": {
+    "id": "ateez-true-fan-test",
+    "title": "ATEEZ 찐팬 테스트",
+    "alternativeTitle": "에이티즈 찐팬 테스트",
+    "topic": "ATEEZ",
+    "language": "ko-KR",
+    "questionPoolSize": 60,
+    "questionsPerAttempt": 15,
+    "questionType": "single_choice_4",
+    "scorePerCorrectAnswer": 1,
+    "maxScore": 15,
+    "verificationCutoff": "2026-07-11",
+    "latestReleaseCovered": {
+      "title": "GOLDEN HOUR : Part.5",
+      "releaseDate": "2026-06-26"
+    }
+  },
+  "seo": {
+    "slug": "ateez-true-fan-test",
+    "metaTitle": "ATEEZ 찐팬 테스트 | 에이티니 덕력 퀴즈",
+    "metaDescription": "에이티즈 멤버, 데뷔, 앨범, 타이틀곡과 기록을 맞히는 15문항 4지선다 팬 테스트. 난이도별 문제로 ATINY 덕력을 확인해 보세요.",
+    "primaryKeyword": "ATEEZ 찐팬 테스트",
+    "secondaryKeywords": [
+      "에이티즈 찐팬 테스트",
+      "ATEEZ 퀴즈",
+      "에이티즈 퀴즈",
+      "ATINY 테스트",
+      "에이티니 테스트",
+      "ATEEZ 멤버",
+      "ATEEZ 노래",
+      "ATEEZ 앨범",
+      "에이티즈 팬 테스트"
+    ],
+    "contentPolicy": "키워드는 title, description, H1, 소개문, 결과 공유문에 자연스럽게 배치하며 반복 삽입이나 숨김 텍스트를 금지한다."
+  },
+  "selectionPolicy": {
+    "difficultyQuota": {
+      "easy": 5,
+      "medium": 6,
+      "hard": 4
+    },
+    "rules": [
+      "각 시도에서 총 15문항을 중복 없이 추출한다.",
+      "동일 카테고리는 한 시도에 최대 4문항까지만 허용한다.",
+      "동일 음반 또는 동일 시리즈의 세부 수록곡 문항은 최대 3문항까지만 허용한다.",
+      "freshness가 time_sensitive인 문항은 한 시도에 최대 3문항으로 제한한다.",
+      "보기 순서는 매 시도마다 섞되 정답 인덱스를 반드시 재계산한다.",
+      "시험 진행 중 정답과 해설을 노출하지 않고 제출 후 한 번에 공개한다.",
+      "같은 이용자가 재응시하면 seed를 갱신해 다른 조합이 우선 노출되도록 한다."
+    ],
+    "fallback": "제약 조건을 모두 만족하는 조합이 없으면 카테고리 제한만 1개 완화하고 난이도 쿼터는 유지한다."
+  },
+  "resultBands": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "항해를 막 시작한 입문자",
+      "summary": "ATEEZ의 대표곡과 멤버부터 알아가는 단계예요. 몇 번 더 항해하면 ATINY 지식이 빠르게 쌓일 거예요."
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "성장 중인 ATINY",
+      "summary": "대표 활동과 주요 앨범은 익숙한 편이에요. 수록곡과 연대기를 더 살펴보면 상위 단계가 가까워집니다."
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "무대를 즐기는 실력파 ATINY",
+      "summary": "ATEEZ의 대표곡, 앨범, 기록을 균형 있게 알고 있어요. 어려운 수록곡 문제도 상당수 맞힐 수준입니다."
+    },
+    {
+      "minScore": 11,
+      "maxScore": 13,
+      "title": "하드코어 ATINY",
+      "summary": "음반 흐름과 유닛곡까지 깊이 알고 있어요. 웬만한 문제로는 흔들리지 않는 팬 지식의 소유자입니다."
+    },
+    {
+      "minScore": 14,
+      "maxScore": 15,
+      "title": "전설의 ATINY",
+      "summary": "데뷔부터 최신 GOLDEN HOUR 시리즈까지 거의 완벽하게 꿰고 있어요. ATEEZ 찐팬 인증 완료입니다."
+    }
+  ],
+  "qualityChecklist": [
+    "모든 문항은 보기 4개와 정답 1개만 가진다.",
+    "인물의 사생활, 연애설, 건강, 가족사, 확인되지 않은 루머는 출제하지 않는다.",
+    "주관적 평가, 팬덤 갈등, 멤버 서열, 외모 비교 문항은 금지한다.",
+    "현재성 있는 발매·투어 문항은 배포 전 공식 KQ 공지와 음원 카탈로그를 재확인한다.",
+    "곡명·음반명 표기는 공식 영문 대소문자 또는 국내에서 널리 쓰이는 한글 병기를 따른다.",
+    "오답은 같은 시대·음반·유형의 항목으로 구성하되 사실처럼 오해될 설명을 붙이지 않는다.",
+    "정답 해설은 1~2문장으로 간결하게 제공한다."
+  ],
+  "sources": [
+    {
+      "id": "SRC_ATEEZ_PROFILE",
+      "title": "ATEEZ official platform",
+      "publisher": "KQ Entertainment",
+      "url": "https://ateez.kqent.com/",
+      "type": "official",
+      "use": "공식 그룹명·활동 정보 확인"
+    },
+    {
+      "id": "SRC_ATEEZ_OVERVIEW",
+      "title": "Ateez",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ateez",
+      "type": "reference",
+      "use": "멤버 구성, 데뷔, 투어, 주요 기록 교차 확인"
+    },
+    {
+      "id": "SRC_EP1",
+      "title": "Treasure EP.1: All to Zero",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treasure_EP.1%3A_All_to_Zero",
+      "type": "reference",
+      "use": "데뷔 음반·발매일·더블 타이틀곡 확인"
+    },
+    {
+      "id": "SRC_EP1_SPOTIFY",
+      "title": "TREASURE EP.1: All To Zero",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/4ayTucmOGwLd0WrJddrUwx",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_EP2",
+      "title": "Treasure EP.2: Zero to One",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treasure_EP.2%3A_Zero_to_One",
+      "type": "reference",
+      "use": "음반·타이틀곡·발매 순서 확인"
+    },
+    {
+      "id": "SRC_EP2_SPOTIFY",
+      "title": "TREASURE EP.2: Zero To One",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/2PQ8cQ8WzAJJkWYT2Ydmhw",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_EP3",
+      "title": "Treasure EP.3: One to All",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treasure_EP.3%3A_One_to_All",
+      "type": "reference",
+      "use": "WAVE·ILLUSION 및 발매 정보 확인"
+    },
+    {
+      "id": "SRC_EP3_SPOTIFY",
+      "title": "TREASURE EP.3: One To All",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/1w1dfDuyqz63mHJv1A8Xmk",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_ALL_TO_ACTION",
+      "title": "Treasure EP.Fin: All to Action",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treasure_EP.Fin%3A_All_to_Action",
+      "type": "reference",
+      "use": "첫 정규 음반·WONDERLAND·수록곡 확인"
+    },
+    {
+      "id": "SRC_ALL_TO_ACTION_SPOTIFY",
+      "title": "TREASURE EP.FIN: All To Action",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/4HGhzqQEY1X6WWZw6MhjlO",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_ACTION_TO_ANSWER",
+      "title": "Treasure Epilogue: Action to Answer",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treasure_Epilogue%3A_Action_to_Answer",
+      "type": "reference",
+      "use": "ANSWER·HORIZON 및 음반 정보 확인"
+    },
+    {
+      "id": "SRC_ACTION_TO_ANSWER_SPOTIFY",
+      "title": "TREASURE EPILOGUE: Action To Answer",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/2SytbbEGf1tnNJ0IH5sSQu",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_FIRST_WIN",
+      "title": "ATEEZ Takes 1st-Ever Win On M Countdown With WAVE",
+      "publisher": "Soompi",
+      "url": "https://www.soompi.com/article/1333529wpp/watch-ateez-takes-1st-ever-win-on-m-countdown-with-wave-performances-by-jeon-somi-leo-stray-kids-and-more",
+      "type": "press",
+      "use": "첫 음악방송 1위 곡·날짜·프로그램 확인"
+    },
+    {
+      "id": "SRC_FEVER1",
+      "title": "Zero: Fever Part.1",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero%3A_Fever_Part.1",
+      "type": "reference",
+      "use": "INCEPTION·THANXX 및 발매 정보 확인"
+    },
+    {
+      "id": "SRC_FEVER1_SPOTIFY",
+      "title": "ZERO : FEVER Part.1",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/01IFxHiVOY6uf3vUFVXEoI",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_FEVER2",
+      "title": "Zero: Fever Part.2",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero%3A_Fever_Part.2",
+      "type": "reference",
+      "use": "불놀이야 및 발매 정보 확인"
+    },
+    {
+      "id": "SRC_FEVER2_SPOTIFY",
+      "title": "ZERO : FEVER Part.2",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/1JMc8IZ1Jbax6m5OvswmAB",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_FEVER3",
+      "title": "Zero: Fever Part.3",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero%3A_Fever_Part.3",
+      "type": "reference",
+      "use": "Deja Vu·Eternal Sunshine 및 Billboard 200 첫 진입 확인"
+    },
+    {
+      "id": "SRC_FEVER3_SPOTIFY",
+      "title": "ZERO : FEVER Part.3",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/5ozaWoYQScjFzGODcJmy3G",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_FEVER_EPILOGUE",
+      "title": "Zero: Fever Epilogue",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero%3A_Fever_Epilogue",
+      "type": "reference",
+      "use": "야간비행·멋 및 KINGDOM 버전 수록 정보 확인"
+    },
+    {
+      "id": "SRC_FEVER_EPILOGUE_SPOTIFY",
+      "title": "ZERO : FEVER EPILOGUE",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/3R2frjpElpzeh46AC7rK7v",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_MOVEMENT",
+      "title": "The World EP.1: Movement",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_World_EP.1%3A_Movement",
+      "type": "reference",
+      "use": "Guerrilla·Billboard 200 기록 확인"
+    },
+    {
+      "id": "SRC_MOVEMENT_SPOTIFY",
+      "title": "THE WORLD EP.1 : MOVEMENT",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/3fgDrbflffzvV3H3plG9e6",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_OUTLAW",
+      "title": "The World EP.2: Outlaw",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_World_EP.2%3A_Outlaw",
+      "type": "reference",
+      "use": "BOUNCY 및 음반 정보 확인"
+    },
+    {
+      "id": "SRC_OUTLAW_SPOTIFY",
+      "title": "THE WORLD EP.2 : OUTLAW",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/5DxixnuklLg28S7UMeGC9H",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_WILL",
+      "title": "The World EP.Fin: Will",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_World_EP.Fin%3A_Will",
+      "type": "reference",
+      "use": "두 번째 정규 음반·Crazy Form·Billboard 200 1위 확인"
+    },
+    {
+      "id": "SRC_WILL_SPOTIFY",
+      "title": "THE WORLD EP.FIN : WILL",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/1r0F1EzzNOaJyB7U0Jp5RH",
+      "type": "catalog",
+      "use": "유닛·솔로 수록곡 확인"
+    },
+    {
+      "id": "SRC_GH1",
+      "title": "Golden Hour: Part.1",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Golden_Hour%3A_Part.1",
+      "type": "reference",
+      "use": "WORK 및 발매 정보 확인"
+    },
+    {
+      "id": "SRC_GH1_SPOTIFY",
+      "title": "GOLDEN HOUR : Part.1",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/37XJyd3MfDYOhmAaDY5gEU",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_GH2",
+      "title": "Golden Hour: Part.2",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Golden_Hour%3A_Part.2",
+      "type": "reference",
+      "use": "Ice On My Teeth 및 발매 정보 확인"
+    },
+    {
+      "id": "SRC_GH2_SPOTIFY",
+      "title": "GOLDEN HOUR : Part.2",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/2FLo3lAhEQpvHAtRN0HEUP",
+      "type": "catalog",
+      "use": "수록곡 확인"
+    },
+    {
+      "id": "SRC_GH3_KQ",
+      "title": "ATEEZ GOLDEN HOUR : Part.3 Track List",
+      "publisher": "KQ Entertainment",
+      "url": "https://ateez.kqent.com/contents/683820137788db34daae15e6",
+      "type": "official",
+      "use": "Part.3 발매일·트랙리스트 확인"
+    },
+    {
+      "id": "SRC_GH3_SPOTIFY",
+      "title": "GOLDEN HOUR : Part.3",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/5LlszztgR3YH7aN7SPgTVi",
+      "type": "catalog",
+      "use": "Lemon Drop·Masterpiece 등 수록곡 확인"
+    },
+    {
+      "id": "SRC_FANTASY_KQ",
+      "title": "GOLDEN HOUR : Part.3 ‘In Your Fantasy Edition’ Track List",
+      "publisher": "KQ Entertainment",
+      "url": "https://ateez.kqent.com/contents/685f98a58c654b00ee8e3d9c",
+      "type": "official",
+      "use": "In Your Fantasy Edition 트랙리스트 확인"
+    },
+    {
+      "id": "SRC_FANTASY_REPORT",
+      "title": "ATEEZ Addresses KPop Demon Hunters Comparisons",
+      "publisher": "People",
+      "url": "https://people.com/ateez-finally-addresses-k-pop-demon-hunters-saja-boys-comparisons-exclusive-11813806",
+      "type": "press",
+      "use": "멤버별 솔로곡 수록 사실 교차 확인"
+    },
+    {
+      "id": "SRC_GH4_KQ",
+      "title": "ATEEZ GOLDEN HOUR : Part.4 Track List",
+      "publisher": "KQ Entertainment",
+      "url": "https://ateez.kqent.com/contents/696ddda46d2d2b75a9994da6",
+      "type": "official",
+      "use": "Part.4 발매일·트랙 순서 확인"
+    },
+    {
+      "id": "SRC_GH4_SPOTIFY",
+      "title": "GOLDEN HOUR : Part.4",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/1FBxW4I6azDVjGallQ4wQk",
+      "type": "catalog",
+      "use": "Ghost·Adrenaline·NASA 등 수록곡 확인"
+    },
+    {
+      "id": "SRC_GH5_KQ",
+      "title": "ATEEZ GOLDEN HOUR : Part.5",
+      "publisher": "KQ Entertainment",
+      "url": "https://ateez.kqent.com/contents/6a3d28a6edaad16ca982dcdc",
+      "type": "official",
+      "use": "Part.5 발매일·트랙리스트 확인"
+    },
+    {
+      "id": "SRC_GH5_SPOTIFY",
+      "title": "GOLDEN HOUR : Part.5",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/6Eg6B1mgGj2dGLBajzsVpV",
+      "type": "catalog",
+      "use": "BAD·MAMACITA·TOXIN 등 수록곡 확인"
+    },
+    {
+      "id": "SRC_COACHELLA",
+      "title": "ATEEZ Becomes First K-pop Boy Group to Perform at Coachella",
+      "publisher": "The Chosun Daily",
+      "url": "https://www.chosun.com/english/kpop-culture-en/2024/01/17/E3Z2WRSS2RH2NJO5XHDT23VBNQ/",
+      "type": "press",
+      "use": "2024 Coachella 기록 확인"
+    },
+    {
+      "id": "SRC_GRAMMY_MUSEUM",
+      "title": "GRAMMY Museum K-pop Exhibit Featuring ATEEZ and xikers",
+      "publisher": "Recording Academy",
+      "url": "https://www.grammy.com/news/grammy-museum-k-pop-exhibit-ateez-xikers/",
+      "type": "official_press",
+      "use": "GRAMMY Museum K-pop 팝업 전시 확인"
+    },
+    {
+      "id": "SRC_CHUNGHA",
+      "title": "CHUNG HA Interview: EENIE MEENIE",
+      "publisher": "Recording Academy",
+      "url": "https://www.grammy.com/news/chung-ha-k-pop-interview-eenie-meenie-comeback-videos/",
+      "type": "official_press",
+      "use": "홍중 피처링 곡 확인"
+    },
+    {
+      "id": "SRC_DISCOGRAPHY",
+      "title": "Ateez discography",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ateez_discography",
+      "type": "reference",
+      "use": "일본 음반·협업 싱글·전체 발매 순서 교차 확인"
+    },
+    {
+      "id": "SRC_SHIFT_SPOTIFY",
+      "title": "TREASURE EP.EXTRA: Shift The Map",
+      "publisher": "Spotify",
+      "url": "https://open.spotify.com/album/3uejTFamPCZuTD1HvYLqw2",
+      "type": "catalog",
+      "use": "일본 데뷔 정규 음반 확인"
+    }
+  ],
+  "questions": [
+    {
+      "id": "E01",
+      "difficulty": "easy",
+      "category": "기본 정보",
+      "question": "ATEEZ는 몇 명으로 구성된 그룹일까요?",
+      "options": [
+        "7명",
+        "8명",
+        "6명",
+        "9명"
+      ],
+      "answerIndex": 1,
+      "answerText": "8명",
+      "explanation": "ATEEZ는 홍중, 성화, 윤호, 여상, 산, 민기, 우영, 종호의 8인조 그룹입니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_PROFILE",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 멤버",
+        "에이티즈"
+      ]
+    },
+    {
+      "id": "E02",
+      "difficulty": "easy",
+      "category": "기본 정보",
+      "question": "ATEEZ의 소속사는 어디일까요?",
+      "options": [
+        "Starship Entertainment",
+        "P NATION",
+        "JYP Entertainment",
+        "KQ Entertainment"
+      ],
+      "answerIndex": 3,
+      "answerText": "KQ Entertainment",
+      "explanation": "ATEEZ는 KQ Entertainment 소속으로 데뷔해 활동하고 있습니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_PROFILE",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 소속사",
+        "KQ"
+      ]
+    },
+    {
+      "id": "E03",
+      "difficulty": "easy",
+      "category": "데뷔",
+      "question": "ATEEZ의 한국 데뷔일은 언제일까요?",
+      "options": [
+        "2019년 10월 8일",
+        "2018년 8월 24일",
+        "2019년 1월 15일",
+        "2018년 10월 24일"
+      ],
+      "answerIndex": 3,
+      "answerText": "2018년 10월 24일",
+      "explanation": "ATEEZ는 2018년 10월 24일 《TREASURE EP.1 : All To Zero》를 발매하며 데뷔했습니다.",
+      "sourceIds": [
+        "SRC_EP1",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 데뷔일"
+      ]
+    },
+    {
+      "id": "E04",
+      "difficulty": "easy",
+      "category": "데뷔",
+      "question": "ATEEZ의 데뷔 음반은 무엇일까요?",
+      "options": [
+        "TREASURE EP.1 : All To Zero",
+        "TREASURE EP.2 : Zero To One",
+        "TREASURE EP.FIN : All To Action",
+        "TREASURE EP.3 : One To All"
+      ],
+      "answerIndex": 0,
+      "answerText": "TREASURE EP.1 : All To Zero",
+      "explanation": "ATEEZ의 데뷔 음반은 《TREASURE EP.1 : All To Zero》입니다.",
+      "sourceIds": [
+        "SRC_EP1",
+        "SRC_EP1_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 데뷔 앨범"
+      ]
+    },
+    {
+      "id": "E05",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "ATEEZ 데뷔 음반의 더블 타이틀곡 조합은 무엇일까요?",
+      "options": [
+        "Pirate King · Treasure",
+        "Say My Name · HALA HALA",
+        "WONDERLAND · Sunrise",
+        "WAVE · ILLUSION"
+      ],
+      "answerIndex": 0,
+      "answerText": "Pirate King · Treasure",
+      "explanation": "《TREASURE EP.1 : All To Zero》의 더블 타이틀곡은 ‘Pirate King’과 ‘Treasure’입니다.",
+      "sourceIds": [
+        "SRC_EP1",
+        "SRC_EP1_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Pirate King",
+        "Treasure"
+      ]
+    },
+    {
+      "id": "E06",
+      "difficulty": "easy",
+      "category": "팬덤",
+      "question": "ATEEZ의 공식 팬덤명은 무엇일까요?",
+      "options": [
+        "MOA",
+        "THE B",
+        "ATINY",
+        "STAY"
+      ],
+      "answerIndex": 2,
+      "answerText": "ATINY",
+      "explanation": "ATEEZ의 공식 팬덤명은 ATINY(에이티니)입니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATINY",
+        "에이티니"
+      ]
+    },
+    {
+      "id": "E07",
+      "difficulty": "easy",
+      "category": "멤버",
+      "question": "ATEEZ에서 리더 역할을 맡고 있는 멤버는 누구일까요?",
+      "options": [
+        "홍중",
+        "윤호",
+        "종호",
+        "성화"
+      ],
+      "answerIndex": 0,
+      "answerText": "홍중",
+      "explanation": "홍중은 ATEEZ의 리더로 소개됩니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_PROFILE",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "홍중",
+        "ATEEZ 리더"
+      ]
+    },
+    {
+      "id": "E08",
+      "difficulty": "easy",
+      "category": "멤버",
+      "question": "다음 중 ATEEZ 멤버가 아닌 사람은 누구일까요?",
+      "options": [
+        "민기",
+        "우영",
+        "기호",
+        "여상"
+      ],
+      "answerIndex": 2,
+      "answerText": "기호",
+      "explanation": "여상, 민기, 우영은 ATEEZ 멤버이며 기호는 ATEEZ 멤버가 아닙니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_PROFILE",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 멤버"
+      ]
+    },
+    {
+      "id": "E09",
+      "difficulty": "easy",
+      "category": "멤버",
+      "question": "다음 중 네 사람 모두 ATEEZ 멤버로만 이루어진 조합은 무엇일까요?",
+      "options": [
+        "홍중 · 성화 · 태현 · 여상",
+        "민기 · 우영 · 연준 · 종호",
+        "홍중 · 성화 · 윤호 · 여상",
+        "윤호 · 산 · 필릭스 · 종호"
+      ],
+      "answerIndex": 2,
+      "answerText": "홍중 · 성화 · 윤호 · 여상",
+      "explanation": "홍중, 성화, 윤호, 여상은 모두 ATEEZ 멤버입니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_PROFILE",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 멤버 이름"
+      ]
+    },
+    {
+      "id": "E10",
+      "difficulty": "easy",
+      "category": "프리데뷔",
+      "question": "ATEEZ가 데뷔 전 공개했던 연습생 팀명은 무엇일까요?",
+      "options": [
+        "KQ Fellaz",
+        "Treasure Boys",
+        "A-Team Project",
+        "KQ Rookies"
+      ],
+      "answerIndex": 0,
+      "answerText": "KQ Fellaz",
+      "explanation": "ATEEZ 멤버들은 데뷔 전 ‘KQ Fellaz’라는 이름으로 콘텐츠를 공개했습니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "KQ Fellaz",
+        "ATEEZ 프리데뷔"
+      ]
+    },
+    {
+      "id": "E11",
+      "difficulty": "easy",
+      "category": "기록",
+      "question": "ATEEZ에게 데뷔 후 첫 음악방송 1위를 안겨 준 곡은 무엇일까요?",
+      "options": [
+        "WAVE",
+        "INCEPTION",
+        "Say My Name",
+        "WONDERLAND"
+      ],
+      "answerIndex": 0,
+      "answerText": "WAVE",
+      "explanation": "ATEEZ는 2019년 6월 ‘WAVE’로 첫 음악방송 1위를 차지했습니다.",
+      "sourceIds": [
+        "SRC_FIRST_WIN",
+        "SRC_EP3"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 첫 1위",
+        "WAVE"
+      ]
+    },
+    {
+      "id": "E12",
+      "difficulty": "easy",
+      "category": "음반",
+      "question": "‘WAVE’가 수록된 음반은 무엇일까요?",
+      "options": [
+        "TREASURE EPILOGUE : Action To Answer",
+        "TREASURE EP.1 : All To Zero",
+        "TREASURE EP.2 : Zero To One",
+        "TREASURE EP.3 : One To All"
+      ],
+      "answerIndex": 3,
+      "answerText": "TREASURE EP.3 : One To All",
+      "explanation": "‘WAVE’는 《TREASURE EP.3 : One To All》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_EP3",
+        "SRC_EP3_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "WAVE 앨범"
+      ]
+    },
+    {
+      "id": "E13",
+      "difficulty": "easy",
+      "category": "음반",
+      "question": "‘WONDERLAND’가 타이틀곡인 음반은 무엇일까요?",
+      "options": [
+        "TREASURE EP.3 : One To All",
+        "TREASURE EP.FIN : All To Action",
+        "THE WORLD EP.1 : MOVEMENT",
+        "ZERO : FEVER Part.1"
+      ],
+      "answerIndex": 1,
+      "answerText": "TREASURE EP.FIN : All To Action",
+      "explanation": "‘WONDERLAND’는 ATEEZ의 첫 한국 정규 음반 《TREASURE EP.FIN : All To Action》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_ALL_TO_ACTION",
+        "SRC_ALL_TO_ACTION_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "WONDERLAND"
+      ]
+    },
+    {
+      "id": "E14",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘INCEPTION’과 ‘THANXX’가 함께 수록된 음반은 무엇일까요?",
+      "options": [
+        "ZERO : FEVER Part.3",
+        "ZERO : FEVER EPILOGUE",
+        "ZERO : FEVER Part.1",
+        "ZERO : FEVER Part.2"
+      ],
+      "answerIndex": 2,
+      "answerText": "ZERO : FEVER Part.1",
+      "explanation": "‘INCEPTION’과 ‘THANXX’는 《ZERO : FEVER Part.1》에 함께 수록됐습니다.",
+      "sourceIds": [
+        "SRC_FEVER1",
+        "SRC_FEVER1_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "INCEPTION",
+        "THANXX"
+      ]
+    },
+    {
+      "id": "E15",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘불놀이야 (I'm The One)’가 수록된 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.2 : OUTLAW",
+        "ZERO : FEVER Part.2",
+        "ZERO : FEVER Part.1",
+        "ZERO : FEVER Part.3"
+      ],
+      "answerIndex": 1,
+      "answerText": "ZERO : FEVER Part.2",
+      "explanation": "‘불놀이야 (I'm The One)’는 《ZERO : FEVER Part.2》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_FEVER2",
+        "SRC_FEVER2_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "불놀이야",
+        "I'm The One"
+      ]
+    },
+    {
+      "id": "E16",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘Deja Vu’와 ‘Eternal Sunshine’이 함께 수록된 음반은 무엇일까요?",
+      "options": [
+        "ZERO : FEVER Part.2",
+        "ZERO : FEVER Part.3",
+        "ZERO : FEVER Part.1",
+        "ZERO : FEVER EPILOGUE"
+      ],
+      "answerIndex": 1,
+      "answerText": "ZERO : FEVER Part.3",
+      "explanation": "두 곡은 《ZERO : FEVER Part.3》의 더블 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_FEVER3",
+        "SRC_FEVER3_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Deja Vu",
+        "Eternal Sunshine"
+      ]
+    },
+    {
+      "id": "E17",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘야간비행 (Turbulence)’과 ‘멋 (The Real)’이 함께 수록된 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.1 : MOVEMENT",
+        "TREASURE EPILOGUE : Action To Answer",
+        "ZERO : FEVER Part.2",
+        "ZERO : FEVER EPILOGUE"
+      ],
+      "answerIndex": 3,
+      "answerText": "ZERO : FEVER EPILOGUE",
+      "explanation": "두 곡은 《ZERO : FEVER EPILOGUE》의 대표곡입니다.",
+      "sourceIds": [
+        "SRC_FEVER_EPILOGUE",
+        "SRC_FEVER_EPILOGUE_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "야간비행",
+        "The Real"
+      ]
+    },
+    {
+      "id": "E18",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘Guerrilla’가 수록된 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.2 : OUTLAW",
+        "THE WORLD EP.FIN : WILL",
+        "GOLDEN HOUR : Part.1",
+        "THE WORLD EP.1 : MOVEMENT"
+      ],
+      "answerIndex": 3,
+      "answerText": "THE WORLD EP.1 : MOVEMENT",
+      "explanation": "‘Guerrilla’는 《THE WORLD EP.1 : MOVEMENT》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_MOVEMENT",
+        "SRC_MOVEMENT_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Guerrilla"
+      ]
+    },
+    {
+      "id": "E19",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘BOUNCY (K-HOT CHILLI PEPPERS)’가 수록된 음반은 무엇일까요?",
+      "options": [
+        "GOLDEN HOUR : Part.2",
+        "THE WORLD EP.2 : OUTLAW",
+        "THE WORLD EP.1 : MOVEMENT",
+        "THE WORLD EP.FIN : WILL"
+      ],
+      "answerIndex": 1,
+      "answerText": "THE WORLD EP.2 : OUTLAW",
+      "explanation": "‘BOUNCY (K-HOT CHILLI PEPPERS)’는 《THE WORLD EP.2 : OUTLAW》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_OUTLAW",
+        "SRC_OUTLAW_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "BOUNCY",
+        "OUTLAW"
+      ]
+    },
+    {
+      "id": "E20",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "question": "‘미친 폼 (Crazy Form)’이 타이틀곡인 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.2 : OUTLAW",
+        "THE WORLD EP.FIN : WILL",
+        "THE WORLD EP.1 : MOVEMENT",
+        "GOLDEN HOUR : Part.1"
+      ],
+      "answerIndex": 1,
+      "answerText": "THE WORLD EP.FIN : WILL",
+      "explanation": "‘미친 폼 (Crazy Form)’은 《THE WORLD EP.FIN : WILL》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_WILL",
+        "SRC_WILL_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "미친 폼",
+        "Crazy Form"
+      ]
+    },
+    {
+      "id": "M01",
+      "difficulty": "medium",
+      "category": "GOLDEN HOUR",
+      "question": "‘WORK’가 수록된 ATEEZ 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.FIN : WILL",
+        "GOLDEN HOUR : Part.2",
+        "GOLDEN HOUR : Part.3",
+        "GOLDEN HOUR : Part.1"
+      ],
+      "answerIndex": 3,
+      "answerText": "GOLDEN HOUR : Part.1",
+      "explanation": "‘WORK’는 《GOLDEN HOUR : Part.1》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_GH1",
+        "SRC_GH1_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "WORK",
+        "GOLDEN HOUR Part.1"
+      ]
+    },
+    {
+      "id": "M02",
+      "difficulty": "medium",
+      "category": "GOLDEN HOUR",
+      "question": "‘Ice On My Teeth’가 수록된 ATEEZ 음반은 무엇일까요?",
+      "options": [
+        "GOLDEN HOUR : Part.2",
+        "GOLDEN HOUR : Part.3",
+        "GOLDEN HOUR : Part.1",
+        "GOLDEN HOUR : Part.4"
+      ],
+      "answerIndex": 0,
+      "answerText": "GOLDEN HOUR : Part.2",
+      "explanation": "‘Ice On My Teeth’는 《GOLDEN HOUR : Part.2》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_GH2",
+        "SRC_GH2_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Ice On My Teeth"
+      ]
+    },
+    {
+      "id": "M03",
+      "difficulty": "medium",
+      "category": "GOLDEN HOUR",
+      "question": "‘Lemon Drop’이 수록된 ATEEZ 음반은 무엇일까요?",
+      "options": [
+        "GOLDEN HOUR : Part.2",
+        "GOLDEN HOUR : Part.1",
+        "GOLDEN HOUR : Part.3",
+        "GOLDEN HOUR : Part.4"
+      ],
+      "answerIndex": 2,
+      "answerText": "GOLDEN HOUR : Part.3",
+      "explanation": "‘Lemon Drop’은 2025년 6월 공개된 《GOLDEN HOUR : Part.3》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_GH3_KQ",
+        "SRC_GH3_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "Lemon Drop"
+      ]
+    },
+    {
+      "id": "M04",
+      "difficulty": "medium",
+      "category": "GOLDEN HOUR",
+      "question": "‘Adrenaline’이 수록된 ATEEZ 음반은 무엇일까요?",
+      "options": [
+        "GOLDEN HOUR : Part.5",
+        "GOLDEN HOUR : Part.2",
+        "GOLDEN HOUR : Part.4",
+        "GOLDEN HOUR : Part.3"
+      ],
+      "answerIndex": 2,
+      "answerText": "GOLDEN HOUR : Part.4",
+      "explanation": "‘Adrenaline’은 2026년 2월 공개된 《GOLDEN HOUR : Part.4》의 수록곡입니다.",
+      "sourceIds": [
+        "SRC_GH4_KQ",
+        "SRC_GH4_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "Adrenaline"
+      ]
+    },
+    {
+      "id": "M05",
+      "difficulty": "medium",
+      "category": "GOLDEN HOUR",
+      "question": "‘BAD’가 수록된 ATEEZ 음반은 무엇일까요?",
+      "options": [
+        "GOLDEN HOUR : Part.3",
+        "GOLDEN HOUR : Part.2",
+        "GOLDEN HOUR : Part.5",
+        "GOLDEN HOUR : Part.4"
+      ],
+      "answerIndex": 2,
+      "answerText": "GOLDEN HOUR : Part.5",
+      "explanation": "‘BAD’는 2026년 6월 26일 공개된 《GOLDEN HOUR : Part.5》의 수록곡입니다.",
+      "sourceIds": [
+        "SRC_GH5_KQ",
+        "SRC_GH5_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "BAD",
+        "GOLDEN HOUR Part.5"
+      ]
+    },
+    {
+      "id": "M06",
+      "difficulty": "medium",
+      "category": "음반",
+      "question": "ATEEZ의 첫 번째 한국 정규 음반은 무엇일까요?",
+      "options": [
+        "ZERO : FEVER EPILOGUE",
+        "TREASURE EP.3 : One To All",
+        "THE WORLD EP.FIN : WILL",
+        "TREASURE EP.FIN : All To Action"
+      ],
+      "answerIndex": 3,
+      "answerText": "TREASURE EP.FIN : All To Action",
+      "explanation": "《TREASURE EP.FIN : All To Action》은 2019년에 발매된 ATEEZ의 첫 한국 정규 음반입니다.",
+      "sourceIds": [
+        "SRC_ALL_TO_ACTION",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 정규 1집"
+      ]
+    },
+    {
+      "id": "M07",
+      "difficulty": "medium",
+      "category": "음반",
+      "question": "ATEEZ의 두 번째 한국 정규 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.2 : OUTLAW",
+        "TREASURE EP.FIN : All To Action",
+        "THE WORLD EP.FIN : WILL",
+        "GOLDEN HOUR : Part.1"
+      ],
+      "answerIndex": 2,
+      "answerText": "THE WORLD EP.FIN : WILL",
+      "explanation": "《THE WORLD EP.FIN : WILL》은 ATEEZ의 두 번째 한국 정규 음반입니다.",
+      "sourceIds": [
+        "SRC_WILL",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 정규 2집"
+      ]
+    },
+    {
+      "id": "M08",
+      "difficulty": "medium",
+      "category": "기록",
+      "question": "ATEEZ에게 처음으로 미국 Billboard 200 1위를 안겨 준 음반은 무엇일까요?",
+      "options": [
+        "THE WORLD EP.FIN : WILL",
+        "THE WORLD EP.1 : MOVEMENT",
+        "THE WORLD EP.2 : OUTLAW",
+        "GOLDEN HOUR : Part.1"
+      ],
+      "answerIndex": 0,
+      "answerText": "THE WORLD EP.FIN : WILL",
+      "explanation": "《THE WORLD EP.FIN : WILL》은 ATEEZ의 첫 Billboard 200 1위 음반입니다.",
+      "sourceIds": [
+        "SRC_WILL",
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ Billboard 200"
+      ]
+    },
+    {
+      "id": "M09",
+      "difficulty": "medium",
+      "category": "기록",
+      "question": "ATEEZ는 2024년 어떤 기록으로 Coachella 무대에 올랐을까요?",
+      "options": [
+        "Coachella 헤드라이너가 된 최초의 K-pop 그룹",
+        "Coachella에서 데뷔한 최초의 K-pop 그룹",
+        "Coachella에 출연한 최초의 K-pop 보이그룹",
+        "Coachella에 출연한 최초의 한국 솔로 가수"
+      ],
+      "answerIndex": 2,
+      "answerText": "Coachella에 출연한 최초의 K-pop 보이그룹",
+      "explanation": "ATEEZ는 2024년 Coachella에 출연한 최초의 K-pop 보이그룹으로 소개됐습니다.",
+      "sourceIds": [
+        "SRC_COACHELLA"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ Coachella"
+      ]
+    },
+    {
+      "id": "M10",
+      "difficulty": "medium",
+      "category": "전시",
+      "question": "2024년 GRAMMY Museum의 첫 K-pop 팝업 전시에 ATEEZ와 함께 소개된 그룹은 누구일까요?",
+      "options": [
+        "xikers",
+        "CRAVITY",
+        "THE BOYZ",
+        "P1Harmony"
+      ],
+      "answerIndex": 0,
+      "answerText": "xikers",
+      "explanation": "GRAMMY Museum의 K-pop 팝업 전시는 ATEEZ와 같은 KQ 소속 그룹 xikers를 함께 조명했습니다.",
+      "sourceIds": [
+        "SRC_GRAMMY_MUSEUM"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ GRAMMY Museum",
+        "xikers"
+      ]
+    },
+    {
+      "id": "M11",
+      "difficulty": "medium",
+      "category": "방송",
+      "question": "ATEEZ가 2021년에 출연한 Mnet 보이그룹 경연 프로그램은 무엇일까요?",
+      "options": [
+        "Queendom 2",
+        "Kingdom: Legendary War",
+        "Road to Kingdom",
+        "Boys Planet"
+      ],
+      "answerIndex": 1,
+      "answerText": "Kingdom: Legendary War",
+      "explanation": "ATEEZ는 2021년 Mnet 《Kingdom: Legendary War》에 출연했습니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_OVERVIEW",
+        "SRC_FEVER_EPILOGUE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ Kingdom"
+      ]
+    },
+    {
+      "id": "M12",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "question": "다음 중 《GOLDEN HOUR : Part.1》 수록곡은 무엇일까요?",
+      "options": [
+        "Man on Fire",
+        "NASA",
+        "Masterpiece",
+        "Blind"
+      ],
+      "answerIndex": 3,
+      "answerText": "Blind",
+      "explanation": "‘Blind’는 《GOLDEN HOUR : Part.1》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_GH1_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Blind",
+        "ATEEZ 수록곡"
+      ]
+    },
+    {
+      "id": "M13",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "question": "다음 중 《GOLDEN HOUR : Part.2》 수록곡은 무엇일까요?",
+      "options": [
+        "Masterpiece",
+        "Blind",
+        "Man on Fire",
+        "MAMACITA"
+      ],
+      "answerIndex": 2,
+      "answerText": "Man on Fire",
+      "explanation": "‘Man on Fire’는 《GOLDEN HOUR : Part.2》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_GH2_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Man on Fire"
+      ]
+    },
+    {
+      "id": "M14",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "question": "다음 중 《GOLDEN HOUR : Part.3》 수록곡은 무엇일까요?",
+      "options": [
+        "Enough",
+        "Choose",
+        "Shaboom",
+        "Masterpiece"
+      ],
+      "answerIndex": 3,
+      "answerText": "Masterpiece",
+      "explanation": "‘Masterpiece’는 《GOLDEN HOUR : Part.3》에 수록됐습니다.",
+      "sourceIds": [
+        "SRC_GH3_KQ",
+        "SRC_GH3_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "Masterpiece"
+      ]
+    },
+    {
+      "id": "M15",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "question": "다음 중 《GOLDEN HOUR : Part.4》 수록곡은 무엇일까요?",
+      "options": [
+        "NASA",
+        "TOXIN",
+        "Enough",
+        "Shaboom"
+      ],
+      "answerIndex": 0,
+      "answerText": "NASA",
+      "explanation": "‘NASA’는 《GOLDEN HOUR : Part.4》의 세 번째 트랙입니다.",
+      "sourceIds": [
+        "SRC_GH4_KQ",
+        "SRC_GH4_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "NASA"
+      ]
+    },
+    {
+      "id": "M16",
+      "difficulty": "medium",
+      "category": "수록곡",
+      "question": "다음 중 《GOLDEN HOUR : Part.5》 수록곡은 무엇일까요?",
+      "options": [
+        "MAMACITA",
+        "Shaboom",
+        "On The Road",
+        "Selfish Waltz"
+      ],
+      "answerIndex": 0,
+      "answerText": "MAMACITA",
+      "explanation": "‘MAMACITA’는 《GOLDEN HOUR : Part.5》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_GH5_KQ",
+        "SRC_GH5_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "MAMACITA"
+      ]
+    },
+    {
+      "id": "M17",
+      "difficulty": "medium",
+      "category": "투어",
+      "question": "ATEEZ의 2024~2025 월드 투어명은 무엇일까요?",
+      "options": [
+        "IN YOUR FANTASY",
+        "THE FELLOWSHIP : BEGINNING OF THE END",
+        "TOWARDS THE LIGHT : WILL TO POWER",
+        "THE FELLOWSHIP : BREAK THE WALL"
+      ],
+      "answerIndex": 2,
+      "answerText": "TOWARDS THE LIGHT : WILL TO POWER",
+      "explanation": "ATEEZ는 2024~2025년에 《TOWARDS THE LIGHT : WILL TO POWER》 월드 투어를 진행했습니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 월드투어"
+      ]
+    },
+    {
+      "id": "M18",
+      "difficulty": "medium",
+      "category": "투어",
+      "question": "ATEEZ의 2025~2026 월드 투어명은 무엇일까요?",
+      "options": [
+        "TOWARDS THE LIGHT : WILL TO POWER",
+        "THE FELLOWSHIP : MAP THE TREASURE",
+        "IN YOUR FANTASY",
+        "THE EXPEDITION TOUR"
+      ],
+      "answerIndex": 2,
+      "answerText": "IN YOUR FANTASY",
+      "explanation": "ATEEZ의 2025~2026 월드 투어명은 《IN YOUR FANTASY》입니다.",
+      "sourceIds": [
+        "SRC_ATEEZ_OVERVIEW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "ATEEZ IN YOUR FANTASY"
+      ]
+    },
+    {
+      "id": "M19",
+      "difficulty": "medium",
+      "category": "기록",
+      "question": "ATEEZ가 ‘WAVE’로 첫 음악방송 1위를 한 정확한 조합은 무엇일까요?",
+      "options": [
+        "2019년 6월 21일 · Music Bank",
+        "2019년 7월 20일 · Show! Music Core",
+        "2019년 6월 20일 · M Countdown",
+        "2019년 6월 18일 · The Show"
+      ],
+      "answerIndex": 2,
+      "answerText": "2019년 6월 20일 · M Countdown",
+      "explanation": "ATEEZ는 2019년 6월 20일 Mnet 《M Countdown》에서 ‘WAVE’로 첫 1위를 차지했습니다.",
+      "sourceIds": [
+        "SRC_FIRST_WIN"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 첫 음악방송 1위"
+      ]
+    },
+    {
+      "id": "M20",
+      "difficulty": "medium",
+      "category": "일본 활동",
+      "question": "ATEEZ의 일본 데뷔 정규 음반은 무엇일까요?",
+      "options": [
+        "Beyond : Zero",
+        "Into the A to Z",
+        "Dreamers",
+        "TREASURE EP.EXTRA : Shift The Map"
+      ],
+      "answerIndex": 3,
+      "answerText": "TREASURE EP.EXTRA : Shift The Map",
+      "explanation": "ATEEZ는 2019년 《TREASURE EP.EXTRA : Shift The Map》으로 일본 정규 음반 데뷔를 했습니다.",
+      "sourceIds": [
+        "SRC_DISCOGRAPHY",
+        "SRC_SHIFT_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 일본 데뷔"
+      ]
+    },
+    {
+      "id": "H01",
+      "difficulty": "hard",
+      "category": "연대기",
+      "question": "다음 ATEEZ 초기 음반을 발매 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "All To Zero → One To All → Zero To One → All To Action",
+        "All To Zero → Zero To One → One To All → All To Action",
+        "All To Zero → Zero To One → All To Action → One To All",
+        "Zero To One → All To Zero → One To All → All To Action"
+      ],
+      "answerIndex": 1,
+      "answerText": "All To Zero → Zero To One → One To All → All To Action",
+      "explanation": "2018년 《All To Zero》, 2019년 1월 《Zero To One》, 2019년 6월 《One To All》, 2019년 10월 《All To Action》 순입니다.",
+      "sourceIds": [
+        "SRC_EP1",
+        "SRC_EP2",
+        "SRC_EP3",
+        "SRC_ALL_TO_ACTION"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 앨범 순서"
+      ]
+    },
+    {
+      "id": "H02",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 데뷔 음반 《TREASURE EP.1 : All To Zero》에 수록되지 않은 곡은 무엇일까요?",
+      "options": [
+        "Say My Name",
+        "My Way",
+        "Twilight",
+        "Stay"
+      ],
+      "answerIndex": 0,
+      "answerText": "Say My Name",
+      "explanation": "‘Say My Name’은 다음 음반 《TREASURE EP.2 : Zero To One》의 타이틀곡입니다.",
+      "sourceIds": [
+        "SRC_EP1_SPOTIFY",
+        "SRC_EP2_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ 데뷔 앨범 수록곡"
+      ]
+    },
+    {
+      "id": "H03",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《TREASURE EP.2 : Zero To One》 수록곡은 무엇일까요?",
+      "options": [
+        "HALA HALA (Hearts Awakened, Live Alive)",
+        "Dazzling Light",
+        "Horizon",
+        "Aurora"
+      ],
+      "answerIndex": 0,
+      "answerText": "HALA HALA (Hearts Awakened, Live Alive)",
+      "explanation": "‘HALA HALA (Hearts Awakened, Live Alive)’는 《TREASURE EP.2 : Zero To One》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_EP2_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "HALA HALA"
+      ]
+    },
+    {
+      "id": "H04",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《TREASURE EP.3 : One To All》 수록곡은 무엇일까요?",
+      "options": [
+        "Precious",
+        "MIST",
+        "Aurora",
+        "Good Lil Boy"
+      ],
+      "answerIndex": 2,
+      "answerText": "Aurora",
+      "explanation": "‘Aurora’는 《TREASURE EP.3 : One To All》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_EP3_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Aurora"
+      ]
+    },
+    {
+      "id": "H05",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《TREASURE EP.FIN : All To Action》 수록곡은 무엇일까요?",
+      "options": [
+        "MIST",
+        "Take Me Home",
+        "Fever",
+        "Horizon"
+      ],
+      "answerIndex": 0,
+      "answerText": "MIST",
+      "explanation": "‘MIST’는 ATEEZ의 첫 정규 음반 《TREASURE EP.FIN : All To Action》에 수록됐습니다.",
+      "sourceIds": [
+        "SRC_ALL_TO_ACTION_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "MIST"
+      ]
+    },
+    {
+      "id": "H06",
+      "difficulty": "hard",
+      "category": "음반",
+      "question": "‘ANSWER’와 ‘Horizon’이 함께 수록된 음반은 무엇일까요?",
+      "options": [
+        "TREASURE EPILOGUE : Action To Answer",
+        "TREASURE EP.FIN : All To Action",
+        "ZERO : FEVER EPILOGUE",
+        "ZERO : FEVER Part.1"
+      ],
+      "answerIndex": 0,
+      "answerText": "TREASURE EPILOGUE : Action To Answer",
+      "explanation": "두 곡은 《TREASURE EPILOGUE : Action To Answer》에 함께 수록됐습니다.",
+      "sourceIds": [
+        "SRC_ACTION_TO_ANSWER",
+        "SRC_ACTION_TO_ANSWER_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ANSWER",
+        "Horizon"
+      ]
+    },
+    {
+      "id": "H07",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《ZERO : FEVER Part.1》 수록곡은 무엇일까요?",
+      "options": [
+        "Good Lil Boy",
+        "Take Me Home",
+        "New World",
+        "ROCKY"
+      ],
+      "answerIndex": 0,
+      "answerText": "Good Lil Boy",
+      "explanation": "‘Good Lil Boy’는 《ZERO : FEVER Part.1》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_FEVER1_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Good Lil Boy"
+      ]
+    },
+    {
+      "id": "H08",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《ZERO : FEVER Part.2》 수록곡은 무엇일까요?",
+      "options": [
+        "Feeling Like I Do",
+        "Take Me Home",
+        "Cyberpunk",
+        "The Letter"
+      ],
+      "answerIndex": 1,
+      "answerText": "Take Me Home",
+      "explanation": "‘Take Me Home’은 《ZERO : FEVER Part.2》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_FEVER2_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Take Me Home"
+      ]
+    },
+    {
+      "id": "H09",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《ZERO : FEVER Part.3》 수록곡은 무엇일까요?",
+      "options": [
+        "The King",
+        "Sector 1",
+        "ROCKY",
+        "DJANGO"
+      ],
+      "answerIndex": 2,
+      "answerText": "ROCKY",
+      "explanation": "‘ROCKY’는 《ZERO : FEVER Part.3》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_FEVER3_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ROCKY"
+      ]
+    },
+    {
+      "id": "H10",
+      "difficulty": "hard",
+      "category": "KINGDOM",
+      "question": "《ZERO : FEVER EPILOGUE》에 수록된 《Kingdom: Legendary War》 편곡 버전은 무엇일까요?",
+      "options": [
+        "INCEPTION (Answering Symphony)",
+        "ANSWER (Ode to Joy Ver.)",
+        "Guerrilla (Flag Ver.)",
+        "WONDERLAND (Symphony No.9 “From The Wonderland”)"
+      ],
+      "answerIndex": 3,
+      "answerText": "WONDERLAND (Symphony No.9 “From The Wonderland”)",
+      "explanation": "《ZERO : FEVER EPILOGUE》에는 ‘WONDERLAND (Symphony No.9 “From The Wonderland”)’가 수록됐습니다.",
+      "sourceIds": [
+        "SRC_FEVER_EPILOGUE",
+        "SRC_FEVER_EPILOGUE_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ Kingdom",
+        "WONDERLAND Symphony No.9"
+      ]
+    },
+    {
+      "id": "H11",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《THE WORLD EP.1 : MOVEMENT》 수록곡은 무엇일까요?",
+      "options": [
+        "New World",
+        "DJANGO",
+        "WE KNOW",
+        "Shaboom"
+      ],
+      "answerIndex": 0,
+      "answerText": "New World",
+      "explanation": "‘New World’는 《THE WORLD EP.1 : MOVEMENT》의 마지막 트랙입니다.",
+      "sourceIds": [
+        "SRC_MOVEMENT_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "New World"
+      ]
+    },
+    {
+      "id": "H12",
+      "difficulty": "hard",
+      "category": "수록곡",
+      "question": "다음 중 《THE WORLD EP.2 : OUTLAW》 수록곡은 무엇일까요?",
+      "options": [
+        "Silver Light",
+        "Selfish Waltz",
+        "Cyberpunk",
+        "DJANGO"
+      ],
+      "answerIndex": 3,
+      "answerText": "DJANGO",
+      "explanation": "‘DJANGO’는 《THE WORLD EP.2 : OUTLAW》 수록곡입니다.",
+      "sourceIds": [
+        "SRC_OUTLAW_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "DJANGO"
+      ]
+    },
+    {
+      "id": "H13",
+      "difficulty": "hard",
+      "category": "유닛곡",
+      "question": "《THE WORLD EP.FIN : WILL》의 유닛곡 ‘MATZ’를 부른 멤버 조합은 무엇일까요?",
+      "options": [
+        "윤호 · 민기",
+        "여상 · 산 · 우영",
+        "산 · 종호",
+        "홍중 · 성화"
+      ],
+      "answerIndex": 3,
+      "answerText": "홍중 · 성화",
+      "explanation": "‘MATZ’는 홍중과 성화의 유닛곡입니다.",
+      "sourceIds": [
+        "SRC_WILL_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "MATZ",
+        "홍중 성화"
+      ]
+    },
+    {
+      "id": "H14",
+      "difficulty": "hard",
+      "category": "유닛곡",
+      "question": "《THE WORLD EP.FIN : WILL》의 유닛곡 ‘IT's You’를 부른 멤버 조합은 무엇일까요?",
+      "options": [
+        "민기 · 종호",
+        "여상 · 산 · 우영",
+        "홍중 · 성화",
+        "윤호 · 민기"
+      ],
+      "answerIndex": 1,
+      "answerText": "여상 · 산 · 우영",
+      "explanation": "‘IT's You’는 여상, 산, 우영의 유닛곡입니다.",
+      "sourceIds": [
+        "SRC_WILL_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "IT's You",
+        "여상 산 우영"
+      ]
+    },
+    {
+      "id": "H15",
+      "difficulty": "hard",
+      "category": "유닛곡",
+      "question": "《THE WORLD EP.FIN : WILL》의 유닛곡 ‘Youth’를 부른 멤버 조합은 무엇일까요?",
+      "options": [
+        "우영 · 종호",
+        "윤호 · 민기",
+        "여상 · 산 · 우영",
+        "홍중 · 성화"
+      ],
+      "answerIndex": 1,
+      "answerText": "윤호 · 민기",
+      "explanation": "‘Youth’는 윤호와 민기의 유닛곡입니다.",
+      "sourceIds": [
+        "SRC_WILL_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Youth",
+        "윤호 민기"
+      ]
+    },
+    {
+      "id": "H16",
+      "difficulty": "hard",
+      "category": "솔로곡",
+      "question": "《THE WORLD EP.FIN : WILL》 수록곡 ‘Everything’의 솔로 주인공은 누구일까요?",
+      "options": [
+        "우영",
+        "종호",
+        "성화",
+        "산"
+      ],
+      "answerIndex": 1,
+      "answerText": "종호",
+      "explanation": "‘Everything’은 종호의 솔로곡입니다.",
+      "sourceIds": [
+        "SRC_WILL_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "Everything",
+        "종호 솔로"
+      ]
+    },
+    {
+      "id": "H17",
+      "difficulty": "hard",
+      "category": "협업",
+      "question": "ATEEZ가 BE:FIRST와 함께 발표한 협업곡은 무엇일까요?",
+      "options": [
+        "Royal",
+        "NOT OKAY",
+        "Hush-Hush",
+        "Be Mine"
+      ],
+      "answerIndex": 2,
+      "answerText": "Hush-Hush",
+      "explanation": "‘Hush-Hush’는 ATEEZ와 일본 그룹 BE:FIRST의 협업곡입니다.",
+      "sourceIds": [
+        "SRC_DISCOGRAPHY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "ATEEZ BE:FIRST",
+        "Hush-Hush"
+      ]
+    },
+    {
+      "id": "H18",
+      "difficulty": "hard",
+      "category": "피처링",
+      "question": "ATEEZ 홍중이 피처링으로 참여한 청하의 곡은 무엇일까요?",
+      "options": [
+        "Stay Tonight",
+        "Bicycle",
+        "EENIE MEENIE",
+        "Sparkling"
+      ],
+      "answerIndex": 2,
+      "answerText": "EENIE MEENIE",
+      "explanation": "홍중은 청하의 ‘EENIE MEENIE’에 피처링으로 참여했습니다.",
+      "sourceIds": [
+        "SRC_CHUNGHA"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "홍중 피처링",
+        "EENIE MEENIE"
+      ]
+    },
+    {
+      "id": "H19",
+      "difficulty": "hard",
+      "category": "솔로곡",
+      "question": "《GOLDEN HOUR : Part.3 ‘In Your Fantasy Edition’》의 특징으로 맞는 것은 무엇일까요?",
+      "options": [
+        "8명 각자의 솔로곡이 수록됐다",
+        "일본어 버전만 수록된 싱글이다",
+        "기존 수록곡 없이 유닛곡 4곡만 담겼다",
+        "멤버 전원이 작곡한 한 곡만 추가됐다"
+      ],
+      "answerIndex": 0,
+      "answerText": "8명 각자의 솔로곡이 수록됐다",
+      "explanation": "이 에디션에는 ATEEZ 여덟 멤버 각각의 솔로곡이 수록됐습니다.",
+      "sourceIds": [
+        "SRC_FANTASY_KQ",
+        "SRC_FANTASY_REPORT"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "In Your Fantasy Edition",
+        "ATEEZ 솔로곡"
+      ]
+    },
+    {
+      "id": "H20",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "question": "《GOLDEN HOUR : Part.4》의 트랙 순서를 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Adrenaline → Ghost → NASA → Choose → On The Road",
+        "Ghost → Adrenaline → On The Road → NASA → Choose",
+        "Ghost → NASA → Adrenaline → On The Road → Choose",
+        "Ghost → Adrenaline → NASA → On The Road → Choose"
+      ],
+      "answerIndex": 3,
+      "answerText": "Ghost → Adrenaline → NASA → On The Road → Choose",
+      "explanation": "공식 트랙리스트 순서는 ‘Ghost’, ‘Adrenaline’, ‘NASA’, ‘On The Road’, ‘Choose’입니다.",
+      "sourceIds": [
+        "SRC_GH4_KQ",
+        "SRC_GH4_SPOTIFY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "time_sensitive",
+      "seoTags": [
+        "GOLDEN HOUR Part.4 트랙리스트"
+      ]
+    }
+  ]
+}

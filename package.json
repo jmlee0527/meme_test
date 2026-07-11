@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "node scripts/sync-ads-txt.mjs",
     "dev": "next dev --turbopack",
-    "prebuild": "node scripts/sync-ads-txt.mjs",
+    "prebuild": "node scripts/sync-ads-txt.mjs && node scripts/validate-stray-kids-fan.mjs && node scripts/validate-manchester-united-fan.mjs && node scripts/validate-ateez-fan.mjs && node scripts/validate-rescene-fan.mjs",
     "build": "next build",
     "sync:ads": "node scripts/sync-ads-txt.mjs",
     "generate:favicon": "node scripts/generate-favicon.mjs",
@@ -13,7 +13,11 @@
     "typecheck": "tsc --noEmit",
     "validate:limyoungwoong": "node scripts/validate-limyoungwoong-fan.mjs",
     "validate:young-old": "node scripts/validate-young-old-memes.mjs",
-    "validate:seventeen": "node scripts/validate-seventeen-fan.mjs"
+    "validate:seventeen": "node scripts/validate-seventeen-fan.mjs",
+    "validate:stray-kids": "node scripts/validate-stray-kids-fan.mjs",
+    "validate:manchester-united": "node scripts/validate-manchester-united-fan.mjs",
+    "validate:ateez": "node scripts/validate-ateez-fan.mjs",
+    "validate:rescene": "node scripts/validate-rescene-fan.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

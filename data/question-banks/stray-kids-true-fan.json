@@ -1,0 +1,6401 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-11T16:45:00+09:00",
+  "verifiedThrough": "2026-07-11",
+  "language": "ko-KR",
+  "test": {
+    "title": "스트레이 키즈 찐팬 테스트",
+    "englishTitle": "Stray Kids True Fan Test",
+    "slug": "stray-kids-true-fan-test",
+    "subject": {
+      "nameKo": "스트레이 키즈",
+      "nameEn": "Stray Kids",
+      "officialFandom": "STAY"
+    },
+    "contentSummary": "JYP 공식 프로필과 공식 디스코그래피를 중심으로 구성한 4지선다형 스트레이 키즈 팬 퀴즈",
+    "questionPool": {
+      "total": 180,
+      "byDifficulty": {
+        "easy": 60,
+        "medium": 60,
+        "hard": 60
+      },
+      "choiceCount": 4
+    },
+    "runtimeTest": {
+      "questionCount": 15,
+      "difficultyDistribution": {
+        "easy": 5,
+        "medium": 6,
+        "hard": 4
+      },
+      "shuffleQuestions": true,
+      "shuffleOptions": true,
+      "selectionSeed": "session-based deterministic seed",
+      "selectionRules": [
+        "Select exactly 5 easy, 6 medium, and 4 hard questions.",
+        "Do not select duplicate question IDs or duplicate question text.",
+        "Select no more than 2 questions tied to the same album or single.",
+        "Select no more than 4 questions from the same category.",
+        "Include at least 1 member/profile question, 1 release chronology question, 1 track-list/order question, and 1 unit/feature/credit question when eligible.",
+        "Do not allow the same correct answer text to appear more than twice in one test.",
+        "After option shuffling, recalculate answerIndex from the answer string.",
+        "Cap questions based on 2025-2026 releases at 2 per test to reduce recency bias.",
+        "Never use relative wording such as latest, newest, currently most recent, or today in a question.",
+        "Never pull unreleased, rumored, leaked, private, or community-only facts into the runtime test."
+      ]
+    },
+    "scoring": {
+      "weightByDifficulty": {
+        "easy": 1,
+        "medium": 2,
+        "hard": 3
+      },
+      "maximumWeightedScore": 29,
+      "showCorrectCount": true,
+      "showWeightedScore": true,
+      "showPercent": true,
+      "formula": "weightedPercent = round(weightedScore / 29 * 100)"
+    },
+    "resultTiers": [
+      {
+        "minScore": 0,
+        "maxScore": 5,
+        "name": "입덕 준비생",
+        "headline": "스키즈의 세계가 이제 막 열렸어요",
+        "description": "대표곡과 멤버부터 천천히 알아가면 다음 도전에서는 점수가 크게 오를 수 있어요."
+      },
+      {
+        "minScore": 6,
+        "maxScore": 10,
+        "name": "스키즈 탐색대",
+        "headline": "익숙한 곡과 앨범이 하나둘 보이기 시작했어요",
+        "description": "타이틀곡은 알고 있지만 수록곡과 발매 순서에서 조금 더 탐험할 여지가 있어요."
+      },
+      {
+        "minScore": 11,
+        "maxScore": 15,
+        "name": "STAY 새싹",
+        "headline": "팬심이 확실하게 자라고 있어요",
+        "description": "주요 활동과 앨범 흐름을 잘 알고 있어요. 유닛곡과 트랙 순서까지 살펴보면 상위 단계가 가까워져요."
+      },
+      {
+        "minScore": 16,
+        "maxScore": 20,
+        "name": "본격 STAY",
+        "headline": "스키즈 이야기에 자연스럽게 답이 나와요",
+        "description": "멤버, 타이틀곡, 앨범 정보를 고르게 기억하고 있어요. 어려운 수록곡 문제에도 경쟁력이 충분해요."
+      },
+      {
+        "minScore": 21,
+        "maxScore": 24,
+        "name": "콘텐츠 정주행 STAY",
+        "headline": "앨범의 흐름과 디테일까지 놓치지 않았어요",
+        "description": "발매 순서와 유닛 구성, 수록곡 정보를 폭넓게 기억하는 높은 수준의 팬이에요."
+      },
+      {
+        "minScore": 25,
+        "maxScore": 27,
+        "name": "찐팬 STAY",
+        "headline": "정답보다 먼저 기억이 반응하는 수준이에요",
+        "description": "대부분의 고난도 문제까지 정확하게 풀어냈어요. 스트레이 키즈 디스코그래피를 깊이 이해하고 있어요."
+      },
+      {
+        "minScore": 28,
+        "maxScore": 29,
+        "name": "You Make Stray Kids Stay",
+        "headline": "거의 모든 디테일을 꿰뚫은 최상위 STAY",
+        "description": "멤버 정보부터 트랙 순서와 크레딧까지 빈틈없이 기억하는 진정한 스트레이 키즈 찐팬이에요."
+      }
+    ],
+    "seo": {
+      "primaryKeyword": "스트레이 키즈 찐팬 테스트",
+      "secondaryKeywords": [
+        "스트레이 키즈 테스트",
+        "스트레이 키즈 퀴즈",
+        "스키즈 찐팬 테스트",
+        "스키즈 퀴즈",
+        "STAY 테스트",
+        "스트레이 키즈 멤버",
+        "스트레이 키즈 노래",
+        "스트레이 키즈 앨범",
+        "Stray Kids quiz",
+        "Stray Kids true fan test"
+      ],
+      "metaTitle": "스트레이 키즈 찐팬 테스트 | 나는 몇 점짜리 STAY?",
+      "metaDescription": "스트레이 키즈 멤버, 앨범, 타이틀곡, 수록곡, 유닛과 발매 순서를 묻는 15문항 찐팬 테스트. 매번 달라지는 문제로 나의 STAY 팬심을 확인해 보세요.",
+      "h1": "스트레이 키즈 찐팬 테스트",
+      "introCopy": "스트레이 키즈 멤버와 앨범, 타이틀곡, 수록곡과 유닛 활동을 얼마나 잘 알고 있나요? 난이도별로 무작위 구성되는 15문항을 풀고 나의 STAY 팬심을 확인해 보세요.",
+      "recommendedStructuredData": [
+        "WebPage",
+        "BreadcrumbList",
+        "Quiz"
+      ],
+      "keywordPolicy": "Use keywords naturally in title, intro, result copy, headings, and internal links. Do not keyword-stuff question text or explanations."
+    },
+    "qualityPolicy": {
+      "primarySourcesFirst": true,
+      "allowedSources": [
+        "JYP Entertainment official Stray Kids profile",
+        "JYP Entertainment official Stray Kids discography"
+      ],
+      "excludedTopics": [
+        "rumors",
+        "speculation",
+        "dating or private life",
+        "health claims",
+        "unconfirmed member relationships",
+        "controversies",
+        "leaks",
+        "community-only trivia",
+        "long lyric quotations",
+        "unreleased material"
+      ],
+      "maintenance": [
+        "Freeze this pool to facts verified through 2026-07-11.",
+        "Do not silently update facts from search snippets or fan wikis.",
+        "For future additions, require an official primary-source URL and a new verification date.",
+        "Retire any question whose official source becomes unavailable or materially changes."
+      ]
+    }
+  },
+  "implementationPlan": [
+    {
+      "phase": 1,
+      "name": "Repository and data integration",
+      "tasks": [
+        "Inspect the existing Mimi Test data model, routing, components, analytics, and result-page conventions.",
+        "Import this JSON as the single source of truth without rewriting question facts.",
+        "Add schema validation and fail the build when the pool is malformed."
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Quiz engine",
+      "tasks": [
+        "Implement deterministic session-based selection of 5 easy, 6 medium, and 4 hard questions.",
+        "Apply album, category, recency, and duplicate-answer caps.",
+        "Shuffle choices safely and recalculate answerIndex."
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "User experience",
+      "tasks": [
+        "Build mobile-first question, progress, answer, explanation, result, retry, and new-question-set flows.",
+        "Preserve existing Mimi Test visual language and accessibility patterns.",
+        "Provide share, copy-link, and restart controls without exposing answer data before submission."
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "SEO and indexability",
+      "tasks": [
+        "Add metadata, canonical URL, Open Graph, Twitter card, structured data, and indexable introduction/result copy.",
+        "Use the supplied keywords naturally and avoid keyword stuffing.",
+        "Add relevant internal links while keeping the quiz experience uncluttered."
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Verification and release",
+      "tasks": [
+        "Run schema, unit, integration, lint, type-check, and production-build checks.",
+        "Verify all 180 questions, 60 per difficulty, 4 unique choices, and answerIndex consistency.",
+        "Test repeated generation to confirm every test has exactly 15 questions with a 5/6/4 difficulty split."
+      ]
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "id": "SRC-PROFILE",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "Stray Kids Official Profile",
+      "url": "https://straykids.jype.com/Default/Profile",
+      "covers": [
+        "current member roster",
+        "official member birthdays"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-01",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "Mixtape",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=152",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-02",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "I am NOT",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-03",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "I am WHO",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=150",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-04",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "I am YOU",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-05",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "Clé 1 : MIROH",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-06",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "Clé 2 : Yellow Wood",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-07",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "Clé : LEVANTER",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-08",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "GO生",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-09",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "IN生",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-10",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "NOEASY",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-11",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "Christmas EveL",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-12",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "ODDINARY",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-13",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "MAXIDENT",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-14",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "★★★★★ (5-STAR)",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-15",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "樂-STAR",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-16",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "ATE",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-17",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "合 (HOP)",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-18",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "KARMA",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=108",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-19",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "별, 빛 (STAY)",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=267",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    },
+    {
+      "id": "SRC-DISCOG-20",
+      "publisher": "JYP Entertainment / Stray Kids Official",
+      "title": "back to life",
+      "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=275",
+      "covers": [
+        "official release date",
+        "official release type",
+        "official title track",
+        "official track list",
+        "official album description and credits where stated"
+      ],
+      "verifiedAt": "2026-07-11"
+    }
+  ],
+  "questions": [
+    {
+      "id": "SKZ-001",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 방찬의 공식 생일은 언제일까요?",
+      "options": [
+        "9월 15일",
+        "9월 14일",
+        "9월 22일",
+        "10월 3일"
+      ],
+      "answerIndex": 3,
+      "answer": "10월 3일",
+      "explanation": "JYP 공식 프로필에 따르면 방찬의 생일은 1997.10.03입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "방찬",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-002",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 리노의 공식 생일은 언제일까요?",
+      "options": [
+        "10월 25일",
+        "9월 22일",
+        "8월 11일",
+        "9월 15일"
+      ],
+      "answerIndex": 0,
+      "answer": "10월 25일",
+      "explanation": "JYP 공식 프로필에 따르면 리노의 생일은 1998.10.25입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "리노",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-003",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 창빈의 공식 생일은 언제일까요?",
+      "options": [
+        "10월 25일",
+        "10월 3일",
+        "9월 22일",
+        "8월 11일"
+      ],
+      "answerIndex": 3,
+      "answer": "8월 11일",
+      "explanation": "JYP 공식 프로필에 따르면 창빈의 생일은 1999.08.11입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "창빈",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-004",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 현진의 공식 생일은 언제일까요?",
+      "options": [
+        "9월 15일",
+        "2월 8일",
+        "9월 22일",
+        "3월 20일"
+      ],
+      "answerIndex": 3,
+      "answer": "3월 20일",
+      "explanation": "JYP 공식 프로필에 따르면 현진의 생일은 2000.03.20입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "현진",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-005",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 한의 공식 생일은 언제일까요?",
+      "options": [
+        "9월 15일",
+        "10월 3일",
+        "2월 8일",
+        "9월 14일"
+      ],
+      "answerIndex": 3,
+      "answer": "9월 14일",
+      "explanation": "JYP 공식 프로필에 따르면 한의 생일은 2000.09.14입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "한",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-006",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 필릭스의 공식 생일은 언제일까요?",
+      "options": [
+        "2월 8일",
+        "9월 22일",
+        "10월 3일",
+        "9월 15일"
+      ],
+      "answerIndex": 3,
+      "answer": "9월 15일",
+      "explanation": "JYP 공식 프로필에 따르면 필릭스의 생일은 2000.09.15입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "필릭스",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-007",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 승민의 공식 생일은 언제일까요?",
+      "options": [
+        "9월 22일",
+        "2월 8일",
+        "10월 3일",
+        "9월 15일"
+      ],
+      "answerIndex": 0,
+      "answer": "9월 22일",
+      "explanation": "JYP 공식 프로필에 따르면 승민의 생일은 2000.09.22입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "승민",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-008",
+      "difficulty": "easy",
+      "category": "멤버 공식 프로필",
+      "type": "single_choice",
+      "question": "스트레이 키즈 아이엔의 공식 생일은 언제일까요?",
+      "options": [
+        "2월 8일",
+        "9월 15일",
+        "8월 11일",
+        "10월 25일"
+      ],
+      "answerIndex": 0,
+      "answer": "2월 8일",
+      "explanation": "JYP 공식 프로필에 따르면 아이엔의 생일은 2001.02.08입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 멤버",
+        "아이엔",
+        "생일"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-009",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "현재 JYP 공식 프로필에 등재된 스트레이 키즈 멤버 수는?",
+      "options": [
+        "6명",
+        "9명",
+        "7명",
+        "8명"
+      ],
+      "answerIndex": 3,
+      "answer": "8명",
+      "explanation": "공식 프로필에는 방찬, 리노, 창빈, 현진, 한, 필릭스, 승민, 아이엔의 8명이 등재되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-010",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "다음 중 스트레이 키즈의 현재 공식 멤버가 아닌 사람은?",
+      "options": [
+        "아이엔",
+        "방찬",
+        "승민",
+        "준호"
+      ],
+      "answerIndex": 3,
+      "answer": "준호",
+      "explanation": "JYP 공식 프로필에는 방찬, 리노, 창빈, 현진, 한, 필릭스, 승민, 아이엔 8명이 등재되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/Profile",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-011",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "스트레이 키즈의 공식 팬덤명은?",
+      "options": [
+        "SKZOO",
+        "STEP",
+        "UNVEIL",
+        "STAY"
+      ],
+      "answerIndex": 3,
+      "answer": "STAY",
+      "explanation": "JYP 공식 자료는 팬덤명을 STAY로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=267",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-012",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "스트레이 키즈의 팀 내 프로듀싱 팀 이름은?",
+      "options": [
+        "3RACHA",
+        "DANCERACHA",
+        "SKZ-PLAYER",
+        "VOCALRACHA"
+      ],
+      "answerIndex": 0,
+      "answer": "3RACHA",
+      "explanation": "공식 앨범 소개는 방찬, 창빈, 한으로 구성된 프로듀싱 팀을 3RACHA라고 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-013",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "3RACHA를 구성하는 멤버 조합은?",
+      "options": [
+        "리노·현진·필릭스",
+        "승민·아이엔·한",
+        "방찬·리노·승민",
+        "방찬·창빈·한"
+      ],
+      "answerIndex": 3,
+      "answer": "방찬·창빈·한",
+      "explanation": "3RACHA는 방찬, 창빈, 한으로 구성됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-014",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "스트레이 키즈가 정식 데뷔한 해는?",
+      "options": [
+        "2018년",
+        "2019년",
+        "2017년",
+        "2016년"
+      ],
+      "answerIndex": 0,
+      "answer": "2018년",
+      "explanation": "공식 자료에서 2018년 3월을 정식 데뷔 시점으로 확인할 수 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-015",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "정식 데뷔 앨범은?",
+      "options": [
+        "Clé 1 : MIROH",
+        "I am NOT",
+        "Mixtape",
+        "I am WHO"
+      ],
+      "answerIndex": 1,
+      "answer": "I am NOT",
+      "explanation": "I am NOT은 2018년 3월 발표된 정식 데뷔 미니 앨범입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-016",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "프리 데뷔 앨범은?",
+      "options": [
+        "Mixtape",
+        "I am NOT",
+        "GO生",
+        "I am YOU"
+      ],
+      "answerIndex": 0,
+      "answer": "Mixtape",
+      "explanation": "Mixtape는 정식 데뷔 전에 발표된 프리 데뷔 앨범입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=152",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-017",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "데뷔곡으로 공식 소개되는 곡은?",
+      "options": [
+        "District 9",
+        "MIROH",
+        "Hellevator",
+        "My Pace"
+      ],
+      "answerIndex": 0,
+      "answer": "District 9",
+      "explanation": "JYP 공식 자료는 I am NOT의 타이틀곡 District 9을 데뷔곡으로 소개합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-018",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "스트레이 키즈의 첫 정규 앨범은?",
+      "options": [
+        "GO生",
+        "IN生",
+        "★★★★★ (5-STAR)",
+        "NOEASY"
+      ],
+      "answerIndex": 0,
+      "answer": "GO生",
+      "explanation": "GO生은 공식 소개에서 첫 정규 앨범으로 명시됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-019",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "스트레이 키즈의 정규 2집은?",
+      "options": [
+        "IN生",
+        "NOEASY",
+        "MAXIDENT",
+        "ODDINARY"
+      ],
+      "answerIndex": 1,
+      "answer": "NOEASY",
+      "explanation": "NOEASY는 2021년 발표된 정규 2집입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-020",
+      "difficulty": "easy",
+      "category": "그룹 기본 정보",
+      "type": "single_choice",
+      "question": "스트레이 키즈의 정규 3집은?",
+      "options": [
+        "★★★★★ (5-STAR)",
+        "ATE",
+        "合 (HOP)",
+        "樂-STAR"
+      ],
+      "answerIndex": 0,
+      "answer": "★★★★★ (5-STAR)",
+      "explanation": "★★★★★ (5-STAR)는 2023년 발표된 정규 3집입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-021",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'I am NOT'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "소리꾼 (Thunderous)",
+        "District 9",
+        "Hellevator",
+        "MIROH"
+      ],
+      "answerIndex": 1,
+      "answer": "District 9",
+      "explanation": "JYP 공식 디스코그래피에서 'I am NOT'의 타이틀곡은 'District 9'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "I am NOT",
+        "District 9"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-022",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'I am WHO'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "락 (樂)",
+        "부작용",
+        "My Pace",
+        "별, 빛 (STAY)"
+      ],
+      "answerIndex": 2,
+      "answer": "My Pace",
+      "explanation": "JYP 공식 디스코그래피에서 'I am WHO'의 타이틀곡은 'My Pace'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=150",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "I am WHO",
+        "My Pace"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-023",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'I am YOU'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "별, 빛 (STAY)",
+        "I am YOU",
+        "소리꾼 (Thunderous)",
+        "Chk Chk Boom"
+      ],
+      "answerIndex": 1,
+      "answer": "I am YOU",
+      "explanation": "JYP 공식 디스코그래피에서 'I am YOU'의 타이틀곡은 'I am YOU'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "I am YOU",
+        "I am YOU"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-024",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'Clé 1 : MIROH'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "MIROH",
+        "back to life",
+        "소리꾼 (Thunderous)",
+        "Christmas EveL / Winter Falls"
+      ],
+      "answerIndex": 0,
+      "answer": "MIROH",
+      "explanation": "JYP 공식 디스코그래피에서 'Clé 1 : MIROH'의 타이틀곡은 'MIROH'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "Clé 1 : MIROH",
+        "MIROH"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-025",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'Clé 2 : Yellow Wood'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "별, 빛 (STAY)",
+        "District 9",
+        "부작용",
+        "My Pace"
+      ],
+      "answerIndex": 2,
+      "answer": "부작용",
+      "explanation": "JYP 공식 디스코그래피에서 'Clé 2 : Yellow Wood'의 타이틀곡은 '부작용'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "Clé 2 : Yellow Wood",
+        "부작용"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-026",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'Clé : LEVANTER'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "神메뉴",
+        "CASE 143",
+        "특",
+        "바람 (Levanter)"
+      ],
+      "answerIndex": 3,
+      "answer": "바람 (Levanter)",
+      "explanation": "JYP 공식 디스코그래피에서 'Clé : LEVANTER'의 타이틀곡은 '바람 (Levanter)'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "Clé : LEVANTER",
+        "바람 (Levanter)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-027",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'GO生'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "락 (樂)",
+        "back to life",
+        "특",
+        "神메뉴"
+      ],
+      "answerIndex": 3,
+      "answer": "神메뉴",
+      "explanation": "JYP 공식 디스코그래피에서 'GO生'의 타이틀곡은 '神메뉴'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "GO生",
+        "神메뉴"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-028",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'IN生'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "MANIAC",
+        "별, 빛 (STAY)",
+        "Back Door",
+        "특"
+      ],
+      "answerIndex": 2,
+      "answer": "Back Door",
+      "explanation": "JYP 공식 디스코그래피에서 'IN生'의 타이틀곡은 'Back Door'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "IN生",
+        "Back Door"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-029",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'NOEASY'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "소리꾼 (Thunderous)",
+        "神메뉴",
+        "부작용",
+        "CASE 143"
+      ],
+      "answerIndex": 0,
+      "answer": "소리꾼 (Thunderous)",
+      "explanation": "JYP 공식 디스코그래피에서 'NOEASY'의 타이틀곡은 '소리꾼 (Thunderous)'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "NOEASY",
+        "소리꾼 (Thunderous)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-030",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "작품 'Christmas EveL'의 공식 타이틀곡으로 맞는 것은?",
+      "options": [
+        "락 (樂)",
+        "Walkin On Water",
+        "Christmas EveL / Winter Falls",
+        "MANIAC"
+      ],
+      "answerIndex": 2,
+      "answer": "Christmas EveL / Winter Falls",
+      "explanation": "JYP 공식 디스코그래피에서 'Christmas EveL'의 타이틀곡은 'Christmas EveL / Winter Falls'로 확인됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 노래",
+        "Christmas EveL",
+        "Christmas EveL / Winter Falls"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-031",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'MANIAC'를 수록한 작품은?",
+      "options": [
+        "I am NOT",
+        "ODDINARY",
+        "KARMA",
+        "GO生"
+      ],
+      "answerIndex": 1,
+      "answer": "ODDINARY",
+      "explanation": "'MANIAC'은 'ODDINARY'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "MANIAC",
+        "ODDINARY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-032",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'CASE 143'를 수록한 작품은?",
+      "options": [
+        "MAXIDENT",
+        "별, 빛 (STAY)",
+        "Christmas EveL",
+        "I am NOT"
+      ],
+      "answerIndex": 0,
+      "answer": "MAXIDENT",
+      "explanation": "'CASE 143'은 'MAXIDENT'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "CASE 143",
+        "MAXIDENT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-033",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 '특'를 수록한 작품은?",
+      "options": [
+        "I am WHO",
+        "★★★★★ (5-STAR)",
+        "Clé 1 : MIROH",
+        "I am NOT"
+      ],
+      "answerIndex": 1,
+      "answer": "★★★★★ (5-STAR)",
+      "explanation": "'특'은 '★★★★★ (5-STAR)'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "특",
+        "★★★★★ (5-STAR)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-034",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 '락 (樂)'를 수록한 작품은?",
+      "options": [
+        "back to life",
+        "I am WHO",
+        "KARMA",
+        "樂-STAR"
+      ],
+      "answerIndex": 3,
+      "answer": "樂-STAR",
+      "explanation": "'락 (樂)'은 '樂-STAR'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "락 (樂)",
+        "樂-STAR"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-035",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'Chk Chk Boom'를 수록한 작품은?",
+      "options": [
+        "Clé 1 : MIROH",
+        "ATE",
+        "I am WHO",
+        "樂-STAR"
+      ],
+      "answerIndex": 1,
+      "answer": "ATE",
+      "explanation": "'Chk Chk Boom'은 'ATE'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "Chk Chk Boom",
+        "ATE"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-036",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'Walkin On Water'를 수록한 작품은?",
+      "options": [
+        "樂-STAR",
+        "合 (HOP)",
+        "ATE",
+        "Clé : LEVANTER"
+      ],
+      "answerIndex": 1,
+      "answer": "合 (HOP)",
+      "explanation": "'Walkin On Water'은 '合 (HOP)'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "Walkin On Water",
+        "合 (HOP)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-037",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'CEREMONY'를 수록한 작품은?",
+      "options": [
+        "back to life",
+        "KARMA",
+        "Mixtape",
+        "Clé : LEVANTER"
+      ],
+      "answerIndex": 1,
+      "answer": "KARMA",
+      "explanation": "'CEREMONY'은 'KARMA'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=108",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "CEREMONY",
+        "KARMA"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-038",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 '별, 빛 (STAY)'를 수록한 작품은?",
+      "options": [
+        "별, 빛 (STAY)",
+        "ODDINARY",
+        "IN生",
+        "合 (HOP)"
+      ],
+      "answerIndex": 0,
+      "answer": "별, 빛 (STAY)",
+      "explanation": "'별, 빛 (STAY)'은 '별, 빛 (STAY)'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=267",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "별, 빛 (STAY)",
+        "별, 빛 (STAY)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-039",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'Hellevator'를 수록한 작품은?",
+      "options": [
+        "Clé 2 : Yellow Wood",
+        "KARMA",
+        "★★★★★ (5-STAR)",
+        "Mixtape"
+      ],
+      "answerIndex": 3,
+      "answer": "Mixtape",
+      "explanation": "'Hellevator'은 'Mixtape'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=152",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "Hellevator",
+        "Mixtape"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-040",
+      "difficulty": "easy",
+      "category": "타이틀곡·앨범",
+      "type": "single_choice",
+      "question": "공식 타이틀곡 'back to life'를 수록한 작품은?",
+      "options": [
+        "GO生",
+        "IN生",
+        "back to life",
+        "Clé 2 : Yellow Wood"
+      ],
+      "answerIndex": 2,
+      "answer": "back to life",
+      "explanation": "'back to life'은 'back to life'의 타이틀곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=275",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "back to life",
+        "back to life"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-041",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'I am NOT'의 공식 발매 연도는?",
+      "options": [
+        "2020년",
+        "2019년",
+        "2013년",
+        "2018년"
+      ],
+      "answerIndex": 3,
+      "answer": "2018년",
+      "explanation": "'I am NOT'의 공식 발매일은 2018-03-26입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "I am NOT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-042",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'Clé 1 : MIROH'의 공식 발매 연도는?",
+      "options": [
+        "2018년",
+        "2021년",
+        "2019년",
+        "2020년"
+      ],
+      "answerIndex": 2,
+      "answer": "2019년",
+      "explanation": "'Clé 1 : MIROH'의 공식 발매일은 2019-03-25입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "Clé 1 : MIROH"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-043",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'GO生'의 공식 발매 연도는?",
+      "options": [
+        "2022년",
+        "2018년",
+        "2020년",
+        "2019년"
+      ],
+      "answerIndex": 2,
+      "answer": "2020년",
+      "explanation": "'GO生'의 공식 발매일은 2020-06-17입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "GO生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-044",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'NOEASY'의 공식 발매 연도는?",
+      "options": [
+        "2023년",
+        "2021년",
+        "2020년",
+        "2019년"
+      ],
+      "answerIndex": 1,
+      "answer": "2021년",
+      "explanation": "'NOEASY'의 공식 발매일은 2021-08-23입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "NOEASY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-045",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'ODDINARY'의 공식 발매 연도는?",
+      "options": [
+        "2024년",
+        "2022년",
+        "2023년",
+        "2021년"
+      ],
+      "answerIndex": 1,
+      "answer": "2022년",
+      "explanation": "'ODDINARY'의 공식 발매일은 2022-03-18입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "ODDINARY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-046",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'MAXIDENT'의 공식 발매 연도는?",
+      "options": [
+        "2023년",
+        "2024년",
+        "2021년",
+        "2022년"
+      ],
+      "answerIndex": 3,
+      "answer": "2022년",
+      "explanation": "'MAXIDENT'의 공식 발매일은 2022-10-07입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "MAXIDENT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-047",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 '★★★★★ (5-STAR)'의 공식 발매 연도는?",
+      "options": [
+        "2022년",
+        "2025년",
+        "2024년",
+        "2023년"
+      ],
+      "answerIndex": 3,
+      "answer": "2023년",
+      "explanation": "'★★★★★ (5-STAR)'의 공식 발매일은 2023-06-02입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "★★★★★ (5-STAR)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-048",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'ATE'의 공식 발매 연도는?",
+      "options": [
+        "2022년",
+        "2026년",
+        "2024년",
+        "2023년"
+      ],
+      "answerIndex": 2,
+      "answer": "2024년",
+      "explanation": "'ATE'의 공식 발매일은 2024-07-19입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "ATE"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-049",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 '合 (HOP)'의 공식 발매 연도는?",
+      "options": [
+        "2022년",
+        "2023년",
+        "2024년",
+        "2025년"
+      ],
+      "answerIndex": 2,
+      "answer": "2024년",
+      "explanation": "'合 (HOP)'의 공식 발매일은 2024-12-13입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "合 (HOP)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-050",
+      "difficulty": "easy",
+      "category": "발매 연도",
+      "type": "single_choice",
+      "question": "작품 'KARMA'의 공식 발매 연도는?",
+      "options": [
+        "2026년",
+        "2025년",
+        "2023년",
+        "2024년"
+      ],
+      "answerIndex": 1,
+      "answer": "2025년",
+      "explanation": "'KARMA'의 공식 발매일은 2025-08-22입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=108",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매일",
+        "KARMA"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-051",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Get Cool'를 수록한 앨범은?",
+      "options": [
+        "MAXIDENT",
+        "I am NOT",
+        "I am YOU",
+        "GO生"
+      ],
+      "answerIndex": 2,
+      "answer": "I am YOU",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Get Cool'은 'I am YOU'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Get Cool",
+        "I am YOU"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-052",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Boxer'를 수록한 앨범은?",
+      "options": [
+        "Clé 2 : Yellow Wood",
+        "Clé 1 : MIROH",
+        "I am WHO",
+        "I am NOT"
+      ],
+      "answerIndex": 1,
+      "answer": "Clé 1 : MIROH",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Boxer'은 'Clé 1 : MIROH'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Boxer",
+        "Clé 1 : MIROH"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-053",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Astronaut'를 수록한 앨범은?",
+      "options": [
+        "★★★★★ (5-STAR)",
+        "Clé : LEVANTER",
+        "ODDINARY",
+        "KARMA"
+      ],
+      "answerIndex": 1,
+      "answer": "Clé : LEVANTER",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Astronaut'은 'Clé : LEVANTER'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Astronaut",
+        "Clé : LEVANTER"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-054",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Easy'를 수록한 앨범은?",
+      "options": [
+        "ODDINARY",
+        "Mixtape",
+        "GO生",
+        "KARMA"
+      ],
+      "answerIndex": 2,
+      "answer": "GO生",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Easy'은 'GO生'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Easy",
+        "GO生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-055",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Silent Cry'를 수록한 앨범은?",
+      "options": [
+        "ATE",
+        "KARMA",
+        "Clé 2 : Yellow Wood",
+        "NOEASY"
+      ],
+      "answerIndex": 3,
+      "answer": "NOEASY",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Silent Cry'은 'NOEASY'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Silent Cry",
+        "NOEASY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-056",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Charmer'를 수록한 앨범은?",
+      "options": [
+        "I am NOT",
+        "KARMA",
+        "ODDINARY",
+        "Mixtape"
+      ],
+      "answerIndex": 2,
+      "answer": "ODDINARY",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Charmer'은 'ODDINARY'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Charmer",
+        "ODDINARY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-057",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'SUPER BOARD'를 수록한 앨범은?",
+      "options": [
+        "MAXIDENT",
+        "GO生",
+        "I am YOU",
+        "Clé 2 : Yellow Wood"
+      ],
+      "answerIndex": 0,
+      "answer": "MAXIDENT",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'SUPER BOARD'은 'MAXIDENT'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "SUPER BOARD",
+        "MAXIDENT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-058",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'Youtiful'를 수록한 앨범은?",
+      "options": [
+        "I am WHO",
+        "★★★★★ (5-STAR)",
+        "Christmas EveL",
+        "ATE"
+      ],
+      "answerIndex": 1,
+      "answer": "★★★★★ (5-STAR)",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'Youtiful'은 '★★★★★ (5-STAR)'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "Youtiful",
+        "★★★★★ (5-STAR)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-059",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'COMFLEX'를 수록한 앨범은?",
+      "options": [
+        "GO生",
+        "Christmas EveL",
+        "Clé : LEVANTER",
+        "樂-STAR"
+      ],
+      "answerIndex": 3,
+      "answer": "樂-STAR",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'COMFLEX'은 '樂-STAR'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "COMFLEX",
+        "樂-STAR"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-060",
+      "difficulty": "easy",
+      "category": "수록곡·앨범",
+      "type": "single_choice",
+      "question": "곡 'JJAM'를 수록한 앨범은?",
+      "options": [
+        "ATE",
+        "Clé 2 : Yellow Wood",
+        "Clé : LEVANTER",
+        "合 (HOP)"
+      ],
+      "answerIndex": 0,
+      "answer": "ATE",
+      "explanation": "JYP 공식 트랙리스트에 따르면 'JJAM'은 'ATE'에 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 수록곡",
+        "JJAM",
+        "ATE"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-061",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'I am NOT'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "NOT!",
+        "ROCK (돌)",
+        "MIROH",
+        "3rd Eye"
+      ],
+      "answerIndex": 2,
+      "answer": "MIROH",
+      "explanation": "'MIROH'은 'Clé 1 : MIROH' 관련 곡이며, 'I am NOT'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "I am NOT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-062",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'I am WHO'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "WHO?",
+        "불면증",
+        "갑자기 분위기 싸해질 필요 없잖아요",
+        "MIROH"
+      ],
+      "answerIndex": 3,
+      "answer": "MIROH",
+      "explanation": "'MIROH'은 'Clé 1 : MIROH' 관련 곡이며, 'I am WHO'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=150",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "I am WHO"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-063",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'I am YOU'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Get Cool",
+        "해장국",
+        "편",
+        "Chk Chk Boom"
+      ],
+      "answerIndex": 3,
+      "answer": "Chk Chk Boom",
+      "explanation": "'Chk Chk Boom'은 'ATE' 관련 곡이며, 'I am YOU'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "I am YOU"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-064",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'Clé 1 : MIROH'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "MIROH",
+        "Entrance",
+        "神메뉴",
+        "Boxer"
+      ],
+      "answerIndex": 2,
+      "answer": "神메뉴",
+      "explanation": "'神메뉴'은 'GO生' 관련 곡이며, 'Clé 1 : MIROH'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Clé 1 : MIROH"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-065",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'Clé 2 : Yellow Wood'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "별생각",
+        "락 (樂)",
+        "Mixtape#4",
+        "Mixtape#1"
+      ],
+      "answerIndex": 1,
+      "answer": "락 (樂)",
+      "explanation": "'락 (樂)'은 '樂-STAR' 관련 곡이며, 'Clé 2 : Yellow Wood'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Clé 2 : Yellow Wood"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-066",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'Clé : LEVANTER'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Astronaut",
+        "You Can STAY",
+        "CASE 143",
+        "STOP"
+      ],
+      "answerIndex": 2,
+      "answer": "CASE 143",
+      "explanation": "'CASE 143'은 'MAXIDENT' 관련 곡이며, 'Clé : LEVANTER'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Clé : LEVANTER"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-067",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'GO生'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "神메뉴",
+        "GO生",
+        "DOMINO",
+        "Phobia"
+      ],
+      "answerIndex": 2,
+      "answer": "DOMINO",
+      "explanation": "'DOMINO'은 'NOEASY' 관련 곡이며, 'GO生'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "GO生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-068",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'IN生'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Easy",
+        "비행기",
+        "Haven",
+        "락 (樂)"
+      ],
+      "answerIndex": 3,
+      "answer": "락 (樂)",
+      "explanation": "'락 (樂)'은 '樂-STAR' 관련 곡이며, 'IN生'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "IN生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-069",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'NOEASY'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Haven",
+        "씩 (SSICK)",
+        "The View",
+        "말할 수 없는 비밀"
+      ],
+      "answerIndex": 0,
+      "answer": "Haven",
+      "explanation": "'Haven'은 'GO生' 관련 곡이며, 'NOEASY'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "NOEASY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-070",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'Christmas EveL'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Christmas EveL",
+        "DOMINO (English Ver.)",
+        "Winter Falls",
+        "특"
+      ],
+      "answerIndex": 3,
+      "answer": "특",
+      "explanation": "'특'은 '★★★★★ (5-STAR)' 관련 곡이며, 'Christmas EveL'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Christmas EveL"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-071",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'ODDINARY'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Muddy Water",
+        "피어난다",
+        "Chk Chk Boom",
+        "땡"
+      ],
+      "answerIndex": 2,
+      "answer": "Chk Chk Boom",
+      "explanation": "'Chk Chk Boom'은 'ATE' 관련 곡이며, 'ODDINARY'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "ODDINARY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-072",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'MAXIDENT'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "District 9",
+        "식혀",
+        "SUPER BOARD",
+        "TASTE"
+      ],
+      "answerIndex": 0,
+      "answer": "District 9",
+      "explanation": "'District 9'은 'I am NOT' 관련 곡이며, 'MAXIDENT'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "MAXIDENT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-073",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 '★★★★★ (5-STAR)'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "MIROH",
+        "THE SOUND (Korean Ver.)",
+        "특",
+        "충돌"
+      ],
+      "answerIndex": 0,
+      "answer": "MIROH",
+      "explanation": "'MIROH'은 'Clé 1 : MIROH' 관련 곡이며, '★★★★★ (5-STAR)'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "★★★★★ (5-STAR)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-074",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 '樂-STAR'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "사각지대",
+        "락 (樂)",
+        "Leave",
+        "District 9"
+      ],
+      "answerIndex": 3,
+      "answer": "District 9",
+      "explanation": "'District 9'은 'I am NOT' 관련 곡이며, '樂-STAR'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "樂-STAR"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-075",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'ATE'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "JJAM",
+        "Chk Chk Boom",
+        "MOUNTAINS",
+        "Get Cool"
+      ],
+      "answerIndex": 3,
+      "answer": "Get Cool",
+      "explanation": "'Get Cool'은 'I am YOU' 관련 곡이며, 'ATE'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "ATE"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-076",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 '合 (HOP)'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "So Good",
+        "Astronaut",
+        "Walkin On Water (HIP Ver.)",
+        "Hold my hand"
+      ],
+      "answerIndex": 1,
+      "answer": "Astronaut",
+      "explanation": "'Astronaut'은 'Clé : LEVANTER' 관련 곡이며, '合 (HOP)'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "合 (HOP)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-077",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'KARMA'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "Get Cool",
+        "0801",
+        "CEREMONY",
+        "CEREMONY (English Version)"
+      ],
+      "answerIndex": 0,
+      "answer": "Get Cool",
+      "explanation": "'Get Cool'은 'I am YOU' 관련 곡이며, 'KARMA'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=108",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "KARMA"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-078",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 중 'Mixtape'의 공식 트랙리스트에 포함되지 않은 곡은?",
+      "options": [
+        "YAYAYA",
+        "School Life",
+        "CHEESE",
+        "Grrr 총량의 법칙"
+      ],
+      "answerIndex": 2,
+      "answer": "CHEESE",
+      "explanation": "'CHEESE'은 'NOEASY' 관련 곡이며, 'Mixtape'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=152",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Mixtape"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-079",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 보기 가운데 'GO生' 수록곡이 아닌 하나를 고르면?",
+      "options": [
+        "바보라도 알아",
+        "타",
+        "神메뉴",
+        "Walkin On Water"
+      ],
+      "answerIndex": 3,
+      "answer": "Walkin On Water",
+      "explanation": "'Walkin On Water'은 '合 (HOP)' 관련 곡이며, 'GO生'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "GO生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-080",
+      "difficulty": "medium",
+      "category": "수록곡 판별",
+      "type": "single_choice",
+      "question": "다음 보기 가운데 'NOEASY' 수록곡이 아닌 하나를 고르면?",
+      "options": [
+        "DOMINO",
+        "특",
+        "강박",
+        "The View"
+      ],
+      "answerIndex": 1,
+      "answer": "특",
+      "explanation": "'특'은 '★★★★★ (5-STAR)' 관련 곡이며, 'NOEASY'의 공식 트랙리스트에는 포함되지 않습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "NOEASY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-081",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "NOEASY의 유닛곡 '강박'에 참여한 멤버 조합은?",
+      "options": [
+        "리노·창빈·필릭스",
+        "한·승민·아이엔",
+        "방찬·창빈·한",
+        "방찬·현진"
+      ],
+      "answerIndex": 3,
+      "answer": "방찬·현진",
+      "explanation": "NOEASY 공식 트랙리스트는 '강박'을 방찬과 현진의 유닛곡으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-082",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "NOEASY의 유닛곡 'Surfin’' 멤버 조합은?",
+      "options": [
+        "한·승민·아이엔",
+        "리노·창빈·필릭스",
+        "리노·현진·필릭스",
+        "방찬·현진"
+      ],
+      "answerIndex": 1,
+      "answer": "리노·창빈·필릭스",
+      "explanation": "공식 트랙리스트에서 'Surfin’'은 리노, 창빈, 필릭스의 유닛곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-083",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "NOEASY의 유닛곡 'Gone Away' 멤버 조합은?",
+      "options": [
+        "리노·창빈·필릭스",
+        "방찬·창빈·한",
+        "방찬·현진",
+        "한·승민·아이엔"
+      ],
+      "answerIndex": 3,
+      "answer": "한·승민·아이엔",
+      "explanation": "공식 트랙리스트에서 'Gone Away'는 한, 승민, 아이엔의 유닛곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-084",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "IN生 수록곡 'We Go'의 유닛 조합은?",
+      "options": [
+        "방찬·리노·승민",
+        "방찬·창빈·한",
+        "리노·현진·필릭스",
+        "승민·아이엔·창빈"
+      ],
+      "answerIndex": 1,
+      "answer": "방찬·창빈·한",
+      "explanation": "IN生 공식 소개는 'We Go'를 방찬, 창빈, 한의 유닛곡으로 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-085",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "IN生 수록곡 'Wow'의 유닛 조합은?",
+      "options": [
+        "승민·아이엔·창빈",
+        "방찬·창빈·한",
+        "리노·창빈·필릭스",
+        "리노·현진·필릭스"
+      ],
+      "answerIndex": 3,
+      "answer": "리노·현진·필릭스",
+      "explanation": "IN生 공식 소개는 'Wow'를 리노, 현진, 필릭스의 유닛곡으로 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-086",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "IN生 수록곡 'My Universe'의 중심 보컬 조합과 피처링은?",
+      "options": [
+        "한·아이엔, Feat. 리노",
+        "승민·아이엔, Feat. 창빈",
+        "리노·필릭스, Feat. 승민",
+        "방찬·현진, Feat. 한"
+      ],
+      "answerIndex": 1,
+      "answer": "승민·아이엔, Feat. 창빈",
+      "explanation": "공식 소개에는 'My Universe (승민, 아이엔 Feat. 창빈)'으로 표기됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-087",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "MAXIDENT 수록곡 'TASTE'의 멤버 조합은?",
+      "options": [
+        "승민·아이엔",
+        "리노·창빈·필릭스",
+        "방찬·창빈·한",
+        "리노·현진·필릭스"
+      ],
+      "answerIndex": 3,
+      "answer": "리노·현진·필릭스",
+      "explanation": "MAXIDENT 공식 트랙리스트에서 'TASTE'는 리노, 현진, 필릭스의 유닛곡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-088",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "MAXIDENT 수록곡 '나 너 좋아하나봐'의 멤버 조합은?",
+      "options": [
+        "방찬·현진",
+        "한·필릭스",
+        "승민·아이엔",
+        "리노·창빈"
+      ],
+      "answerIndex": 2,
+      "answer": "승민·아이엔",
+      "explanation": "MAXIDENT 공식 소개는 이 곡을 승민과 아이엔의 유닛곡으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-089",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "'TOPLINE'에 피처링으로 참여한 아티스트는?",
+      "options": [
+        "Charlie Puth",
+        "Tiger JK",
+        "LiSA",
+        "TABLO"
+      ],
+      "answerIndex": 1,
+      "answer": "Tiger JK",
+      "explanation": "'TOPLINE (Feat. Tiger JK)'는 ★★★★★ (5-STAR)의 5번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-090",
+      "difficulty": "medium",
+      "category": "유닛·피처링",
+      "type": "single_choice",
+      "question": "'U'에 피처링으로 참여한 아티스트는?",
+      "options": [
+        "TABLO",
+        "Junoflo",
+        "Tiger JK",
+        "LiSA"
+      ],
+      "answerIndex": 0,
+      "answer": "TABLO",
+      "explanation": "合 (HOP) 공식 트랙리스트에 'U (Feat. TABLO)'로 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-091",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(I am YOU · I am WHO · Clé 1 : MIROH · I am NOT) 중 공식 발매일이 가장 빠른 것은?",
+      "options": [
+        "I am YOU",
+        "I am WHO",
+        "Clé 1 : MIROH",
+        "I am NOT"
+      ],
+      "answerIndex": 3,
+      "answer": "I am NOT",
+      "explanation": "I am NOT: 2018-03-26 / I am WHO: 2018-08-06 / I am YOU: 2018-10-22 / Clé 1 : MIROH: 2019-03-25",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-092",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(Clé 2 : Yellow Wood · Clé : LEVANTER · GO生 · Clé 1 : MIROH) 중 공식 발매일이 가장 빠른 것은?",
+      "options": [
+        "Clé 2 : Yellow Wood",
+        "Clé : LEVANTER",
+        "GO生",
+        "Clé 1 : MIROH"
+      ],
+      "answerIndex": 3,
+      "answer": "Clé 1 : MIROH",
+      "explanation": "Clé 1 : MIROH: 2019-03-25 / Clé 2 : Yellow Wood: 2019-06-19 / Clé : LEVANTER: 2019-12-09 / GO生: 2020-06-17",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-093",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(GO生 · NOEASY · IN生 · Christmas EveL) 중 공식 발매일이 가장 빠른 것은?",
+      "options": [
+        "GO生",
+        "NOEASY",
+        "IN生",
+        "Christmas EveL"
+      ],
+      "answerIndex": 0,
+      "answer": "GO生",
+      "explanation": "GO生: 2020-06-17 / IN生: 2020-09-14 / NOEASY: 2021-08-23 / Christmas EveL: 2021-11-29",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-094",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(★★★★★ (5-STAR) · ODDINARY · 樂-STAR · MAXIDENT) 중 공식 발매일이 가장 빠른 것은?",
+      "options": [
+        "★★★★★ (5-STAR)",
+        "ODDINARY",
+        "樂-STAR",
+        "MAXIDENT"
+      ],
+      "answerIndex": 1,
+      "answer": "ODDINARY",
+      "explanation": "ODDINARY: 2022-03-18 / MAXIDENT: 2022-10-07 / ★★★★★ (5-STAR): 2023-06-02 / 樂-STAR: 2023-11-10",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-095",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(KARMA · ATE · 별, 빛 (STAY) · 合 (HOP)) 중 공식 발매일이 가장 빠른 것은?",
+      "options": [
+        "KARMA",
+        "ATE",
+        "별, 빛 (STAY)",
+        "合 (HOP)"
+      ],
+      "answerIndex": 1,
+      "answer": "ATE",
+      "explanation": "ATE: 2024-07-19 / 合 (HOP): 2024-12-13 / KARMA: 2025-08-22 / 별, 빛 (STAY): 2026-03-25",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-096",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(I am WHO · Clé 1 : MIROH · I am YOU · I am NOT) 중 공식 발매일이 가장 늦은 것은?",
+      "options": [
+        "I am WHO",
+        "Clé 1 : MIROH",
+        "I am YOU",
+        "I am NOT"
+      ],
+      "answerIndex": 1,
+      "answer": "Clé 1 : MIROH",
+      "explanation": "I am NOT: 2018-03-26 / I am WHO: 2018-08-06 / I am YOU: 2018-10-22 / Clé 1 : MIROH: 2019-03-25",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-097",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(Clé 2 : Yellow Wood · GO生 · IN生 · Clé : LEVANTER) 중 공식 발매일이 가장 늦은 것은?",
+      "options": [
+        "Clé 2 : Yellow Wood",
+        "GO生",
+        "IN生",
+        "Clé : LEVANTER"
+      ],
+      "answerIndex": 2,
+      "answer": "IN生",
+      "explanation": "Clé 2 : Yellow Wood: 2019-06-19 / Clé : LEVANTER: 2019-12-09 / GO生: 2020-06-17 / IN生: 2020-09-14",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-098",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(Christmas EveL · ODDINARY · NOEASY · MAXIDENT) 중 공식 발매일이 가장 늦은 것은?",
+      "options": [
+        "Christmas EveL",
+        "ODDINARY",
+        "NOEASY",
+        "MAXIDENT"
+      ],
+      "answerIndex": 3,
+      "answer": "MAXIDENT",
+      "explanation": "NOEASY: 2021-08-23 / Christmas EveL: 2021-11-29 / ODDINARY: 2022-03-18 / MAXIDENT: 2022-10-07",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-099",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(樂-STAR · 合 (HOP) · ATE · ★★★★★ (5-STAR)) 중 공식 발매일이 가장 늦은 것은?",
+      "options": [
+        "樂-STAR",
+        "合 (HOP)",
+        "ATE",
+        "★★★★★ (5-STAR)"
+      ],
+      "answerIndex": 1,
+      "answer": "合 (HOP)",
+      "explanation": "★★★★★ (5-STAR): 2023-06-02 / 樂-STAR: 2023-11-10 / ATE: 2024-07-19 / 合 (HOP): 2024-12-13",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-100",
+      "difficulty": "medium",
+      "category": "발매 순서",
+      "type": "single_choice",
+      "question": "후보 작품(back to life · 合 (HOP) · 별, 빛 (STAY) · KARMA) 중 공식 발매일이 가장 늦은 것은?",
+      "options": [
+        "back to life",
+        "合 (HOP)",
+        "별, 빛 (STAY)",
+        "KARMA"
+      ],
+      "answerIndex": 0,
+      "answer": "back to life",
+      "explanation": "合 (HOP): 2024-12-13 / KARMA: 2025-08-22 / 별, 빛 (STAY): 2026-03-25 / back to life: 2026-06-11",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=275",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 발매 순서",
+        "스트레이 키즈 디스코그래피"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-101",
+      "difficulty": "medium",
+      "category": "앨범 구성",
+      "type": "single_choice",
+      "question": "JYP 공식 트랙리스트 기준 'I am NOT'의 수록 트랙 수는?",
+      "options": [
+        "12곡",
+        "8곡",
+        "7곡",
+        "4곡"
+      ],
+      "answerIndex": 1,
+      "answer": "8곡",
+      "explanation": "'I am NOT'의 공식 트랙리스트에는 총 8곡이 제시되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "I am NOT",
+        "트랙리스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-102",
+      "difficulty": "medium",
+      "category": "앨범 구성",
+      "type": "single_choice",
+      "question": "JYP 공식 트랙리스트 기준 'GO生'의 수록 트랙 수는?",
+      "options": [
+        "14곡",
+        "7곡",
+        "8곡",
+        "4곡"
+      ],
+      "answerIndex": 0,
+      "answer": "14곡",
+      "explanation": "'GO生'의 공식 트랙리스트에는 총 14곡이 제시되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "GO生",
+        "트랙리스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-103",
+      "difficulty": "medium",
+      "category": "앨범 구성",
+      "type": "single_choice",
+      "question": "JYP 공식 트랙리스트 기준 'NOEASY'의 수록 트랙 수는?",
+      "options": [
+        "4곡",
+        "14곡",
+        "7곡",
+        "11곡"
+      ],
+      "answerIndex": 1,
+      "answer": "14곡",
+      "explanation": "'NOEASY'의 공식 트랙리스트에는 총 14곡이 제시되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "NOEASY",
+        "트랙리스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-104",
+      "difficulty": "medium",
+      "category": "앨범 구성",
+      "type": "single_choice",
+      "question": "JYP 공식 트랙리스트 기준 'Christmas EveL'의 수록 트랙 수는?",
+      "options": [
+        "12곡",
+        "8곡",
+        "4곡",
+        "17곡"
+      ],
+      "answerIndex": 2,
+      "answer": "4곡",
+      "explanation": "'Christmas EveL'의 공식 트랙리스트에는 총 4곡이 제시되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "Christmas EveL",
+        "트랙리스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-105",
+      "difficulty": "medium",
+      "category": "앨범 구성",
+      "type": "single_choice",
+      "question": "JYP 공식 트랙리스트 기준 'ODDINARY'의 수록 트랙 수는?",
+      "options": [
+        "14곡",
+        "12곡",
+        "17곡",
+        "7곡"
+      ],
+      "answerIndex": 3,
+      "answer": "7곡",
+      "explanation": "'ODDINARY'의 공식 트랙리스트에는 총 7곡이 제시되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "ODDINARY",
+        "트랙리스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-106",
+      "difficulty": "medium",
+      "category": "앨범 구성",
+      "type": "single_choice",
+      "question": "JYP 공식 트랙리스트 기준 '★★★★★ (5-STAR)'의 수록 트랙 수는?",
+      "options": [
+        "4곡",
+        "12곡",
+        "8곡",
+        "14곡"
+      ],
+      "answerIndex": 1,
+      "answer": "12곡",
+      "explanation": "'★★★★★ (5-STAR)'의 공식 트랙리스트에는 총 12곡이 제시되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범",
+        "★★★★★ (5-STAR)",
+        "트랙리스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-107",
+      "difficulty": "medium",
+      "category": "앨범 성격·명칭",
+      "type": "single_choice",
+      "question": "다음 중 공식적으로 '홀리데이 스페셜 싱글'로 소개된 작품은?",
+      "options": [
+        "Christmas EveL",
+        "樂-STAR",
+        "ODDINARY",
+        "Mixtape : Time Out"
+      ],
+      "answerIndex": 0,
+      "answer": "Christmas EveL",
+      "explanation": "Christmas EveL은 JYP 공식 소개에서 홀리데이 스페셜 싱글로 명시됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-108",
+      "difficulty": "medium",
+      "category": "앨범 성격·명칭",
+      "type": "single_choice",
+      "question": "다음 중 공식적으로 'SKZHOP HIPTAPE'로 소개된 작품은?",
+      "options": [
+        "ATE",
+        "KARMA",
+        "MAXIDENT",
+        "合 (HOP)"
+      ],
+      "answerIndex": 3,
+      "answer": "合 (HOP)",
+      "explanation": "合 (HOP)은 SKZHOP HIPTAPE의 첫 작품으로 소개됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-109",
+      "difficulty": "medium",
+      "category": "앨범 성격·명칭",
+      "type": "single_choice",
+      "question": "'ODDINARY'라는 앨범명은 어떤 두 영어 단어의 결합인가?",
+      "options": [
+        "Order + Diary",
+        "Odd + Ordinary",
+        "Ordinary + Identity",
+        "Odd + Binary"
+      ],
+      "answerIndex": 1,
+      "answer": "Odd + Ordinary",
+      "explanation": "공식 앨범 소개는 Odd와 Ordinary를 결합한 이름이라고 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-110",
+      "difficulty": "medium",
+      "category": "앨범 성격·명칭",
+      "type": "single_choice",
+      "question": "'MAXIDENT'라는 앨범명에 결합된 의미로 맞는 것은?",
+      "options": [
+        "Max + Independent",
+        "Maximum + Identity",
+        "Max/Maximum + Accident/Incident",
+        "Magic + Accident"
+      ],
+      "answerIndex": 2,
+      "answer": "Max/Maximum + Accident/Incident",
+      "explanation": "공식 소개는 Max·Maximum과 Accident·Incident를 결합한 합성어라고 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-111",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "'神메뉴' 제목에 담긴 중의적 의미로 공식 소개와 맞는 것은?",
+      "options": [
+        "새로운 메뉴와 신이 내린 메뉴",
+        "신비한 메뉴와 비밀 메뉴",
+        "최고의 메뉴와 매운 메뉴",
+        "새로운 무대와 신나는 음악"
+      ],
+      "answerIndex": 0,
+      "answer": "새로운 메뉴와 신이 내린 메뉴",
+      "explanation": "GO生 공식 소개는 '새로운 메뉴'와 '신이 내렸다'는 의미가 함께 담겼다고 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-112",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "'소리꾼'의 제목에 활용된 이중 의미로 맞는 것은?",
+      "options": [
+        "소음과 침묵",
+        "가수와 관객",
+        "전통음악과 록 음악",
+        "잔소리꾼과 노래하는 소리꾼"
+      ],
+      "answerIndex": 3,
+      "answer": "잔소리꾼과 노래하는 소리꾼",
+      "explanation": "NOEASY 공식 소개는 잔소리꾼의 noise와 노래하는 소리꾼을 대비합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-113",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "'Christmas EveL'이라는 이름은 'Christmas Eve'에 어떤 글자를 더한 것인가?",
+      "options": [
+        "R",
+        "L",
+        "S",
+        "X"
+      ],
+      "answerIndex": 1,
+      "answer": "L",
+      "explanation": "공식 소개는 Christmas Eve에 알파벳 L을 더한 이름이라고 밝힙니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-114",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "'0325'가 실험적으로 결합한 것은?",
+      "options": [
+        "I am NOT·I am WHO·I am YOU의 인트로",
+        "일본 앨범의 타이틀곡",
+        "Clé 시리즈의 타이틀곡",
+        "3RACHA 유닛곡 세 곡"
+      ],
+      "answerIndex": 0,
+      "answer": "I am NOT·I am WHO·I am YOU의 인트로",
+      "explanation": "I am YOU 공식 소개는 세 I am 시리즈 인트로를 결합해 '0325'를 만들었다고 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-115",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "'STOP'은 어느 곡의 연장선에 있는 곡으로 소개되었나?",
+      "options": [
+        "밟힌 적 없는 길",
+        "별생각",
+        "Entrance",
+        "Double Knot"
+      ],
+      "answerIndex": 0,
+      "answer": "밟힌 적 없는 길",
+      "explanation": "Clé : LEVANTER 공식 소개에서 'STOP'은 '밟힌 적 없는 길'의 연장선으로 설명됩니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-116",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "GO生에 수록된 'TOP'과 'SLUMP'가 사용된 작품은?",
+      "options": [
+        "애니메이션 '아케인'",
+        "드라마 '이태원 클라쓰'",
+        "애니메이션 '신의 탑'",
+        "영화 '데드풀과 울버린'"
+      ],
+      "answerIndex": 2,
+      "answer": "애니메이션 '신의 탑'",
+      "explanation": "공식 소개는 TOP을 '신의 탑' 오프닝, SLUMP를 엔딩 곡으로 설명합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-117",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "2026년 디지털 싱글 '별, 빛 (STAY)'의 작사·작곡에 함께 참여한 멤버는?",
+      "options": [
+        "필릭스와 아이엔",
+        "리노와 현진",
+        "방찬과 창빈",
+        "승민과 한"
+      ],
+      "answerIndex": 3,
+      "answer": "승민과 한",
+      "explanation": "공식 크레디트에는 승민과 한이 작사·작곡자로 함께 이름을 올렸습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=267",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-118",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "'back to life'를 발표한 멤버는?",
+      "options": [
+        "방찬",
+        "승민",
+        "한",
+        "아이엔"
+      ],
+      "answerIndex": 2,
+      "answer": "한",
+      "explanation": "'back to life'는 한의 SKZ-PLAYER 프로젝트 디지털 싱글입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=275",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-119",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "ATE의 'Runners' 작사·작곡에 참여한 멤버로 공식 소개된 사람은?",
+      "options": [
+        "현진",
+        "필릭스",
+        "승민",
+        "리노"
+      ],
+      "answerIndex": 1,
+      "answer": "필릭스",
+      "explanation": "ATE 공식 소개는 필릭스가 5번 트랙 'Runners' 작사와 작곡에 참여했다고 밝힙니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-120",
+      "difficulty": "medium",
+      "category": "곡·앨범 세부 정보",
+      "type": "single_choice",
+      "question": "合 (HOP)의 'Railway' 솔로 무대 주인공은?",
+      "options": [
+        "창빈",
+        "필릭스",
+        "방찬",
+        "리노"
+      ],
+      "answerIndex": 2,
+      "answer": "방찬",
+      "explanation": "合 (HOP) 공식 소개는 'Railway (방찬)'으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-121",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'I am NOT' 공식 트랙리스트에서 곡 '3rd Eye'의 트랙 번호는?",
+      "options": [
+        "5번",
+        "7번",
+        "6번",
+        "8번"
+      ],
+      "answerIndex": 1,
+      "answer": "7번",
+      "explanation": "공식 트랙리스트에서 '3rd Eye'은 7번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "I am NOT",
+        "3rd Eye"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-122",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'I am WHO' 공식 트랙리스트에서 곡 'M.I.A.'의 트랙 번호는?",
+      "options": [
+        "7번",
+        "4번",
+        "5번",
+        "6번"
+      ],
+      "answerIndex": 3,
+      "answer": "6번",
+      "explanation": "공식 트랙리스트에서 'M.I.A.'은 6번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=150",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "I am WHO",
+        "M.I.A."
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-123",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'I am YOU' 공식 트랙리스트에서 곡 '0325'의 트랙 번호는?",
+      "options": [
+        "5번",
+        "8번",
+        "7번",
+        "6번"
+      ],
+      "answerIndex": 2,
+      "answer": "7번",
+      "explanation": "공식 트랙리스트에서 '0325'은 7번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "I am YOU",
+        "0325"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-124",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'Clé 1 : MIROH' 공식 트랙리스트에서 곡 'Chronosaurus'의 트랙 번호는?",
+      "options": [
+        "6번",
+        "5번",
+        "4번",
+        "7번"
+      ],
+      "answerIndex": 0,
+      "answer": "6번",
+      "explanation": "공식 트랙리스트에서 'Chronosaurus'은 6번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "Clé 1 : MIROH",
+        "Chronosaurus"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-125",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'Clé 2 : Yellow Wood' 공식 트랙리스트에서 곡 '별생각'의 트랙 번호는?",
+      "options": [
+        "3번",
+        "2번",
+        "1번",
+        "4번"
+      ],
+      "answerIndex": 0,
+      "answer": "3번",
+      "explanation": "공식 트랙리스트에서 '별생각'은 3번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "Clé 2 : Yellow Wood",
+        "별생각"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-126",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'Clé : LEVANTER' 공식 트랙리스트에서 곡 'Sunshine'의 트랙 번호는?",
+      "options": [
+        "6번",
+        "7번",
+        "4번",
+        "5번"
+      ],
+      "answerIndex": 0,
+      "answer": "6번",
+      "explanation": "공식 트랙리스트에서 'Sunshine'은 6번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "Clé : LEVANTER",
+        "Sunshine"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-127",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'GO生' 공식 트랙리스트에서 곡 '청사진'의 트랙 번호는?",
+      "options": [
+        "8번",
+        "7번",
+        "6번",
+        "9번"
+      ],
+      "answerIndex": 0,
+      "answer": "8번",
+      "explanation": "공식 트랙리스트에서 '청사진'은 8번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "GO生",
+        "청사진"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-128",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'GO生' 공식 트랙리스트에서 곡 'SLUMP (\"신의 탑\" OST)'의 트랙 번호는?",
+      "options": [
+        "12번",
+        "10번",
+        "13번",
+        "11번"
+      ],
+      "answerIndex": 0,
+      "answer": "12번",
+      "explanation": "공식 트랙리스트에서 'SLUMP (\"신의 탑\" OST)'은 12번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "GO生",
+        "SLUMP (\"신의 탑\" OST)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-129",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'IN生' 공식 트랙리스트에서 곡 'We Go'의 트랙 번호는?",
+      "options": [
+        "6번",
+        "7번",
+        "5번",
+        "4번"
+      ],
+      "answerIndex": 0,
+      "answer": "6번",
+      "explanation": "공식 트랙리스트에서 'We Go'은 6번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "IN生",
+        "We Go"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-130",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'IN生' 공식 트랙리스트에서 곡 'My Universe'의 트랙 번호는?",
+      "options": [
+        "7번",
+        "8번",
+        "6번",
+        "9번"
+      ],
+      "answerIndex": 1,
+      "answer": "8번",
+      "explanation": "공식 트랙리스트에서 'My Universe'은 8번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "IN生",
+        "My Universe"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-131",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'NOEASY' 공식 트랙리스트에서 곡 'Star Lost'의 트랙 번호는?",
+      "options": [
+        "8번",
+        "9번",
+        "7번",
+        "10번"
+      ],
+      "answerIndex": 1,
+      "answer": "9번",
+      "explanation": "공식 트랙리스트에서 'Star Lost'은 9번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "NOEASY",
+        "Star Lost"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-132",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'NOEASY' 공식 트랙리스트에서 곡 '강박'의 트랙 번호는?",
+      "options": [
+        "9번",
+        "11번",
+        "8번",
+        "10번"
+      ],
+      "answerIndex": 3,
+      "answer": "10번",
+      "explanation": "공식 트랙리스트에서 '강박'은 10번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "NOEASY",
+        "강박"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-133",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'NOEASY' 공식 트랙리스트에서 곡 'Gone Away'의 트랙 번호는?",
+      "options": [
+        "11번",
+        "12번",
+        "10번",
+        "13번"
+      ],
+      "answerIndex": 1,
+      "answer": "12번",
+      "explanation": "공식 트랙리스트에서 'Gone Away'은 12번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "NOEASY",
+        "Gone Away"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-134",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'ODDINARY' 공식 트랙리스트에서 곡 '피어난다'의 트랙 번호는?",
+      "options": [
+        "7번",
+        "6번",
+        "5번",
+        "4번"
+      ],
+      "answerIndex": 1,
+      "answer": "6번",
+      "explanation": "공식 트랙리스트에서 '피어난다'은 6번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "ODDINARY",
+        "피어난다"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-135",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'MAXIDENT' 공식 트랙리스트에서 곡 '나 너 좋아하나봐'의 트랙 번호는?",
+      "options": [
+        "7번",
+        "5번",
+        "6번",
+        "8번"
+      ],
+      "answerIndex": 0,
+      "answer": "7번",
+      "explanation": "공식 트랙리스트에서 '나 너 좋아하나봐'은 7번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "MAXIDENT",
+        "나 너 좋아하나봐"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-136",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'★★★★★ (5-STAR)' 공식 트랙리스트에서 곡 'TOPLINE (Feat. Tiger JK)'의 트랙 번호는?",
+      "options": [
+        "6번",
+        "3번",
+        "4번",
+        "5번"
+      ],
+      "answerIndex": 3,
+      "answer": "5번",
+      "explanation": "공식 트랙리스트에서 'TOPLINE (Feat. Tiger JK)'은 5번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "★★★★★ (5-STAR)",
+        "TOPLINE (Feat. Tiger JK)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-137",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'★★★★★ (5-STAR)' 공식 트랙리스트에서 곡 'THE SOUND (Korean Ver.)'의 트랙 번호는?",
+      "options": [
+        "11번",
+        "10번",
+        "12번",
+        "9번"
+      ],
+      "answerIndex": 0,
+      "answer": "11번",
+      "explanation": "공식 트랙리스트에서 'THE SOUND (Korean Ver.)'은 11번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "★★★★★ (5-STAR)",
+        "THE SOUND (Korean Ver.)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-138",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'樂-STAR' 공식 트랙리스트에서 곡 'Social Path (Feat. LiSA) (Korean Ver.)'의 트랙 번호는?",
+      "options": [
+        "5번",
+        "6번",
+        "8번",
+        "7번"
+      ],
+      "answerIndex": 3,
+      "answer": "7번",
+      "explanation": "공식 트랙리스트에서 'Social Path (Feat. LiSA) (Korean Ver.)'은 7번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "樂-STAR",
+        "Social Path (Feat. LiSA) (Korean Ver.)"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-139",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'ATE' 공식 트랙리스트에서 곡 '또 다시 밤'의 트랙 번호는?",
+      "options": [
+        "7번",
+        "6번",
+        "5번",
+        "4번"
+      ],
+      "answerIndex": 1,
+      "answer": "6번",
+      "explanation": "공식 트랙리스트에서 '또 다시 밤'은 6번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "ATE",
+        "또 다시 밤"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-140",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "type": "single_choice",
+      "question": "'合 (HOP)' 공식 트랙리스트에서 곡 'ULTRA'의 트랙 번호는?",
+      "options": [
+        "9번",
+        "11번",
+        "10번",
+        "8번"
+      ],
+      "answerIndex": 2,
+      "answer": "10번",
+      "explanation": "공식 트랙리스트에서 'ULTRA'은 10번 트랙입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙 순서",
+        "合 (HOP)",
+        "ULTRA"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-141",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'I am NOT' 트랙리스트에서 'District 9'의 바로 다음 트랙은?",
+      "options": [
+        "ROCK (돌)",
+        "Awaken",
+        "잘 하고 있어",
+        "Mirror"
+      ],
+      "answerIndex": 3,
+      "answer": "Mirror",
+      "explanation": "공식 트랙 순서는 NOT! → District 9 → Mirror입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "I am NOT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-142",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'I am WHO' 트랙리스트에서 'Voices'의 바로 다음 트랙은?",
+      "options": [
+        "갑자기 분위기 싸해질 필요 없잖아요",
+        "M.I.A.",
+        "Question",
+        "My Pace"
+      ],
+      "answerIndex": 2,
+      "answer": "Question",
+      "explanation": "공식 트랙 순서는 My Pace → Voices → Question입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=150",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "I am WHO"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-143",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'I am YOU' 트랙리스트에서 'Get Cool'의 바로 앞 트랙은?",
+      "options": [
+        "0325",
+        "Mixtape#3 (CD only)",
+        "해장국",
+        "YOU"
+      ],
+      "answerIndex": 2,
+      "answer": "해장국",
+      "explanation": "공식 트랙 순서는 해장국 → Get Cool → 극과 극입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "I am YOU"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-144",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'Clé 1 : MIROH' 트랙리스트에서 'Boxer'의 바로 앞 트랙은?",
+      "options": [
+        "잠깐의 고요",
+        "MIROH",
+        "Entrance",
+        "19"
+      ],
+      "answerIndex": 0,
+      "answer": "잠깐의 고요",
+      "explanation": "공식 트랙 순서는 잠깐의 고요 → Boxer → Chronosaurus입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Clé 1 : MIROH"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-145",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'Clé 2 : Yellow Wood' 트랙리스트에서 'Mixtape#2'의 바로 앞 트랙은?",
+      "options": [
+        "Mixtape#1",
+        "부작용",
+        "Mixtape#3",
+        "별생각"
+      ],
+      "answerIndex": 0,
+      "answer": "Mixtape#1",
+      "explanation": "공식 트랙 순서는 Mixtape#1 → Mixtape#2 → Mixtape#3입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Clé 2 : Yellow Wood"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-146",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'Clé : LEVANTER' 트랙리스트에서 'Astronaut'의 바로 다음 트랙은?",
+      "options": [
+        "Sunshine",
+        "Double Knot",
+        "You Can STAY",
+        "Booster"
+      ],
+      "answerIndex": 0,
+      "answer": "Sunshine",
+      "explanation": "공식 트랙 순서는 Booster → Astronaut → Sunshine입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "Clé : LEVANTER"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-147",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'GO生' 트랙리스트에서 'Phobia'의 바로 다음 트랙은?",
+      "options": [
+        "Easy",
+        "청사진",
+        "神메뉴",
+        "TOP (\"신의 탑\" OST)"
+      ],
+      "answerIndex": 1,
+      "answer": "청사진",
+      "explanation": "공식 트랙 순서는 일상 → Phobia → 청사진입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "GO生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-148",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'IN生' 트랙리스트에서 '아니 (Any)'의 바로 다음 트랙은?",
+      "options": [
+        "청사진",
+        "Phobia",
+        "Pacemaker",
+        "미친 놈 (Ex)"
+      ],
+      "answerIndex": 3,
+      "answer": "미친 놈 (Ex)",
+      "explanation": "공식 트랙 순서는 B Me → 아니 (Any) → 미친 놈 (Ex)입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=136",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "IN生"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-149",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'NOEASY' 트랙리스트에서 'Silent Cry'의 바로 다음 트랙은?",
+      "options": [
+        "애 (Mixtape : OH)",
+        "강박",
+        "말할 수 없는 비밀",
+        "The View"
+      ],
+      "answerIndex": 2,
+      "answer": "말할 수 없는 비밀",
+      "explanation": "공식 트랙 순서는 좋아해서 미안 → Silent Cry → 말할 수 없는 비밀입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "NOEASY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-150",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'ODDINARY' 트랙리스트에서 'Charmer'의 바로 다음 트랙은?",
+      "options": [
+        "땡",
+        "피어난다",
+        "MANIAC",
+        "Lonely St."
+      ],
+      "answerIndex": 0,
+      "answer": "땡",
+      "explanation": "공식 트랙 순서는 MANIAC → Charmer → 땡입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "ODDINARY"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-151",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'MAXIDENT' 트랙리스트에서 'SUPER BOARD'의 바로 다음 트랙은?",
+      "options": [
+        "Give Me Your TMI",
+        "식혀",
+        "CASE 143",
+        "3RACHA"
+      ],
+      "answerIndex": 3,
+      "answer": "3RACHA",
+      "explanation": "공식 트랙 순서는 Give Me Your TMI → SUPER BOARD → 3RACHA입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=128",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "MAXIDENT"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-152",
+      "difficulty": "hard",
+      "category": "인접 트랙",
+      "type": "single_choice",
+      "question": "'ATE' 트랙리스트에서 'Runners'의 바로 다음 트랙은?",
+      "options": [
+        "또 다시 밤",
+        "I Like It",
+        "JJAM",
+        "Chk Chk Boom"
+      ],
+      "answerIndex": 0,
+      "answer": "또 다시 밤",
+      "explanation": "공식 트랙 순서는 I Like It → Runners → 또 다시 밤입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 트랙리스트",
+        "ATE"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-153",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "Mixtape · I am NOT · I am WHO · I am YOU 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "I am NOT → Mixtape → I am WHO → I am YOU",
+        "Mixtape → I am WHO → I am NOT → I am YOU",
+        "Mixtape → I am NOT → I am WHO → I am YOU",
+        "Mixtape → I am NOT → I am YOU → I am WHO"
+      ],
+      "answerIndex": 2,
+      "answer": "Mixtape → I am NOT → I am WHO → I am YOU",
+      "explanation": "Mixtape(2018-01-08) / I am NOT(2018-03-26) / I am WHO(2018-08-06) / I am YOU(2018-10-22)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=152",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-154",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "Clé 1 : MIROH · Clé 2 : Yellow Wood · Clé : LEVANTER · GO生 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "Clé 1 : MIROH → Clé 2 : Yellow Wood → GO生 → Clé : LEVANTER",
+        "Clé 2 : Yellow Wood → Clé 1 : MIROH → Clé : LEVANTER → GO生",
+        "Clé 1 : MIROH → Clé : LEVANTER → Clé 2 : Yellow Wood → GO生",
+        "Clé 1 : MIROH → Clé 2 : Yellow Wood → Clé : LEVANTER → GO生"
+      ],
+      "answerIndex": 3,
+      "answer": "Clé 1 : MIROH → Clé 2 : Yellow Wood → Clé : LEVANTER → GO生",
+      "explanation": "Clé 1 : MIROH(2019-03-25) / Clé 2 : Yellow Wood(2019-06-19) / Clé : LEVANTER(2019-12-09) / GO生(2020-06-17)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-155",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "GO生 · IN生 · NOEASY · Christmas EveL 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "IN生 → GO生 → NOEASY → Christmas EveL",
+        "GO生 → IN生 → NOEASY → Christmas EveL",
+        "GO生 → NOEASY → IN生 → Christmas EveL",
+        "GO生 → IN生 → Christmas EveL → NOEASY"
+      ],
+      "answerIndex": 1,
+      "answer": "GO生 → IN生 → NOEASY → Christmas EveL",
+      "explanation": "GO生(2020-06-17) / IN生(2020-09-14) / NOEASY(2021-08-23) / Christmas EveL(2021-11-29)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=137",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-156",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "NOEASY · Christmas EveL · ODDINARY · MAXIDENT 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "Christmas EveL → NOEASY → ODDINARY → MAXIDENT",
+        "NOEASY → Christmas EveL → MAXIDENT → ODDINARY",
+        "NOEASY → ODDINARY → Christmas EveL → MAXIDENT",
+        "NOEASY → Christmas EveL → ODDINARY → MAXIDENT"
+      ],
+      "answerIndex": 3,
+      "answer": "NOEASY → Christmas EveL → ODDINARY → MAXIDENT",
+      "explanation": "NOEASY(2021-08-23) / Christmas EveL(2021-11-29) / ODDINARY(2022-03-18) / MAXIDENT(2022-10-07)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=132",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-157",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "ODDINARY · MAXIDENT · ★★★★★ (5-STAR) · 樂-STAR 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "MAXIDENT → ODDINARY → ★★★★★ (5-STAR) → 樂-STAR",
+        "ODDINARY → MAXIDENT → 樂-STAR → ★★★★★ (5-STAR)",
+        "ODDINARY → ★★★★★ (5-STAR) → MAXIDENT → 樂-STAR",
+        "ODDINARY → MAXIDENT → ★★★★★ (5-STAR) → 樂-STAR"
+      ],
+      "answerIndex": 3,
+      "answer": "ODDINARY → MAXIDENT → ★★★★★ (5-STAR) → 樂-STAR",
+      "explanation": "ODDINARY(2022-03-18) / MAXIDENT(2022-10-07) / ★★★★★ (5-STAR)(2023-06-02) / 樂-STAR(2023-11-10)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=130",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-158",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "★★★★★ (5-STAR) · 樂-STAR · ATE · 合 (HOP) 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "★★★★★ (5-STAR) → 樂-STAR → ATE → 合 (HOP)",
+        "★★★★★ (5-STAR) → 樂-STAR → 合 (HOP) → ATE",
+        "★★★★★ (5-STAR) → ATE → 樂-STAR → 合 (HOP)",
+        "樂-STAR → ★★★★★ (5-STAR) → ATE → 合 (HOP)"
+      ],
+      "answerIndex": 0,
+      "answer": "★★★★★ (5-STAR) → 樂-STAR → ATE → 合 (HOP)",
+      "explanation": "★★★★★ (5-STAR)(2023-06-02) / 樂-STAR(2023-11-10) / ATE(2024-07-19) / 合 (HOP)(2024-12-13)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-159",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "ATE · 合 (HOP) · KARMA · 별, 빛 (STAY) 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "ATE → 合 (HOP) → 별, 빛 (STAY) → KARMA",
+        "合 (HOP) → ATE → KARMA → 별, 빛 (STAY)",
+        "ATE → 合 (HOP) → KARMA → 별, 빛 (STAY)",
+        "ATE → KARMA → 合 (HOP) → 별, 빛 (STAY)"
+      ],
+      "answerIndex": 2,
+      "answer": "ATE → 合 (HOP) → KARMA → 별, 빛 (STAY)",
+      "explanation": "ATE(2024-07-19) / 合 (HOP)(2024-12-13) / KARMA(2025-08-22) / 별, 빛 (STAY)(2026-03-25)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-160",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "I am WHO · Clé 1 : MIROH · GO生 · NOEASY 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "Clé 1 : MIROH → I am WHO → GO生 → NOEASY",
+        "I am WHO → GO生 → Clé 1 : MIROH → NOEASY",
+        "I am WHO → Clé 1 : MIROH → GO生 → NOEASY",
+        "I am WHO → Clé 1 : MIROH → NOEASY → GO生"
+      ],
+      "answerIndex": 2,
+      "answer": "I am WHO → Clé 1 : MIROH → GO生 → NOEASY",
+      "explanation": "I am WHO(2018-08-06) / Clé 1 : MIROH(2019-03-25) / GO生(2020-06-17) / NOEASY(2021-08-23)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=150",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-161",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "I am YOU · Clé : LEVANTER · ODDINARY · ★★★★★ (5-STAR) 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "I am YOU → Clé : LEVANTER → ODDINARY → ★★★★★ (5-STAR)",
+        "Clé : LEVANTER → I am YOU → ODDINARY → ★★★★★ (5-STAR)",
+        "I am YOU → ODDINARY → Clé : LEVANTER → ★★★★★ (5-STAR)",
+        "I am YOU → Clé : LEVANTER → ★★★★★ (5-STAR) → ODDINARY"
+      ],
+      "answerIndex": 0,
+      "answer": "I am YOU → Clé : LEVANTER → ODDINARY → ★★★★★ (5-STAR)",
+      "explanation": "I am YOU(2018-10-22) / Clé : LEVANTER(2019-12-09) / ODDINARY(2022-03-18) / ★★★★★ (5-STAR)(2023-06-02)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-162",
+      "difficulty": "hard",
+      "category": "연대기",
+      "type": "single_choice",
+      "question": "Clé 2 : Yellow Wood · IN生 · MAXIDENT · 合 (HOP) 네 작품을 공식 발매일이 빠른 순서대로 올바르게 나열한 것은?",
+      "options": [
+        "Clé 2 : Yellow Wood → IN生 → MAXIDENT → 合 (HOP)",
+        "Clé 2 : Yellow Wood → IN生 → 合 (HOP) → MAXIDENT",
+        "Clé 2 : Yellow Wood → MAXIDENT → IN生 → 合 (HOP)",
+        "IN生 → Clé 2 : Yellow Wood → MAXIDENT → 合 (HOP)"
+      ],
+      "answerIndex": 0,
+      "answer": "Clé 2 : Yellow Wood → IN生 → MAXIDENT → 合 (HOP)",
+      "explanation": "Clé 2 : Yellow Wood(2019-06-19) / IN生(2020-09-14) / MAXIDENT(2022-10-07) / 合 (HOP)(2024-12-13)",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈 앨범 순서",
+        "스트레이 키즈 연대기"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-163",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "I am NOT에서 CD로만 들을 수 있는 스페셜 트랙으로 표기된 곡은?",
+      "options": [
+        "Mixtape#3",
+        "Mixtape#4",
+        "Mixtape#2",
+        "Mixtape#1"
+      ],
+      "answerIndex": 3,
+      "answer": "Mixtape#1",
+      "explanation": "I am NOT 공식 트랙리스트의 8번 곡은 'Mixtape#1 (CD ONLY)'입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=151",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-164",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "I am YOU의 CD 한정 스페셜 트랙은?",
+      "options": [
+        "Mixtape#1",
+        "Mixtape#4",
+        "Mixtape#5",
+        "Mixtape#3"
+      ],
+      "answerIndex": 3,
+      "answer": "Mixtape#3",
+      "explanation": "I am YOU 공식 트랙리스트는 8번 곡을 'Mixtape#3 (CD only)'로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=149",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-165",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "Clé 1 : MIROH의 CD 한정 트랙은?",
+      "options": [
+        "Mixtape#5",
+        "Mixtape#3",
+        "Mixtape#2",
+        "Mixtape#4"
+      ],
+      "answerIndex": 3,
+      "answer": "Mixtape#4",
+      "explanation": "Clé 1 : MIROH의 8번 트랙은 'Mixtape#4 (CD ONLY)'입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=148",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-166",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "Clé : LEVANTER의 마지막 트랙은?",
+      "options": [
+        "Mixtape#5",
+        "Mixtape#4",
+        "Mixtape#3",
+        "Mixtape#2"
+      ],
+      "answerIndex": 0,
+      "answer": "Mixtape#5",
+      "explanation": "Clé : LEVANTER 공식 트랙리스트의 8번이자 마지막 곡은 Mixtape#5입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=145",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-167",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "Clé 2 : Yellow Wood에 한데 수록된 기존 Mixtape 번호 범위는?",
+      "options": [
+        "Mixtape#1~#3",
+        "Mixtape#2~#5",
+        "Mixtape#3~#6",
+        "Mixtape#1~#4"
+      ],
+      "answerIndex": 3,
+      "answer": "Mixtape#1~#4",
+      "explanation": "공식 트랙리스트에는 Mixtape#1, #2, #3, #4가 연속 수록되어 있습니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=147",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-168",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "Christmas EveL에 수록된 영어 버전 곡은?",
+      "options": [
+        "CASE 143 (English Ver.)",
+        "DOMINO (English Ver.)",
+        "CHEESE (English Ver.)",
+        "MANIAC (English Ver.)"
+      ],
+      "answerIndex": 1,
+      "answer": "DOMINO (English Ver.)",
+      "explanation": "Christmas EveL의 4번 트랙은 DOMINO (English Ver.)입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=131",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-169",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "樂-STAR에 수록된 타이틀곡의 별도 버전은?",
+      "options": [
+        "락 (樂) (Rock Ver.)",
+        "락 (樂) (Festival Ver.)",
+        "락 (樂) (HIP Ver.)",
+        "락 (樂) (English Ver.)"
+      ],
+      "answerIndex": 0,
+      "answer": "락 (樂) (Rock Ver.)",
+      "explanation": "樂-STAR 공식 트랙리스트의 마지막 곡은 '락 (樂) (Rock Ver.)'입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-170",
+      "difficulty": "hard",
+      "category": "한정·버전 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)에 수록된 'Walkin On Water'의 별도 버전은?",
+      "options": [
+        "Walkin On Water (HIP Ver.)",
+        "Walkin On Water (English Ver.)",
+        "Walkin On Water (Festival Ver.)",
+        "Walkin On Water (Rock Ver.)"
+      ],
+      "answerIndex": 0,
+      "answer": "Walkin On Water (HIP Ver.)",
+      "explanation": "合 (HOP)의 4번 트랙은 'Walkin On Water (HIP Ver.)'입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-171",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)의 솔로 트랙 'Unfair'의 멤버는?",
+      "options": [
+        "방찬",
+        "필릭스",
+        "현진",
+        "아이엔"
+      ],
+      "answerIndex": 1,
+      "answer": "필릭스",
+      "explanation": "공식 앨범 소개는 'Unfair (필릭스)'로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-172",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)의 솔로 트랙 'HALLUCINATION'의 멤버는?",
+      "options": [
+        "한",
+        "리노",
+        "승민",
+        "아이엔"
+      ],
+      "answerIndex": 3,
+      "answer": "아이엔",
+      "explanation": "공식 앨범 소개는 'HALLUCINATION (아이엔)'으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-173",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)의 솔로 트랙 'Youth'의 멤버는?",
+      "options": [
+        "방찬",
+        "창빈",
+        "리노",
+        "현진"
+      ],
+      "answerIndex": 2,
+      "answer": "리노",
+      "explanation": "공식 앨범 소개는 'Youth (리노)'로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-174",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)의 솔로 트랙 'So Good'의 멤버는?",
+      "options": [
+        "한",
+        "필릭스",
+        "승민",
+        "현진"
+      ],
+      "answerIndex": 3,
+      "answer": "현진",
+      "explanation": "공식 앨범 소개는 'So Good (현진)'으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-175",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)의 솔로 트랙 'ULTRA'의 멤버는?",
+      "options": [
+        "방찬",
+        "아이엔",
+        "리노",
+        "창빈"
+      ],
+      "answerIndex": 3,
+      "answer": "창빈",
+      "explanation": "공식 앨범 소개는 'ULTRA (창빈)'으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-176",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "合 (HOP)의 솔로 트랙 '그렇게, 천천히, 우리'의 멤버는?",
+      "options": [
+        "아이엔",
+        "승민",
+        "필릭스",
+        "한"
+      ],
+      "answerIndex": 1,
+      "answer": "승민",
+      "explanation": "공식 앨범 소개는 '그렇게, 천천히, 우리 (승민)'으로 표기합니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=113",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-177",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "★★★★★ (5-STAR)의 마지막 두 트랙 순서로 맞는 것은?",
+      "options": [
+        "Time Out → THE SOUND (Korean Ver.)",
+        "THE SOUND (Korean Ver.) → Time Out",
+        "DLC → 죽어보자",
+        "Youtiful → FNF"
+      ],
+      "answerIndex": 1,
+      "answer": "THE SOUND (Korean Ver.) → Time Out",
+      "explanation": "공식 트랙리스트에서 11번은 THE SOUND (Korean Ver.), 12번은 Time Out입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=126",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-178",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "樂-STAR의 마지막 두 트랙 순서로 맞는 것은?",
+      "options": [
+        "Leave → 가려줘",
+        "COMFLEX → 사각지대",
+        "락 (樂) (Rock Ver.) → Social Path (Feat. LiSA) (Korean Ver.)",
+        "Social Path (Feat. LiSA) (Korean Ver.) → 락 (樂) (Rock Ver.)"
+      ],
+      "answerIndex": 3,
+      "answer": "Social Path (Feat. LiSA) (Korean Ver.) → 락 (樂) (Rock Ver.)",
+      "explanation": "樂-STAR의 7번과 8번 트랙은 각각 Social Path 한국어 버전과 락 Rock Ver.입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=125",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-179",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "ATE의 마지막 두 트랙 순서로 맞는 것은?",
+      "options": [
+        "I Like It → JJAM",
+        "또 다시 밤 → Runners",
+        "Chk Chk Boom (Festival Ver.) → Stray Kids",
+        "Stray Kids → Chk Chk Boom (Festival Ver.)"
+      ],
+      "answerIndex": 3,
+      "answer": "Stray Kids → Chk Chk Boom (Festival Ver.)",
+      "explanation": "ATE 공식 트랙리스트의 7번은 Stray Kids, 8번은 Chk Chk Boom (Festival Ver.)입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=122",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    },
+    {
+      "id": "SKZ-180",
+      "difficulty": "hard",
+      "category": "보너스·후반 트랙",
+      "type": "single_choice",
+      "question": "KARMA의 마지막 두 트랙 순서로 맞는 것은?",
+      "options": [
+        "0801 → Ghost",
+        "CEREMONY (Festival Version) → CEREMONY (English Version)",
+        "CEREMONY (English Version) → CEREMONY (Festival Version)",
+        "Phoenix → 반전 (Half Time)"
+      ],
+      "answerIndex": 1,
+      "answer": "CEREMONY (Festival Version) → CEREMONY (English Version)",
+      "explanation": "KARMA의 10번과 11번 트랙은 CEREMONY Festival Version과 English Version 순서입니다.",
+      "source": {
+        "publisher": "JYP Entertainment / Stray Kids Official",
+        "url": "https://straykids.jype.com/Default/DiscographyView?AamSeq=108",
+        "verifiedAt": "2026-07-11"
+      },
+      "seoKeywords": [
+        "스트레이 키즈",
+        "Stray Kids",
+        "스트레이 키즈 찐팬 테스트"
+      ],
+      "status": "verified_primary_source",
+      "contentPolicy": {
+        "rumorFree": true,
+        "privateLifeExcluded": true,
+        "sensitivePersonalInfoExcluded": true,
+        "lyricQuotationExcluded": true
+      }
+    }
+  ],
+  "validationReport": {
+    "validatedAt": "2026-07-11T16:45:00+09:00",
+    "checks": {
+      "totalQuestionsEquals180": true,
+      "easyQuestionsEquals60": true,
+      "mediumQuestionsEquals60": true,
+      "hardQuestionsEquals60": true,
+      "allQuestionsHaveFourUniqueOptions": true,
+      "allAnswerIndexesMatchAnswerText": true,
+      "allQuestionTextsUnique": true,
+      "allQuestionsHaveExplanation": true,
+      "allQuestionsHaveOfficialSourceUrl": true,
+      "noFormerMemberReference": true,
+      "noLyricQuotation": true,
+      "noRumorOrPrivateLifeContent": true
+    },
+    "structuralIssues": [],
+    "note": "Structural validation is automated. Factual content was compiled against the official source URL stored on each question and frozen to the verification date."
+  }
+}
