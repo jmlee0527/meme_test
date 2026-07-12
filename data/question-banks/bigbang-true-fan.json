@@ -1,0 +1,1433 @@
+{
+  "schemaVersion": "1.0.0",
+  "test": {
+    "id": "bigbang-true-fan-test",
+    "slug": "bigbang-true-fan-test",
+    "title": "빅뱅 찐팬 테스트",
+    "displayTitle": "빅뱅 찐팬 테스트 – 나는 진짜 VIP일까?",
+    "category": "팬덤",
+    "subCategory": "가수·아이돌",
+    "language": "ko-KR",
+    "questionCountPerAttempt": 15,
+    "answerType": "single-choice",
+    "choicesPerQuestion": 4,
+    "intro": "‘거짓말’과 ‘하루하루’부터 ALIVE, MADE, ‘Still Life’까지. BIGBANG의 앨범, 수록곡, 발매 순서, 공연 기록을 얼마나 정확히 기억하는지 확인해 보세요. 매번 난이도별 문항이 새롭게 조합됩니다.",
+    "instructions": "총 15문항이며 각 문제는 4지선다입니다. 정답을 선택한 뒤 다음 문제로 이동하고, 완료 후 점수와 팬 레벨을 확인합니다.",
+    "disclaimer": "이 테스트는 팬을 위한 비공식 퀴즈이며 BIGBANG, 소속사 및 관련 권리자와 공식적인 관계가 없습니다."
+  },
+  "seo": {
+    "metaTitle": "빅뱅 찐팬 테스트 | BIGBANG 퀴즈로 VIP 팬심 확인",
+    "metaDescription": "빅뱅 노래, 앨범, 수록곡, 콘서트 기록을 묻는 15문항 BIGBANG 찐팬 테스트. 난이도별 랜덤 퀴즈로 나의 VIP 팬 지수를 확인해 보세요.",
+    "keywords": [
+      "빅뱅 찐팬 테스트",
+      "빅뱅 팬 테스트",
+      "빅뱅 퀴즈",
+      "BIGBANG 테스트",
+      "BIGBANG 퀴즈",
+      "VIP 팬 테스트",
+      "빅뱅 노래 퀴즈",
+      "빅뱅 앨범 퀴즈",
+      "KPOP 찐팬 테스트",
+      "아이돌 팬 테스트"
+    ],
+    "canonicalPath": "/tests/bigbang-true-fan-test",
+    "ogTitle": "빅뱅 찐팬 테스트 – 나는 진짜 VIP일까?",
+    "ogDescription": "BIGBANG의 명곡과 앨범 역사를 얼마나 기억하고 있는지 15문항으로 확인해 보세요."
+  },
+  "sampling": {
+    "totalPool": 60,
+    "difficultyQuota": {
+      "easy": 5,
+      "medium": 6,
+      "hard": 4
+    },
+    "maxQuestionsPerTopicGroup": 1,
+    "rules": [
+      "동일 topicGroup 문항은 한 번의 테스트에 최대 1개만 포함한다.",
+      "release_date 카테고리는 최대 3개만 포함한다.",
+      "concert 카테고리는 최대 1개만 포함한다.",
+      "solo_track 카테고리는 최대 2개만 포함한다.",
+      "MADE 관련 topicGroup(made_m, made_a, made_d, made_e, made_full)은 합계 최대 4개만 포함한다.",
+      "최소 8개의 서로 다른 topicGroup이 포함되어야 한다.",
+      "선택지 순서를 세션별로 섞을 경우 반드시 answerIndex를 함께 재계산한다.",
+      "최근 응시 문항 ID를 localStorage 등에 저장해 재응시 시 가능한 한 중복을 줄인다."
+    ],
+    "fallback": "제약 조건으로 15문항을 채우지 못하면 topicGroup 제한만 유지한 채 카테고리 상한을 한 단계씩 완화하고, 난이도별 개수는 반드시 유지한다."
+  },
+  "scoring": {
+    "pointsPerCorrectAnswer": 1,
+    "maximumScore": 15,
+    "resultTiers": [
+      {
+        "min": 0,
+        "max": 3,
+        "name": "BIGBANG 입문 탐험가",
+        "summary": "대표곡부터 천천히 알아가는 단계예요. 초창기 앨범과 MADE SERIES를 다시 들어보면 점수가 빠르게 오를 거예요."
+      },
+      {
+        "min": 4,
+        "max": 6,
+        "name": "플레이리스트형 VIP",
+        "summary": "히트곡과 주요 활동은 잘 알고 있어요. 앨범별 수록곡과 발매 순서를 더 살펴보세요."
+      },
+      {
+        "min": 7,
+        "max": 9,
+        "name": "활동기 정주행 VIP",
+        "summary": "BIGBANG의 주요 시대와 앨범 흐름을 폭넓게 기억하고 있어요. 이제 세부 수록곡까지 도전해 보세요."
+      },
+      {
+        "min": 10,
+        "max": 12,
+        "name": "골든 크라운 VIP",
+        "summary": "대표곡뿐 아니라 앨범과 공연 기록까지 상당히 정확하게 알고 있는 상위권 팬이에요."
+      },
+      {
+        "min": 13,
+        "max": 14,
+        "name": "전설의 VIP",
+        "summary": "초창기 싱글부터 MADE와 Still Life까지 거의 완벽하게 기억하고 있어요."
+      },
+      {
+        "min": 15,
+        "max": 15,
+        "name": "BIGBANG 아카이브 마스터",
+        "summary": "60문항 풀에서도 흔들리지 않을 완벽한 기록형 팬이에요. 진정한 만점 VIP입니다."
+      }
+    ]
+  },
+  "verification": {
+    "verifiedAt": "2026-07-12",
+    "policy": [
+      "YG Entertainment 공식 프로필·디스코그래피·공연 이력을 우선 근거로 사용했다.",
+      "사생활, 확인되지 않은 루머, 범죄·논란 중심 문항은 포함하지 않았다.",
+      "노래 가사를 길게 인용하지 않았으며 사실 확인에 필요한 제목과 짧은 식별 정보만 사용했다.",
+      "발매일·트랙리스트·공연명처럼 공식 페이지에서 직접 확인 가능한 항목만 정답으로 채택했다."
+    ],
+    "questionCountByDifficulty": {
+      "easy": 20,
+      "medium": 24,
+      "hard": 16
+    },
+    "answerPositionBalance": {
+      "A": 15,
+      "B": 15,
+      "C": 15,
+      "D": 15
+    }
+  },
+  "sources": {
+    "S1": {
+      "title": "YG Entertainment — BIGBANG Profile / Awards",
+      "url": "https://ygfamily.com/en/artists/bigbang/profile",
+      "type": "primary"
+    },
+    "S2": {
+      "title": "YG Entertainment — BIGBANG Discography Index",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography",
+      "type": "primary"
+    },
+    "S3": {
+      "title": "YG Entertainment — BIGBANG Concert History",
+      "url": "https://ygfamily.com/en/artists/bigbang/concert",
+      "type": "primary"
+    },
+    "S4": {
+      "title": "YG Entertainment — MADE",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/306",
+      "type": "primary"
+    },
+    "S5": {
+      "title": "YG Entertainment — M",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/294",
+      "type": "primary"
+    },
+    "S6": {
+      "title": "YG Entertainment — A",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/297",
+      "type": "primary"
+    },
+    "S7": {
+      "title": "YG Entertainment — D",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/300",
+      "type": "primary"
+    },
+    "S8": {
+      "title": "YG Entertainment — E",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/303",
+      "type": "primary"
+    },
+    "S9": {
+      "title": "YG Entertainment — ALIVE",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/288",
+      "type": "primary"
+    },
+    "S10": {
+      "title": "YG Entertainment — STILL ALIVE",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/291",
+      "type": "primary"
+    },
+    "S11": {
+      "title": "YG Entertainment — 4th Mini Album",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/282",
+      "type": "primary"
+    },
+    "S12": {
+      "title": "YG Entertainment — Special Edition",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/285",
+      "type": "primary"
+    },
+    "S13": {
+      "title": "YG Entertainment — Remember",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/279",
+      "type": "primary"
+    },
+    "S14": {
+      "title": "YG Entertainment — Stand Up",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/276",
+      "type": "primary"
+    },
+    "S15": {
+      "title": "YG Entertainment — Hot Issue",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/273",
+      "type": "primary"
+    },
+    "S16": {
+      "title": "YG Entertainment — Always",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/270",
+      "type": "primary"
+    },
+    "S17": {
+      "title": "YG Entertainment — BIGBANG Is V.I.P",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/261",
+      "type": "primary"
+    },
+    "S18": {
+      "title": "YG Entertainment — BIGBANG 03",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/264",
+      "type": "primary"
+    },
+    "S19": {
+      "title": "YG Entertainment — BIGBANG First Single",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/258",
+      "type": "primary"
+    },
+    "S20": {
+      "title": "YG Entertainment — BIGBANG Vol.1",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/267",
+      "type": "primary"
+    },
+    "S21": {
+      "title": "YG Entertainment — Flower Road",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/309",
+      "type": "primary"
+    },
+    "S22": {
+      "title": "YG Entertainment — Still Life",
+      "url": "https://ygfamily.com/en/artists/bigbang/discography/312",
+      "type": "primary"
+    }
+  },
+  "questions": [
+    {
+      "id": "BB001",
+      "difficulty": "easy",
+      "category": "profile",
+      "topicGroup": "debut_profile",
+      "question": "BIGBANG의 공식 데뷔일은 언제일까요?",
+      "options": [
+        "2006년 8월 19일",
+        "2006년 8월 29일",
+        "2007년 8월 16일",
+        "2006년 12월 22일"
+      ],
+      "answerIndex": 0,
+      "answer": "2006년 8월 19일",
+      "explanation": "YG 공식 프로필에 데뷔일이 2006년 8월 19일로 기재되어 있습니다.",
+      "sourceIds": [
+        "S1"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB002",
+      "difficulty": "easy",
+      "category": "profile",
+      "topicGroup": "debut_profile",
+      "question": "BIGBANG이 데뷔한 해는 언제일까요?",
+      "options": [
+        "2005년",
+        "2006년",
+        "2007년",
+        "2008년"
+      ],
+      "answerIndex": 1,
+      "answer": "2006년",
+      "explanation": "BIGBANG은 2006년에 데뷔했습니다.",
+      "sourceIds": [
+        "S1"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB003",
+      "difficulty": "easy",
+      "category": "discography",
+      "topicGroup": "discography_general",
+      "question": "BIGBANG의 첫 번째 미니앨범 제목은 무엇일까요?",
+      "options": [
+        "Hot Issue",
+        "Stand Up",
+        "Always",
+        "ALIVE"
+      ],
+      "answerIndex": 2,
+      "answer": "Always",
+      "explanation": "YG 공식 디스코그래피에서 《Always》는 1st Mini Album으로 분류됩니다.",
+      "sourceIds": [
+        "S2"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB004",
+      "difficulty": "easy",
+      "category": "album_track",
+      "topicGroup": "always",
+      "question": "‘거짓말(Lies)’이 수록된 미니앨범은 무엇일까요?",
+      "options": [
+        "Hot Issue",
+        "Stand Up",
+        "Remember",
+        "Always"
+      ],
+      "answerIndex": 3,
+      "answer": "Always",
+      "explanation": "‘Lies’는 2007년 발매된 첫 미니앨범 《Always》 수록곡입니다.",
+      "sourceIds": [
+        "S16"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB005",
+      "difficulty": "easy",
+      "category": "album_track",
+      "topicGroup": "hot_issue",
+      "question": "‘마지막 인사(Last Farewell)’가 수록된 앨범은 무엇일까요?",
+      "options": [
+        "Hot Issue",
+        "Always",
+        "Stand Up",
+        "Remember"
+      ],
+      "answerIndex": 0,
+      "answer": "Hot Issue",
+      "explanation": "‘Last Farewell’은 두 번째 미니앨범 《Hot Issue》 수록곡입니다.",
+      "sourceIds": [
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB006",
+      "difficulty": "easy",
+      "category": "album_track",
+      "topicGroup": "stand_up",
+      "question": "‘하루하루(Haru Haru)’가 수록된 미니앨범은 무엇일까요?",
+      "options": [
+        "Hot Issue",
+        "Stand Up",
+        "Remember",
+        "ALIVE"
+      ],
+      "answerIndex": 1,
+      "answer": "Stand Up",
+      "explanation": "‘Haru Haru’는 세 번째 미니앨범 《Stand Up》 수록곡입니다.",
+      "sourceIds": [
+        "S14"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB007",
+      "difficulty": "easy",
+      "category": "album_track",
+      "topicGroup": "remember",
+      "question": "‘붉은 노을(Sunset Glow)’이 수록된 정규앨범은 무엇일까요?",
+      "options": [
+        "BIGBANG Vol.1",
+        "MADE",
+        "Remember",
+        "STILL ALIVE"
+      ],
+      "answerIndex": 2,
+      "answer": "Remember",
+      "explanation": "‘Sunset Glow’는 두 번째 정규앨범 《Remember》 수록곡입니다.",
+      "sourceIds": [
+        "S13"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB008",
+      "difficulty": "easy",
+      "category": "album_track",
+      "topicGroup": "alive",
+      "question": "‘FANTASTIC BABY’가 처음 수록된 한국 앨범은 무엇일까요?",
+      "options": [
+        "STILL ALIVE",
+        "MADE",
+        "4th Mini Album",
+        "ALIVE"
+      ],
+      "answerIndex": 3,
+      "answer": "ALIVE",
+      "explanation": "‘FANTASTIC BABY’는 2012년 다섯 번째 미니앨범 《ALIVE》 수록곡입니다.",
+      "sourceIds": [
+        "S9"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB009",
+      "difficulty": "easy",
+      "category": "album_track",
+      "topicGroup": "still_alive",
+      "question": "‘MONSTER’가 수록된 앨범은 무엇일까요?",
+      "options": [
+        "STILL ALIVE",
+        "ALIVE",
+        "MADE",
+        "Remember"
+      ],
+      "answerIndex": 0,
+      "answer": "STILL ALIVE",
+      "explanation": "‘MONSTER’는 스페셜 앨범 《STILL ALIVE》 수록곡입니다.",
+      "sourceIds": [
+        "S10"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB010",
+      "difficulty": "easy",
+      "category": "made_series",
+      "topicGroup": "made_m",
+      "question": "‘LOSER’와 ‘BAE BAE’가 처음 공개된 MADE SERIES 앨범은 무엇일까요?",
+      "options": [
+        "A",
+        "M",
+        "D",
+        "E"
+      ],
+      "answerIndex": 1,
+      "answer": "M",
+      "explanation": "MADE SERIES의 첫 싱글 앨범 《M》에는 ‘LOSER’와 ‘BAE BAE’가 수록됐습니다.",
+      "sourceIds": [
+        "S5"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB011",
+      "difficulty": "easy",
+      "category": "made_series",
+      "topicGroup": "made_a",
+      "question": "‘BANG BANG BANG’과 ‘WE LIKE 2 PARTY’가 공개된 MADE SERIES 앨범은 무엇일까요?",
+      "options": [
+        "M",
+        "D",
+        "A",
+        "E"
+      ],
+      "answerIndex": 2,
+      "answer": "A",
+      "explanation": "두 곡은 MADE SERIES 두 번째 프로젝트 《A》의 핵심 수록곡입니다.",
+      "sourceIds": [
+        "S6"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB012",
+      "difficulty": "easy",
+      "category": "made_series",
+      "topicGroup": "made_d",
+      "question": "‘IF YOU’와 ‘SOBER’가 공개된 MADE SERIES 앨범은 무엇일까요?",
+      "options": [
+        "M",
+        "A",
+        "E",
+        "D"
+      ],
+      "answerIndex": 3,
+      "answer": "D",
+      "explanation": "두 곡은 MADE SERIES 세 번째 프로젝트 《D》에 수록됐습니다.",
+      "sourceIds": [
+        "S7"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB013",
+      "difficulty": "easy",
+      "category": "made_series",
+      "topicGroup": "made_e",
+      "question": "GD & T.O.P의 유닛곡 ‘ZUTTER’가 공개된 MADE SERIES 앨범은 무엇일까요?",
+      "options": [
+        "E",
+        "M",
+        "A",
+        "D"
+      ],
+      "answerIndex": 0,
+      "answer": "E",
+      "explanation": "‘ZUTTER’는 《E》에 수록된 GD & T.O.P 유닛곡입니다.",
+      "sourceIds": [
+        "S8"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB014",
+      "difficulty": "easy",
+      "category": "discography",
+      "topicGroup": "flower_road",
+      "question": "싱글 ‘Flower Road’가 발매된 해는 언제일까요?",
+      "options": [
+        "2016년",
+        "2018년",
+        "2017년",
+        "2020년"
+      ],
+      "answerIndex": 1,
+      "answer": "2018년",
+      "explanation": "YG 공식 디스코그래피 기준 ‘Flower Road’는 2018년 3월 13일 발매됐습니다.",
+      "sourceIds": [
+        "S21"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB015",
+      "difficulty": "easy",
+      "category": "discography",
+      "topicGroup": "still_life",
+      "question": "싱글 ‘Still Life’가 발매된 해는 언제일까요?",
+      "options": [
+        "2018년",
+        "2020년",
+        "2022년",
+        "2024년"
+      ],
+      "answerIndex": 2,
+      "answer": "2022년",
+      "explanation": "‘Still Life’는 2022년 4월 5일 발매됐습니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB016",
+      "difficulty": "easy",
+      "category": "discography",
+      "topicGroup": "made_full",
+      "question": "《MADE》는 BIGBANG의 몇 번째 한국 정규앨범일까요?",
+      "options": [
+        "첫 번째",
+        "두 번째",
+        "네 번째",
+        "세 번째"
+      ],
+      "answerIndex": 3,
+      "answer": "세 번째",
+      "explanation": "YG 공식 디스코그래피는 《MADE》를 3rd Full Album으로 분류합니다.",
+      "sourceIds": [
+        "S4"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB017",
+      "difficulty": "easy",
+      "category": "discography",
+      "topicGroup": "bigbang_is_vip",
+      "question": "다음 중 BIGBANG의 두 번째 싱글 앨범 제목은 무엇일까요?",
+      "options": [
+        "BIGBANG Is V.I.P",
+        "BIGBANG First Single",
+        "BIGBANG 03",
+        "Always"
+      ],
+      "answerIndex": 0,
+      "answer": "BIGBANG Is V.I.P",
+      "explanation": "《BIGBANG Is V.I.P》는 2006년 발매된 두 번째 싱글 앨범입니다.",
+      "sourceIds": [
+        "S17"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB018",
+      "difficulty": "easy",
+      "category": "solo_track",
+      "topicGroup": "alive",
+      "question": "《ALIVE》에 수록된 DAESUNG의 솔로곡은 무엇일까요?",
+      "options": [
+        "BABY DON'T CRY",
+        "WINGS",
+        "BIG BOY",
+        "MY GIRL"
+      ],
+      "answerIndex": 1,
+      "answer": "WINGS",
+      "explanation": "《ALIVE》 트랙리스트에는 ‘WINGS (DAESUNG SOLO)’가 포함됩니다.",
+      "sourceIds": [
+        "S9"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB019",
+      "difficulty": "easy",
+      "category": "made_series",
+      "topicGroup": "discography_general",
+      "question": "MADE SERIES의 올바른 공개 순서는 무엇일까요?",
+      "options": [
+        "M → D → A → E",
+        "A → M → D → E",
+        "M → A → D → E",
+        "M → A → E → D"
+      ],
+      "answerIndex": 2,
+      "answer": "M → A → D → E",
+      "explanation": "2015년 MADE SERIES는 M, A, D, E 순서로 공개됐습니다.",
+      "sourceIds": [
+        "S2"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB020",
+      "difficulty": "easy",
+      "category": "concert",
+      "topicGroup": "concert_history",
+      "question": "YG 공식 공연 이력에서 BIGBANG의 2006년 첫 단독 콘서트 명칭은 무엇일까요?",
+      "options": [
+        "The G.R.E.A.T",
+        "Want You",
+        "BIG SHOW",
+        "The R.E.A.L"
+      ],
+      "answerIndex": 3,
+      "answer": "The R.E.A.L",
+      "explanation": "공식 공연 이력에 2006년 첫 라이브 콘서트가 《The R.E.A.L》로 기록돼 있습니다.",
+      "sourceIds": [
+        "S3"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB021",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "always",
+      "question": "《Always》의 공식 발매일은 언제일까요?",
+      "options": [
+        "2007년 8월 16일",
+        "2007년 11월 22일",
+        "2008년 8월 8일",
+        "2006년 12월 22일"
+      ],
+      "answerIndex": 0,
+      "answer": "2007년 8월 16일",
+      "explanation": "《Always》는 2007년 8월 16일 발매됐습니다.",
+      "sourceIds": [
+        "S16"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB022",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "hot_issue",
+      "question": "《Hot Issue》의 공식 발매일은 언제일까요?",
+      "options": [
+        "2007년 8월 16일",
+        "2007년 11월 22일",
+        "2008년 8월 8일",
+        "2008년 11월 5일"
+      ],
+      "answerIndex": 1,
+      "answer": "2007년 11월 22일",
+      "explanation": "《Hot Issue》는 2007년 11월 22일 발매됐습니다.",
+      "sourceIds": [
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB023",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "stand_up",
+      "question": "《Stand Up》의 공식 발매일은 언제일까요?",
+      "options": [
+        "2008년 11월 5일",
+        "2007년 11월 22일",
+        "2008년 8월 8일",
+        "2011년 2월 24일"
+      ],
+      "answerIndex": 2,
+      "answer": "2008년 8월 8일",
+      "explanation": "《Stand Up》은 2008년 8월 8일 발매됐습니다.",
+      "sourceIds": [
+        "S14"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB024",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "remember",
+      "question": "《Remember》의 공식 발매일은 언제일까요?",
+      "options": [
+        "2008년 8월 8일",
+        "2011년 2월 24일",
+        "2007년 11월 22일",
+        "2008년 11월 5일"
+      ],
+      "answerIndex": 3,
+      "answer": "2008년 11월 5일",
+      "explanation": "《Remember》는 2008년 11월 5일 발매됐습니다.",
+      "sourceIds": [
+        "S13"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB025",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "mini_album_4",
+      "question": "BIGBANG의 《4th Mini Album》 발매일은 언제일까요?",
+      "options": [
+        "2011년 2월 24일",
+        "2011년 4월 8일",
+        "2012년 2월 29일",
+        "2010년 2월 24일"
+      ],
+      "answerIndex": 0,
+      "answer": "2011년 2월 24일",
+      "explanation": "네 번째 미니앨범은 2011년 2월 24일 발매됐습니다.",
+      "sourceIds": [
+        "S11"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB026",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "special_edition_2011",
+      "question": "2011년 《Special Edition》의 공식 발매일은 언제일까요?",
+      "options": [
+        "2011년 2월 24일",
+        "2011년 4월 8일",
+        "2012년 2월 29일",
+        "2012년 6월 3일"
+      ],
+      "answerIndex": 1,
+      "answer": "2011년 4월 8일",
+      "explanation": "《Special Edition》은 2011년 4월 8일 발매됐습니다.",
+      "sourceIds": [
+        "S12"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB027",
+      "difficulty": "medium",
+      "category": "release_date",
+      "topicGroup": "alive",
+      "question": "《ALIVE》의 공식 발매일은 언제일까요?",
+      "options": [
+        "2012년 3월 2일",
+        "2012년 6월 3일",
+        "2012년 2월 29일",
+        "2011년 4월 8일"
+      ],
+      "answerIndex": 2,
+      "answer": "2012년 2월 29일",
+      "explanation": "《ALIVE》는 2012년 2월 29일 발매됐습니다.",
+      "sourceIds": [
+        "S9"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB028",
+      "difficulty": "medium",
+      "category": "chronology",
+      "topicGroup": "discography_general",
+      "question": "다음 앨범을 발매 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "STILL ALIVE → ALIVE → M → MADE",
+        "ALIVE → M → STILL ALIVE → MADE",
+        "M → ALIVE → STILL ALIVE → MADE",
+        "ALIVE → STILL ALIVE → M → MADE"
+      ],
+      "answerIndex": 3,
+      "answer": "ALIVE → STILL ALIVE → M → MADE",
+      "explanation": "공식 발매 순서는 2012년 《ALIVE》, 2012년 《STILL ALIVE》, 2015년 《M》, 2016년 《MADE》입니다.",
+      "sourceIds": [
+        "S2"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB029",
+      "difficulty": "medium",
+      "category": "album_pair",
+      "topicGroup": "made_m",
+      "question": "다음 중 《M》의 최초 공개곡 조합은 무엇일까요?",
+      "options": [
+        "LOSER · BAE BAE",
+        "BANG BANG BANG · WE LIKE 2 PARTY",
+        "IF YOU · SOBER",
+        "ZUTTER · LET'S NOT FALL IN LOVE"
+      ],
+      "answerIndex": 0,
+      "answer": "LOSER · BAE BAE",
+      "explanation": "《M》의 트랙은 ‘LOSER’와 ‘BAE BAE’입니다.",
+      "sourceIds": [
+        "S5"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB030",
+      "difficulty": "medium",
+      "category": "album_pair",
+      "topicGroup": "made_a",
+      "question": "다음 중 《A》의 신규 공개곡 조합은 무엇일까요?",
+      "options": [
+        "LOSER · BAE BAE",
+        "BANG BANG BANG · WE LIKE 2 PARTY",
+        "IF YOU · SOBER",
+        "ZUTTER · LET'S NOT FALL IN LOVE"
+      ],
+      "answerIndex": 1,
+      "answer": "BANG BANG BANG · WE LIKE 2 PARTY",
+      "explanation": "《A》에서 ‘BANG BANG BANG’과 ‘WE LIKE 2 PARTY’가 공개됐습니다.",
+      "sourceIds": [
+        "S6"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB031",
+      "difficulty": "medium",
+      "category": "album_pair",
+      "topicGroup": "made_d",
+      "question": "다음 중 《D》의 신규 공개곡 조합은 무엇일까요?",
+      "options": [
+        "LOSER · BAE BAE",
+        "BANG BANG BANG · WE LIKE 2 PARTY",
+        "IF YOU · SOBER",
+        "ZUTTER · LET'S NOT FALL IN LOVE"
+      ],
+      "answerIndex": 2,
+      "answer": "IF YOU · SOBER",
+      "explanation": "《D》의 신규곡은 ‘IF YOU’와 ‘SOBER’입니다.",
+      "sourceIds": [
+        "S7"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB032",
+      "difficulty": "medium",
+      "category": "album_pair",
+      "topicGroup": "made_e",
+      "question": "다음 중 《E》의 신규 공개곡 조합은 무엇일까요?",
+      "options": [
+        "LOSER · BAE BAE",
+        "IF YOU · SOBER",
+        "FXXK IT · LAST DANCE",
+        "ZUTTER · LET'S NOT FALL IN LOVE"
+      ],
+      "answerIndex": 3,
+      "answer": "ZUTTER · LET'S NOT FALL IN LOVE",
+      "explanation": "《E》의 신규곡은 ‘ZUTTER’와 ‘LET'S NOT FALL IN LOVE’입니다.",
+      "sourceIds": [
+        "S8"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB033",
+      "difficulty": "medium",
+      "category": "made_album",
+      "topicGroup": "made_full",
+      "question": "2016년 정규앨범 《MADE》에서 새로 더해진 세 곡의 조합은 무엇일까요?",
+      "options": [
+        "FXXK IT · LAST DANCE · GIRLFRIEND",
+        "LOSER · BAE BAE · IF YOU",
+        "MONSTER · BLUE · BAD BOY",
+        "LOVE SONG · STUPID LIAR · CAFE"
+      ],
+      "answerIndex": 0,
+      "answer": "FXXK IT · LAST DANCE · GIRLFRIEND",
+      "explanation": "《MADE》 정규앨범 트랙리스트 앞부분에 세 신곡 ‘FXXK IT’, ‘LAST DANCE’, ‘GIRLFRIEND’가 수록됐습니다.",
+      "sourceIds": [
+        "S4"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB034",
+      "difficulty": "medium",
+      "category": "made_album",
+      "topicGroup": "made_full",
+      "question": "다음 중 정규앨범 《MADE》 트랙리스트에 포함되지 않은 곡은 무엇일까요?",
+      "options": [
+        "LOSER",
+        "MONSTER",
+        "SOBER",
+        "GIRLFRIEND"
+      ],
+      "answerIndex": 1,
+      "answer": "MONSTER",
+      "explanation": "‘MONSTER’는 《STILL ALIVE》 수록곡이며 《MADE》에는 포함되지 않습니다.",
+      "sourceIds": [
+        "S4"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB035",
+      "difficulty": "medium",
+      "category": "album_track",
+      "topicGroup": "remember",
+      "question": "다음 중 《Remember》에 수록된 곡은 무엇일까요?",
+      "options": [
+        "Cafe",
+        "Ain't No Fun",
+        "Strong Baby",
+        "Unknown Number"
+      ],
+      "answerIndex": 2,
+      "answer": "Strong Baby",
+      "explanation": "‘Strong Baby’는 《Remember》 트랙리스트에 포함됩니다.",
+      "sourceIds": [
+        "S13"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB036",
+      "difficulty": "medium",
+      "category": "collaboration",
+      "topicGroup": "stand_up",
+      "question": "《Stand Up》 수록곡 ‘Oh My Friend’에 피처링으로 참여한 밴드는 누구일까요?",
+      "options": [
+        "Nell",
+        "Jaurim",
+        "FTISLAND",
+        "No Brain"
+      ],
+      "answerIndex": 3,
+      "answer": "No Brain",
+      "explanation": "공식 트랙리스트에는 ‘Oh My Friend (Feat. Nobrain)’로 표기됩니다.",
+      "sourceIds": [
+        "S14"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB037",
+      "difficulty": "medium",
+      "category": "album_track",
+      "topicGroup": "mini_album_4",
+      "question": "다음 중 BIGBANG의 《4th Mini Album》 수록곡은 무엇일까요?",
+      "options": [
+        "CAFE",
+        "MONSTER",
+        "SUNSET GLOW",
+        "FLOWER ROAD"
+      ],
+      "answerIndex": 0,
+      "answer": "CAFE",
+      "explanation": "‘CAFE’는 네 번째 미니앨범 수록곡입니다.",
+      "sourceIds": [
+        "S11"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB038",
+      "difficulty": "medium",
+      "category": "album_track",
+      "topicGroup": "alive",
+      "question": "다음 중 《ALIVE》에 수록되지 않은 곡은 무엇일까요?",
+      "options": [
+        "BLUE",
+        "MONSTER",
+        "BAD BOY",
+        "LOVE DUST"
+      ],
+      "answerIndex": 1,
+      "answer": "MONSTER",
+      "explanation": "‘MONSTER’는 후속 스페셜 앨범 《STILL ALIVE》 수록곡입니다.",
+      "sourceIds": [
+        "S9"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB039",
+      "difficulty": "medium",
+      "category": "title_track",
+      "topicGroup": "special_edition_2011",
+      "question": "2011년 《Special Edition》의 더블 타이틀곡 조합은 무엇일까요?",
+      "options": [
+        "TONIGHT · CAFE",
+        "HIGH HIGH · OH YEAH",
+        "LOVE SONG · STUPID LIAR",
+        "BLUE · BAD BOY"
+      ],
+      "answerIndex": 2,
+      "answer": "LOVE SONG · STUPID LIAR",
+      "explanation": "YG 공식 앨범 소개는 ‘LOVE SONG’과 ‘STUPID LIAR’를 더블 타이틀곡으로 설명합니다.",
+      "sourceIds": [
+        "S12"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB040",
+      "difficulty": "medium",
+      "category": "solo_track",
+      "topicGroup": "special_edition_2011",
+      "question": "2011년 《Special Edition》에 수록된 DAESUNG 솔로곡은 무엇일까요?",
+      "options": [
+        "WINGS",
+        "LAUGH IT OFF",
+        "NEXT DAY",
+        "BABY DON'T CRY"
+      ],
+      "answerIndex": 3,
+      "answer": "BABY DON'T CRY",
+      "explanation": "‘BABY DON'T CRY’는 DAESUNG의 솔로곡으로 소개됩니다.",
+      "sourceIds": [
+        "S12"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB041",
+      "difficulty": "medium",
+      "category": "solo_track",
+      "topicGroup": "bigbang_vol1",
+      "question": "《BIGBANG Vol.1》에 수록된 T.O.P 솔로곡은 무엇일까요?",
+      "options": [
+        "Big Boy",
+        "My Girl",
+        "This Love",
+        "Laugh It Off"
+      ],
+      "answerIndex": 0,
+      "answer": "Big Boy",
+      "explanation": "공식 트랙리스트에 ‘Big Boy (T.O.P Solo)’로 표기됩니다.",
+      "sourceIds": [
+        "S20"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB042",
+      "difficulty": "medium",
+      "category": "solo_track",
+      "topicGroup": "bigbang_vol1",
+      "question": "《BIGBANG Vol.1》에 수록된 TAEYANG 솔로곡은 무엇일까요?",
+      "options": [
+        "Big Boy",
+        "My Girl",
+        "This Love",
+        "Laugh It Off"
+      ],
+      "answerIndex": 1,
+      "answer": "My Girl",
+      "explanation": "공식 트랙리스트에 ‘My Girl (TaeYang Solo)’로 표기됩니다.",
+      "sourceIds": [
+        "S20"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB043",
+      "difficulty": "medium",
+      "category": "solo_track",
+      "topicGroup": "bigbang_vol1",
+      "question": "《BIGBANG Vol.1》에 수록된 G-DRAGON 솔로곡은 무엇일까요?",
+      "options": [
+        "Big Boy",
+        "My Girl",
+        "This Love",
+        "Laugh It Off"
+      ],
+      "answerIndex": 2,
+      "answer": "This Love",
+      "explanation": "공식 트랙리스트에 ‘This Love (G-DRAGON Solo)’로 표기됩니다.",
+      "sourceIds": [
+        "S20"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB044",
+      "difficulty": "medium",
+      "category": "solo_track",
+      "topicGroup": "bigbang_vol1",
+      "question": "《BIGBANG Vol.1》에 수록된 DAESUNG 솔로곡은 무엇일까요?",
+      "options": [
+        "Big Boy",
+        "My Girl",
+        "This Love",
+        "Laugh It Off"
+      ],
+      "answerIndex": 3,
+      "answer": "Laugh It Off",
+      "explanation": "공식 트랙리스트에 ‘Laugh It Off (DaeSung Solo)’로 표기됩니다.",
+      "sourceIds": [
+        "S20"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB045",
+      "difficulty": "hard",
+      "category": "debut_single",
+      "topicGroup": "first_single",
+      "question": "다음 중 《BIGBANG First Single》에 수록되지 않은 곡은 무엇일까요?",
+      "options": [
+        "La La La",
+        "We Belong Together",
+        "A Fool Of Tears",
+        "This Love"
+      ],
+      "answerIndex": 0,
+      "answer": "La La La",
+      "explanation": "‘La La La’는 두 번째 싱글 앨범 《BIGBANG Is V.I.P》 수록곡입니다.",
+      "sourceIds": [
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB046",
+      "difficulty": "hard",
+      "category": "early_discography",
+      "topicGroup": "bigbang_is_vip",
+      "question": "《BIGBANG Is V.I.P》에 수록된 TAEYANG 중심의 솔로곡은 무엇일까요?",
+      "options": [
+        "Big Boy",
+        "Ma Girl",
+        "Next Day",
+        "Wings"
+      ],
+      "answerIndex": 1,
+      "answer": "Ma Girl",
+      "explanation": "YG 공식 소개는 ‘Ma Girl’을 TAEYANG의 두 번째 솔로곡으로 설명합니다.",
+      "sourceIds": [
+        "S17"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB047",
+      "difficulty": "hard",
+      "category": "early_discography",
+      "topicGroup": "bigbang_03",
+      "question": "다음 중 《BIGBANG 03》 수록곡은 무엇일까요?",
+      "options": [
+        "Unknown Number",
+        "She Can't Get Enough",
+        "Forever With You",
+        "Oh.Ah.Oh"
+      ],
+      "answerIndex": 2,
+      "answer": "Forever With You",
+      "explanation": "‘Forever With You’는 세 번째 싱글 앨범 《BIGBANG 03》에 수록됐습니다.",
+      "sourceIds": [
+        "S18"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB048",
+      "difficulty": "hard",
+      "category": "production",
+      "topicGroup": "first_single",
+      "question": "《BIGBANG First Single》의 ‘This Love’가 샘플링한 원곡의 아티스트는 누구일까요?",
+      "options": [
+        "Coldplay",
+        "Linkin Park",
+        "OneRepublic",
+        "Maroon 5"
+      ],
+      "answerIndex": 3,
+      "answer": "Maroon 5",
+      "explanation": "YG 공식 앨범 소개는 G-DRAGON의 ‘This Love’가 Maroon 5의 동명 곡을 샘플링했다고 설명합니다.",
+      "sourceIds": [
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB049",
+      "difficulty": "hard",
+      "category": "production",
+      "topicGroup": "hot_issue",
+      "question": "《Hot Issue》의 ‘Crazy Dog’가 샘플링한 곡은 무엇일까요?",
+      "options": [
+        "서태지와 아이들의 ‘환상 속의 그대’",
+        "듀스의 ‘나를 돌아봐’",
+        "H.O.T.의 ‘전사의 후예’",
+        "DJ DOC의 ‘Run to You’"
+      ],
+      "answerIndex": 0,
+      "answer": "서태지와 아이들의 ‘환상 속의 그대’",
+      "explanation": "YG 공식 소개는 ‘Crazy Dog’가 Taiji Boys의 ‘You in My Fantasy(환상 속의 그대)’를 샘플링했다고 밝힙니다.",
+      "sourceIds": [
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB050",
+      "difficulty": "hard",
+      "category": "production",
+      "topicGroup": "hot_issue",
+      "question": "YG 공식 소개에 따르면 G-DRAGON은 《Hot Issue》의 여섯 곡 중 몇 곡을 작곡했을까요?",
+      "options": [
+        "3곡",
+        "5곡",
+        "4곡",
+        "6곡"
+      ],
+      "answerIndex": 1,
+      "answer": "5곡",
+      "explanation": "공식 앨범 소개에는 G-DRAGON이 여섯 곡 중 다섯 곡을 작곡했다고 적혀 있습니다.",
+      "sourceIds": [
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB051",
+      "difficulty": "hard",
+      "category": "comeback",
+      "topicGroup": "made_m",
+      "question": "YG 공식 《M》 소개에서 2015년 완전체 컴백은 《ALIVE》 발매 후 며칠 만이라고 설명했을까요?",
+      "options": [
+        "957일",
+        "1,057일",
+        "1,157일",
+        "1,257일"
+      ],
+      "answerIndex": 2,
+      "answer": "1,157일",
+      "explanation": "YG는 《M》을 《ALIVE》 이후 1,157일 만의 완전체 귀환으로 소개했습니다.",
+      "sourceIds": [
+        "S5"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB052",
+      "difficulty": "hard",
+      "category": "music_video",
+      "topicGroup": "alive",
+      "question": "YG 공식 《ALIVE》 소개에 따르면 ‘BAD BOY’ 뮤직비디오는 어느 도시의 거리에서 촬영됐을까요?",
+      "options": [
+        "영국 런던 소호",
+        "일본 도쿄 시부야",
+        "프랑스 파리 몽마르트",
+        "미국 뉴욕 브루클린"
+      ],
+      "answerIndex": 3,
+      "answer": "미국 뉴욕 브루클린",
+      "explanation": "공식 소개는 ‘BAD BOY’ 뮤직비디오가 뉴욕 브루클린 거리에서 촬영됐다고 설명합니다.",
+      "sourceIds": [
+        "S9"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB053",
+      "difficulty": "hard",
+      "category": "album_detail",
+      "topicGroup": "still_alive",
+      "question": "YG 공식 소개에 따르면 《STILL ALIVE》에는 새로운 트랙이 총 몇 곡 포함됐을까요?",
+      "options": [
+        "5곡",
+        "3곡",
+        "4곡",
+        "6곡"
+      ],
+      "answerIndex": 0,
+      "answer": "5곡",
+      "explanation": "YG 공식 소개는 《STILL ALIVE》에 총 다섯 곡의 신곡이 포함됐다고 밝힙니다.",
+      "sourceIds": [
+        "S10"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB054",
+      "difficulty": "hard",
+      "category": "chronology",
+      "topicGroup": "discography_general",
+      "question": "공식 디스코그래피상 ‘Flower Road’ 바로 전에 발매된 BIGBANG 앨범은 무엇일까요?",
+      "options": [
+        "STILL ALIVE",
+        "MADE",
+        "E",
+        "ALIVE"
+      ],
+      "answerIndex": 1,
+      "answer": "MADE",
+      "explanation": "공식 발매 목록에서 2016년 《MADE》 다음 그룹 발매가 2018년 ‘Flower Road’입니다.",
+      "sourceIds": [
+        "S2"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB055",
+      "difficulty": "hard",
+      "category": "chronology",
+      "topicGroup": "still_life",
+      "question": "YG 공식 소개에 따르면 ‘Still Life’는 ‘Flower Road’ 이후 약 얼마 만에 발표됐을까요?",
+      "options": [
+        "2년 만",
+        "3년 만",
+        "4년 만",
+        "5년 만"
+      ],
+      "answerIndex": 2,
+      "answer": "4년 만",
+      "explanation": "‘Still Life’ 공식 소개는 ‘Flower Road’ 발표 후 4년 만의 신곡이라고 설명합니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB056",
+      "difficulty": "hard",
+      "category": "concert",
+      "topicGroup": "concert_history",
+      "question": "다음 BIGBANG 공연을 연도순으로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Want You → The R.E.A.L → ALIVE GALAXY TOUR → Global Warning Tour",
+        "The R.E.A.L → Global Warning Tour → Want You → ALIVE GALAXY TOUR",
+        "Global Warning Tour → Want You → The R.E.A.L → ALIVE GALAXY TOUR",
+        "The R.E.A.L → Want You → Global Warning Tour → ALIVE GALAXY TOUR"
+      ],
+      "answerIndex": 3,
+      "answer": "The R.E.A.L → Want You → Global Warning Tour → ALIVE GALAXY TOUR",
+      "explanation": "공식 공연 이력 기준 각각 2006년, 2007년, 2008년, 2012년 순서입니다.",
+      "sourceIds": [
+        "S3"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB057",
+      "difficulty": "hard",
+      "category": "concert",
+      "topicGroup": "concert_history",
+      "question": "2012년 BIGBANG의 월드투어 명칭으로 공식 공연 이력에 기록된 것은 무엇일까요?",
+      "options": [
+        "BIGBANG ALIVE GALAXY TOUR",
+        "BIGBANG WORLD TOUR [MADE]",
+        "BIGBANG JAPAN DOME TOUR 'X'",
+        "BIGBANG CONCERT [LAST DANCE]"
+      ],
+      "answerIndex": 0,
+      "answer": "BIGBANG ALIVE GALAXY TOUR",
+      "explanation": "YG 공식 공연 이력에 2012년 《BIGBANG ALIVE GALAXY TOUR》가 기록돼 있습니다.",
+      "sourceIds": [
+        "S3"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB058",
+      "difficulty": "hard",
+      "category": "concert",
+      "topicGroup": "concert_history",
+      "question": "2015~2016년에 진행된 BIGBANG 월드투어의 공식 명칭은 무엇일까요?",
+      "options": [
+        "BIGBANG ALIVE TOUR",
+        "BIGBANG WORLD TOUR [MADE]",
+        "BIGBANG10 THE CONCERT : 0.TO.10",
+        "BIGBANG JAPAN DOME TOUR [LAST DANCE]"
+      ],
+      "answerIndex": 1,
+      "answer": "BIGBANG WORLD TOUR [MADE]",
+      "explanation": "공식 공연 이력은 2015~2016년 투어를 《BIGBANG WORLD TOUR [MADE]》로 기록합니다.",
+      "sourceIds": [
+        "S3"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB059",
+      "difficulty": "hard",
+      "category": "concert",
+      "topicGroup": "concert_history",
+      "question": "BIGBANG의 데뷔 10주년 콘서트 명칭은 무엇일까요?",
+      "options": [
+        "BIGBANG CONCERT [BIG SHOW]",
+        "BIGBANG CONCERT [LAST DANCE] IN SEOUL",
+        "BIGBANG10 THE CONCERT : 0.TO.10",
+        "BIGBANG 2nd Live Concert [The G.R.E.A.T]"
+      ],
+      "answerIndex": 2,
+      "answer": "BIGBANG10 THE CONCERT : 0.TO.10",
+      "explanation": "공식 공연 이력에 데뷔 10주년 공연이 《BIGBANG10 THE CONCERT : 0.TO.10》으로 기재돼 있습니다.",
+      "sourceIds": [
+        "S3"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "BB060",
+      "difficulty": "hard",
+      "category": "award",
+      "topicGroup": "award_history",
+      "question": "YG 공식 수상 이력에서 BIGBANG이 2021년 서울가요대상에서 받은 상은 무엇일까요?",
+      "options": [
+        "Digital Music Award",
+        "Best Vocal Performance Group",
+        "Album of the Year",
+        "Legend Award"
+      ],
+      "answerIndex": 3,
+      "answer": "Legend Award",
+      "explanation": "YG 공식 프로필의 수상 이력에는 2021년 제30회 서울가요대상 Legend Award가 기록돼 있습니다.",
+      "sourceIds": [
+        "S1"
+      ],
+      "verificationStatus": "verified"
+    }
+  ]
+}

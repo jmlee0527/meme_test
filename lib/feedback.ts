@@ -1,0 +1,2 @@
+export const REPORT_TYPES=["개선 의견","문제 및 정답 오류","기능 작동 오류","기타"]as const;export type ReportType=(typeof REPORT_TYPES)[number];export const FEEDBACK_LIMITS={minimumContent:10,maximumContent:1000,maximumContact:120,maximumBodyBytes:20_000}as const;
+export type FeedbackPayload={type:ReportType;content:string;contact?:string;website?:string;pageUrl?:string;pageTitle?:string;testName?:string;testId?:string;questionNumber?:number;totalQuestions?:number;userAgent?:string;screenSize?:string;referrer?:string;submittedAt?:string};

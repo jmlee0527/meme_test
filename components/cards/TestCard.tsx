@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import type { TestDefinition } from "@/lib/types";
 
 const accentClasses = {
@@ -17,12 +18,13 @@ const accentClasses = {
 
 export function TestCard({ test, rank }: { test: TestDefinition; rank?: number }) {
   const reduceMotion = useReducedMotion();
+  const pathname = usePathname();
   const href = test.href ?? `/tests/${test.slug}`;
   const countLabel = test.type === "worldcup" ? `${test.itemCount}강` : test.type === "fortune" ? `${test.itemCount ?? 5}장 카드` : test.type === "calculator" ? "이름 2개" : `${test.itemCount ?? test.questions.length}문항`;
   return (
     <motion.article whileHover={reduceMotion ? undefined : { y: -4, scale: 1.01 }} transition={{ type: "spring", stiffness: 320, damping: 24 }} className="group relative overflow-hidden rounded-[1.5rem] border border-white bg-white shadow-card transition-shadow duration-300 hover:shadow-xl hover:shadow-slate-300/40">
       {rank && <span className="absolute left-3 top-3 z-10 grid size-8 place-items-center rounded-xl border border-white/80 bg-white/90 text-sm font-black shadow-sm backdrop-blur sm:size-9" aria-label={`인기 ${rank}위`}>{["🥇","🥈","🥉"][rank-1] ?? rank}</span>}
-      <Link href={href} className="block focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-[-4px] focus-visible:outline-primary">
+      <Link href={href} onClick={() => { if (pathname === "/search") (window as Window & { gtag?: (command:string,event:string,params?:Record<string,string>)=>void }).gtag?.("event","search_result_click",{test_id:test.slug}); }} className="block focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-[-4px] focus-visible:outline-primary">
         <div className={`relative grid aspect-[4/3] place-items-center overflow-hidden bg-gradient-to-br ${accentClasses[test.accent]}`}>
           {test.thumbnail ? (
             <Image src={test.thumbnail} alt={test.title} fill sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw" className="object-cover object-[center_18%] transition duration-500 group-hover:scale-105" priority={Boolean(rank && rank <= 3)} />

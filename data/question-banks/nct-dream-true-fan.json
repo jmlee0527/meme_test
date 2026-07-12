@@ -1,0 +1,1799 @@
+{
+  "schemaVersion": "1.0.0",
+  "test": {
+    "id": "nct-dream-true-fan-test",
+    "slug": "nct-dream-true-fan-test",
+    "title": "NCT DREAM 찐팬 테스트",
+    "shortTitle": "NCT DREAM 찐팬 테스트",
+    "category": "팬 퀴즈",
+    "description": "멤버, 데뷔, 앨범, 수록곡, 일본 활동과 THE DREAM SHOW까지 15문제로 확인하는 나의 NCT DREAM 팬심 지수",
+    "questionPoolSize": 60,
+    "questionsPerAttempt": 15,
+    "choiceCount": 4,
+    "estimatedTime": "약 3~5분",
+    "verifiedAt": "2026-07-12",
+    "factCutoff": "2026-07-12",
+    "language": "ko-KR",
+    "sampling": {
+      "easy": 5,
+      "medium": 5,
+      "hard": 5,
+      "shuffleQuestions": true,
+      "shuffleChoices": true,
+      "preserveAnswerAfterChoiceShuffle": true,
+      "avoidRepeatedFactGroup": true,
+      "maxQuestionsPerTopicKey": 2,
+      "maxTracklistQuestionsPerAttempt": 5,
+      "requiredCategoryCoverage": {
+        "멤버_그룹역사_팬덤": {
+          "min": 2,
+          "max": 4
+        },
+        "앨범_노래_수록곡": {
+          "min": 8,
+          "max": 11
+        },
+        "공연_일본활동_특별활동": {
+          "min": 2,
+          "max": 4
+        }
+      },
+      "retryLimit": 100,
+      "fallback": "난이도 5개씩을 유지한 뒤 topicKey 중복이 가장 적은 조합을 선택"
+    },
+    "scoring": {
+      "easyWeight": 1,
+      "mediumWeight": 2,
+      "hardWeight": 3,
+      "maximumScore": 30,
+      "percentageFormula": "Math.round((score / 30) * 100)",
+      "showCorrectCount": true,
+      "showWeightedScore": true,
+      "showReview": true
+    },
+    "resultLevels": [
+      {
+        "minScore": 0,
+        "maxScore": 6,
+        "title": "입덕 준비생",
+        "badge": "꿈을 발견한 단계",
+        "summary": "NCT DREAM의 매력을 이제 막 알아가는 중이에요. 대표곡부터 천천히 시작해 보세요."
+      },
+      {
+        "minScore": 7,
+        "maxScore": 11,
+        "title": "새싹 NCTzen",
+        "badge": "Chewing Gum 단계",
+        "summary": "기본 정보와 대표곡을 제법 알고 있어요. 앨범 흐름을 따라가면 팬심이 더 빠르게 자랄 거예요."
+      },
+      {
+        "minScore": 12,
+        "maxScore": 16,
+        "title": "드림 탐험가",
+        "badge": "We Go Up 단계",
+        "summary": "주요 활동과 앨범을 안정적으로 기억하고 있어요. 수록곡과 공연 기록에서 한 단계 더 올라갈 수 있어요."
+      },
+      {
+        "minScore": 17,
+        "maxScore": 21,
+        "title": "믿고 듣는 시즈니",
+        "badge": "Hello Future 단계",
+        "summary": "대표곡뿐 아니라 앨범과 활동 흐름까지 잘 알고 있어요. 어디서든 NCT DREAM 이야기에 자연스럽게 합류할 실력입니다."
+      },
+      {
+        "minScore": 22,
+        "maxScore": 26,
+        "title": "7DREAM 핵심 팬",
+        "badge": "DREAMSCAPE 단계",
+        "summary": "세부 트랙과 투어 정보까지 강합니다. 몇 문제만 더 맞히면 최상위 찐팬 인증이에요."
+      },
+      {
+        "minScore": 27,
+        "maxScore": 30,
+        "title": "NCT DREAM 찐팬 인증",
+        "badge": "7DREAM 마스터",
+        "summary": "멤버, 앨범, 수록곡, 공연 기록을 빈틈없이 기억하는 최상위 팬입니다. 진짜 시즈니의 저력을 증명했어요."
+      }
+    ],
+    "seo": {
+      "primaryKeyword": "NCT DREAM 찐팬 테스트",
+      "secondaryKeywords": [
+        "엔시티 드림 퀴즈",
+        "NCT DREAM 테스트",
+        "시즈니 테스트",
+        "엔시티 드림 팬심 테스트",
+        "NCT DREAM 멤버",
+        "엔시티 드림 노래",
+        "NCT DREAM 앨범",
+        "7DREAM",
+        "팬 퀴즈"
+      ],
+      "metaTitle": "NCT DREAM 찐팬 테스트 | 엔시티 드림 팬심·시즈니 덕력 퀴즈",
+      "metaDescription": "NCT DREAM 멤버, 데뷔곡, 앨범, 수록곡, THE DREAM SHOW와 일본 활동까지 15문제로 나의 시즈니 팬심 지수를 확인해보세요.",
+      "ogTitle": "NCT DREAM 찐팬 테스트",
+      "ogDescription": "나는 몇 점짜리 시즈니일까? 7DREAM의 멤버·노래·앨범·공연 기록으로 팬심을 테스트해보세요.",
+      "canonicalPath": "/tests/nct-dream-true-fan-test",
+      "indexable": true,
+      "suggestedFaq": [
+        {
+          "question": "NCT DREAM 찐팬 테스트는 몇 문제인가요?",
+          "answer": "총 60문제의 검증된 문제 풀에서 쉬움, 보통, 어려움 난이도별로 5문제씩 뽑아 매회 15문제를 제공합니다."
+        },
+        {
+          "question": "문제는 매번 같나요?",
+          "answer": "아니요. 난이도와 주제 균형을 유지하면서 문제와 선택지 순서를 무작위로 구성합니다."
+        },
+        {
+          "question": "테스트 결과는 어떻게 계산하나요?",
+          "answer": "쉬움 1점, 보통 2점, 어려움 3점으로 가중치를 적용해 총 30점 기준의 팬심 레벨을 보여줍니다."
+        }
+      ]
+    },
+    "contentSafety": {
+      "allowed": [
+        "공식 프로필",
+        "공식 음원 메타데이터",
+        "공식 공연 공지",
+        "공식 팬클럽 공지",
+        "권위 있는 국제단체 자료"
+      ],
+      "excluded": [
+        "열애설",
+        "사생활",
+        "건강 추측",
+        "확인되지 않은 별명 유래",
+        "팬 커뮤니티 루머",
+        "신체 정보",
+        "서열·인기 비교",
+        "악의적 오답"
+      ],
+      "copyright": "노래 가사를 문제나 해설에 직접 인용하지 않음",
+      "refreshRule": "새 앨범·투어·멤버 활동을 반영할 때 기존 사실과 충돌 여부를 공식 출처로 재검증하고 verifiedAt을 갱신"
+    }
+  },
+  "questions": [
+    {
+      "id": "ND-E01",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "멤버",
+      "topicKey": "members",
+      "factGroup": "member_count",
+      "question": "현재 NCT DREAM의 고정 멤버 수는 몇 명일까요?",
+      "choices": [
+        "5명",
+        "6명",
+        "7명",
+        "9명"
+      ],
+      "answerIndex": 2,
+      "answer": "7명",
+      "explanation": "NCT DREAM은 MARK, RENJUN, JENO, HAECHAN, JAEMIN, CHENLE, JISUNG의 7인 체제로 활동합니다.",
+      "sourceIds": [
+        "S02",
+        "S03"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E02",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "멤버",
+      "topicKey": "members",
+      "factGroup": "member_roster",
+      "question": "다음 중 NCT DREAM 멤버가 아닌 사람은 누구일까요?",
+      "choices": [
+        "RENJUN",
+        "JENO",
+        "JISUNG",
+        "DOYOUNG"
+      ],
+      "answerIndex": 3,
+      "answer": "DOYOUNG",
+      "explanation": "DOYOUNG은 NCT 멤버이지만 NCT DREAM의 7인 멤버에는 포함되지 않습니다.",
+      "sourceIds": [
+        "S02",
+        "S03"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E03",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "그룹 역사",
+      "topicKey": "debut",
+      "factGroup": "debut_date",
+      "question": "NCT DREAM의 공식 데뷔일은 언제일까요?",
+      "choices": [
+        "2016년 7월 7일",
+        "2016년 8월 25일",
+        "2017년 2월 9일",
+        "2018년 9월 3일"
+      ],
+      "answerIndex": 1,
+      "answer": "2016년 8월 25일",
+      "explanation": "공식 팬클럽 소개 자료에 명시된 NCT DREAM의 데뷔일은 2016년 8월 25일입니다.",
+      "sourceIds": [
+        "S02"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E04",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "노래",
+      "topicKey": "chewing-gum",
+      "factGroup": "debut_song",
+      "question": "NCT DREAM의 데뷔곡은 무엇일까요?",
+      "choices": [
+        "Chewing Gum",
+        "My First and Last",
+        "We Young",
+        "GO"
+      ],
+      "answerIndex": 0,
+      "answer": "Chewing Gum",
+      "explanation": "NCT DREAM은 밝은 틴 팝 곡 'Chewing Gum'으로 데뷔했습니다.",
+      "sourceIds": [
+        "S03",
+        "S04"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E05",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "팬덤",
+      "topicKey": "fanclub",
+      "factGroup": "fanclub_name",
+      "question": "NCT DREAM 공식 팬클럽 멤버십 명칭은 무엇일까요?",
+      "choices": [
+        "NCTzen 127",
+        "NCTzen DREAM",
+        "WayZenNi",
+        "NCTzen WISH"
+      ],
+      "answerIndex": 1,
+      "answer": "NCTzen DREAM",
+      "explanation": "NCT DREAM의 공식 팬클럽 멤버십 명칭은 'NCTzen DREAM'입니다.",
+      "sourceIds": [
+        "S02"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E06",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "그룹 역사",
+      "topicKey": "system",
+      "factGroup": "graduation_system",
+      "question": "NCT DREAM이 고정 7인 체제로 전환되며 폐지된 초기 운영 방식은 무엇일까요?",
+      "choices": [
+        "센터 교대제",
+        "졸업 체제",
+        "월간 유닛제",
+        "지역별 멤버제"
+      ],
+      "answerIndex": 1,
+      "answer": "졸업 체제",
+      "explanation": "초기에는 일정 나이가 되면 팀을 졸업하는 체제가 있었지만 2020년 이를 폐지하고 7인 체제를 유지하게 됐습니다.",
+      "sourceIds": [
+        "S03",
+        "S09"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E07",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "hot-sauce",
+      "factGroup": "first_studio_album",
+      "question": "NCT DREAM의 첫 정규앨범은 무엇일까요?",
+      "choices": [
+        "Reload",
+        "Hot Sauce",
+        "Glitch Mode",
+        "ISTJ"
+      ],
+      "answerIndex": 1,
+      "answer": "Hot Sauce",
+      "explanation": "2021년 발표된 'Hot Sauce'가 NCT DREAM의 첫 정규앨범입니다.",
+      "sourceIds": [
+        "S03",
+        "S10"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E08",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "hot-sauce",
+      "factGroup": "hot_sauce_repackage",
+      "question": "첫 정규앨범 'Hot Sauce'의 리패키지 앨범 제목은 무엇일까요?",
+      "choices": [
+        "Hello Future",
+        "Beatbox",
+        "Candy",
+        "DREAMSCAPE"
+      ],
+      "answerIndex": 0,
+      "answer": "Hello Future",
+      "explanation": "첫 정규앨범의 리패키지는 'Hello Future'입니다.",
+      "sourceIds": [
+        "S10"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E09",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "glitch-mode",
+      "factGroup": "second_studio_album",
+      "question": "NCT DREAM의 두 번째 정규앨범은 무엇일까요?",
+      "choices": [
+        "We Boom",
+        "Glitch Mode",
+        "DREAMSCAPE",
+        "Go Back To The Future"
+      ],
+      "answerIndex": 1,
+      "answer": "Glitch Mode",
+      "explanation": "'Glitch Mode'는 2022년에 발표된 NCT DREAM의 두 번째 정규앨범입니다.",
+      "sourceIds": [
+        "S03",
+        "S11"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E10",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "beatbox",
+      "factGroup": "glitch_mode_repackage_title",
+      "question": "두 번째 정규앨범 'Glitch Mode'의 리패키지 타이틀곡은 무엇일까요?",
+      "choices": [
+        "Beatbox",
+        "Candy",
+        "Smoothie",
+        "Broken Melodies"
+      ],
+      "answerIndex": 0,
+      "answer": "Beatbox",
+      "explanation": "'Beatbox'는 두 번째 정규앨범 리패키지의 타이틀곡입니다.",
+      "sourceIds": [
+        "S12"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E11",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "istj",
+      "factGroup": "third_studio_album",
+      "question": "NCT DREAM의 세 번째 정규앨범 제목은 무엇일까요?",
+      "choices": [
+        "ISTJ",
+        "DREAM( )SCAPE",
+        "Reload",
+        "We Go Up"
+      ],
+      "answerIndex": 0,
+      "answer": "ISTJ",
+      "explanation": "2023년에 발매된 세 번째 정규앨범의 제목은 'ISTJ'입니다.",
+      "sourceIds": [
+        "S03",
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E12",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "노래",
+      "topicKey": "dream-scape-ep",
+      "factGroup": "dream_scape_title",
+      "question": "2024년 미니앨범 'DREAM( )SCAPE'의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "Smoothie",
+        "When I'm With You",
+        "Moonlight",
+        "Rains in Heaven"
+      ],
+      "answerIndex": 0,
+      "answer": "Smoothie",
+      "explanation": "'Smoothie'는 다섯 번째 미니앨범 'DREAM( )SCAPE'의 타이틀곡입니다.",
+      "sourceIds": [
+        "S16"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E13",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "노래",
+      "topicKey": "dreamscape",
+      "factGroup": "dreamscape_title",
+      "question": "2024년 정규앨범 'DREAMSCAPE'의 대표 타이틀곡은 무엇일까요?",
+      "choices": [
+        "Flying Kiss",
+        "When I'm With You",
+        "Off The Wall",
+        "No Escape"
+      ],
+      "answerIndex": 1,
+      "answer": "When I'm With You",
+      "explanation": "'When I'm With You'가 정규앨범 'DREAMSCAPE'의 타이틀곡으로 공개됐습니다.",
+      "sourceIds": [
+        "S17"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E14",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "go-back-to-the-future",
+      "factGroup": "fifth_studio_album",
+      "question": "2025년에 발매된 NCT DREAM의 다섯 번째 정규앨범은 무엇일까요?",
+      "choices": [
+        "Beat It Up",
+        "Go Back To The Future",
+        "DREAMSCAPE",
+        "Best Friend Ever"
+      ],
+      "answerIndex": 1,
+      "answer": "Go Back To The Future",
+      "explanation": "'Go Back To The Future'는 2025년 7월 14일 발매된 다섯 번째 정규앨범입니다.",
+      "sourceIds": [
+        "S18",
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E15",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "노래",
+      "topicKey": "go-back-to-the-future",
+      "factGroup": "gbttf_double_title",
+      "question": "'Go Back To The Future'의 더블 타이틀곡 조합은 무엇일까요?",
+      "choices": [
+        "BTTF · CHILLER",
+        "Smoothie · BOX",
+        "ISTJ · Broken Melodies",
+        "Beat It Up · TRICKY"
+      ],
+      "answerIndex": 0,
+      "answer": "BTTF · CHILLER",
+      "explanation": "공식 응원법 공지에서 'BTTF'와 'CHILLER'가 타이틀곡과 더블 타이틀곡으로 안내됐습니다.",
+      "sourceIds": [
+        "S19",
+        "S20"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E16",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "beat-it-up",
+      "factGroup": "sixth_mini_album",
+      "question": "2025년 발표된 NCT DREAM의 여섯 번째 미니앨범은 무엇일까요?",
+      "choices": [
+        "Beat It Up",
+        "Reload",
+        "Candy",
+        "We Boom"
+      ],
+      "answerIndex": 0,
+      "answer": "Beat It Up",
+      "explanation": "'Beat It Up'은 2025년 11월 17일 발매된 여섯 번째 미니앨범입니다.",
+      "sourceIds": [
+        "S21",
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E17",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "노래",
+      "topicKey": "beat-it-up",
+      "factGroup": "beat_it_up_title",
+      "question": "여섯 번째 미니앨범과 같은 이름의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "Rush",
+        "Beat It Up",
+        "Butterflies",
+        "TRICKY"
+      ],
+      "answerIndex": 1,
+      "answer": "Beat It Up",
+      "explanation": "미니앨범의 타이틀곡은 앨범과 같은 이름인 'Beat It Up'입니다.",
+      "sourceIds": [
+        "S21",
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E18",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "일본 활동",
+      "topicKey": "japan-debut",
+      "factGroup": "japan_debut_single",
+      "question": "NCT DREAM의 일본 데뷔 싱글은 무엇일까요?",
+      "choices": [
+        "Moonlight",
+        "Best Friend Ever",
+        "Rains in Heaven",
+        "Fireflies"
+      ],
+      "answerIndex": 1,
+      "answer": "Best Friend Ever",
+      "explanation": "NCT DREAM은 일본에서 'Best Friend Ever'로 정식 데뷔했습니다.",
+      "sourceIds": [
+        "S01",
+        "S23"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E19",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "일본 활동",
+      "topicKey": "japan-debut",
+      "factGroup": "japan_debut_date",
+      "question": "NCT DREAM이 'Best Friend Ever'로 일본 데뷔한 날짜는 언제일까요?",
+      "choices": [
+        "2022년 11월 23일",
+        "2023년 2월 8일",
+        "2023년 7월 17일",
+        "2024년 5월 8일"
+      ],
+      "answerIndex": 1,
+      "answer": "2023년 2월 8일",
+      "explanation": "NCT 일본 공식 사이트는 일본 데뷔일을 2023년 2월 8일로 안내합니다.",
+      "sourceIds": [
+        "S01",
+        "S23"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-E20",
+      "difficulty": "easy",
+      "weight": 1,
+      "category": "앨범",
+      "topicKey": "we-young",
+      "factGroup": "first_mini_album",
+      "question": "NCT DREAM의 첫 미니앨범은 무엇일까요?",
+      "choices": [
+        "The First",
+        "We Young",
+        "We Go Up",
+        "We Boom"
+      ],
+      "answerIndex": 1,
+      "answer": "We Young",
+      "explanation": "'We Young'이 NCT DREAM의 첫 미니앨범입니다.",
+      "sourceIds": [
+        "S06"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M01",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "멤버",
+      "topicKey": "nct127",
+      "factGroup": "dream_127_overlap",
+      "question": "NCT DREAM과 NCT 127 활동을 함께 해온 멤버 조합은 무엇일까요?",
+      "choices": [
+        "MARK · HAECHAN",
+        "JENO · JAEMIN",
+        "RENJUN · CHENLE",
+        "CHENLE · JISUNG"
+      ],
+      "answerIndex": 0,
+      "answer": "MARK · HAECHAN",
+      "explanation": "MARK와 HAECHAN은 NCT DREAM의 7인 멤버이면서 NCT 127 멤버 명단에도 포함됩니다.",
+      "sourceIds": [
+        "S03",
+        "S27"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M02",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "멤버",
+      "topicKey": "nct-jnjm",
+      "factGroup": "nct_jnjm_members",
+      "question": "2026년 새 유닛 NCT JNJM을 구성한 NCT DREAM 멤버는 누구일까요?",
+      "choices": [
+        "MARK · HAECHAN",
+        "RENJUN · CHENLE",
+        "JENO · JAEMIN",
+        "JAEMIN · JISUNG"
+      ],
+      "answerIndex": 2,
+      "answer": "JENO · JAEMIN",
+      "explanation": "NCT JNJM은 JENO와 JAEMIN으로 구성된 유닛입니다.",
+      "sourceIds": [
+        "S28"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M03",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "앨범",
+      "topicKey": "the-first",
+      "factGroup": "the_first_title",
+      "question": "싱글 앨범 'The First'의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "My First and Last",
+        "Dunk Shot",
+        "Chewing Gum",
+        "We Young"
+      ],
+      "answerIndex": 0,
+      "answer": "My First and Last",
+      "explanation": "'My First and Last'가 'The First'의 대표 타이틀곡입니다.",
+      "sourceIds": [
+        "S05"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M04",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "the-first",
+      "factGroup": "the_first_track",
+      "question": "다음 중 싱글 앨범 'The First'에 수록된 곡은 무엇일까요?",
+      "choices": [
+        "119",
+        "Dunk Shot",
+        "Puzzle Piece",
+        "Carat Cake"
+      ],
+      "answerIndex": 1,
+      "answer": "Dunk Shot",
+      "explanation": "'Dunk Shot'은 'The First'의 수록곡입니다.",
+      "sourceIds": [
+        "S05"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M05",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "we-young",
+      "factGroup": "we_young_track",
+      "question": "다음 중 첫 미니앨범 'We Young'의 수록곡은 무엇일까요?",
+      "choices": [
+        "Walk You Home",
+        "Dear DREAM",
+        "Best Friend",
+        "7 Days"
+      ],
+      "answerIndex": 0,
+      "answer": "Walk You Home",
+      "explanation": "'Walk You Home'은 'We Young'에 수록된 곡입니다.",
+      "sourceIds": [
+        "S06"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M06",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "앨범",
+      "topicKey": "we-go-up",
+      "factGroup": "we_go_up_number",
+      "question": "'We Go Up'은 NCT DREAM의 몇 번째 미니앨범일까요?",
+      "choices": [
+        "첫 번째",
+        "두 번째",
+        "세 번째",
+        "네 번째"
+      ],
+      "answerIndex": 1,
+      "answer": "두 번째",
+      "explanation": "'We Go Up'은 두 번째 미니앨범입니다.",
+      "sourceIds": [
+        "S07"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M07",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "we-go-up",
+      "factGroup": "we_go_up_track",
+      "question": "다음 중 'We Go Up' 앨범 수록곡은 무엇일까요?",
+      "choices": [
+        "Dear DREAM",
+        "Bye My First…",
+        "Quiet Down",
+        "Blue Wave"
+      ],
+      "answerIndex": 0,
+      "answer": "Dear DREAM",
+      "explanation": "'Dear DREAM'은 'We Go Up'의 수록곡입니다.",
+      "sourceIds": [
+        "S07"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M08",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "노래",
+      "topicKey": "we-boom",
+      "factGroup": "we_boom_title",
+      "question": "세 번째 미니앨범 'We Boom'의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "BOOM",
+        "Ridin'",
+        "We Go Up",
+        "Hot Sauce"
+      ],
+      "answerIndex": 0,
+      "answer": "BOOM",
+      "explanation": "'BOOM'이 'We Boom'의 타이틀곡입니다.",
+      "sourceIds": [
+        "S08"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M09",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "we-boom",
+      "factGroup": "we_boom_119",
+      "question": "다음 중 'We Boom'에 수록된 숫자 제목의 곡은 무엇일까요?",
+      "choices": [
+        "7 Days",
+        "119",
+        "1, 2, 3",
+        "100"
+      ],
+      "answerIndex": 1,
+      "answer": "119",
+      "explanation": "'119'는 'We Boom'의 세 번째 트랙입니다.",
+      "sourceIds": [
+        "S08"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M10",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "앨범",
+      "topicKey": "reload",
+      "factGroup": "reload_track_count",
+      "question": "미니앨범 'Reload'는 총 몇 곡으로 구성됐을까요?",
+      "choices": [
+        "4곡",
+        "5곡",
+        "6곡",
+        "7곡"
+      ],
+      "answerIndex": 1,
+      "answer": "5곡",
+      "explanation": "'Reload'는 Ridin', Quiet Down, 7 Days, Love Again, Puzzle Piece의 5곡으로 구성됩니다.",
+      "sourceIds": [
+        "S09"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M11",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "reload",
+      "factGroup": "reload_last_track",
+      "question": "'Reload'의 마지막 트랙은 무엇일까요?",
+      "choices": [
+        "Quiet Down",
+        "Love Again",
+        "Puzzle Piece",
+        "7 Days"
+      ],
+      "answerIndex": 2,
+      "answer": "Puzzle Piece",
+      "explanation": "'Puzzle Piece'가 'Reload'의 다섯 번째이자 마지막 트랙입니다.",
+      "sourceIds": [
+        "S09"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M12",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "앨범",
+      "topicKey": "hello-future",
+      "factGroup": "hello_future_parent",
+      "question": "'Hello Future'는 어떤 앨범의 리패키지일까요?",
+      "choices": [
+        "Hot Sauce",
+        "Glitch Mode",
+        "ISTJ",
+        "DREAMSCAPE"
+      ],
+      "answerIndex": 0,
+      "answer": "Hot Sauce",
+      "explanation": "'Hello Future'는 첫 정규앨범 'Hot Sauce'의 리패키지입니다.",
+      "sourceIds": [
+        "S10"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M13",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "hello-future",
+      "factGroup": "hello_future_track",
+      "question": "다음 중 'Hello Future' 리패키지에 포함된 곡은 무엇일까요?",
+      "choices": [
+        "Life Is Still Going On",
+        "Fire Alarm",
+        "Skateboard",
+        "No Escape"
+      ],
+      "answerIndex": 0,
+      "answer": "Life Is Still Going On",
+      "explanation": "'Life Is Still Going On'은 'Hello Future' 리패키지에 포함된 곡입니다.",
+      "sourceIds": [
+        "S10"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M14",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "glitch-mode",
+      "factGroup": "glitch_mode_opening",
+      "question": "정규 2집 'Glitch Mode'의 첫 번째 트랙은 무엇일까요?",
+      "choices": [
+        "Arcade",
+        "Fire Alarm",
+        "Glitch Mode",
+        "Teddy Bear"
+      ],
+      "answerIndex": 1,
+      "answer": "Fire Alarm",
+      "explanation": "'Fire Alarm'이 'Glitch Mode' 앨범의 오프닝 트랙입니다.",
+      "sourceIds": [
+        "S11"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M15",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "beatbox",
+      "factGroup": "beatbox_track",
+      "question": "다음 중 'Beatbox' 리패키지에 수록된 곡은 무엇일까요?",
+      "choices": [
+        "To My First",
+        "Broken Melodies",
+        "Breathing",
+        "Rush"
+      ],
+      "answerIndex": 0,
+      "answer": "To My First",
+      "explanation": "'To My First'는 'Beatbox' 리패키지 트랙리스트에 포함됩니다.",
+      "sourceIds": [
+        "S12"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M16",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "노래",
+      "topicKey": "candy",
+      "factGroup": "candy_original",
+      "question": "NCT DREAM이 겨울 스페셜 앨범에서 다시 부른 'Candy'의 원곡 가수는 누구일까요?",
+      "choices": [
+        "H.O.T.",
+        "SHINHWA",
+        "TVXQ!",
+        "SUPER JUNIOR"
+      ],
+      "answerIndex": 0,
+      "answer": "H.O.T.",
+      "explanation": "'Candy'는 H.O.T.가 1996년에 발표한 곡이며 NCT DREAM이 겨울 스페셜 앨범에서 리메이크했습니다.",
+      "sourceIds": [
+        "S13",
+        "S14"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M17",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "노래",
+      "topicKey": "istj",
+      "factGroup": "istj_prerelease",
+      "question": "정규 3집 'ISTJ' 발매에 앞서 먼저 공개된 곡은 무엇일까요?",
+      "choices": [
+        "Broken Melodies",
+        "Yogurt Shake",
+        "Skateboard",
+        "Poison"
+      ],
+      "answerIndex": 0,
+      "answer": "Broken Melodies",
+      "explanation": "'Broken Melodies'는 'ISTJ'에 수록된 선공개 싱글입니다.",
+      "sourceIds": [
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M18",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "istj",
+      "factGroup": "istj_track",
+      "question": "다음 중 정규 3집 'ISTJ'의 수록곡은 무엇일까요?",
+      "choices": [
+        "Yogurt Shake",
+        "Cold Coffee",
+        "Carat Cake",
+        "Walk You Home"
+      ],
+      "answerIndex": 0,
+      "answer": "Yogurt Shake",
+      "explanation": "'Yogurt Shake'는 'ISTJ' 앨범의 세 번째 트랙입니다.",
+      "sourceIds": [
+        "S15"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M19",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "앨범",
+      "topicKey": "dream-scape-ep",
+      "factGroup": "dream_scape_track_count",
+      "question": "미니앨범 'DREAM( )SCAPE'는 총 몇 곡으로 구성됐을까요?",
+      "choices": [
+        "5곡",
+        "6곡",
+        "9곡",
+        "11곡"
+      ],
+      "answerIndex": 1,
+      "answer": "6곡",
+      "explanation": "'DREAM( )SCAPE'는 icantfeelanything부터 Breathing까지 6곡으로 구성됩니다.",
+      "sourceIds": [
+        "S16"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-M20",
+      "difficulty": "medium",
+      "weight": 2,
+      "category": "수록곡",
+      "topicKey": "dreamscape",
+      "factGroup": "dreamscape_last_track",
+      "question": "정규 4집 'DREAMSCAPE'의 마지막 트랙은 무엇일까요?",
+      "choices": [
+        "Flying Kiss",
+        "Off The Wall",
+        "Rains in Heaven",
+        "Heavenly"
+      ],
+      "answerIndex": 2,
+      "answer": "Rains in Heaven",
+      "explanation": "정규 4집은 영어 싱글 'Rains in Heaven'으로 마무리됩니다.",
+      "sourceIds": [
+        "S17"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H01",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "연대기",
+      "topicKey": "discography-order",
+      "factGroup": "early_album_order",
+      "question": "다음 앨범을 발매 순서가 빠른 것부터 올바르게 나열한 것은 무엇일까요?",
+      "choices": [
+        "We Young → We Go Up → We Boom → Reload",
+        "We Go Up → We Young → Reload → We Boom",
+        "We Boom → We Go Up → We Young → Reload",
+        "We Young → We Boom → We Go Up → Reload"
+      ],
+      "answerIndex": 0,
+      "answer": "We Young → We Go Up → We Boom → Reload",
+      "explanation": "발매 순서는 We Young(2017), We Go Up(2018), We Boom(2019), Reload(2020)입니다.",
+      "sourceIds": [
+        "S06",
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H02",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "앨범",
+      "topicKey": "dreamscape-naming",
+      "factGroup": "dreamscape_album_type",
+      "question": "'DREAM( )SCAPE'와 'DREAMSCAPE'의 앨범 구분으로 맞는 것은 무엇일까요?",
+      "choices": [
+        "둘 다 정규앨범이다",
+        "앞은 미니앨범, 뒤는 정규앨범이다",
+        "앞은 일본 싱글, 뒤는 라이브 앨범이다",
+        "앞은 리패키지, 뒤는 겨울 스페셜이다"
+      ],
+      "answerIndex": 1,
+      "answer": "앞은 미니앨범, 뒤는 정규앨범이다",
+      "explanation": "괄호가 들어간 'DREAM( )SCAPE'는 미니앨범이고, 괄호가 없는 'DREAMSCAPE'는 정규앨범입니다.",
+      "sourceIds": [
+        "S16",
+        "S17"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H03",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "앨범",
+      "topicKey": "dream-scape-ep",
+      "factGroup": "dream_scape_number",
+      "question": "'DREAM( )SCAPE'는 NCT DREAM의 몇 번째 미니앨범일까요?",
+      "choices": [
+        "네 번째",
+        "다섯 번째",
+        "여섯 번째",
+        "일곱 번째"
+      ],
+      "answerIndex": 1,
+      "answer": "다섯 번째",
+      "explanation": "'DREAM( )SCAPE'는 다섯 번째 미니앨범입니다.",
+      "sourceIds": [
+        "S16"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H04",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "앨범",
+      "topicKey": "dreamscape",
+      "factGroup": "dreamscape_number",
+      "question": "'DREAMSCAPE'는 NCT DREAM의 몇 번째 정규앨범일까요?",
+      "choices": [
+        "두 번째",
+        "세 번째",
+        "네 번째",
+        "다섯 번째"
+      ],
+      "answerIndex": 2,
+      "answer": "네 번째",
+      "explanation": "'DREAMSCAPE'는 네 번째 정규앨범입니다.",
+      "sourceIds": [
+        "S17"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H05",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "앨범",
+      "topicKey": "go-back-to-the-future",
+      "factGroup": "gbttf_track_count",
+      "question": "정규 5집 'Go Back To The Future'는 총 몇 곡으로 구성됐을까요?",
+      "choices": [
+        "6곡",
+        "8곡",
+        "9곡",
+        "11곡"
+      ],
+      "answerIndex": 2,
+      "answer": "9곡",
+      "explanation": "'Go Back To The Future'는 총 9곡으로 구성된 정규앨범입니다.",
+      "sourceIds": [
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H06",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "수록곡",
+      "topicKey": "go-back-to-the-future",
+      "factGroup": "gbttf_track_5",
+      "question": "'Go Back To The Future'의 다섯 번째 트랙은 무엇일까요?",
+      "choices": [
+        "DREAM TEAM",
+        "Interlude : Back to Our Paradise",
+        "I LIKE IT",
+        "항해 (Beautiful Sailing)"
+      ],
+      "answerIndex": 1,
+      "answer": "Interlude : Back to Our Paradise",
+      "explanation": "다섯 번째 트랙은 'Interlude : Back to Our Paradise'입니다.",
+      "sourceIds": [
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H07",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "수록곡",
+      "topicKey": "go-back-to-the-future",
+      "factGroup": "gbttf_track_3",
+      "question": "'Go Back To The Future'에서 'CHILLER' 다음에 이어지는 곡은 무엇일까요?",
+      "choices": [
+        "I LIKE IT",
+        "DREAM TEAM",
+        "BTTF",
+        "That Summer"
+      ],
+      "answerIndex": 0,
+      "answer": "I LIKE IT",
+      "explanation": "트랙 순서는 BTTF, CHILLER, I LIKE IT 순입니다.",
+      "sourceIds": [
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H08",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "수록곡",
+      "topicKey": "go-back-to-the-future",
+      "factGroup": "gbttf_track_4",
+      "question": "다음 중 'Go Back To The Future'의 네 번째 트랙은 무엇일까요?",
+      "choices": [
+        "DREAM TEAM",
+        "I LIKE IT",
+        "CHILLER",
+        "Interlude : Back to Our Paradise"
+      ],
+      "answerIndex": 0,
+      "answer": "DREAM TEAM",
+      "explanation": "네 번째 트랙은 콘서트형 에너지를 강조한 'DREAM TEAM'입니다.",
+      "sourceIds": [
+        "S19"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H09",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "앨범",
+      "topicKey": "beat-it-up",
+      "factGroup": "beat_it_up_track_count",
+      "question": "미니 6집 'Beat It Up'은 총 몇 곡으로 구성됐을까요?",
+      "choices": [
+        "5곡",
+        "6곡",
+        "7곡",
+        "9곡"
+      ],
+      "answerIndex": 1,
+      "answer": "6곡",
+      "explanation": "'Beat It Up'은 총 6곡으로 구성됩니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H10",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "수록곡",
+      "topicKey": "beat-it-up",
+      "factGroup": "beat_it_up_track_2",
+      "question": "'Beat It Up' 앨범의 두 번째 트랙은 무엇일까요?",
+      "choices": [
+        "Rush",
+        "Cold Coffee",
+        "Butterflies",
+        "Tempo"
+      ],
+      "answerIndex": 0,
+      "answer": "Rush",
+      "explanation": "두 번째 트랙은 'Rush'입니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H11",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "특별 활동",
+      "topicKey": "fireflies",
+      "factGroup": "fireflies_scout",
+      "question": "NCT DREAM의 'Fireflies'와 직접 관련된 국제 단체는 어디일까요?",
+      "choices": [
+        "World Scout Foundation",
+        "UNICEF",
+        "FIFA Foundation",
+        "International Olympic Committee"
+      ],
+      "answerIndex": 0,
+      "answer": "World Scout Foundation",
+      "explanation": "'Fireflies'의 수익은 World Scout Foundation을 통해 스카우트 프로그램 지원에 사용됐습니다.",
+      "sourceIds": [
+        "S26"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H12",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "수록곡",
+      "topicKey": "beat-it-up",
+      "factGroup": "beat_it_up_track_5",
+      "question": "'Beat It Up' 앨범에서 'Tempo'는 몇 번째 트랙일까요?",
+      "choices": [
+        "세 번째",
+        "네 번째",
+        "다섯 번째",
+        "여섯 번째"
+      ],
+      "answerIndex": 2,
+      "answer": "다섯 번째",
+      "explanation": "'Tempo'는 다섯 번째 트랙입니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H13",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "수록곡",
+      "topicKey": "beat-it-up",
+      "factGroup": "beat_it_up_last_track",
+      "question": "미니 6집 'Beat It Up'의 마지막 트랙은 무엇일까요?",
+      "choices": [
+        "Rush",
+        "Cold Coffee",
+        "Tempo",
+        "TRICKY"
+      ],
+      "answerIndex": 3,
+      "answer": "TRICKY",
+      "explanation": "여섯 번째이자 마지막 트랙은 'TRICKY'입니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H14",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "유닛",
+      "topicKey": "beat-it-up",
+      "factGroup": "tempo_unit",
+      "question": "'Beat It Up' 수록곡 'Tempo'를 부른 래퍼 유닛 조합은 무엇일까요?",
+      "choices": [
+        "MARK · JENO · JAEMIN · JISUNG",
+        "RENJUN · HAECHAN · CHENLE",
+        "MARK · RENJUN · HAECHAN · CHENLE",
+        "JENO · JAEMIN · CHENLE · JISUNG"
+      ],
+      "answerIndex": 0,
+      "answer": "MARK · JENO · JAEMIN · JISUNG",
+      "explanation": "'Tempo'는 MARK, JENO, JAEMIN, JISUNG이 참여한 래퍼 유닛 곡입니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H15",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "유닛",
+      "topicKey": "beat-it-up",
+      "factGroup": "butterflies_unit",
+      "question": "'Beat It Up' 수록곡 'Butterflies'를 부른 보컬 유닛 조합은 무엇일까요?",
+      "choices": [
+        "RENJUN · HAECHAN · CHENLE",
+        "MARK · JENO · JAEMIN",
+        "JENO · HAECHAN · JISUNG",
+        "MARK · RENJUN · CHENLE"
+      ],
+      "answerIndex": 0,
+      "answer": "RENJUN · HAECHAN · CHENLE",
+      "explanation": "'Butterflies'는 RENJUN, HAECHAN, CHENLE이 참여한 보컬 유닛 곡입니다.",
+      "sourceIds": [
+        "S22"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H16",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "공연",
+      "topicKey": "dream-show",
+      "factGroup": "first_live_album",
+      "question": "NCT DREAM의 첫 라이브 앨범 제목은 무엇일까요?",
+      "choices": [
+        "THE DREAM SHOW",
+        "THE DREAM SHOW2 : In A DREAM",
+        "THE DREAM SHOW 3 : DREAM( )SCAPE",
+        "THE DREAM SHOW 4 : DREAM THE FUTURE"
+      ],
+      "answerIndex": 0,
+      "answer": "THE DREAM SHOW",
+      "explanation": "첫 라이브 앨범은 2020년에 발매된 'THE DREAM SHOW - The 1st Live Album'입니다.",
+      "sourceIds": [
+        "S25"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H17",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "공연",
+      "topicKey": "dream-show-4",
+      "factGroup": "tds4_venue",
+      "question": "2025년 서울에서 열린 'THE DREAM SHOW 4 : DREAM THE FUTURE'의 공연장은 어디였을까요?",
+      "choices": [
+        "잠실종합운동장 주경기장",
+        "고척스카이돔",
+        "KSPO DOME",
+        "인천문학경기장"
+      ],
+      "answerIndex": 1,
+      "answer": "고척스카이돔",
+      "explanation": "공식 공지에 따르면 서울 공연은 고척스카이돔에서 열렸습니다.",
+      "sourceIds": [
+        "S24"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H18",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "공연",
+      "topicKey": "dream-show-4",
+      "factGroup": "tds4_dates",
+      "question": "'THE DREAM SHOW 4 : DREAM THE FUTURE' 서울 공연 일정으로 맞는 것은 무엇일까요?",
+      "choices": [
+        "2025년 5월 2~4일",
+        "2025년 7월 10~12일",
+        "2025년 8월 23~25일",
+        "2025년 11월 29일~12월 1일"
+      ],
+      "answerIndex": 1,
+      "answer": "2025년 7월 10~12일",
+      "explanation": "서울 공연은 2025년 7월 10일, 11일, 12일에 진행됐습니다.",
+      "sourceIds": [
+        "S24"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H19",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "일본 활동",
+      "topicKey": "dream-show-3-japan",
+      "factGroup": "tds3_japan_scale",
+      "question": "2024년 'THE DREAM SHOW 3 : DREAM( )SCAPE' 일본 돔 투어 규모로 맞는 것은 무엇일까요?",
+      "choices": [
+        "2개 도시 4공연",
+        "3개 도시 5공연",
+        "4개 도시 6공연",
+        "5개 도시 7공연"
+      ],
+      "answerIndex": 1,
+      "answer": "3개 도시 5공연",
+      "explanation": "NCT 일본 공식 사이트는 일본 돔 투어가 3개 도시 5공연으로 열렸다고 안내합니다.",
+      "sourceIds": [
+        "S01"
+      ],
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ND-H20",
+      "difficulty": "hard",
+      "weight": 3,
+      "category": "일본 활동",
+      "topicKey": "kyocera-dome",
+      "factGroup": "first_solo_dome",
+      "question": "NCT DREAM이 2023년 첫 단독 돔 공연을 개최한 장소는 어디일까요?",
+      "choices": [
+        "도쿄 돔",
+        "교세라 돔 오사카",
+        "반테린 돔 나고야",
+        "후쿠오카 PayPay 돔"
+      ],
+      "answerIndex": 1,
+      "answer": "교세라 돔 오사카",
+      "explanation": "2023년 NCT DREAM의 첫 단독 돔 공연은 교세라 돔 오사카에서 열렸습니다.",
+      "sourceIds": [
+        "S01"
+      ],
+      "verificationStatus": "verified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "NCT 일본 공식 사이트 프로필",
+      "publisher": "avex / NCT Official Japan",
+      "url": "https://nct-jp.net/en/",
+      "supports": [
+        "한국 데뷔 시기",
+        "일본 데뷔일과 싱글",
+        "일본 돔 투어",
+        "교세라 돔 첫 단독 돔 공연"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "NCT DREAM 공식 팬클럽 소개 게시물",
+      "publisher": "Weverse / SM Entertainment",
+      "url": "https://weverse.io/nctdream/fanpost/3-195870704?hl=ko",
+      "supports": [
+        "NCT DREAM 멤버 구성",
+        "공식 데뷔일 2016-08-25",
+        "NCTzen DREAM 명칭"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "NCT DREAM 아티스트 페이지",
+      "publisher": "Apple Music / SM Entertainment 음원 메타데이터",
+      "url": "https://music.apple.com/us/artist/nct-dream/1208839599",
+      "supports": [
+        "7인 멤버 명단",
+        "고정 7인 체제",
+        "정규앨범 및 주요 싱글 목록"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "Chewing Gum - Single",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/chewing-gum-single/1147458439",
+      "supports": [
+        "데뷔 싱글 Chewing Gum",
+        "2016년 발매"
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "The First - The 1st Single Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/the-first-the-1st-single-album-ep/1203116647",
+      "supports": [
+        "My First and Last",
+        "Dunk Shot",
+        "The First 트랙리스트"
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "We Young - The 1st Mini Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/we-young-the-1st-mini-album/1271389303",
+      "supports": [
+        "첫 미니앨범 We Young",
+        "Walk You Home",
+        "트랙리스트"
+      ]
+    },
+    {
+      "id": "S07",
+      "title": "We Go Up - The 2nd Mini Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/we-go-up-the-2nd-mini-album-ep/1434798289",
+      "supports": [
+        "두 번째 미니앨범",
+        "Dear DREAM",
+        "트랙리스트"
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "We Boom - The 3rd Mini Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/we-boom-the-3rd-mini-album-ep/1473938506",
+      "supports": [
+        "BOOM",
+        "119",
+        "트랙리스트"
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "Reload - EP",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/reload-ep/1510067132",
+      "supports": [
+        "Ridin'",
+        "5곡 구성",
+        "Puzzle Piece",
+        "졸업 체제 폐지 후 7인 체제"
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "Hello Future - The 1st Album Repackage",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/hello-future-the-1st-album-repackage-ep/1573200613",
+      "supports": [
+        "Hot Sauce 리패키지",
+        "Hello Future",
+        "Life Is Still Going On"
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "Glitch Mode - The 2nd Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/glitch-mode-the-2nd-album/1615360921",
+      "supports": [
+        "두 번째 정규앨범",
+        "Glitch Mode",
+        "Fire Alarm"
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "Beatbox - The 2nd Album Repackage",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/beatbox-the-2nd-album-repackage-extended-version/1626816480",
+      "supports": [
+        "두 번째 정규 리패키지",
+        "Beatbox",
+        "To My First"
+      ]
+    },
+    {
+      "id": "S13",
+      "title": "NCT DREAM 'Candy' 공식 MV",
+      "publisher": "SMTOWN YouTube",
+      "url": "https://www.youtube.com/watch?v=zuoSn3ObMz4",
+      "supports": [
+        "겨울 스페셜 미니앨범 Candy"
+      ]
+    },
+    {
+      "id": "S14",
+      "title": "H.O.T. 'Candy' 공식 리마스터 MV",
+      "publisher": "SMTOWN YouTube",
+      "url": "https://www.youtube.com/watch?v=3NUaXU1d-NY",
+      "supports": [
+        "Candy 원곡 가수 H.O.T."
+      ]
+    },
+    {
+      "id": "S15",
+      "title": "ISTJ - The 3rd Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/istj-the-3rd-album/1766609799",
+      "supports": [
+        "세 번째 정규앨범",
+        "ISTJ",
+        "Broken Melodies",
+        "Yogurt Shake"
+      ]
+    },
+    {
+      "id": "S16",
+      "title": "DREAM( )SCAPE - EP",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/dream-scape-ep/1766620521",
+      "supports": [
+        "다섯 번째 미니앨범",
+        "Smoothie",
+        "6곡 구성",
+        "icantfeelanything"
+      ]
+    },
+    {
+      "id": "S17",
+      "title": "DREAMSCAPE",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/dreamscape/1767771688",
+      "supports": [
+        "네 번째 정규앨범",
+        "When I'm With You",
+        "마지막 트랙 Rains in Heaven"
+      ]
+    },
+    {
+      "id": "S18",
+      "title": "Go Back To The Future 발매 공식 공지",
+      "publisher": "Weverse / SM Entertainment",
+      "url": "https://weverse.io/nctdream/notice/28361",
+      "supports": [
+        "2025-07-14 발매"
+      ]
+    },
+    {
+      "id": "S19",
+      "title": "Go Back To The Future",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/go-back-to-the-future/1822449919",
+      "supports": [
+        "다섯 번째 정규앨범",
+        "9곡 구성",
+        "BTTF",
+        "CHILLER",
+        "I LIKE IT",
+        "DREAM TEAM",
+        "Interlude : Back to Our Paradise"
+      ]
+    },
+    {
+      "id": "S20",
+      "title": "BTTF & CHILLER 공식 응원법 공지",
+      "publisher": "Weverse / SM Entertainment",
+      "url": "https://weverse.io/nctdream/notice/28502",
+      "supports": [
+        "Go Back To The Future의 더블 타이틀곡 BTTF와 CHILLER"
+      ]
+    },
+    {
+      "id": "S21",
+      "title": "Beat It Up 발매 공식 공지",
+      "publisher": "Weverse / SM Entertainment",
+      "url": "https://weverse.io/nctdream/notice/31637",
+      "supports": [
+        "여섯 번째 미니앨범",
+        "2025-11-17 발매"
+      ]
+    },
+    {
+      "id": "S22",
+      "title": "Beat It Up - EP",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/beat-it-up-ep/1849135853",
+      "supports": [
+        "6곡 구성",
+        "Rush",
+        "Cold Coffee",
+        "Butterflies",
+        "Tempo",
+        "TRICKY",
+        "유닛 참여 멤버"
+      ]
+    },
+    {
+      "id": "S23",
+      "title": "Best Friend Ever - Single",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/best-friend-ever-single/1667740714",
+      "supports": [
+        "일본 데뷔 싱글"
+      ]
+    },
+    {
+      "id": "S24",
+      "title": "2025 NCT DREAM TOUR THE DREAM SHOW 4 공식 공지",
+      "publisher": "Weverse / SM Entertainment",
+      "url": "https://weverse.io/nctdream/notice/26938",
+      "supports": [
+        "고척스카이돔",
+        "2025-07-10~12 서울 공연"
+      ]
+    },
+    {
+      "id": "S25",
+      "title": "THE DREAM SHOW - The 1st Live Album",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/the-dream-show-the-1st-live-album/1516761159",
+      "supports": [
+        "첫 라이브 앨범",
+        "2020년 발매"
+      ]
+    },
+    {
+      "id": "S26",
+      "title": "World Scout Jamboree NCT DREAM 공연 기사",
+      "publisher": "World Organization of the Scout Movement",
+      "url": "https://www.scout.org/NCTDREAMWSJ",
+      "supports": [
+        "Fireflies",
+        "World Scout Foundation 지원",
+        "24th World Scout Jamboree"
+      ]
+    },
+    {
+      "id": "S27",
+      "title": "NCT 127 WALK 앨범 페이지",
+      "publisher": "Apple Music / SM Entertainment",
+      "url": "https://music.apple.com/us/album/walk-the-6th-album/1766628771",
+      "supports": [
+        "NCT 127 멤버 MARK와 HAECHAN"
+      ]
+    },
+    {
+      "id": "S28",
+      "title": "NCT JNJM 공식 일본 팬미팅 공지",
+      "publisher": "NCT Official Japan",
+      "url": "https://nct-jp.net/en/news/detail.php?id=1132595",
+      "supports": [
+        "NCT JNJM 구성원 JENO와 JAEMIN"
+      ]
+    }
+  ]
+}

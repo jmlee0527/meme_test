@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-11",
+  "verificationCutoff": "2026-07-11",
+  "test": {
+    "id": "girls-generation-true-fan-test",
+    "title": "소녀시대 찐팬 테스트",
+    "englishTitle": "Girls' Generation True Fan Test",
+    "alternativeTitle": "SNSD 찐팬 테스트",
+    "topic": "Girls' Generation",
+    "language": "ko-KR",
+    "category": "fandom",
+    "questionPoolSize": 60,
+    "questionsPerAttempt": 15,
+    "questionType": "single_choice_4",
+    "scorePerCorrectAnswer": 1,
+    "maxScore": 15,
+    "latestFullGroupStudioAlbumCovered": {
+      "title": "FOREVER 1",
+      "releaseDate": "2022-08-05",
+      "note": "2026-07-11 기준 확인한 공식 음원 카탈로그에서 가장 최근의 소녀시대 완전체 정규 앨범"
+    }
+  },
+  "seo": {
+    "slug": "girls-generation-true-fan-test",
+    "canonicalPath": "/tests/girls-generation-true-fan-test",
+    "metaTitle": "소녀시대 찐팬 테스트 | S♡NE 소원 덕력 퀴즈",
+    "metaDescription": "소녀시대 멤버, 다시 만난 세계, Gee, 소원을 말해봐, 정규앨범, 태티서와 Oh!GG를 맞히는 15문항 찐팬 테스트입니다.",
+    "primaryKeyword": "소녀시대 찐팬 테스트",
+    "secondaryKeywords": [
+      "Girls' Generation 찐팬 테스트",
+      "SNSD 찐팬 테스트",
+      "소녀시대 퀴즈",
+      "Girls' Generation 퀴즈",
+      "SNSD 퀴즈",
+      "소원 테스트",
+      "S♡NE 테스트",
+      "소녀시대 멤버",
+      "소녀시대 노래",
+      "다시 만난 세계",
+      "Gee",
+      "FOREVER 1"
+    ],
+    "shareTextTemplate": "나는 소녀시대 찐팬 테스트에서 {score}/15점, ‘{resultTitle}’이 나왔어요. 당신의 S♡NE 덕력도 확인해 보세요!",
+    "keywordPolicy": "핵심 키워드는 title, H1, 소개문, meta description, 결과 공유 문구에 자연스럽게 사용한다. 반복 나열, 숨김 텍스트, 무관한 키워드 삽입은 금지한다."
+  },
+  "selectionPolicy": {
+    "difficultyQuota": {
+      "easy": 5,
+      "medium": 6,
+      "hard": 4
+    },
+    "maxPerCategory": 4,
+    "maxPerAlbumKey": 3,
+    "maxTimeSensitive": 2,
+    "rules": [
+      "한 시도에서 총 15문항을 중복 없이 추출한다.",
+      "난이도별 easy 5, medium 6, hard 4 비율을 반드시 유지한다.",
+      "동일 category는 한 시도에 최대 4문항까지만 포함한다.",
+      "동일 albumKey가 지정된 세부 문항은 한 시도에 최대 3문항까지만 포함한다.",
+      "freshness가 time_sensitive인 문항은 한 시도에 최대 2문항까지만 포함한다.",
+      "문항 순서와 보기 순서를 각각 섞고 보기 변경 후 answerIndex를 다시 계산한다.",
+      "진행 중 정답, 해설, sourceIds를 노출하지 않는다.",
+      "재응시 시 직전 attempt의 questionIds와 겹치는 문항 수를 가능한 한 줄인다.",
+      "제약 충족 실패 시 최대 100회 재추출한 뒤 category 제한만 1개 완화한다. 난이도 쿼터는 완화하지 않는다."
+    ]
+  },
+  "resultBands": [
+    {
+      "minScore": 0,
+      "maxScore": 3,
+      "title": "다시 만난 세계에 입장한 새싹 S♡NE",
+      "summary": "대표곡과 멤버부터 알아가는 단계예요. 데뷔곡과 초기 앨범을 차례로 들어보면 금방 다음 등급에 도달할 수 있습니다."
+    },
+    {
+      "minScore": 4,
+      "maxScore": 7,
+      "title": "Gee를 따라 부르는 성장형 S♡NE",
+      "summary": "대표 타이틀곡과 주요 정규 앨범은 익숙한 편이에요. 유닛 활동과 앨범 순서를 더 살펴보세요."
+    },
+    {
+      "minScore": 8,
+      "maxScore": 10,
+      "title": "소원을 말해봐도 통하는 실력파 S♡NE",
+      "summary": "한국 음반과 유닛 활동을 폭넓게 알고 있어요. 일본 음반과 세부 트랙까지 익히면 상위 등급이 가깝습니다."
+    },
+    {
+      "minScore": 11,
+      "maxScore": 13,
+      "title": "정규앨범까지 꿰는 하드코어 S♡NE",
+      "summary": "발매 연대기와 수록곡 순서까지 깊이 기억하고 있어요. 웬만한 소녀시대 퀴즈로는 흔들리지 않습니다."
+    },
+    {
+      "minScore": 14,
+      "maxScore": 15,
+      "title": "지금은 소녀시대, 영원한 레전드 S♡NE",
+      "summary": "데뷔부터 FOREVER 1, 태티서와 Oh!GG, 일본 활동까지 거의 완벽하게 알고 있어요. 소녀시대 찐팬 인증 완료입니다."
+    }
+  ],
+  "siteNavigationChangeSpec": {
+    "objective": "현재 우측 상단의 테스트·가이드·소개 중심 메뉴를 홈·카테고리·칼럼·검색의 네 기능으로 교체한다.",
+    "desktopItems": [
+      {
+        "label": "홈",
+        "recommendedPath": "/",
+        "behavior": "클릭하면 Mimi Test 메인 홈 화면으로 이동한다. 로고 클릭과 동일하게 동작한다."
+      },
+      {
+        "label": "카테고리",
+        "recommendedPath": "/categories",
+        "behavior": "전체 카테고리 화면으로 이동하고, 카테고리 선택 시 해당 카테고리의 테스트 카드 목록을 보여준다."
+      },
+      {
+        "label": "칼럼",
+        "recommendedPath": "기존 guide 경로 유지 또는 /columns 별칭",
+        "behavior": "기존 가이드 화면과 콘텐츠로 이동한다. 상단 표시명만 칼럼으로 변경하고 기존 URL 자산은 보존한다."
+      },
+      {
+        "label": "검색",
+        "recommendedPath": "/search",
+        "behavior": "테스트 제목·대체 제목·설명·카테고리·SEO 키워드를 검색하며 ?q= 쿼리를 지원한다."
+      }
+    ],
+    "categoryRequirements": [
+      "기존 테스트 카드와 목록 UI를 재사용한다.",
+      "프로젝트에 실제 등록된 카테고리만 표시한다.",
+      "각 카테고리에 이름, 짧은 설명, 테스트 수를 표시한다.",
+      "카테고리 상세 화면에는 해당 카테고리 테스트만 필터링한다.",
+      "권장 경로는 /categories/[slug]이나 기존 라우팅 규칙을 우선한다."
+    ],
+    "searchRequirements": [
+      "한글·영문 대소문자를 구분하지 않는다.",
+      "앞뒤 공백과 연속 공백을 정규화한다.",
+      "제목, 대체 제목, 설명, category, SEO keywords의 부분 일치를 지원한다.",
+      "약 300ms debounce를 적용한다.",
+      "URL query ?q=를 검색 상태와 동기화한다.",
+      "결과에 썸네일, 테스트명, 설명, 카테고리, 문항 수를 표시한다.",
+      "검색 결과가 없으면 안내 문구와 카테고리 이동 버튼을 표시한다.",
+      "Enter 검색, Escape 닫기, 키보드 포커스 이동을 지원한다.",
+      "모바일에서는 전체 화면 검색 페이지 또는 접근성 있는 하단 시트를 사용한다."
+    ],
+    "responsiveRequirements": [
+      "데스크톱 우측 상단에는 홈·카테고리·칼럼·검색을 한 줄로 표시한다.",
+      "모바일에서는 햄버거 또는 기존 모바일 내비게이션에 같은 네 기능을 같은 순서로 제공한다.",
+      "현재 위치에 aria-current를 적용하고 focus-visible 상태를 명확히 표시한다."
+    ],
+    "migrationRules": [
+      "기존 소개 페이지는 삭제하지 않고 푸터 또는 사이트 정보 영역에서 계속 접근 가능하게 한다.",
+      "기존 가이드 URL은 삭제하거나 404 처리하지 않는다.",
+      "경로 변경 시 영구 리다이렉트 또는 canonical로 기존 검색 자산을 보존한다.",
+      "내부 링크, sitemap, breadcrumb, 모바일 메뉴를 함께 점검한다."
+    ]
+  },
+  "qualityChecklist": [
+    "각 문제는 고유 id, 선택지 4개, 정답 1개를 가진다.",
+    "연애설, 가족관계, 건강, 사생활, 확인되지 않은 멤버 갈등과 루머는 출제하지 않는다.",
+    "전 멤버 관련 문항은 공개적으로 확인된 그룹 인원 변화 사실만 사용하고 탈퇴 배경에 대한 추정은 금지한다.",
+    "외모 비교, 인기 순위, 멤버 서열, 팬덤 갈등을 유도하는 문항은 사용하지 않는다.",
+    "음반명과 곡명은 공식 카탈로그 표기를 유지한다.",
+    "오답은 같은 범주의 실제 곡·음반명으로 구성하되 해설에서 허위 관계를 만들지 않는다.",
+    "정답과 해설은 제출 후에만 노출한다.",
+    "60개 전체 문항과 정답을 페이지 초기 HTML에 출력하지 않는다.",
+    "배포 직전 공식 카탈로그와 SMTOWN 공지를 재확인해 최신 완전체 신보 여부를 점검한다."
+  ],
+  "sources": [
+    {
+      "id": "PROFILE",
+      "title": "Girls' Generation",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Girls%27_Generation",
+      "type": "reference",
+      "use": "멤버 구성, 데뷔, 리더, 팬덤명, 유닛 정보 교차 확인"
+    },
+    {
+      "id": "APPLE_ARTIST",
+      "title": "Girls' Generation Artist Page",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/artist/girls-generation/357463500",
+      "type": "official_catalog",
+      "use": "공식 음원 카탈로그와 음반 목록 확인"
+    },
+    {
+      "id": "DEBUT_MV",
+      "title": "Into The New World Official MV",
+      "publisher": "SMTOWN",
+      "url": "https://www.youtube.com/watch?v=0k2Zzkw_-0I",
+      "type": "official",
+      "use": "데뷔곡 확인"
+    },
+    {
+      "id": "ITNW",
+      "title": "Into the New World - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/into-the-new-world-ep/854926859",
+      "type": "official_catalog",
+      "use": "데뷔 싱글 음원 발매일과 구성 확인"
+    },
+    {
+      "id": "GG1",
+      "title": "Girls' Generation",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/girls-generation/854885986",
+      "type": "official_catalog",
+      "use": "한국 정규 1집과 트랙 순서 확인"
+    },
+    {
+      "id": "BABY",
+      "title": "Baby Baby (Girls' Generation Repackaged)",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/baby-baby-girls-generation-repackaged/854886469",
+      "type": "official_catalog",
+      "use": "정규 1집 리패키지 확인"
+    },
+    {
+      "id": "GEE",
+      "title": "Gee - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/gee-ep/854911623",
+      "type": "official_catalog",
+      "use": "Gee 미니앨범 발매일·수록곡 수 확인"
+    },
+    {
+      "id": "GEE_RECORD",
+      "title": "Gee (Girls' Generation song)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gee_(Girls%27_Generation_song)",
+      "type": "reference",
+      "use": "뮤직뱅크 9주 연속 1위 기록 교차 확인"
+    },
+    {
+      "id": "GENIE",
+      "title": "Genie - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/genie-ep/854915051",
+      "type": "official_catalog",
+      "use": "Genie 미니앨범 발매일·수록곡 수 확인"
+    },
+    {
+      "id": "OH",
+      "title": "Oh!",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/oh/854890642",
+      "type": "official_catalog",
+      "use": "한국 정규 2집과 수록곡 수 확인"
+    },
+    {
+      "id": "RDR",
+      "title": "Run Devil Run",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/run-devil-run/854890807",
+      "type": "official_catalog",
+      "use": "Oh! 리패키지와 트랙 순서 확인"
+    },
+    {
+      "id": "HOOT",
+      "title": "Hoot - EP",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/hoot-ep/871021351",
+      "type": "official_catalog",
+      "use": "Hoot 미니앨범과 전체 트랙 순서 확인"
+    },
+    {
+      "id": "BOYS",
+      "title": "The Boys - The 3rd Album",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/the-boys-the-3rd-album/1679266955",
+      "type": "official_catalog",
+      "use": "한국 정규 3집과 트랙 순서 확인"
+    },
+    {
+      "id": "IGAB",
+      "title": "The 4th Album 'I Got a Boy'",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/the-4th-album-i-got-a-boy/905850557",
+      "type": "official_catalog",
+      "use": "한국 정규 4집과 트랙 순서 확인"
+    },
+    {
+      "id": "YTMA",
+      "title": "YouTube Announces YouTube Music Award Winners",
+      "publisher": "YouTube Official Blog",
+      "url": "https://blog.youtube/news-and-events/youtube-announces-youtube-music-award/",
+      "type": "official",
+      "use": "I Got a Boy의 2013 Video of the Year 수상 확인"
+    },
+    {
+      "id": "MRMR",
+      "title": "Girls' Generation 4th Mini Album 'Mr. Mr.'",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/girls-generation-4th-mini-album-mr-mr-ep/826334410",
+      "type": "official_catalog",
+      "use": "Mr.Mr. 미니앨범과 트랙 순서 확인"
+    },
+    {
+      "id": "CMIYC",
+      "title": "Catch Me If You Can - Single",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/catch-me-if-you-can-single/983600921",
+      "type": "official_catalog",
+      "use": "2015년 싱글 발매 정보 확인"
+    },
+    {
+      "id": "LION",
+      "title": "Lion Heart - The 5th Album",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/lion-heart-the-5th-album/1031478656",
+      "type": "official_catalog",
+      "use": "한국 정규 5집, 수록곡 수, 활동곡 확인"
+    },
+    {
+      "id": "HOLIDAY",
+      "title": "Holiday Night - The 6th Album",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/holiday-night-the-6th-album/1266602382",
+      "type": "official_catalog",
+      "use": "한국 정규 6집, 수록곡 수, 더블 타이틀곡과 작사 참여 확인"
+    },
+    {
+      "id": "FOREVER",
+      "title": "FOREVER 1 - The 7th Album",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/forever-1-the-7th-album/1637554836",
+      "type": "official_catalog",
+      "use": "한국 정규 7집 발매일과 수록곡 수 확인"
+    },
+    {
+      "id": "FOREVER_YONHAP",
+      "title": "Girls' Generation is back with studio album marking 15th year",
+      "publisher": "Yonhap News Agency",
+      "url": "https://en.yna.co.kr/view/AEN20220805006500315",
+      "type": "press",
+      "use": "15주년 8인 완전체 컴백과 Kenzie 참여 확인"
+    },
+    {
+      "id": "TTS",
+      "title": "Girls' Generation-TTS",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Girls%27_Generation-TTS",
+      "type": "reference",
+      "use": "태티서 멤버 구성과 이름 유래 확인"
+    },
+    {
+      "id": "TWINKLE",
+      "title": "'Twinkle' Mini Album",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/twinkle-mini-album/905847798",
+      "type": "official_catalog",
+      "use": "태티서 데뷔 음반 확인"
+    },
+    {
+      "id": "HOLLER",
+      "title": "Holler (The 2nd Mini Album)",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/holler-the-2nd-mini-album-ep/919008422",
+      "type": "official_catalog",
+      "use": "태티서 두 번째 미니앨범 확인"
+    },
+    {
+      "id": "DEAR",
+      "title": "Dear Santa - X-Mas Special",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/dear-santa-x-mas-special-ep/1064320554",
+      "type": "official_catalog",
+      "use": "태티서 크리스마스 스페셜 음반 확인"
+    },
+    {
+      "id": "OHGG",
+      "title": "Girls' Generation-Oh!GG Artist Profile",
+      "publisher": "KBS World",
+      "url": "https://world.kbs.co.kr/service/contents_view.htm?board_seq=347386&id=&lang=e&menu_cate=artist&page=55",
+      "type": "public_broadcaster",
+      "use": "Oh!GG 멤버 구성 확인"
+    },
+    {
+      "id": "LIL",
+      "title": "Lil' Touch - The 1st Single",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/lil-touch-the-1st-single/1435055371",
+      "type": "official_catalog",
+      "use": "Oh!GG 데뷔 싱글 확인"
+    },
+    {
+      "id": "JPN1",
+      "title": "Girls' Generation (Japanese Album)",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/jp/album/girls-generation/1440769276?l=en-US",
+      "type": "official_catalog",
+      "use": "일본 정규 1집 발매일과 첫 트랙 확인"
+    },
+    {
+      "id": "JPN2",
+      "title": "Girls' Generation 2 -Girls & Peace-",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/girls-generation-2-girls-peace/1442965633",
+      "type": "official_catalog",
+      "use": "일본 정규 2집 발매일과 첫 트랙 확인"
+    },
+    {
+      "id": "JPN3",
+      "title": "Love & Peace",
+      "publisher": "Apple Music",
+      "url": "https://music.apple.com/us/album/love-peace/1442908755",
+      "type": "official_catalog",
+      "use": "일본 정규 3집 발매일과 첫 트랙 확인"
+    },
+    {
+      "id": "JPN_DISCO",
+      "title": "Girls' Generation Discography",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Girls%27_Generation_discography",
+      "type": "reference",
+      "use": "일본 데뷔 싱글과 발매 연대기 교차 확인"
+    }
+  ],
+  "questions": [
+    {
+      "id": "E01",
+      "difficulty": "easy",
+      "category": "기본 정보",
+      "albumKey": null,
+      "question": "현재 소녀시대는 몇 명의 멤버로 구성되어 있을까요?",
+      "options": [
+        "9명",
+        "6명",
+        "7명",
+        "8명"
+      ],
+      "answerIndex": 3,
+      "answerText": "8명",
+      "explanation": "현재 소녀시대는 태연, 써니, 티파니, 효연, 유리, 수영, 윤아, 서현의 8인 체제입니다.",
+      "sourceIds": [
+        "PROFILE",
+        "FOREVER_YONHAP"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "소녀시대 멤버"
+      ]
+    },
+    {
+      "id": "E02",
+      "difficulty": "easy",
+      "category": "멤버",
+      "albumKey": null,
+      "question": "다음 중 현재 소녀시대 멤버가 아닌 사람은 누구일까요?",
+      "options": [
+        "웬디",
+        "유리",
+        "서현",
+        "수영"
+      ],
+      "answerIndex": 0,
+      "answerText": "웬디",
+      "explanation": "유리, 수영, 서현은 소녀시대 멤버이며 웬디는 소녀시대 멤버가 아닙니다.",
+      "sourceIds": [
+        "PROFILE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E03",
+      "difficulty": "easy",
+      "category": "멤버",
+      "albumKey": null,
+      "question": "다음 중 여덟 명 모두 현재 소녀시대 멤버로 이루어진 조합은 무엇일까요?",
+      "options": [
+        "태연 · 써니 · 티파니 · 효연 · 유리 · 수영 · 윤아 · 서현",
+        "태연 · 써니 · 티파니 · 효연 · 유리 · 보아 · 윤아 · 서현",
+        "태연 · 써니 · 티파니 · 효연 · 유리 · 수영 · 슬기 · 서현",
+        "태연 · 써니 · 티파니 · 효연 · 유리 · 수영 · 윤아 · 아이린"
+      ],
+      "answerIndex": 0,
+      "answerText": "태연 · 써니 · 티파니 · 효연 · 유리 · 수영 · 윤아 · 서현",
+      "explanation": "현재 소녀시대의 8인 구성은 태연, 써니, 티파니, 효연, 유리, 수영, 윤아, 서현입니다.",
+      "sourceIds": [
+        "PROFILE",
+        "FOREVER_YONHAP"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E04",
+      "difficulty": "easy",
+      "category": "데뷔",
+      "albumKey": null,
+      "question": "소녀시대는 2007년 데뷔 당시 몇 명으로 출발했을까요?",
+      "options": [
+        "10명",
+        "8명",
+        "9명",
+        "7명"
+      ],
+      "answerIndex": 2,
+      "answerText": "9명",
+      "explanation": "소녀시대는 2007년 9인조로 데뷔했으며 이후 8인 체제로 활동했습니다.",
+      "sourceIds": [
+        "PROFILE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E05",
+      "difficulty": "easy",
+      "category": "기본 정보",
+      "albumKey": null,
+      "question": "소녀시대를 결성한 연예 기획사는 어디일까요?",
+      "options": [
+        "DSP Media",
+        "SM Entertainment",
+        "YG Entertainment",
+        "JYP Entertainment"
+      ],
+      "answerIndex": 1,
+      "answerText": "SM Entertainment",
+      "explanation": "소녀시대는 SM Entertainment가 결성한 걸그룹입니다.",
+      "sourceIds": [
+        "PROFILE",
+        "APPLE_ARTIST"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E06",
+      "difficulty": "easy",
+      "category": "데뷔",
+      "albumKey": null,
+      "question": "소녀시대가 공식 기념일로 사용하는 데뷔일은 언제일까요?",
+      "options": [
+        "2007년 11월 1일",
+        "2007년 8월 3일",
+        "2007년 7월 5일",
+        "2007년 8월 5일"
+      ],
+      "answerIndex": 3,
+      "answerText": "2007년 8월 5일",
+      "explanation": "데뷔 싱글 음원은 8월 3일 공개됐고, 공식 데뷔 무대와 기념일은 2007년 8월 5일입니다.",
+      "sourceIds": [
+        "PROFILE",
+        "ITNW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E07",
+      "difficulty": "easy",
+      "category": "대표곡",
+      "albumKey": null,
+      "question": "소녀시대의 데뷔곡은 무엇일까요?",
+      "options": [
+        "소원을 말해봐 (Genie)",
+        "Gee",
+        "Kissing You",
+        "다시 만난 세계 (Into the New World)"
+      ],
+      "answerIndex": 3,
+      "answerText": "다시 만난 세계 (Into the New World)",
+      "explanation": "소녀시대의 데뷔곡은 ‘다시 만난 세계 (Into the New World)’입니다.",
+      "sourceIds": [
+        "DEBUT_MV",
+        "ITNW"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "다시 만난 세계"
+      ]
+    },
+    {
+      "id": "E08",
+      "difficulty": "easy",
+      "category": "팬덤",
+      "albumKey": null,
+      "question": "소녀시대의 공식 팬덤명은 무엇일까요?",
+      "options": [
+        "ReVeluv",
+        "MY",
+        "ELF",
+        "S♡NE(소원)"
+      ],
+      "answerIndex": 3,
+      "answerText": "S♡NE(소원)",
+      "explanation": "소녀시대의 공식 팬덤명은 S♡NE이며 한국어로 ‘소원’이라고 읽습니다.",
+      "sourceIds": [
+        "PROFILE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": [
+        "소원",
+        "S♡NE"
+      ]
+    },
+    {
+      "id": "E09",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "gg-1",
+      "question": "소녀시대의 첫 번째 한국 정규 앨범은 무엇일까요?",
+      "options": [
+        "The Boys",
+        "Girls' Generation",
+        "Oh!",
+        "Gee"
+      ],
+      "answerIndex": 1,
+      "answerText": "Girls' Generation",
+      "explanation": "첫 한국 정규 앨범은 2007년 발표한 동명 앨범 《Girls' Generation》입니다.",
+      "sourceIds": [
+        "GG1",
+        "APPLE_ARTIST"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E10",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "gee",
+      "question": "‘Gee’가 타이틀곡인 2009년 미니앨범은 무엇일까요?",
+      "options": [
+        "Hoot",
+        "Mr.Mr.",
+        "Genie",
+        "Gee"
+      ],
+      "answerIndex": 3,
+      "answerText": "Gee",
+      "explanation": "‘Gee’는 2009년 1월 발매된 동명 미니앨범의 타이틀곡입니다.",
+      "sourceIds": [
+        "GEE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E11",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "genie",
+      "question": "‘소원을 말해봐 (Genie)’가 타이틀곡인 미니앨범은 무엇일까요?",
+      "options": [
+        "Oh!",
+        "Gee",
+        "Hoot",
+        "Genie"
+      ],
+      "answerIndex": 3,
+      "answerText": "Genie",
+      "explanation": "‘소원을 말해봐 (Genie)’는 2009년 6월 발매된 《Genie》의 타이틀곡입니다.",
+      "sourceIds": [
+        "GENIE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E12",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "oh",
+      "question": "‘Oh!’가 타이틀곡인 소녀시대의 두 번째 한국 정규 앨범은 무엇일까요?",
+      "options": [
+        "The Boys",
+        "Oh!",
+        "Run Devil Run",
+        "I Got a Boy"
+      ],
+      "answerIndex": 1,
+      "answerText": "Oh!",
+      "explanation": "《Oh!》는 2010년 발매된 두 번째 한국 정규 앨범입니다.",
+      "sourceIds": [
+        "OH"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E13",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "run-devil-run",
+      "question": "정규 2집 《Oh!》의 리패키지 앨범 제목은 무엇일까요?",
+      "options": [
+        "Run Devil Run",
+        "Baby Baby",
+        "Mr. Taxi",
+        "Hoot"
+      ],
+      "answerIndex": 0,
+      "answerText": "Run Devil Run",
+      "explanation": "《Run Devil Run》은 《Oh!》에 신곡을 더한 리패키지 앨범입니다.",
+      "sourceIds": [
+        "RDR",
+        "OH"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E14",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "hoot",
+      "question": "‘Hoot’가 타이틀곡인 2010년 미니앨범은 무엇일까요?",
+      "options": [
+        "Gee",
+        "Hoot",
+        "Mr.Mr.",
+        "Genie"
+      ],
+      "answerIndex": 1,
+      "answerText": "Hoot",
+      "explanation": "‘Hoot’는 2010년 10월 발매된 동명 미니앨범의 타이틀곡입니다.",
+      "sourceIds": [
+        "HOOT"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E15",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "the-boys",
+      "question": "‘The Boys’가 타이틀곡인 한국 정규 앨범은 몇 번째일까요?",
+      "options": [
+        "네 번째",
+        "세 번째",
+        "두 번째",
+        "다섯 번째"
+      ],
+      "answerIndex": 1,
+      "answerText": "세 번째",
+      "explanation": "《The Boys》는 소녀시대의 세 번째 한국 정규 앨범입니다.",
+      "sourceIds": [
+        "BOYS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E16",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "i-got-a-boy",
+      "question": "‘I Got a Boy’가 타이틀곡인 한국 정규 앨범은 몇 번째일까요?",
+      "options": [
+        "세 번째",
+        "여섯 번째",
+        "네 번째",
+        "다섯 번째"
+      ],
+      "answerIndex": 2,
+      "answerText": "네 번째",
+      "explanation": "《I Got a Boy》는 소녀시대의 네 번째 한국 정규 앨범입니다.",
+      "sourceIds": [
+        "IGAB"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E17",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "mr-mr",
+      "question": "2014년 발표된 소녀시대의 네 번째 미니앨범은 무엇일까요?",
+      "options": [
+        "Holiday Night",
+        "Hoot",
+        "Lion Heart",
+        "Mr.Mr."
+      ],
+      "answerIndex": 3,
+      "answerText": "Mr.Mr.",
+      "explanation": "《Mr.Mr.》는 2014년 2월 발표된 네 번째 미니앨범입니다.",
+      "sourceIds": [
+        "MRMR"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E18",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "lion-heart",
+      "question": "소녀시대의 다섯 번째 한국 정규 앨범은 무엇일까요?",
+      "options": [
+        "Holiday Night",
+        "FOREVER 1",
+        "Lion Heart",
+        "I Got a Boy"
+      ],
+      "answerIndex": 2,
+      "answerText": "Lion Heart",
+      "explanation": "《Lion Heart》는 2015년 발매된 다섯 번째 한국 정규 앨범입니다.",
+      "sourceIds": [
+        "LION"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E19",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "holiday-night",
+      "question": "데뷔 10주년을 기념해 발표한 소녀시대의 여섯 번째 정규 앨범은 무엇일까요?",
+      "options": [
+        "Lion Heart",
+        "Holiday Night",
+        "The Boys",
+        "FOREVER 1"
+      ],
+      "answerIndex": 1,
+      "answerText": "Holiday Night",
+      "explanation": "《Holiday Night》는 2017년 발표된 여섯 번째 한국 정규 앨범입니다.",
+      "sourceIds": [
+        "HOLIDAY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "E20",
+      "difficulty": "easy",
+      "category": "음반",
+      "albumKey": "forever-1",
+      "question": "데뷔 15주년을 기념한 소녀시대의 일곱 번째 정규 앨범은 무엇일까요?",
+      "options": [
+        "Girls & Peace",
+        "Holiday Night",
+        "FOREVER 1",
+        "Lion Heart"
+      ],
+      "answerIndex": 2,
+      "answerText": "FOREVER 1",
+      "explanation": "《FOREVER 1》은 2022년 데뷔 15주년을 기념해 발표한 일곱 번째 한국 정규 앨범입니다.",
+      "sourceIds": [
+        "FOREVER",
+        "FOREVER_YONHAP"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M01",
+      "difficulty": "medium",
+      "category": "멤버",
+      "albumKey": null,
+      "question": "소녀시대의 리더는 누구일까요?",
+      "options": [
+        "서현",
+        "태연",
+        "써니",
+        "유리"
+      ],
+      "answerIndex": 1,
+      "answerText": "태연",
+      "explanation": "태연은 소녀시대의 리더입니다.",
+      "sourceIds": [
+        "PROFILE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M02",
+      "difficulty": "medium",
+      "category": "유닛",
+      "albumKey": "tts",
+      "question": "소녀시대-태티서(TTS)를 구성한 멤버 조합은 무엇일까요?",
+      "options": [
+        "티파니 · 수영 · 서현",
+        "효연 · 유리 · 수영",
+        "태연 · 써니 · 윤아",
+        "태연 · 티파니 · 서현"
+      ],
+      "answerIndex": 3,
+      "answerText": "태연 · 티파니 · 서현",
+      "explanation": "태티서는 태연, 티파니, 서현으로 이루어진 3인 유닛입니다.",
+      "sourceIds": [
+        "TTS",
+        "TWINKLE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M03",
+      "difficulty": "medium",
+      "category": "유닛",
+      "albumKey": "ohgg",
+      "question": "소녀시대-Oh!GG를 구성한 멤버 조합은 무엇일까요?",
+      "options": [
+        "태연 · 티파니 · 수영 · 윤아 · 서현",
+        "태연 · 써니 · 효연 · 유리 · 윤아",
+        "태연 · 효연 · 유리 · 수영 · 서현",
+        "써니 · 티파니 · 효연 · 수영 · 서현"
+      ],
+      "answerIndex": 1,
+      "answerText": "태연 · 써니 · 효연 · 유리 · 윤아",
+      "explanation": "Oh!GG는 태연, 써니, 효연, 유리, 윤아의 5인 유닛입니다.",
+      "sourceIds": [
+        "OHGG",
+        "LIL"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M04",
+      "difficulty": "medium",
+      "category": "유닛",
+      "albumKey": "tts",
+      "question": "소녀시대-태티서의 데뷔 미니앨범은 무엇일까요?",
+      "options": [
+        "Lil' Touch",
+        "Holler",
+        "Dear Santa",
+        "Twinkle"
+      ],
+      "answerIndex": 3,
+      "answerText": "Twinkle",
+      "explanation": "태티서는 2012년 《Twinkle》로 유닛 활동을 시작했습니다.",
+      "sourceIds": [
+        "TWINKLE",
+        "TTS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M05",
+      "difficulty": "medium",
+      "category": "유닛",
+      "albumKey": "tts",
+      "question": "소녀시대-태티서의 두 번째 미니앨범은 무엇일까요?",
+      "options": [
+        "Twinkle",
+        "Dear Santa",
+        "Holler",
+        "Mr.Mr."
+      ],
+      "answerIndex": 2,
+      "answerText": "Holler",
+      "explanation": "태티서의 두 번째 미니앨범은 2014년 발표한 《Holler》입니다.",
+      "sourceIds": [
+        "HOLLER",
+        "TTS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M06",
+      "difficulty": "medium",
+      "category": "유닛",
+      "albumKey": "tts",
+      "question": "소녀시대-태티서가 2015년에 발표한 크리스마스 스페셜 음반은 무엇일까요?",
+      "options": [
+        "Dear Santa",
+        "Winter Story",
+        "Snowy Wish",
+        "Holiday"
+      ],
+      "answerIndex": 0,
+      "answerText": "Dear Santa",
+      "explanation": "태티서는 2015년 크리스마스 스페셜 음반 《Dear Santa》를 발표했습니다.",
+      "sourceIds": [
+        "DEAR",
+        "TTS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M07",
+      "difficulty": "medium",
+      "category": "유닛",
+      "albumKey": "ohgg",
+      "question": "소녀시대-Oh!GG의 데뷔 싱글은 무엇일까요?",
+      "options": [
+        "Twinkle",
+        "Catch Me If You Can",
+        "Lil' Touch",
+        "PARTY"
+      ],
+      "answerIndex": 2,
+      "answerText": "Lil' Touch",
+      "explanation": "Oh!GG는 2018년 싱글 《Lil' Touch》로 데뷔했습니다.",
+      "sourceIds": [
+        "LIL",
+        "OHGG"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M08",
+      "difficulty": "medium",
+      "category": "발매 정보",
+      "albumKey": "gee",
+      "question": "미니앨범 《Gee》의 발매일은 언제일까요?",
+      "options": [
+        "2009년 6월 29일",
+        "2008년 1월 5일",
+        "2010년 1월 28일",
+        "2009년 1월 5일"
+      ],
+      "answerIndex": 3,
+      "answerText": "2009년 1월 5일",
+      "explanation": "Apple Music 카탈로그 기준 《Gee》는 2009년 1월 5일 발매됐습니다.",
+      "sourceIds": [
+        "GEE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M09",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "gee",
+      "question": "미니앨범 《Gee》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "6곡",
+        "5곡",
+        "4곡",
+        "7곡"
+      ],
+      "answerIndex": 1,
+      "answerText": "5곡",
+      "explanation": "《Gee》는 총 5곡으로 구성된 미니앨범입니다.",
+      "sourceIds": [
+        "GEE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M10",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "genie",
+      "question": "미니앨범 《Genie》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "6곡",
+        "8곡",
+        "5곡",
+        "7곡"
+      ],
+      "answerIndex": 0,
+      "answerText": "6곡",
+      "explanation": "《Genie》는 총 6곡으로 구성됐습니다.",
+      "sourceIds": [
+        "GENIE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M11",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "oh",
+      "question": "두 번째 정규 앨범 《Oh!》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "12곡",
+        "10곡",
+        "15곡",
+        "11곡"
+      ],
+      "answerIndex": 3,
+      "answerText": "11곡",
+      "explanation": "《Oh!》의 공식 카탈로그에는 총 11곡이 수록돼 있습니다.",
+      "sourceIds": [
+        "OH"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M12",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "run-devil-run",
+      "question": "리패키지 앨범 《Run Devil Run》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "14곡",
+        "12곡",
+        "15곡",
+        "11곡"
+      ],
+      "answerIndex": 2,
+      "answerText": "15곡",
+      "explanation": "《Run Devil Run》은 총 15곡으로 구성된 리패키지 앨범입니다.",
+      "sourceIds": [
+        "RDR"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M13",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "hoot",
+      "question": "미니앨범 《Hoot》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "6곡",
+        "7곡",
+        "5곡",
+        "4곡"
+      ],
+      "answerIndex": 2,
+      "answerText": "5곡",
+      "explanation": "《Hoot》는 타이틀곡을 포함해 총 5곡으로 구성됐습니다.",
+      "sourceIds": [
+        "HOOT"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M14",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "mr-mr",
+      "question": "네 번째 미니앨범 《Mr.Mr.》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "5곡",
+        "8곡",
+        "6곡",
+        "7곡"
+      ],
+      "answerIndex": 2,
+      "answerText": "6곡",
+      "explanation": "《Mr.Mr.》는 총 6곡이 수록된 미니앨범입니다.",
+      "sourceIds": [
+        "MRMR"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M15",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "i-got-a-boy",
+      "question": "네 번째 정규 앨범 《I Got a Boy》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "11곡",
+        "9곡",
+        "10곡",
+        "12곡"
+      ],
+      "answerIndex": 2,
+      "answerText": "10곡",
+      "explanation": "《I Got a Boy》는 총 10곡으로 구성됐습니다.",
+      "sourceIds": [
+        "IGAB"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M16",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "lion-heart",
+      "question": "다섯 번째 정규 앨범 《Lion Heart》에는 총 몇 곡이 수록되어 있을까요?",
+      "options": [
+        "10곡",
+        "11곡",
+        "13곡",
+        "12곡"
+      ],
+      "answerIndex": 3,
+      "answerText": "12곡",
+      "explanation": "《Lion Heart》는 총 12곡이 수록된 정규 앨범입니다.",
+      "sourceIds": [
+        "LION"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M17",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "holiday-night",
+      "question": "여섯 번째 정규 앨범 《Holiday Night》의 전체 트랙 수는 몇 곡일까요?",
+      "options": [
+        "12곡",
+        "8곡",
+        "9곡",
+        "10곡"
+      ],
+      "answerIndex": 3,
+      "answerText": "10곡",
+      "explanation": "《Holiday Night》는 총 10곡으로 구성됐습니다.",
+      "sourceIds": [
+        "HOLIDAY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M18",
+      "difficulty": "medium",
+      "category": "음반 구성",
+      "albumKey": "forever-1",
+      "question": "일곱 번째 정규 앨범 《FOREVER 1》의 전체 트랙 수는 몇 곡일까요?",
+      "options": [
+        "12곡",
+        "10곡",
+        "9곡",
+        "8곡"
+      ],
+      "answerIndex": 1,
+      "answerText": "10곡",
+      "explanation": "《FOREVER 1》은 총 10곡이 수록된 정규 앨범입니다.",
+      "sourceIds": [
+        "FOREVER"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M19",
+      "difficulty": "medium",
+      "category": "대표곡",
+      "albumKey": "lion-heart",
+      "question": "《Lion Heart》 시기에 함께 공식 뮤직비디오가 공개된 두 활동곡은 무엇일까요?",
+      "options": [
+        "Holiday · All Night",
+        "Gee · Genie",
+        "PARTY · You Think",
+        "Mr.Mr. · Catch Me If You Can"
+      ],
+      "answerIndex": 2,
+      "answerText": "PARTY · You Think",
+      "explanation": "《Lion Heart》 시기에는 ‘PARTY’, ‘Lion Heart’, ‘You Think’의 공식 뮤직비디오가 공개됐습니다.",
+      "sourceIds": [
+        "LION"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "M20",
+      "difficulty": "medium",
+      "category": "대표곡",
+      "albumKey": "holiday-night",
+      "question": "《Holiday Night》의 더블 타이틀곡 조합은 무엇일까요?",
+      "options": [
+        "Gee · Genie",
+        "Lion Heart · You Think",
+        "FOREVER 1 · Lucky Like That",
+        "All Night · Holiday"
+      ],
+      "answerIndex": 3,
+      "answerText": "All Night · Holiday",
+      "explanation": "《Holiday Night》의 대표 활동곡은 ‘All Night’과 ‘Holiday’입니다.",
+      "sourceIds": [
+        "HOLIDAY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H01",
+      "difficulty": "hard",
+      "category": "연대기",
+      "albumKey": null,
+      "question": "다음 초기 발매작을 오래된 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Girls' Generation → Into the New World → Gee → Genie",
+        "Into the New World → Girls' Generation → Genie → Gee",
+        "Into the New World → Gee → Girls' Generation → Genie",
+        "Into the New World → Girls' Generation → Gee → Genie"
+      ],
+      "answerIndex": 3,
+      "answerText": "Into the New World → Girls' Generation → Gee → Genie",
+      "explanation": "2007년 ‘Into the New World’, 2007년 정규 1집, 2009년 《Gee》, 2009년 《Genie》 순입니다.",
+      "sourceIds": [
+        "ITNW",
+        "GG1",
+        "GEE",
+        "GENIE"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H02",
+      "difficulty": "hard",
+      "category": "연대기",
+      "albumKey": null,
+      "question": "다음 2010~2011년 발매작을 오래된 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Run Devil Run → Oh! → Hoot → The Boys",
+        "Oh! → Run Devil Run → Hoot → The Boys",
+        "Oh! → Hoot → Run Devil Run → The Boys",
+        "Oh! → Run Devil Run → The Boys → Hoot"
+      ],
+      "answerIndex": 1,
+      "answerText": "Oh! → Run Devil Run → Hoot → The Boys",
+      "explanation": "2010년 1월 《Oh!》, 3월 《Run Devil Run》, 10월 《Hoot》, 2011년 《The Boys》 순입니다.",
+      "sourceIds": [
+        "OH",
+        "RDR",
+        "HOOT",
+        "BOYS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H03",
+      "difficulty": "hard",
+      "category": "연대기",
+      "albumKey": null,
+      "question": "다음 2013~2015년 발매작을 오래된 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "I Got a Boy → Mr.Mr. → Catch Me If You Can → Lion Heart",
+        "I Got a Boy → Catch Me If You Can → Mr.Mr. → Lion Heart",
+        "I Got a Boy → Mr.Mr. → Lion Heart → Catch Me If You Can",
+        "Mr.Mr. → I Got a Boy → Lion Heart → Catch Me If You Can"
+      ],
+      "answerIndex": 0,
+      "answerText": "I Got a Boy → Mr.Mr. → Catch Me If You Can → Lion Heart",
+      "explanation": "2013년 《I Got a Boy》, 2014년 《Mr.Mr.》, 2015년 4월 ‘Catch Me If You Can’, 2015년 8월 《Lion Heart》 순입니다.",
+      "sourceIds": [
+        "IGAB",
+        "MRMR",
+        "CMIYC",
+        "LION"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H04",
+      "difficulty": "hard",
+      "category": "연대기",
+      "albumKey": null,
+      "question": "다음 정규 그룹·유닛 발매작을 오래된 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Holiday Night → Lil' Touch → FOREVER 1",
+        "FOREVER 1 → Holiday Night → Lil' Touch",
+        "Lil' Touch → Holiday Night → FOREVER 1",
+        "Holiday Night → FOREVER 1 → Lil' Touch"
+      ],
+      "answerIndex": 0,
+      "answerText": "Holiday Night → Lil' Touch → FOREVER 1",
+      "explanation": "《Holiday Night》은 2017년, Oh!GG의 《Lil' Touch》는 2018년, 《FOREVER 1》은 2022년에 발매됐습니다.",
+      "sourceIds": [
+        "HOLIDAY",
+        "LIL",
+        "FOREVER"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H05",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "gg-1",
+      "question": "첫 정규 앨범 《Girls' Generation》의 1~5번 트랙 순서로 맞는 것은 무엇일까요?",
+      "options": [
+        "Girls' Generation → Ooh La-La! → Baby Baby → Complete → Kissing You",
+        "Girls' Generation → Baby Baby → Ooh La-La! → Complete → Kissing You",
+        "Ooh La-La! → Girls' Generation → Complete → Baby Baby → Kissing You",
+        "Girls' Generation → Ooh La-La! → Complete → Kissing You → Baby Baby"
+      ],
+      "answerIndex": 0,
+      "answerText": "Girls' Generation → Ooh La-La! → Baby Baby → Complete → Kissing You",
+      "explanation": "첫 다섯 트랙은 ‘Girls' Generation’, ‘Ooh La-La!’, ‘Baby Baby’, ‘Complete’, ‘Kissing You’ 순입니다.",
+      "sourceIds": [
+        "GG1"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H06",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "hoot",
+      "question": "미니앨범 《Hoot》의 전체 트랙 순서로 맞는 것은 무엇일까요?",
+      "options": [
+        "Hoot → Mistake → Wake Up → My Best Friend → Snowy Wish",
+        "Hoot → Mistake → My Best Friend → Wake Up → Snowy Wish",
+        "Mistake → Hoot → Wake Up → My Best Friend → Snowy Wish",
+        "Hoot → My Best Friend → Mistake → Snowy Wish → Wake Up"
+      ],
+      "answerIndex": 1,
+      "answerText": "Hoot → Mistake → My Best Friend → Wake Up → Snowy Wish",
+      "explanation": "《Hoot》은 ‘Hoot’, ‘Mistake’, ‘My Best Friend’, ‘Wake Up’, ‘Snowy Wish’ 순입니다.",
+      "sourceIds": [
+        "HOOT"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H07",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "run-devil-run",
+      "question": "《Run Devil Run》 리패키지의 1~5번 트랙 순서로 맞는 것은 무엇일까요?",
+      "options": [
+        "Oh! → Run Devil Run → Echo → Show! Show! Show! → Star Star Star (Acoustic R&B Version)",
+        "Run Devil Run → Oh! → Show! Show! Show! → Echo → Star Star Star (Acoustic R&B Version)",
+        "Run Devil Run → Oh! → Echo → Star Star Star (Acoustic R&B Version) → Show! Show! Show!",
+        "Run Devil Run → Echo → Oh! → Star Star Star (Acoustic R&B Version) → Show! Show! Show!"
+      ],
+      "answerIndex": 2,
+      "answerText": "Run Devil Run → Oh! → Echo → Star Star Star (Acoustic R&B Version) → Show! Show! Show!",
+      "explanation": "첫 다섯 트랙은 ‘Run Devil Run’, ‘Oh!’, ‘Echo’, ‘Star Star Star’ 어쿠스틱 버전, ‘Show! Show! Show!’ 순입니다.",
+      "sourceIds": [
+        "RDR"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H08",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "mr-mr",
+      "question": "미니앨범 《Mr.Mr.》의 1~5번 트랙 순서로 맞는 것은 무엇일까요?",
+      "options": [
+        "Mr.Mr. → Europa → Goodbye → Back Hug → Wait a Minute",
+        "Mr.Mr. → Goodbye → Europa → Wait a Minute → Back Hug",
+        "Mr.Mr. → Goodbye → Wait a Minute → Europa → Back Hug",
+        "Goodbye → Mr.Mr. → Wait a Minute → Europa → Back Hug"
+      ],
+      "answerIndex": 1,
+      "answerText": "Mr.Mr. → Goodbye → Europa → Wait a Minute → Back Hug",
+      "explanation": "첫 다섯 트랙은 ‘Mr.Mr.’, ‘Goodbye’, ‘Europa’, ‘Wait a Minute’, ‘Back Hug’ 순입니다.",
+      "sourceIds": [
+        "MRMR"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H09",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "the-boys",
+      "question": "정규 3집 《The Boys》의 1~5번 트랙 순서로 맞는 것은 무엇일까요?",
+      "options": [
+        "The Boys → Say Yes → Telepathy → How Great Is Your Love → Trick",
+        "The Boys → Telepathy → Trick → Say Yes → How Great Is Your Love",
+        "The Boys → Telepathy → Say Yes → Trick → How Great Is Your Love",
+        "Telepathy → The Boys → Trick → Say Yes → How Great Is Your Love"
+      ],
+      "answerIndex": 2,
+      "answerText": "The Boys → Telepathy → Say Yes → Trick → How Great Is Your Love",
+      "explanation": "첫 다섯 트랙은 ‘The Boys’, ‘Telepathy’, ‘Say Yes’, ‘Trick’, ‘How Great Is Your Love’ 순입니다.",
+      "sourceIds": [
+        "BOYS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H10",
+      "difficulty": "hard",
+      "category": "트랙 순서",
+      "albumKey": "i-got-a-boy",
+      "question": "정규 4집 《I Got a Boy》의 첫 두 트랙 순서는 무엇일까요?",
+      "options": [
+        "I Got a Boy → Express 999",
+        "I Got a Boy → Dancing Queen",
+        "Dancing Queen → Express 999",
+        "Dancing Queen → I Got a Boy"
+      ],
+      "answerIndex": 1,
+      "answerText": "I Got a Boy → Dancing Queen",
+      "explanation": "《I Got a Boy》의 1번 트랙은 ‘I Got a Boy’, 2번 트랙은 ‘Dancing Queen’입니다.",
+      "sourceIds": [
+        "IGAB"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H11",
+      "difficulty": "hard",
+      "category": "일본 활동",
+      "albumKey": "jpn-1",
+      "question": "2011년 발매된 첫 일본 정규 앨범 《Girls' Generation》의 첫 트랙은 무엇일까요?",
+      "options": [
+        "The Great Escape",
+        "Genie",
+        "Mr.Taxi",
+        "Gee"
+      ],
+      "answerIndex": 2,
+      "answerText": "Mr.Taxi",
+      "explanation": "첫 일본 정규 앨범의 1번 트랙은 ‘Mr.Taxi’입니다.",
+      "sourceIds": [
+        "JPN1"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H12",
+      "difficulty": "hard",
+      "category": "일본 활동",
+      "albumKey": "jpn-2",
+      "question": "두 번째 일본 정규 앨범 《Girls & Peace》의 첫 트랙은 무엇일까요?",
+      "options": [
+        "Flower Power",
+        "Animal",
+        "Galaxy Supernova",
+        "Paparazzi"
+      ],
+      "answerIndex": 0,
+      "answerText": "Flower Power",
+      "explanation": "《Girls & Peace》의 1번 트랙은 ‘Flower Power’입니다.",
+      "sourceIds": [
+        "JPN2"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H13",
+      "difficulty": "hard",
+      "category": "일본 활동",
+      "albumKey": "jpn-3",
+      "question": "세 번째 일본 정규 앨범 《Love & Peace》의 첫 트랙은 무엇일까요?",
+      "options": [
+        "Motorcycle",
+        "Galaxy Supernova",
+        "Love & Girls",
+        "Gossip Girls"
+      ],
+      "answerIndex": 3,
+      "answerText": "Gossip Girls",
+      "explanation": "《Love & Peace》의 1번 트랙은 ‘Gossip Girls’입니다.",
+      "sourceIds": [
+        "JPN3"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H14",
+      "difficulty": "hard",
+      "category": "일본 활동",
+      "albumKey": null,
+      "question": "소녀시대의 일본 정규 앨범을 발매 순서대로 나열한 것은 무엇일까요?",
+      "options": [
+        "Girls' Generation → Love & Peace → Girls & Peace",
+        "Girls' Generation → Girls & Peace → Love & Peace",
+        "Girls & Peace → Girls' Generation → Love & Peace",
+        "Love & Peace → Girls & Peace → Girls' Generation"
+      ],
+      "answerIndex": 1,
+      "answerText": "Girls' Generation → Girls & Peace → Love & Peace",
+      "explanation": "일본 정규 앨범은 2011년 《Girls' Generation》, 2012년 《Girls & Peace》, 2013년 《Love & Peace》 순입니다.",
+      "sourceIds": [
+        "JPN1",
+        "JPN2",
+        "JPN3"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H15",
+      "difficulty": "hard",
+      "category": "일본 활동",
+      "albumKey": null,
+      "question": "소녀시대의 일본 데뷔 싱글은 무엇일까요?",
+      "options": [
+        "Gee",
+        "Paparazzi",
+        "Genie",
+        "Mr. Taxi"
+      ],
+      "answerIndex": 2,
+      "answerText": "Genie",
+      "explanation": "소녀시대는 2010년 일본어 버전 ‘Genie’로 일본 싱글 데뷔를 했습니다.",
+      "sourceIds": [
+        "JPN_DISCO",
+        "JPN1"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H16",
+      "difficulty": "hard",
+      "category": "유닛",
+      "albumKey": null,
+      "question": "‘태티서’ 또는 ‘TTS’라는 이름은 무엇에서 따온 것일까요?",
+      "options": [
+        "데뷔곡 세 곡의 첫 글자",
+        "소녀시대 콘서트 투어명의 약자",
+        "태연·티파니·서현 이름의 첫 음절과 영문 이니셜",
+        "세 멤버의 생일 월을 합친 숫자"
+      ],
+      "answerIndex": 2,
+      "answerText": "태연·티파니·서현 이름의 첫 음절과 영문 이니셜",
+      "explanation": "태티서는 태연, 티파니, 서현의 첫 음절을 합친 이름이며 TTS도 세 이름의 영문 이니셜에서 왔습니다.",
+      "sourceIds": [
+        "TTS"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H17",
+      "difficulty": "hard",
+      "category": "유닛",
+      "albumKey": "tts",
+      "question": "태티서의 음반을 발매 순서대로 올바르게 나열한 것은 무엇일까요?",
+      "options": [
+        "Dear Santa → Twinkle → Holler",
+        "Twinkle → Dear Santa → Holler",
+        "Twinkle → Holler → Dear Santa",
+        "Holler → Twinkle → Dear Santa"
+      ],
+      "answerIndex": 2,
+      "answerText": "Twinkle → Holler → Dear Santa",
+      "explanation": "태티서는 2012년 《Twinkle》, 2014년 《Holler》, 2015년 《Dear Santa》 순으로 발표했습니다.",
+      "sourceIds": [
+        "TWINKLE",
+        "HOLLER",
+        "DEAR"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H18",
+      "difficulty": "hard",
+      "category": "기록",
+      "albumKey": "gee",
+      "question": "‘Gee’가 2009년 KBS 《뮤직뱅크》에서 세운 연속 1위 기록은 몇 주일까요?",
+      "options": [
+        "10주 연속",
+        "7주 연속",
+        "6주 연속",
+        "9주 연속"
+      ],
+      "answerIndex": 3,
+      "answerText": "9주 연속",
+      "explanation": "‘Gee’는 당시 《뮤직뱅크》에서 9주 연속 1위를 기록했습니다.",
+      "sourceIds": [
+        "GEE_RECORD"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H19",
+      "difficulty": "hard",
+      "category": "수상",
+      "albumKey": "i-got-a-boy",
+      "question": "2013년 첫 YouTube Music Awards에서 ‘Video of the Year’를 받은 소녀시대 곡은 무엇일까요?",
+      "options": [
+        "The Boys",
+        "Mr.Mr.",
+        "Gee",
+        "I Got a Boy"
+      ],
+      "answerIndex": 3,
+      "answerText": "I Got a Boy",
+      "explanation": "YouTube 공식 수상자 명단에서 ‘I Got a Boy’가 2013년 Video of the Year로 발표됐습니다.",
+      "sourceIds": [
+        "YTMA"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    },
+    {
+      "id": "H20",
+      "difficulty": "hard",
+      "category": "작사 참여",
+      "albumKey": "holiday-night",
+      "question": "《Holiday Night》 수록곡 중 유리가 작사에 참여한 곡은 무엇일까요?",
+      "options": [
+        "Sweet Talk",
+        "It's You",
+        "Holiday",
+        "All Night"
+      ],
+      "answerIndex": 1,
+      "answerText": "It's You",
+      "explanation": "유리는 ‘It's You’의 작사에 참여했습니다. ‘Holiday’와 ‘Sweet Talk’은 서현이 작사에 참여했습니다.",
+      "sourceIds": [
+        "HOLIDAY"
+      ],
+      "verificationStatus": "verified",
+      "freshness": "stable",
+      "seoTags": []
+    }
+  ]
+}
