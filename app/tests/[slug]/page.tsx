@@ -40,6 +40,7 @@ import { ManchesterUnitedFanQuizTestPage } from "@/components/test/ManchesterUni
 import { AteezFanQuizTestPage } from "@/components/test/AteezFanQuizTestPage";
 import { ResceneFanQuizTestPage } from "@/components/test/ResceneFanQuizTestPage";
 import { GirlsGenerationFanQuizTestPage } from "@/components/test/GirlsGenerationFanQuizTestPage";
+import { TurnoverIntentionTestPage } from "@/components/test/TurnoverIntentionTestPage";
 import { BigbangFanQuizTestPage } from "@/components/test/BigbangFanQuizTestPage";
 import { NctDreamFanQuizTestPage } from "@/components/test/NctDreamFanQuizTestPage";
 import { WorkPersonaLanding } from "@/components/test/WorkPersonaLanding";
@@ -116,6 +117,9 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isStrayKidsFan = test.slug === "stray-kids-true-fan-test";
   const isManchesterUnitedFan = test.slug === "manchester-united-true-fan-test";
   const isAteezFan = test.slug === "ateez-true-fan-test";
+  const isTurnoverIntention = test.slug === "turnover-intention";
+  if (isTurnoverIntention && start === "1") return <TurnoverIntentionTestPage />;
+  if (isTurnoverIntention) return <StandardTestLanding test={test} answerType="4점 척도" insight="최근 3개월 동안의 직장생활을 기준으로, 회사를 떠나고 싶은 마음이 어느 정도인지와 그 마음을 만드는 원인을 함께 살펴봅니다. 직접적인 이직 의향 8문항과 조직 애착·업무 의미, 성장 가능성, 보상·공정성, 인간관계·조직문화, 업무 부담·회복 각 4문항, 총 28문항으로 구성되며 일부 문항은 역채점으로 계산됩니다. 결과에서는 0~100점의 이직 의향 점수와 5단계 유형, 영역별 점수 그래프, 점수가 가장 높은 원인 유형과 상황별 점검 가이드를 제공합니다. 이 테스트는 표준화된 심리검사나 인사평가 도구가 아닌 자기이해용 참고 콘텐츠입니다." />;
   const isGirlsGenerationFan = test.slug === "girls-generation-true-fan-test";
   const isBigbangFan = test.slug === "bigbang-true-fan-test";
   const isNctDreamFan = test.slug === "nct-dream-true-fan-test";
