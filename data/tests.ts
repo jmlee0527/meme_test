@@ -48,6 +48,8 @@ import { ateezFanTest } from "@/data/ateez-fan";
 import { resceneFanTest } from "@/data/rescene-fan";
 import { girlsGenerationFanTest } from "@/data/girls-generation-fan";
 import { turnoverIntentionTest } from "@/data/turnover-intention";
+import { jobStressTest } from "@/data/job-stress";
+import { workaholicTest } from "@/data/workaholic";
 import { bigbangFanTest } from "@/data/bigbang-fan";
 import { nctDreamFanTest } from "@/data/nct-dream-fan";
 import { workPersonaTest } from "@/data/work-persona";
@@ -116,7 +118,7 @@ export const resultProfiles: ResultProfile[] = [
   profile("digital-template", "디지털 템플릿 판매", "🧩", "정리 능력을 반복 판매 가능한 상품으로 만드는 설계형", [2,2,0,1,2,2,-2,-1,2,-2,-1,0], { initialCost:"0~5만 원", monetizationSpeed:"1~3개월", platforms:["크몽","Gumroad","Notion 템플릿 갤러리"] }),
 ];
 
-export const tests: TestDefinition[] = [{
+export const tests: TestDefinition[] = [workaholicTest, {
   slug: "side-job-recommendation",
   title: "나에게 맞는 부업 추천 테스트",
   shortTitle: "부업 추천 테스트",
@@ -146,7 +148,7 @@ export const tests: TestDefinition[] = [{
     ],
     assesses: "부업 적합 성향과 업무 선호",
   },
-}, turnoverIntentionTest, workPersonaTest, nctDreamFanTest, bigbangFanTest, girlsGenerationFanTest, resceneFanTest, ateezFanTest, manchesterUnitedFanTest, strayKidsFanTest, seventeenFanTest, idealTypeTest, youngOldTest, mentalAgeTest, fromis9FanTest, btsFanTest, tetoEgenTest, limYoungWoongFanTest, youngtakFanTest, arsenalFanTest, loverFruitTest, dementiaRiskTest, adhdScreeningTest, nameCompatibilityTest, selfEsteemTest, coffeeBrandTest, wizardCharacterTest, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, stressTest, cvsTest, snsTest, burgerTest, dailyFortuneTest];
+}, jobStressTest, turnoverIntentionTest, workPersonaTest, nctDreamFanTest, bigbangFanTest, girlsGenerationFanTest, resceneFanTest, ateezFanTest, manchesterUnitedFanTest, strayKidsFanTest, seventeenFanTest, idealTypeTest, youngOldTest, mentalAgeTest, fromis9FanTest, btsFanTest, tetoEgenTest, limYoungWoongFanTest, youngtakFanTest, arsenalFanTest, loverFruitTest, dementiaRiskTest, adhdScreeningTest, nameCompatibilityTest, selfEsteemTest, coffeeBrandTest, wizardCharacterTest, officeAnimalTest, marriageTimingTest, kkondaePowerTest, weekendFoodWorldcup, burnoutRiskTest, consumerStyleTest, loveMbtiTest, loverScoreTest, jealousyTest, attachmentStyleTest, joseonDestinyTest, personalityCountryTest, colorPersonalityTest, enneagramTest, eqTest, bigFiveTest, footballQuizTest, worldCupWinnerQuizTest, reactionTimeTest, mbtiTest, sbtiTest, stressTest, cvsTest, snsTest, burgerTest, dailyFortuneTest];
 
 export const getTest = (slug: string) => tests.find((test) => test.slug === slug);
 export const getResultProfile = (slug: string) => resultProfiles.find((item) => item.slug === slug);

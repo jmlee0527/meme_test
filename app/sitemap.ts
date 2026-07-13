@@ -31,6 +31,8 @@ import { tetoEgenResultProfiles } from "@/data/teto-egen";
 import { btsFanGradeProfiles } from "@/data/bts-fan";
 import { fromis9FanGradeProfiles } from "@/data/fromis9-fan";
 import { turnoverResultLevels } from "@/data/turnover-intention";
+import { jobStressLevels } from "@/data/job-stress";
+import { workaholicLevels } from "@/data/workaholic";
 import { absoluteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -81,6 +83,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const btsFanResultRoutes: MetadataRoute.Sitemap = btsFanGradeProfiles.map((profile) => ({ url: absoluteUrl(`/bts-fan-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const fromis9FanResultRoutes: MetadataRoute.Sitemap = fromis9FanGradeProfiles.map((profile) => ({ url: absoluteUrl(`/fromis9-fan-test/result/${profile.slug}`), changeFrequency: "monthly", priority: 0.7 }));
   const turnoverResultRoutes: MetadataRoute.Sitemap = turnoverResultLevels.map((level) => ({ url: absoluteUrl(`/turnover-intention/result/${level.id}`), changeFrequency: "monthly", priority: 0.7 }));
+  const jobStressResultRoutes: MetadataRoute.Sitemap = jobStressLevels.map((level) => ({ url: absoluteUrl(`/job-stress/result/${level.id}`), changeFrequency: "monthly", priority: 0.7 }));
+  staticRoutes.push(...jobStressResultRoutes);
+  staticRoutes.push(...workaholicLevels.map((level) => ({ url: absoluteUrl(`/workaholic/result/${level.id}`), changeFrequency: "monthly" as const, priority: 0.7 })));
   const postRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({ url: absoluteUrl(`/blog/${post.slug}`), lastModified: new Date(post.updatedAt), changeFrequency: "monthly", priority: 0.75 }));
   const categoryRoutes: MetadataRoute.Sitemap = [...new Set([...blogCategories, ...tests.map((test) => test.category)])].map((category) => ({ url: absoluteUrl(`/category/${encodeURIComponent(category)}`), changeFrequency: "weekly", priority: 0.6 }));
   return [...staticRoutes, ...testRoutes, ...resultRoutes, ...joseonResultRoutes, ...countryResultRoutes, ...loverResultRoutes, ...jealousyResultRoutes, ...colorResultRoutes, ...enneagramResultRoutes, ...eqResultRoutes, ...bigFiveResultRoutes, ...footballGradeRoutes, ...worldCupWinnerGradeRoutes, ...reactionGradeRoutes, ...mbtiResultRoutes, ...sbtiResultRoutes, ...stressResultRoutes, ...cvsResultRoutes, ...snsResultRoutes, ...burgerResultRoutes, ...wizardCharacterResultRoutes, ...coffeeBrandResultRoutes, ...selfEsteemResultRoutes, ...adhdResultRoutes, ...dementiaResultRoutes, ...loverFruitResultRoutes, ...arsenalFanResultRoutes, ...youngtakFanResultRoutes, ...limYoungWoongFanResultRoutes, ...tetoEgenResultRoutes, ...btsFanResultRoutes, ...fromis9FanResultRoutes, ...turnoverResultRoutes, ...postRoutes, ...categoryRoutes];

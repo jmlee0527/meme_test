@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { adsenseClientId } from "@/lib/adsense";
+import { FeedbackReportButton } from "@/components/feedback/FeedbackReportButton";
 
 const googleTagManagerId = "GTM-N355VCGN";
 const googleAnalyticsId = "G-QPDN3ZJ32G";
@@ -98,6 +99,7 @@ gtag('config', '${googleAnalyticsId}');`}
         <Header />
         <main>{children}</main>
         <Footer />
+        <FeedbackReportButton />
         <Analytics />
       </body>
     </html>
