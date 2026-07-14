@@ -3,66 +3,66 @@ import type { CvsQuestion, CvsResultProfile, CvsScores, CvsTrait, TestDefinition
 // 편의점 장보기 여정 순서대로 이어지는 10문항. 성격을 직접 묻는 질문은 없습니다.
 // 각 보기는 12가지 성향에 가중치를 더합니다 (주 성향 2점, 보조 성향 1점).
 export const cvsQuestions: CvsQuestion[] = [
-  { id: 1, text: "편의점에 들어왔다. 가장 먼저 발길이 향하는 곳은?", options: [
+  { id: 1, text: "편의점에 들어가면 어디로 가장 먼저 향하나요?", options: [
     { emoji: "🍙", text: "삼각김밥·도시락 코너", weights: { realism: 2, stability: 1 } },
     { emoji: "✨", text: "이번 주 신상품 매대", weights: { curiosity: 2, adventure: 1 } },
     { emoji: "🍫", text: "디저트·초콜릿 코너", weights: { emotion: 2, optimism: 1 } },
     { emoji: "🥤", text: "음료 냉장고 (목부터 축이자)", weights: { spontaneity: 2, realism: 1 } },
     { emoji: "🎁", text: "1+1 행사 코너", weights: { planning: 2, realism: 1 } },
   ] },
-  { id: 2, text: "컵라면 하나만 고른다면?", options: [
+  { id: 2, text: "컵라면을 하나만 고른다면 무엇을 선택하나요?", options: [
     { emoji: "🍜", text: "신라면 (근본은 못 이겨)", weights: { stability: 2, realism: 1 } },
     { emoji: "🔥", text: "불닭볶음면 (맵기 도전)", weights: { adventure: 2, extraversion: 1 } },
     { emoji: "🍲", text: "튀김우동 (부드러운 국물)", weights: { emotion: 2, empathy: 1 } },
     { emoji: "🥣", text: "육개장 사발면 (추억의 맛)", weights: { stability: 1, emotion: 1 } },
     { emoji: "🆕", text: "처음 보는 이색 신상 라면", weights: { curiosity: 2, creativity: 1 } },
   ] },
-  { id: 3, text: "음료 하나를 고른다면?", options: [
+  { id: 3, text: "음료를 하나만 고른다면 무엇을 선택하나요?", options: [
     { emoji: "☕", text: "아메리카노 (오늘도 루틴대로)", weights: { planning: 2, realism: 1 } },
     { emoji: "🍌", text: "바나나우유 (국민 추억템)", weights: { emotion: 2, optimism: 1 } },
     { emoji: "🥫", text: "제로콜라 (맛과 관리 둘 다)", weights: { realism: 2, planning: 1 } },
     { emoji: "💧", text: "이온음료 (몸 생각)", weights: { stability: 2 } },
     { emoji: "🫧", text: "신상 과일 스파클링", weights: { curiosity: 2, adventure: 1 } },
   ] },
-  { id: 4, text: "과자를 하나 산다면?", options: [
+  { id: 4, text: "과자를 하나만 산다면 무엇을 선택하나요?", options: [
     { emoji: "🥔", text: "포카칩 (실패 없는 국민픽)", weights: { stability: 2, optimism: 1 } },
     { emoji: "🐢", text: "꼬북칩 (요즘 최애)", weights: { curiosity: 1, creativity: 1 } },
     { emoji: "🍤", text: "새우깡 (손이 가요 손이 가)", weights: { stability: 1, realism: 1 } },
     { emoji: "🍄", text: "초코송이 (귀여워서 못 참음)", weights: { optimism: 2, emotion: 1 } },
     { emoji: "🌶️", text: "매운맛 신상 과자", weights: { adventure: 2, spontaneity: 1 } },
   ] },
-  { id: 5, text: "아이스크림 냉동고 앞. 무엇을 집을까?", options: [
+  { id: 5, text: "아이스크림 냉동고 앞에서는 무엇을 고르나요?", options: [
     { emoji: "🍦", text: "월드콘 (다 같이 먹기 좋은 클래식)", weights: { optimism: 2, extraversion: 1 } },
     { emoji: "🍈", text: "메로나 (변하지 않는 맛)", weights: { emotion: 2, stability: 1 } },
     { emoji: "🫘", text: "비비빅 (내 취향은 내가 정해)", weights: { introversion: 2, realism: 1 } },
     { emoji: "🦈", text: "죠스바 (혀 파래지는 재미)", weights: { spontaneity: 2, optimism: 1 } },
   ] },
-  { id: 6, text: "눈에 들어온 신상 디저트. 나의 반응은?", options: [
+  { id: 6, text: "신상 디저트가 눈에 들어오면 어떻게 하나요?", options: [
     { emoji: "🛒", text: "고민 없이 바로 집는다", weights: { spontaneity: 2, curiosity: 1 } },
     { emoji: "🔎", text: "일단 리뷰부터 검색해본다", weights: { planning: 2, realism: 1 } },
     { emoji: "👀", text: "궁금하지만 다음에… 하고 지나간다", weights: { stability: 2, introversion: 1 } },
     { emoji: "📸", text: "사진 찍어서 친구한테 보낸다", weights: { extraversion: 2, empathy: 1 } },
   ] },
-  { id: 7, text: "저녁 한 끼를 편의점에서 해결한다면?", options: [
+  { id: 7, text: "편의점에서 저녁 한 끼를 해결한다면 무엇을 고르나요?", options: [
     { emoji: "🍱", text: "제일 잘 팔리는 1등 도시락", weights: { realism: 2, stability: 1 } },
     { emoji: "🍙", text: "삼각김밥 + 컵라면 국룰 조합", weights: { stability: 2, optimism: 1 } },
     { emoji: "🥗", text: "샌드위치 + 샐러드 (가볍게 관리)", weights: { planning: 2, realism: 1 } },
     { emoji: "🆕", text: "오늘 처음 보는 신메뉴 도시락", weights: { adventure: 2, curiosity: 1 } },
     { emoji: "🥐", text: "대충 빵 하나 (배만 채우면 됨)", weights: { spontaneity: 2, introversion: 1 } },
   ] },
-  { id: 8, text: "매대 사이에서 아는 얼굴 발견! 어떻게 할까?", options: [
+  { id: 8, text: "매대 사이에서 아는 사람을 발견하면 어떻게 하나요?", options: [
     { emoji: "👋", text: "반갑게 인사하고 같이 장 본다", weights: { extraversion: 2, optimism: 1 } },
     { emoji: "🤫", text: "조용히 다른 통로로 (혼자 시간 소중)", weights: { introversion: 2, stability: 1 } },
     { emoji: "🍬", text: "간식 하나 더 사서 슬쩍 나눠준다", weights: { empathy: 2, extraversion: 1 } },
     { emoji: "🙂", text: "눈 마주치면 인사, 아니면 패스", weights: { realism: 1, introversion: 1 } },
   ] },
-  { id: 9, text: "계산대 앞, 생각보다 5천 원 초과! 나의 선택은?", options: [
+  { id: 9, text: "계산 금액이 예상보다 5천 원 많으면 어떻게 하나요?", options: [
     { emoji: "😎", text: "그대로 다 산다. 오늘의 행복이 우선", weights: { optimism: 2, spontaneity: 1 } },
     { emoji: "📉", text: "덜 급한 것부터 착착 뺀다", weights: { planning: 2, realism: 1 } },
     { emoji: "🔄", text: "1+1 상품으로 바꿔서 금액을 맞춘다", weights: { realism: 2, creativity: 1 } },
     { emoji: "😅", text: "고민하다 결국 다 산다 (내일의 나야 미안)", weights: { spontaneity: 2, emotion: 1 } },
   ] },
-  { id: 10, text: "봉투를 들고 나왔다. 어디서 먹을까?", options: [
+  { id: 10, text: "편의점에서 나온 뒤 어디에서 먹나요?", options: [
     { emoji: "🛋️", text: "집 침대 위 나만의 자리", weights: { introversion: 2, stability: 1 } },
     { emoji: "🪑", text: "편의점 앞 야외 테이블에서 바로 개봉", weights: { spontaneity: 2, extraversion: 1 } },
     { emoji: "🌳", text: "한강이나 공원으로 (피크닉 기분)", weights: { emotion: 2, creativity: 1 } },

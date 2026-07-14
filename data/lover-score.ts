@@ -10,7 +10,7 @@ const options = (a: string, b: string) => [
 export const loverQuestions: LoverQuestion[] = [
   {
     id: 1,
-    text: "약속 장소에 조금 일찍 도착했다면?",
+    text: "약속 장소에 조금 일찍 도착하면 어떻게 하나요?",
     options: options("근처를 천천히 둘러보며 기다린다", "상대에게 도착했다고 가볍게 연락한다"),
     weights: [
       { stability: 6, independence: 4, humor: 2 },
@@ -19,7 +19,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 2,
-    text: "친구가 갑자기 고민 상담을 한다면?",
+    text: "친구가 갑자기 고민을 털어놓으면 어떻게 반응하나요?",
     options: options("먼저 끝까지 들어준다", "함께 해결 방법을 정리해 본다"),
     weights: [
       { care: 8, stability: 4 },
@@ -28,7 +28,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 3,
-    text: "쉬는 날의 이상적인 일정은?",
+    text: "쉬는 날에는 어떤 일정을 가장 선호하나요?",
     options: options("미리 정한 계획대로 움직이기", "그날 기분에 따라 느슨하게 정하기"),
     weights: [
       { responsibility: 6, stability: 6 },
@@ -37,7 +37,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 4,
-    text: "대화 중 상대가 평소보다 조용해졌다면?",
+    text: "대화 중 상대가 평소보다 조용해지면 어떻게 하나요?",
     options: options("무슨 일이 있는지 자연스럽게 물어본다", "부담스럽지 않게 시간을 준다"),
     weights: [
       { care: 8, expression: 4, conflict: 4 },
@@ -46,7 +46,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 5,
-    text: "마음에 드는 사람이 생기면?",
+    text: "마음에 드는 사람이 생기면 어떻게 하나요?",
     options: options("조용히 분위기를 살피며 길게 본다", "적절한 타이밍에 솔직하게 표현한다"),
     weights: [
       { stability: 6, independence: 4, trust: 4 },
@@ -55,7 +55,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 6,
-    text: "다툼이 생겼을 때 나는?",
+    text: "다툼이 생기면 보통 어떻게 풀어가나요?",
     options: options("가능하면 바로 이야기해서 풀고 싶다", "감정이 가라앉은 뒤에 정리해서 말하고 싶다"),
     weights: [
       { conflict: 8, expression: 4, trust: 4 },
@@ -64,7 +64,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 7,
-    text: "상대가 바쁜 시기라면?",
+    text: "상대가 바쁜 시기에는 어떻게 하나요?",
     options: options("필요한 게 있는지 먼저 챙겨본다", "방해되지 않게 거리를 지켜준다"),
     weights: [
       { care: 8, responsibility: 4 },
@@ -73,7 +73,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 8,
-    text: "함께 여행을 간다면 나는?",
+    text: "함께 여행할 때 어떤 방식을 선호하나요?",
     options: options("숙소와 동선은 어느 정도 미리 정해두고 싶다", "큰 방향만 정하고 즉흥적으로 움직이고 싶다"),
     weights: [
       { responsibility: 6, stability: 6 },
@@ -82,7 +82,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 9,
-    text: "연락 스타일에 더 가까운 것은?",
+    text: "어떤 연락 방식에 더 가까운가요?",
     options: options("짧아도 자주 주고받는 게 좋다", "각자 할 일 하다가 여유 있을 때 편하게 하는 게 좋다"),
     weights: [
       { expression: 6, care: 4, trust: 4 },
@@ -91,7 +91,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 10,
-    text: "상대가 실수했을 때 나는?",
+    text: "상대가 실수하면 어떻게 반응하나요?",
     options: options("왜 그런 선택을 했는지 먼저 들어본다", "같은 일이 반복되지 않게 이야기해 둔다"),
     weights: [
       { care: 6, stability: 4, trust: 4 },
@@ -100,7 +100,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 11,
-    text: "연애에서 가장 편한 분위기는?",
+    text: "연애할 때 어떤 분위기가 가장 편한가요?",
     options: options("서로 일상을 자주 공유하는 관계", "각자의 시간을 존중하는 관계"),
     weights: [
       { expression: 6, care: 4, humor: 2 },
@@ -109,7 +109,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 12,
-    text: "선물을 고를 때 나는?",
+    text: "선물을 고를 때 무엇을 더 중요하게 생각하나요?",
     options: options("상대가 평소 말한 걸 떠올리며 고른다", "실용적으로 오래 쓸 수 있는 것을 고른다"),
     weights: [
       { care: 8, expression: 4 },
@@ -118,7 +118,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 13,
-    text: "주변 사람이 나를 표현한다면 더 가까운 말은?",
+    text: "주변 사람이 나를 표현한다면 어떤 말에 더 가까운가요?",
     options: options("편안하고 안정적인 사람", "재미있고 분위기를 살리는 사람"),
     weights: [
       { stability: 8, trust: 4 },
@@ -127,7 +127,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 14,
-    text: "중요한 결정을 할 때 나는?",
+    text: "중요한 결정을 할 때 무엇을 우선하나요?",
     options: options("분위기와 감정도 함께 본다", "현실적인 조건과 약속을 우선 본다"),
     weights: [
       { humor: 4, expression: 4, stability: 2 },
@@ -136,7 +136,7 @@ export const loverQuestions: LoverQuestion[] = [
   },
   {
     id: 15,
-    text: "오래가는 관계에 더 필요한 것은?",
+    text: "관계가 오래가려면 무엇이 더 필요한가요?",
     options: options("꾸준한 표현과 관심", "서로에 대한 신뢰와 각자의 중심"),
     weights: [
       { care: 6, expression: 6 },
@@ -488,4 +488,3 @@ export const loverScoreTest: TestDefinition = {
     assesses: "연애 태도와 파트너십 성향",
   },
 };
-

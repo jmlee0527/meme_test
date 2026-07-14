@@ -43,6 +43,7 @@ import { GirlsGenerationFanQuizTestPage } from "@/components/test/GirlsGeneratio
 import { TurnoverIntentionTestPage } from "@/components/test/TurnoverIntentionTestPage";
 import { JobStressTestPage } from "@/components/test/JobStressTestPage";
 import { WorkaholicTestPage } from "@/components/test/WorkaholicTestPage";
+import { EgoResilienceTestPage } from "@/components/test/EgoResilienceTestPage";
 import { BigbangFanQuizTestPage } from "@/components/test/BigbangFanQuizTestPage";
 import { NctDreamFanQuizTestPage } from "@/components/test/NctDreamFanQuizTestPage";
 import { WorkPersonaLanding } from "@/components/test/WorkPersonaLanding";
@@ -122,6 +123,9 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const isTurnoverIntention = test.slug === "turnover-intention";
   const isJobStress = test.slug === "job-stress";
   const isWorkaholic = test.slug === "workaholic";
+  const isEgoResilience = test.slug === "ego-resilience-test";
+  if (isEgoResilience && start === "1") return <EgoResilienceTestPage />;
+  if (isEgoResilience) return <StandardTestLanding test={test} answerType="4점 척도" insight="자아탄력성은 힘든 일을 겪지 않는 능력이 아니라 흔들린 뒤 감정과 상황을 정리하고 다시 일상으로 돌아오는 힘과 관련됩니다. 최근 1개월의 실제 모습을 기준으로 자기조절력, 현실적인 긍정적 회복력, 관계 회복력을 각각 4문항으로 살펴봅니다. 부정적인 감정을 억누르거나 모든 문제를 혼자 해결하는 것을 높은 점수로 보지 않습니다. 이 테스트는 12문항의 자가 점검형 콘텐츠이며 전문 심리검사나 의료 진단을 대신하지 않습니다." />;
   if (isWorkaholic && start === "1") return <WorkaholicTestPage />;
   if (isWorkaholic) return <StandardTestLanding test={test} answerType="4점 척도" insight="최근 3개월의 반복적인 업무 습관을 기준으로 과도한 업무 투입, 강박적인 업무 욕구, 심리적 퇴근의 어려움, 일과 생활의 경계 침범, 성과와 자기 가치 결합의 5개 영역을 살펴봅니다. 오래 일하거나 일을 좋아한다는 이유만으로 워커홀릭이라고 보지 않고, 필요할 때 멈추고 쉴 수 있는 건강한 업무 몰입과 내적 압박 때문에 업무를 놓기 어려운 과몰입을 구분합니다. 결과는 자기이해용이며 의료 진단이나 공식 인사평가가 아닙니다." />;
   if (isJobStress && start === "1") return <JobStressTestPage />;

@@ -3,61 +3,61 @@ import type { BurgerBrandProfile, BurgerQuestion, BurgerScores, BurgerTrait, Tes
 // 일상 상황 10문항 (브랜드·햄버거를 유추할 수 있는 질문 없음).
 // 각 보기는 12가지 성향에 가중치를 더합니다 (주 성향 2점, 보조 성향 1점).
 export const burgerQuestions: BurgerQuestion[] = [
-  { id: 1, text: "주말이 통째로 비었다! 가장 하고 싶은 것은?", options: [
+  { id: 1, text: "주말이 통째로 비면 무엇을 하고 싶나요?", options: [
     { emoji: "🏃", text: "친구들 불러서 나들이나 운동", weights: { activity: 2, friendliness: 1 } },
     { emoji: "☕", text: "요즘 뜨는 카페·전시 탐방", weights: { trendy: 2, emotion: 1 } },
     { emoji: "🧹", text: "집 정리하고 밀린 일 처리", weights: { practicality: 2, stability: 1 } },
     { emoji: "🎨", text: "안 해본 취미 원데이 클래스 도전", weights: { challenge: 2, creativity: 1 } },
   ] },
-  { id: 2, text: "친구들과 약속을 잡을 때 나는?", options: [
+  { id: 2, text: "친구들과 약속을 잡을 때 주로 어떤 역할을 하나요?", options: [
     { emoji: "📢", text: "내가 날짜·장소 정해서 공지한다", weights: { leadership: 2, practicality: 1 } },
     { emoji: "🤗", text: "\"다들 편한 대로~\" 맞춰주는 편", weights: { friendliness: 2, stability: 1 } },
     { emoji: "✨", text: "아무도 모르는 신상 장소를 발굴해 제안", weights: { trendy: 2, uniqueness: 1 } },
     { emoji: "🏠", text: "실패 없는 검증된 단골집으로", weights: { stability: 2, value: 1 } },
   ] },
-  { id: 3, text: "신메뉴가 나왔다는 소식을 들으면?", options: [
+  { id: 3, text: "신메뉴가 나왔다는 소식을 들으면 어떻게 하나요?", options: [
     { emoji: "🏃‍♂️", text: "출시 당일 바로 먹으러 간다", weights: { challenge: 2, trendy: 1 } },
     { emoji: "🔎", text: "리뷰가 쌓일 때까지 기다렸다 판단", weights: { practicality: 2, stability: 1 } },
     { emoji: "😌", text: "먹던 거나 먹지 뭐", weights: { stability: 2, value: 1 } },
     { emoji: "📸", text: "비주얼이 예쁘면 도전한다", weights: { emotion: 2, trendy: 1 } },
   ] },
-  { id: 4, text: "쇼핑할 때 가장 중요하게 보는 것은?", options: [
+  { id: 4, text: "쇼핑할 때 무엇을 가장 중요하게 보나요?", options: [
     { emoji: "🧮", text: "가격 대비 성능, 최저가 검색은 필수", weights: { value: 2, practicality: 1 } },
     { emoji: "💎", text: "품질과 브랜드, 좋은 건 값을 한다", weights: { premium: 2 } },
     { emoji: "🌷", text: "디자인과 감성, 예쁘면 반은 성공", weights: { emotion: 2, creativity: 1 } },
     { emoji: "🦄", text: "남들 안 쓰는 특별한 것", weights: { uniqueness: 2, trendy: 1 } },
   ] },
-  { id: 5, text: "나의 여행 스타일은?", options: [
+  { id: 5, text: "여행할 때 어떤 스타일을 선호하나요?", options: [
     { emoji: "🏄", text: "액티비티로 꽉 채운 에너지 여행", weights: { activity: 2, challenge: 1 } },
     { emoji: "🛁", text: "분위기 좋은 숙소에서 여유롭게", weights: { premium: 2, emotion: 1 } },
     { emoji: "🗺️", text: "가성비 루트로 알차게 도장 깨기", weights: { value: 2, practicality: 1 } },
     { emoji: "🎒", text: "계획 없이 발길 닿는 대로", weights: { uniqueness: 2, challenge: 1 } },
   ] },
-  { id: 6, text: "스트레스가 쌓이면 나는?", options: [
+  { id: 6, text: "스트레스가 쌓이면 보통 어떻게 해소하나요?", options: [
     { emoji: "💪", text: "운동으로 땀 빼며 리셋", weights: { activity: 2, stability: 1 } },
     { emoji: "🍰", text: "맛있는 걸 먹으며 확실한 행복 충전", weights: { emotion: 2, value: 1 } },
     { emoji: "🗣️", text: "사람들 만나서 수다로 털어낸다", weights: { friendliness: 2, activity: 1 } },
     { emoji: "🎧", text: "혼자 음악 들으며 감성 충전", weights: { emotion: 2, uniqueness: 1 } },
   ] },
-  { id: 7, text: "주변 사람들이 평가하는 나는?", options: [
+  { id: 7, text: "주변 사람들은 나를 어떤 사람이라고 하나요?", options: [
     { emoji: "🌳", text: "믿음직하고 한결같은 사람", weights: { stability: 2, practicality: 1 } },
     { emoji: "⚡", text: "항상 에너지가 넘치는 사람", weights: { activity: 2, friendliness: 1 } },
     { emoji: "🎭", text: "자기 취향이 확고한 사람", weights: { uniqueness: 2, creativity: 1 } },
     { emoji: "🚀", text: "추진력 있게 끌고 가는 사람", weights: { leadership: 2, challenge: 1 } },
   ] },
-  { id: 8, text: "새로운 도전 앞에서 나는?", options: [
+  { id: 8, text: "새로운 도전 앞에서는 어떻게 행동하나요?", options: [
     { emoji: "🔥", text: "일단 부딪혀본다", weights: { challenge: 2, activity: 1 } },
     { emoji: "📊", text: "성공 확률부터 계산한다", weights: { practicality: 2, leadership: 1 } },
     { emoji: "💡", text: "남들과 다른 방식으로 시도한다", weights: { creativity: 2, uniqueness: 1 } },
     { emoji: "🛡️", text: "잘하는 것에 집중하는 것도 전략", weights: { stability: 2, value: 1 } },
   ] },
-  { id: 9, text: "계획을 세우는 나의 스타일은?", options: [
+  { id: 9, text: "계획은 보통 어떤 방식으로 세우나요?", options: [
     { emoji: "📋", text: "시간 단위 상세 플랜 작성", weights: { practicality: 2, leadership: 1 } },
     { emoji: "🖼️", text: "큰 틀만 잡고 나머지는 유연하게", weights: { creativity: 2, challenge: 1 } },
     { emoji: "🍃", text: "계획? 마음 가는 대로!", weights: { uniqueness: 2, emotion: 1 } },
     { emoji: "🫂", text: "함께하는 사람들에게 맞춘다", weights: { friendliness: 2, stability: 1 } },
   ] },
-  { id: 10, text: "내가 가장 중요하게 생각하는 가치는?", options: [
+  { id: 10, text: "가장 중요하게 생각하는 가치는 무엇인가요?", options: [
     { emoji: "🏆", text: "성장과 성취", weights: { leadership: 2, challenge: 1 } },
     { emoji: "🕊️", text: "안정과 평화", weights: { stability: 2, emotion: 1 } },
     { emoji: "🎉", text: "재미와 즐거움", weights: { activity: 2, trendy: 1 } },

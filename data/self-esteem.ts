@@ -19,7 +19,7 @@ export const selfEsteemDomains = [
 export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   {
     id: 1,
-    text: "오랫동안 준비한 일이 기대한 만큼 잘되지 않았다. 그날 저녁 나는?",
+    text: "오랫동안 준비한 일이 기대만큼 잘되지 않았다면, 그날 저녁에는 어떻게 하나요?",
     options: [
       { label: "A", text: "아쉬운 지점을 적어보고 다음에 바꿀 한 가지를 정한다", value: 0, weights: { resilience: 3, selfEfficacy: 2, emotionalStability: 1 } },
       { label: "B", text: "기분이 가라앉아도 오늘만큼은 쉬어가기로 한다", value: 1, weights: { selfCompassion: 3, selfAcceptance: 2, resilience: 1 } },
@@ -29,7 +29,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 2,
-    text: "친구가 내 능력을 구체적으로 칭찬해 주었다. 가장 가까운 반응은?",
+    text: "친구가 내 능력을 구체적으로 칭찬하면 어떻게 반응하나요?",
     options: [
       { label: "A", text: "고맙다고 말하면서 어떤 점이 좋았는지 더 들어본다", value: 0, weights: { selfAcceptance: 3, selfConfidence: 2, emotionalStability: 1 } },
       { label: "B", text: "기분은 좋지만 우연히 잘된 부분도 컸다고 덧붙인다", value: 1, weights: { evaluationSensitivity: 1, selfAcceptance: 1, selfConfidence: -1 } },
@@ -39,7 +39,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 3,
-    text: "조금 어렵지만 흥미로운 역할을 맡아보겠냐는 제안을 받았다. 나는?",
+    text: "조금 어렵지만 흥미로운 역할을 제안받으면 어떻게 하나요?",
     options: [
       { label: "A", text: "필요한 지원을 확인한 뒤 배우면서 해보겠다고 한다", value: 0, weights: { selfEfficacy: 3, selfConfidence: 2, resilience: 2 } },
       { label: "B", text: "준비할 시간을 충분히 확보할 수 있을 때만 수락한다", value: 1, weights: { emotionalStability: 2, selfEfficacy: 1, evaluationSensitivity: 1 } },
@@ -49,7 +49,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 4,
-    text: "SNS에서 또래가 큰 성과를 냈다는 소식을 보았다. 이후의 생각은?",
+    text: "SNS에서 또래의 큰 성과를 본 뒤 어떤 생각이 드나요?",
     options: [
       { label: "A", text: "부럽지만 그 사람의 과정과 내 속도는 다르다고 생각한다", value: 0, weights: { socialComparison: -3, selfAcceptance: 2, emotionalStability: 2 } },
       { label: "B", text: "자극을 받아 내가 지금 할 수 있는 작은 일을 시작한다", value: 1, weights: { selfEfficacy: 3, resilience: 2, socialComparison: 1 } },
@@ -59,7 +59,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 5,
-    text: "회의에서 내가 낸 의견이 채택되지 않았다. 회의가 끝난 뒤 나는?",
+    text: "회의에서 내 의견이 채택되지 않으면 이후 어떻게 하나요?",
     options: [
       { label: "A", text: "선택된 안의 이유를 듣고 내 의견에서 쓸 부분을 찾는다", value: 0, weights: { resilience: 3, emotionalStability: 2, selfEfficacy: 1 } },
       { label: "B", text: "아쉽지만 의견과 내 능력은 별개의 일이라고 정리한다", value: 1, weights: { selfAcceptance: 3, selfConfidence: 2, emotionalStability: 2 } },
@@ -69,7 +69,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 6,
-    text: "사소하지만 눈에 띄는 실수를 발견했다. 가장 먼저 하는 행동은?",
+    text: "사소하지만 눈에 띄는 실수를 발견하면 무엇부터 하나요?",
     options: [
       { label: "A", text: "영향 범위를 확인하고 필요한 사람에게 바로 알린다", value: 0, weights: { selfConfidence: 3, selfEfficacy: 2, emotionalStability: 2 } },
       { label: "B", text: "고친 뒤 같은 실수를 막을 간단한 장치를 만든다", value: 1, weights: { resilience: 3, selfEfficacy: 3, selfCompassion: 1 } },
@@ -79,7 +79,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 7,
-    text: "낯선 사람들과 하루 동안 함께 일해야 한다. 시작할 때 나는?",
+    text: "낯선 사람들과 하루 동안 함께 일하게 되면 어떻게 시작하나요?",
     options: [
       { label: "A", text: "먼저 역할을 파악하고 필요한 질문부터 해본다", value: 0, weights: { selfEfficacy: 3, selfConfidence: 2, emotionalStability: 1 } },
       { label: "B", text: "분위기를 조금 관찰한 뒤 편한 사람부터 대화를 시작한다", value: 1, weights: { emotionalStability: 2, selfAcceptance: 1, selfConfidence: 1 } },
@@ -89,7 +89,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 8,
-    text: "가까운 사람이 내 의도를 다르게 이해하고 서운해한다. 나는?",
+    text: "가까운 사람이 내 의도를 오해해 서운해하면 어떻게 하나요?",
     options: [
       { label: "A", text: "상대가 느낀 점을 듣고 내가 전하려던 뜻도 차분히 말한다", value: 0, weights: { emotionalStability: 3, selfConfidence: 2, selfAcceptance: 1 } },
       { label: "B", text: "미안한 부분은 인정하되 모든 책임을 내 몫으로 보지는 않는다", value: 1, weights: { selfAcceptance: 3, selfCompassion: 2, emotionalStability: 2 } },
@@ -99,7 +99,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 9,
-    text: "여러 선택지 중 중요한 결정을 혼자 내려야 한다. 나의 방식은?",
+    text: "중요한 결정을 혼자 내려야 할 때 어떤 방식을 택하나요?",
     options: [
       { label: "A", text: "기준을 몇 가지 정하고 충분한 정보 안에서 선택한다", value: 0, weights: { selfConfidence: 3, selfEfficacy: 2, emotionalStability: 2 } },
       { label: "B", text: "믿는 사람의 의견을 듣되 마지막 결정은 내가 내린다", value: 1, weights: { selfConfidence: 2, selfAcceptance: 2, selfEfficacy: 1 } },
@@ -109,7 +109,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 10,
-    text: "처음 만난 사람이 내 경력이나 취미를 물었다. 나는?",
+    text: "처음 만난 사람이 경력이나 취미를 물으면 어떻게 답하나요?",
     options: [
       { label: "A", text: "대단하지 않아도 요즘 흥미를 느끼는 부분을 이야기한다", value: 0, weights: { selfAcceptance: 3, selfConfidence: 2, emotionalStability: 1 } },
       { label: "B", text: "상대와 공통점이 생길 만한 경험을 골라 편하게 답한다", value: 1, weights: { selfEfficacy: 2, emotionalStability: 2, evaluationSensitivity: -1 } },
@@ -119,7 +119,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 11,
-    text: "컨디션이 좋지 않아 계획한 일을 절반밖에 하지 못했다. 나는?",
+    text: "컨디션이 좋지 않아 계획의 절반만 해냈다면 어떻게 생각하나요?",
     options: [
       { label: "A", text: "오늘 가능한 만큼 했다고 보고 남은 일정을 다시 나눈다", value: 0, weights: { selfCompassion: 3, selfEfficacy: 2, resilience: 2 } },
       { label: "B", text: "쉬는 것도 일정의 일부라 생각하고 회복을 우선한다", value: 1, weights: { selfCompassion: 3, selfAcceptance: 2, emotionalStability: 2 } },
@@ -129,7 +129,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 12,
-    text: "새로운 기술을 배우는데 생각보다 진도가 느리다. 그다음 선택은?",
+    text: "새로운 기술을 배우는 속도가 예상보다 느리면 어떻게 하나요?",
     options: [
       { label: "A", text: "처음보다 나아진 부분을 확인하고 연습 단위를 줄인다", value: 0, weights: { selfEfficacy: 3, resilience: 3, selfCompassion: 1 } },
       { label: "B", text: "나와 맞는 학습 방식이 무엇인지 다른 방법을 시험한다", value: 1, weights: { selfConfidence: 2, selfEfficacy: 2, selfAcceptance: 1 } },
@@ -139,7 +139,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 13,
-    text: "내가 준비한 결과물에 예상보다 날카로운 피드백이 달렸다. 나는?",
+    text: "준비한 결과물에 예상보다 날카로운 피드백이 달리면 어떻게 하나요?",
     options: [
       { label: "A", text: "내용과 말투를 구분해 쓸 수 있는 의견만 골라본다", value: 0, weights: { emotionalStability: 3, selfConfidence: 2, resilience: 2 } },
       { label: "B", text: "바로 답하지 않고 감정이 가라앉은 뒤 다시 읽어본다", value: 1, weights: { selfCompassion: 2, emotionalStability: 3, selfAcceptance: 1 } },
@@ -149,7 +149,7 @@ export const selfEsteemQuestions: SelfEsteemQuestion[] = [
   },
   {
     id: 14,
-    text: "친한 사람과 의견이 다르지만 내게 중요한 문제다. 나는?",
+    text: "친한 사람과 중요한 문제에 대한 의견이 다르면 어떻게 하나요?",
     options: [
       { label: "A", text: "관계를 지키면서도 왜 중요한지 내 기준을 설명한다", value: 0, weights: { selfConfidence: 3, emotionalStability: 2, selfAcceptance: 2 } },
       { label: "B", text: "서로 다를 수 있다고 보고 합의할 부분과 남길 부분을 나눈다", value: 1, weights: { selfAcceptance: 3, selfCompassion: 2, emotionalStability: 2 } },

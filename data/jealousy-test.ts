@@ -24,86 +24,86 @@ export const jealousyDomainDescriptions: Record<JealousyDomain, string> = {
 };
 
 export const jealousyQuestions: JealousyQuestion[] = [
-  { id: 1, domain: "relationshipAnxiety", text: "상대가 평소보다 답장이 늦고 온라인 상태가 보이면 나는 어떻게 느끼는 편인가요?", options: [options.low, options.mild, options.medium, options.high] },
-  { id: 2, domain: "comparisonSensitivity", text: "상대가 다른 사람의 외모나 능력을 칭찬할 때 내 반응은 어떤가요?", options: [
+  { id: 1, domain: "relationshipAnxiety", text: "상대가 평소보다 답장이 늦지만 온라인 상태라면 어떤 마음이 드나요?", options: [options.low, options.mild, options.medium, options.high] },
+  { id: 2, domain: "comparisonSensitivity", text: "상대가 다른 사람의 외모나 능력을 칭찬하면 어떻게 반응하나요?", options: [
     { value: 0, label: "칭찬은 칭찬으로 받아들이고 크게 흔들리지 않는다" },
     { value: 1, label: "살짝 의식되지만 곧 지나간다" },
     { value: 2, label: "나와 비교하게 되고 기분이 조금 가라앉는다" },
     { value: 3, label: "상대의 마음이 그쪽으로 향한 건 아닌지 불편해진다" },
   ] },
-  { id: 3, domain: "reassuranceNeed", text: "관계가 안정적이라는 확신이 필요할 때 나는 주로 어떻게 하나요?", options: [
+  { id: 3, domain: "reassuranceNeed", text: "관계가 안정적이라는 확신이 필요할 때 주로 어떻게 하나요?", options: [
     { value: 0, label: "상대의 일관된 행동을 보며 자연스럽게 안심한다" },
     { value: 1, label: "가끔 애정 표현을 들으면 충분하다" },
     { value: 2, label: "상대가 나를 어떻게 생각하는지 직접 묻고 싶다" },
     { value: 3, label: "확신이 없으면 계속 확인하고 싶어진다" },
   ] },
-  { id: 4, domain: "emotionRegulation", text: "질투심이 올라왔을 때 나는 보통 어떻게 반응하나요?", options: [
+  { id: 4, domain: "emotionRegulation", text: "질투심이 올라오면 보통 어떻게 반응하나요?", options: [
     { value: 0, label: "감정을 먼저 정리한 뒤 필요하면 차분히 이야기한다" },
     { value: 1, label: "잠깐 티가 나지만 스스로 진정하려고 한다" },
     { value: 2, label: "표정이나 말투에 감정이 묻어나는 편이다" },
     { value: 3, label: "생각보다 빠르게 서운함이나 불편함을 표현한다" },
   ] },
-  { id: 5, domain: "trustFlexibility", text: "상대가 친구들과 늦게까지 시간을 보낸다고 할 때 나는 어떤 편인가요?", options: [
+  { id: 5, domain: "trustFlexibility", text: "상대가 친구들과 늦게까지 시간을 보낸다면 어떤 마음이 드나요?", options: [
     { value: 0, label: "상대의 시간을 존중하고 편하게 보내라고 한다" },
     { value: 1, label: "약간 신경 쓰이지만 믿고 기다린다" },
     { value: 2, label: "누구와 있는지, 언제 끝나는지 알고 싶다" },
     { value: 3, label: "불안해서 연락 빈도나 상황 확인이 필요하다" },
   ] },
-  { id: 6, domain: "relationshipAnxiety", text: "상대의 말투가 갑자기 짧아졌다고 느끼면 나는 어떻게 해석하나요?", options: [
+  { id: 6, domain: "relationshipAnxiety", text: "상대의 말투가 갑자기 짧아지면 어떻게 해석하나요?", options: [
     { value: 0, label: "피곤하거나 바쁠 수 있다고 생각한다" },
     { value: 1, label: "조금 걸리지만 상황을 더 지켜본다" },
     { value: 2, label: "내가 뭔가 잘못했는지 떠올려본다" },
     { value: 3, label: "마음이 식은 건 아닌지 불안해진다" },
   ] },
-  { id: 7, domain: "comparisonSensitivity", text: "상대의 SNS에 낯선 이성이 자주 보일 때 나는 어떤 마음이 드나요?", options: [
+  { id: 7, domain: "comparisonSensitivity", text: "상대의 SNS에 낯선 이성이 자주 보이면 어떤 마음이 드나요?", options: [
     { value: 0, label: "그럴 수 있다고 생각하고 특별히 신경 쓰지 않는다" },
     { value: 1, label: "누군지 궁금하지만 크게 확대해석하지 않는다" },
     { value: 2, label: "관계가 어떤 사이인지 알고 싶어진다" },
     { value: 3, label: "나보다 더 가까운 사람이 있는 것 같아 불안하다" },
   ] },
-  { id: 8, domain: "reassuranceNeed", text: "상대가 애정 표현을 줄인 것처럼 느껴질 때 나는 어떻게 하나요?", options: [
+  { id: 8, domain: "reassuranceNeed", text: "상대가 애정 표현을 줄인 것처럼 느껴지면 어떻게 하나요?", options: [
     { value: 0, label: "컨디션이나 상황의 변화일 수 있다고 본다" },
     { value: 1, label: "조금 아쉽지만 기다려본다" },
     { value: 2, label: "요즘 마음이 어떤지 물어보고 싶어진다" },
     { value: 3, label: "확실한 표현을 듣기 전까지 계속 마음이 불안하다" },
   ] },
-  { id: 9, domain: "emotionRegulation", text: "불편한 장면을 봤을 때, 바로 대화하기 전 나는 얼마나 시간을 두는 편인가요?", options: [
+  { id: 9, domain: "emotionRegulation", text: "불편한 장면을 본 뒤 대화하기까지 어느 정도 시간을 두나요?", options: [
     { value: 0, label: "감정이 가라앉을 시간을 충분히 둔다" },
     { value: 1, label: "잠시 숨을 고른 뒤 비교적 차분히 말한다" },
     { value: 2, label: "오래 참기 어려워 당일에는 말해야 한다" },
     { value: 3, label: "그 순간 바로 반응하지 않으면 더 답답하다" },
   ] },
-  { id: 10, domain: "trustFlexibility", text: "상대가 개인 시간을 갖고 싶다고 말하면 나는 어떻게 받아들이나요?", options: [
+  { id: 10, domain: "trustFlexibility", text: "상대가 개인 시간을 갖고 싶다고 말하면 어떻게 받아들이나요?", options: [
     { value: 0, label: "관계와 별개로 필요한 시간이라고 이해한다" },
     { value: 1, label: "조금 서운하지만 존중하려고 한다" },
     { value: 2, label: "나와 거리 두려는 신호인지 확인하고 싶다" },
     { value: 3, label: "내가 덜 중요해진 것 같아 불안하다" },
   ] },
-  { id: 11, domain: "relationshipAnxiety", text: "상대가 바쁜 시기에 연락 빈도가 줄어들면 나는 어떤 편인가요?", options: [
+  { id: 11, domain: "relationshipAnxiety", text: "상대가 바빠 연락이 줄면 보통 어떻게 반응하나요?", options: [
     { value: 0, label: "바쁜 시기임을 이해하고 내 일상에 집중한다" },
     { value: 1, label: "조금 아쉽지만 상황이 나아질 때까지 기다린다" },
     { value: 2, label: "관계 우선순위가 낮아진 것 같아 확인하고 싶다" },
     { value: 3, label: "나에 대한 마음이 줄어든 것 같아 많이 불안하다" },
   ] },
-  { id: 12, domain: "comparisonSensitivity", text: "상대의 전 연인 이야기가 우연히 나왔을 때 내 반응은 어떤가요?", options: [
+  { id: 12, domain: "comparisonSensitivity", text: "상대의 전 연인 이야기가 우연히 나오면 어떻게 반응하나요?", options: [
     { value: 0, label: "과거는 과거라고 생각하고 넘긴다" },
     { value: 1, label: "살짝 불편하지만 오래 마음에 두지 않는다" },
     { value: 2, label: "나와 비교되는 느낌이 들어 신경 쓰인다" },
     { value: 3, label: "상대가 아직 그 사람을 의식하는지 계속 생각난다" },
   ] },
-  { id: 13, domain: "reassuranceNeed", text: "상대가 나를 좋아한다는 확신을 주는 방식 중 내가 가장 필요로 하는 것은?", options: [
+  { id: 13, domain: "reassuranceNeed", text: "상대의 마음을 확신하려면 어떤 표현이 가장 필요한가요?", options: [
     { value: 0, label: "평소의 일관된 태도와 신뢰" },
     { value: 1, label: "가끔의 따뜻한 말과 행동" },
     { value: 2, label: "분명한 애정 표현과 관계 확인" },
     { value: 3, label: "자주 반복되는 확실한 표현과 우선순위 확인" },
   ] },
-  { id: 14, domain: "emotionRegulation", text: "질투심 때문에 서운함을 표현한 뒤 나는 보통 어떤 편인가요?", options: [
+  { id: 14, domain: "emotionRegulation", text: "질투심 때문에 서운함을 표현한 뒤에는 어떤 편인가요?", options: [
     { value: 0, label: "내 감정과 상대 입장을 함께 돌아본다" },
     { value: 1, label: "대화 후에는 비교적 잘 풀리는 편이다" },
     { value: 2, label: "상대 반응이 충분하지 않으면 다시 마음이 걸린다" },
     { value: 3, label: "대화 후에도 같은 장면이 반복해서 떠오른다" },
   ] },
-  { id: 15, domain: "trustFlexibility", text: "관계에서 자유와 안정감의 균형에 대해 나는 어떻게 느끼나요?", options: [
+  { id: 15, domain: "trustFlexibility", text: "관계에서 자유와 안정감의 균형을 어떻게 느끼나요?", options: [
     { value: 0, label: "각자의 자유가 있어도 관계는 안정적일 수 있다고 느낀다" },
     { value: 1, label: "자유를 존중하지만 기본적인 공유는 필요하다" },
     { value: 2, label: "자유가 많아질수록 관계가 느슨해질까 걱정된다" },

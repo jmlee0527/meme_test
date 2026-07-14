@@ -23,7 +23,7 @@ export const wizardCharacterTraits = [
 export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   {
     id: 1,
-    text: "친구가 단체 대화방에서 억울하게 오해를 받고 있다. 나는?",
+    text: "친구가 단체 대화방에서 억울하게 오해받고 있다면 어떻게 하나요?",
     options: [
       { label: "A", text: "상황을 더 알아본 뒤 사실관계를 차분히 정리한다", value: 0, weights: { analysis: 4, wisdom: 3, responsibility: 2 } },
       { label: "B", text: "바로 나서서 친구의 입장을 분명하게 대신 말한다", value: 1, weights: { courage: 4, loyalty: 4, action: 3 } },
@@ -33,7 +33,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 2,
-    text: "처음 가는 모임에 도착했는데 아는 사람이 한 명도 없다. 가장 자연스러운 행동은?",
+    text: "처음 가는 모임에 아는 사람이 없다면 어떻게 행동하나요?",
     options: [
       { label: "A", text: "먼저 인사하고 대화를 시작하며 분위기를 살핀다", value: 0, weights: { leadership: 3, courage: 3, action: 3, friendship: 2 } },
       { label: "B", text: "주변을 관찰하다 공통 관심사가 보이는 사람에게 다가간다", value: 1, weights: { analysis: 4, wisdom: 2, empathy: 2 } },
@@ -43,7 +43,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 3,
-    text: "중요한 발표를 일주일 앞둔 시점, 준비 방식에 가장 가까운 것은?",
+    text: "중요한 발표를 일주일 앞두면 어떻게 준비하나요?",
     options: [
       { label: "A", text: "자료와 근거를 빠짐없이 확인하고 예상 질문까지 적어둔다", value: 0, weights: { analysis: 4, responsibility: 4, wisdom: 3 } },
       { label: "B", text: "핵심 메시지를 정한 뒤 반복 연습하며 자신감을 끌어올린다", value: 1, weights: { ambition: 3, leadership: 3, responsibility: 3, action: 2 } },
@@ -53,7 +53,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 4,
-    text: "팀 프로젝트의 방향이 계속 흔들릴 때 나는 보통?",
+    text: "팀 프로젝트의 방향이 계속 흔들리면 어떻게 하나요?",
     options: [
       { label: "A", text: "목표와 우선순위를 다시 정하고 역할을 명확히 나눈다", value: 0, weights: { leadership: 4, responsibility: 4, analysis: 2 } },
       { label: "B", text: "말이 적은 사람들의 의견까지 듣고 합의점을 찾는다", value: 1, weights: { empathy: 4, friendship: 3, wisdom: 3 } },
@@ -63,7 +63,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 5,
-    text: "예상하지 못한 좋은 기회가 왔지만 준비가 완벽하지 않다. 나는?",
+    text: "준비가 완벽하지 않은 상황에서 좋은 기회가 오면 어떻게 하나요?",
     options: [
       { label: "A", text: "일단 잡고 부족한 부분은 진행하면서 채운다", value: 0, weights: { courage: 4, action: 5, ambition: 2 } },
       { label: "B", text: "얻는 것과 잃는 것을 적어본 뒤 조건을 조율한다", value: 1, weights: { analysis: 4, wisdom: 3, ambition: 2 } },
@@ -73,7 +73,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 6,
-    text: "공들인 일이 기대만큼 잘되지 않았을 때 첫 반응은?",
+    text: "공들인 일이 기대만큼 잘되지 않으면 먼저 어떻게 반응하나요?",
     options: [
       { label: "A", text: "아쉬워도 원인을 기록하고 다음 시도를 설계한다", value: 0, weights: { analysis: 4, responsibility: 3, wisdom: 3 } },
       { label: "B", text: "잠깐 속상해한 뒤 다시 몸을 움직이며 분위기를 바꾼다", value: 1, weights: { courage: 3, action: 4, independence: 2 } },
@@ -83,7 +83,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 7,
-    text: "친구들과 여행 계획을 세울 때 가장 맡고 싶은 역할은?",
+    text: "친구들과 여행을 계획할 때 어떤 역할을 맡고 싶나요?",
     options: [
       { label: "A", text: "교통과 숙소를 비교해 가장 효율적인 일정을 만든다", value: 0, weights: { analysis: 4, responsibility: 4, wisdom: 2 } },
       { label: "B", text: "모두가 하고 싶은 것을 듣고 만족할 균형점을 찾는다", value: 1, weights: { empathy: 4, friendship: 4, leadership: 2 } },
@@ -93,7 +93,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 8,
-    text: "규칙이 현실과 맞지 않아 사람들을 불편하게 만든다면?",
+    text: "현실과 맞지 않는 규칙이 사람들을 불편하게 하면 어떻게 하나요?",
     options: [
       { label: "A", text: "일단 규칙을 지키되 정식 절차로 개선안을 낸다", value: 0, weights: { responsibility: 4, wisdom: 3, analysis: 3 } },
       { label: "B", text: "누군가 피해를 본다면 먼저 행동하고 책임도 감수한다", value: 1, weights: { courage: 5, action: 4, leadership: 2 } },
@@ -103,7 +103,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 9,
-    text: "경쟁에서 나보다 앞선 사람이 생겼을 때 나는?",
+    text: "경쟁에서 나보다 앞선 사람이 생기면 어떻게 반응하나요?",
     options: [
       { label: "A", text: "그 사람이 잘한 방식을 분석해 내 전략을 더 정교하게 만든다", value: 0, weights: { ambition: 4, analysis: 4, wisdom: 2 } },
       { label: "B", text: "축하해 주고 서로 배울 수 있는 동료 관계를 만든다", value: 1, weights: { friendship: 4, empathy: 3, loyalty: 2 } },
@@ -113,7 +113,7 @@ export const wizardCharacterQuestions: WizardCharacterQuestion[] = [
   },
   {
     id: 10,
-    text: "오래 기억되고 싶은 나의 모습에 가장 가까운 것은?",
+    text: "사람들에게 어떤 모습으로 오래 기억되고 싶나요?",
     options: [
       { label: "A", text: "어려울 때 믿고 의지할 수 있었던 사람", value: 0, weights: { loyalty: 5, friendship: 4, empathy: 3 } },
       { label: "B", text: "복잡한 문제의 본질을 꿰뚫어 본 사람", value: 1, weights: { wisdom: 5, analysis: 4, responsibility: 2 } },

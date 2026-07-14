@@ -17,18 +17,18 @@ export const countryTraits = [
 ] as const;
 
 export const personalityCountryQuestions: CountryQuestion[] = [
-  { id: 1, text: "쉬는 날 나는?", options: options("계획 없이 새로운 곳을 가보고 싶다", "익숙하고 편안한 곳에서 쉬고 싶다"), weights: [{ openness: 9, independence: 5, culture: 4 }, { safety: 7, nature: 6, structure: 4 }] },
-  { id: 2, text: "내가 선호하는 도시는?", options: options("빠르게 변화하고 기회가 많은 도시", "안정적이고 여유 있는 도시"), weights: [{ ambition: 9, openness: 5, socialEnergy: 4 }, { safety: 8, nature: 6, structure: 4 }] },
-  { id: 3, text: "사람들과의 관계에서 나는?", options: options("새로운 사람을 만나는 게 즐겁다", "깊고 편한 관계가 더 좋다"), weights: [{ socialEnergy: 10, openness: 5, culture: 3 }, { safety: 5, nature: 4, independence: 4 }] },
-  { id: 4, text: "일이나 공부를 할 때 나는?", options: options("자유롭게 방식부터 정하고 싶다", "명확한 규칙과 계획이 있어야 편하다"), weights: [{ independence: 9, openness: 5 }, { structure: 10, safety: 5, ambition: 3 }] },
-  { id: 5, text: "해외에서 산다면 가장 중요한 것은?", options: options("성장 기회와 커리어", "안정감과 생활 만족도"), weights: [{ ambition: 10, independence: 4, openness: 3 }, { safety: 9, nature: 5, structure: 4 }] },
-  { id: 6, text: "나에게 더 끌리는 분위기는?", options: options("예술, 음식, 역사, 감성이 있는 곳", "자연, 조용함, 여유가 있는 곳"), weights: [{ culture: 10, openness: 4, socialEnergy: 3 }, { nature: 10, safety: 5, independence: 3 }] },
-  { id: 7, text: "새로운 문화에 대해 나는?", options: options("적극적으로 경험해보고 싶다", "적응 가능한 수준이면 충분하다"), weights: [{ openness: 10, culture: 5, socialEnergy: 3 }, { safety: 6, structure: 5, nature: 3 }] },
-  { id: 8, text: "나는 보통?", options: options("도전적인 선택을 하는 편이다", "안전한 선택을 하는 편이다"), weights: [{ ambition: 7, independence: 7, openness: 4 }, { safety: 9, structure: 6 }] },
-  { id: 9, text: "돈과 시간의 우선순위는?", options: options("경험과 자기계발에 쓰고 싶다", "안정과 미래 준비에 쓰고 싶다"), weights: [{ openness: 5, ambition: 5, culture: 4 }, { safety: 8, structure: 6, nature: 3 }] },
-  { id: 10, text: "나와 더 잘 맞는 삶은?", options: options("활기차고 사람 많은 생활", "조용하고 개인 시간이 많은 생활"), weights: [{ socialEnergy: 10, culture: 4, openness: 3 }, { independence: 8, nature: 7, safety: 4 }] },
-  { id: 11, text: "내가 좋아하는 사회 분위기는?", options: options("개성과 다양성을 존중하는 분위기", "질서와 신뢰가 잘 잡힌 분위기"), weights: [{ independence: 8, openness: 8, culture: 3 }, { structure: 9, safety: 8, ambition: 2 }] },
-  { id: 12, text: "나를 가장 잘 설명하는 말은?", options: options("자유로운 탐험가", "안정적인 설계자"), weights: [{ independence: 8, openness: 7, nature: 4 }, { structure: 8, safety: 7, ambition: 3 }] },
+  { id: 1, text: "쉬는 날에는 어떤 시간을 보내고 싶나요?", options: options("계획 없이 새로운 곳을 가보고 싶다", "익숙하고 편안한 곳에서 쉬고 싶다"), weights: [{ openness: 9, independence: 5, culture: 4 }, { safety: 7, nature: 6, structure: 4 }] },
+  { id: 2, text: "어떤 도시를 더 선호하나요?", options: options("빠르게 변화하고 기회가 많은 도시", "안정적이고 여유 있는 도시"), weights: [{ ambition: 9, openness: 5, socialEnergy: 4 }, { safety: 8, nature: 6, structure: 4 }] },
+  { id: 3, text: "사람들과 어떤 관계를 맺는 것이 더 편한가요?", options: options("새로운 사람을 만나는 게 즐겁다", "깊고 편한 관계가 더 좋다"), weights: [{ socialEnergy: 10, openness: 5, culture: 3 }, { safety: 5, nature: 4, independence: 4 }] },
+  { id: 4, text: "일이나 공부를 할 때 어떤 방식이 더 편한가요?", options: options("자유롭게 방식부터 정하고 싶다", "명확한 규칙과 계획이 있어야 편하다"), weights: [{ independence: 9, openness: 5 }, { structure: 10, safety: 5, ambition: 3 }] },
+  { id: 5, text: "해외에서 산다면 무엇이 가장 중요한가요?", options: options("성장 기회와 커리어", "안정감과 생활 만족도"), weights: [{ ambition: 10, independence: 4, openness: 3 }, { safety: 9, nature: 5, structure: 4 }] },
+  { id: 6, text: "어떤 분위기에 더 끌리나요?", options: options("예술, 음식, 역사, 감성이 있는 곳", "자연, 조용함, 여유가 있는 곳"), weights: [{ culture: 10, openness: 4, socialEnergy: 3 }, { nature: 10, safety: 5, independence: 3 }] },
+  { id: 7, text: "새로운 문화를 접하면 어떻게 반응하나요?", options: options("적극적으로 경험해보고 싶다", "적응 가능한 수준이면 충분하다"), weights: [{ openness: 10, culture: 5, socialEnergy: 3 }, { safety: 6, structure: 5, nature: 3 }] },
+  { id: 8, text: "평소 어떤 선택을 하는 편인가요?", options: options("도전적인 선택을 하는 편이다", "안전한 선택을 하는 편이다"), weights: [{ ambition: 7, independence: 7, openness: 4 }, { safety: 9, structure: 6 }] },
+  { id: 9, text: "돈과 시간을 어디에 우선 쓰고 싶나요?", options: options("경험과 자기계발에 쓰고 싶다", "안정과 미래 준비에 쓰고 싶다"), weights: [{ openness: 5, ambition: 5, culture: 4 }, { safety: 8, structure: 6, nature: 3 }] },
+  { id: 10, text: "어떤 생활 방식이 더 잘 맞나요?", options: options("활기차고 사람 많은 생활", "조용하고 개인 시간이 많은 생활"), weights: [{ socialEnergy: 10, culture: 4, openness: 3 }, { independence: 8, nature: 7, safety: 4 }] },
+  { id: 11, text: "어떤 사회 분위기를 더 선호하나요?", options: options("개성과 다양성을 존중하는 분위기", "질서와 신뢰가 잘 잡힌 분위기"), weights: [{ independence: 8, openness: 8, culture: 3 }, { structure: 9, safety: 8, ambition: 2 }] },
+  { id: 12, text: "다음 중 평소 모습과 가장 가까운 말은 무엇인가요?", options: options("자유로운 탐험가", "안정적인 설계자"), weights: [{ independence: 8, openness: 7, nature: 4 }, { structure: 8, safety: 7, ambition: 3 }] },
 ];
 
 const score = (openness: number, structure: number, socialEnergy: number, independence: number, nature: number, ambition: number, culture: number, safety: number): CountryScores => ({

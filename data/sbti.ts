@@ -20,33 +20,33 @@ export const sbtiModels: { name: string; dimensions: { key: SbtiDimensionKey; la
 
 // 30문항 · 문항당 3~4지선다. 일부 보기는 히든 유형(DRUNK) 판정용 drunk 플래그를 갖습니다.
 export const sbtiQuestions: SbtiQuestion[] = [
-  { id: 1, text: "금요일 저녁 6시, 퇴근(하교) 직후 나는?", options: [
+  { id: 1, text: "금요일 저녁 6시, 퇴근이나 하교 직후에는 무엇을 하나요?", options: [
     { text: "바로 약속 장소로 직행. 불금은 국룰", weights: { sociability: 2, tension: 1 } },
     { text: "집 소파에 눕는 순간이 진짜 불금", weights: { recovery: 2 } },
     { text: "치킨에 맥주 한잔은 해야지", weights: { appetite: 1, sociability: 1 }, drunk: true },
   ] },
-  { id: 2, text: "단톡방에서 나의 포지션은?", options: [
+  { id: 2, text: "단체 대화방에서는 주로 어떤 역할인가요?", options: [
     { text: "대화 주도 + 공지 담당", weights: { sociability: 2, meddling: 1 } },
     { text: "눈팅하다 밈으로만 대답", weights: { nunchi: 1, tension: 1 } },
     { text: "999+ 알림 그 자체", weights: {} },
   ] },
-  { id: 3, text: "예상 밖의 지적을 받았다. 나는?", options: [
+  { id: 3, text: "예상 밖의 지적을 받으면 어떻게 반응하나요?", options: [
     { text: "밤새 곱씹으며 자책한다", weights: { hyunta: 2 } },
     { text: "3분 화나고 3분 뒤에 잊는다", weights: { recovery: 2, mental: 1 } },
     { text: "논리적으로 반박을 정리한다", weights: { mental: 2, selfEsteem: 1 } },
   ] },
-  { id: 4, text: "통장 잔고를 확인하는 순간?", options: [
+  { id: 4, text: "통장 잔고를 확인하면 어떤 생각이 드나요?", options: [
     { text: "어차피 볼수록 아프니까 안 본다", weights: { hyunta: 1, desire: 1 } },
     { text: "가계부 앱으로 실시간 관리 중이다", weights: { planning: 2, lifeSkill: 1 } },
     { text: "잔고를 보면 더 벌고 싶어진다", weights: { desire: 2, approval: 1 } },
   ] },
-  { id: 5, text: "뷔페에 갔다. 나의 전략은?", options: [
+  { id: 5, text: "뷔페에서는 어떤 전략으로 음식을 고르나요?", options: [
     { text: "비싼 것부터 조지는 효율 코스", weights: { appetite: 2, planning: 1 } },
     { text: "조금씩 다 먹어보는 탐험 코스", weights: { appetite: 1, tension: 1 } },
     { text: "접시 하나로 끝. 많이 못 먹는다", weights: {} },
     { text: "일단 술부터 시킨다", weights: { appetite: 1 }, drunk: true },
   ] },
-  { id: 6, text: "친구가 새벽 1시에 \"자?\"라고 보내면?", options: [
+  { id: 6, text: "친구가 새벽 1시에 \"자?\"라고 보내면 어떻게 하나요?", options: [
     { text: "\"아니 왜\" 즉시 응답 후 통화 개시", weights: { sociability: 1, meddling: 2 } },
     { text: "자는 척… 답장은 내일 아침에", weights: { nunchi: 1, recovery: 1 } },
     { text: "\"무슨 일 있어?!\" 걱정부터 폭발", weights: { meddling: 1, hyunta: 1 } },
@@ -56,7 +56,7 @@ export const sbtiQuestions: SbtiQuestion[] = [
     { text: "비는 핑계일 뿐… 침대와 한 몸이 된다", weights: { recovery: 1 } },
     { text: "헬스장 대신 치킨. 오늘은 치팅데이", weights: { appetite: 2 } },
   ] },
-  { id: 8, text: "소개팅(첫만남) 자리에서 나는?", options: [
+  { id: 8, text: "소개팅처럼 처음 만나는 자리에서는 어떻게 행동하나요?", options: [
     { text: "첫 5분 안에 분위기를 장악한다", weights: { sociability: 2, tension: 1 } },
     { text: "상대 반응을 보며 페이스를 조절한다", weights: { nunchi: 2 } },
     { text: "어색해서 물만 계속 마신다", weights: { hyunta: 1 } },
@@ -67,7 +67,7 @@ export const sbtiQuestions: SbtiQuestion[] = [
     { text: "맛있는 것부터 먹으러 간다", weights: { appetite: 2 } },
     { text: "일단 가족·친구들에게 쏜다", weights: { meddling: 1, approval: 1 } },
   ] },
-  { id: 10, text: "내 인생 좌우명에 가장 가까운 것은?", options: [
+  { id: 10, text: "어떤 말이 삶의 좌우명과 가장 가까운가요?", options: [
     { text: "\"어떻게든 된다\"", weights: { recovery: 2, mental: 1 } },
     { text: "\"준비된 자가 기회를 잡는다\"", weights: { planning: 2, endurance: 1 } },
     { text: "\"오늘 즐거우면 됐다\"", weights: { tension: 2 } },
@@ -78,22 +78,22 @@ export const sbtiQuestions: SbtiQuestion[] = [
     { text: "속은 부글부글, 겉은 \"괜찮아~\"", weights: { nunchi: 2, hyunta: 1 } },
     { text: "이미 내가 다 해놨다", weights: { endurance: 2, lifeSkill: 1 } },
   ] },
-  { id: 12, text: "셀카를 찍을 때 나는?", options: [
+  { id: 12, text: "셀카를 찍을 때 어떤 편인가요?", options: [
     { text: "잘 나온 한 장을 위해 100장 찍는다", weights: { approval: 2 } },
     { text: "찍자마자 스토리에 업로드", weights: { sociability: 1, tension: 1, approval: 1 } },
     { text: "남는 건 사진이라지만 귀찮다", weights: {} },
   ] },
-  { id: 13, text: "우유 사러 편의점에 갔다. 나올 때 내 손에는?", options: [
+  { id: 13, text: "우유를 사러 편의점에 갔다가 무엇을 들고 나오나요?", options: [
     { text: "우유만. 나는 목적형 인간이다", weights: { planning: 2 } },
     { text: "우유 + 신상 과자 세 봉지", weights: { appetite: 1, desire: 1 } },
     { text: "우유는 잊었고 맥주 4캔 행사만 기억난다", weights: { desire: 1 }, drunk: true },
   ] },
-  { id: 14, text: "\"요즘 어떻게 지내?\"라는 질문을 받으면?", options: [
+  { id: 14, text: "\"요즘 어떻게 지내?\"라는 질문을 받으면 어떻게 답하나요?", options: [
     { text: "3시간짜리 근황 토크 시작", weights: { sociability: 2, tension: 1 } },
     { text: "\"그냥 뭐 똑같지~\" (자동 응답)", weights: { nunchi: 1 } },
     { text: "말하다 보니 갑자기 현타가 온다", weights: { hyunta: 2 } },
   ] },
-  { id: 15, text: "웨이팅 2시간짜리 맛집 앞에서?", options: [
+  { id: 15, text: "대기 시간이 2시간인 맛집 앞에서는 어떻게 하나요?", options: [
     { text: "기다린다. 먹는 게 남는 것", weights: { appetite: 2, endurance: 1 } },
     { text: "옆 가게로 간다. 배고픔이 우선", weights: { lifeSkill: 1, recovery: 1 } },
     { text: "애초에 예약을 해뒀다", weights: { planning: 2 } },
@@ -103,75 +103,75 @@ export const sbtiQuestions: SbtiQuestion[] = [
     { text: "\"한 편만 더\"가 세 시간째", weights: { tension: 1, hyunta: 1 } },
     { text: "내일의 나를 믿는다", weights: { mental: 1 } },
   ] },
-  { id: 17, text: "지갑을 잃어버렸다! 나는?", options: [
+  { id: 17, text: "지갑을 잃어버리면 가장 먼저 어떻게 하나요?", options: [
     { text: "침착하게 카드 정지부터 한다", weights: { mental: 2, lifeSkill: 1 } },
     { text: "세상이 무너진 듯 패닉", weights: { hyunta: 2 } },
     { text: "\"뭐 어때, 다시 벌지\"", weights: { recovery: 2, selfEsteem: 1 } },
   ] },
-  { id: 18, text: "친구들 사이에서 나의 역할은?", options: [
+  { id: 18, text: "친구들 사이에서는 주로 어떤 역할인가요?", options: [
     { text: "총무·예약 담당", weights: { lifeSkill: 2, planning: 1 } },
     { text: "분위기·개그 담당", weights: { tension: 2, sociability: 1 } },
     { text: "리액션·경청 담당", weights: { nunchi: 2 } },
     { text: "조용히 회비 내는 담당", weights: { endurance: 1 } },
   ] },
-  { id: 19, text: "헬스장 1년권을 끊었다. 석 달 뒤 나는?", options: [
+  { id: 19, text: "헬스장 1년권을 끊고 석 달이 지나면 어떤 모습인가요?", options: [
     { text: "주 4회 출석 중. 오늘도 오운완", weights: { stamina: 2, endurance: 1 } },
     { text: "샤워하러 다니는 중", weights: { lifeSkill: 1 } },
     { text: "기부천사가 되었다", weights: { hyunta: 1 } },
   ] },
-  { id: 20, text: "4층까지 계단 vs 엘리베이터 기다리기?", options: [
+  { id: 20, text: "4층까지 갈 때 어떤 방법을 선택하나요?", options: [
     { text: "계단으로 뛰어 올라간다", weights: { stamina: 2, tension: 1 } },
     { text: "기다린다. 체력은 소중하니까", weights: { recovery: 1 } },
     { text: "3층까지는 계단, 4층에서 후회", weights: { stamina: 1, hyunta: 1 } },
   ] },
-  { id: 21, text: "모임 계산대 앞에서 나는?", options: [
+  { id: 21, text: "모임에서 계산할 때 어떻게 행동하나요?", options: [
     { text: "\"내가 낼게!\" 카드부터 꺼낸다", weights: { meddling: 2, approval: 1 } },
     { text: "정확한 N분의 1 계산기 가동", weights: { planning: 1, lifeSkill: 1 } },
     { text: "지갑 찾는 척 타이밍 조절", weights: { nunchi: 1, desire: 1 } },
   ] },
-  { id: 22, text: "주말에 아무 약속이 없다면?", options: [
+  { id: 22, text: "주말에 아무 약속이 없으면 어떻게 보내나요?", options: [
     { text: "내가 만든다. 연락 돌리기 시작", weights: { sociability: 2, tension: 1 } },
     { text: "완벽한 휴식. 계획된 무계획", weights: { recovery: 2 } },
     { text: "밀린 집안일과 자기계발 정리", weights: { lifeSkill: 2, planning: 1 } },
   ] },
-  { id: 23, text: "회식(술자리)에서 나의 모습은?", options: [
+  { id: 23, text: "회식이나 술자리에서는 주로 어떤 모습인가요?", options: [
     { text: "잔이 빌 틈이 없다. 오늘도 달린다", weights: { tension: 1, sociability: 1 }, drunk: true },
     { text: "고기 굽기·수저 세팅 담당", weights: { nunchi: 1, lifeSkill: 1, meddling: 1 } },
     { text: "1차만 채우고 스르륵 귀가", weights: { recovery: 1, nunchi: 1 } },
   ] },
-  { id: 24, text: "SNS에서 친구의 자랑 게시물을 보면?", options: [
+  { id: 24, text: "SNS에서 친구의 자랑 게시물을 보면 어떻게 반응하나요?", options: [
     { text: "진심으로 축하 댓글을 단다", weights: { meddling: 1, selfEsteem: 1 } },
     { text: "좋아요만 누르고 조용히 비교한다", weights: { hyunta: 1, approval: 1 } },
     { text: "나도 올릴 것 없나 사진첩 스캔", weights: { approval: 2 } },
   ] },
-  { id: 25, text: "나의 스트레스 해소법은?", options: [
+  { id: 25, text: "스트레스는 주로 어떻게 해소하나요?", options: [
     { text: "매운 것 + 단 것 풀코스", weights: { appetite: 2 } },
     { text: "운동으로 땀 빼기", weights: { stamina: 2 } },
     { text: "술 한잔과 수다", weights: { sociability: 1 }, drunk: true },
     { text: "이불 속 무한 수면", weights: { recovery: 2 } },
   ] },
-  { id: 26, text: "3년 뒤 나의 모습을 상상하면?", options: [
+  { id: 26, text: "3년 뒤 모습을 상상할 때 어느 쪽에 가까운가요?", options: [
     { text: "구체적인 계획이 이미 있다", weights: { planning: 2, selfEsteem: 1 } },
     { text: "상상만 해도 아득하다", weights: { hyunta: 2 } },
     { text: "지금이랑 비슷할 듯. 그것도 나쁘지 않다", weights: { mental: 1, recovery: 1 } },
   ] },
-  { id: 27, text: "무인도에 떨어진다면 나는?", options: [
+  { id: 27, text: "무인도에 떨어지면 가장 먼저 어떻게 하나요?", options: [
     { text: "불 피우고 집부터 짓는다", weights: { lifeSkill: 2, stamina: 1 } },
     { text: "구조될 때까지 멘탈 부여잡기", weights: { endurance: 2, mental: 1 } },
     { text: "일단 울고 시작한다", weights: { hyunta: 1 } },
   ] },
-  { id: 28, text: "내 방 상태를 한 단어로 표현하면?", options: [
+  { id: 28, text: "평소 방 상태를 한 단어로 표현하면 무엇인가요?", options: [
     { text: "모델하우스", weights: { lifeSkill: 2, planning: 1 } },
     { text: "사람 사는 집", weights: { mental: 1 } },
     { text: "자연재해 현장", weights: {} },
   ] },
-  { id: 29, text: "로또 1등에 당첨된다면 제일 먼저?", options: [
+  { id: 29, text: "로또 1등에 당첨되면 무엇부터 하나요?", options: [
     { text: "아무에게도 말 안 하고 은행 예약", weights: { planning: 2, mental: 1 } },
     { text: "가족·친구들에게 쏜다", weights: { meddling: 2, approval: 1 } },
     { text: "퇴사(자퇴) 통보부터 한다", weights: { tension: 2, selfEsteem: 1 } },
     { text: "명품 플렉스", weights: { desire: 2 } },
   ] },
-  { id: 30, text: "이 테스트를 하고 있는 지금 나는?", options: [
+  { id: 30, text: "이 테스트를 하는 지금은 어떤 상황인가요?", options: [
     { text: "결과를 단톡방에 뿌릴 준비 완료", weights: { sociability: 1, approval: 1, tension: 1 } },
     { text: "나 혼자 조용히 보려고 하는 중", weights: { nunchi: 1 } },
     { text: "해야 할 일을 미루고 현생 도피 중…", weights: { hyunta: 1, endurance: 1 } },

@@ -3,21 +3,21 @@ import type { SnsQuestion, SnsResultProfile, SnsScores, SnsTrait, TestDefinition
 // SNS 일상 상황 12문항. 성격을 직접 묻는 질문은 없습니다.
 // 각 보기는 16가지 성향에 가중치를 더합니다 (주 성향 2점, 보조 성향 1점).
 export const snsQuestions: SnsQuestion[] = [
-  { id: 1, text: "친구들과 놀러 갔다. 사진을 찍는다면?", options: [
+  { id: 1, text: "친구들과 놀러 가서 사진을 찍는다면 어떻게 하나요?", options: [
     { emoji: "📸", text: "각도·조명 완벽한 인생샷 각 잡기", weights: { expression: 2, creativity: 1 } },
     { emoji: "🤳", text: "일단 다 같이 셀카부터", weights: { extraversion: 2, friendliness: 1 } },
     { emoji: "🍃", text: "풍경과 분위기 위주로 담기", weights: { creativity: 2, archiving: 1 } },
     { emoji: "🎬", text: "단체샷 구도 잡아주는 촬영 감독", weights: { leadership: 2, creativity: 1 } },
     { emoji: "👀", text: "찍는 것도 찍히는 것도 패스", weights: { privacy: 2, introversion: 1 } },
   ] },
-  { id: 2, text: "스토리를 올린다면 나의 스타일은?", options: [
+  { id: 2, text: "스토리를 올릴 때 어떤 스타일을 선호하나요?", options: [
     { emoji: "⚡", text: "그 자리에서 바로바로 실시간 업로드", weights: { spontaneity: 2, expression: 1 } },
     { emoji: "🎨", text: "필터·음악·문구까지 편집해서 완성", weights: { creativity: 2, producing: 1 } },
     { emoji: "🗓️", text: "하루 지나 정리해서 몰아서 올림", weights: { planning: 2, archiving: 1 } },
     { emoji: "🔒", text: "친한 친구 공개로만", weights: { privacy: 2, friendliness: 1 } },
     { emoji: "🙅", text: "안 올린다. 나는 보는 전용", weights: { consuming: 2, introversion: 1 } },
   ] },
-  { id: 3, text: "DM이 왔다! 나의 답장 스타일은?", options: [
+  { id: 3, text: "DM이 오면 보통 어떻게 답장하나요?", options: [
     { emoji: "💬", text: "읽는 즉시 답장 + 대화 연장", weights: { friendliness: 2, extraversion: 1 } },
     { emoji: "😂", text: "말 대신 웃긴 짤로 대답", weights: { humor: 2 } },
     { emoji: "💌", text: "나중에 시간 내서 정성껏 길게", weights: { empathy: 2, planning: 1 } },
@@ -41,28 +41,28 @@ export const snsQuestions: SnsQuestion[] = [
     { emoji: "💾", text: "저장해뒀다 결정적 순간에 꺼내 쓴다", weights: { archiving: 2, humor: 1 } },
     { emoji: "🤔", text: "이게 왜 웃긴지 유래부터 찾아본다", weights: { research: 2, consuming: 1 } },
   ] },
-  { id: 7, text: "프로필 사진을 바꾼다면?", options: [
+  { id: 7, text: "프로필 사진을 바꿀 때 어떤 사진을 고르나요?", options: [
     { emoji: "🌟", text: "제일 잘 나온 최근 사진", weights: { expression: 2 } },
     { emoji: "🌷", text: "풍경이나 감성 이미지", weights: { creativity: 1, privacy: 1 } },
     { emoji: "🐱", text: "고양이 짤이나 밈 이미지", weights: { humor: 2, trend: 1 } },
     { emoji: "🖤", text: "기본 프로필 또는 몇 년째 그대로", weights: { privacy: 2, introversion: 1 } },
     { emoji: "🔄", text: "기분 따라 수시로 바꿈", weights: { spontaneity: 2, expression: 1 } },
   ] },
-  { id: 8, text: "팔로우를 누르는 나만의 기준은?", options: [
+  { id: 8, text: "어떤 기준으로 팔로우하나요?", options: [
     { emoji: "🔥", text: "요즘 뜨는 계정은 일단 팔로우", weights: { trend: 2, consuming: 1 } },
     { emoji: "📚", text: "배울 게 있는 정보성 계정", weights: { research: 2, planning: 1 } },
     { emoji: "😂", text: "웃긴 계정만 엄선해서", weights: { humor: 2, consuming: 1 } },
     { emoji: "🤝", text: "실제 아는 사람 위주로만", weights: { friendliness: 2, privacy: 1 } },
     { emoji: "🎨", text: "감각적인 사진·디자인 계정", weights: { creativity: 2, consuming: 1 } },
   ] },
-  { id: 9, text: "저장 버튼을 누르게 되는 콘텐츠는?", options: [
+  { id: 9, text: "어떤 콘텐츠를 주로 저장하나요?", options: [
     { emoji: "🍜", text: "맛집·여행 리스트 (언젠가 간다)", weights: { archiving: 2, planning: 1 } },
     { emoji: "💪", text: "운동·자기계발 루틴 (오늘의 다짐)", weights: { planning: 2, research: 1 } },
     { emoji: "😂", text: "밈·웃긴 영상 (두고두고 꺼내 봄)", weights: { humor: 2, archiving: 1 } },
     { emoji: "💡", text: "아이디어·영감 (창작 재료)", weights: { creativity: 2, producing: 1 } },
     { emoji: "🛍️", text: "신상·트렌드 소식", weights: { trend: 2, consuming: 1 } },
   ] },
-  { id: 10, text: "여행을 갔다. 가장 먼저 SNS에 올리는 것은?", options: [
+  { id: 10, text: "여행지에서 무엇을 가장 먼저 SNS에 올리나요?", options: [
     { emoji: "✈️", text: "공항 티켓 인증샷부터", weights: { expression: 2, spontaneity: 1 } },
     { emoji: "🌇", text: "감성 터지는 풍경 한 컷", weights: { creativity: 2, archiving: 1 } },
     { emoji: "🍱", text: "현지 첫 끼 음식 사진", weights: { expression: 1, archiving: 1 } },
@@ -75,7 +75,7 @@ export const snsQuestions: SnsQuestion[] = [
     { emoji: "😳", text: "부담스러워서 계정 잠글까 고민", weights: { privacy: 2, introversion: 1 } },
     { emoji: "🙂", text: "오 신기하네~ 하고 하던 거 계속", weights: { consuming: 1 } },
   ] },
-  { id: 12, text: "단체 채팅방에서 나의 역할은?", options: [
+  { id: 12, text: "단체 채팅방에서는 주로 어떤 역할을 하나요?", options: [
     { emoji: "📢", text: "공지·일정 정리 담당", weights: { leadership: 2, planning: 1 } },
     { emoji: "😂", text: "짤과 드립으로 분위기 담당", weights: { humor: 2, extraversion: 1 } },
     { emoji: "💗", text: "리액션·호응 담당", weights: { empathy: 2, friendliness: 1 } },

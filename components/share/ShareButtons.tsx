@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { absoluteUrl } from "@/lib/site";
 
 declare global {
   interface Window {
@@ -16,7 +17,7 @@ type Props = { title: string; description: string; path: string };
 
 export function ShareButtons({ title, description, path }: Props) {
   const [copied, setCopied] = useState(false);
-  const url = `${process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.memetest.co.kr"}${path}`;
+  const url = absoluteUrl(path);
 
   const copy = async () => {
     await navigator.clipboard.writeText(url);

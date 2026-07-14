@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 
+// 검색엔진용 URL은 배포 환경변수의 오래된 값에 영향받지 않도록 단일 도메인으로 고정합니다.
+export const canonicalSiteUrl = "https://www.memetest.co.kr";
+
 export const siteConfig = {
   name: "미미테스트",
   tagline: "나를 발견하는 순간",
   englishName: "Mimi Test",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.memetest.co.kr",
+  url: canonicalSiteUrl,
   description:
     "재미있고 빠른 테스트로 나의 성향, 재능, 직장 스타일, 연애관과 가능성을 발견하는 종합 테스트 플랫폼",
   keywords: [

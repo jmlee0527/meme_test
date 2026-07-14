@@ -23,7 +23,7 @@ export const loverFruitTraits = [
 export const loverFruitQuestions: LoverFruitQuestion[] = [
   {
     id: 1,
-    text: "데이트 약속이 갑자기 미뤄졌을 때, 연인의 반응에 가장 가까운 모습은?",
+    text: "데이트 약속이 갑자기 미뤄지면 연인은 어떻게 반응하나요?",
     options: [
       { label: "A", text: "아쉬움을 말하면서도 바로 다음 일정을 함께 잡는다", value: 0, weights: { affection: 3, stability: 2, responsibility: 2, honesty: 1 } },
       { label: "B", text: "내 상황을 먼저 묻고 괜찮다며 편하게 말해준다", value: 1, weights: { consideration: 4, stability: 3, sensitivity: 1 } },
@@ -33,7 +33,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 2,
-    text: "데이트 장소를 정할 때 연인이 자주 보이는 방식은?",
+    text: "연인은 데이트 장소를 주로 어떤 방식으로 정하나요?",
     options: [
       { label: "A", text: "새로 생긴 곳을 찾아오고 먼저 가보자고 제안한다", value: 0, weights: { adventure: 4, leadership: 2, sociability: 2, affection: 1 } },
       { label: "B", text: "둘 다 편했던 익숙한 장소를 자연스럽게 고른다", value: 1, weights: { stability: 4, responsibility: 2, consideration: 2 } },
@@ -53,7 +53,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 4,
-    text: "내가 지쳐 보일 때 연인이 먼저 하는 행동은?",
+    text: "내가 지쳐 보이면 연인은 무엇을 먼저 하나요?",
     options: [
       { label: "A", text: "현실적으로 도와줄 방법을 같이 정리한다", value: 0, weights: { responsibility: 4, leadership: 2, consideration: 2 } },
       { label: "B", text: "말없이 곁에 있어주고 편하게 쉴 분위기를 만든다", value: 1, weights: { stability: 3, consideration: 4, sensitivity: 2 } },
@@ -63,7 +63,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 5,
-    text: "기념일이나 특별한 날을 대하는 연인의 모습은?",
+    text: "연인은 기념일이나 특별한 날을 어떻게 보내나요?",
     options: [
       { label: "A", text: "작은 이벤트라도 직접 준비해 기억에 남게 만든다", value: 0, weights: { romance: 4, affection: 3, sensitivity: 2 } },
       { label: "B", text: "과하지 않지만 필요한 예약과 일정은 꼼꼼히 챙긴다", value: 1, weights: { responsibility: 4, stability: 3, consideration: 1 } },
@@ -73,7 +73,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 6,
-    text: "연인이 선물을 고를 때 가장 자주 보이는 기준은?",
+    text: "연인은 선물을 고를 때 무엇을 가장 중요하게 보나요?",
     options: [
       { label: "A", text: "받는 순간 기분이 좋아질 귀엽고 설레는 것을 고른다", value: 0, weights: { affection: 4, romance: 3, sensitivity: 2 } },
       { label: "B", text: "일상에서 오래 쓸 수 있고 실제로 도움이 되는 것을 찾는다", value: 1, weights: { responsibility: 4, stability: 3, consideration: 2 } },
@@ -93,7 +93,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 8,
-    text: "여행을 계획할 때 연인이 더 선호하는 방식은?",
+    text: "연인은 여행을 계획할 때 어떤 방식을 더 선호하나요?",
     options: [
       { label: "A", text: "핫한 장소와 새로운 코스를 넣어 활기 있게 움직인다", value: 0, weights: { adventure: 4, leadership: 2, sociability: 2 } },
       { label: "B", text: "숙소와 이동 시간을 안정적으로 잡아 편안함을 우선한다", value: 1, weights: { stability: 4, responsibility: 3, consideration: 1 } },
@@ -103,7 +103,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 9,
-    text: "연락이 늦어졌을 때 연인의 태도는?",
+    text: "연락이 늦어지면 연인은 어떻게 반응하나요?",
     options: [
       { label: "A", text: "기다렸다는 마음은 솔직히 말하지만 오래 끌지 않는다", value: 0, weights: { honesty: 4, affection: 2, stability: 1 } },
       { label: "B", text: "바빴겠다고 생각하며 내 설명을 먼저 들어준다", value: 1, weights: { consideration: 4, stability: 3, responsibility: 1 } },
@@ -123,7 +123,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 11,
-    text: "싸운 뒤 먼저 연락할 때 연인이 자주 보이는 방식은?",
+    text: "싸운 뒤 연인은 주로 어떤 방식으로 먼저 연락하나요?",
     options: [
       { label: "A", text: "미안한 부분과 바라는 점을 비교적 분명히 말한다", value: 0, weights: { honesty: 4, responsibility: 3, leadership: 1 } },
       { label: "B", text: "상대가 부담스럽지 않게 짧고 따뜻한 메시지를 보낸다", value: 1, weights: { consideration: 4, affection: 2, stability: 2 } },
@@ -133,7 +133,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 12,
-    text: "연애 중 개인 시간을 대하는 연인의 모습은?",
+    text: "연인은 연애 중 개인 시간을 어떻게 생각하나요?",
     options: [
       { label: "A", text: "함께하는 시간을 많이 만들고 싶어 하지만 강요하지 않는다", value: 0, weights: { affection: 3, consideration: 2, romance: 2 } },
       { label: "B", text: "서로의 루틴을 지키는 것이 관계에도 좋다고 생각한다", value: 1, weights: { independence: 4, stability: 3, responsibility: 1 } },
@@ -143,7 +143,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 13,
-    text: "연인이 감정을 표현하는 방식은?",
+    text: "연인은 감정을 주로 어떻게 표현하나요?",
     options: [
       { label: "A", text: "좋으면 좋다고 말과 행동으로 비교적 자주 표현한다", value: 0, weights: { affection: 4, romance: 3, honesty: 2 } },
       { label: "B", text: "큰 말보다 필요한 순간의 행동으로 보여준다", value: 1, weights: { responsibility: 4, stability: 3, consideration: 2 } },
@@ -153,7 +153,7 @@ export const loverFruitQuestions: LoverFruitQuestion[] = [
   },
   {
     id: 14,
-    text: "연인이 관계에서 가장 중요하게 여기는 가치에 가까운 것은?",
+    text: "연인은 관계에서 어떤 가치를 가장 중요하게 여기나요?",
     options: [
       { label: "A", text: "서로 마음을 자주 확인하고 특별한 순간을 쌓는 것", value: 0, weights: { affection: 3, romance: 3, sensitivity: 2 } },
       { label: "B", text: "말한 것을 지키고 오래 믿을 수 있는 관계를 만드는 것", value: 1, weights: { stability: 4, responsibility: 4, honesty: 2 } },

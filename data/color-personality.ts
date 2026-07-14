@@ -6,18 +6,18 @@ const options = (a: string, b: string): TestOption[] => [
 ];
 
 export const colorPersonalityQuestions: ColorPersonalityQuestion[] = [
-  { id: 1, text: "친구들과 여행을 가게 됐다. 나는 보통?", options: options("현장에서 끌리는 대로 움직이며 재밌는 변수를 만든다", "동선과 예산을 대략 정리해 모두가 편한 흐름을 만든다"), weights: [{ orange: 3, yellow: 2, turquoise: 2, red: 1 }, { blue: 3, brown: 2, navy: 2, green: 1 }] },
-  { id: 2, text: "새로운 모임에 처음 참석했을 때 나는?", options: options("먼저 말을 걸며 분위기를 가볍게 풀어본다", "사람들의 분위기를 살핀 뒤 자연스럽게 대화에 들어간다"), weights: [{ yellow: 3, orange: 2, pink: 1, rainbow: 1 }, { silver: 3, green: 2, blue: 1, lavender: 1 }] },
-  { id: 3, text: "갑자기 약속이 취소됐다면?", options: options("뜻밖의 자유 시간이 생겼다고 생각하고 다른 일을 찾아본다", "조용히 쉬거나 미뤄둔 일을 정리하며 균형을 맞춘다"), weights: [{ turquoise: 3, orange: 2, rainbow: 2, purple: 1 }, { lavender: 3, brown: 2, navy: 1, green: 1 }] },
-  { id: 4, text: "친구가 고민을 털어놓을 때 나는?", options: options("감정을 충분히 들어주고 지금 필요한 말을 건넨다", "상황을 정리하고 현실적인 선택지를 함께 찾아본다"), weights: [{ pink: 3, lavender: 2, green: 2, white: 1 }, { blue: 3, brown: 2, navy: 2, silver: 1 }] },
-  { id: 5, text: "팀 프로젝트를 시작할 때 가장 먼저 하는 일은?", options: options("역할을 나누고 마감까지의 큰 틀을 잡는다", "아이디어를 많이 꺼내 가능성을 넓혀본다"), weights: [{ blue: 3, navy: 2, brown: 2, red: 1 }, { purple: 3, rainbow: 2, turquoise: 2, yellow: 1 }] },
-  { id: 6, text: "예상치 못한 문제가 터졌을 때 나는?", options: options("일단 핵심 원인을 찾고 해결 순서를 정한다", "빠르게 움직이며 가능한 방법을 하나씩 시도한다"), weights: [{ blue: 3, black: 2, navy: 2, silver: 1 }, { red: 3, orange: 2, gold: 2, turquoise: 1 }] },
-  { id: 7, text: "혼자 보내는 주말에 더 끌리는 쪽은?", options: options("새로운 콘텐츠, 전시, 동네 탐색처럼 감각을 채우는 시간", "집이나 익숙한 공간에서 조용히 회복하는 시간"), weights: [{ purple: 3, turquoise: 2, orange: 1, rainbow: 1 }, { lavender: 3, green: 2, white: 1, silver: 1 }] },
-  { id: 8, text: "새로운 도전을 앞두면 나는?", options: options("걱정보다 기대가 먼저 올라오고 빨리 시작하고 싶다", "가능한 리스크를 살핀 뒤 내 페이스로 움직이고 싶다"), weights: [{ red: 3, gold: 3, orange: 2, yellow: 1 }, { blue: 3, silver: 2, brown: 2, navy: 1 }] },
-  { id: 9, text: "스트레스를 받을 때 가까운 모습은?", options: options("사람을 만나거나 움직이며 기분을 전환한다", "혼자 생각을 정리하고 감정을 가라앉힌다"), weights: [{ yellow: 3, orange: 2, pink: 1, red: 1 }, { silver: 3, lavender: 2, black: 2, blue: 1 }] },
-  { id: 10, text: "중요한 결정을 내려야 한다면?", options: options("마음이 끌리는 방향과 직감을 꽤 믿는 편이다", "자료와 근거를 확인해야 마음이 편해진다"), weights: [{ purple: 3, white: 2, rainbow: 2, turquoise: 1 }, { blue: 3, brown: 2, navy: 2, black: 1 }] },
-  { id: 11, text: "좋은 결과를 냈을 때 내가 더 원하는 반응은?", options: options("내가 해냈다는 인정과 다음 목표에 대한 기대", "함께 고생한 사람들과 편안하게 나누는 따뜻한 분위기"), weights: [{ gold: 3, red: 2, black: 2, yellow: 1 }, { green: 3, pink: 2, lavender: 2, white: 1 }] },
-  { id: 12, text: "나에게 더 오래 남는 하루는?", options: options("새로운 사람, 장소, 경험이 겹쳐 생동감 있던 하루", "내가 중요하게 여기는 기준과 마음을 지킨 하루"), weights: [{ rainbow: 3, yellow: 2, orange: 2, turquoise: 2 }, { white: 3, navy: 2, green: 2, brown: 1 }] },
+  { id: 1, text: "친구들과 여행할 때 주로 어떤 역할을 맡나요?", options: options("현장에서 끌리는 대로 움직이며 재밌는 변수를 만든다", "동선과 예산을 대략 정리해 모두가 편한 흐름을 만든다"), weights: [{ orange: 3, yellow: 2, turquoise: 2, red: 1 }, { blue: 3, brown: 2, navy: 2, green: 1 }] },
+  { id: 2, text: "처음 참석한 모임에서는 어떻게 행동하나요?", options: options("먼저 말을 걸며 분위기를 가볍게 풀어본다", "사람들의 분위기를 살핀 뒤 자연스럽게 대화에 들어간다"), weights: [{ yellow: 3, orange: 2, pink: 1, rainbow: 1 }, { silver: 3, green: 2, blue: 1, lavender: 1 }] },
+  { id: 3, text: "갑자기 약속이 취소되면 어떻게 하나요?", options: options("뜻밖의 자유 시간이 생겼다고 생각하고 다른 일을 찾아본다", "조용히 쉬거나 미뤄둔 일을 정리하며 균형을 맞춘다"), weights: [{ turquoise: 3, orange: 2, rainbow: 2, purple: 1 }, { lavender: 3, brown: 2, navy: 1, green: 1 }] },
+  { id: 4, text: "친구가 고민을 털어놓으면 어떻게 반응하나요?", options: options("감정을 충분히 들어주고 지금 필요한 말을 건넨다", "상황을 정리하고 현실적인 선택지를 함께 찾아본다"), weights: [{ pink: 3, lavender: 2, green: 2, white: 1 }, { blue: 3, brown: 2, navy: 2, silver: 1 }] },
+  { id: 5, text: "팀 프로젝트를 시작할 때 무엇부터 하나요?", options: options("역할을 나누고 마감까지의 큰 틀을 잡는다", "아이디어를 많이 꺼내 가능성을 넓혀본다"), weights: [{ blue: 3, navy: 2, brown: 2, red: 1 }, { purple: 3, rainbow: 2, turquoise: 2, yellow: 1 }] },
+  { id: 6, text: "예상치 못한 문제가 생기면 어떻게 대처하나요?", options: options("일단 핵심 원인을 찾고 해결 순서를 정한다", "빠르게 움직이며 가능한 방법을 하나씩 시도한다"), weights: [{ blue: 3, black: 2, navy: 2, silver: 1 }, { red: 3, orange: 2, gold: 2, turquoise: 1 }] },
+  { id: 7, text: "혼자 보내는 주말에는 어느 쪽이 더 끌리나요?", options: options("새로운 콘텐츠, 전시, 동네 탐색처럼 감각을 채우는 시간", "집이나 익숙한 공간에서 조용히 회복하는 시간"), weights: [{ purple: 3, turquoise: 2, orange: 1, rainbow: 1 }, { lavender: 3, green: 2, white: 1, silver: 1 }] },
+  { id: 8, text: "새로운 도전을 앞두면 어떤 태도를 보이나요?", options: options("걱정보다 기대가 먼저 올라오고 빨리 시작하고 싶다", "가능한 리스크를 살핀 뒤 내 페이스로 움직이고 싶다"), weights: [{ red: 3, gold: 3, orange: 2, yellow: 1 }, { blue: 3, silver: 2, brown: 2, navy: 1 }] },
+  { id: 9, text: "스트레스를 받을 때 어느 모습에 더 가까운가요?", options: options("사람을 만나거나 움직이며 기분을 전환한다", "혼자 생각을 정리하고 감정을 가라앉힌다"), weights: [{ yellow: 3, orange: 2, pink: 1, red: 1 }, { silver: 3, lavender: 2, black: 2, blue: 1 }] },
+  { id: 10, text: "중요한 결정을 내릴 때 무엇을 더 신뢰하나요?", options: options("마음이 끌리는 방향과 직감을 꽤 믿는 편이다", "자료와 근거를 확인해야 마음이 편해진다"), weights: [{ purple: 3, white: 2, rainbow: 2, turquoise: 1 }, { blue: 3, brown: 2, navy: 2, black: 1 }] },
+  { id: 11, text: "좋은 결과를 냈을 때 어떤 반응을 더 원하나요?", options: options("내가 해냈다는 인정과 다음 목표에 대한 기대", "함께 고생한 사람들과 편안하게 나누는 따뜻한 분위기"), weights: [{ gold: 3, red: 2, black: 2, yellow: 1 }, { green: 3, pink: 2, lavender: 2, white: 1 }] },
+  { id: 12, text: "어떤 하루가 더 오래 기억에 남나요?", options: options("새로운 사람, 장소, 경험이 겹쳐 생동감 있던 하루", "내가 중요하게 여기는 기준과 마음을 지킨 하루"), weights: [{ rainbow: 3, yellow: 2, orange: 2, turquoise: 2 }, { white: 3, navy: 2, green: 2, brown: 1 }] },
 ];
 
 const trait = (extraversion: number, planning: number, emotion: number, empathy: number, challenge: number, stability: number, creativity: number, independence: number, realism: number, intuition: number): ColorPersonalityScores => ({

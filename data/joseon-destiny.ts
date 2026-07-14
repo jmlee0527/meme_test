@@ -15,18 +15,18 @@ export const joseonTraits = [
 ] as const;
 
 export const joseonQuestions: JoseonQuestion[] = [
-  { id: 1, text: "중요한 결정을 내려야 한다면?", options: options("직감대로 움직인다", "충분히 분석한다"), weights: [{ leadership: 9, adventure: 8, creativity: 3 }, { intelligence: 10, practicality: 6 }] },
-  { id: 2, text: "친구들이 나를 찾는 이유는?", options: options("재미있고 에너지가 넘쳐서", "고민 상담을 잘해줘서"), weights: [{ creativity: 8, adventure: 6, leadership: 3 }, { empathy: 10, intelligence: 4 }] },
-  { id: 3, text: "새로운 기회가 생기면?", options: options("일단 도전", "신중하게 검토"), weights: [{ adventure: 10, leadership: 5 }, { intelligence: 7, practicality: 8 }] },
-  { id: 4, text: "팀 프로젝트에서 나는?", options: options("리더 역할", "지원 역할"), weights: [{ leadership: 11, practicality: 3 }, { empathy: 7, practicality: 6, intelligence: 3 }] },
-  { id: 5, text: "가장 중요한 가치는?", options: options("자유", "안정"), weights: [{ adventure: 8, creativity: 7 }, { practicality: 9, empathy: 4 }] },
-  { id: 6, text: "어려운 문제가 생기면?", options: options("행동하면서 해결", "생각하면서 해결"), weights: [{ adventure: 8, leadership: 5, practicality: 3 }, { intelligence: 10, creativity: 3 }] },
-  { id: 7, text: "사람들은 나를 보통?", options: options("외향적이라고 생각", "차분하다고 생각"), weights: [{ leadership: 6, creativity: 5, adventure: 4 }, { intelligence: 5, empathy: 5, practicality: 4 }] },
-  { id: 8, text: "성공의 기준은?", options: options("영향력", "전문성"), weights: [{ leadership: 10, adventure: 3 }, { intelligence: 8, practicality: 7, creativity: 2 }] },
-  { id: 9, text: "돈이 생긴다면?", options: options("새로운 경험", "미래 준비"), weights: [{ adventure: 7, creativity: 6 }, { practicality: 10, intelligence: 3 }] },
-  { id: 10, text: "여행을 간다면?", options: options("계획 없이 탐험", "일정 철저 준비"), weights: [{ adventure: 10, creativity: 4 }, { practicality: 8, intelligence: 5 }] },
-  { id: 11, text: "가장 좋아하는 역할은?", options: options("앞에서 이끄는 사람", "뒤에서 돕는 사람"), weights: [{ leadership: 11, adventure: 3 }, { empathy: 8, intelligence: 5, practicality: 4 }] },
-  { id: 12, text: "당신의 삶의 목표는?", options: options("특별한 인생", "의미 있는 인생"), weights: [{ creativity: 8, adventure: 7, leadership: 3 }, { empathy: 8, intelligence: 4, practicality: 3 }] },
+  { id: 1, text: "중요한 결정을 내릴 때 어떤 방식을 택하나요?", options: options("직감대로 움직인다", "충분히 분석한다"), weights: [{ leadership: 9, adventure: 8, creativity: 3 }, { intelligence: 10, practicality: 6 }] },
+  { id: 2, text: "친구들은 주로 어떤 이유로 나를 찾나요?", options: options("재미있고 에너지가 넘쳐서", "고민 상담을 잘해줘서"), weights: [{ creativity: 8, adventure: 6, leadership: 3 }, { empathy: 10, intelligence: 4 }] },
+  { id: 3, text: "새로운 기회가 생기면 어떻게 하나요?", options: options("일단 도전", "신중하게 검토"), weights: [{ adventure: 10, leadership: 5 }, { intelligence: 7, practicality: 8 }] },
+  { id: 4, text: "팀 프로젝트에서는 어떤 역할을 선호하나요?", options: options("리더 역할", "지원 역할"), weights: [{ leadership: 11, practicality: 3 }, { empathy: 7, practicality: 6, intelligence: 3 }] },
+  { id: 5, text: "가장 중요하게 생각하는 가치는 무엇인가요?", options: options("자유", "안정"), weights: [{ adventure: 8, creativity: 7 }, { practicality: 9, empathy: 4 }] },
+  { id: 6, text: "어려운 문제가 생기면 어떻게 해결하나요?", options: options("행동하면서 해결", "생각하면서 해결"), weights: [{ adventure: 8, leadership: 5, practicality: 3 }, { intelligence: 10, creativity: 3 }] },
+  { id: 7, text: "주변 사람들은 나를 어떻게 보나요?", options: options("외향적이라고 생각", "차분하다고 생각"), weights: [{ leadership: 6, creativity: 5, adventure: 4 }, { intelligence: 5, empathy: 5, practicality: 4 }] },
+  { id: 8, text: "성공을 판단할 때 무엇을 기준으로 삼나요?", options: options("영향력", "전문성"), weights: [{ leadership: 10, adventure: 3 }, { intelligence: 8, practicality: 7, creativity: 2 }] },
+  { id: 9, text: "여유 자금이 생기면 어디에 쓰고 싶나요?", options: options("새로운 경험", "미래 준비"), weights: [{ adventure: 7, creativity: 6 }, { practicality: 10, intelligence: 3 }] },
+  { id: 10, text: "여행할 때 어떤 방식을 선호하나요?", options: options("계획 없이 탐험", "일정 철저 준비"), weights: [{ adventure: 10, creativity: 4 }, { practicality: 8, intelligence: 5 }] },
+  { id: 11, text: "어떤 역할을 가장 선호하나요?", options: options("앞에서 이끄는 사람", "뒤에서 돕는 사람"), weights: [{ leadership: 11, adventure: 3 }, { empathy: 8, intelligence: 5, practicality: 4 }] },
+  { id: 12, text: "삶의 목표로 더 중요하게 생각하는 것은 무엇인가요?", options: options("특별한 인생", "의미 있는 인생"), weights: [{ creativity: 8, adventure: 7, leadership: 3 }, { empathy: 8, intelligence: 4, practicality: 3 }] },
 ];
 
 const score = (leadership: number, intelligence: number, creativity: number, adventure: number, empathy: number, practicality: number): JoseonScores => ({

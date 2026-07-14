@@ -23,7 +23,7 @@ export const coffeeBrandTraits = [
 export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   {
     id: 1,
-    text: "예고 없이 하루의 여유가 생겼다. 가장 끌리는 계획은?",
+    text: "예고 없이 하루의 여유가 생기면 무엇을 하고 싶나요?",
     options: [
       { label: "A", text: "새로 생긴 공간과 전시를 찾아 도심을 돌아다닌다", value: 0, weights: { trendy: 4, activity: 3, challenge: 2, creativity: 2 } },
       { label: "B", text: "좋아하는 음악과 책을 챙겨 조용히 혼자 쉰다", value: 1, weights: { emotion: 4, leisure: 4, independence: 3 } },
@@ -33,7 +33,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 2,
-    text: "처음 가는 카페를 고를 때 가장 먼저 확인하는 것은?",
+    text: "처음 가는 카페를 고를 때 무엇을 가장 먼저 확인하나요?",
     options: [
       { label: "A", text: "공간의 분위기와 사진으로 남기고 싶은 디테일", value: 0, weights: { trendy: 4, emotion: 3, creativity: 3 } },
       { label: "B", text: "가격과 양, 자주 방문해도 부담 없는 구성", value: 1, weights: { rationality: 5, practicality: 4, stability: 2 } },
@@ -43,7 +43,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 3,
-    text: "흥미로운 신메뉴가 출시됐다는 소식을 들었다. 나는?",
+    text: "흥미로운 신메뉴가 출시되면 보통 어떻게 하나요?",
     options: [
       { label: "A", text: "궁금하면 바로 마셔보고 내 취향인지 판단한다", value: 0, weights: { trendy: 4, challenge: 4, activity: 2 } },
       { label: "B", text: "후기와 가격을 비교해 만족도가 높아 보이면 고른다", value: 1, weights: { rationality: 4, practicality: 3, stability: 2 } },
@@ -53,7 +53,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 4,
-    text: "친구들이 자주 말하는 나의 이미지에 가장 가까운 것은?",
+    text: "친구들이 자주 말하는 내 모습은 어느 쪽에 가까운가요?",
     options: [
       { label: "A", text: "새로운 소식과 좋은 장소를 빠르게 알아오는 사람", value: 0, weights: { trendy: 5, activity: 3, sociability: 2 } },
       { label: "B", text: "약속과 기준이 분명해 믿고 맡길 수 있는 사람", value: 1, weights: { stability: 4, practicality: 3, rationality: 3 } },
@@ -63,7 +63,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 5,
-    text: "여행을 떠난다면 가장 선호하는 방식은?",
+    text: "여행을 떠날 때 어떤 방식을 가장 선호하나요?",
     options: [
       { label: "A", text: "핫한 장소를 중심으로 하루를 알차게 채운다", value: 0, weights: { trendy: 4, activity: 4, challenge: 2 } },
       { label: "B", text: "한 동네에 머물며 풍경과 시간을 천천히 즐긴다", value: 1, weights: { leisure: 5, emotion: 4, independence: 2 } },
@@ -73,7 +73,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 6,
-    text: "소중한 사람을 위한 선물을 고를 때 가장 중요한 기준은?",
+    text: "소중한 사람의 선물을 고를 때 무엇을 가장 중요하게 보나요?",
     options: [
       { label: "A", text: "요즘 감각이 느껴지고 받는 순간 설레는 것", value: 0, weights: { trendy: 4, emotion: 3, creativity: 3 } },
       { label: "B", text: "일상에서 자주 쓰이며 실제로 도움이 되는 것", value: 1, weights: { practicality: 5, rationality: 3, stability: 2 } },
@@ -83,7 +83,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 7,
-    text: "해야 할 일이 많을 때 나의 처리 방식은?",
+    text: "해야 할 일이 많으면 어떤 방식으로 처리하나요?",
     options: [
       { label: "A", text: "우선순위와 시간을 정해 계획대로 하나씩 끝낸다", value: 0, weights: { stability: 4, rationality: 4, practicality: 3 } },
       { label: "B", text: "가장 급한 것부터 빠르게 시작해 흐름을 만든다", value: 1, weights: { activity: 5, challenge: 3, practicality: 2 } },
@@ -93,7 +93,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 8,
-    text: "여러 사람과 함께 있을 때 자연스럽게 맡는 포지션은?",
+    text: "여러 사람과 함께 있을 때 주로 어떤 역할을 맡나요?",
     options: [
       { label: "A", text: "먼저 제안하고 분위기에 에너지를 더하는 역할", value: 0, weights: { activity: 4, sociability: 4, challenge: 2 } },
       { label: "B", text: "말을 잘 들어주고 모두가 편하도록 챙기는 역할", value: 1, weights: { emotion: 4, sociability: 4, stability: 2 } },
@@ -103,7 +103,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 9,
-    text: "바쁜 하루에 마시는 커피 한 잔은 나에게 어떤 의미인가?",
+    text: "바쁜 하루에 마시는 커피 한 잔은 어떤 의미인가요?",
     options: [
       { label: "A", text: "다음 일을 빠르게 시작하게 해주는 에너지 충전", value: 0, weights: { activity: 5, practicality: 3, challenge: 2 } },
       { label: "B", text: "잠시 속도를 늦추고 나를 돌보는 작은 의식", value: 1, weights: { leisure: 5, emotion: 4, stability: 2 } },
@@ -113,7 +113,7 @@ export const coffeeBrandQuestions: CoffeeBrandQuestion[] = [
   },
   {
     id: 10,
-    text: "요즘 삶에서 가장 중요하게 생각하는 가치에 가까운 것은?",
+    text: "요즘 가장 중요하게 생각하는 가치는 무엇인가요?",
     options: [
       { label: "A", text: "새로운 목표를 세우고 계속 성장하는 것", value: 0, weights: { challenge: 5, activity: 3, trendy: 2 } },
       { label: "B", text: "일과 휴식의 균형을 지키며 편안하게 사는 것", value: 1, weights: { leisure: 5, stability: 4, emotion: 2 } },
