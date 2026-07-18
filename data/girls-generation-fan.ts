@@ -93,6 +93,7 @@ export const girlsGenerationFanTest: TestDefinition = {
   thumbnail: "/tests/girls-generation-fan.jpg",
   participants: 684,
   accent: "pink",
+  fanTheme: "pink-ticket",
   isNew: true,
   itemCount: GIRLS_GENERATION_QUIZ_SIZE,
   questions: [],

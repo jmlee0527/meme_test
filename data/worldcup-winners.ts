@@ -118,6 +118,7 @@ export const worldCupWinnerQuizTest: TestDefinition = {
   thumbnail: "/tests/worldcup-winner-quiz.jpg",
   participants: 4216,
   accent: "green",
+  fanTheme: "blue-spotlight",
   isNew: true,
   itemCount: WORLD_CUP_WINNER_QUIZ_SIZE,
   questions: [],

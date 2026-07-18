@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Growth adjusting relationship result</title>
+  <desc id="desc">Two people fitting different puzzle pieces together.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ede9fe"/><stop offset=".55" stop-color="#eff6ff"/><stop offset="1" stop-color="#fdf2f8"/></linearGradient></defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="176" y="684" width="672" height="72" rx="36" fill="#bfdbfe"/>
+  <path d="M380 438h116v76c42-18 78 10 78 48s-36 66-78 48v78H380v-76c-42 18-78-10-78-48s36-66 78-48z" fill="#8b5cf6"/>
+  <path d="M528 438h116v78c42-18 78 10 78 48s-36 66-78 48v76H528v-78c-42 18-78-10-78-48s36-66 78-48z" fill="#f472b6" opacity=".92"/>
+  <g transform="translate(232 274)">
+    <circle cx="88" cy="68" r="52" fill="#f1c3b4"/>
+    <path d="M40 64c18-60 96-62 112 4-39-16-72-18-112-4z" fill="#312e81"/>
+    <path d="M40 292c8-92 40-146 98-166 58 20 88 74 94 166z" fill="#6366f1"/>
+  </g>
+  <g transform="translate(652 274)">
+    <circle cx="88" cy="68" r="52" fill="#f6cabd"/>
+    <path d="M36 62c26-58 96-52 112 10-38-18-72-20-112-10z" fill="#831843"/>
+    <path d="M40 292c8-92 40-146 98-166 58 20 88 74 94 166z" fill="#ec4899"/>
+  </g>
+  <circle cx="512" cy="274" r="94" fill="#fff" opacity=".58"/>
+  <path d="M470 274h84M512 232v84" stroke="#a78bfa" stroke-width="18" stroke-linecap="round"/>
+</svg>

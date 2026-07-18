@@ -183,6 +183,7 @@ export const arsenalFanTest: TestDefinition = {
   thumbnail: "/tests/arsenal-fan.jpg",
   participants: 1537,
   accent: "orange",
+  fanTheme: "red-backstage",
   isNew: true,
   itemCount: ARSENAL_FAN_QUIZ_SIZE,
   questions: [],

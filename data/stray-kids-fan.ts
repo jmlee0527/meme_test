@@ -27,7 +27,7 @@ export const getStrayKidsGradeBySlug = (slug: string) => strayKidsGrades.find((g
 export const strayKidsFanTest: TestDefinition = {
   type: "quiz", slug: "stray-kids-true-fan-test", title: "스트레이 키즈 찐팬 테스트", shortTitle: "스트레이 키즈 찐팬 테스트", cardTitle: "스트레이 키즈 찐팬 테스트",
   description: "멤버·앨범·노래·유닛으로 확인하는 나의 STAY 팬심", category: "팬 퀴즈", duration: "약 3분", icon: "⚡", thumbnail: "/tests/stray-kids-fan.jpg",
-  participants: 843, accent: "purple", isNew: true, itemCount: 15, questions: [], resultSlugs: [],
+  participants: 843, accent: "purple", fanTheme: "purple-night", isNew: true, itemCount: 15, questions: [], resultSlugs: [],
   seoTitle: "스트레이 키즈 찐팬 테스트 | 나는 몇 점짜리 STAY?",
   seoDescription: "스트레이 키즈 멤버, 앨범, 타이틀곡, 수록곡, 유닛과 발매 순서를 묻는 15문항 찐팬 테스트. 매번 달라지는 문제로 나의 STAY 팬심을 확인해 보세요.",
   keywords: ["스트레이 키즈 찐팬 테스트", "스트레이 키즈 테스트", "스트레이 키즈 퀴즈", "스키즈 찐팬 테스트", "스키즈 퀴즈", "STAY 테스트", "스트레이 키즈 멤버", "스트레이 키즈 노래", "스트레이 키즈 앨범", "Stray Kids quiz", "Stray Kids true fan test"],

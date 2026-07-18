@@ -123,6 +123,7 @@ export const footballQuizTest: TestDefinition = {
   thumbnail: "/tests/football-quiz.jpg",
   participants: 1874,
   accent: "green",
+  fanTheme: "yellow-pop",
   isNew: true,
   itemCount: 15,
   questions: [],

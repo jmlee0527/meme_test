@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AdRectangle } from "@/components/ads/AdRectangle";
 import { SectionReveal } from "@/components/motion/SectionReveal";
@@ -8,6 +9,7 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { MobileShareDock } from "@/components/share/MobileShareDock";
 import { ShareButtons } from "@/components/share/ShareButtons";
 import { ShareImageCard } from "@/components/share/ShareImageCard";
+import { formatFanQuizLevel, getFanQuizLevel } from "@/config/fanQuizThemes";
 import { youngtakFanGradeProfiles } from "@/data/youngtak-fan";
 import type { YoungtakFanGradeProfile, YoungtakQuizQuestion } from "@/lib/types";
 
@@ -54,6 +56,8 @@ const difficultyRows = [
   { key: "expert", label: "최상", total: 1, color: "bg-purple-700" },
 ] as const;
 
+const YOUNGTAK_RESULT_IMAGE = "/tests/youngtak-fan-result.png";
+
 function difficultyLabel(difficulty: YoungtakQuizQuestion["difficulty"]) {
   return difficulty === "easy" ? "쉬움" : difficulty === "medium" ? "보통" : difficulty === "hard" ? "어려움" : "최상";
 }
@@ -79,6 +83,7 @@ export function YoungtakFanQuizResult({
   const difficultyCorrect = { easy: easyCorrect ?? 0, medium: mediumCorrect ?? 0, hard: hardCorrect ?? 0, expert: expertCorrect ?? 0 };
   const shareTitle = (grade.shareTexts[0] ?? "나의 영탁 팬심 지수는 {score}점!").replace("{score}", String(score));
   const sharePath = `/youngtak-fan-test/result/${grade.slug}${encodedAnswers ? `?r=${encodedAnswers}` : ""}`;
+  const level = getFanQuizLevel(score, 100);
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#fce7f3_0,#fff7ed_34%,#f8fafc_100%)] pb-24 pt-8 sm:py-14">
@@ -90,30 +95,44 @@ export function YoungtakFanQuizResult({
               <div className="absolute inset-0 opacity-[.16] [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,.5)_1px,transparent_0)] [background-size:28px_28px]" />
               <div className="absolute -left-24 top-10 size-64 rounded-full bg-pink-500/30 blur-3xl" />
               <div className="absolute -right-24 bottom-8 size-64 rounded-full bg-amber-300/20 blur-3xl" />
-              <div className="relative px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
-                <p className="text-sm font-extrabold text-amber-200">{hasResult ? "나의 영탁 팬심 지수는" : "영탁 찐팬 테스트 결과 등급"}</p>
-                <div className="mx-auto mt-6 grid size-40 place-items-center rounded-full p-2 shadow-lg" style={{ background: `conic-gradient(#ec4899 ${hasResult ? displayScore : grade.maxScore}%, rgba(255,255,255,.15) 0)` }}>
-                  <div className="grid size-full place-items-center rounded-full bg-[#201124]">
-                    <span>
-                      {hasResult ? (
-                        <strong className="block text-5xl font-black text-white">{displayScore}<span className="text-xl">점</span></strong>
-                      ) : (
-                        <strong className="block text-2xl font-black text-white">{grade.minScore}~{grade.maxScore}점</strong>
-                      )}
-                      <span className="text-[11px] font-bold text-slate-300">YOUNGTAK FAN INDEX</span>
-                    </span>
+              <div className="relative grid gap-7 px-6 pb-8 pt-10 sm:px-10 sm:pt-14 lg:grid-cols-[.92fr_1.08fr] lg:items-center lg:text-left">
+                <div className="mx-auto w-full max-w-sm overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-2 shadow-2xl shadow-pink-950/30 lg:max-w-none">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] bg-pink-950/30">
+                    <Image
+                      src={YOUNGTAK_RESULT_IMAGE}
+                      alt="무대에서 환하게 웃고 있는 영탁 이미지"
+                      fill
+                      sizes="(max-width:1024px) 360px, 380px"
+                      className="object-cover object-[center_18%]"
+                      priority
+                    />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#201124]/85 to-transparent px-5 pb-5 pt-16 text-left">
+                      <p className="text-xs font-black tracking-[.18em] text-amber-200">YOUNGTAK FAN QUIZ</p>
+                      <p className="mt-1 text-sm font-bold text-white/90">팬심 결과를 더 빛나게</p>
+                    </div>
                   </div>
                 </div>
-                <h1 className="mt-6 text-3xl font-black tracking-tight sm:text-5xl">{grade.title}</h1>
-                <p className="mx-auto mt-3 max-w-xl text-base font-semibold leading-7 text-slate-100">{grade.summary}</p>
-                {hasResult && totalCorrect !== null && (
-                  <div className="mx-auto mt-6 grid max-w-lg grid-cols-2 gap-3 sm:grid-cols-4">
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">정답</span><strong className="text-xl">{totalCorrect}/{total}</strong></div>
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">점수</span><strong className="text-xl">{weightedScore}/{maxScore}</strong></div>
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">어려움</span><strong className="text-xl">{hardCorrect}/4</strong></div>
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">최상</span><strong className="text-xl">{expertCorrect}/1</strong></div>
+                <div>
+                  <p className="text-sm font-extrabold text-amber-200">{hasResult ? "나의 영탁 팬심 레벨은" : "영탁 찐팬 테스트 결과 등급"}</p>
+                  <div className="mx-auto mt-6 grid size-40 place-items-center rounded-full p-2 shadow-lg lg:mx-0" style={{ background: `conic-gradient(#ec4899 ${hasResult ? displayScore : grade.maxScore}%, rgba(255,255,255,.15) 0)` }}>
+                    <div className="grid size-full place-items-center rounded-full bg-[#201124]">
+                      <span>
+                        <strong className="block text-3xl font-black text-white">{formatFanQuizLevel(level)}</strong>
+                        <span className="mt-1 block text-[11px] font-bold text-slate-300">{hasResult ? `${displayScore}/100점` : `${grade.minScore}~${grade.maxScore}점 구간`}</span>
+                      </span>
+                    </div>
                   </div>
-                )}
+                  <h1 className="mt-6 text-3xl font-black tracking-tight sm:text-5xl">{grade.title}</h1>
+                  <p className="mx-auto mt-3 max-w-xl text-base font-semibold leading-7 text-slate-100 lg:mx-0">{grade.summary}</p>
+                  {hasResult && totalCorrect !== null && (
+                    <div className="mx-auto mt-6 grid max-w-lg grid-cols-2 gap-3 sm:grid-cols-4 lg:mx-0">
+                      <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">정답</span><strong className="text-xl">{totalCorrect}/{total}</strong></div>
+                      <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">LEVEL</span><strong className="text-xl">{level}</strong></div>
+                      <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">어려움</span><strong className="text-xl">{hardCorrect}/4</strong></div>
+                      <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">최상</span><strong className="text-xl">{expertCorrect}/1</strong></div>
+                    </div>
+                  )}
+                </div>
               </div>
               <div className="relative border-t border-white/10 bg-white px-6 py-7 text-slate-700 sm:px-10">
                 <p className="mx-auto max-w-2xl leading-7">{grade.description}</p>
@@ -218,7 +237,7 @@ export function YoungtakFanQuizResult({
           )}
 
           <section id="share-card" className="mt-10 grid scroll-mt-24 gap-6 rounded-3xl bg-ink p-6 text-white sm:p-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-            <ShareImageCard emoji="🎤" eyebrow="영탁 찐팬 테스트" title={`${score}점 · ${grade.title}`} subtitle={grade.summary} badge={`${score}점`} accent="pink" />
+            <ShareImageCard emoji="🎤" eyebrow="영탁 찐팬 테스트" title={`${formatFanQuizLevel(level)} · ${grade.title}`} subtitle={grade.summary} badge={`${score}점`} accent="pink" />
             <div>
               <h2 className="text-xl font-extrabold">친구의 영탁 팬심 지수는?</h2>
               <p className="mt-2 text-sm leading-6 text-slate-300">결과를 공유하고 누가 더 많은 활동 기록을 알고 있는지 가볍게 비교해보세요. 정답과 문제 내용은 공유되지 않습니다.</p>
@@ -230,7 +249,7 @@ export function YoungtakFanQuizResult({
             <Link href="/tests/youngtak-fan-test?start=1" className="inline-flex rounded-xl bg-primary px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-blue-200 transition hover:bg-blue-700">랜덤 15문제 다시 풀기</Link>
             <Link href="/tests/youngtak-fan-test" className="inline-flex rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm font-bold text-slate-600 hover:bg-slate-50">테스트 소개 보기</Link>
           </div>
-          <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-5 text-slate-400">본 테스트는 영탁 또는 소속사의 공식 서비스가 아닌 비공식 팬 퀴즈입니다. 공식 사진·얼굴 이미지·저작권 이미지와 가사 인용을 사용하지 않았으며, 응답은 서버에 저장되지 않습니다.</p>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-5 text-slate-400">본 테스트는 영탁 또는 소속사의 공식 서비스가 아닌 비공식 팬 퀴즈입니다. 결과 화면 이미지는 사용자가 제공한 이미지이며, 응답은 서버에 저장되지 않습니다.</p>
         </div>
       </div>
       <MobileShareDock />

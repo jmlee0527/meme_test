@@ -55,6 +55,7 @@ export const seventeenFanTest: TestDefinition = {
   thumbnail: "/tests/seventeen-fan.jpg",
   participants: 717,
   accent: "indigo",
+  fanTheme: "blue-spotlight",
   isNew: true,
   itemCount: SEVENTEEN_QUIZ_SIZE,
   questions: [],

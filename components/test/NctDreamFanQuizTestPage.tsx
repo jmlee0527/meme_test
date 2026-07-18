@@ -1,8 +1,145 @@
 "use client";
-import{AnimatePresence,motion,useReducedMotion}from"framer-motion";import{useRouter}from"next/navigation";import{useEffect,useState}from"react";import{NCT_DREAM_QUIZ_SIZE}from"@/data/nct-dream-fan";import{calculateNctDreamResult,createNctDreamSession,encodeNctDreamAnswers}from"@/lib/nct-dream-fan-engine";import type{NctDreamPresentedQuestion}from"@/lib/nct-dream-fan-engine";
-const SESSION_KEY="mimi-nct-dream-true-fan-session",RECENT_KEY="mimi-nct-dream-true-fan-recent",badges=["A","B","C","D"];
-const track=(event:string,params?:Record<string,string|number>)=>typeof window!=="undefined"&&(window as Window&{gtag?:(command:string,event:string,params?:Record<string,unknown>)=>void}).gtag?.("event",event,params);const newSeed=()=>`${Date.now()}-${Math.random().toString(36).slice(2)}`;
-export function NctDreamFanQuizTestPage(){const router=useRouter(),reduceMotion=useReducedMotion();const[questions,setQuestions]=useState<NctDreamPresentedQuestion[]>([]),[answers,setAnswers]=useState<number[]>([]),[index,setIndex]=useState(0),[locked,setLocked]=useState(false);
-useEffect(()=>{let stored:{seed:string;answers:number[];index:number}|null=null;try{stored=JSON.parse(sessionStorage.getItem(SESSION_KEY)??"null");}catch{}let recent:string[]=[];try{recent=JSON.parse(localStorage.getItem(RECENT_KEY)??"[]");}catch{}const seed=stored?.seed??newSeed();setQuestions(createNctDreamSession(seed,Array.isArray(recent)?recent:[]));setAnswers(stored?.answers??[]);setIndex(Math.min(stored?.index??0,NCT_DREAM_QUIZ_SIZE-1));sessionStorage.setItem(SESSION_KEY,JSON.stringify({seed,answers:stored?.answers??[],index:stored?.index??0}));track("test_start",{test_id:"nct-dream-true-fan-test",category:"fan_quiz"});},[]);
-const current=questions[index],selected=answers[index],progress=Math.round((index+1)/NCT_DREAM_QUIZ_SIZE*100);const choose=(shownIndex:number)=>{if(!current||locked)return;const originalChoice=current.optionOrder[shownIndex],next=[...answers];next[index]=originalChoice;setAnswers(next);setLocked(true);track("test_answer",{test_id:"nct-dream-true-fan-test",question_number:index+1});const nextIndex=Math.min(index+1,NCT_DREAM_QUIZ_SIZE-1),stored=JSON.parse(sessionStorage.getItem(SESSION_KEY)??"{}");sessionStorage.setItem(SESSION_KEY,JSON.stringify({...stored,answers:next,index:nextIndex}));window.setTimeout(()=>{setLocked(false);if(index<NCT_DREAM_QUIZ_SIZE-1)return setIndex(index+1);const payload=questions.map((q,i)=>({questionId:q.originalId,choice:next[i]})),result=calculateNctDreamResult(payload);localStorage.setItem(RECENT_KEY,JSON.stringify(questions.map(q=>q.originalId)));track("test_complete",{test_id:"nct-dream-true-fan-test",result_level:result.grade.slug,score:result.score});router.push(`/nct-dream-true-fan-test/result/${result.grade.slug}?r=${encodeNctDreamAnswers(payload)}`);},reduceMotion?0:220);};
-return <main className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#dcfce7_0,#eff6ff_45%,#faf5ff_100%)] py-6 sm:py-12"><div className="container-page mx-auto max-w-2xl"><header className="mb-6"><div className="flex items-end justify-between gap-4"><div><p className="text-xs font-black tracking-[.16em] text-emerald-600">NCT DREAM TRUE FAN QUIZ</p><h1 className="mt-2 text-xl font-black text-ink sm:text-2xl">NCT DREAM 찐팬 테스트</h1></div><strong className="text-sm text-slate-500">{index+1} / 15</strong></div><div className="mt-4 h-2.5 overflow-hidden rounded-full bg-white shadow-inner" role="progressbar" aria-label="퀴즈 진행률" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}><motion.div className="h-full rounded-full bg-gradient-to-r from-emerald-400 via-cyan-400 to-violet-500" animate={{width:`${progress}%`}}/></div></header>{!current?<section className="grid min-h-72 place-items-center rounded-[2rem] bg-white p-10 shadow-xl" aria-busy="true"><p className="font-bold text-slate-500">💚 검증된 문제를 구성하는 중...</p></section>:<AnimatePresence mode="wait"><motion.section key={current.id} initial={reduceMotion?false:{opacity:0,x:24}} animate={{opacity:1,x:0}} exit={{opacity:0,x:-20}} className="rounded-[2rem] border border-white bg-white/95 p-6 shadow-2xl sm:p-10"><div className="flex justify-between gap-3"><span className="rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-black text-emerald-700">{current.category}</span><span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-600">{current.difficulty} · {current.weight}점</span></div><h2 className="mt-7 break-words text-balance text-2xl font-black leading-[1.4] text-ink sm:text-3xl">{current.prompt}</h2><div className="mt-8 grid gap-3" role="radiogroup" aria-label="정답 선택">{current.choices.map((choice,shownIndex)=>{const active=selected===current.optionOrder[shownIndex];return <motion.button key={`${current.id}-${shownIndex}`} type="button" role="radio" aria-checked={active} aria-label={`${badges[shownIndex]}번 보기: ${choice}`} disabled={locked} onClick={()=>choose(shownIndex)} whileTap={reduceMotion?undefined:{scale:.98}} className={`flex min-h-16 items-center gap-4 break-words rounded-2xl border px-4 text-left font-bold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 ${active?"border-emerald-400 bg-emerald-50 text-emerald-950":"border-slate-200 bg-white text-slate-700 hover:border-emerald-300"}`}><span className={`grid size-9 shrink-0 place-items-center rounded-full text-xs font-black ${active?"bg-emerald-600 text-white":"bg-slate-100 text-slate-500"}`}>{badges[shownIndex]}</span><span className="min-w-0 break-words">{choice}</span></motion.button>})}</div></motion.section></AnimatePresence>}<div className="mt-5 flex items-center justify-between gap-4"><button type="button" disabled={index===0||locked} onClick={()=>{const next=Math.max(0,index-1);setIndex(next);const stored=JSON.parse(sessionStorage.getItem(SESSION_KEY)??"{}");sessionStorage.setItem(SESSION_KEY,JSON.stringify({...stored,answers,index:next}));}} className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 disabled:opacity-30">← 이전 문제</button><p className="text-right text-[11px] leading-5 text-slate-400">easy 5 · medium 5 · hard 5<br/>정답은 제출 후 공개됩니다.</p></div></div></main>}
+
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { FanQuizProgress } from "@/components/fan-quiz/FanQuizProgress";
+import { FanQuizQuestionCard } from "@/components/fan-quiz/FanQuizQuestionCard";
+import { NCT_DREAM_QUIZ_SIZE, nctDreamFanTest } from "@/data/nct-dream-fan";
+import { getTestFanQuizTheme } from "@/config/fanQuizThemes";
+import { calculateNctDreamResult, createNctDreamSession, encodeNctDreamAnswers } from "@/lib/nct-dream-fan-engine";
+import type { NctDreamPresentedQuestion } from "@/lib/nct-dream-fan-engine";
+
+const SESSION_KEY = "mimi-nct-dream-true-fan-session";
+const RECENT_KEY = "mimi-nct-dream-true-fan-recent";
+const choiceBadges = ["A", "B", "C", "D"];
+
+const track = (event: string, params?: Record<string, string | number>) =>
+  typeof window !== "undefined" && (window as Window & { gtag?: (command: string, event: string, params?: Record<string, unknown>) => void }).gtag?.("event", event, params);
+
+const newSeed = () => `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+export function NctDreamFanQuizTestPage() {
+  const router = useRouter();
+  const reduceMotion = useReducedMotion();
+  const theme = getTestFanQuizTheme(nctDreamFanTest);
+  const [questions, setQuestions] = useState<NctDreamPresentedQuestion[]>([]);
+  const [answers, setAnswers] = useState<number[]>([]);
+  const [index, setIndex] = useState(0);
+  const [locked, setLocked] = useState(false);
+
+  useEffect(() => {
+    let stored: { seed: string; answers: number[]; index: number } | null = null;
+    try {
+      stored = JSON.parse(sessionStorage.getItem(SESSION_KEY) ?? "null");
+    } catch {}
+
+    let recent: string[] = [];
+    try {
+      recent = JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]");
+    } catch {}
+
+    const seed = stored?.seed ?? newSeed();
+    const initialAnswers = stored?.answers ?? [];
+    const initialIndex = Math.min(stored?.index ?? 0, NCT_DREAM_QUIZ_SIZE - 1);
+    setQuestions(createNctDreamSession(seed, Array.isArray(recent) ? recent : []));
+    setAnswers(initialAnswers);
+    setIndex(initialIndex);
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify({ seed, answers: initialAnswers, index: initialIndex }));
+    track("test_start", { test_id: "nct-dream-true-fan-test", category: "fan_quiz" });
+  }, []);
+
+  const current = questions[index];
+  const selected = answers[index];
+  const progress = Math.round(((index + 1) / NCT_DREAM_QUIZ_SIZE) * 100);
+
+  const choose = (shownIndex: number) => {
+    if (!current || locked) return;
+    const originalChoice = current.optionOrder[shownIndex];
+    const next = [...answers];
+    next[index] = originalChoice;
+    setAnswers(next);
+    setLocked(true);
+    track("test_answer", { test_id: "nct-dream-true-fan-test", question_number: index + 1 });
+
+    const nextIndex = Math.min(index + 1, NCT_DREAM_QUIZ_SIZE - 1);
+    const stored = JSON.parse(sessionStorage.getItem(SESSION_KEY) ?? "{}");
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...stored, answers: next, index: nextIndex }));
+
+    window.setTimeout(() => {
+      setLocked(false);
+      if (index < NCT_DREAM_QUIZ_SIZE - 1) {
+        setIndex(index + 1);
+        return;
+      }
+
+      const payload = questions.map((question, questionIndex) => ({
+        questionId: question.originalId,
+        choice: next[questionIndex],
+      }));
+      const result = calculateNctDreamResult(payload);
+      localStorage.setItem(RECENT_KEY, JSON.stringify(questions.map((question) => question.originalId)));
+      track("test_complete", { test_id: "nct-dream-true-fan-test", result_level: result.grade.slug, score: result.score });
+      router.push(`/nct-dream-true-fan-test/result/${result.grade.slug}?r=${encodeNctDreamAnswers(payload)}`);
+    }, reduceMotion ? 0 : 220);
+  };
+
+  return (
+    <main className="min-h-[calc(100vh-5rem)] py-6 sm:py-12" style={{ background: `linear-gradient(180deg, ${theme.background} 0%, #f8fafc 100%)` }}>
+      <div className="container-page mx-auto max-w-2xl">
+        <header className="mb-6">
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-black tracking-[.16em]" style={{ color: theme.primary }}>{theme.label}</p>
+              <h1 className="mt-2 text-xl font-black sm:text-2xl" style={{ color: theme.text }}>NCT DREAM 찐팬 테스트</h1>
+            </div>
+            <strong className="shrink-0 rounded-full bg-white px-3 py-1.5 text-sm shadow-sm" style={{ color: theme.mutedText }}>{index + 1} / {NCT_DREAM_QUIZ_SIZE}</strong>
+          </div>
+          <FanQuizProgress progress={progress} theme={theme} reduceMotion={reduceMotion} />
+        </header>
+
+        {!current ? (
+          <section className="grid min-h-72 place-items-center rounded-[2rem] border bg-white/90 p-10 shadow-2xl" style={{ borderColor: theme.border, boxShadow: `0 24px 50px ${theme.shadow}` }} aria-busy="true">
+            <p className="font-bold text-slate-500">{nctDreamFanTest.icon} 검증된 문제를 구성하는 중...</p>
+          </section>
+        ) : (
+          <AnimatePresence mode="wait">
+            <motion.div key={current.id} initial={reduceMotion ? false : { opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={reduceMotion ? undefined : { opacity: 0, x: -20 }}>
+              <FanQuizQuestionCard
+                theme={theme}
+                questionNumber={index + 1}
+                category={current.category}
+                difficulty={`${current.difficulty} · ${current.weight}점`}
+                question={current.prompt}
+                options={current.choices.map((choice, shownIndex) => ({
+                  label: choiceBadges[shownIndex],
+                  text: choice,
+                  selected: selected === current.optionOrder[shownIndex],
+                  disabled: locked,
+                  onClick: () => choose(shownIndex),
+                }))}
+              />
+            </motion.div>
+          </AnimatePresence>
+        )}
+
+        <div className="mt-5 flex items-center justify-between gap-4">
+          <button
+            type="button"
+            disabled={index === 0 || locked}
+            onClick={() => {
+              const next = Math.max(0, index - 1);
+              setIndex(next);
+              const stored = JSON.parse(sessionStorage.getItem(SESSION_KEY) ?? "{}");
+              sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...stored, answers, index: next }));
+            }}
+            className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 transition hover:bg-white disabled:opacity-30"
+          >
+            ← 이전 문제
+          </button>
+          <p className="text-right text-[11px] leading-5 text-slate-400">easy 5 · medium 5 · hard 5<br />정답은 제출 후 공개됩니다.</p>
+        </div>
+      </div>
+    </main>
+  );
+}

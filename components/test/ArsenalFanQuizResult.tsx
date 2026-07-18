@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { ShareButtons } from "@/components/share/ShareButtons";
 import { ShareImageCard } from "@/components/share/ShareImageCard";
+import { formatFanQuizLevel, getFanQuizLevel } from "@/config/fanQuizThemes";
 import { MobileShareDock } from "@/components/share/MobileShareDock";
 import { SectionReveal } from "@/components/motion/SectionReveal";
 import { AdRectangle } from "@/components/ads/AdRectangle";
@@ -72,6 +73,7 @@ export function ArsenalFanQuizResult({
   const difficultyCorrect = { easy: easyCorrect ?? 0, medium: mediumCorrect ?? 0, hard: hardCorrect ?? 0 };
   const shareTitle = grade.shareText.replace("{score}", String(score));
   const sharePath = `/arsenal-fan-test/result/${grade.slug}${encodedAnswers ? `?r=${encodedAnswers}` : ""}`;
+  const level = getFanQuizLevel(score, 100);
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#fee2e2_0,#fff7ed_34%,#f8fafc_100%)] pb-24 pt-8 sm:py-14">
@@ -84,16 +86,12 @@ export function ArsenalFanQuizResult({
               <div className="absolute -left-24 top-10 size-64 rounded-full bg-red-600/30 blur-3xl" />
               <div className="absolute -right-24 bottom-8 size-64 rounded-full bg-amber-400/20 blur-3xl" />
               <div className="relative px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
-                <p className="text-sm font-extrabold text-amber-300">{hasResult ? "나의 아스날 팬 지수는" : "아스날 팬 테스트 결과 등급"}</p>
+                <p className="text-sm font-extrabold text-amber-300">{hasResult ? "나의 아스날 팬 레벨은" : "아스날 팬 테스트 결과 등급"}</p>
                 <div className="mx-auto mt-6 grid size-40 place-items-center rounded-full p-2 shadow-lg" style={{ background: `conic-gradient(#dc2626 ${hasResult ? displayScore : grade.maxScore}%, rgba(255,255,255,.15) 0)` }}>
                   <div className="grid size-full place-items-center rounded-full bg-[#111827]">
                     <span>
-                      {hasResult ? (
-                        <strong className="block text-5xl font-black text-white">{displayScore}<span className="text-xl">점</span></strong>
-                      ) : (
-                        <strong className="block text-2xl font-black text-white">{grade.minScore}~{grade.maxScore}점</strong>
-                      )}
-                      <span className="text-[11px] font-bold text-slate-400">ARSENAL FAN INDEX</span>
+                      <strong className="block text-3xl font-black text-white">{formatFanQuizLevel(level)}</strong>
+                      <span className="mt-1 block text-[11px] font-bold text-slate-400">{hasResult ? `${displayScore}/100점` : `${grade.minScore}~${grade.maxScore}점 구간`}</span>
                     </span>
                   </div>
                 </div>
@@ -102,7 +100,7 @@ export function ArsenalFanQuizResult({
                 {hasResult && totalCorrect !== null && (
                   <div className="mx-auto mt-6 grid max-w-lg grid-cols-2 gap-3 sm:grid-cols-4">
                     <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">정답</span><strong className="text-xl">{totalCorrect}/{total}</strong></div>
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">원점수</span><strong className="text-xl">{weightedScore}/{maxScore}</strong></div>
+                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">LEVEL</span><strong className="text-xl">{level}</strong></div>
                     <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">중급</span><strong className="text-xl">{mediumCorrect}/6</strong></div>
                     <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">고급</span><strong className="text-xl">{hardCorrect}/4</strong></div>
                   </div>
@@ -203,7 +201,7 @@ export function ArsenalFanQuizResult({
           )}
 
           <section id="share-card" className="mt-10 grid scroll-mt-24 gap-6 rounded-3xl bg-ink p-6 text-white sm:p-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-            <ShareImageCard emoji="🔴" eyebrow="아스날 팬 테스트" title={`${score}점 · ${grade.title}`} subtitle={grade.subtitle} badge={`${score}점`} accent="orange" />
+            <ShareImageCard emoji="🔴" eyebrow="아스날 팬 테스트" title={`${formatFanQuizLevel(level)} · ${grade.title}`} subtitle={grade.subtitle} badge={`${score}점`} accent="orange" />
             <div>
               <h2 className="text-xl font-extrabold">친구의 아스날 팬 지수는?</h2>
               <p className="mt-2 text-sm leading-6 text-slate-300">결과를 공유하고 누가 더 진성 구너인지 가볍게 겨뤄보세요. 정답과 문제 내용은 공유되지 않습니다.</p>

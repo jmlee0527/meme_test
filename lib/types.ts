@@ -50,6 +50,14 @@ export type TestSeoContent = {
 
 export type TestCategory = "성격.심리" | "연애.관계" | "직업.일상" | "팬 퀴즈" | "건강.운세";
 
+export type FanQuizThemeId =
+  | "purple-night"
+  | "mint-stage"
+  | "pink-ticket"
+  | "blue-spotlight"
+  | "yellow-pop"
+  | "red-backstage";
+
 export type TestDefinition = {
   type?: "quiz" | "worldcup" | "adaptive" | "likert" | "fortune" | "calculator";
   slug: string;
@@ -71,6 +79,7 @@ export type TestDefinition = {
   seoContent?: TestSeoContent;
   participants: number;
   accent: "blue" | "orange" | "pink" | "purple" | "green" | "indigo" | "teal";
+  fanTheme?: FanQuizThemeId;
   isNew?: boolean;
   itemCount?: number;
 };
@@ -595,6 +604,87 @@ export type JealousyGradeProfile = {
   tips: string[];
   communicationScripts: string[];
   shareText: string;
+};
+
+export type RelationshipDimension =
+  | "emotional_intimacy"
+  | "communication_conflict"
+  | "trust_respect"
+  | "reciprocity_daily_fit"
+  | "support_future_satisfaction";
+export type RelationshipQuestion = {
+  id: number;
+  text: string;
+  dimension: RelationshipDimension;
+  reverseScored: boolean;
+  options: { text: string; score: number }[];
+};
+export type RelationshipDimensionScores = Record<RelationshipDimension, number>;
+export type RelationshipResultSlug =
+  | "relationship-signal-check"
+  | "relationship-reconnect-ready"
+  | "relationship-growth-adjusting"
+  | "relationship-comfort-stable"
+  | "relationship-deep-partner";
+export type RelationshipResultProfile = {
+  slug: RelationshipResultSlug;
+  title: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  strengths: string[];
+  cautions: string[];
+  recommendations: string[];
+  image: string;
+  shareText: string;
+};
+export type RelationshipDimensionGuide = {
+  key: RelationshipDimension;
+  title: string;
+  description: string;
+  recommendations: string[];
+};
+
+export type InterpersonalDimension =
+  | "empathy_understanding"
+  | "self_expression"
+  | "relationship_reciprocity"
+  | "conflict_repair";
+export type InterpersonalQuestion = {
+  id: number;
+  text: string;
+  dimension: InterpersonalDimension;
+  reverseScored: boolean;
+  options: { text: string; score: number }[];
+};
+export type InterpersonalDimensionScores = Record<InterpersonalDimension, number>;
+export type InterpersonalResultSlug =
+  | "interpersonal-ready"
+  | "interpersonal-careful-connector"
+  | "interpersonal-situational-growth"
+  | "interpersonal-flexible-communicator"
+  | "interpersonal-trust-coordinator";
+export type InterpersonalResultProfile = {
+  slug: InterpersonalResultSlug;
+  title: string;
+  icon: string;
+  minScore: number;
+  maxScore: number;
+  summary: string;
+  description: string;
+  strengths: string[];
+  cautions: string[];
+  recommendations: string[];
+  image: string;
+  shareText: string;
+};
+export type InterpersonalDimensionGuide = {
+  key: InterpersonalDimension;
+  title: string;
+  description: string;
+  recommendations: string[];
 };
 
 export type WizardCharacterTrait =

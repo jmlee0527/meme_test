@@ -352,6 +352,7 @@ export const btsFanTest: TestDefinition = {
   thumbnail: "/tests/bts-fan.jpg",
   participants: 1096,
   accent: "purple",
+  fanTheme: "purple-night",
   isNew: true,
   itemCount: BTS_FAN_QUIZ_SIZE,
   questions: [],

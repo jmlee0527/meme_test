@@ -8,6 +8,8 @@ import { consumerStyleTest } from "@/data/consumer-style";
 import { loveMbtiTest } from "@/data/love-mbti";
 import { loverScoreTest } from "@/data/lover-score";
 import { jealousyTest } from "@/data/jealousy-test";
+import { relationshipSatisfactionTest } from "@/data/relationship-satisfaction";
+import { interpersonalAbilityTest } from "@/data/interpersonal-ability";
 import { dailyFortuneTest } from "@/data/fortune-data";
 import { attachmentStyleTest } from "@/data/attachment-style";
 import { joseonDestinyTest } from "@/data/joseon-destiny";
@@ -119,7 +121,7 @@ export const resultProfiles: ResultProfile[] = [
   profile("digital-template", "디지털 템플릿 판매", "🧩", "정리 능력을 반복 판매 가능한 상품으로 만드는 설계형", [2,2,0,1,2,2,-2,-1,2,-2,-1,0], { initialCost:"0~5만 원", monetizationSpeed:"1~3개월", platforms:["크몽","Gumroad","Notion 템플릿 갤러리"] }),
 ];
 
-export const tests: TestDefinition[] = [egoResilienceTest, workaholicTest, {
+export const tests: TestDefinition[] = [interpersonalAbilityTest, relationshipSatisfactionTest, egoResilienceTest, workaholicTest, {
   slug: "side-job-recommendation",
   title: "나에게 맞는 부업 추천 테스트",
   shortTitle: "부업 추천 테스트",

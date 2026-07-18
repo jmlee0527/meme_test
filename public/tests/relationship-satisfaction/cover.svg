@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640" role="img" aria-labelledby="title desc">
+  <title id="title">Relationship satisfaction test cover</title>
+  <desc id="desc">Soft digital illustration of two people talking comfortably under a warm sky.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ede9fe"/>
+      <stop offset=".55" stop-color="#fdf2f8"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" x2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="640" fill="url(#bg)"/>
+  <circle cx="170" cy="130" r="88" fill="#ffffff" opacity=".55"/>
+  <circle cx="870" cy="112" r="116" fill="#ffffff" opacity=".45"/>
+  <path d="M0 488c164-82 330-92 498-28 172 66 346 58 526-38v218H0z" fill="#fff" opacity=".75"/>
+  <path d="M194 438c140-128 252-128 370 0s228 128 330 0" fill="none" stroke="url(#path)" stroke-width="28" stroke-linecap="round" opacity=".55"/>
+  <g transform="translate(290 168)">
+    <circle cx="126" cy="78" r="54" fill="#7c3aed"/>
+    <path d="M54 282c8-88 42-142 102-160 58 20 88 72 88 160z" fill="#8b5cf6"/>
+    <circle cx="124" cy="79" r="37" fill="#f8d8ca"/>
+    <path d="M83 63c18-48 89-44 104 4-26-17-64-20-104-4z" fill="#312e81"/>
+    <rect x="246" y="68" width="246" height="108" rx="54" fill="#fff" opacity=".86"/>
+    <circle cx="307" cy="122" r="12" fill="#a78bfa"/>
+    <circle cx="369" cy="122" r="12" fill="#f472b6"/>
+    <circle cx="431" cy="122" r="12" fill="#60a5fa"/>
+  </g>
+  <g transform="translate(548 214)">
+    <circle cx="122" cy="74" r="54" fill="#ec4899"/>
+    <path d="M48 236c9-74 42-120 99-138 56 18 88 64 94 138z" fill="#f472b6"/>
+    <circle cx="122" cy="75" r="37" fill="#f6c7b8"/>
+    <path d="M83 59c24-42 86-36 103 9-31-12-61-15-103-9z" fill="#831843"/>
+  </g>
+  <path d="M497 184c32-42 98-22 98 35 0 54-50 88-98 124-48-36-98-70-98-124 0-57 66-77 98-35z" fill="#ffffff" opacity=".68"/>
+</svg>

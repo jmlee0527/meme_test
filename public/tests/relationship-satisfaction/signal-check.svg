@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Signal check relationship result</title>
+  <desc id="desc">Two people sitting apart with faint speech bubbles.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#eef2ff"/><stop offset=".55" stop-color="#fdf2f8"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient></defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="190" cy="178" r="112" fill="#fff" opacity=".55"/>
+  <circle cx="820" cy="194" r="138" fill="#fff" opacity=".42"/>
+  <rect x="160" y="674" width="704" height="70" rx="35" fill="#c4b5fd"/>
+  <rect x="264" y="424" width="108" height="214" rx="54" fill="#8b5cf6"/>
+  <circle cx="318" cy="356" r="58" fill="#f3c6b6"/>
+  <path d="M266 350c16-72 108-80 126-2-34-24-78-24-126 2z" fill="#312e81"/>
+  <rect x="652" y="424" width="108" height="214" rx="54" fill="#f472b6"/>
+  <circle cx="706" cy="356" r="58" fill="#f6cabd"/>
+  <path d="M650 342c30-64 111-58 125 18-34-25-76-28-125-18z" fill="#831843"/>
+  <rect x="198" y="230" width="214" height="92" rx="46" fill="#fff" opacity=".5"/>
+  <rect x="612" y="230" width="214" height="92" rx="46" fill="#fff" opacity=".5"/>
+  <circle cx="280" cy="276" r="9" fill="#a78bfa" opacity=".55"/>
+  <circle cx="320" cy="276" r="9" fill="#a78bfa" opacity=".45"/>
+  <circle cx="360" cy="276" r="9" fill="#a78bfa" opacity=".35"/>
+  <path d="M442 546c54-38 86-38 140 0" fill="none" stroke="#94a3b8" stroke-width="14" stroke-linecap="round" opacity=".38"/>
+</svg>

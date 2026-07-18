@@ -19,6 +19,7 @@ const accentClasses = {
 export function TestCard({ test, rank }: { test: TestDefinition; rank?: number }) {
   const reduceMotion = useReducedMotion();
   const pathname = usePathname();
+
   const href = test.href ?? `/tests/${test.slug}`;
   const countLabel = test.type === "worldcup" ? `${test.itemCount}강` : test.type === "fortune" ? `${test.itemCount ?? 5}장 카드` : test.type === "calculator" ? "이름 2개" : `${test.itemCount ?? test.questions.length}문항`;
   return (

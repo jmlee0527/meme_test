@@ -352,6 +352,7 @@ export const fromis9FanTest: TestDefinition = {
   thumbnail: "/tests/fromis9-fan.jpg",
   participants: 872,
   accent: "teal",
+  fanTheme: "pink-ticket",
   isNew: true,
   itemCount: FROMIS9_FAN_QUIZ_SIZE,
   questions: [],

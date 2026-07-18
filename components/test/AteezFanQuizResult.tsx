@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { MobileShareDock } from "@/components/share/MobileShareDock";
 import { ShareButtons } from "@/components/share/ShareButtons";
+import { getFanQuizLevel } from "@/config/fanQuizThemes";
 import type { AteezAnswer } from "@/lib/ateez-fan-engine";
 import { calculateAteezResult, encodeAteezAnswers } from "@/lib/ateez-fan-engine";
 
@@ -15,7 +16,8 @@ export function AteezFanQuizResult({ answers }: { answers: AteezAnswer[] | null 
   const encoded = encodeAteezAnswers(answers);
   const sharePath = `/ateez-true-fan-test/result/${result.grade.slug}?r=${encoded}`;
   const shownReviews = showAll ? result.reviews : result.reviews.filter((review) => !review.correct);
-  const shareText = `나는 ATEEZ 찐팬 테스트에서 15문제 중 ${result.score}문제 정답! 내 에이티니 덕력은 ‘${result.grade.title}’ 💎`;
+  const level = getFanQuizLevel(result.score, 15);
+  const shareText = `나는 ATEEZ 찐팬 테스트 ${level}레벨! 15문제 중 ${result.score}문제 정답, 내 에이티니 덕력은 ‘${result.grade.title}’`;
 
   const retry = () => { window.sessionStorage.removeItem("mimi-ateez-true-fan-test-session"); window.location.href = "/tests/ateez-true-fan-test?start=1"; };
 
@@ -24,7 +26,7 @@ export function AteezFanQuizResult({ answers }: { answers: AteezAnswer[] | null 
       <div className="mx-auto max-w-4xl">
         <section className="overflow-hidden rounded-[2.25rem] border border-violet-100 bg-white text-center shadow-2xl shadow-violet-100/70">
           <div className="bg-gradient-to-br from-violet-600 via-fuchsia-500 to-rose-400 px-6 py-10 text-white sm:py-14"><p className="text-sm font-bold text-white/80">나의 에이티니 덕력 결과</p><div className="mt-5 text-6xl">{result.grade.icon}</div><h1 className="mt-3 text-4xl font-black sm:text-5xl">{result.grade.title}</h1><p className="mx-auto mt-4 max-w-xl font-semibold leading-7 text-white/90">{result.grade.summary}</p></div>
-          <div className="grid grid-cols-3 gap-px bg-slate-100"><div className="bg-white p-5"><span className="block text-xs text-slate-500">점수</span><strong className="text-2xl text-violet-700">{result.score}/15</strong></div><div className="bg-white p-5"><span className="block text-xs text-slate-500">정답률</span><strong className="text-2xl text-violet-700">{result.accuracy}%</strong></div><div className="bg-white p-5"><span className="block text-xs text-slate-500">문항</span><strong className="text-2xl text-violet-700">15</strong></div></div>
+          <div className="grid grid-cols-3 gap-px bg-slate-100"><div className="bg-white p-5"><span className="block text-xs text-slate-500">LEVEL</span><strong className="text-2xl text-violet-700">{level}</strong></div><div className="bg-white p-5"><span className="block text-xs text-slate-500">정답률</span><strong className="text-2xl text-violet-700">{result.accuracy}%</strong></div><div className="bg-white p-5"><span className="block text-xs text-slate-500">점수</span><strong className="text-2xl text-violet-700">{result.score}/15</strong></div></div>
         </section>
 
         <section className="mt-7 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8"><h2 className="text-xl font-black text-ink">난이도별 정답 수</h2><div className="mt-5 grid gap-3 sm:grid-cols-3">{result.byDifficulty.map((row) => <div key={row.difficulty} className="rounded-2xl bg-slate-50 p-4"><div className="flex justify-between font-bold"><span>{row.difficulty}</span><span>{row.correct}/{row.total}</span></div><div className="mt-3 h-2.5 overflow-hidden rounded-full bg-slate-200"><div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-rose-400" style={{ width: `${(row.correct / row.total) * 100}%` }} /></div></div>)}</div></section>

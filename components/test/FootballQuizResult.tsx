@@ -8,6 +8,7 @@ import { ShareImageCard } from "@/components/share/ShareImageCard";
 import { MobileShareDock } from "@/components/share/MobileShareDock";
 import { SectionReveal } from "@/components/motion/SectionReveal";
 import { AdRectangle } from "@/components/ads/AdRectangle";
+import { formatFanQuizLevel, getFanQuizLevel } from "@/config/fanQuizThemes";
 import { footballGradeProfiles } from "@/data/football-quiz";
 import type { FootballGradeProfile, FootballQuizQuestion } from "@/lib/types";
 
@@ -49,6 +50,7 @@ export function FootballQuizResult({ grade, score, correctCount, total, wrong, e
   const shareScore = score ?? grade.maxScore;
   const shareTitle = grade.shareTemplate.replace("{score}", String(shareScore));
   const sharePath = `/football-iq-test/result/${grade.slug}${encodedAnswers ? `?r=${encodedAnswers}` : ""}`;
+  const level = getFanQuizLevel(shareScore, 100);
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#dcfce7_0,#f0fdf4_34%,#f8fafc_100%)] pb-24 pt-8 sm:py-14">
@@ -58,19 +60,15 @@ export function FootballQuizResult({ grade, score, correctCount, total, wrong, e
           <SectionReveal>
             <section className="overflow-hidden rounded-3xl border border-green-100 bg-white text-center shadow-card">
               <div className="bg-gradient-to-b from-green-50 to-white px-6 pb-6 pt-10 sm:pt-14">
-                <p className="text-sm font-extrabold text-green-600">{hasResult ? "나의 축잘알 지수는" : "축잘알 테스트 결과 등급"}</p>
+                <p className="text-sm font-extrabold text-green-600">{hasResult ? "나의 축잘알 레벨은" : "축잘알 테스트 결과 등급"}</p>
                 <div className="mt-5 text-7xl" aria-hidden="true">{grade.icon}</div>
                 <h1 className="mt-4 text-4xl font-black tracking-tight text-ink sm:text-5xl">{grade.name}</h1>
                 <p className="mt-3 text-base font-medium text-slate-600">{grade.summary}</p>
                 <div className="mx-auto mt-7 grid size-36 place-items-center rounded-full p-2 shadow-lg" style={{ background: `conic-gradient(#16A34A ${hasResult ? displayScore : 100}%, #DCFCE7 0)` }}>
                   <div className="grid size-full place-items-center rounded-full bg-white">
                     <span>
-                      {hasResult ? (
-                        <strong className="block text-4xl font-black text-green-600">{displayScore}<span className="text-lg">점</span></strong>
-                      ) : (
-                        <strong className="block text-2xl font-black text-green-600">{grade.minScore}~{grade.maxScore}점</strong>
-                      )}
-                      <span className="text-[11px] font-bold text-slate-400">축잘알 지수</span>
+                      <strong className="block text-3xl font-black text-green-600">{formatFanQuizLevel(level)}</strong>
+                      <span className="mt-1 block text-[11px] font-bold text-slate-400">{hasResult ? `${displayScore}/100점` : `${grade.minScore}~${grade.maxScore}점 구간`}</span>
                     </span>
                   </div>
                 </div>
@@ -134,7 +132,7 @@ export function FootballQuizResult({ grade, score, correctCount, total, wrong, e
           )}
 
           <section id="share-card" className="mt-10 grid scroll-mt-24 gap-6 rounded-3xl bg-ink p-6 text-white sm:p-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-            <ShareImageCard emoji={grade.icon} eyebrow="나의 축잘알 지수는" title={`${shareScore}점 · ${grade.name}`} subtitle={grade.summary} badge={`축잘알 지수 ${shareScore}점`} accent="green" />
+            <ShareImageCard emoji={grade.icon} eyebrow="나의 축잘알 레벨은" title={`${formatFanQuizLevel(level)} · ${grade.name}`} subtitle={grade.summary} badge={`축잘알 지수 ${shareScore}점`} accent="green" />
             <div>
               <h2 className="text-xl font-extrabold">과연 친구는 나보다 축구를 더 잘 알까?</h2>
               <p className="mt-2 text-sm leading-6 text-slate-300">결과를 공유하고 단톡방에서 진짜 축잘알을 가려보세요.</p>

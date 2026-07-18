@@ -8,7 +8,9 @@ import { ShareImageCard } from "@/components/share/ShareImageCard";
 import { MobileShareDock } from "@/components/share/MobileShareDock";
 import { SectionReveal } from "@/components/motion/SectionReveal";
 import { AdRectangle } from "@/components/ads/AdRectangle";
-import { FROMIS9_FAN_QUIZ_SIZE, fromis9FanGradeProfiles } from "@/data/fromis9-fan";
+import { FanQuizResultBadge } from "@/components/fan-quiz/FanQuizResultBadge";
+import { formatFanQuizLevel, getFanQuizLevel, getTestFanQuizTheme } from "@/config/fanQuizThemes";
+import { FROMIS9_FAN_QUIZ_SIZE, fromis9FanGradeProfiles, fromis9FanTest } from "@/data/fromis9-fan";
 import type { Fromis9FanGradeProfile, Fromis9QuizQuestion } from "@/lib/types";
 
 function useCountUp(target: number, duration = 900) {
@@ -55,6 +57,8 @@ export function Fromis9FanQuizResult({ grade, score, easyCorrect, mediumCorrect,
   const difficultyCorrect = { easy: easyCorrect ?? 0, medium: mediumCorrect ?? 0, hard: hardCorrect ?? 0 };
   const shareTitle = grade.shareText.replace("{score}", String(shownScore));
   const sharePath = `/fromis9-fan-test/result/${grade.slug}${encodedAnswers ? `?r=${encodedAnswers}` : ""}`;
+  const theme = getTestFanQuizTheme(fromis9FanTest);
+  const level = getFanQuizLevel(shownScore, FROMIS9_FAN_QUIZ_SIZE);
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#e0f2fe_0,#f0fdfa_34%,#f8fafc_100%)] pb-24 pt-8 sm:py-14">
@@ -69,17 +73,13 @@ export function Fromis9FanQuizResult({ grade, score, easyCorrect, mediumCorrect,
               <div className="absolute -right-24 bottom-8 size-64 rounded-full bg-teal-200/50 blur-3xl" />
               <div className="relative px-6 pb-8 pt-10 sm:px-10 sm:pt-14">
                 <p className="text-sm font-extrabold text-sky-600">{hasResult ? "나의 프로미스나인 팬심 지수는" : "프로미스나인 찐팬 테스트 결과 등급"}</p>
-                <div className="mx-auto mt-6 grid size-40 place-items-center rounded-full p-2 shadow-lg" style={{ background: `conic-gradient(#38bdf8 ${((hasResult ? displayScore : grade.maxScore) / FROMIS9_FAN_QUIZ_SIZE) * 100}%, #e2e8f0 0)` }}>
-                  <div className="grid size-full place-items-center rounded-full bg-white">
-                    <span>
-                      {hasResult ? (
-                        <strong className="block text-5xl font-black tabular-nums text-sky-600">{displayScore}<span className="text-xl text-sky-400">/{FROMIS9_FAN_QUIZ_SIZE}</span></strong>
-                      ) : (
-                        <strong className="block text-2xl font-black text-sky-600">{grade.minScore === grade.maxScore ? `${grade.maxScore}점` : `${grade.minScore}~${grade.maxScore}점`}</strong>
-                      )}
-                      <span className="text-[11px] font-bold text-slate-400">FLOVER INDEX</span>
-                    </span>
-                  </div>
+                <div className="mt-6">
+                  <FanQuizResultBadge
+                    theme={theme}
+                    label="FLOVER LEVEL"
+                    score={formatFanQuizLevel(level)}
+                    subtitle={hasResult ? `${displayScore}/${FROMIS9_FAN_QUIZ_SIZE} 정답` : grade.minScore === grade.maxScore ? `${grade.maxScore}점 구간` : `${grade.minScore}~${grade.maxScore}점 구간`}
+                  />
                 </div>
                 <div className="mt-6 text-6xl" aria-hidden="true">{grade.icon}</div>
                 <h1 className="mt-3 text-3xl font-black tracking-tight text-ink sm:text-5xl">{grade.name}</h1>
@@ -181,7 +181,7 @@ export function Fromis9FanQuizResult({ grade, score, easyCorrect, mediumCorrect,
           )}
 
           <section id="share-card" className="mt-10 grid scroll-mt-24 gap-6 rounded-3xl bg-ink p-6 text-white sm:p-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
-            <ShareImageCard emoji={grade.icon} eyebrow="프로미스나인 찐팬 테스트" title={`${shownScore}점 · ${grade.name}`} subtitle={grade.subtitle} badge={`${shownScore}/${FROMIS9_FAN_QUIZ_SIZE}점`} accent="blue" />
+            <ShareImageCard emoji={grade.icon} eyebrow="프로미스나인 찐팬 테스트" title={`${formatFanQuizLevel(level)} · ${grade.name}`} subtitle={grade.subtitle} badge={`${shownScore}/${FROMIS9_FAN_QUIZ_SIZE}점`} accent="blue" />
             <div>
               <h2 className="text-xl font-extrabold">친구는 진짜 플로버일까?</h2>
               <p className="mt-2 text-sm leading-6 text-slate-300">결과를 공유하고 누가 더 찐팬인지 가려보세요. 문제는 매번 새로 출제되며 정답 내용은 공유되지 않습니다.</p>

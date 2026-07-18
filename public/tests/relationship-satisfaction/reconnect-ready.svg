@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Reconnect ready relationship result</title>
+  <desc id="desc">Two people gently tying a loose thread together.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f5f3ff"/><stop offset=".6" stop-color="#fce7f3"/><stop offset="1" stop-color="#dbeafe"/></linearGradient></defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="502" r="314" fill="#fff" opacity=".45"/>
+  <path d="M244 548c142-88 226-84 268 12 42-96 126-100 268-12" fill="none" stroke="#a78bfa" stroke-width="20" stroke-linecap="round"/>
+  <path d="M474 514c30 42 48 42 76 0" fill="none" stroke="#ec4899" stroke-width="18" stroke-linecap="round"/>
+  <g transform="translate(230 338)">
+    <circle cx="92" cy="70" r="52" fill="#f2c4b6"/>
+    <path d="M42 63c24-58 91-61 113 8-36-20-68-22-113-8z" fill="#312e81"/>
+    <path d="M42 290c10-92 42-146 106-166 54 24 82 78 86 166z" fill="#8b5cf6"/>
+    <path d="M166 196l134 84" stroke="#7c3aed" stroke-width="28" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(560 338)">
+    <circle cx="142" cy="70" r="52" fill="#f6cabd"/>
+    <path d="M88 62c30-56 96-54 114 14-42-19-74-22-114-14z" fill="#831843"/>
+    <path d="M0 290c7-92 38-146 92-166 64 20 98 74 106 166z" fill="#f472b6"/>
+    <path d="M44 280l134-84" stroke="#db2777" stroke-width="28" stroke-linecap="round"/>
+  </g>
+  <circle cx="512" cy="552" r="36" fill="#fff"/>
+  <path d="M490 552h44" stroke="#ec4899" stroke-width="12" stroke-linecap="round"/>
+</svg>

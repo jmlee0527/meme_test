@@ -206,6 +206,7 @@ export const youngtakFanTest: TestDefinition = {
   thumbnail: "/tests/youngtak-fan.jpg",
   participants: 9344,
   accent: "pink",
+  fanTheme: "yellow-pop",
   isNew: true,
   itemCount: YOUNGTAK_FAN_QUIZ_SIZE,
   questions: [],
