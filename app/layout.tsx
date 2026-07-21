@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   authors: [{ name: `${siteConfig.name} 편집팀`, url: siteConfig.url }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
+  appleWebApp: { capable: true, title: siteConfig.name, statusBarStyle: "default" },
+  formatDetection: { telephone: false, address: false, email: false },
   openGraph: {
     type: "website", locale: "ko_KR", url: siteConfig.url, siteName: siteConfig.name,
     title: `${siteConfig.name} | 나를 알아보는 종합 테스트 플랫폼`, description: siteConfig.description,
@@ -40,11 +42,14 @@ export const metadata: Metadata = {
       "naver-site-verification": "97146937e1ed5736dc54af00fd6868844bcfe1de",
     },
   },
+  other: {
+    "google-adsense-account": adsenseClientId,
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   category: "business",
 };
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#F8FAFC", colorScheme: "light" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#7C3AED", colorScheme: "light" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -86,10 +91,16 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '${googleAnalyticsId}');`}
         </Script>
+        <a href="#main-content" className="skip-link">메인 콘텐츠로 건너뛰기</a>
         <JsonLd data={{
           "@context": "https://schema.org", "@type": "WebSite", name: siteConfig.name,
           alternateName: siteConfig.englishName, url: siteConfig.url,
           description: siteConfig.description, inLanguage: "ko-KR",
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `${absoluteUrl("/search")}?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
         }} />
         <JsonLd data={{
           "@context":"https://schema.org", "@type":"Organization", "@id":absoluteUrl("/#organization"),
@@ -97,7 +108,7 @@ gtag('config', '${googleAnalyticsId}');`}
           logo:absoluteUrl("/icon.svg"), description:siteConfig.description,
         }} />
         <Header />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
         <FeedbackReportButton />
         <Analytics />

@@ -5,7 +5,7 @@ import { SectionReveal } from "@/components/motion/SectionReveal";
 import { HomeHeroBanner } from "@/components/home/HomeHeroBanner";
 import { homeBanners } from "@/data/home-banners";
 import { tests } from "@/data/tests";
-import { createMetadata } from "@/lib/site";
+import { absoluteUrl, createMetadata } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "미미테스트 | 나를 알아보는 종합 테스트 플랫폼",
@@ -19,6 +19,7 @@ const rankedTests = [...tests].sort((a, b) => b.participants - a.participants);
 const popularFanTests = rankedTests.filter((test) => test.category === "팬 퀴즈").slice(0, 8);
 const newTests = tests.filter((test) => test.isNew).slice(0, 4);
 const personalityTests = tests.filter((test) => test.category === "성격.심리").slice(0, 4);
+const homeVisibleTests = [...popularFanTests, ...newTests, ...personalityTests];
 
 export default function HomePage() {
   return (
@@ -49,6 +50,17 @@ export default function HomePage() {
       </section>
 
       <JsonLd data={{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "테스트는 무료인가요?", acceptedAnswer: { "@type": "Answer", text: "네, 모든 테스트는 회원가입 없이 무료로 이용할 수 있습니다." } }, { "@type": "Question", name: "결과는 어떻게 계산하나요?", acceptedAnswer: { "@type": "Answer", text: "각 답변을 테스트별 성향 가중치와 비교해 가장 가까운 결과를 제공합니다." } }] }} />
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "미미테스트 홈 추천 테스트",
+        itemListElement: homeVisibleTests.map((test, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: test.title,
+          url: absoluteUrl(test.href ?? `/tests/${test.slug}`),
+        })),
+      }} />
     </>
   );
 }

@@ -10,7 +10,7 @@ export const TEST_CATEGORY_TILES = [
 
 export function CategoryTiles({ activeCategory }: { activeCategory?: string }) {
   return (
-    <nav aria-label="테스트 카테고리" className="grid grid-cols-3 gap-3 sm:grid-cols-5">
+    <nav aria-label="테스트 카테고리" className="grid grid-cols-2 gap-3 min-[420px]:grid-cols-3 sm:grid-cols-5">
       {TEST_CATEGORY_TILES.map(([icon, label, tone]) => {
         const isActive = activeCategory === label;
         return (

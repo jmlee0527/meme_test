@@ -35,7 +35,7 @@ export function FanQuizLanding({ test, insight, answerType = "4지선다" }: Pro
     <div style={style} className="bg-[var(--fan-background)]">
       <div className="container-page py-10 sm:py-14">
         <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: test.shortTitle }]} />
-        <section style={posterStyle} className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-[var(--fan-border)] bg-[var(--fan-surface)]">
+        <section style={posterStyle} className="container-wide-readable relative overflow-hidden rounded-[2rem] border border-[var(--fan-border)] bg-[var(--fan-surface)]">
           <div className="absolute inset-0 opacity-50 [background-image:radial-gradient(circle_at_1px_1px,var(--fan-border)_1px,transparent_0)] [background-size:22px_22px]" aria-hidden="true" />
           <div className="absolute left-5 top-5 h-8 w-24 rotate-[-5deg] rounded-md bg-white/75 shadow-sm" aria-hidden="true" />
           <div className="absolute bottom-8 right-5 h-8 w-24 rotate-6 rounded-md bg-white/70 shadow-sm" aria-hidden="true" />
@@ -82,14 +82,14 @@ export function FanQuizLanding({ test, insight, answerType = "4지선다" }: Pro
           </div>
         </section>
 
-        <section className="mx-auto mt-10 max-w-5xl rounded-[1.75rem] border border-[var(--fan-border)] bg-white/85 p-6 shadow-card sm:p-8">
+        <section className="container-wide-readable mt-10 rounded-[1.75rem] border border-[var(--fan-border)] bg-white/85 p-6 shadow-card sm:p-8">
           <span className="inline-flex rounded-full bg-[var(--fan-background)] px-3 py-1 text-xs font-black text-[var(--fan-primary)]">FAN KIT NOTE</span>
           <h2 className="mt-4 text-xl font-black text-[var(--fan-text)]">이 팬 퀴즈로 확인할 수 있어요</h2>
           <p className="mt-3 max-w-3xl leading-7 text-[var(--fan-muted)]">{insight}</p>
         </section>
 
         <TestSeoContent test={test} itemCount={itemCount} answerType={answerType} />
-        <div className="mx-auto mt-8 max-w-5xl text-center">
+        <div className="container-wide-readable mt-8 text-center">
           <Link href={`/category/${encodeURIComponent(test.category)}`} className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[var(--fan-border)] bg-white px-5 text-sm font-bold text-[var(--fan-primary)] hover:bg-[var(--fan-background)]">
             다른 팬 퀴즈 둘러보기
           </Link>

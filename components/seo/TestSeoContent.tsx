@@ -24,7 +24,7 @@ export function TestSeoContent({ test, itemCount, answerType, path, includeQuizS
   ] : [];
   const faqs = [...seo.faqs, ...commonFaqs];
   return (
-    <section className="mx-auto mt-8 max-w-3xl rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
+    <section className="container-readable mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
       <h2 className="text-2xl font-black text-ink">{seo.heading}</h2>
       <div className="mt-4 space-y-5 text-sm leading-8 text-slate-700">
         {seo.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}

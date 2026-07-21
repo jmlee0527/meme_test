@@ -9,9 +9,9 @@ export function StandardTestLanding({ test, insight, answerType = "4지선다" }
   return (
     <div className="container-page py-10 sm:py-14">
       <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: test.shortTitle }]} />
-      <section className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
+      <section className="container-readable overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
         {test.thumbnail ? (
-          <div className="relative aspect-[16/10] min-h-60 w-full bg-slate-100">
+          <div className="relative aspect-[4/3] w-full bg-slate-100 sm:aspect-[16/10]">
             <Image src={test.thumbnail} alt={test.title} fill sizes="(max-width:768px) 100vw, 768px" className="object-cover object-[center_20%]" priority />
           </div>
         ) : (
@@ -26,12 +26,12 @@ export function StandardTestLanding({ test, insight, answerType = "4지선다" }
           <p className="mt-3 text-center text-xs text-slate-400">응답은 서버에 저장되지 않습니다.</p>
         </div>
       </section>
-      <section className="mx-auto mt-12 max-w-3xl rounded-3xl bg-white p-6 sm:p-8">
+      <section className="container-readable mt-12 rounded-3xl bg-white p-6 sm:p-8">
         <h2 className="text-xl font-extrabold text-ink">이 테스트로 알 수 있어요</h2>
         <p className="mt-3 leading-7 text-slate-600">{insight}</p>
       </section>
       <TestSeoContent test={test} itemCount={itemCount} answerType={answerType} />
-      <div className="mx-auto mt-8 max-w-3xl text-center"><Link href="/tests" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-bold text-slate-700 hover:bg-slate-50">다른 테스트 둘러보기</Link></div>
+      <div className="container-readable mt-8 text-center"><Link href="/tests" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-bold text-slate-700 hover:bg-slate-50">다른 테스트 둘러보기</Link></div>
     </div>
   );
 }

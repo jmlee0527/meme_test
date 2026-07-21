@@ -162,7 +162,7 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
   };
 
   return (
-    <section className="mx-auto max-w-2xl" aria-labelledby="question-title">
+    <section className="container-readable max-w-2xl" aria-labelledby="question-title">
       <div className="mb-8">
         <div className="mb-3 flex items-center justify-between text-sm font-bold">
           <span className="text-primary">질문 {index + 1}</span>
@@ -175,10 +175,10 @@ export function TestRunner({ test, currentAge }: { test: TestDefinition; current
 
       <div key={index} className="animate-fade-up rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-10">
         <p className="text-sm font-bold text-slate-400">Q{index + 1}</p>
-        <h1 id="question-title" className={`${isMultipleChoice ? "min-h-16" : "min-h-24"} mt-3 text-xl font-extrabold leading-relaxed tracking-tight text-ink sm:text-2xl`}>{question.text}</h1>
+        <h1 id="question-title" className={`${isMultipleChoice ? "min-h-16" : "min-h-24"} mt-3 text-lg font-extrabold leading-relaxed tracking-tight text-ink sm:text-2xl`}>{question.text}</h1>
         {question.options ? <div className="mt-7 space-y-3">{question.options.map((option) => {
           const active = selected === option.value;
-          return <button key={option.label} type="button" aria-pressed={active} onClick={() => select(option.value)} className={`flex min-h-16 w-full items-center gap-3 rounded-2xl border-2 p-3 text-left transition duration-200 active:scale-[0.99] sm:p-4 ${active ? "border-orange-400 bg-orange-50 text-orange-950 shadow-sm" : "border-slate-200 bg-white text-slate-700 hover:border-orange-200 hover:bg-orange-50/40"}`}><span className={`grid size-10 shrink-0 place-items-center rounded-xl text-sm font-black ${active ? "bg-orange-500 text-white" : "bg-slate-100 text-slate-500"}`}>{option.label}</span><span className="text-sm font-semibold leading-6 sm:text-base">{option.text}</span></button>;
+          return <button key={option.label} type="button" aria-pressed={active} onClick={() => select(option.value)} className={`flex min-h-16 w-full items-center gap-3 rounded-2xl border-2 p-3 text-left transition duration-200 active:scale-[0.99] sm:p-4 ${active ? "border-orange-400 bg-orange-50 text-orange-950 shadow-sm" : "border-slate-200 bg-white text-slate-700 hover:border-orange-200 hover:bg-orange-50/40"}`}><span className={`grid size-10 shrink-0 place-items-center rounded-xl text-sm font-black ${active ? "bg-orange-500 text-white" : "bg-slate-100 text-slate-500"}`}>{option.label}</span><span className="min-w-0 text-sm font-semibold leading-6 sm:text-base">{option.text}</span></button>;
         })}</div> : <div className="mt-8 grid grid-cols-2 gap-3">
           {([true, false] as const).map((answer) => {
             const active = selected === answer;
