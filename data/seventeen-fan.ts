@@ -53,7 +53,7 @@ export const seventeenFanTest: TestDefinition = {
   duration: "약 3분",
   icon: "💎",
   thumbnail: "/tests/seventeen-fan.jpg",
-  participants: 717,
+  participants: 5717,
   accent: "indigo",
   fanTheme: "blue-spotlight",
   isNew: true,

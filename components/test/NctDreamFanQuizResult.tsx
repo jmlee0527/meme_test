@@ -66,20 +66,6 @@ export function NctDreamFanQuizResult({ answers }: { answers: NctDreamAnswer[] |
           </section>
 
           <section className="mt-7 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
-            <h2 className="text-xl font-black text-ink">난이도별 정답 수</h2>
-            <div className="mt-5 grid gap-3 sm:grid-cols-3">
-              {result.byDifficulty.map((row) => (
-                <div key={row.difficulty} className="rounded-2xl bg-slate-50 p-4">
-                  <div className="flex justify-between font-bold"><span>{row.difficulty}</span><span>{row.correct}/{row.total}</span></div>
-                  <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-slate-200">
-                    <div className="h-full rounded-full" style={{ width: `${(row.correct / row.total) * 100}%`, background: theme.primary }} />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section className="mt-7 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="text-xl font-black text-ink">{showAll ? "전체 정답 보기" : "틀린 문제 해설"}</h2>
               <button type="button" onClick={() => setShowAll((value) => !value)} className="min-h-11 rounded-xl border px-4 text-sm font-bold" style={{ borderColor: theme.border, color: theme.primary }}>{showAll ? "오답만 보기" : "전체 정답 펼치기"}</button>
@@ -92,7 +78,6 @@ export function NctDreamFanQuizResult({ answers }: { answers: NctDreamAnswer[] |
                     <dl className="mt-4 grid gap-2 text-sm">
                       <div><dt className="inline font-black text-slate-500">내 답: </dt><dd className="inline">{review.question.choices[review.choice]}</dd></div>
                       <div><dt className="inline font-black text-emerald-600">정답: </dt><dd className="inline font-bold">{review.question.answer}</dd></div>
-                      <div><dt className="inline font-black text-slate-500">난이도: </dt><dd className="inline">{review.question.difficulty} · {review.question.weight}점</dd></div>
                     </dl>
                     <p className="mt-4 border-t border-slate-200 pt-4 text-sm leading-6 text-slate-600">{review.question.explanation}</p>
                     <p className="mt-2 text-xs text-slate-400">검증 기준: 2026년 7월</p>

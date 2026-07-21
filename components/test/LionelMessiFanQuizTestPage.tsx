@@ -1,17 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { FanQuizProgress } from "@/components/fan-quiz/FanQuizProgress";
 import { FanQuizQuestionCard } from "@/components/fan-quiz/FanQuizQuestionCard";
-import { NCT_DREAM_QUIZ_SIZE, nctDreamFanTest } from "@/data/nct-dream-fan";
 import { getTestFanQuizTheme } from "@/config/fanQuizThemes";
-import { calculateNctDreamResult, createNctDreamSession, encodeNctDreamAnswers } from "@/lib/nct-dream-fan-engine";
-import type { NctDreamPresentedQuestion } from "@/lib/nct-dream-fan-engine";
+import { MESSI_QUIZ_SIZE, lionelMessiFanTest } from "@/data/lionel-messi-fan";
+import { calculateMessiResult, createMessiSession, encodeMessiAnswers } from "@/lib/lionel-messi-fan-engine";
+import type { MessiPresentedQuestion } from "@/lib/lionel-messi-fan-engine";
 
-const SESSION_KEY = "mimi-nct-dream-true-fan-session";
-const RECENT_KEY = "mimi-nct-dream-true-fan-recent";
+const SESSION_KEY = "mimi-lionel-messi-true-fan-session";
+const RECENT_KEY = "mimi-lionel-messi-true-fan-recent";
 const choiceBadges = ["A", "B", "C", "D"];
 
 const track = (event: string, params?: Record<string, string | number>) =>
@@ -19,11 +19,11 @@ const track = (event: string, params?: Record<string, string | number>) =>
 
 const newSeed = () => `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 
-export function NctDreamFanQuizTestPage() {
+export function LionelMessiFanQuizTestPage() {
   const router = useRouter();
   const reduceMotion = useReducedMotion();
-  const theme = getTestFanQuizTheme(nctDreamFanTest);
-  const [questions, setQuestions] = useState<NctDreamPresentedQuestion[]>([]);
+  const theme = getTestFanQuizTheme(lionelMessiFanTest);
+  const [questions, setQuestions] = useState<MessiPresentedQuestion[]>([]);
   const [answers, setAnswers] = useState<number[]>([]);
   const [index, setIndex] = useState(0);
   const [locked, setLocked] = useState(false);
@@ -41,17 +41,17 @@ export function NctDreamFanQuizTestPage() {
 
     const seed = stored?.seed ?? newSeed();
     const initialAnswers = stored?.answers ?? [];
-    const initialIndex = Math.min(stored?.index ?? 0, NCT_DREAM_QUIZ_SIZE - 1);
-    setQuestions(createNctDreamSession(seed, Array.isArray(recent) ? recent : []));
+    const initialIndex = Math.min(stored?.index ?? 0, MESSI_QUIZ_SIZE - 1);
+    setQuestions(createMessiSession(seed, Array.isArray(recent) ? recent : []));
     setAnswers(initialAnswers);
     setIndex(initialIndex);
     sessionStorage.setItem(SESSION_KEY, JSON.stringify({ seed, answers: initialAnswers, index: initialIndex }));
-    track("test_start", { test_id: "nct-dream-true-fan-test", category: "fan_quiz" });
+    track("test_start", { test_id: "lionel-messi-true-fan-test", category: "fan_quiz" });
   }, []);
 
   const current = questions[index];
   const selected = answers[index];
-  const progress = Math.round(((index + 1) / NCT_DREAM_QUIZ_SIZE) * 100);
+  const progress = Math.round(((index + 1) / MESSI_QUIZ_SIZE) * 100);
 
   const choose = (shownIndex: number) => {
     if (!current || locked) return;
@@ -60,15 +60,15 @@ export function NctDreamFanQuizTestPage() {
     next[index] = originalChoice;
     setAnswers(next);
     setLocked(true);
-    track("test_answer", { test_id: "nct-dream-true-fan-test", question_number: index + 1 });
+    track("test_answer", { test_id: "lionel-messi-true-fan-test", question_number: index + 1 });
 
-    const nextIndex = Math.min(index + 1, NCT_DREAM_QUIZ_SIZE - 1);
+    const nextIndex = Math.min(index + 1, MESSI_QUIZ_SIZE - 1);
     const stored = JSON.parse(sessionStorage.getItem(SESSION_KEY) ?? "{}");
     sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...stored, answers: next, index: nextIndex }));
 
     window.setTimeout(() => {
       setLocked(false);
-      if (index < NCT_DREAM_QUIZ_SIZE - 1) {
+      if (index < MESSI_QUIZ_SIZE - 1) {
         setIndex(index + 1);
         return;
       }
@@ -77,10 +77,10 @@ export function NctDreamFanQuizTestPage() {
         questionId: question.originalId,
         choice: next[questionIndex],
       }));
-      const result = calculateNctDreamResult(payload);
+      const result = calculateMessiResult(payload);
       localStorage.setItem(RECENT_KEY, JSON.stringify(questions.map((question) => question.originalId)));
-      track("test_complete", { test_id: "nct-dream-true-fan-test", result_level: result.grade.slug, score: result.score });
-      router.push(`/nct-dream-true-fan-test/result/${result.grade.slug}?r=${encodeNctDreamAnswers(payload)}`);
+      track("test_complete", { test_id: "lionel-messi-true-fan-test", result_level: result.grade.slug, score: result.score });
+      router.push(`/lionel-messi-true-fan-test/result/${result.grade.slug}?r=${encodeMessiAnswers(payload)}`);
     }, reduceMotion ? 0 : 220);
   };
 
@@ -90,17 +90,17 @@ export function NctDreamFanQuizTestPage() {
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
             <div>
-              <p className="text-xs font-black tracking-[.16em]" style={{ color: theme.primary }}>{theme.label}</p>
-              <h1 className="mt-2 text-xl font-black sm:text-2xl" style={{ color: theme.text }}>NCT DREAM 찐팬 테스트</h1>
+              <p className="text-xs font-black tracking-[.16em]" style={{ color: theme.primary }}>MESSI TRUE FAN QUIZ</p>
+              <h1 className="mt-2 text-xl font-black sm:text-2xl" style={{ color: theme.text }}>리오넬 메시 찐팬 테스트</h1>
             </div>
-            <strong className="shrink-0 rounded-full bg-white px-3 py-1.5 text-sm shadow-sm" style={{ color: theme.mutedText }}>{index + 1} / {NCT_DREAM_QUIZ_SIZE}</strong>
+            <strong className="shrink-0 rounded-full bg-white px-3 py-1.5 text-sm shadow-sm" style={{ color: theme.mutedText }}>{index + 1} / {MESSI_QUIZ_SIZE}</strong>
           </div>
           <FanQuizProgress progress={progress} theme={theme} reduceMotion={reduceMotion} />
         </header>
 
         {!current ? (
           <section className="grid min-h-72 place-items-center rounded-[2rem] border bg-white/90 p-10 shadow-2xl" style={{ borderColor: theme.border, boxShadow: `0 24px 50px ${theme.shadow}` }} aria-busy="true">
-            <p className="font-bold text-slate-500">{nctDreamFanTest.icon} 검증된 문제를 구성하는 중...</p>
+            <p className="font-bold text-slate-500">⚽ 검증된 문제를 구성하는 중...</p>
           </section>
         ) : (
           <AnimatePresence mode="wait">
@@ -136,7 +136,7 @@ export function NctDreamFanQuizTestPage() {
           >
             ← 이전 문제
           </button>
-          <p className="text-right text-[11px] leading-5 text-slate-400">정답은 제출 후 공개됩니다.</p>
+          <p className="text-right text-[11px] leading-5 text-slate-400">정답은 결과에서 공개됩니다.</p>
         </div>
       </div>
     </main>

@@ -18,7 +18,6 @@ import {
 import type { Fromis9PresentedQuestion } from "@/lib/types";
 
 const choiceBadges = ["A", "B", "C", "D"];
-const difficultyLabels = { easy: "쉬움", medium: "보통", hard: "어려움" };
 
 export function Fromis9FanQuizTestPage() {
   const router = useRouter();
@@ -91,7 +90,6 @@ export function Fromis9FanQuizTestPage() {
                 theme={theme}
                 questionNumber={index + 1}
                 category={current.category}
-                difficulty={`난이도 ${difficultyLabels[current.difficulty]}`}
                 question={current.question}
                 options={current.choices.map((option, choiceIndex) => ({
                   label: choiceBadges[choiceIndex],
@@ -107,7 +105,7 @@ export function Fromis9FanQuizTestPage() {
 
         <div className="mt-5 flex items-center justify-between gap-4">
           <button type="button" onClick={() => setIndex((currentIndex) => Math.max(currentIndex - 1, 0))} disabled={index === 0 || !current || locked} className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 transition hover:bg-white disabled:opacity-30">← 이전 문제</button>
-          <p className="text-right text-[11px] leading-5 text-slate-400">쉬움 5 · 보통 5 · 어려움 5문제가 랜덤 출제됩니다.<br />본 퀴즈는 비공식 팬 콘텐츠입니다.</p>
+          <p className="text-right text-[11px] leading-5 text-slate-400">본 퀴즈는 비공식 팬 콘텐츠입니다.</p>
         </div>
       </div>
     </main>

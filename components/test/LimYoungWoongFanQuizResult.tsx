@@ -48,17 +48,6 @@ type Props = {
   encodedAnswers: string | null;
 };
 
-const difficultyRows = [
-  { key: "easy", label: "쉬움", total: 4, color: "bg-slate-500" },
-  { key: "medium", label: "보통", total: 6, color: "bg-amber-500" },
-  { key: "hard", label: "어려움", total: 4, color: "bg-pink-600" },
-  { key: "expert", label: "최상", total: 1, color: "bg-purple-700" },
-] as const;
-
-function difficultyLabel(difficulty: LimYoungWoongQuizQuestion["difficulty"]) {
-  return difficulty === "easy" ? "쉬움" : difficulty === "medium" ? "보통" : difficulty === "hard" ? "어려움" : "최상";
-}
-
 export function LimYoungWoongFanQuizResult({
   grade,
   fanIndex,
@@ -66,10 +55,6 @@ export function LimYoungWoongFanQuizResult({
   total,
   weightedScore,
   maxScore,
-  easyCorrect,
-  mediumCorrect,
-  hardCorrect,
-  expertCorrect,
   wrong,
   categoryRates,
   encodedAnswers,
@@ -77,7 +62,6 @@ export function LimYoungWoongFanQuizResult({
   const score = fanIndex ?? grade.maxScore;
   const displayScore = useCountUp(fanIndex ?? 0);
   const hasResult = fanIndex !== null;
-  const difficultyCorrect = { easy: easyCorrect ?? 0, medium: mediumCorrect ?? 0, hard: hardCorrect ?? 0, expert: expertCorrect ?? 0 };
   const shareTitle = (grade.shareTexts[0] ?? "나의 임영웅 팬심 지수는 {score}점!").replace("{score}", String(score));
   const sharePath = `/limyoungwoong-fan-test/result/${grade.slug}${encodedAnswers ? `?r=${encodedAnswers}` : ""}`;
   const level = getFanQuizLevel(score, 100);
@@ -108,8 +92,8 @@ export function LimYoungWoongFanQuizResult({
                   <div className="mx-auto mt-6 grid max-w-lg grid-cols-2 gap-3 sm:grid-cols-4">
                     <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">정답</span><strong className="text-xl">{totalCorrect}/{total}</strong></div>
                     <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">LEVEL</span><strong className="text-xl">{level}</strong></div>
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">어려움</span><strong className="text-xl">{hardCorrect}/4</strong></div>
-                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">최상</span><strong className="text-xl">{expertCorrect}/1</strong></div>
+                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">점수</span><strong className="text-xl">{weightedScore}/{maxScore}</strong></div>
+                    <div className="rounded-2xl border border-white/10 bg-white/10 p-3"><span className="block text-xs text-slate-300">팬 지수</span><strong className="text-xl">{score}점</strong></div>
                   </div>
                 )}
               </div>
@@ -121,22 +105,7 @@ export function LimYoungWoongFanQuizResult({
 
           <AdRectangle />
 
-          <section className="mt-8 grid gap-5 lg:grid-cols-[.95fr_1.05fr]">
-            <SectionReveal className="rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
-              <h2 className="text-xl font-extrabold text-ink">난이도별 정답</h2>
-              <div className="mt-6 space-y-4">
-                {difficultyRows.map((row) => {
-                  const correct = difficultyCorrect[row.key];
-                  const rate = Math.round((correct / row.total) * 100);
-                  return (
-                    <div key={row.key}>
-                      <div className="flex items-center justify-between text-sm font-bold"><span>{row.label}</span><span>{correct}/{row.total}</span></div>
-                      <div className="mt-2 h-3 overflow-hidden rounded-full bg-slate-100"><div className={`h-full rounded-full ${row.color}`} style={{ width: `${rate}%` }} /></div>
-                    </div>
-                  );
-                })}
-              </div>
-            </SectionReveal>
+          <section className="mt-8">
             <SectionReveal className="rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
               <h2 className="text-xl font-extrabold text-ink">분야별 정답률</h2>
               {categoryRates.length > 0 ? (
@@ -181,7 +150,6 @@ export function LimYoungWoongFanQuizResult({
                     <dl className="mt-4 space-y-2 text-sm">
                       <div className="flex gap-2"><dt className="shrink-0 font-black text-rose-500">내 답</dt><dd className="text-slate-600 line-through decoration-rose-300">{question.options[choice]}</dd></div>
                       <div className="flex gap-2"><dt className="shrink-0 font-black text-green-600">정답</dt><dd className="font-extrabold text-ink">{question.options[question.correctAnswer]}</dd></div>
-                      <div className="flex gap-2"><dt className="shrink-0 font-black text-slate-500">난이도</dt><dd className="text-slate-600">{difficultyLabel(question.difficulty)}</dd></div>
                     </dl>
                     <p className="mt-4 border-t border-slate-200 pt-4 text-sm leading-6 text-slate-600">💡 {question.explanation}</p>
                     <p className="mt-2 text-xs leading-5 text-slate-400">검증 메모: {question.factCheckNote} · 확인일 {question.verifiedAt}</p>
@@ -194,7 +162,7 @@ export function LimYoungWoongFanQuizResult({
           {hasResult && wrong.length === 0 && (
             <section className="mt-8 rounded-3xl border border-pink-100 bg-pink-50/70 p-6 text-center shadow-card sm:p-8">
               <h2 className="text-xl font-extrabold text-pink-900">🎉 전 문항 정답!</h2>
-              <p className="mt-2 text-sm leading-6 text-pink-800">쉬움부터 최상 난이도까지 모두 맞혔어요. 지식 퀴즈 기준으로는 팬심 만렙 인정입니다.</p>
+              <p className="mt-2 text-sm leading-6 text-pink-800">전 문항을 모두 맞혔어요. 지식 퀴즈 기준으로는 팬심 만렙 인정입니다.</p>
             </section>
           )}
 

@@ -13,13 +13,13 @@ type Props = {
   theme: FanQuizTheme;
   questionNumber: number;
   category: string;
-  difficulty: string;
+  difficulty?: string;
   question: ReactNode;
   options: Option[];
   focusLabel?: string;
 };
 
-export function FanQuizQuestionCard({ theme, questionNumber, category, difficulty, question, options, focusLabel = "정답 선택" }: Props) {
+export function FanQuizQuestionCard({ theme, questionNumber, category, question, options, focusLabel = "정답 선택" }: Props) {
   const style = {
     "--fan-primary": theme.primary,
     "--fan-primary-strong": theme.primaryStrong,
@@ -39,7 +39,6 @@ export function FanQuizQuestionCard({ theme, questionNumber, category, difficult
       </div>
       <div className="relative flex flex-wrap items-center justify-between gap-3">
         <span className="rounded-full bg-[var(--fan-background)] px-3 py-1.5 text-xs font-black text-[var(--fan-primary)]">문제 {questionNumber}</span>
-        <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-700">{difficulty}</span>
       </div>
       <p className="relative mt-7 text-xs font-black tracking-[.16em] text-[var(--fan-primary)]">MIMI FAN QUIZ · {category}</p>
       <h2 className="relative mt-3 break-words text-balance text-2xl font-black leading-[1.35] tracking-tight text-[var(--fan-text)] sm:text-3xl">{question}</h2>

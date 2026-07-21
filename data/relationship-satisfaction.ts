@@ -180,7 +180,7 @@ export const relationshipSatisfactionTest: TestDefinition = {
   category: "연애.관계",
   duration: "약 2~3분",
   icon: "💞",
-  thumbnail: "/tests/relationship-satisfaction/cover.svg",
+  thumbnail: "/tests/relationship-satisfaction/cover.png",
   participants: 1284,
   accent: "purple",
   isNew: true,

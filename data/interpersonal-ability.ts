@@ -165,7 +165,7 @@ export const interpersonalAbilityTest: TestDefinition = {
   category: "성격.심리",
   duration: "약 2~3분",
   icon: "💬",
-  thumbnail: "/tests/interpersonal-ability/cover.svg",
+  thumbnail: "/tests/interpersonal-ability/cover.png",
   participants: 1328,
   accent: "teal",
   isNew: true,

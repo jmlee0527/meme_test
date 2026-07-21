@@ -350,7 +350,7 @@ export const fromis9FanTest: TestDefinition = {
   duration: "약 3~5분",
   icon: "🍀",
   thumbnail: "/tests/fromis9-fan.jpg",
-  participants: 872,
+  participants: 3872,
   accent: "teal",
   fanTheme: "pink-ticket",
   isNew: true,

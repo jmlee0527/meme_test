@@ -116,7 +116,7 @@ export const worldCupWinnerQuizTest: TestDefinition = {
   duration: "약 2분",
   icon: "🏆",
   thumbnail: "/tests/worldcup-winner-quiz.jpg",
-  participants: 4216,
+  participants: 216,
   accent: "green",
   fanTheme: "blue-spotlight",
   isNew: true,

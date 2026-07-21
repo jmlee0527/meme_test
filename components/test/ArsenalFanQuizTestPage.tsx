@@ -14,7 +14,6 @@ import {
 import type { ArsenalPresentedQuestion } from "@/lib/types";
 
 const choiceBadges = ["A", "B", "C", "D"];
-const difficultyLabels = { easy: "초급", medium: "중급", hard: "고급" };
 
 export function ArsenalFanQuizTestPage() {
   const router = useRouter();
@@ -83,7 +82,6 @@ export function ArsenalFanQuizTestPage() {
             <motion.section key={current.id} initial={reduceMotion ? false : { opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }} exit={reduceMotion ? undefined : { opacity: 0, x: -24 }} transition={{ duration: 0.22 }} className="rounded-[2rem] border border-white/90 bg-white/95 p-6 shadow-2xl shadow-red-100/60 backdrop-blur sm:p-10">
               <div className="flex items-center justify-between gap-3">
                 <span className="rounded-full bg-red-50 px-3 py-1.5 text-xs font-black text-red-700">문제 {index + 1}</span>
-                <span className={`rounded-full px-3 py-1.5 text-xs font-black ${current.difficulty === "hard" ? "bg-slate-900 text-white" : current.difficulty === "medium" ? "bg-amber-100 text-amber-800" : "bg-slate-100 text-slate-600"}`}>{difficultyLabels[current.difficulty]}</span>
               </div>
               <p className="mt-7 text-sm font-black tracking-[.16em] text-red-600">ARSENAL QUIZ</p>
               <h2 className="mt-3 text-balance text-2xl font-black leading-[1.35] tracking-tight text-ink sm:text-3xl">{current.question}</h2>
@@ -116,7 +114,7 @@ export function ArsenalFanQuizTestPage() {
 
         <div className="mt-5 flex items-center justify-between gap-4">
           <button type="button" onClick={() => setIndex((currentIndex) => Math.max(currentIndex - 1, 0))} disabled={index === 0 || !current || locked} className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 transition hover:bg-white disabled:opacity-30">← 이전 문제</button>
-          <p className="text-right text-[11px] leading-5 text-slate-400">초급 5 · 중급 6 · 고급 4문항이 출제됩니다.<br />본 퀴즈는 비공식 팬 콘텐츠입니다.</p>
+          <p className="text-right text-[11px] leading-5 text-slate-400">본 퀴즈는 비공식 팬 콘텐츠입니다.</p>
         </div>
       </div>
     </main>
