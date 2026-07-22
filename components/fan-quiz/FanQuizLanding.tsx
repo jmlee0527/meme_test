@@ -6,6 +6,7 @@ import { TestSeoContent } from "@/components/seo/TestSeoContent";
 import { FanQuizArtwork } from "@/components/fan-quiz/FanQuizArtwork";
 import { FanQuizMetaBadges } from "@/components/fan-quiz/FanQuizMetaBadges";
 import { getTestFanQuizTheme } from "@/config/fanQuizThemes";
+import { getFanQuizEntityName } from "@/lib/test-seo";
 import type { TestDefinition } from "@/lib/types";
 
 type Props = {
@@ -17,6 +18,7 @@ type Props = {
 export function FanQuizLanding({ test, insight, answerType = "4지선다" }: Props) {
   const itemCount = test.itemCount ?? test.questions.length;
   const theme = getTestFanQuizTheme(test);
+  const entityName = getFanQuizEntityName(test);
   const style = {
     "--fan-primary": theme.primary,
     "--fan-primary-strong": theme.primaryStrong,
@@ -86,6 +88,13 @@ export function FanQuizLanding({ test, insight, answerType = "4지선다" }: Pro
           <span className="inline-flex rounded-full bg-[var(--fan-background)] px-3 py-1 text-xs font-black text-[var(--fan-primary)]">FAN KIT NOTE</span>
           <h2 className="mt-4 text-xl font-black text-[var(--fan-text)]">이 팬 퀴즈로 확인할 수 있어요</h2>
           <p className="mt-3 max-w-3xl leading-7 text-[var(--fan-muted)]">{insight}</p>
+        </section>
+
+        <section className="container-wide-readable mt-6 rounded-[1.5rem] border border-[var(--fan-border)] bg-white/70 p-5 shadow-sm sm:p-6">
+          <h2 className="text-base font-black text-[var(--fan-text)]">{entityName} 팬퀴즈를 찾고 있다면</h2>
+          <p className="mt-2 text-sm leading-7 text-[var(--fan-muted)]">
+            {test.shortTitle}는 {entityName} 팬 퀴즈와 찐팬 테스트를 함께 즐길 수 있는 무료 팬 콘텐츠입니다. 짧은 문제를 풀고 내 팬심 레벨을 바로 확인해 보세요.
+          </p>
         </section>
 
         <TestSeoContent test={test} itemCount={itemCount} answerType={answerType} />

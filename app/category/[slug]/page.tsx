@@ -17,6 +17,7 @@ const legacyCategoryRedirects: Record<string, string> = {
   성격: "성격.심리",
   운세: "건강.운세",
 };
+const fanQuizCategoryDescription = "아이돌·연예인·스포츠 팬퀴즈와 찐팬 테스트를 모아보세요.";
 export function generateStaticParams() { return categories.map((slug) => ({ slug })); }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -28,6 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   if (category === "음식") {
     return createMetadata({ title: "주말 배달음식 월드컵", description: "고민할수록 배고파지는 음식 월드컵으로 오늘의 메뉴를 골라보세요.", path: "/tests/weekend-food-worldcup", keywords: ["음식 월드컵", "배달음식 테스트"] });
+  }
+  if (category === "팬 퀴즈") {
+    return createMetadata({
+      title: "팬퀴즈 테스트",
+      description: fanQuizCategoryDescription,
+      path: `/category/${encodeURIComponent(category)}`,
+      keywords: ["팬퀴즈", "팬 퀴즈", "찐팬 테스트", "찐팬 퀴즈", "아이돌 팬퀴즈", "팬덤 퀴즈"],
+    });
   }
   return createMetadata({ title: `${category} 테스트`, description: `${category}에 관한 무료 테스트를 모아보세요.`, path: `/category/${encodeURIComponent(category)}`, keywords: [`${category} 테스트`] });
 }
@@ -42,7 +51,7 @@ export default async function CategoryPage({ params }: Props) {
   const matchingTests = tests.filter((test) => test.category === category);
   const description =
     category === "팬 퀴즈"
-      ? "진짜 팬들은 안다! 찐팬임을 인증하는 테스트입니다."
+      ? fanQuizCategoryDescription
       : `${category}에 관한 테스트입니다.`;
   return (
     <div className="container-page py-10 sm:py-14">

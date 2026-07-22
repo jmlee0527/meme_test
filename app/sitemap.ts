@@ -26,8 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const testRoutes: MetadataRoute.Sitemap = tests.map((test) => ({
     url: absoluteUrl(test.href ?? `/tests/${test.slug}`),
-    changeFrequency: test.type === "fortune" ? "daily" : "monthly",
-    priority: 0.8,
+    changeFrequency: test.type === "fortune" ? "daily" : test.category === "팬 퀴즈" ? "weekly" : "monthly",
+    priority: test.category === "팬 퀴즈" ? 0.85 : 0.8,
   }));
 
   const categoryRoutes: MetadataRoute.Sitemap = [

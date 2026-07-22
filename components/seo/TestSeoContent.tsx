@@ -1,5 +1,6 @@
 import { JsonLd } from "@/components/seo/JsonLd";
 import { absoluteUrl } from "@/lib/site";
+import { getTestSeoDescription, getTestSeoKeywords, getTestSeoTitle } from "@/lib/test-seo";
 import type { TestDefinition } from "@/lib/types";
 
 type Props = {
@@ -18,6 +19,9 @@ export function TestSeoContent({ test, itemCount, answerType, path, includeQuizS
   if (!seo) return null;
   const url = absoluteUrl(path ?? `/tests/${test.slug}`);
   const quizId = `${url}#quiz`;
+  const seoTitle = getTestSeoTitle(test);
+  const seoDescription = getTestSeoDescription(test);
+  const seoKeywords = getTestSeoKeywords(test);
   const commonFaqs: [string, string][] = itemCount && answerType ? [
     ["테스트에는 얼마나 걸리나요?", `${itemCount}개 ${answerType} 질문으로 구성되어 ${test.duration}이면 완료할 수 있습니다.`],
     ["내 답변이 저장되나요?", "아니요. 답변은 결과 계산에만 사용되며 별도 서버에 저장하지 않습니다."],
@@ -39,8 +43,8 @@ export function TestSeoContent({ test, itemCount, answerType, path, includeQuizS
       </div>
       <JsonLd data={{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(([question, answer]) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) }} />
       {includeQuizSchema && <>
-        <JsonLd data={{ "@context": "https://schema.org", "@type": "WebPage", name: test.seoTitle ?? test.title, description: test.seoDescription ?? test.description, url, inLanguage: "ko-KR", mainEntity: { "@type": "Quiz", "@id": quizId } }} />
-        <JsonLd data={{ "@context": "https://schema.org", "@type": "Quiz", "@id": quizId, name: test.title, description: test.seoDescription ?? test.description, url, inLanguage: "ko-KR", ...(seo.assesses ? { assesses: seo.assesses } : {}), educationalUse: "assessment", interactivityType: "active", isAccessibleForFree: true }} />
+        <JsonLd data={{ "@context": "https://schema.org", "@type": "WebPage", name: seoTitle, description: seoDescription, url, inLanguage: "ko-KR", mainEntity: { "@type": "Quiz", "@id": quizId } }} />
+        <JsonLd data={{ "@context": "https://schema.org", "@type": "Quiz", "@id": quizId, name: seoTitle, description: seoDescription, url, inLanguage: "ko-KR", keywords: seoKeywords.slice(0, 8).join(", "), ...(seo.assesses ? { assesses: seo.assesses } : {}), educationalUse: "assessment", interactivityType: "active", isAccessibleForFree: true }} />
       </>}
     </section>
   );

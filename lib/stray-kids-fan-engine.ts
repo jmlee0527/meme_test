@@ -32,5 +32,32 @@ export function calculateStrayKidsResult(answers: StrayKidsAnswer[]) {
   const byDifficulty = (Object.keys(strayKidsQuota) as StrayKidsDifficulty[]).map((difficulty) => ({ difficulty, total: strayKidsQuota[difficulty], correct: reviews.filter((r) => r.question.difficulty === difficulty && r.correct).length }));
   return { score, weightedScore, accuracy: Math.round(weightedScore / STRAY_KIDS_MAX_SCORE * 100), grade: getStrayKidsGrade(weightedScore), reviews, byDifficulty };
 }
-export function encodeStrayKidsAnswers(answers: StrayKidsAnswer[]) { return answers.map((a) => `${a.questionId}.${a.choice}`).join("-"); }
-export function parseStrayKidsAnswers(raw?: string): StrayKidsAnswer[] | null { if (!raw) return null; const answers = raw.split("-").map((token) => { const [questionId, choice] = token.split("."); return { questionId, choice: Number(choice) }; }); return answers.length === STRAY_KIDS_QUIZ_SIZE && new Set(answers.map((a) => a.questionId)).size === STRAY_KIDS_QUIZ_SIZE && answers.every((a) => getStrayKidsQuestion(a.questionId) && Number.isInteger(a.choice) && a.choice >= 0 && a.choice < 4) ? answers : null; }
+function isValidStrayKidsAnswers(answers: StrayKidsAnswer[]) {
+  return answers.length === STRAY_KIDS_QUIZ_SIZE
+    && new Set(answers.map((answer) => answer.questionId)).size === STRAY_KIDS_QUIZ_SIZE
+    && answers.every((answer) => getStrayKidsQuestion(answer.questionId) && Number.isInteger(answer.choice) && answer.choice >= 0 && answer.choice < 4);
+}
+
+export function encodeStrayKidsAnswers(answers: StrayKidsAnswer[]) {
+  return encodeURIComponent(JSON.stringify(answers.map(({ questionId, choice }) => [questionId, choice])));
+}
+
+export function parseStrayKidsAnswers(raw?: string): StrayKidsAnswer[] | null {
+  if (!raw) return null;
+  let decoded = raw;
+  try { decoded = decodeURIComponent(raw); } catch { return null; }
+  try {
+    const payload = JSON.parse(decoded) as unknown;
+    if (Array.isArray(payload)) {
+      const answers = payload.map((item) => {
+        if (!Array.isArray(item)) return null;
+        const [questionId, choice] = item;
+        return typeof questionId === "string" ? { questionId, choice: Number(choice) } : null;
+      });
+      if (answers.every(Boolean) && isValidStrayKidsAnswers(answers as StrayKidsAnswer[])) return answers as StrayKidsAnswer[];
+    }
+  } catch {}
+
+  const legacyAnswers = [...decoded.matchAll(/(SKZ-\d+)\.([0-3])/g)].map((match) => ({ questionId: match[1], choice: Number(match[2]) }));
+  return isValidStrayKidsAnswers(legacyAnswers) ? legacyAnswers : null;
+}
