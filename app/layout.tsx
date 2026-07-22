@@ -14,7 +14,7 @@ const googleAnalyticsId = "G-QPDN3ZJ32G";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: { default: `${siteConfig.name} | 나를 알아보는 종합 테스트 플랫폼`, template: `%s | ${siteConfig.name}` },
+  title: { default: `${siteConfig.name} | 팬 퀴즈·성격·심리 테스트`, template: `%s | ${siteConfig.name}` },
   description: siteConfig.description,
   keywords: [...siteConfig.keywords],
   applicationName: siteConfig.name,
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false, address: false, email: false },
   openGraph: {
     type: "website", locale: "ko_KR", url: siteConfig.url, siteName: siteConfig.name,
-    title: `${siteConfig.name} | 나를 알아보는 종합 테스트 플랫폼`, description: siteConfig.description,
+    title: `${siteConfig.name} | 팬 퀴즈·성격·심리 테스트`, description: siteConfig.description,
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: siteConfig.name }],
   },
-  twitter: { card: "summary_large_image", title: siteConfig.name, description: siteConfig.description, images: ["/opengraph-image"] },
+  twitter: { card: "summary_large_image", title: `${siteConfig.name} | 팬 퀴즈·성격·심리 테스트`, description: siteConfig.description, images: ["/opengraph-image"] },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -93,18 +93,8 @@ gtag('config', '${googleAnalyticsId}');`}
         </Script>
         <a href="#main-content" className="skip-link">메인 콘텐츠로 건너뛰기</a>
         <JsonLd data={{
-          "@context": "https://schema.org", "@type": "WebSite", name: siteConfig.name,
-          alternateName: siteConfig.englishName, url: siteConfig.url,
-          description: siteConfig.description, inLanguage: "ko-KR",
-          potentialAction: {
-            "@type": "SearchAction",
-            target: `${absoluteUrl("/search")}?q={search_term_string}`,
-            "query-input": "required name=search_term_string",
-          },
-        }} />
-        <JsonLd data={{
           "@context":"https://schema.org", "@type":"Organization", "@id":absoluteUrl("/#organization"),
-          name:siteConfig.name, alternateName:siteConfig.englishName, url:siteConfig.url,
+          name:siteConfig.name, alternateName:[siteConfig.englishName, "미미 테스트", "memetest.co.kr"], url:siteConfig.url,
           logo:absoluteUrl("/icon.svg"), description:siteConfig.description,
         }} />
         <Header />

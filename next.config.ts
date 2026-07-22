@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
   compress: true,
   async redirects() {
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "memetest.co.kr" }],
+        destination: "https://www.memetest.co.kr/:path*",
+        permanent: true,
+      },
       { source: "/sitemaps.xml", destination: "/sitemap.xml", permanent: true },
       { source: "/category/%EA%B2%B0%ED%98%BC", destination: "/category/%EC%97%B0%EC%95%A0.%EA%B4%80%EA%B3%84", permanent: true },
       { source: "/category/%EB%8F%88", destination: "/category/%EC%A7%81%EC%97%85.%EC%9D%BC%EC%83%81", permanent: true },

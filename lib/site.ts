@@ -9,7 +9,7 @@ export const siteConfig = {
   englishName: "Mimi Test",
   url: canonicalSiteUrl,
   description:
-    "재미있고 빠른 테스트로 나의 성향, 재능, 직장 스타일, 연애관과 가능성을 발견하는 종합 테스트 플랫폼",
+    "미미테스트는 재미있고 빠른 테스트로 나의 성향, 재능, 직장 스타일, 연애관과 가능성을 발견하는 종합 테스트 플랫폼입니다.",
   keywords: [
     "무료 테스트",
     "성향 테스트",
@@ -23,6 +23,32 @@ export const siteConfig = {
 
 export function absoluteUrl(path = "/") {
   return new URL(path, siteConfig.url).toString();
+}
+
+export function normalizeOfficialBrand(text: string) {
+  return text
+    .replace(/미미\s+테스트/g, siteConfig.name)
+    .replace(/\bMimi\s*Test\b/gi, siteConfig.name)
+    .replace(/\bMimiTest\b/g, siteConfig.name);
+}
+
+function stripSiteNameSuffix(title: string) {
+  let normalized = normalizeOfficialBrand(title).trim();
+  const suffixPattern = new RegExp(`\\s*(?:[|｜\\-–—:]\\s*)${siteConfig.name}\\s*$`);
+  while (suffixPattern.test(normalized)) {
+    normalized = normalized.replace(suffixPattern, "").trim();
+  }
+  return normalized;
+}
+
+function withSiteNameTitle(title: string) {
+  const baseTitle = stripSiteNameSuffix(title);
+  return baseTitle === siteConfig.name ? siteConfig.name : `${baseTitle} | ${siteConfig.name}`;
+}
+
+function withSiteNameDescription(description: string) {
+  const normalized = normalizeOfficialBrand(description).trim();
+  return normalized.includes(siteConfig.name) ? normalized : `${normalized} 미미테스트에서 확인해 보세요.`;
 }
 
 type MetadataInput = {
@@ -47,24 +73,27 @@ export function createMetadata({
   ogImage = true,
 }: MetadataInput): Metadata {
   const canonical = absoluteUrl(path);
+  const metadataTitle = absoluteTitle ? normalizeOfficialBrand(title) : stripSiteNameSuffix(title);
+  const brandedTitle = absoluteTitle ? metadataTitle : withSiteNameTitle(title);
+  const metadataDescription = withSiteNameDescription(description);
   return {
-    title: absoluteTitle ? { absolute: title } : title,
-    description,
+    title: absoluteTitle ? { absolute: metadataTitle } : metadataTitle,
+    description: metadataDescription,
     keywords: [...siteConfig.keywords, ...keywords],
     alternates: { canonical },
     openGraph: {
       type,
       locale: "ko_KR",
       siteName: siteConfig.name,
-      title,
-      description,
+      title: brandedTitle,
+      description: metadataDescription,
       url: canonical,
-      ...(ogImage ? { images: [{ url: absoluteUrl("/opengraph-image"), width: 1200, height: 630, alt: title }] } : {}),
+      ...(ogImage ? { images: [{ url: absoluteUrl("/opengraph-image"), width: 1200, height: 630, alt: brandedTitle }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: brandedTitle,
+      description: metadataDescription,
       ...(ogImage ? { images: [absoluteUrl("/opengraph-image")] } : {}),
     },
     robots: {

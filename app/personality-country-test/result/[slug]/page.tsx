@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const profile = getCountryResultProfile(slug);
   if (!profile) return {};
   return createMetadata({
-    title: `내 성격과 가장 잘 맞는 해외 국가는 ${profile.country}? | Mimi Test`,
+    title: `내 성격과 가장 잘 맞는 해외 국가는 ${profile.country}? | 미미테스트`,
     description: `12개의 질문으로 알아보는 해외 국가 성향 테스트. 당신의 성격과 생활 방식은 ${profile.country}의 어떤 라이프스타일 이미지와 잘 맞을까요?`,
     path: `/personality-country-test/result/${profile.slug}`,
     keywords: ["해외 국가 테스트", "성격 국가 테스트", profile.country, "여행 성향 테스트", "심리테스트"],

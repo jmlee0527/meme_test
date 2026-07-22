@@ -36,7 +36,7 @@ export function HomeHeroBanner({ banners }: { banners: HomeBanner[] }) {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-slate-950/62 via-slate-950/20 to-transparent" aria-hidden="true" />
               <div className="absolute inset-y-0 left-0 flex w-[72%] max-w-md flex-col justify-center p-5 text-white sm:p-8">
-                <p className="text-xs font-black tracking-[.18em] text-white/75">MIMI TEST</p>
+                <p className="text-xs font-black tracking-[.18em] text-white/75">미미테스트</p>
                 <h2 className="mt-3 text-2xl font-black leading-tight sm:text-4xl">{banner.title}</h2>
                 <p className="mt-3 line-clamp-2 text-sm font-bold leading-6 text-white/86">{banner.subtitle}</p>
                 {banner.href && <span className="mt-5 inline-flex min-h-10 w-fit items-center rounded-xl bg-white px-4 text-sm font-black text-slate-950">바로 보기 →</span>}

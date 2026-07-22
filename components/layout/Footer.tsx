@@ -19,7 +19,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="mt-8 border-t border-slate-100 pt-6 text-xs leading-5 text-slate-400">
-          <p>© {new Date().getFullYear()} Mimi Test. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} 미미테스트. All rights reserved.</p>
           <p className="mt-1">테스트 결과와 콘텐츠는 일반적인 정보이며, 수익을 보장하거나 전문적인 재무 조언을 제공하지 않습니다.</p>
         </div>
       </div>
