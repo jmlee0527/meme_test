@@ -20,7 +20,7 @@ export function ManchesterUnitedFanQuizResult({ answers }: { answers: Manchester
   const shareText = `나는 맨유 찐팬 테스트 ${level}레벨! 15문제 중 ${result.score}문제 정답, 내 맨유 팬심은 ‘${result.grade.title}’`;
 
   const track = (name: string) => (window as Window & { gtag?: (command: string, event: string) => void }).gtag?.("event", name);
-  const retrySame = () => { const key = "mimi-manchester-united-true-fan-session"; const stored = JSON.parse(window.sessionStorage.getItem(key) ?? "{}"); window.sessionStorage.setItem(key, JSON.stringify({ ...stored, answers: [], index: 0 })); track("manchester_united_fan_retry_same"); window.location.href = "/tests/manchester-united-true-fan-test?start=1"; };
+  const retrySame = () => { const key = "mimi-manchester-united-true-fan-session"; const stored = JSON.parse(window.sessionStorage.getItem(key) ?? "{}"); window.sessionStorage.setItem(key, JSON.stringify({ seed: stored.seed, answers: [], index: 0, restartMode: "same" })); track("manchester_united_fan_retry_same"); window.location.href = "/tests/manchester-united-true-fan-test?start=1"; };
   const retry = () => { window.sessionStorage.removeItem("mimi-manchester-united-true-fan-session"); track("manchester_united_fan_retry_new"); window.location.href = "/tests/manchester-united-true-fan-test?start=1"; };
 
   return <main className="min-h-screen bg-[radial-gradient(circle_at_top,#ede9fe_0,#fff7ed_40%,#f8fafc_100%)] pb-24 pt-8 sm:py-14">

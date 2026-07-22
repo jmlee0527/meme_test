@@ -21,13 +21,11 @@ export function AteezFanQuizTestPage() {
   const [locked, setLocked] = useState(false);
 
   useEffect(() => {
-    let stored: { seed: string; answers: number[]; index: number } | null = null;
-    try { stored = JSON.parse(window.sessionStorage.getItem(SESSION_KEY) ?? "null"); } catch { stored = null; }
-    const seed = stored?.seed ?? newSeed();
+    const seed = newSeed();
     setQuestions(createAteezSession(seed));
-    setAnswers(stored?.answers ?? []);
-    setIndex(Math.min(stored?.index ?? 0, ATEEZ_QUIZ_SIZE - 1));
-    window.sessionStorage.setItem(SESSION_KEY, JSON.stringify({ seed, answers: stored?.answers ?? [], index: stored?.index ?? 0 }));
+    setAnswers([]);
+    setIndex(0);
+    window.sessionStorage.setItem(SESSION_KEY, JSON.stringify({ seed, answers: [], index: 0 }));
   }, []);
 
   const current = questions[index];

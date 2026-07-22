@@ -29,19 +29,14 @@ export function LionelMessiFanQuizTestPage() {
   const [locked, setLocked] = useState(false);
 
   useEffect(() => {
-    let stored: { seed: string; answers: number[]; index: number } | null = null;
-    try {
-      stored = JSON.parse(sessionStorage.getItem(SESSION_KEY) ?? "null");
-    } catch {}
-
     let recent: string[] = [];
     try {
       recent = JSON.parse(localStorage.getItem(RECENT_KEY) ?? "[]");
     } catch {}
 
-    const seed = stored?.seed ?? newSeed();
-    const initialAnswers = stored?.answers ?? [];
-    const initialIndex = Math.min(stored?.index ?? 0, MESSI_QUIZ_SIZE - 1);
+    const seed = newSeed();
+    const initialAnswers: number[] = [];
+    const initialIndex = 0;
     setQuestions(createMessiSession(seed, Array.isArray(recent) ? recent : []));
     setAnswers(initialAnswers);
     setIndex(initialIndex);

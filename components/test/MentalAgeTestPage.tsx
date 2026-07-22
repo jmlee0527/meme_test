@@ -40,8 +40,7 @@ export function MentalAgeTestPage() {
       setAgeError("실제 나이는 만 10세부터 99세 사이의 숫자로 입력해 주세요.");
       return;
     }
-    const stored = window.sessionStorage.getItem(storageKey);
-    const seed = stored ? Number(stored) : newSeed();
+    const seed = newSeed();
     window.sessionStorage.setItem(storageKey, String(seed));
     setQuestions(selectMentalAgeQuestions(seed));
     setAnswers({});

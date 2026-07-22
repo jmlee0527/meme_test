@@ -8,7 +8,6 @@ import {
   MBTI_QUESTION_COUNT,
   calculateMbtiResult,
   clearMbtiProgress,
-  loadMbtiProgress,
   saveMbtiProgress,
 } from "@/lib/mbti-engine";
 
@@ -17,17 +16,12 @@ export function MbtiTestPage() {
   const reduceMotion = useReducedMotion();
   const [answers, setAnswers] = useState<number[]>([]);
   const [index, setIndex] = useState(0);
-  const [resumed, setResumed] = useState(false);
   const lockRef = useRef(false);
 
-  // 새로고침·이탈 후 복귀 시 진행 상황 복구 (localStorage)
   useEffect(() => {
-    const saved = loadMbtiProgress();
-    if (saved) {
-      setAnswers(saved);
-      setIndex(saved.length);
-      setResumed(true);
-    }
+    clearMbtiProgress();
+    setAnswers([]);
+    setIndex(0);
   }, []);
 
   const current = mbtiQuestions[index];
@@ -52,13 +46,6 @@ export function MbtiTestPage() {
     }, reduceMotion ? 0 : 240);
   };
 
-  const restart = () => {
-    clearMbtiProgress();
-    setAnswers([]);
-    setIndex(0);
-    setResumed(false);
-  };
-
   if (!current) return null;
 
   return (
@@ -75,12 +62,6 @@ export function MbtiTestPage() {
           <div className="mt-4 h-2.5 overflow-hidden rounded-full bg-white shadow-inner" role="progressbar" aria-label="테스트 진행률" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress}>
             <motion.div className="h-full rounded-full bg-gradient-to-r from-violet-500 to-indigo-500" animate={{ width: `${Math.max(progress, 3)}%` }} transition={{ duration: reduceMotion ? 0 : 0.3 }} />
           </div>
-          {resumed && (
-            <div className="mt-3 flex items-center justify-between rounded-xl bg-violet-50 px-4 py-2.5 text-xs font-bold text-violet-800">
-              <span>이전 진행 상황({answers.length}번 문항까지)을 불러왔어요.</span>
-              <button type="button" onClick={restart} className="shrink-0 rounded-lg bg-white px-3 py-1.5 font-black text-violet-700 shadow-sm hover:bg-violet-100">처음부터</button>
-            </div>
-          )}
         </header>
 
         <AnimatePresence mode="wait">

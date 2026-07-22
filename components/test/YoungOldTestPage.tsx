@@ -25,8 +25,7 @@ export function YoungOldTestPage() {
   const [result, setResult] = useState<ReturnType<typeof calculateTrendScores> | null>(null);
 
   const begin = () => {
-    const stored = window.sessionStorage.getItem(storageKey);
-    const seed = stored ? Number(stored) : createSeed();
+    const seed = createSeed();
     window.sessionStorage.setItem(storageKey, String(seed));
     setQuestions(selectTrendQuestions(seed)); setAnswers({}); setIndex(0); setScreen("quiz");
     track("young_old_test_start");

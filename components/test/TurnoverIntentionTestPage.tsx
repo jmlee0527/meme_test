@@ -23,10 +23,9 @@ export function TurnoverIntentionTestPage() {
   const startedRef = useRef(false);
 
   useEffect(() => {
-    let stored: { answers?: (TurnoverAnswer | null)[]; index?: number } | null = null;
-    try { stored = JSON.parse(window.sessionStorage.getItem(SESSION_KEY) ?? "null"); } catch { stored = null; }
-    if (stored?.answers) setAnswers(stored.answers.map((value) => (value === null ? undefined : value)));
-    if (typeof stored?.index === "number") setIndex(Math.min(stored.index, TURNOVER_QUESTION_COUNT - 1));
+    window.sessionStorage.removeItem(SESSION_KEY);
+    setAnswers([]);
+    setIndex(0);
     if (!startedRef.current) { startedRef.current = true; track("turnover_test_start"); }
   }, []);
 

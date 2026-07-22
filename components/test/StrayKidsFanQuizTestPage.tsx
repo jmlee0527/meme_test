@@ -22,13 +22,13 @@ export function StrayKidsFanQuizTestPage() {
   const [locked, setLocked] = useState(false);
 
   useEffect(() => {
-    let stored: { seed: string; answers: number[]; index: number } | null = null;
+    let stored: { seed?: string; restartMode?: "same" } | null = null;
     try { stored = JSON.parse(window.sessionStorage.getItem(SESSION_KEY) ?? "null"); } catch { stored = null; }
-    const seed = stored?.seed ?? newSeed();
+    const seed = stored?.restartMode === "same" && stored.seed ? stored.seed : newSeed();
     setQuestions(createStrayKidsSession(seed));
-    setAnswers(stored?.answers ?? []);
-    setIndex(Math.min(stored?.index ?? 0, STRAY_KIDS_QUIZ_SIZE - 1));
-    window.sessionStorage.setItem(SESSION_KEY, JSON.stringify({ seed, answers: stored?.answers ?? [], index: stored?.index ?? 0 }));
+    setAnswers([]);
+    setIndex(0);
+    window.sessionStorage.setItem(SESSION_KEY, JSON.stringify({ seed, answers: [], index: 0 }));
     track("stray_kids_fan_test_start");
   }, []);
 
