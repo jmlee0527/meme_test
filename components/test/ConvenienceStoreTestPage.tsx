@@ -36,7 +36,7 @@ export function ConvenienceStoreTestPage() {
   if (!current) return null;
 
   return (
-    <main className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#e0e7ff_0,#f8fafc_45%,#f8fafc_100%)] py-6 sm:py-12">
+    <div className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#e0e7ff_0,#f8fafc_45%,#f8fafc_100%)] py-6 sm:py-12">
       <div className="container-page mx-auto max-w-2xl">
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
@@ -82,6 +82,6 @@ export function ConvenienceStoreTestPage() {
           <p className="text-right text-[11px] leading-5 text-slate-400">정답은 없어요. 지금 끌리는 걸 고르세요.<br />응답은 서버에 저장되지 않습니다.</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

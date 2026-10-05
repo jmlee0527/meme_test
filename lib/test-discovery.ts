@@ -1,4 +1,4 @@
-import { popularTestSlugs, getDiscoveryMetadata } from "@/data/test-discovery";
+import { recommendedTestSlugs, getDiscoveryMetadata } from "@/data/test-discovery";
 import type { TestCategory, TestDefinition } from "@/lib/types";
 
 function normalizeTag(tag: string) {
@@ -14,15 +14,15 @@ function testTags(test: TestDefinition) {
   ].map(normalizeTag).filter(Boolean));
 }
 
-export function getPopularTests(tests: TestDefinition[], options: { category?: TestCategory; exclude?: string[]; limit?: number } = {}) {
+export function getRecommendedTests(tests: TestDefinition[], options: { category?: TestCategory; exclude?: string[]; limit?: number } = {}) {
   const excluded = new Set(options.exclude ?? []);
-  const rank = new Map<string, number>(popularTestSlugs.map((slug, index) => [slug, index]));
+  const rank = new Map<string, number>(recommendedTestSlugs.map((slug, index) => [slug, index]));
   return tests
     .filter((test) => !excluded.has(test.slug) && (!options.category || test.category === options.category))
     .sort((a, b) => {
-      const explicitA = getDiscoveryMetadata(a).popularRank ?? rank.get(a.slug) ?? Number.MAX_SAFE_INTEGER;
-      const explicitB = getDiscoveryMetadata(b).popularRank ?? rank.get(b.slug) ?? Number.MAX_SAFE_INTEGER;
-      return explicitA - explicitB || b.participants - a.participants || a.title.localeCompare(b.title, "ko-KR");
+      const explicitA = getDiscoveryMetadata(a).recommendationOrder ?? rank.get(a.slug) ?? Number.MAX_SAFE_INTEGER;
+      const explicitB = getDiscoveryMetadata(b).recommendationOrder ?? rank.get(b.slug) ?? Number.MAX_SAFE_INTEGER;
+      return explicitA - explicitB || a.title.localeCompare(b.title, "ko-KR");
     })
     .slice(0, options.limit ?? 4);
 }
@@ -58,7 +58,7 @@ export function getRelatedTests(current: TestDefinition, tests: TestDefinition[]
         || directA - directB
         || b.overlap - a.overlap
         || Number(b.test.category === current.category) - Number(a.test.category === current.category)
-        || b.test.participants - a.test.participants;
+        || a.test.title.localeCompare(b.test.title, "ko-KR");
     })
     .slice(0, limit)
     .map(({ test }) => test);

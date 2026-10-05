@@ -5,7 +5,7 @@ export type TestDiscoveryMetadata = {
   relatedTests?: string[];
   relatedArticles?: string[];
   createdAt?: string;
-  popularRank?: number;
+  recommendationOrder?: number;
   series?: string;
   disclaimer?: string;
 };
@@ -13,6 +13,8 @@ export type TestDiscoveryMetadata = {
 export type CategoryLanding = {
   title: string;
   description: string;
+  selectionGuide: string[];
+  featuredArticles: string[];
   articleCategory?: "personality-psychology" | "love-relationships" | "work-lifestyle" | "fan-trends";
 };
 
@@ -21,30 +23,40 @@ export const categoryLandings: Record<TestCategory, CategoryLanding> = {
     title: "무료 성격·심리 테스트 모음",
     description: "정신연령, MBTI, Big Five, EQ, 자존감과 회복탄력성처럼 나의 사고방식과 감정·행동 경향을 살펴보는 무료 테스트를 모았습니다. 결과는 자기이해를 위한 참고로 활용해 보세요.",
     articleCategory: "personality-psychology",
+    selectionGuide: ["성격의 여러 측면을 비교하려면 Big Five, 익숙한 유형 언어로 대화를 시작하려면 MBTI를 골라보세요.", "스트레스·자존감·회복탄력성은 최근의 상태를 돌아보는 질문입니다. 유형 테스트와 점수를 직접 비교하지 마세요."],
+    featuredArticles: ["introvert-vs-extrovert", "personality-tests-in-ai-era-2026"],
   },
   "연애.관계": {
     title: "무료 연애·관계 테스트 모음",
     description: "애착유형, 연애 성향, 관계 만족도와 소통 방식처럼 가까운 관계에서 반복되는 패턴을 가볍게 살펴보는 테스트를 모았습니다.",
     articleCategory: "love-relationships",
+    selectionGuide: ["가까워질 때의 불안과 거리두기가 궁금하면 애착유형, 현재 관계의 대화와 신뢰를 점검하려면 관계 만족도를 선택하세요.", "상대의 마음을 대신 판정하기보다 내 경험을 기준으로 답하고, 결과에서 공감한 장면을 대화의 질문으로 활용하세요."],
+    featuredArticles: ["four-attachment-styles", "mbti-in-relationships"],
   },
   "직업.일상": {
     title: "직장·일상 성향 테스트 모음",
     description: "업무 페르소나, 직무 스트레스, 번아웃, 이직 의향과 소비 성향처럼 일과 생활에서 나타나는 선택 패턴을 확인할 수 있는 테스트를 모았습니다.",
     articleCategory: "work-lifestyle",
+    selectionGuide: ["협업 방식은 직장 페르소나, 업무 환경의 부담은 직무 스트레스, 퇴근 후에도 일을 놓기 어려운 습관은 워커홀릭 테스트에서 살펴볼 수 있습니다.", "이직 의향이나 번아웃 결과를 바로 행동 지침으로 삼기보다, 부담을 만드는 환경과 바꿀 수 있는 조건을 구분해 보세요."],
+    featuredArticles: [],
   },
   "팬 퀴즈": {
     title: "아이돌·가수·축구 팬퀴즈 모음",
     description: "아이돌과 가수의 멤버·앨범·노래, 축구 구단과 선수 기록까지 팬이라면 도전해 볼 만한 무료 팬퀴즈를 모았습니다. 비공식 팬 콘텐츠이며 문제와 보기는 매회 다르게 출제될 수 있습니다.",
     articleCategory: "fan-trends",
+    selectionGuide: ["좋아하는 아티스트의 활동 전반을 돌아보려면 팬 퀴즈, 곡명과 앨범 단서를 즐기려면 노래 버전을 선택하세요. 축구 퀴즈는 선수·구단 기록과 전술 이해로 나뉩니다.", "문제 수와 출제 범위는 소개 페이지에서 확인하세요. 점수는 이번에 나온 문제에 대한 기록이며 팬으로서의 자격이나 애정의 크기를 뜻하지 않습니다."],
+    featuredArticles: ["healthy-fandom-shortform-guide"],
   },
   "건강.운세": {
     title: "건강 자가점검·오늘의 운세 모음",
     description: "스트레스와 생활 습관을 참고용으로 점검하거나 오늘의 운세를 가볍게 확인할 수 있는 콘텐츠를 모았습니다. 건강 관련 결과는 전문적인 진단을 대신하지 않습니다.",
     articleCategory: "personality-psychology",
+    selectionGuide: ["건강 자가점검과 운세는 목적이 다릅니다. 자가점검은 최근 경험을 돌아보는 참고 자료이고, 운세 카드는 가볍게 즐기는 콘텐츠입니다.", "건강 점수만으로 질환 여부를 판단하지 마세요. 운세의 행운 점수도 실제 사건의 발생 확률이나 미래 예측을 의미하지 않습니다."],
+    featuredArticles: ["realistic-digital-rest-guide"],
   },
 };
 
-export const popularTestSlugs = [
+export const recommendedTestSlugs = [
   "mbti",
   "mental-age",
   "attachment-style-test",
@@ -105,7 +117,7 @@ export function getDiscoveryMetadata(test: TestDefinition): TestDiscoveryMetadat
     relatedTests: test.relatedTests ?? fallback.relatedTests,
     relatedArticles: test.relatedArticles ?? fallback.relatedArticles,
     createdAt: test.createdAt ?? fallback.createdAt,
-    popularRank: test.popularRank ?? fallback.popularRank,
+    recommendationOrder: test.recommendationOrder ?? fallback.recommendationOrder,
     series: test.series ?? fallback.series,
     disclaimer: test.disclaimer ?? fallback.disclaimer,
   };

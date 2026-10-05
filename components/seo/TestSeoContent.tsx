@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/seo/JsonLd";
+import { RelatedArticlesForTest } from "@/components/articles/RelatedArticlesForTest";
 import { absoluteUrl } from "@/lib/site";
-import { getTestSeoDescription, getTestSeoKeywords, getTestSeoTitle } from "@/lib/test-seo";
+import { getTestCanonicalPath, getTestSeoDescription, getTestSeoKeywords, getTestSeoTitle } from "@/lib/test-seo";
 import type { TestDefinition } from "@/lib/types";
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
   /** 문항 수·응답 방식이 있으면 공통 FAQ(소요 시간, 저장 여부)를 함께 노출합니다. */
   itemCount?: number;
   answerType?: string;
-  /** 기본값은 /tests/{slug}. 운세처럼 별도 경로를 쓰는 페이지는 직접 지정합니다. */
+  /** 기본값은 테스트의 대표 URL입니다. */
   path?: string;
   /** 퀴즈 형식이 아닌 콘텐츠(운세 등)는 false로 지정해 WebPage/Quiz 스키마 중복을 방지합니다. */
   includeQuizSchema?: boolean;
@@ -17,18 +18,18 @@ type Props = {
 export function TestSeoContent({ test, itemCount, answerType, path, includeQuizSchema = true }: Props) {
   const seo = test.seoContent;
   if (!seo) return null;
-  const url = absoluteUrl(path ?? `/tests/${test.slug}`);
+  const url = absoluteUrl(path ?? getTestCanonicalPath(test));
   const quizId = `${url}#quiz`;
   const seoTitle = getTestSeoTitle(test);
   const seoDescription = getTestSeoDescription(test);
   const seoKeywords = getTestSeoKeywords(test);
   const commonFaqs: [string, string][] = itemCount && answerType ? [
     ["테스트에는 얼마나 걸리나요?", `${itemCount}개 ${answerType} 질문으로 구성되어 ${test.duration}이면 완료할 수 있습니다.`],
-    ["내 답변이 저장되나요?", "아니요. 답변은 결과 계산에만 사용되며 별도 서버에 저장하지 않습니다."],
+    ["내 답변이 저장되나요?", "답변은 결과 계산에 사용되며 서버에 별도로 저장하지 않습니다. 일부 테스트는 이어하기를 위해 현재 브라우저에 진행 정보를 저장합니다."],
   ] : [];
-  const faqs = [...seo.faqs, ...commonFaqs];
+  const faqs = [...seo.faqs, ...commonFaqs].filter(([question], index, items) => items.findIndex(([other]) => other === question) === index);
   return (
-    <section className="container-readable mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
+    <><section className="container-readable mt-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
       <h2 className="text-2xl font-black text-ink">{seo.heading}</h2>
       <div className="mt-4 space-y-5 text-sm leading-8 text-slate-700">
         {seo.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
@@ -46,6 +47,6 @@ export function TestSeoContent({ test, itemCount, answerType, path, includeQuizS
         <JsonLd data={{ "@context": "https://schema.org", "@type": "WebPage", name: seoTitle, description: seoDescription, url, inLanguage: "ko-KR", mainEntity: { "@type": "Quiz", "@id": quizId } }} />
         <JsonLd data={{ "@context": "https://schema.org", "@type": "Quiz", "@id": quizId, name: seoTitle, description: seoDescription, url, inLanguage: "ko-KR", keywords: seoKeywords.slice(0, 8).join(", "), ...(seo.assesses ? { assesses: seo.assesses } : {}), educationalUse: "assessment", interactivityType: "active", isAccessibleForFree: true }} />
       </>}
-    </section>
+    </section><RelatedArticlesForTest testSlug={test.slug} /></>
   );
 }

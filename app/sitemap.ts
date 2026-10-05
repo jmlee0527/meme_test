@@ -1,3 +1,4 @@
+import { getTestCanonicalPath } from "@/lib/test-seo";
 import type { MetadataRoute } from "next";
 import { tests } from "@/data/tests";
 import { absoluteUrl } from "@/lib/site";
@@ -29,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const testRoutes: MetadataRoute.Sitemap = tests.map((test) => {
     const createdAt = getDiscoveryMetadata(test).createdAt;
     return {
-      url: absoluteUrl(test.href ?? `/tests/${test.slug}`),
+      url: absoluteUrl(getTestCanonicalPath(test)),
       ...(createdAt ? { lastModified: new Date(createdAt) } : {}),
       changeFrequency: test.type === "fortune" ? "daily" : test.category === "팬 퀴즈" ? "weekly" : "monthly",
       priority: test.category === "팬 퀴즈" ? 0.85 : 0.8,

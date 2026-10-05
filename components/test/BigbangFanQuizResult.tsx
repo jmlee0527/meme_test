@@ -7,7 +7,7 @@ import type { BigbangAnswer } from "@/lib/bigbang-fan-engine";
 import { calculateBigbangResult, encodeBigbangAnswers } from "@/lib/bigbang-fan-engine";
 
 export function BigbangFanQuizResult({ answers }: { answers: BigbangAnswer[] | null }) {
-  if (!answers) return <main className="container-page py-16 text-center"><h1 className="text-3xl font-black">결과 정보가 없습니다</h1><Link href="/tests/bigbang-true-fan-test?start=1" className="mt-6 inline-flex rounded-xl bg-primary px-6 py-3 font-bold text-white">테스트 시작하기</Link></main>;
+  if (!answers) return <div className="container-page py-16 text-center"><h1 className="text-3xl font-black">결과 정보가 없습니다</h1><Link href="/tests/bigbang-true-fan-test?start=1" className="mt-6 inline-flex rounded-xl bg-primary px-6 py-3 font-bold text-white">테스트 시작하기</Link></div>;
 
   const result = calculateBigbangResult(answers);
   const encoded = encodeBigbangAnswers(answers);

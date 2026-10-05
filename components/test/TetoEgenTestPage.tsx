@@ -55,7 +55,7 @@ export function TetoEgenTestPage() {
   };
 
   return (
-    <main className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#ede9fe_0,#fdf4ff_40%,#f8fafc_100%)] py-6 sm:py-12">
+    <div className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#ede9fe_0,#fdf4ff_40%,#f8fafc_100%)] py-6 sm:py-12">
       <div className="container-page mx-auto max-w-2xl">
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
@@ -112,6 +112,6 @@ export function TetoEgenTestPage() {
           <p className="text-right text-[11px] leading-5 text-slate-400">매번 다른 조합의 14문항이 출제됩니다.<br />답변은 서버에 저장되지 않습니다.</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

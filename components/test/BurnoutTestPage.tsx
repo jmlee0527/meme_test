@@ -53,7 +53,7 @@ export function BurnoutTestPage() {
   };
 
   if(!current)return null;
-  return <main className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#d1fae5_0,#f8fafc_45%,#f8fafc_100%)] py-6 sm:py-12">
+  return <div className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#d1fae5_0,#f8fafc_45%,#f8fafc_100%)] py-6 sm:py-12">
     <div className="container-page mx-auto max-w-2xl">
       <header className="mb-6">
         <div className="flex items-end justify-between gap-4"><div><p className="text-xs font-black tracking-[.16em] text-emerald-600">BURNOUT SELF-CHECK</p><h1 className="mt-2 text-xl font-black text-ink sm:text-2xl">번아웃 위험도 테스트</h1></div><strong className="shrink-0 text-sm text-slate-500">{index+1} / 12</strong></div>
@@ -73,5 +73,5 @@ export function BurnoutTestPage() {
 
       <div className="mt-5 flex items-center justify-between"><button type="button" onClick={previous} disabled={index===0} className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 transition hover:bg-white disabled:opacity-30">← 이전 질문</button><p className="text-right text-[11px] leading-5 text-slate-400">초반 응답에 따라 질문이 맞춤 조정됩니다.<br/>응답은 서버에 저장되지 않습니다.</p></div>
     </div>
-  </main>;
+  </div>;
 }

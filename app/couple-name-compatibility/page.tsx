@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { hasNameInputs } from "@/lib/page-indexing";
+import { RelatedArticlesForTest } from "@/components/articles/RelatedArticlesForTest";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { NameCompatibilityForm } from "@/components/name-compatibility/NameCompatibilityForm";
@@ -6,12 +8,16 @@ import { NameCompatibilityResult } from "@/components/name-compatibility/NameCom
 import { calculateNameCompatibility, isValidKoreanName, normalizeKoreanName } from "@/lib/name-compatibility-engine";
 import { absoluteUrl, createMetadata } from "@/lib/site";
 
-export const metadata: Metadata = createMetadata({
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const query = await searchParams;
+  return createMetadata({
   title: "이름 궁합 테스트 | 이름으로 보는 커플 궁합",
   description: "남녀 한글 이름의 초성·모음·발음오행과 음양 균형을 분석해 0~100점 커플 궁합지수를 확인해보세요.",
   path: "/couple-name-compatibility",
   keywords: ["이름 궁합", "커플 이름 궁합", "이름 궁합 테스트", "발음오행", "음양오행", "커플 궁합 테스트"],
+  index: !hasNameInputs(query),
 });
+}
 
 type Props = { searchParams: Promise<{ man?: string; woman?: string }> };
 
@@ -30,7 +36,7 @@ export default async function CoupleNameCompatibilityPage({ searchParams }: Prop
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,#ffe4e6_0,#f8fafc_42%,#f8fafc_100%)] py-10 sm:py-14">
       <div className="container-page">
-        <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: "이름 커플 궁합" }]} />
+        <Breadcrumbs items={[{ name: "연애·관계", href: `/category/${encodeURIComponent("연애.관계")}` }, { name: "이름 커플 궁합" }]} />
         <div className="mx-auto max-w-4xl">
           <header className="text-center">
             <span className="inline-flex rounded-full bg-white/80 px-4 py-2 text-xs font-black text-rose-600 shadow-sm">전통 발음오행 · 음양 균형 기반</span>
@@ -52,10 +58,10 @@ export default async function CoupleNameCompatibilityPage({ searchParams }: Prop
             </div>
           </section>
           <section className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-9"><h2 className="text-2xl font-black">자주 묻는 질문</h2><dl className="mt-5 space-y-5">{faqs.map(([q,a])=><div key={q}><dt className="font-black">{q}</dt><dd className="mt-1 text-sm leading-7 text-slate-600">{a}</dd></div>)}</dl></section>
+          <RelatedArticlesForTest testSlug="name-couple-compatibility" />
         </div>
       </div>
       <JsonLd data={{ "@context":"https://schema.org", "@type":"WebPage", name:"이름으로 보는 커플 궁합", description:"한글 이름의 발음오행과 음양 균형을 분석하는 커플 궁합 테스트", url:absoluteUrl("/couple-name-compatibility"), inLanguage:"ko-KR", mainEntity:{ "@type":"WebApplication", name:"이름으로 보는 커플 궁합", applicationCategory:"EntertainmentApplication", operatingSystem:"Any", isAccessibleForFree:true } }} />
-      <JsonLd data={{ "@context":"https://schema.org", "@type":"BreadcrumbList", itemListElement:[{ "@type":"ListItem", position:1, name:"홈", item:absoluteUrl("/") },{ "@type":"ListItem", position:2, name:"테스트", item:absoluteUrl("/tests") },{ "@type":"ListItem", position:3, name:"이름 커플 궁합", item:absoluteUrl("/couple-name-compatibility") }] }} />
       <JsonLd data={{ "@context":"https://schema.org", "@type":"FAQPage", mainEntity:faqs.map(([q,a])=>({ "@type":"Question", name:q, acceptedAnswer:{ "@type":"Answer", text:a } })) }} />
     </div>
   );

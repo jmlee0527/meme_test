@@ -388,3 +388,6 @@ export const getArticle = (slug: string) => articles.find((article) => article.s
 export const getArticleCategory = (slug: string) => articleCategories.find((category) => category.slug === slug);
 export const getArticlesByCategory = (slug: string) => articles.filter((article) => article.category === slug);
 export const getArticlesForTest = (testSlug: string) => articles.filter((article) => article.relatedTests.includes(testSlug));
+
+/** Sort a copy; preserve editorial data and dates. */
+export const getRecentArticles = (items: Article[] = articles) => [...items].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt) || b.publishedAt.localeCompare(a.publishedAt) || a.slug.localeCompare(b.slug));

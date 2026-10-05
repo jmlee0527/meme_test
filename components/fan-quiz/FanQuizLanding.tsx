@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { TestBreadcrumbs } from "@/components/seo/TestBreadcrumbs";
 import { TestSeoContent } from "@/components/seo/TestSeoContent";
 import { FanQuizArtwork } from "@/components/fan-quiz/FanQuizArtwork";
 import { FanQuizMetaBadges } from "@/components/fan-quiz/FanQuizMetaBadges";
@@ -27,7 +27,7 @@ export function FanQuizLanding({ test, insight, answerType = "4지선다" }: Pro
   return (
     <div className="fan-quiz-theme">
       <div className="container-page py-10 sm:py-14">
-        <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: test.shortTitle }]} />
+        <TestBreadcrumbs test={test} />
         <section className="container-wide-readable relative overflow-hidden rounded-lg border border-[var(--fan-border)] bg-[var(--fan-surface)] shadow-[0_6px_20px_var(--fan-paper-shadow)]">
           <div className="pointer-events-none absolute left-5 top-0 h-7 w-12 border-x border-b border-[var(--fan-border)] bg-[var(--fan-surface-soft)] sm:left-8" aria-hidden="true" />
           <div className="relative grid gap-8 px-5 pb-7 pt-11 sm:px-9 sm:pb-10 lg:grid-cols-[1.08fr_.92fr] lg:items-center lg:px-12 lg:py-12">

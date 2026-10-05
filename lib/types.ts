@@ -88,7 +88,7 @@ export type TestDefinition = {
   relatedTests?: string[];
   relatedArticles?: string[];
   createdAt?: string;
-  popularRank?: number;
+  recommendationOrder?: number;
   series?: string;
   disclaimer?: string;
   participants: number;

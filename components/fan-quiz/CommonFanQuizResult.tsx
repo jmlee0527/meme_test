@@ -113,7 +113,7 @@ export function CommonFanQuizResult({
   const shareText = `${localizedTest.shortTitle ?? localizedTest.title} ${t("fan.result")} ${formatFanQuizLevel(level)}, ${pointText}`;
 
   return (
-    <main className="fan-quiz-theme min-h-screen pb-24 pt-8 sm:py-14">
+    <div className="fan-quiz-theme min-h-screen pb-24 pt-8 sm:py-14">
       <div className="container-page">
         <Breadcrumbs items={[{ name: t("common.tests"), href: "/tests" }, { name: localizedTest.shortTitle ?? localizedTest.title, href: `/tests/${test.slug}` }, { name: breadcrumbResultName ?? `${localizedGradeTitle} ${t("fan.result")}` }]} />
         <div className="mx-auto max-w-3xl">
@@ -231,6 +231,6 @@ export function CommonFanQuizResult({
         </div>
       </div>
       <MobileShareDock />
-    </main>
+    </div>
   );
 }

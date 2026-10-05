@@ -122,7 +122,7 @@ export function SingerSongQuizTestPage({
   };
 
   return (
-    <main className="fan-quiz-theme fan-quiz-exam-page min-h-[calc(100vh-5rem)] py-6 sm:py-12">
+    <div className="fan-quiz-theme fan-quiz-exam-page min-h-[calc(100vh-5rem)] py-6 sm:py-12">
       <div className="container-page mx-auto max-w-2xl">
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
@@ -188,6 +188,6 @@ export function SingerSongQuizTestPage({
           <p className="text-right text-[11px] leading-5 text-slate-400">{t("runner.answerAtResult")}</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

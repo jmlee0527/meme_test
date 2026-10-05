@@ -63,6 +63,8 @@ type MetadataInput = {
   ogImage?: boolean;
   /** 페이지별 대표 이미지 경로. */
   ogImagePath?: string;
+  /** Explicit indexing override for search, progress and personalized views. */
+  index?: boolean;
 };
 
 export function createMetadata({
@@ -74,6 +76,7 @@ export function createMetadata({
   absoluteTitle = false,
   ogImage = true,
   ogImagePath,
+  index,
 }: MetadataInput): Metadata {
   const canonical = absoluteUrl(path);
   const metadataTitle = absoluteTitle ? normalizeOfficialBrand(title) : stripSiteNameSuffix(title);
@@ -102,9 +105,9 @@ export function createMetadata({
       ...(ogImage ? { images: [socialImage] } : {}),
     },
     robots: {
-      index: !isResultPage,
+      index: index ?? !isResultPage,
       follow: true,
-      googleBot: { index: !isResultPage, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+      googleBot: { index: index ?? !isResultPage, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
     },
   };
 }

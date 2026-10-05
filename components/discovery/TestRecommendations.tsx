@@ -1,3 +1,4 @@
+import { getTestCanonicalPath } from "@/lib/test-seo";
 import Link from "next/link";
 import { tests } from "@/data/tests";
 import { getRelatedTests } from "@/lib/test-discovery";
@@ -12,7 +13,7 @@ export function TestRecommendations({ current, limit = 4, title = "함께 해보
       <h2 id={`related-tests-${current.slug}`} className="mt-2 text-xl font-black text-ink">{title}</h2>
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         {related.map((test) => (
-          <Link key={test.slug} href={test.href ?? `/tests/${test.slug}`} className="rounded-sm border border-[#353535]/20 bg-[#fffdf6] p-5 transition hover:-translate-y-0.5 hover:border-[#4267A8]">
+          <Link key={test.slug} href={getTestCanonicalPath(test)} className="rounded-sm border border-[#353535]/20 bg-[#fffdf6] p-5 transition hover:-translate-y-0.5 hover:border-[#4267A8]">
             <div className="flex items-start gap-3"><span className="text-2xl" aria-hidden="true">{test.icon}</span><div><h3 className="font-extrabold text-ink">{test.shortTitle}</h3><p className="mt-1 text-sm leading-6 text-slate-600">{test.description}</p></div></div>
           </Link>
         ))}

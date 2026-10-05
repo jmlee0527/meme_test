@@ -38,9 +38,9 @@ export function Header() {
             {t("nav.home")}
           </Link>
           <Link onClick={() => trackNav("categories")} aria-current={current("categories") ? "page" : undefined} className="rounded-sm px-1.5 py-2 transition hover:bg-[#fff1a8]/50 hover:text-ink aria-[current=page]:bg-[linear-gradient(transparent_58%,#FFE98A_58%)] aria-[current=page]:text-ink sm:px-3" href="/categories">
-            {t("nav.categories")}
+            {t("nav.tests")}
           </Link>
-          <Link onClick={() => trackNav("articles")} aria-current={current("articles") ? "page" : undefined} className="rounded-sm px-1.5 py-2 transition hover:bg-[#fff1a8]/50 hover:text-ink aria-[current=page]:bg-[linear-gradient(transparent_58%,#FFE98A_58%)] aria-[current=page]:text-ink sm:px-3" href="/articles">콘텐츠</Link>
+          <Link onClick={() => trackNav("articles")} aria-current={current("articles") ? "page" : undefined} className="rounded-sm px-1.5 py-2 transition hover:bg-[#fff1a8]/50 hover:text-ink aria-[current=page]:bg-[linear-gradient(transparent_58%,#FFE98A_58%)] aria-[current=page]:text-ink sm:px-3" href="/articles">{t("nav.articles")}</Link>
           <Link onClick={() => trackNav("search")} aria-current={current("search") ? "page" : undefined} className="rounded-sm px-1.5 py-2 transition hover:bg-[#fff1a8]/50 hover:text-ink aria-[current=page]:bg-[linear-gradient(transparent_58%,#FFE98A_58%)] aria-[current=page]:text-ink sm:px-3" href="/search">
             {t("nav.search")}
           </Link>

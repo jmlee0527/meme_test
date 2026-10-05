@@ -12,7 +12,7 @@ export type HeroCtaKey = "discover" | "start";
 
 /** Hero 공통 카피 — 배지·서브·신뢰 문구 */
 export const heroSharedCopy = {
-  badge: "✨ 수만 명이 참여한 인기 테스트",
+  badge: "✨ 나를 알아가는 추천 테스트",
   description:
     "다양한 테스트로\n나를 더 깊이 알아보세요",
   secondaryCta: "전체 테스트 보기",

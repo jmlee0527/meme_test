@@ -39,7 +39,7 @@ export function JealousyTestPage() {
   if (!current) return null;
 
   return (
-    <main className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#fce7f3_0,#fff7ed_42%,#f8fafc_100%)] py-6 sm:py-12">
+    <div className="min-h-[calc(100vh-5rem)] bg-[radial-gradient(circle_at_top,#fce7f3_0,#fff7ed_42%,#f8fafc_100%)] py-6 sm:py-12">
       <div className="container-page mx-auto max-w-2xl">
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
@@ -83,6 +83,6 @@ export function JealousyTestPage() {
           <p className="text-right text-[11px] leading-5 text-slate-400">답변은 결과 계산에만 사용됩니다.<br />서버에 저장되지 않습니다.</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

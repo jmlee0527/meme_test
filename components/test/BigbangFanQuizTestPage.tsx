@@ -55,7 +55,7 @@ export function BigbangFanQuizTestPage() {
     }, reduceMotion ? 0 : 220);
   };
 
-  return <main className="fan-quiz-theme fan-quiz-exam-page min-h-[calc(100vh-5rem)] py-6 sm:py-12">
+  return <div className="fan-quiz-theme fan-quiz-exam-page min-h-[calc(100vh-5rem)] py-6 sm:py-12">
     <div className="container-page mx-auto max-w-2xl">
       <header className="mb-6">
         <div className="flex items-end justify-between gap-4"><div><p className="text-xs font-black tracking-[.16em] text-violet-600">BIGBANG TRUE FAN QUIZ</p><h1 className="mt-2 text-xl font-black text-ink sm:text-2xl">빅뱅 팬 퀴즈</h1></div><strong className="text-sm text-slate-500">{index + 1} / 15</strong></div>
@@ -69,5 +69,5 @@ export function BigbangFanQuizTestPage() {
       </motion.section></AnimatePresence>}
       <div className="mt-5 flex items-center justify-between gap-4"><button type="button" disabled={index === 0 || locked} onClick={() => { const next = Math.max(0, index - 1); setIndex(next); const stored = JSON.parse(window.sessionStorage.getItem(SESSION_KEY) ?? "{}"); window.sessionStorage.setItem(SESSION_KEY, JSON.stringify({ ...stored, answers, index: next })); }} className="min-h-12 rounded-xl px-4 text-sm font-bold text-slate-500 disabled:opacity-30">← 이전 문제</button><p className="text-right text-[11px] leading-5 text-slate-400">정답은 제출 후 공개됩니다.</p></div>
     </div>
-  </main>;
+  </div>;
 }

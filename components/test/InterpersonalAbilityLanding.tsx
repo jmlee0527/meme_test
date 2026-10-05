@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { TestBreadcrumbs } from "@/components/seo/TestBreadcrumbs";
 import { TestSeoContent } from "@/components/seo/TestSeoContent";
 import type { TestDefinition } from "@/lib/types";
 
@@ -15,7 +15,7 @@ const guideItems = [
 export function InterpersonalAbilityLanding({ test }: { test: TestDefinition }) {
   return (
     <div className="container-page py-10 sm:py-14">
-      <Breadcrumbs items={[{ name: "테스트", href: "/tests" }, { name: test.shortTitle }]} />
+      <TestBreadcrumbs test={test} />
       <section className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-teal-100 bg-white shadow-card">
         <div className="relative aspect-[16/10] min-h-60 w-full bg-teal-50">
           <Image src={test.thumbnail ?? "/tests/interpersonal-ability/cover.svg"} alt={test.title} fill sizes="(max-width:768px) 100vw, 768px" className="object-cover" priority />

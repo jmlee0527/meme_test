@@ -7,7 +7,7 @@ import type { ManchesterUnitedAnswer } from "@/lib/manchester-united-fan-engine"
 import { calculateManchesterUnitedResult, encodeManchesterUnitedAnswers } from "@/lib/manchester-united-fan-engine";
 
 export function ManchesterUnitedFanQuizResult({ answers }: { answers: ManchesterUnitedAnswer[] | null }) {
-  if (!answers) return <main className="container-page py-16 text-center"><h1 className="text-3xl font-black">결과 정보가 없습니다</h1><Link href="/tests/manchester-united-true-fan-test?start=1" className="mt-6 inline-flex rounded-xl bg-primary px-6 py-3 font-bold text-white">테스트 시작하기</Link></main>;
+  if (!answers) return <div className="container-page py-16 text-center"><h1 className="text-3xl font-black">결과 정보가 없습니다</h1><Link href="/tests/manchester-united-true-fan-test?start=1" className="mt-6 inline-flex rounded-xl bg-primary px-6 py-3 font-bold text-white">테스트 시작하기</Link></div>;
 
   const result = calculateManchesterUnitedResult(answers);
   const encoded = encodeManchesterUnitedAnswers(answers);

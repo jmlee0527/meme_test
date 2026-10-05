@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     description: "키워드로 미미테스트의 심리, 성격, 연애, 직장, 팬 퀴즈를 검색해 보세요.",
     path: "/search",
     keywords: ["테스트 검색", "심리테스트 찾기", "무료 테스트"],
+    index: false,
   }),
-  robots: { index: false, follow: true },
 };
 
 type Props = { searchParams: Promise<{ q?: string }> };
@@ -20,7 +20,7 @@ export default async function SearchPage({ searchParams }: Props) {
   const { q = "" } = await searchParams;
   const query = q.trim().replace(/\s+/g, " ");
   const results = searchTests(tests, query);
-  const suggestions = [...tests].sort((a, b) => Number(b.isNew) - Number(a.isNew) || b.participants - a.participants).slice(0, 8);
+  const suggestions = [...tests].sort((a, b) => Number(b.isNew) - Number(a.isNew) || a.title.localeCompare(b.title, "ko-KR")).slice(0, 8);
 
   return <SearchPageContent initialQuery={q} query={query} results={results} suggestions={suggestions} />;
 }

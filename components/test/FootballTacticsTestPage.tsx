@@ -64,7 +64,7 @@ export function FootballTacticsTestPage() {
   };
 
   return (
-    <main className="min-h-[calc(100vh-5rem)] py-6 sm:py-12">
+    <div className="min-h-[calc(100vh-5rem)] py-6 sm:py-12">
       <div className="container-page mx-auto max-w-2xl">
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
@@ -116,6 +116,6 @@ export function FootballTacticsTestPage() {
           <p className="text-right text-[11px] leading-5 text-slate-400">LV.5 복합 상황형 최상위 문제만 출제됩니다.<br />응답은 서버에 저장되지 않습니다.</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

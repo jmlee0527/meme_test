@@ -1,8 +1,9 @@
+import { getTestCanonicalPath } from "@/lib/test-seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { HomePageContent } from "@/components/home/HomePageContent";
 import { HomeEditorialContent } from "@/components/home/HomeEditorialContent";
 import { tests } from "@/data/tests";
-import { getNewestTests, getPopularTests } from "@/lib/test-discovery";
+import { getNewestTests, getRecommendedTests } from "@/lib/test-discovery";
 import { absoluteUrl, createMetadata, siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({
@@ -13,18 +14,17 @@ export const metadata = createMetadata({
   keywords: ["무료 테스트", "성향 테스트", "종합 테스트", "심리 테스트", "연애 테스트", "팬 퀴즈"],
 });
 
-const popularFanTests = getPopularTests(tests, { category: "팬 퀴즈", limit: 8 });
+const recommendedFanTests = getRecommendedTests(tests, { category: "팬 퀴즈", limit: 8 });
 const newTests = getNewestTests(tests, { limit: 4 });
-const personalityTests = getPopularTests(tests, { category: "성격.심리", limit: 4 });
-const relationshipTests = getPopularTests(tests, { category: "연애.관계", limit: 4 });
-const workTests = getPopularTests(tests, { category: "직업.일상", limit: 4 });
-const homeVisibleTests = [...popularFanTests, ...newTests, ...personalityTests, ...relationshipTests, ...workTests];
+const personalityTests = getRecommendedTests(tests, { category: "성격.심리", limit: 4 });
+const relationshipTests = getRecommendedTests(tests, { category: "연애.관계", limit: 4 });
+const workTests = getRecommendedTests(tests, { category: "직업.일상", limit: 4 });
+const homeVisibleTests = [...recommendedFanTests, ...newTests, ...personalityTests, ...relationshipTests, ...workTests];
 
 export default function HomePage() {
   return (
     <>
-      <HomePageContent popularFanTests={popularFanTests} newTests={newTests} personalityTests={personalityTests} relationshipTests={relationshipTests} workTests={workTests} />
-      <HomeEditorialContent />
+      <HomePageContent recommendedFanTests={recommendedFanTests} newTests={newTests} personalityTests={personalityTests} relationshipTests={relationshipTests} workTests={workTests} editorialContent={<HomeEditorialContent />} />
 
       <JsonLd data={{
         "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export default function HomePage() {
           "@type": "ListItem",
           position: index + 1,
           name: test.title,
-          url: absoluteUrl(test.href ?? `/tests/${test.slug}`),
+          url: absoluteUrl(getTestCanonicalPath(test)),
         })),
       }} />
     </>

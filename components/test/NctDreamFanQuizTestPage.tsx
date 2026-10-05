@@ -80,7 +80,7 @@ export function NctDreamFanQuizTestPage() {
   };
 
   return (
-    <main className="fan-quiz-theme fan-quiz-exam-page min-h-[calc(100vh-5rem)] py-6 sm:py-12">
+    <div className="fan-quiz-theme fan-quiz-exam-page min-h-[calc(100vh-5rem)] py-6 sm:py-12">
       <div className="container-page mx-auto max-w-2xl">
         <header className="mb-6">
           <div className="flex items-end justify-between gap-4">
@@ -133,6 +133,6 @@ export function NctDreamFanQuizTestPage() {
           <p className="text-right text-[11px] leading-5 text-slate-400">정답은 제출 후 공개됩니다.</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

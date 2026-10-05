@@ -19,7 +19,7 @@ const descriptionKeys: Record<string, TranslationKey> = {
 export function CategoriesPageContent({ tests }: { tests: TestDefinition[] }) {
   const { t } = useLanguage();
   return (
-    <main className="container-page py-10 sm:py-14">
+    <div className="container-page py-10 sm:py-14">
       <Breadcrumbs items={[{ name: t("nav.categories") }]} />
       <div className="max-w-2xl">
         <p className="text-sm font-extrabold text-primary">EXPLORE BY CATEGORY</p>
@@ -27,6 +27,7 @@ export function CategoriesPageContent({ tests }: { tests: TestDefinition[] }) {
         <p className="mt-4 leading-7 text-slate-600">{t("categories.description")}</p>
       </div>
       <div className="mt-8"><CategoryTiles /></div>
+      <Link href="/tests" className="mt-6 inline-flex min-h-11 items-center font-bold text-primary hover:underline">{t("common.allTests")}</Link>
       <div className="mt-12 space-y-14">
         {TEST_CATEGORY_TILES.map(([icon, category]) => {
           const all = tests.filter((test) => test.category === category);
@@ -51,6 +52,6 @@ export function CategoriesPageContent({ tests }: { tests: TestDefinition[] }) {
           );
         })}
       </div>
-    </main>
+    </div>
   );
 }

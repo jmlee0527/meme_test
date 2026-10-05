@@ -14,9 +14,9 @@ export const metadata = createMetadata({
 
 export default function TodayFortunePage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,#ede9fe_0%,transparent_32%),radial-gradient(circle_at_top_right,#ffe4e6_0%,transparent_30%),linear-gradient(180deg,#f8fafc_0%,#fff_55%,#f5f3ff_100%)]">
+    <div className="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,#ede9fe_0%,transparent_32%),radial-gradient(circle_at_top_right,#ffe4e6_0%,transparent_30%),linear-gradient(180deg,#f8fafc_0%,#fff_55%,#f5f3ff_100%)]">
       <div className="container-page py-8 sm:py-10">
-        <Breadcrumbs items={[{ name: "운세", href: "/category/%EC%9A%B4%EC%84%B8" }, { name: "오늘의 운세" }]} />
+        <Breadcrumbs items={[{ name: "건강·운세", href: `/category/${encodeURIComponent("건강.운세")}` }, { name: "오늘의 운세" }]} />
         <DailyFortuneClient />
         <TestSeoContent test={dailyFortuneTest} path="/fortune/today" includeQuizSchema={false} />
       </div>
@@ -43,6 +43,6 @@ export default function TodayFortunePage() {
         interactivityType: "active",
         isAccessibleForFree: true,
       }} />
-    </main>
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 import fs from "node:fs";
 
-const source = fs.readFileSync("data/menhera-test.ts", "utf8");
+const source = fs.readFileSync("data/menhera-test.ts", "utf8").replace(/\r\n/g, "\n");
 const domains = ["relationshipAnxiety", "reassuranceNeed", "rumination", "exclusivity", "emotionalDependence"];
 const domainBlocks = Object.fromEntries(domains.map((domain, index) => {
   const start = source.indexOf(`${domain}: [`, source.indexOf("const scenarios"));

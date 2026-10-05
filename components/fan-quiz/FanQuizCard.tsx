@@ -1,5 +1,7 @@
 "use client";
 
+import { getTestCanonicalPath } from "@/lib/test-seo";
+
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,11 +11,11 @@ import { FanQuizArtwork } from "@/components/fan-quiz/FanQuizArtwork";
 import { getTestFanQuizTheme } from "@/config/fanQuizThemes";
 import type { TestDefinition } from "@/lib/types";
 
-export function FanQuizCard({ test, rank }: { test: TestDefinition; rank?: number }) {
+export function FanQuizCard({ test, priority = false }: { test: TestDefinition; priority?: boolean }) {
   const reduceMotion = useReducedMotion();
   const pathname = usePathname();
   const theme = getTestFanQuizTheme(test);
-  const href = test.href ?? `/tests/${test.slug}`;
+  const href = getTestCanonicalPath(test);
   const countLabel = `${test.itemCount ?? test.questions.length}문항`;
   const style = {
     "--fan-primary": theme.primary,
@@ -35,7 +37,6 @@ export function FanQuizCard({ test, rank }: { test: TestDefinition; rank?: numbe
       transition={{ type: "spring", stiffness: 320, damping: 26 }}
       className="group relative min-h-full overflow-hidden rounded-[1.35rem] border border-[var(--fan-border)] bg-[var(--fan-surface)] shadow-card transition-shadow hover:shadow-xl"
     >
-      {rank && <span className="absolute left-3 top-3 z-20 grid size-8 place-items-center rounded-xl border border-white bg-white/95 text-sm font-black shadow-sm" aria-label={`인기 ${rank}위`}>{["🥇", "🥈", "🥉"][rank - 1] ?? rank}</span>}
       <Link
         href={href}
         onClick={() => {
@@ -51,7 +52,7 @@ export function FanQuizCard({ test, rank }: { test: TestDefinition; rank?: numbe
           </div>
           {test.thumbnail ? (
             <div className="relative mt-3 aspect-[4/3] overflow-hidden rounded-[1.1rem] border border-white/70 bg-white shadow-sm">
-              <Image src={test.thumbnail} alt={test.title} fill sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw" className="object-cover object-center transition duration-500 group-hover:scale-[1.03]" priority={Boolean(rank && rank <= 3)} />
+              <Image src={test.thumbnail} alt={test.title} fill sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 25vw" className="object-cover object-center transition duration-500 group-hover:scale-[1.03]" priority={priority} />
             </div>
           ) : (
             <FanQuizArtwork theme={theme} compact label="QUIZ" />

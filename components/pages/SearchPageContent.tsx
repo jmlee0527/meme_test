@@ -20,7 +20,7 @@ const suggestedCategories = ["성격.심리", "연애.관계", "직업.일상", 
 export function SearchPageContent({ initialQuery, query, results, suggestions }: Props) {
   const { t } = useLanguage();
   return (
-    <main className="container-page py-10 sm:py-14">
+    <div className="container-page py-10 sm:py-14">
       <Breadcrumbs items={[{ name: t("nav.search") }]} />
       <section className="container-readable">
         <p className="text-sm font-extrabold text-primary">FIND YOUR TEST</p>
@@ -69,6 +69,6 @@ export function SearchPageContent({ initialQuery, query, results, suggestions }:
           <div className="test-card-grid mt-6">{suggestions.map((test) => <TestCard key={test.slug} test={test} />)}</div>
         </section>
       )}
-    </main>
+    </div>
   );
 }

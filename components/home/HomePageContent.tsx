@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { TestCard } from "@/components/cards/TestCard";
 import { HomeHeroBanner } from "@/components/home/HomeHeroBanner";
@@ -10,14 +11,15 @@ import type { TestDefinition } from "@/lib/types";
 import type { TranslationKey } from "@/lib/i18n";
 
 type Props = {
-  popularFanTests: TestDefinition[];
+  recommendedFanTests: TestDefinition[];
   newTests: TestDefinition[];
   personalityTests: TestDefinition[];
   relationshipTests: TestDefinition[];
   workTests: TestDefinition[];
+  editorialContent: ReactNode;
 };
 
-export function HomePageContent({ popularFanTests, newTests, personalityTests, relationshipTests, workTests }: Props) {
+export function HomePageContent({ recommendedFanTests, newTests, personalityTests, relationshipTests, workTests, editorialContent }: Props) {
   const { t } = useLanguage();
   return (
     <>
@@ -49,10 +51,12 @@ export function HomePageContent({ popularFanTests, newTests, personalityTests, r
 
       <section id="popular-fan-quizzes" className="container-page scroll-mt-20 py-12 sm:py-16">
         <SectionReveal>
-          <SectionHeader eyebrow="FAN QUIZ RANKING" titleKey="home.popular.title" descriptionKey="home.popular.description" href={`/category/${encodeURIComponent("팬 퀴즈")}`} />
-          <div className="test-card-grid mt-7">{popularFanTests.map((test, index) => <TestCard key={test.slug} test={test} rank={index + 1} />)}</div>
+          <SectionHeader eyebrow="EDITOR PICKS" titleKey="home.popular.title" descriptionKey="home.popular.description" href={`/category/${encodeURIComponent("팬 퀴즈")}`} />
+          <div className="test-card-grid mt-7">{recommendedFanTests.map((test, index) => <TestCard key={test.slug} test={test} priority={index < 3} />)}</div>
         </SectionReveal>
       </section>
+
+      {editorialContent}
 
       <section className="notebook-section-soft border-y">
         <div className="container-page py-12 sm:py-16">

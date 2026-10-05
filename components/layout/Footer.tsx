@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useLanguage } from "@/components/i18n/LanguageProvider";
 
 const links = [
-  { labelKey: "footer.about", href: "/about" }, { text: "콘텐츠", href: "/articles" },
+  { labelKey: "footer.about", href: "/about" }, { labelKey: "nav.articles", href: "/articles" },
   { text: "콘텐츠 제작 및 검수 정책", href: "/editorial-policy" },
   { labelKey: "footer.privacy", href: "/privacy" }, { labelKey: "footer.terms", href: "/terms" },
   { labelKey: "footer.contact", href: "/contact" },

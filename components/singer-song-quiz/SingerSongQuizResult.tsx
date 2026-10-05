@@ -44,7 +44,7 @@ export function SingerSongQuizResult({
   const localizedTest = localizeTest(test, locale);
   if (!answers) {
     return (
-      <main className="container-page py-16 text-center">
+      <div className="container-page py-16 text-center">
         <h1 className="text-3xl font-black">{t("error.noResult")}</h1>
         <Link
           href={`/tests/${test.slug}?start=1`}
@@ -52,7 +52,7 @@ export function SingerSongQuizResult({
         >
           {t("runner.startTest")}
         </Link>
-      </main>
+      </div>
     );
   }
 
