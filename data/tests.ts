@@ -63,6 +63,7 @@ import { nctDreamFanTest } from "@/data/nct-dream-fan";
 import { lionelMessiFanTest } from "@/data/lionel-messi-fan";
 import { jungkookFanTest } from "@/data/jungkook-fan";
 import { workPersonaTest } from "@/data/work-persona";
+import { runningTest } from "@/data/running-personality";
 
 export const questions = [
   "나는 초기 자본이 거의 없어도 시작할 수 있는 부업을 선호한다.",
@@ -128,7 +129,7 @@ export const resultProfiles: ResultProfile[] = [
   profile("digital-template", "디지털 템플릿 판매", "🧩", "정리 능력을 반복 판매 가능한 상품으로 만드는 설계형", [2,2,0,1,2,2,-2,-1,2,-2,-1,0], { initialCost:"0~5만 원", monetizationSpeed:"1~3개월", platforms:["크몽","Gumroad","Notion 템플릿 갤러리"] }),
 ];
 
-export const tests: TestDefinition[] = [limYoungWoongSongQuizTest, youngtakSongQuizTest, jungkookFanTest, lionelMessiFanTest, interpersonalAbilityTest, relationshipSatisfactionTest, egoResilienceTest, workaholicTest, {
+export const tests: TestDefinition[] = [runningTest, limYoungWoongSongQuizTest, youngtakSongQuizTest, jungkookFanTest, lionelMessiFanTest, interpersonalAbilityTest, relationshipSatisfactionTest, egoResilienceTest, workaholicTest, {
   slug: "side-job-recommendation",
   title: "나에게 맞는 부업 추천 테스트",
   shortTitle: "부업 추천 테스트",

@@ -61,6 +61,8 @@ import { NctDreamFanQuizTestPage } from "@/components/test/NctDreamFanQuizTestPa
 import { LionelMessiFanQuizTestPage } from "@/components/test/LionelMessiFanQuizTestPage";
 import { JungkookFanQuizTestPage } from "@/components/test/JungkookFanQuizTestPage";
 import { WorkPersonaLanding } from "@/components/test/WorkPersonaLanding";
+import { RunningPersonalityLanding } from "@/components/test/RunningPersonalityLanding";
+import { RunningPersonalityTestPage } from "@/components/test/RunningPersonalityTestPage";
 import { WorkPersonaTestPage } from "@/components/test/WorkPersonaTestPage";
 import { MentalAgeTestPage } from "@/components/test/MentalAgeTestPage";
 import { YoungOldTestPage } from "@/components/test/YoungOldTestPage";
@@ -94,6 +96,9 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   if (!test) notFound();
   if (test.href) redirect(test.href);
   if (test.type === "fortune") redirect(test.href ?? "/fortune/today");
+  if (test.slug === "running-personality-test") {
+    return start === "1" ? <RunningPersonalityTestPage /> : <RunningPersonalityLanding />;
+  }
   if (test.type === "worldcup") {
     const parsedSeed = Number(seed);
     return play === "1" && Number.isInteger(parsedSeed) && parsedSeed > 0
