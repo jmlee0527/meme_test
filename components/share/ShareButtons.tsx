@@ -14,9 +14,9 @@ declare global {
   }
 }
 
-type Props = { title: string; description: string; path: string };
+type Props = { title: string; description: string; path: string; imagePath?: string };
 
-export function ShareButtons({ title, description, path }: Props) {
+export function ShareButtons({ title, description, path, imagePath }: Props) {
   const [copied, setCopied] = useState(false);
   const { t } = useLanguage();
   const url = absoluteUrl(path);
@@ -53,7 +53,7 @@ export function ShareButtons({ title, description, path }: Props) {
     if (!window.Kakao.isInitialized()) window.Kakao.init(key);
     window.Kakao.Share.sendDefault({
       objectType: "feed",
-      content: { title, description, imageUrl: `${window.location.origin}/opengraph-image`, link: { mobileWebUrl: url, webUrl: url } },
+      content: { title, description, imageUrl: imagePath ? absoluteUrl(imagePath) : `${window.location.origin}/opengraph-image`, link: { mobileWebUrl: url, webUrl: url } },
       buttons: [{ title: t("runner.result"), link: { mobileWebUrl: url, webUrl: url } }],
     });
   };

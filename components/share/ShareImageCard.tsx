@@ -9,6 +9,7 @@ const gradients = {
   purple: "from-violet-600 to-indigo-700",
   indigo: "from-indigo-600 to-sky-700",
   green: "from-green-600 to-emerald-700",
+  parchment: "from-[#655036] to-[#352b22]",
 } as const;
 
 type Props = {
@@ -20,17 +21,23 @@ type Props = {
   accent?: keyof typeof gradients;
   imageSrc?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
 };
 
-export function ShareImageCard({ emoji = "✨", eyebrow, title, subtitle, badge, accent = "blue", imageSrc, imageAlt }: Props) {
+export function ShareImageCard({ emoji = "✨", eyebrow, title, subtitle, badge, accent = "blue", imageSrc, imageAlt, imageFit = "cover" }: Props) {
   const exportRef = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
+  const imageStyle = imageFit === "contain"
+    ? { objectFit: imageFit, position: "absolute" as const, inset: 0, width: "100%", height: "100%" }
+    : { objectFit: imageFit };
 
   const download = async () => {
     if (!exportRef.current || status === "loading") return;
     setStatus("loading");
     try {
       const { toPng } = await import("html-to-image");
+      await document.fonts.ready;
+      await Promise.all(Array.from(exportRef.current.querySelectorAll("img")).map((img) => img.decode()));
       const dataUrl = await toPng(exportRef.current, { cacheBust: true, pixelRatio: 1 });
       const link = document.createElement("a");
       link.download = `mimi-test-${title.replace(/\s+/g, "-")}.png`;
@@ -40,7 +47,7 @@ export function ShareImageCard({ emoji = "✨", eyebrow, title, subtitle, badge,
     } catch { setStatus("error"); }
   };
   const visual = imageSrc ? (
-    <img src={imageSrc} alt={imageAlt ?? ""} className="size-full object-cover" />
+    <img src={imageSrc} alt={imageAlt ?? ""} className="size-full" style={imageStyle} />
   ) : (
     emoji
   );
@@ -48,11 +55,11 @@ export function ShareImageCard({ emoji = "✨", eyebrow, title, subtitle, badge,
   return (
     <div>
       <div className={`overflow-hidden rounded-2xl bg-gradient-to-br ${gradients[accent]} p-5 text-center text-white shadow-lg`}>
-        <div className="mx-auto grid size-20 place-items-center overflow-hidden rounded-2xl bg-white/15 text-5xl backdrop-blur">{visual}</div>
+        <div className="relative mx-auto grid size-20 place-items-center overflow-hidden rounded-2xl bg-white/15 text-5xl backdrop-blur">{visual}</div>
         <p className="mt-4 text-[10px] font-black tracking-[.18em] text-white/70">{eyebrow}</p><p className="mt-1 text-2xl font-black">{title}</p><p className="mt-2 text-xs text-white/80">{subtitle}</p>{badge && <span className="mt-4 inline-flex rounded-full bg-white px-3 py-1.5 text-xs font-black text-ink">{badge}</span>}
       </div>
       <button type="button" onClick={download} disabled={status === "loading"} className="mt-3 flex min-h-12 w-full items-center justify-center rounded-xl bg-white px-4 text-sm font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:shadow-md disabled:opacity-60">{status === "loading" ? "카드 만드는 중…" : status === "error" ? "다시 눌러 PNG 저장" : "인스타 공유 카드 PNG 저장"}</button>
-      <div className="pointer-events-none fixed -left-[9999px] top-0" aria-hidden="true"><div ref={exportRef} style={{ width: 1080, height: 1350 }} className={`relative flex flex-col items-center justify-center bg-gradient-to-br ${gradients[accent]} p-24 text-center text-white`}><div style={{ width: 420, height: 420 }} className="grid place-items-center overflow-hidden rounded-[96px] bg-white/15 text-[240px] shadow-2xl shadow-black/20">{imageSrc ? <img src={imageSrc} alt="" className="size-full object-cover" /> : emoji}</div><p className="mt-20 text-4xl font-black tracking-[.2em] text-white/70">{eyebrow}</p><p className="mt-8 text-8xl font-black leading-tight">{title}</p><p className="mt-10 max-w-3xl text-5xl font-black leading-normal text-white/90">{subtitle}</p>{badge && <span className="mt-16 rounded-full bg-white px-12 py-6 text-4xl font-black text-slate-900">{badge}</span>}<p className="absolute bottom-16 text-3xl font-black text-white/65">미미테스트</p></div></div>
+      <div className="pointer-events-none fixed -left-[9999px] top-0" aria-hidden="true"><div ref={exportRef} style={{ width: 1080, height: 1350 }} className={`relative flex flex-col items-center justify-center bg-gradient-to-br ${gradients[accent]} p-24 text-center text-white`}><div style={{ width: 420, height: 420 }} className="relative grid place-items-center overflow-hidden rounded-[96px] bg-white/15 text-[240px] shadow-2xl shadow-black/20">{imageSrc ? <img src={imageSrc} alt="" className="size-full" style={imageStyle} /> : emoji}</div><p className="mt-20 text-4xl font-black tracking-[.2em] text-white/70">{eyebrow}</p><p className="mt-8 text-8xl font-black leading-tight">{title}</p><p className="mt-10 max-w-3xl text-5xl font-black leading-normal text-white/90">{subtitle}</p>{badge && <span className="mt-16 rounded-full bg-white px-12 py-6 text-4xl font-black text-slate-900">{badge}</span>}<p className="absolute bottom-16 text-3xl font-black text-white/65">미미테스트</p></div></div>
     </div>
   );
 }

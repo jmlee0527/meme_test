@@ -7,6 +7,7 @@ import { TestBreadcrumbs } from "@/components/seo/TestBreadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { TestSeoContent } from "@/components/seo/TestSeoContent";
 import { TestRunner } from "@/components/test/TestRunner";
+import { HogwartsCharacterTestPage } from "@/components/test/HogwartsCharacterTestPage";
 import { AgeStartForm } from "@/components/test/AgeStartForm";
 import { getTest, tests } from "@/data/tests";
 import { absoluteUrl, createMetadata, siteConfig } from "@/lib/site";
@@ -95,6 +96,10 @@ export default async function TestDetailPage({ params, searchParams }: Props) {
   const test = getTest(slug);
   if (!test) notFound();
   if (test.href) redirect(test.href);
+  if (test.slug === "hogwarts-character-test") {
+    if (start === "1") return <HogwartsCharacterTestPage started />;
+    return <><HogwartsCharacterTestPage /><div className="container-page pb-10"><TestSeoContent test={test} /><TestRecommendations current={test} /></div></>;
+  }
   if (test.type === "fortune") redirect(test.href ?? "/fortune/today");
   if (test.slug === "running-personality-test") {
     return start === "1" ? <RunningPersonalityTestPage /> : <RunningPersonalityLanding />;
